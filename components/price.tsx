@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import React from "react";
 
 const Price = ({
   amount,
@@ -18,7 +19,7 @@ const Price = ({
       currencyDisplay: "narrowSymbol",
     }).format(parseFloat(amount))}`}
     <span
-      className={clsx("ml-1 inline", currencyCodeClassName)}
+      className={clsx("text-3xl tracking-tight text-gray-600", currencyCodeClassName)}
     >{`${currencyCode}`}</span>
   </p>
 );

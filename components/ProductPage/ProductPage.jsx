@@ -1,14 +1,12 @@
 import { Fragment, Tab } from "@headlessui/react";
-import styles from "./SingleProduct.module.css";
 import Featured from "../Shop/Featured";
-// import { AddToCart } from "../Cart/add-to-cart";
-// import { VariantSelector } from './variant-selector';
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Product({ product }) {
+export default function ProductPage({ product }) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-0 py-16 sm:px-0 sm:py-24 lg:max-w-6xl lg:px-0">
@@ -30,7 +28,7 @@ export default function Product({ product }) {
                           <img
                             src={image.src}
                             alt=""
-                            className={`h-full w-full object-cover object-center ${styles.fade_in_image}`}
+                            className="h-full w-full object-cover object-center"
                           />
                         </span>
                         <span

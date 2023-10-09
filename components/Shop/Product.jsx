@@ -14,8 +14,8 @@ export default function Product({ product }) {
     >
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none lg:h-80">
         <img
-          src={!hover ? product.imageSrc : product.hoverImageSrc}
-          alt={product.imageAlt}
+          src={!hover ? product.images : product.images}
+          alt={"picture"}
           className="h-full w-full object-cover object-center lg:h-full lg:w-full"
           // onMouseEnter={() => {
           //   setTimeout(() => setHover(true), 300);
@@ -28,8 +28,8 @@ export default function Product({ product }) {
         />
       </div>
       <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
-        <h3 className="truncate">{product.name}</h3>
-        <p>{product.price}</p>
+        <h3 className="truncate">{product.title}</h3>
+        <p>{product.amount}</p>
       </div>
       <p className="mt-1 text-sm italic text-gray-500">{product.description}</p>
     </Link>
