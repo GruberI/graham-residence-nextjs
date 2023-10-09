@@ -5,7 +5,6 @@ import Quote from "@/components/Shop/Quote";
 import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
 import Featured from "@/components/Shop/Featured";
-import Layout from "@/components/Layout";
 
 export default function Shop() {
   return (

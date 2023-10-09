@@ -1,6 +1,8 @@
 import { Fragment, Tab } from "@headlessui/react";
 import styles from "./SingleProduct.module.css";
 import Featured from "../Shop/Featured";
+// import { AddToCart } from "../Cart/add-to-cart";
+// import { VariantSelector } from './variant-selector';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -71,6 +73,7 @@ export default function Product({ product }) {
             <p className="mt-4 text-neutral-500 border-b pb-6">
               {product.description}
             </p>
+            
 
             <form className="mt-6">
               <div className="mt-20 flex justify-center">

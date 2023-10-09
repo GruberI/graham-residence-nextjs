@@ -4,9 +4,10 @@ import { PlusIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import { addItem } from "./actions";
 import LoadingDots from "../loading-dots";
-import { ProductVariant } from "../../../lib/shopify/types";
+import { ProductVariant } from "../../lib/shopify/types";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useTransition } from "react";
+import React from "react";
 
 export function AddToCart({
   variants,
