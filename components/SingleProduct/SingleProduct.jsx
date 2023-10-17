@@ -1,5 +1,4 @@
 import { Fragment, Tab } from "@headlessui/react";
-import styles from "./SingleProduct.module.css";
 import Featured from "../Shop/Featured";
 // import { AddToCart } from "../Cart/add-to-cart";
 // import { VariantSelector } from './variant-selector';
@@ -30,7 +29,7 @@ export default function Product({ product }) {
                           <img
                             src={image.src}
                             alt=""
-                            className={`h-full w-full object-cover object-center ${styles.fade_in_image}`}
+                            className="h-full w-full object-cover object-center"
                           />
                         </span>
                         <span

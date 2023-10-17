@@ -8,7 +8,8 @@ import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import { removeItem, updateItemQuantity } from "./actions";
 import LoadingDots from "../loading-dots";
-import type { CartItem } from "../../../lib/shopify/types";
+import type { CartItem } from "../../lib/shopify/types";
+import React from "react";
 
 export default function EditItemQuantityButton({
   item,

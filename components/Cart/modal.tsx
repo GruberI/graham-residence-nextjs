@@ -13,6 +13,7 @@ import CloseCart from "./close-cart";
 import DeleteItemButton from "./delete-item-button";
 import EditItemQuantityButton from "./edit-item-quantity-button";
 import OpenCart from "./open-cart";
+import React from "react";
 
 type MerchandiseSearchParams = {
   [key: string]: string;
