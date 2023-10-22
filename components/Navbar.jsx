@@ -14,8 +14,8 @@ const navigation = {
       href: "/shop",
     },
     {
-      name: "Collections",
-      href: "/collections",
+      name: "The Exhibition",
+      href: "/exhibition",
     },
   ],
 };
