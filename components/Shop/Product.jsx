@@ -12,7 +12,7 @@ export default function Product({ product }) {
       href={`/product/${product.id}`}
       className="group relative"
     >
-      <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none lg:h-80">
+      <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-black-200 lg:aspect-none lg:h-80">
         <img
           src={!hover ? product.imageSrc : product.hoverImageSrc}
           alt={product.imageAlt}
@@ -27,11 +27,11 @@ export default function Product({ product }) {
           onMouseLeave={() => setHover(false)}
         />
       </div>
-      <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
+      <div className="mt-4 flex items-center justify-between text-base font-medium text-black-900">
         <h3 className="truncate">{product.name}</h3>
         <p>{product.price}</p>
       </div>
-      <p className="mt-1 text-sm italic text-gray-500">{product.description}</p>
+      <p className="mt-1 text-sm italic text-black-500">{product.description}</p>
     </Link>
   );
 }

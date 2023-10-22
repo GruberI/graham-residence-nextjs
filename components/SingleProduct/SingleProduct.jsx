@@ -20,7 +20,7 @@ export default function Product({ product }) {
                 {product.productPage.images.map((image) => (
                   <Tab
                     key={image.id}
-                    className="relative flex h-32 cursor-pointer items-center justify-center bg-white text-sm font-medium uppercase text-gray-400 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
+                    className="relative flex h-32 cursor-pointer items-center justify-center bg-white text-sm font-medium uppercase text-black-400 hover:bg-black-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
                   >
                     {({ selected }) => (
                       <>
@@ -34,7 +34,7 @@ export default function Product({ product }) {
                         </span>
                         <span
                           className={classNames(
-                            selected ? "ring-slate-400" : "ring-transparent",
+                            selected ? "ring-black-400" : "ring-transparent",
                             "pointer-events-none absolute inset-0 ring-2 ring-offset-2"
                           )}
                           aria-hidden="true"
@@ -62,10 +62,10 @@ export default function Product({ product }) {
           {/* Product Info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
             <div className="flex place-content-between">
-              <h1 className="text-3xl font-light tracking-tight text-gray-600 truncate">
+              <h1 className="text-3xl font-light tracking-tight text-black-600 truncate">
                 {product.name}
               </h1>
-              <p className="text-3xl tracking-tight text-gray-600">
+              <p className="text-3xl tracking-tight text-black-600">
                 {product.price}
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function Product({ product }) {
               <div className="mt-20 flex justify-center">
                 <button
                   type="submit"
-                  className="flex max-w-md items-center justify-center border-2 border-neutral-200 border-black px-8 py-3 text-base font-light  text-gray-500 hover:bg-neutral-200 hover:border-neutral-200 focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                  className="flex max-w-md items-center justify-center border-2 border-neutral-200 border-black px-8 py-3 text-base font-light  text-black-500 hover:bg-neutral-200 hover:border-neutral-200 focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 sm:w-full"
                 >
                   ADD TO CART
                 </button>
@@ -86,11 +86,11 @@ export default function Product({ product }) {
             </form>
 
             <section aria-labelledby="details-heading" className="mt-20">
-              <div className="divide-y divide-gray-200">
+              <div className="divide-y divide-black-200">
                 {/* Info Tabs */}
                 <Tab.Group as="div" className="mt-4">
                   <div className="-mx-4 flex overflow-x-auto sm:mx-0">
-                    <div className="flex-auto border-b border-gray-200 px-4 sm:px-0">
+                    <div className="flex-auto border-b border-black-200 px-4 sm:px-0">
                       <Tab.List className="-mb-px flex space-x-10">
                         {product.productPage.details.map((tab) => (
                           <Tab
@@ -98,8 +98,8 @@ export default function Product({ product }) {
                             className={({ selected }) =>
                               classNames(
                                 selected
-                                  ? "text-slate-800"
-                                  : "text-gray-500 hover:text-gray-700",
+                                  ? "text-black-800"
+                                  : "text-black-500 hover:text-black-700",
                                 "whitespace-nowrap py-6 text-sm font-medium"
                               )
                             }
@@ -117,7 +117,7 @@ export default function Product({ product }) {
                         key={tab.name}
                         className="space-y-16 pt-10 lg:pt-12"
                       >
-                        <p className="mt-2 text-md text-gray-900 leading-7">
+                        <p className="mt-2 text-md text-black-900 leading-7">
                           {tab.items}
                         </p>
                       </Tab.Panel>

@@ -36,14 +36,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -79,7 +79,7 @@ export const artwork = [
     hoverImageSrc:
       "https://ipfs.filebase.io/ipfs/QmRHCRtbok8dGmXzDaiPSKBSBeRo6RqCokacvbyv1FbdnV",
     imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+      "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
     productPage: {
       images: [
         {
@@ -104,14 +104,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -148,7 +148,7 @@ export const artwork = [
     hoverImageSrc:
       "https://ipfs.filebase.io/ipfs/QmNgNgovNe1FAYgWzfm6u8FDyrx57SUdfSEKSqLNmFwVLF",
     imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+      "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
     productPage: {
       images: [
         {
@@ -173,14 +173,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -216,7 +216,7 @@ export const artwork = [
     hoverImageSrc:
       "https://ipfs.filebase.io/ipfs/Qmf9yJtWgMMxaG3TeXf44t6SighGS3dT7G2ZvoJsAnoKX3",
     imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+      "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
     productPage: {
       images: [
         {
@@ -241,14 +241,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -284,7 +284,7 @@ export const artwork = [
     hoverImageSrc:
       "https://ipfs.filebase.io/ipfs/QmXX63MvEnPEvMXsqqRpEdus2NSJrwDCLRrn2xWkW6LtgF",
     imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+      "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
     productPage: {
       images: [
         {
@@ -309,14 +309,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -376,14 +376,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -413,7 +413,7 @@ export const artwork = [
 
 export default function Gallery() {
   return (
-    <div className="bg-white border-t  border-gray-400">
+    <div className="bg-white border-t  border-black-400">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 my-20">
         <section aria-labelledby="products-heading" className="mt-8">
           <h2 id="products-heading" className="sr-only">
@@ -430,11 +430,11 @@ export default function Gallery() {
                     className="h-full w-full object-cover object-center group-hover:opacity-75"
                   />
                 </div>
-                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
+                <div className="mt-4 flex items-center justify-between text-base font-medium text-black-900">
                   <h3>{product.name}</h3>
                   {/* <p>{product.price}</p> */}
                 </div>
-                <p className="mt-1 text-sm italic text-gray-500">
+                <p className="mt-1 text-sm italic text-black-500">
                   {/* {product.description} */}
                 </p>
               </a>

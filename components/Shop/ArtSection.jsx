@@ -36,14 +36,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -81,7 +81,7 @@ export const artwork = [
     hoverImageSrc:
       "https://ipfs.filebase.io/ipfs/QmRHCRtbok8dGmXzDaiPSKBSBeRo6RqCokacvbyv1FbdnV",
     imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+      "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
     productPage: {
       images: [
         {
@@ -106,14 +106,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -152,7 +152,7 @@ export const artwork = [
     hoverImageSrc:
       "https://ipfs.filebase.io/ipfs/QmNgNgovNe1FAYgWzfm6u8FDyrx57SUdfSEKSqLNmFwVLF",
     imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+      "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
     productPage: {
       images: [
         {
@@ -177,14 +177,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -222,7 +222,7 @@ export const artwork = [
     hoverImageSrc:
       "https://ipfs.filebase.io/ipfs/Qmf9yJtWgMMxaG3TeXf44t6SighGS3dT7G2ZvoJsAnoKX3",
     imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+      "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
     productPage: {
       images: [
         {
@@ -247,14 +247,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -292,7 +292,7 @@ export const artwork = [
     hoverImageSrc:
       "https://ipfs.filebase.io/ipfs/QmXX63MvEnPEvMXsqqRpEdus2NSJrwDCLRrn2xWkW6LtgF",
     imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+      "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
     productPage: {
       images: [
         {
@@ -317,14 +317,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -386,14 +386,14 @@ export const artwork = [
       colors: [
         {
           name: "Washed Black",
-          bgColor: "bg-gray-700",
-          selectedColor: "ring-gray-700",
+          bgColor: "bg-black-700",
+          selectedColor: "ring-black-700",
         },
-        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-black-400" },
         {
           name: "Washed Gray",
-          bgColor: "bg-gray-500",
-          selectedColor: "ring-gray-500",
+          bgColor: "bg-black-500",
+          selectedColor: "ring-black-500",
         },
       ],
       description: `
@@ -423,7 +423,6 @@ export const artwork = [
   },
 ];
 
-// const artwork = [
 //   {
 //     id: 0,
 //     name: "A Quiet Noise",
@@ -448,7 +447,7 @@ export const artwork = [
 //     hoverImageSrc:
 //       "https://ipfs.filebase.io/ipfs/QmYcu2AT6EikaLemSr57Kp4bRhaBKyiLd17tdzv3kbxx3G",
 //     imageAlt:
-//       "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+//       "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
 //   },
 //   {
 //     id: 2,
@@ -461,7 +460,7 @@ export const artwork = [
 //     hoverImageSrc:
 //       "https://ipfs.filebase.io/ipfs/QmUMpcRBL5ZZs1JaGm9NsvQTTBE7jgK2NTfYXnXyDZ9PK9",
 //     imageAlt:
-//       "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+//       "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
 //   },
 //   {
 //     id: 3,
@@ -474,7 +473,7 @@ export const artwork = [
 //     hoverImageSrc:
 //       "https://ipfs.filebase.io/ipfs/QmVV6AA7SwTvFBifraqujfNmbazpqMDby4kjMMhjidRtkA",
 //     imageAlt:
-//       "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+//       "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
 //   },
 //   {
 //     id: 4,
@@ -487,7 +486,7 @@ export const artwork = [
 //     hoverImageSrc:
 //       "https://ipfs.filebase.io/ipfs/QmSpME4b7DWNqf3Q8b1M9By9AkR92dSgACsygBuTLAbqCs",
 //     imageAlt:
-//       "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+//       "Textured black felt pouch for paper cards with snap button flap and elastic pen holder loop.",
 //   },
 //   {
 //     id: 5,
@@ -508,8 +507,8 @@ export default function ArtSection() {
     <div className="bg-white">
       <div className="mx-auto max-w-1xl px-4 py-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div className="mx-auto text-left pb-6 scroll-smooth" id="artwork">
-          <h2 className="text-1xl text-gray-900 border-b pb-2">
-            Featured Artist Kyle Steed
+          <h2 className="text-1xl text-black-900 border-b pb-2">
+            ARTWORKS
           </h2>
         </div>
         <ProductsGrid products={artwork} />

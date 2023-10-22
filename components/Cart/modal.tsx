@@ -59,11 +59,11 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
           <Transition.Child
             as={Fragment}
             enter="transition-all ease-in-out duration-300"
-            enterFrom="translate-x-full"
-            enterTo="translate-x-0"
+            enterFrom="tranblack-x-full"
+            enterTo="tranblack-x-0"
             leave="transition-all ease-in-out duration-200"
-            leaveFrom="translate-x-0"
-            leaveTo="translate-x-full"
+            leaveFrom="tranblack-x-0"
+            leaveTo="tranblack-x-full"
           >
             <Dialog.Panel className="fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-white/80 p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px]">
               <div className="flex items-center justify-between">

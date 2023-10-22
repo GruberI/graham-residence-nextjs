@@ -4,9 +4,9 @@ export default function Quote() {
       <div className="bg-white">
         <div className="mx-auto text-center">
           <div className="inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch">
-            <div className="flex flex-col h-14 space-x-8 overflow-x-auto  lg:px-60 lg:py-20 sm:h-full sm:justify-center sm:overflow-visible border-t border-b sm:border-t-1 sm:pt-20 sm:pb-20 sm:px-20 border-gray-400">
+            <div className="flex flex-col h-14 space-x-8 overflow-x-auto  lg:px-60 lg:py-20 sm:h-full sm:justify-center sm:overflow-visible border-t border-b sm:border-t-1 sm:pt-20 sm:pb-20 sm:px-20 border-black-400">
               <h1 className="text-2xl italic">
-                "I’ve always been afraid to try things outside of my control and it has kept me from exploring new things. But over the last few years, I’ve become more aware that control is an illusion—everything is new and we’re always making it up as we go. This learning process has given me the strength to loosen my anxiety and dive in head first."
+                "I’ve become more aware that control is an illusion—everything is new and we’re always making it up as we go. This learning process has given me the strength to loosen my anxiety and dive in head first."
               </h1>
               <p className="pt-4 text-lg">Kyle Steed</p>
             </div>

@@ -6,15 +6,15 @@ import OpenCart from "./Cart/open-cart";
 const navigation = {
   categories: [
     {
-      name: "The Property",
+      name: "THE PROPERTY",
       href: "https://www.grahamresidence.com/",
     },
     {
-      name: "The Shop",
+      name: "THE SHOP",
       href: "/shop",
     },
     {
-      name: "The Exhibition",
+      name: "THE EXHIBIT",
       href: "/exhibition",
     },
   ],
@@ -25,12 +25,12 @@ export default function Navigation() {
     <div className="bg-white">
       <header className="relative bg-white">
         <nav aria-label="Top" className="w-screen sm:px-1 lg:px-1">
-          <div className="border-b border-gray-200 px-4 pb-14 sm:px-0 sm:pb-0">
+          <div className="border-b border-black-200 px-4 pb-14 sm:px-0 sm:pb-0">
             <div className="flex h-20 items-center justify-between">
               {/* Company Name */}
               <div className="flex flex-1">
                 <a href="/shop">
-                  <p className="text-medium sm:pl-2 lg:px-4 sm:text-1xl">
+                  <p className="font-light sm:pl-2 lg:px-4 sm:text-2xl ">
                     THE GRAHAM RESIDENCE
                   </p>
                 </a>
@@ -43,7 +43,7 @@ export default function Navigation() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center text-medium font-medium text-gray-700 hover:text-gray-800 sm:text-1xl"
+                      className="flex items-center font-normal text-black-700 hover:text-slate-600 sm:text-1xl text-[12px]"
                       target={item.name === "The Property" ? "_blank" : null}
                     >
                       {item.name}
@@ -54,12 +54,21 @@ export default function Navigation() {
 
               <div className="flex flex-1 items-center justify-end">
                 {/* Search */}
-                <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                  <span className="sr-only">Search</span>
+                <a
+                  href="https://www.airbnb.com/rooms/18312865?source_impression_id=p3_1697958503_wgsynyWLg4S60ges"
+                  className="p-2 text-black hover:text-black-500"
+                >
+                  {/* <span className="sr-only">Search</span>
                   <MagnifyingGlassIcon
                     className="h-6 w-6 ease-in-out hover:scale-110"
                     aria-hidden="true"
-                  />
+                  /> */}
+                  <button
+                    type="submit"
+                    className="flex max-w-md items-center justify-center border-2 border-black px-6 py-2 text-base font-light text-black-500 hover:bg-black hover:black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium sm:w-full text-[12px]"
+                  >
+                    BOOK ON AIRBNB
+                  </button>
                 </a>
                 {/* Cart */}
                 <div className="ml-4 flow-root mr-7">
