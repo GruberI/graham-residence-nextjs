@@ -2,7 +2,7 @@
 const contact = [
   {
     name: "artwork",
-    text: "For artwork & shop inquires, contact tgr@grahamresidence.com",
+    text: "Artwork & shop inquires: tgr@grahamresidence.com",
     href: "#",
   },
   {
@@ -12,7 +12,7 @@ const contact = [
   },
   {
     name: "artist representation",
-    text: "For art advising and artist representation, contact lindsey@lindseygoldbergdesigns.com",
+    text: "Artist representation: lindsey@lindseygoldbergdesigns.com",
     href: "#",
   },
   {
@@ -24,11 +24,11 @@ const contact = [
 export default function Contact() {
   return (
     <main className="relative isolate">
-      <div className="mx-auto mt-20 max-w-8xl px-6 lg:px-8 border-t  border-black">
+      <div className="mx-auto mt-20 max-w-8xl px-6 lg:px-8 border-t border-black">
         <div className="mx-auto lg:mx-0 lg:max-w-none">
           <dl className="mx-auto mt-16 grid max-w-3xl grid-cols-1 gap-8 text-base leading-7 text-black sm:grid-cols-2 lg:mx-0 lg:max-w-none">
             {contact.map((value) => (
-              <div key={value.name} className="relative flex space-around justify-center">
+              <div key={value.name} className="relative flex justify-center">
                 <dd className="inline">{value.text}</dd>
               </div>
             ))}

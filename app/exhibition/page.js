@@ -6,6 +6,7 @@ import ArtExhibition from "@/components/Exhibition/About/ArtExhibition";
 import Gallery from "@/components/Exhibition/Gallery";
 import Artist from "@/components/Exhibition/About/Artist";
 import Contact from "@/components/Exhibition/Contact";
+import SignUp from "@/components/Exhibition/SignUp";
 
 export default function Exhibition() {
   return (
@@ -18,6 +19,7 @@ export default function Exhibition() {
         <Gallery />
         <Artist />
         <Contact />
+        <SignUp />
       </div>
     
   );
