@@ -18,7 +18,7 @@ const contact = [
   {
     name: "photography",
     text: "Shoots & Events: Peerspace",
-    href: "#",
+    href: "https://www.peerspace.com/pages/listings/619d39bcbdb172000d2c030e?sort_order=12",
   },
 ];
 export default function Contact() {

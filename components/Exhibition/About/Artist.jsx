@@ -19,7 +19,7 @@ export default function Artist() {
                   <span className="font-semibold">Kyle Steed</span> (b. 1982;
                   Savannah, GA)
                 </p>
-                <p className="mt-1 text-sm text-black-900 leading-7">
+                <p className="leading-6">
                   Kyle Andrew Steed is a self-taught painter, photographer,
                   muralist and typographer. For the first fourteen years of his
                   life he moved across the southern US before his family settled
@@ -30,7 +30,7 @@ export default function Artist() {
                   as well as longing and understanding of self.{" "}
                 </p>
 
-                <p>
+                <p className="leading-6">
                   Following his graduation from high school he enlisted in the
                   US Air Force where he was assigned to an intelligence outpost
                   in Misawa, Japan. He relocated to Dallas, Texas in 2007. For
@@ -41,7 +41,7 @@ export default function Artist() {
                   form.
                 </p>
 
-                <p>
+                <p className="leading-6">
                   From the intimate scale of his journals and polaroid
                   photography to the monumental scale of his murals and
                   paintings the thorough through line of the work lies in the
