@@ -1,22 +1,27 @@
-
-'use client';
-
 import SingleProduct from "@/components/SingleProduct/SingleProduct";
-import { artwork } from "@/components/Shop/ArtSection";
+import { notFound } from 'next/navigation';
+import { getProduct } from '@/lib/shopify';
+// import { artwork } from "@/components/Shop/ArtSection";
 
-export default function Page({ params }) {
-  const productId = parseInt(params.productId);
+export const runtime = 'edge';
+
+export default async function Page({ params }) {
+  const products = await getProduct({params});
+
+  if (!products) return notFound();
+
+  const productId = parseInt(params.handle);
 
   
-  const product = artwork.find((art) => art.id === productId);
+  const singleProduct = products.find((art) => art.id === productId);
 
-  if (product === undefined) {
+  if (singleProduct === undefined) {
     return null;
   }
 
   return (
     
-    <SingleProduct product={product} />
+    <SingleProduct product={singleProduct} />
     
   );
 }

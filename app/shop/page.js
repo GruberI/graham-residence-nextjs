@@ -10,7 +10,6 @@ import { getProducts } from '@/lib/shopify';
 
 export default async function Shop() {
   const products = await getProducts({});
-  console.log('PRODUCTS', products)
 
   return (
     
@@ -18,9 +17,9 @@ export default async function Shop() {
         <Header />
         <Navigation />
         <HeroImage />
-        <ArtSection />
+        <ArtSection products={products}/>
         <Quote />
-        <GoodsSection />
+        <GoodsSection products={products}/>
         <Featured />
         <StayWithUs />
       </div>

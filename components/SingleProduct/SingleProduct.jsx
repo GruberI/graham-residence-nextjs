@@ -7,7 +7,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Product({ product }) {
+export default function SingleProduct({ product }) {
+  const amount = product.priceRange.maxVariantPrice.amount;
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-0 py-16 sm:px-0 sm:py-24 lg:max-w-6xl lg:px-0">
@@ -17,17 +18,17 @@ export default function Product({ product }) {
             {/* Image selector */}
             <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
               <Tab.List className="grid grid-cols-4 gap-8">
-                {product.productPage.images.map((image) => (
+                {product.images.map((image, i) => (
                   <Tab
-                    key={image.id}
+                    key={i}
                     className="relative flex h-32 cursor-pointer items-center justify-center bg-white text-sm font-medium uppercase text-black-400 hover:bg-black-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
                   >
                     {({ selected }) => (
                       <>
-                        <span className="sr-only">{image.name}</span>
+                        <span className="sr-only">{product.title}</span>
                         <span className="absolute inset-0 overflow-hidden">
                           <img
-                            src={image.src}
+                            src={image.url}
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
@@ -47,11 +48,11 @@ export default function Product({ product }) {
             </div>
 
             <Tab.Panels className="aspect-h-1 aspect-w-1 w-full">
-              {product.productPage.images.map((image) => (
-                <Tab.Panel key={image.id}>
+              {product.images.map((image, i) => (
+                <Tab.Panel key={i}>
                   <img
-                    src={image.src}
-                    alt={image.alt}
+                    src={image.url}
+                    alt={image.altText}
                     className="h-full w-full object-cover object-center "
                   />
                 </Tab.Panel>
@@ -66,13 +67,15 @@ export default function Product({ product }) {
                 {product.name}
               </h1>
               <p className="text-3xl tracking-tight text-black-600">
-                {product.price}
+                {`${new Intl.NumberFormat("en-US", {
+                  style: "currency",
+                  currency: "USD",
+                }).format(parseFloat(amount))}`}
               </p>
             </div>
             <p className="mt-4 text-neutral-500 border-b pb-6">
               {product.description}
             </p>
-            
 
             <form className="mt-6">
               <div className="mt-20 flex justify-center">
@@ -112,13 +115,13 @@ export default function Product({ product }) {
                   </div>
 
                   <Tab.Panels as={Fragment}>
-                    {product.productPage.details.map((tab) => (
+                    {product.seo.map((tab) => (
                       <Tab.Panel
-                        key={tab.name}
+                        key={tab.title}
                         className="space-y-16 pt-10 lg:pt-12"
                       >
                         <p className="mt-2 text-md text-black-900 leading-7">
-                          {tab.items}
+                          {tab.description}
                         </p>
                       </Tab.Panel>
                     ))}
