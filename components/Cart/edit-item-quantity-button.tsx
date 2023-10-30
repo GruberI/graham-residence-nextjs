@@ -28,8 +28,8 @@ export default function EditItemQuantityButton({
       }
       onClick={() => {
         // **** WHERE I SWITCHED THE CODE FROM ORIGINAL *** //
-        startTransition(() => {
-          async () => {
+        startTransition(async () => {
+          
             const error =
               type === "minus" && item.quantity - 1 === 0
                 ? await removeItem(item.id)
@@ -46,7 +46,7 @@ export default function EditItemQuantityButton({
             }
 
             router.refresh();
-          };
+        
         });
       }}
       disabled={isPending}

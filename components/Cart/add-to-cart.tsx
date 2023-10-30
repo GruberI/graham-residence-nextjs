@@ -41,17 +41,16 @@ export function AddToCart({
         // Safeguard in case someone messes with `disabled` in devtools.
         if (!availableForSale || !selectedVariantId) return;
         // **** WHERE I SWITCHED THE CODE FROM ORIGINAL *** //
-        startTransition(() => {
-          async () => {
+        startTransition(async () => {
+        
             const error = await addItem(selectedVariantId);
-
+    
             if (error) {
               // Trigger the error boundary in the root error.js
               throw new Error(error.toString());
             }
 
             router.refresh();
-          };
         });
       }}
       className={clsx(
