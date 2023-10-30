@@ -1,11 +1,10 @@
 import { Fragment, Tab } from "@headlessui/react";
-import Featured from "../Shop/Featured";
-// import { AddToCart } from "../Cart/add-to-cart";
-// import { VariantSelector } from './variant-selector';
+import { AddToCart } from "../Cart/add-to-cart";
+import { VariantSelector } from './variant-selector';
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(" ");
+// }
 
 export default function SingleProduct({ product }) {
   const amount = product.priceRange.maxVariantPrice.amount;
@@ -14,9 +13,9 @@ export default function SingleProduct({ product }) {
       <div className="mx-auto max-w-2xl px-0 py-16 sm:px-0 sm:py-24 lg:max-w-6xl lg:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-20">
           {/* Image gallery */}
-          <Tab.Group as="div" className="flex flex-col-reverse">
+          {/* <Tab.Group as="div" className="flex flex-col-reverse"> */}
             {/* Image selector */}
-            <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
+            {/* <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
               <Tab.List className="grid grid-cols-4 gap-8">
                 {product.images.map((image, i) => (
                   <Tab
@@ -58,7 +57,7 @@ export default function SingleProduct({ product }) {
                 </Tab.Panel>
               ))}
             </Tab.Panels>
-          </Tab.Group>
+          </Tab.Group> */}
 
           {/* Product Info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
@@ -73,11 +72,12 @@ export default function SingleProduct({ product }) {
                 }).format(parseFloat(amount))}`}
               </p>
             </div>
+            <VariantSelector options={product.options} variants={product.variants} />
             <p className="mt-4 text-neutral-500 border-b pb-6">
               {product.description}
             </p>
-
-            <form className="mt-6">
+              {/* {ADD TO CART BUTTON} */}
+            {/* <form className="mt-6">
               <div className="mt-20 flex justify-center">
                 <button
                   type="submit"
@@ -86,12 +86,13 @@ export default function SingleProduct({ product }) {
                   ADD TO CART
                 </button>
               </div>
-            </form>
+            </form> */}
+            <AddToCart variants={product.variants} availableForSale={product.availableForSale} />
 
             <section aria-labelledby="details-heading" className="mt-20">
               <div className="divide-y divide-black-200">
                 {/* Info Tabs */}
-                <Tab.Group as="div" className="mt-4">
+                {/* <Tab.Group as="div" className="mt-4">
                   <div className="-mx-4 flex overflow-x-auto sm:mx-0">
                     <div className="flex-auto border-b border-black-200 px-4 sm:px-0">
                       <Tab.List className="-mb-px flex space-x-10">
@@ -126,13 +127,12 @@ export default function SingleProduct({ product }) {
                       </Tab.Panel>
                     ))}
                   </Tab.Panels>
-                </Tab.Group>
+                </Tab.Group> */}
               </div>
             </section>
           </div>
         </div>
       </div>
-      <Featured />
     </div>
   );
 }
