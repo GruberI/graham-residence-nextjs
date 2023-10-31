@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function SingleProduct({ product }) {
+export default function ProductDescription({ product }) {
   const amount = product.priceRange.maxVariantPrice.amount;
 
   const tabDetails = [
@@ -17,7 +17,7 @@ export default function SingleProduct({ product }) {
 
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-0 py-16 sm:px-0 sm:py-24 lg:max-w-6xl lg:px-0">
+      <div className="mx-auto max-w-2xl px-0 py-24 sm:px-0 lg:max-w-7xl lg:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-20">
           {/* Image gallery */}
           <Tab.Group as="div" className="flex flex-col-reverse">
@@ -59,7 +59,7 @@ export default function SingleProduct({ product }) {
                   <img
                     src={image.url}
                     alt={image.altText}
-                    className="aspect-[4/4] object-cover object-center"
+                    className="aspect-[5/5] object-cover object-center"
                   />
                 </Tab.Panel>
               ))}
@@ -67,19 +67,19 @@ export default function SingleProduct({ product }) {
           </Tab.Group>
 
           {/* Product Info */}
-          <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
+          <div className="mt-10 px-4 sm:mt-16 sm:px-2 lg:mt-0">
             <div className="flex place-content-between">
-              <h1 className="text-3xl font-light text-black-600 truncate">
-                {product.title}
+              <h1 className="text-2xl font-light text-black-600 truncate">
+                {product.title.toUpperCase()}
               </h1>
-              <p className="text-3xl tracking-normal text-black-600">
+              <p className="text-2xl tracking-normal text-black-600">
                 {`${new Intl.NumberFormat("en-US", {
                   style: "currency",
                   currency: "USD",
                 }).format(parseFloat(amount))}`}
               </p>
             </div>
-            <p className="mt-4 text-md text-neutral-500 border-b border-black pb-6 mb-20">THAI MINHARD</p>
+            <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-6 mb-20">THAI MINHARD</p>
             <VariantSelector
               options={product.options}
               variants={product.variants}

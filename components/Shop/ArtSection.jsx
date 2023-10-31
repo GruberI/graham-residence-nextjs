@@ -1,4 +1,4 @@
-import ProductsGrid from "./ProductsGrid";
+import ProductsGrid from "../ProductsGrid";
 //   {
 //     id: 0,
 //     name: "A Quiet Noise",

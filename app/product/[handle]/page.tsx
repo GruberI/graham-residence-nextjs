@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import SingleProduct from "@/components/SingleProduct/SingleProduct";
+import ProductDescription from "@/components/ProductDescription/ProductDescription";
 import { HIDDEN_PRODUCT_TAG } from "../../../lib/constants";
 import { getProduct } from "../../../lib/shopify";
 import { Image } from "../../../lib/shopify/types";
@@ -81,7 +81,7 @@ export default async function ProductPage({
           __html: JSON.stringify(productJsonLd),
         }}
       />
-      <SingleProduct product={product} />
+      <ProductDescription product={product} />
     </>
   );
 }

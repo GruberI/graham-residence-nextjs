@@ -1,4 +1,4 @@
-import ProductsGrid from "./ProductsGrid";
+import ProductsGrid from "../ProductsGrid";
 
 export default async function ArtSection({products}) {
   if (!products?.length) return null;
