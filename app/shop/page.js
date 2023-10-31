@@ -10,7 +10,7 @@ import { getProducts } from '@/lib/shopify';
 
 export default async function Shop() {
   const products = await getProducts({});
-  console.log('PRODUCTS', products)
+  console.log('PRODUCTS', products.images)
 
   return (
     

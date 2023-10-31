@@ -69,17 +69,17 @@ export default function SingleProduct({ product }) {
           {/* Product Info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
             <div className="flex place-content-between">
-              <h1 className="text-3xl font-light tracking-tight text-black-600 truncate">
+              <h1 className="text-3xl font-light text-black-600 truncate">
                 {product.title}
               </h1>
-              <p className="text-3xl tracking-tight text-black-600">
+              <p className="text-3xl tracking-normal text-black-600">
                 {`${new Intl.NumberFormat("en-US", {
                   style: "currency",
                   currency: "USD",
                 }).format(parseFloat(amount))}`}
               </p>
             </div>
-            <div className="mt-4 text-neutral-500 border-b border-black pb-6 mb-20"></div>
+            <p className="mt-4 text-md text-neutral-500 border-b border-black pb-6 mb-20">THAI MINHARD</p>
             <VariantSelector
               options={product.options}
               variants={product.variants}

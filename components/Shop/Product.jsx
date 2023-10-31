@@ -19,12 +19,6 @@ export default function Product({ product }) {
           src={!hover ? product.featuredImage.url : product.images[0].url}
           alt={product.featuredImage.altText}
           className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-          // onMouseEnter={() => {
-          //   setTimeout(() => setHover(true), 300);
-          // }}
-          // onMouseLeave={() => {
-          //   setTimeout(() => setHover(false), 300);
-          // }}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         />
