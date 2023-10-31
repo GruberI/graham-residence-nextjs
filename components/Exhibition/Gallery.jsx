@@ -1,4 +1,4 @@
-import Product from "../Shop/Product";
+// import Product from "../Shop/Product";
 
 export const artwork = [
   {
