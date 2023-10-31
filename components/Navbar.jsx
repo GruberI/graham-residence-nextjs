@@ -65,7 +65,7 @@ export default function Navigation() {
                   /> */}
                   <button
                     type="submit"
-                    className="flex max-w-md items-center justify-center border-2 border-black px-6 py-2 text-base font-light text-black hover:bg-black hover:black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium sm:w-full text-[12px]"
+                    className="flex max-w-md items-center justify-center border-2 border-black px-6 py-2 sm:px-4 text-base font-light text-black hover:bg-black hover:black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium sm:w-full lg:text-[14px] sm:text-[10px]"
                   >
                     BOOK ON AIRBNB
                   </button>

@@ -6,17 +6,21 @@ import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
 import Featured from "@/components/Shop/Featured";
 import StayWithUs from "@/components/Shop/StayWithUs";
+import { getProducts } from '@/lib/shopify';
 
-export default function Shop() {
+export default async function Shop() {
+  const products = await getProducts({});
+  console.log('PRODUCTS', products.images)
+
   return (
     
       <div className="bg-white py-1 sm:py-10 lg:py-10">
         <Header />
         <Navigation />
         <HeroImage />
-        <ArtSection />
+        <ArtSection products={products}/>
         <Quote />
-        <GoodsSection />
+        <GoodsSection products={products}/>
         <Featured />
         <StayWithUs />
       </div>

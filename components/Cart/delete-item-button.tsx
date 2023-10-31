@@ -19,17 +19,15 @@ export default function DeleteItemButton({ item }: { item: CartItem }) {
       aria-label="Remove cart item"
       onClick={() => {
         // **** WHERE I SWITCHED THE CODE FROM ORIGINAL *** //
-        startTransition(() => {
-          async () => {
-            const error = await removeItem(item.id);
+        startTransition(async () => {
+          const error = await removeItem(item.id);
 
-            if (error) {
-              // Trigger the error boundary in the root error.js
-              throw new Error(error.toString());
-            }
+          if (error) {
+            // Trigger the error boundary in the root error.js
+            throw new Error(error.toString());
+          }
 
-            router.refresh();
-          };
+          router.refresh();
         });
       }}
       disabled={isPending}
