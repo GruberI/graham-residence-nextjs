@@ -23,7 +23,7 @@ export default function Product({ product }) {
           onMouseLeave={() => setHover(false)}
         />
       </div>
-      <div className="mt-4 flex items-center justify-between text-base font-medium text-black-900">
+      <div className="mt-4 flex items-center justify-between text-base font-light text-black-900">
         <h3 className="truncate">{product.title}</h3>
         <p>{`${new Intl.NumberFormat("en-US", {
           style: "currency",

@@ -84,8 +84,8 @@ export default async function ArtSection({products}) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-1xl px-4 py-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <div className="mx-auto text-left pb-6 scroll-smooth" id="artwork">
-          <h2 className="text-1xl text-black-900 border-b pb-2">
+        <div className="mx-auto text-left pb-6" id="artwork">
+          <h2 className="text-1xl text-black border-b border-black pb-2">
             ARTWORKS
           </h2>
         </div>

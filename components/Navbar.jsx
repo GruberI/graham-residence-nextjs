@@ -25,7 +25,7 @@ export default function Navigation() {
     <div className="bg-white">
       <header className="relative bg-white">
         <nav aria-label="Top" className="w-screen sm:px-1 lg:px-1">
-          <div className="border-b border-black-200 px-4 pb-14 sm:px-0 sm:pb-0">
+          <div className="border-b border-black px-4 pb-14 sm:px-0 sm:pb-0">
             <div className="flex h-20 items-center justify-between">
               {/* Company Name */}
               <div className="flex flex-1">
@@ -43,7 +43,7 @@ export default function Navigation() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center font-normal text-black-700 hover:text-slate-600 sm:text-1xl text-[12px]"
+                      className="flex items-center font-normal text-black hover:text-slate-600 sm:text-1xl text-[12px]"
                       target={item.name === "The Property" ? "_blank" : null}
                     >
                       {item.name}
