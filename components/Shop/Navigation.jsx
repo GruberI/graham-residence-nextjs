@@ -1,21 +1,32 @@
+'use client' 
+
 const navigation = {
   categories: [
     {
       name: "ARTWORKS",
-      href: "#artwork",
+      id: "artwork",
     },
     {
       name: "HOME GOODS",
-      href: "#homegoods",
+      id: "homegoods",
     },
     {
       name: "FEATURED",
-      href: "#featured",
+      id: "featured",
     },
   ],
 };
 
+const handleClickScroll = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    // Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export default function Navigation() {
+
   return (
     <div
       aria-label="Top"
@@ -28,8 +39,8 @@ export default function Navigation() {
               {navigation.categories.map((item) => (
                 <a
                   key={item.name}
-                  href={item.href}
-                  className="flex items-center text-sm font-sm text-black hover:text-slate-600 scroll-smooth"
+                  onClick={() => handleClickScroll(item.id)}
+                  className="flex items-center text-sm font-sm text-black hover:text-slate-600 scroll-smooth cursor-pointer"
                  
                 >
                   {item.name}
