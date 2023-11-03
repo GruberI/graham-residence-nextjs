@@ -7,7 +7,7 @@ const navigation = {
       id: "artwork",
     },
     {
-      name: "HOME GOODS",
+      name: "DECOR",
       id: "homegoods",
     },
     {
@@ -30,7 +30,7 @@ export default function Navigation() {
   return (
     <div
       aria-label="Top"
-      className="w-screen sm:px-0 lg:px-0 sticky top-0"
+      className="w-screen sm:px-0 lg:px-0 sticky top-0 z-[1]"
     >
       <div className="bg-white">
         <div className="mx-auto text-center">

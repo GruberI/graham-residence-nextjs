@@ -11,7 +11,7 @@ export default async function ArtSection({products}) {
             className="text-1xl text-black border-b border-black pb-2"
             id="products-grid"
           >
-            HOME GOODS
+            DECOR
           </h2>
         </div>
         <ProductsGrid products={products} />
