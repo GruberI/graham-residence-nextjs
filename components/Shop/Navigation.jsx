@@ -7,7 +7,7 @@ const navigation = {
       id: "artwork",
     },
     {
-      name: "HOME GOODS",
+      name: "DECOR",
       id: "homegoods",
     },
     {
