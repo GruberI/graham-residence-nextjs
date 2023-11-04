@@ -1,23 +1,22 @@
 import { GridTileImage } from "./tile";
 import Label from "./label";
 import Link from "next/link";
+import { getCollectionProducts } from '../../lib/shopify';
 
-export default function Carousel({ products }) {
-  // const label =  {
-  //     title: produ;
-  // amount: string;
-  // currencyCode: string;
-  // position?: 'bottom' | 'center';
-  // }
+export default async function Carousel() {
+  const products = await getCollectionProducts({ collection: 'Artwork' });
+  
+  const productsByTag = products.filter((product) => { return  product.tags.includes('acrylic')})
+
 
   if (!products.length) return null;
 
   return (
-    <div className="py-8">
+    <div className="py-8 px-2">
       <ul className="flex w-full gap-6 overflow-x-auto pt-1">
-        {products.map((product) => (
+        {productsByTag.map((product, i) => (
           <li
-            key={product.handle}
+            key={`${product.handle}${i}`}
             className="aspect-square w-full flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5"
           >
             <Link
