@@ -1,13 +1,14 @@
 import { GridTileImage } from "./tile";
 import Label from "./label";
 import Link from "next/link";
-import { getCollectionProducts } from '../../lib/shopify';
+import { getCollectionProducts } from "../../lib/shopify";
 
 export default async function Carousel() {
-  const products = await getCollectionProducts({ collection: 'Artwork' });
-  
-  const productsByTag = products.filter((product) => { return  product.tags.includes('acrylic')})
+  const products = await getCollectionProducts({ collection: "Artwork" });
 
+  const productsByTag = products.filter((product) => {
+    return product.tags.includes("acrylic");
+  });
 
   if (!products.length) return null;
 
