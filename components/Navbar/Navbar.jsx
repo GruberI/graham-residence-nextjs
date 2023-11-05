@@ -1,10 +1,10 @@
 
 import { Suspense } from "react";
-import Cart from "./Cart/index";
-import OpenCart from "./Cart/open-cart";
+import Cart from "../Cart/index";
+import OpenCart from "../Cart/open-cart";
 import PopoverItems from "./PopoverItems";
 
-export default function Navbar2() {
+export default function Navbar() {
   return (
     <div className="bg-white">
       <header className="relative bg-white">

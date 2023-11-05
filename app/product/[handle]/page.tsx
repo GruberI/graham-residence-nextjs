@@ -4,8 +4,6 @@ import { notFound } from "next/navigation";
 import ProductDescription from "@/components/ProductDescription/ProductDescription";
 import { HIDDEN_PRODUCT_TAG } from "../../../lib/constants";
 import { getProduct } from "../../../lib/shopify";
-import { Image } from "../../../lib/shopify/types";
-import Link from "next/link";
 
 export const runtime = "edge";
 

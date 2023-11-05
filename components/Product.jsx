@@ -1,5 +1,4 @@
 "use client";
-import clsx from 'clsx';
 
 import { useState } from "react";
 import Link from "next/link";
@@ -14,7 +13,7 @@ export default function Product({ product }) {
       href={`/product/${product.handle}`}
       className="group relative"
     >
-      <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-black-200 lg:aspect-none lg:h-80">
+      <div className="aspect-[3/4] w-full overflow-hidden bg-black-200 lg:aspect-none lg:h-80">
         <img
           src={!hover ? product.featuredImage.url : product.images[0].url}
           alt={product.featuredImage.altText}
