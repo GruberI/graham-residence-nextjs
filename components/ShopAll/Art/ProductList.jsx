@@ -3,7 +3,7 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import Product from '../../Product'
+import Product from './Product'
 
 const sortOptions = [
   { name: 'Most Popular', href: '#', current: true },
@@ -30,9 +30,8 @@ export default function ProductList({products}) {
     <div className="bg-white">
       <div>
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-            <h1 className="text-4xl font-light tracking-wide text-gray-900">All Products</h1>
-
+          <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-16">
+          <h1 className="text2xl font-light tracking-widest text-gray-900"> {`${products.length} ARTWORKS`}</h1>
             <div className="flex items-center">
               <Menu as="div" className="relative inline-block text-left">
                 <div>
@@ -79,10 +78,10 @@ export default function ProductList({products}) {
             </div>
           </div>
 
-          <section aria-labelledby="products-heading" className="pb-24 pt-6">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+          <section aria-labelledby="products-heading" className="pb-24 pt-10">
+            {/* <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-4"> */}
               {/* Filters */}
-              <form className="hidden lg:block">
+              {/* <form className="hidden lg:block">
                 <h3 className="sr-only">Categories</h3>
                 <ul role="list" className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
                   {subCategories.map((category) => (
@@ -91,16 +90,17 @@ export default function ProductList({products}) {
                     </li>
                   ))}
                 </ul>
-              </form>
+              </form> */}
 
               {/* Product grid */}
-              <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:col-span-3 lg:gap-x-8">
+              {/* <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-1 lg:grid-cols-3 lg:col-span-3 lg:gap-x-8">
                 {products.map((product) => (
                     <Product product={product}/>
                 ))}
-              </div>
+              </div> */}
+              <Product products={products} />
               
-            </div>
+            {/* </div> */}
           </section>
         </main>
       </div>

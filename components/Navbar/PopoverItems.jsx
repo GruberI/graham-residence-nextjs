@@ -8,8 +8,9 @@ const navigation = {
     {
       name: "The Shop",
       art: [
-        { name: "Shop All", href: `#` },
+        { name: "Shop All", href: `/art` },
         { name: "Kyle Steed", href: "#" },
+        { name: "Thai Minhard", href: "#" },
       ],
       decor: [
         { name: "Shop All", href: "/home" },

@@ -13,12 +13,12 @@ export default async function Carousel() {
   if (!products.length) return null;
 
   return (
-    <div className="py-8 px-2">
+    <div className="py-8 px-4">
       <ul className="flex w-full gap-6 overflow-x-auto pt-1">
         {productsByTag.map((product, i) => (
           <li
             key={`${product.handle}${i}`}
-            className="aspect-square w-full flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5"
+            className="aspect-square w-full flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
           >
             <Link
               className="relative h-full w-full"

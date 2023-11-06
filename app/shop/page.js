@@ -9,7 +9,6 @@ import StayWithUs from "@/components/Shop/StayWithUs";
 import { getProducts } from "@/lib/shopify";
 import Carousel from "@/components/Carousel/Carousel";
 import { Suspense } from "react";
-import Link from "next/link";
 
 export default async function Shop() {
   const products = await getProducts({});
