@@ -14,7 +14,7 @@ export default function Navbar() {
 
               {/* Logo */}
                <div className="flex flex-1">
-                <a href="/shop">
+                <a href="/">
                   <p className="font-light sm:pl-2 lg:px-4 sm:text-2xl ">
                     THE GRAHAM RESIDENCE
                   </p>

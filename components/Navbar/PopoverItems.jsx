@@ -48,8 +48,9 @@ export default function PopoverItems() {
                   <Popover.Button
                     className={classNames(
                       open ? "" : "hover:text-gray-800",
-                      "relative z-10 -mb-px flex items-center border-b-1 pt-px text-sm font-medium duration-200 ease-out"
+                      "relative z-10 -mb-px flex items-center border-b-1 pt-px text-sm font-medium duration-200 ease-out outline-none"
                     )}
+                  
                   >
                     {category.name}
                   </Popover.Button>
