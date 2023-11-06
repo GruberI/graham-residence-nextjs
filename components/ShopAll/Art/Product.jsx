@@ -1,4 +1,4 @@
-  export default function Product({products}) {
+export default function Product({products}) {
     return (
       <div className="bg-white">
         <div className="mx-auto">

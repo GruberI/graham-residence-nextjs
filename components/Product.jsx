@@ -1,11 +1,18 @@
 "use client";
-
-import { useState } from "react";
 import Link from "next/link";
+import ImageTransition from "./ImageTransition";
 
 export default function Product({ product }) {
-  const [hover, setHover] = useState(false);
   const amount = product.priceRange.maxVariantPrice.amount;
+
+  const imgOne = {
+    src: product.featuredImage.url,
+    altText: product.featuredImage.altText,
+  };
+  const imgTwo = {
+    src: product.images[0].url,
+    altText: product.images[0].altText,
+  };
 
   return (
     <Link
@@ -13,15 +20,7 @@ export default function Product({ product }) {
       href={`/product/${product.handle}`}
       className="group relative"
     >
-      <div className="aspect-[3/4] w-full overflow-hidden bg-black-200 lg:aspect-none lg:h-80">
-        <img
-          src={!hover ? product.featuredImage.url : product.images[0].url}
-          alt={product.featuredImage.altText}
-          className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-        />
-      </div>
+      <ImageTransition imgOne={imgOne} imgTwo={imgTwo} />
       <div className="mt-4 flex items-center justify-between text-base font-light text-black">
         <h3 className="truncate">{product.title}</h3>
         <p>{`${new Intl.NumberFormat("en-US", {

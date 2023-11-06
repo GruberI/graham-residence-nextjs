@@ -23,17 +23,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function ShopAllHome() {
-  const products = await getCollectionProducts({ collection: "Artwork" });
+export default async function ShopAllArt({productsByHandle}) {
+  // const products = await getCollectionProducts({ collection: "Artwork" });
 
   return (
 <>
 <ShopAllArtHeader />
 <section>
-      {products.length === 0 ? (
+      {productsByHandle.length === 0 ? (
         <p className="py-3 text-lg">{`No products found in this collection`}</p>
       ) : (
-        <ProductList products={products} />
+        <ProductList products={productsByHandle} />
  
       )}
     </section>
