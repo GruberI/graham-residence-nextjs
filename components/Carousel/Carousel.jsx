@@ -1,51 +1,139 @@
+"use client";
+import React, { Component } from "react";
+import Slider from "react-slick";
 import { GridTileImage } from "./tile";
 import Label from "./label";
 import Link from "next/link";
-import { getCollectionProducts } from "../../lib/shopify";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
-export default async function Carousel() {
-  const products = await getCollectionProducts({ collection: "Artwork" });
+// function NextArrow(props) {
+//   const { className, style, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       style={{
+//         ...style,
+//         display: "block",
+//         color: "black",
+//         marginBottom: "10px",
+//       }}
+//       onClick={onClick}
+//     >
+//       <ChevronRightIcon />
+//     </div>
+//   );
+// }
 
-  const productsByTag = products.filter((product) => {
-    return product.tags.includes("acrylic");
-  });
+// function PrevArrow(props) {
+//   const { className, style, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       style={{ ...style, display: "block", color: "black" }}
+//       onClick={onClick}
+//     >
+//       <ChevronLeftIcon />
+//     </div>
+//   );
+// }
 
-  if (!products.length) return null;
-
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
   return (
-    <div className="py-8 px-4">
-      <ul className="flex w-full gap-6 overflow-x-auto pt-1">
-        {productsByTag.map((product, i) => (
-          <li
-            key={`${product.handle}${i}`}
-            className="aspect-square w-full flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
-          >
-            <Link
-              className="relative h-full w-full"
-              href={`/product/${product.handle}`}
-            >
-              <GridTileImage
-                alt={product.title}
-                label={{
-                  title: product.title,
-                  amount: product.priceRange.maxVariantPrice.amount,
-                  currencyCode: product.priceRange.maxVariantPrice.currencyCode,
-                }}
-                src={product.featuredImage?.url}
-                fill
-                sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
-              />
-            </Link>
-
-            <Label
-              title={product.title}
-              amount={product.priceRange.maxVariantPrice.amount}
-              currencyCode={product.currencyCode}
-              position={product.position}
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <div
+      className={className}
+      style={{ ...style, display: "block", color: "grey", height: '30%', width: '2%'}}
+      onClick={onClick}
+    ><ChevronRightIcon style={{ marginRight: '10%'}}/></div>
   );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", color: "grey", height: '32%', width: '6%' }}
+      onClick={onClick}
+    ><ChevronLeftIcon style={{ marginRight: '70%'}}/></div>
+  );
+}
+
+export default class Carousel extends Component {
+  render() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
+    return (
+      <div className="w-11/12 m-auto">
+        <div className="mt-10">
+          <Slider {...settings}>
+            {this.props.products.map((product, i) => (
+              <li
+                key={`${product.handle}${i}`}
+                className="aspect-square w-full flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
+              >
+                <Link
+                  className="relative h-full w-full"
+                  href={`/product/${product.handle}`}
+                >
+                  <GridTileImage
+                    alt={product.title}
+                    label={{
+                      title: product.title,
+                      amount: product.priceRange.maxVariantPrice.amount,
+                      currencyCode:
+                        product.priceRange.maxVariantPrice.currencyCode,
+                    }}
+                    src={product.featuredImage?.url}
+                    fill
+                    sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
+                  />
+                </Link>
+                <Label
+                  title={product.title}
+                  amount={product.priceRange.maxVariantPrice.amount}
+                  currencyCode={product.currencyCode}
+                  position={product.position}
+                />
+              </li>
+            ))}
+          </Slider>
+        </div>
+      </div>
+    );
+  }
 }

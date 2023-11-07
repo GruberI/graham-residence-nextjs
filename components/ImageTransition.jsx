@@ -2,8 +2,8 @@ import { useState } from "react";
 
 export default function ImageTransition ({ imgOne, imgTwo }) {
 
-    console.log('IMAGE ONE', imgOne.src)
-    console.log('IMAGE TWO', imgTwo.src)
+    // console.log('IMAGE ONE', imgOne.src)
+    // console.log('IMAGE TWO', imgTwo.src)
     const [hover, setHover] = useState(false);
   
     return (

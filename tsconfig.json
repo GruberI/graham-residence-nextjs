@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/Carousel/Carousel.jsx"  ],
   "exclude": [
     "node_modules"
   ]

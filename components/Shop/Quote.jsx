@@ -1,17 +1,38 @@
+import Link from "next/link";
+
 export default function Quote() {
   return (
-    <div className="w-screen sm:px-0 lg:px-0">
-      <div className="bg-white">
-        <div className="mx-auto text-center">
-          <div className="inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch">
-            <div className="flex flex-col h-14 space-x-8 overflow-x-auto lg:px-60 lg:py-20 sm:h-full sm:justify-center sm:overflow-visible border-t border-b sm:border-t-1 sm:pt-20 sm:pb-20 sm:px-20 border-black">
-              <h1 className="text-3xl italic">
-                I’ve become more aware that control is an illusion—everything is new and we’re always making it up as we go. This learning process has given me the strength to loosen my anxiety and dive in head first.
-              </h1>
-              <p className="pt-4 text-lg">KYLE STEED</p>
+    <div className="w-screen pb-20">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-20 mb-0 lg:max-w-7xl lg:px-6">
+        <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
+          <div className="relative w-96">
+            <img
+              src="https://ipfs.filebase.io/ipfs/QmbEPDzb88keG49Hyy93DzxHqxCxQtKDaiscNaXyS7Ri1N"
+              alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
+              className="object-cover object-center h-3/4"
+            />
+            <img
+              src="https://ipfs.filebase.io/ipfs/QmUqRcVmsVA6z6zYx4PJVR2NsHCngmPq27uLNhcWZx3HCs/QmfUk75HpsgyfELNRUHqkfhTJbaFsVmeSMcGdHL2HPzv3c"
+              alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
+              className="absolute inset-0 object-cover object-center translate-x-80 translate-y-2/4 h-3/4"
+            />
+          </div>
+          <div className="flex flex-col w-11/12 m-auto p-10">
+            <div className="pb-6">
+              <h1 className="text-4xl font-medium">SHOP NOW</h1>
+              <p className="text-3xl italic font-light">the essentials</p>
+            </div>
+
+            <div className="pb-8">
+              <p className="tracking-wide">Discover our stylish curation of decorative objects, tabletop essentials, storied curious, trusted kitchen tools, and so much more.</p>
+            </div>
+
+            <div>
+              <Link href={"/home"} className="underline underline-offset-4 flex justify-center">EXPLORE OUR HOME</Link>
             </div>
           </div>
         </div>
+        <div></div>
       </div>
     </div>
   );
