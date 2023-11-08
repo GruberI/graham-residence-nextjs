@@ -6,7 +6,7 @@ import { Popover, Transition } from "@headlessui/react";
 const navigation = {
   categories: [
     {
-      name: "The Shop",
+      name: "Shop",
       art: [
         { name: "Shop All", href: `/art` },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
@@ -28,7 +28,8 @@ const navigation = {
   ],
   other: [
     { name: "The Property", href: "https://www.grahamresidence.com/" },
-    { name: "The Exhibit", href: "/exhibition" },
+    { name: "Exhibition", href: "/exhibition" },
+    { name: "Contact us", id: "contact-us" },
   ],
 };
 
@@ -36,10 +37,18 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+const handleClickScroll = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    // Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export default function PopoverItems() {
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch ">
-      <div className="flex h-14 space-x-8 overflow-x-auto border-t px-4 pb-px sm:h-full sm:justify-center sm:overflow-visible sm:border-t-0 sm:pb-0 hover:text-slate-60">
+      <div className="flex h-14 space-x-8 overflow-x-auto border-t px-4 pb-px sm:h-full sm:justify-center sm:overflow-visible sm:border-t-0 sm:pb-0">
         {navigation.categories.map((category, categoryIdx) => (
           <Popover key={categoryIdx} className="flex">
             {({ open }) => (
@@ -47,10 +56,9 @@ export default function PopoverItems() {
                 <div className="relative flex">
                   <Popover.Button
                     className={classNames(
-                      open ? "" : "hover:text-gray-800",
+                      open ? "black" : "hover:text-neutral-600",
                       "relative z-10 -mb-px flex items-center border-b-1 pt-px text-sm font-medium duration-200 ease-out outline-none"
                     )}
-                  
                   >
                     {category.name}
                   </Popover.Button>
@@ -161,15 +169,25 @@ export default function PopoverItems() {
           </Popover>
         ))}
 
-        {navigation.other.map((item) => (
-          <a
-            key={item.name}
-            href={item.href}
-            className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-          >
-            {item.name}
-          </a>
-        ))}
+        {navigation.other.map((item) =>
+          item.id === "contact-us" ? (
+            <a
+              key={item.name}
+              onClick={() => handleClickScroll(item.id)}
+              className="flex items-center text-sm font-medium text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
+            >
+              {item.name}
+            </a>
+          ) : (
+            <a
+              key={item.name}
+              href={item.href}
+              className="flex items-center text-sm font-medium black hover:text-neutral-600"
+            >
+              {item.name}
+            </a>
+          )
+        )}
       </div>
     </Popover.Group>
   );

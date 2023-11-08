@@ -5,7 +5,7 @@ import MultiImageGrid from "@/components/Exhibition/MultiImageGrid";
 import ArtExhibition from "@/components/Exhibition/About/ArtExhibition";
 import Gallery from "@/components/Exhibition/Gallery";
 import Artist from "@/components/Exhibition/About/Artist";
-import Contact from "@/components/Exhibition/Contact";
+import Contact from "@/components/Contact";
 import SignUp from "@/components/Exhibition/SignUp";
 
 export default function Exhibition() {

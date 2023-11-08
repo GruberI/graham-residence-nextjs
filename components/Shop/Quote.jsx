@@ -37,7 +37,7 @@ export default function Quote() {
             <div>
               <Link
                 href={"/home"}
-                className="underline underline-offset-4 flex justify-center pr-6"
+                className="underline underline-offset-8 flex justify-center pr-6 hover:text-neutral-600"
               >
                 EXPLORE OUR HOME
               </Link>

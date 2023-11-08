@@ -40,7 +40,7 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   onClick={() => handleClickScroll(item.id)}
-                  className="flex items-center text-sm font-sm text-black hover:text-slate-600 scroll-smooth cursor-pointer"
+                  className="flex items-center text-sm font-sm text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
                  
                 >
                   {item.name}

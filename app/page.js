@@ -10,6 +10,7 @@ import { Suspense } from "react";
 import Carousel from "../components/Carousel/Carousel.jsx";
 import { getCollectionProducts } from "../lib/shopify";
 import Quote from '../components/Shop/Quote.jsx'
+import Contact from "@/components/Contact.jsx";
 
 export default async function Shop() {
   const products = await getProducts({});
@@ -35,6 +36,7 @@ export default async function Shop() {
       <Featured />
       <GoodsSection products={products} />
       <StayWithUs />
+      <Contact />
     </div>
   );
 }
