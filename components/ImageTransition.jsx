@@ -8,7 +8,7 @@ export default function ImageTransition ({ imgOne, imgTwo }) {
   
     return (
       <div
-        className="aspect-[3/4] w-full overflow-hidden bg-black-200 lg:aspect-none lg:h-80 border relative"
+        className="aspect-[3/4] w-full overflow-hidden bg-black-200 lg:aspect-none lg:h-80 relative"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >

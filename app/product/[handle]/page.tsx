@@ -8,7 +8,7 @@ import { getProduct } from "../../../lib/shopify";
 export const runtime = "edge";
 
 export async function generateMetadata({
-  params,
+  params
 }: {
   params: { handle: string };
 }): Promise<Metadata> {
@@ -46,7 +46,7 @@ export async function generateMetadata({
 }
 
 export default async function ProductPage({
-  params,
+  params
 }: {
   params: { handle: string };
 }) {

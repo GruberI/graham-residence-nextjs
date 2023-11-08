@@ -4,7 +4,7 @@ import { getCollectionProducts } from "../../lib/shopify";
 export default async function ArtSection() {
   const products = await getCollectionProducts({ collection: "Artwork" });
   const productsByTag = products.filter((product) => {
-    return product.tags.includes("yoni-goldberg");
+    return product.tags.includes("thai-mainhard");
   });
 
   if (!products?.length) return null;

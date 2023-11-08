@@ -24,7 +24,8 @@ export default async function Shop() {
       <Navigation />
       <HeroImage />
       <Suspense>
-      <Carousel products={productsByTag}/>
+      <div className="bg-neutral-100"><Carousel products={productsByTag}/></div>
+      
       </Suspense>
       <ArtSection products={products} />
       <Quote />

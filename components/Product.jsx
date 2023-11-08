@@ -10,8 +10,8 @@ export default function Product({ product }) {
     altText: product.featuredImage.altText,
   };
   const imgTwo = {
-    src: product.images[0].url,
-    altText: product.images[0].altText,
+    src: product.images[1]?.url,
+    altText: product.images[1]?.altText,
   };
 
   return (

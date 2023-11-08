@@ -7,7 +7,7 @@ import PopoverItems from "./PopoverItems";
 export default function Navbar() {
   return (
     <div className="bg-white">
-      <header className="relative bg-white">
+      <header className="relative">
         <nav aria-label="Top" className="w-screen sm:px-1 lg:px-1">
           <div className="border-b border-black px-4 pb-14 sm:px-0 sm:pb-0">
             <div className="flex h-20 items-center justify-between">

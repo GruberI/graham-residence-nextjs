@@ -55,7 +55,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", color: "grey", height: '32%', width: '6%' }}
+      style={{ ...style, display: "block", color: "grey", height: '30%', width: '6%' }}
       onClick={onClick}
     ><ChevronLeftIcon style={{ marginRight: '70%'}}/></div>
   );
@@ -100,7 +100,7 @@ export default class Carousel extends Component {
     return (
       <div className="w-11/12 m-auto">
         <div className="mt-10">
-          <Slider {...settings}>
+          <Slider {...settings} className='pl-4'>
             {this.props.products.map((product, i) => (
               <li
                 key={`${product.handle}${i}`}
