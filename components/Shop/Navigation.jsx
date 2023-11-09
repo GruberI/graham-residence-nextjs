@@ -7,12 +7,12 @@ const navigation = {
       id: "artwork",
     },
     {
-      name: "DECOR",
-      id: "homegoods",
-    },
-    {
       name: "FEATURED",
       id: "featured",
+    },
+    {
+      name: "DECOR",
+      id: "homegoods",
     },
   ],
 };

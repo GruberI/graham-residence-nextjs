@@ -30,7 +30,7 @@ export default function Contact() {
           <dl className="mx-auto mt-16 grid max-w-3xl grid-cols-1 gap-8 text-base leading-7 text-black sm:grid-cols-2 lg:mx-0 lg:max-w-none">
             {contact.map((value) => (
               <div key={value.name} className="relative flex justify-center">
-                <Link className="inline" href={value.email ? `mailto:${value.email}` : `${value.href}`}><span className="hover:underline hover:underline-offset-8">{value.text}</span></Link>
+                <Link className="inline" href={value.email ? `mailto:${value.email}` : `${value.href}`} target='_blank'><span className="hover:underline hover:underline-offset-8">{value.text}</span></Link>
               </div>
             ))}
           </dl>

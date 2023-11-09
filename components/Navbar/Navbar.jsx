@@ -28,6 +28,7 @@ export default function Navbar() {
               <a
                   href="https://www.airbnb.com/rooms/18312865?source_impression_id=p3_1697958503_wgsynyWLg4S60ges"
                   className="p-2 text-black hover:text-black-500"
+                  target='_blank'
                 >
                   {/* <span className="sr-only">Search</span>
                   <MagnifyingGlassIcon

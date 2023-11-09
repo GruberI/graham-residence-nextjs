@@ -60,6 +60,7 @@ export default function ProductDescription({ product }) {
                     src={image.url}
                     alt={image.altText}
                     className="aspect-[5/5] object-cover object-center"
+                    // className="aspect-[5/5] object-contain object-center"
                   />
                 </Tab.Panel>
               ))}

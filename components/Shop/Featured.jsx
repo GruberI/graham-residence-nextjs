@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Featured() {
   return (
     <div className="w-screen sm:px-0 lg:px-0 border-t border-b border-black" id="featured">
@@ -27,6 +29,14 @@ export default function Featured() {
               Kyle Andrew Steed (b. 1982; Savannah, GA) is a self-taught painter, photographer, muralist and typographer. For the first fourteen years of his life he moved across the southern US before his family settled in Nashville, Tennessee. This itinerant childhood where he often sought stability and a sense of home gave way to his singular visual language that draws on a range of influences including meditations, loss, sought utopias, memory, identity as well as longing and understanding of self. 
               Kyle Andrew Steed (b. 1982; Savannah, GA) is a self-taught painter, photographer, muralist and typographer. For the first fourteen years of his life he moved across the southern US before his family settled in Nashville, Tennessee. 
               </p>
+            </div>
+            <div>
+              <Link
+                href={"/exhibition"}
+                className="underline underline-offset-8 flex justify-center pr-6 pt-4 hover:text-neutral-600"
+              >
+                SEE THE EXHIBIT
+              </Link>
             </div>
           </div>
 

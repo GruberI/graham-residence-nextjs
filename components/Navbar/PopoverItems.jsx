@@ -11,6 +11,7 @@ const navigation = {
         { name: "Shop All", href: `/art` },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Minhard", href: "/art/thai-mainhard" },
+        { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
       ],
       decor: [
         { name: "Shop All", href: "/home" },
@@ -27,7 +28,7 @@ const navigation = {
     },
   ],
   other: [
-    { name: "The Property", href: "https://www.grahamresidence.com/" },
+    { name: "The Property", href: "https://www.grahamresidence.com/", id: "property" },
     { name: "Exhibition", href: "/exhibition" },
     { name: "Contact us", id: "contact-us" },
   ],
@@ -183,6 +184,7 @@ export default function PopoverItems() {
               key={item.name}
               href={item.href}
               className="flex items-center text-sm font-medium black hover:text-neutral-600"
+              target={item.id === 'property' && "_blank"}
             >
               {item.name}
             </a>

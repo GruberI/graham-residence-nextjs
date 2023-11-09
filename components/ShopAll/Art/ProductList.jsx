@@ -29,7 +29,7 @@ export default function ProductList({products}) {
   return (
     <div className="bg-white">
       <div>
-        <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <main className="mx-auto w-11/12 px-4 sm:px-6 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-16">
           <h1 className="text2xl font-light tracking-widest text-gray-900"> {`${products.length} ARTWORKS`}</h1>
             <div className="flex items-center">

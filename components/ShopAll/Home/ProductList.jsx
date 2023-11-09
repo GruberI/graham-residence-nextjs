@@ -29,7 +29,7 @@ export default function ProductList({products}) {
   return (
     <div className="bg-white">
       <div>
-        <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <main className="mx-auto w-11/12 px-4 sm:px-6 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
             <h1 className="text-4xl font-light tracking-wide text-gray-900">All Products</h1>
 
@@ -80,8 +80,8 @@ export default function ProductList({products}) {
           </div>
 
           <section aria-labelledby="products-heading" className="pb-24 pt-6">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
-              {/* Filters */}
+            {/* <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4"> */}
+              {/* Filters
               <form className="hidden lg:block">
                 <h3 className="sr-only">Categories</h3>
                 <ul role="list" className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
@@ -91,16 +91,16 @@ export default function ProductList({products}) {
                     </li>
                   ))}
                 </ul>
-              </form>
+              </form> */}
 
               {/* Product grid */}
-              <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:col-span-3 lg:gap-x-8">
+              <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:col-span-3 lg:gap-x-8">
                 {products.map((product) => (
                     <Product product={product}/>
                 ))}
               </div>
               
-            </div>
+            {/* </div> */}
           </section>
         </main>
       </div>
