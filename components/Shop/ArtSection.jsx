@@ -13,7 +13,7 @@ export default async function ArtSection() {
     <div className="mx-auto max-w-1xl py-4 sm:px-6 sm:py-20 lg:max-w-7xl lg:px-8">
       <div className="mx-auto text-left pb-6" id="artwork">
         <h2 className="text-1xl text-black border-b border-black pb-2">
-          ARTWORKS
+          ARTWORK
         </h2>
       </div>
       <ProductsGrid products={productsByTag} />

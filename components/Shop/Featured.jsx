@@ -35,7 +35,7 @@ export default function Featured() {
                 href={"/exhibition"}
                 className="underline underline-offset-8 flex justify-center pr-6 pt-4 hover:text-neutral-600"
               >
-                SEE THE EXHIBIT
+                SEE THE EXHIBITION
               </Link>
             </div>
           </div>

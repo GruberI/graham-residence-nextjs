@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-
 import ProductDescription from "@/components/ProductDescription/ProductDescription";
 import { HIDDEN_PRODUCT_TAG } from "../../../lib/constants";
 import { getProduct } from "../../../lib/shopify";
+import Contact from "@/components/Contact";
 
 export const runtime = "edge";
 
@@ -80,6 +80,9 @@ export default async function ProductPage({
         }}
       />
       <ProductDescription product={product} />
+      <div className="mb-20">
+        <Contact />
+      </div>
     </>
   );
 }

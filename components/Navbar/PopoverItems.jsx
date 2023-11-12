@@ -1,5 +1,4 @@
 "use client";
-
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 
@@ -8,7 +7,7 @@ const navigation = {
     {
       name: "Shop",
       art: [
-        { name: "Shop All", href: `/art` },
+        { name: "Shop All", href: "/art" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Minhard", href: "/art/thai-mainhard" },
         { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
@@ -17,19 +16,20 @@ const navigation = {
         { name: "Shop All", href: "/home" },
         // { name: 'Jewelry', href: '#' },
         // { name: 'Handbags', href: '#' },
-        // { name: 'Socks', href: '#' },
-        // { name: 'Hats', href: '#' },
-        // { name: 'Browse All', href: '#' },
       ],
       categories: [
-        { name: "New Arrivals", href: "#" },
-        { name: "Sale", href: "#" },
+        { name: "New Arrivals", href: "/categories/new-arrivals" },
+        { name: "Sale", href: "/categories/sale" },
       ],
     },
   ],
   other: [
-    { name: "The Property", href: "https://www.grahamresidence.com/", id: "property" },
     { name: "Exhibition", href: "/exhibition" },
+    {
+      name: "The Property",
+      href: "https://www.grahamresidence.com/",
+      id: "property",
+    },
     { name: "Contact us", id: "contact-us" },
   ],
 };
@@ -58,7 +58,7 @@ export default function PopoverItems() {
                   <Popover.Button
                     className={classNames(
                       open ? "black" : "hover:text-neutral-600",
-                      "relative z-10 -mb-px flex items-center border-b-1 pt-px text-sm font-medium duration-200 ease-out outline-none"
+                      "relative z-10 -mb-px flex items-center border-b-1 pt-px lg:text-sm md:text-xs sm:text-xs font-medium duration-200 ease-out outline-none"
                     )}
                   >
                     {category.name}
@@ -87,7 +87,7 @@ export default function PopoverItems() {
                           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:gap-x-8">
                             <div>
                               <p
-                                id="clothing-heading"
+                                id="art-heading"
                                 className="font-medium text-gray-900"
                               >
                                 ART
@@ -95,7 +95,7 @@ export default function PopoverItems() {
                               <div className="mt-4 border-t border-gray-200 pt-6 sm:grid sm:grid-cols-2 sm:gap-x-6">
                                 <ul
                                   role="list"
-                                  aria-labelledby="clothing-heading"
+                                  aria-labelledby="art-heading"
                                   className="space-y-6 sm:space-y-4"
                                 >
                                   {category.art.map((item) => (
@@ -113,14 +113,14 @@ export default function PopoverItems() {
                             </div>
                             <div>
                               <p
-                                id="accessories-heading"
+                                id="decor-heading"
                                 className="font-medium text-gray-900"
                               >
                                 DECOR
                               </p>
                               <ul
                                 role="list"
-                                aria-labelledby="accessories-heading"
+                                aria-labelledby="decor-heading"
                                 className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4"
                               >
                                 {category.decor.map((item) => (
@@ -175,7 +175,7 @@ export default function PopoverItems() {
             <a
               key={item.name}
               onClick={() => handleClickScroll(item.id)}
-              className="flex items-center text-sm font-medium text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
+              className="flex items-center lg:text-sm md:text-xs sm:text-xs font-medium text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
             >
               {item.name}
             </a>
@@ -183,8 +183,8 @@ export default function PopoverItems() {
             <a
               key={item.name}
               href={item.href}
-              className="flex items-center text-sm font-medium black hover:text-neutral-600"
-              target={item.id === 'property' && "_blank"}
+              className="flex items-center lg:text-sm md:text-xs sm:text-xs font-medium black hover:text-neutral-600"
+              target={item.id === "property" ? "_blank" : undefined }
             >
               {item.name}
             </a>

@@ -3,7 +3,7 @@
 const navigation = {
   categories: [
     {
-      name: "ARTWORKS",
+      name: "ARTWORK",
       id: "artwork",
     },
     {
@@ -30,7 +30,7 @@ export default function Navigation() {
   return (
     <div
       aria-label="Top"
-      className="w-screen sm:px-0 lg:px-0 sticky top-0 z-[1]"
+      className="w-screen sm:px-0 lg:px-0 sticky top-0 z-[1] animate-fade"
     >
       <div className="bg-white">
         <div className="mx-auto text-center">
