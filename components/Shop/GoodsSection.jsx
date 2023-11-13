@@ -11,7 +11,7 @@ export default async function GoodsSection() {
   if (!products?.length) return null;
 
   return (
-    <div className="mx-auto py-4 lg:px-16 sm:px-10 sm:py-16 lg:px-8">
+    <div className="mx-auto py-8 lg:px-18 sm:px-12 sm:py-16 lg:px-16">
       <div className="mx-auto text-left pb-6 scroll-smooth" id="homegoods">
         <h2
           className="text-2xl text-black border-b border-black pb-2"
