@@ -1,6 +1,6 @@
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "../../lib/shopify";
-import Instagram from "../../components/Shop/InstagramPhotos.jsx";
+// import Instagram from "../../components/Shop/InstagramPhotos.jsx";
 
 export default async function Shop() {
   const products = await getProducts({});
@@ -11,7 +11,7 @@ export default async function Shop() {
 
   return (
     <div className="bg-white py-1 sm:py-10 lg:py-10">
-   <Instagram />
+
     </div>
   );
 }

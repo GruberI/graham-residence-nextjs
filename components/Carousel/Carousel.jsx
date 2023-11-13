@@ -55,9 +55,9 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", color: "grey", height: '30%', width: '6%' }}
+      style={{ ...style, display: "block", color: "grey", height: '30%', width: '5%' }}
       onClick={onClick}
-    ><ChevronLeftIcon style={{ marginRight: '70%'}}/></div>
+    ><ChevronLeftIcon style={{ marginRight: '60%'}}/></div>
   );
 }
 
@@ -99,15 +99,15 @@ export default class Carousel extends Component {
     };
     return (
       <div className="w-11/12 m-auto">
-        <div className="mt-10">
-          <Slider {...settings} className='pl-4'>
+        <div className="mt-10 mb-4">
+          <Slider {...settings}>
             {this.props.products.map((product, i) => (
               <li
                 key={`${product.handle}${i}`}
-                className="aspect-square w-full flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
+                className="aspect-square flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
               >
                 <Link
-                  className="relative h-full w-full"
+                  className="relative"
                   href={`/product/${product.handle}`}
                 >
                   <GridTileImage
@@ -123,12 +123,12 @@ export default class Carousel extends Component {
                     sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
                   />
                 </Link>
-                <Label
+                {/* <Label
                   title={product.title}
                   amount={product.priceRange.maxVariantPrice.amount}
                   currencyCode={product.currencyCode}
                   position={product.position}
-                />
+                /> */}
               </li>
             ))}
           </Slider>
