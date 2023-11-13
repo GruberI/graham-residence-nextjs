@@ -3,7 +3,7 @@ import { getCollection, getCollectionProducts } from '../../../lib/shopify';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-import ProductList from './ProductList';
+import ProductSection from './ProductSection';
 
 export const runtime = 'edge';
 
@@ -33,7 +33,7 @@ export default async function ShopAllHome() {
       {products.length === 0 ? (
         <p className="py-3 text-lg">{`No products found in this collection`}</p>
       ) : (
-        <ProductList products={products} />
+        <ProductSection products={products} />
  
       )}
     </section>

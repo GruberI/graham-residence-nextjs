@@ -1,6 +1,6 @@
 export default function StayWithUs() {
   return (
-    <div className="w-screen sm:px-0 lg:px-0 border-t border-black">
+    <div className="w-screen sm:px-0 lg:px-0 border-t border-black mx-8">
 
 <div className="mt-20 overflow-hidden sm:mt-20">
           <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">

@@ -53,13 +53,13 @@ export default function ProductDescription({ product }) {
               </Tab.List>
             </div>
 
-            <Tab.Panels className="aspect-h-1 aspect-w-1 w-full">
+            <Tab.Panels className="aspect-[3/4] ">
               {product.images.map((image, i) => (
-                <Tab.Panel key={i}>
+                <Tab.Panel key={i} >
                   <img
                     src={image.url}
                     alt={image.altText}
-                    className="aspect-[5/5] object-cover object-center"
+                    className="h-full w-full object-cover object-center"
                     // className="aspect-[5/5] object-contain object-center"
                   />
                 </Tab.Panel>

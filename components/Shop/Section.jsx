@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 
-export default function Quote() {
+export default function Section() {
   return (
     <div className="w-screen pb-20 bg-neutral-100">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-20 mb-0 lg:max-w-7xl lg:px-6 mb-20">

@@ -5,14 +5,14 @@ import { Popover, Transition } from "@headlessui/react";
 const navigation = {
   categories: [
     {
-      name: "Shop",
+      name: "Shop All",
       art: [
         { name: "Shop All", href: "/art" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
-        { name: "Thai Minhard", href: "/art/thai-mainhard" },
+        { name: "Thai Mainhard", href: "/art/thai-mainhard" },
         { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
       ],
-      decor: [
+      home: [
         { name: "Shop All", href: "/home" },
         // { name: 'Jewelry', href: '#' },
         // { name: 'Handbags', href: '#' },
@@ -24,13 +24,14 @@ const navigation = {
     },
   ],
   other: [
+    { name: "Shop", href: "/" },
     { name: "Exhibition", href: "/exhibition" },
     {
-      name: "The Property",
+      name: "Property",
       href: "https://www.grahamresidence.com/",
       id: "property",
     },
-    { name: "Contact us", id: "contact-us" },
+    { name: "Contact", id: "contact-us" },
   ],
 };
 
@@ -48,8 +49,8 @@ const handleClickScroll = (id) => {
 
 export default function PopoverItems() {
   return (
-    <Popover.Group className="absolute inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch ">
-      <div className="flex h-14 space-x-8 overflow-x-auto border-t px-4 pb-px sm:h-full sm:justify-center sm:overflow-visible sm:border-t-0 sm:pb-0">
+    <Popover.Group className="absolute inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch">
+      <div className="flex h-14 space-x-8 overflow-x-auto border-t px-2 pb-px sm:h-full sm:justify-center sm:overflow-visible sm:border-t-0 sm:pb-0">
         {navigation.categories.map((category, categoryIdx) => (
           <Popover key={categoryIdx} className="flex">
             {({ open }) => (
@@ -58,7 +59,7 @@ export default function PopoverItems() {
                   <Popover.Button
                     className={classNames(
                       open ? "black" : "hover:text-neutral-600",
-                      "relative z-10 -mb-px flex items-center border-b-1 pt-px lg:text-sm md:text-xs sm:text-xs font-medium duration-200 ease-out outline-none"
+                      "relative z-10 -mb-px flex items-center border-b-1 pt-px lg:text-sm md:text-xs sm:text-xs duration-200 ease-out outline-none"
                     )}
                   >
                     {category.name}
@@ -113,17 +114,17 @@ export default function PopoverItems() {
                             </div>
                             <div>
                               <p
-                                id="decor-heading"
+                                id="home-heading"
                                 className="font-medium text-gray-900"
                               >
-                                DECOR
+                                HOME
                               </p>
                               <ul
                                 role="list"
-                                aria-labelledby="decor-heading"
+                                aria-labelledby="home-heading"
                                 className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4"
                               >
-                                {category.decor.map((item) => (
+                                {category.home.map((item) => (
                                   <li key={item.name} className="flex">
                                     <a
                                       href={item.href}
@@ -175,7 +176,7 @@ export default function PopoverItems() {
             <a
               key={item.name}
               onClick={() => handleClickScroll(item.id)}
-              className="flex items-center lg:text-sm md:text-xs sm:text-xs font-medium text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
+              className="flex items-center lg:text-sm md:text-xs sm:text-xs  text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
             >
               {item.name}
             </a>
@@ -183,7 +184,7 @@ export default function PopoverItems() {
             <a
               key={item.name}
               href={item.href}
-              className="flex items-center lg:text-sm md:text-xs sm:text-xs font-medium black hover:text-neutral-600"
+              className="flex items-center lg:text-sm md:text-xs sm:text-xs  black hover:text-neutral-600"
               target={item.id === "property" ? "_blank" : undefined }
             >
               {item.name}

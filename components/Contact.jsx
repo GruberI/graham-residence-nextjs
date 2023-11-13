@@ -1,24 +1,27 @@
-import Link
- from "next/link";
+import Link from "next/link";
 const contact = [
   {
     name: "artwork",
-    text: "Artwork & shop inquires: tgr@grahamresidence.com",
+    text: "Artwork & shop inquires:",
+    subtext: "tgr@grahamresidence.com",
     email: "tgr@grahamresidence.com",
   },
   {
     name: "airbnb",
-    text: "Stay with us: Airbnb",
+    text: "Stay with us:",
+    subtext: "Airbnb",
     href: "https://www.airbnb.com/rooms/18312865?source_impression_id=p3_1697958503_wgsynyWLg4S60ges",
   },
   {
     name: "artist representation",
-    text: "Artist representation: lindsey@lindseygoldbergdesigns.com",
+    text: "Artist representation:",
+    subtext: "lindsey@lindseygoldbergdesigns.com",
     email: "lindsey@lindseygoldbergdesigns.com",
   },
   {
     name: "photography",
-    text: "Shoots & Events: Peerspace",
+    text: "Shoots & Events:",
+    subtext: "Peerspace",
     href: "https://www.peerspace.com/pages/listings/619d39bcbdb172000d2c030e?sort_order=12",
   },
 ];
@@ -30,7 +33,20 @@ export default function Contact() {
           <dl className="mx-auto mt-16 grid max-w-3xl grid-cols-1 gap-8 text-base leading-7 text-black sm:grid-cols-2 lg:mx-0 lg:max-w-none">
             {contact.map((value) => (
               <div key={value.name} className="relative flex justify-center">
-                <Link className="inline" href={value.email ? `mailto:${value.email}` : `${value.href}`} target='_blank'><span className="hover:underline hover:underline-offset-8">{value.text}</span></Link>
+                <p>
+                  {value.text}{" "}
+                  <span className="hover:underline hover:underline-offset-8">
+                    <Link
+                      className="inline"
+                      href={
+                        value.email ? `mailto:${value.email}` : `${value.href}`
+                      }
+                      target="_blank"
+                    >
+                      {value.subtext}
+                    </Link>{" "}
+                  </span>
+                </p>
               </div>
             ))}
           </dl>

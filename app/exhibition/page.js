@@ -3,7 +3,7 @@ import TwoImageGrid from "@/components/Exhibition/TwoImageGrid";
 import Quote from "@/components/Exhibition/Quote";
 import MultiImageGrid from "@/components/Exhibition/MultiImageGrid";
 import ArtExhibition from "@/components/Exhibition/About/ArtExhibition";
-import Gallery from "@/components/Exhibition/Gallery";
+import Gallery from "@/components/Exhibition/SixImageGallery";
 import Artist from "@/components/Exhibition/About/Artist";
 import Contact from "@/components/Contact";
 import SignUp from "@/components/Exhibition/SignUp";

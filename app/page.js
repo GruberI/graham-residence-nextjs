@@ -9,7 +9,7 @@ import { getProducts } from "@/lib/shopify";
 import { Suspense } from "react";
 import Carousel from "../components/Carousel/Carousel.jsx";
 import { getCollectionProducts } from "../lib/shopify";
-import Quote from "../components/Shop/Quote.jsx";
+import Section from "../components/Shop/Section.jsx";
 import Contact from "@/components/Contact.jsx";
 
 export default async function Shop() {
@@ -26,12 +26,12 @@ export default async function Shop() {
   return (
     <div className="bg-white py-1 sm:py-10 lg:py-10">
       <Header />
-      <Navigation />
       <HeroImage />
       <Suspense>
         <Carousel products={productsByTag} />
       </Suspense>
-      <Quote />
+      <Section />
+      <Navigation />
       <ArtSection products={products} />
       <Featured />
       <GoodsSection products={products} />

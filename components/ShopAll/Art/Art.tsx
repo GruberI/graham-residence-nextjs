@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
-import ProductList from "./ProductList";
+import ProductSection from "./ProductSection";
 
 export const runtime = "edge";
 
@@ -37,7 +37,7 @@ export default async function ShopAllArt({ productsByHandle }) {
           {productsByHandle.length === 0 ? (
             <p className="py-3 text-lg">{`No products found in this collection`}</p>
           ) : (
-            <ProductList products={productsByHandle} />
+            <ProductSection products={productsByHandle} />
           )}
         </section>
       </Suspense>

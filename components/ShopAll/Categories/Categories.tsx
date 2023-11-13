@@ -1,5 +1,5 @@
 import CatgoriesHeader from "./Header";
-import ProductList from "../Home/ProductList";
+import ProductSection from "../Home/ProductSection";
 
 export default async function ShopCategories({ productsByHandle }) {
   // console.log('CONSOLE LOG CATEGORIES:', productsByHandle)
@@ -10,7 +10,7 @@ export default async function ShopCategories({ productsByHandle }) {
         {productsByHandle.length === 0 ? (
           <p className="py-10 text-lg text-center">{`No products found in this collection, check back later.`}</p>
         ) : (
-          <ProductList products={productsByHandle} />
+          <ProductSection products={productsByHandle} />
         )}
       </section>
     </>
