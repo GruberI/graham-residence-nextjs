@@ -81,7 +81,7 @@ export default function ProductDescription({ product }) {
                 }).format(parseFloat(amount))}`}
               </p>
             </div>
-            <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-6 mb-20">THAI MINHARD</p>
+            <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-6 mb-20">{product.vendor.toUpperCase()}</p>
             <VariantSelector
               options={product.options}
               variants={product.variants}
