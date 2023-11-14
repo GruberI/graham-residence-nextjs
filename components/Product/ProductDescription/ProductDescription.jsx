@@ -23,8 +23,8 @@ export default function ProductDescription({ product }) {
           {/* Image gallery */}
           <Tab.Group as="div" className="flex flex-col-reverse">
             {/* Image selector */}
-            <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
-              <Tab.List className="grid grid-cols-4 gap-8">
+            <div className="mx-auto mt-6 hidden w-11/12 max-w-2xl sm:block lg:max-w-none">
+              <Tab.List className="grid grid-cols-4 gap-8 ">
                 {product.images.map((image, i) => (
                   <Tab
                     key={i}
@@ -54,14 +54,14 @@ export default function ProductDescription({ product }) {
               </Tab.List>
             </div>
 
-            <Tab.Panels >
+            <Tab.Panels className=''>
               {product.images.map((image, i) => (
-                <Tab.Panel key={i}>
+                <Tab.Panel key={i} className='flex justify-center'>
                   <img
                     src={image.url}
                     alt={image.altText}
                     // className="h-full w-full object-cover object-center"
-                    className="mainImg w-full object-center"
+                    className="mainImg w-11/12 object-center aspect-[3/4]"
                   />
                 </Tab.Panel>
               ))}
