@@ -1,6 +1,4 @@
-import ShopAllArt from "../../../components/ShopAll/Art/Art";
 import ShopCategories from "@/components/ShopAll/Categories/Categories";
-import { getCollectionProducts } from "../../../lib/shopify";
 import { getProducts } from "@/lib/shopify";
 // import type { Metadata } from "next";
 import { notFound } from "next/navigation";

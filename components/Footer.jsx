@@ -39,8 +39,8 @@ const navigation = [
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-black">
-      <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center space-x-6 md:order-2">
+      <div className="mx-auto px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+        <div className="flex justify-center space-x-6 md:order-3">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -53,9 +53,12 @@ export default function Footer() {
             </a>
           ))}
         </div>
+        <div className="md:order-2 flex">
+          <a href="/shipping" className="lg:pt-0 sm:pt-5 hover:text-neutral-600">Shipping & Returns</a>
+        </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-black-500">
-            &copy; 2023 The Graham Residence. All rights reserved.
+            &copy; 2023 The Graham Residence. 
           </p>
         </div>
       </div>

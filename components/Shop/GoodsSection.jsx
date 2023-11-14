@@ -1,5 +1,5 @@
 import { getCollectionProducts } from "../../lib/shopify";
-import ProductGridFour from "../ProductGridFour";
+import ProductGridFour from "../Product/ProductGridFour";
 
 export default async function GoodsSection() {
   const products = await getCollectionProducts({ collection: "home-goods" });

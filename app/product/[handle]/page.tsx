@@ -80,9 +80,6 @@ export default async function ProductPage({
         }}
       />
       <ProductDescription product={product} />
-      <div className="mb-20">
-        <Contact />
-      </div>
     </>
   );
 }
