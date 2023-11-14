@@ -3,7 +3,7 @@ import ShopCategories from "@/components/ShopAll/Categories/Categories";
 import { getCollectionProducts } from "../../../lib/shopify";
 import { getProducts } from "@/lib/shopify";
 // import type { Metadata } from "next";
-// import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 
 export const runtime = "edge";
 
@@ -60,7 +60,7 @@ export default async function Categories({
       return product.tags.includes(params.handle);
     });
   
-    if (!products?.length) return null;
+    if (!products?.length) return notFound();
 
   // const productsByTag = products.filter((product) => {
   //   return product.tags.includes("yoni-goldberg");

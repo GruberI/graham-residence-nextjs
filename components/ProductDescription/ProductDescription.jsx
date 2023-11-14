@@ -2,6 +2,7 @@
 import { Fragment, Tab } from "@headlessui/react";
 import { AddToCart } from "../Cart/add-to-cart";
 import { VariantSelector } from "./variant-selector";
+import './ProductDescription.css'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -53,14 +54,14 @@ export default function ProductDescription({ product }) {
               </Tab.List>
             </div>
 
-            <Tab.Panels className="aspect-[3/4] ">
+            <Tab.Panels >
               {product.images.map((image, i) => (
-                <Tab.Panel key={i} >
+                <Tab.Panel key={i}>
                   <img
                     src={image.url}
                     alt={image.altText}
-                    className="h-full w-full object-cover object-center"
-                    // className="aspect-[5/5] object-contain object-center"
+                    // className="h-full w-full object-cover object-center"
+                    className="mainImg w-full object-center"
                   />
                 </Tab.Panel>
               ))}
@@ -135,3 +136,9 @@ export default function ProductDescription({ product }) {
     </div>
   );
 }
+
+// [aria-labelledby^="headlessui-tabs-tab"] img {
+//   height: 435px;
+//   object-fit: contain;
+//   border: 1px solid rgba(0,0,0,.05);
+// }

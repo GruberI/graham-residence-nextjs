@@ -7,19 +7,20 @@ const navigation = {
     {
       name: "Shop All",
       art: [
-        { name: "Shop All", href: "/art" },
+        { name: "All Artwork", href: "/art" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
         { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
       ],
       home: [
         { name: "Shop All", href: "/home" },
-        // { name: 'Jewelry', href: '#' },
-        // { name: 'Handbags', href: '#' },
+        // { name: 'Kitchen', href: '/kitchen' },
+        // { name: 'Bedroom', href: '/bedroom-furniture' },
       ],
       categories: [
         { name: "New Arrivals", href: "/categories/new-arrivals" },
         { name: "Sale", href: "/categories/sale" },
+        // { name: "Holiday", href: "/categories/holiday" },
       ],
     },
   ],

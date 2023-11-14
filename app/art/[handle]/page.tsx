@@ -54,7 +54,7 @@ export default async function ShopAll({
       return product.tags.includes(params.handle);
     });
   
-    if (!products?.length) return null;
+    if (!products?.length) return notFound();
 
   // const productsByTag = products.filter((product) => {
   //   return product.tags.includes("yoni-goldberg");
@@ -62,6 +62,6 @@ export default async function ShopAll({
 
 
     return (
-        <ShopAllArt productsByHandle={productsByHandle}/>
+        <ShopAllArt productsByHandle={productsByHandle} pageTitle={params.handle}/>
     )
 }

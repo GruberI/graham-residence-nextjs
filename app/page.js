@@ -11,6 +11,7 @@ import Carousel from "../components/Carousel/Carousel.jsx";
 import { getCollectionProducts } from "../lib/shopify";
 import Section from "../components/Shop/Section.jsx";
 import Contact from "@/components/Contact.jsx";
+import { notFound } from "next/navigation";
 
 export default async function Shop() {
   const products = await getProducts({});
@@ -21,7 +22,7 @@ export default async function Shop() {
     return product.tags.includes("acrylic");
   });
 
-  if (!products?.length) return null;
+  if (!productsByTag) return notFound();
 
   return (
     <div className="bg-white py-1 sm:py-10 lg:py-10">

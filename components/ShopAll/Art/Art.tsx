@@ -26,12 +26,12 @@ export async function generateMetadata({
   };
 }
 
-export default async function ShopAllArt({ productsByHandle }) {
+export default async function ShopAllArt({ productsByHandle, pageTitle }) {
   // const products = await getCollectionProducts({ collection: "Artwork" });
 
   return (
     <>
-      <ShopAllArtHeader />
+      <ShopAllArtHeader pageTitle={pageTitle}/>
       <Suspense>
         <section>
           {productsByHandle.length === 0 ? (
