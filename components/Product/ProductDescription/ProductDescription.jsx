@@ -1,6 +1,6 @@
 "use client";
 import { Fragment, Tab } from "@headlessui/react";
-import { AddToCart } from "../Cart/add-to-cart";
+import { AddToCart } from "../../Cart/add-to-cart";
 import { VariantSelector } from "./variant-selector";
 import './ProductDescription.css'
 
