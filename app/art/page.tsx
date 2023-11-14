@@ -12,7 +12,7 @@ export default async function ShopAll() {
 
   return (
     <>
-      <ShopAllArt productsByHandle={products} pageTitle='All Artwork'/>
+      <ShopAllArt productsByHandle={products} pageTitle="All Artwork" />
       <div className="pb-20">
         <Contact />
       </div>

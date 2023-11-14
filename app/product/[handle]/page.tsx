@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ProductDescription from "@/components/ProductDescription/ProductDescription";
+import ProductDescription from "@/components/Product/ProductDescription/ProductDescription";
 import { HIDDEN_PRODUCT_TAG } from "../../../lib/constants";
 import { getProduct } from "../../../lib/shopify";
-import Contact from "@/components/Contact";
 
 export const runtime = "edge";
 

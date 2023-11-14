@@ -44,28 +44,17 @@ export const runtime = "edge";
 // }
 
 export default async function Categories({
-    params
-  }: {
-    params: { handle: string };
-  }) {
-    const products = await getProducts({});
-    // console.log('Products', products)
-    // const productsByCollection = await getCollectionProducts({
-    //   collection: "Artwork",
-    // });
+  params,
+}: {
+  params: { handle: string };
+}) {
+  const products = await getProducts({});
 
-    const productsByHandle = products.filter((product) => {
-      return product.tags.includes(params.handle);
-    });
-  
-    if (!products?.length) return notFound();
+  const productsByHandle = products.filter((product) => {
+    return product.tags.includes(params.handle);
+  });
 
-  // const productsByTag = products.filter((product) => {
-  //   return product.tags.includes("yoni-goldberg");
-  // });
+  if (!products?.length) return notFound();
 
-
-    return (
-        <ShopCategories productsByHandle={productsByHandle}/>
-    )
+  return <ShopCategories productsByHandle={productsByHandle} />;
 }
