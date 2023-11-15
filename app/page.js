@@ -1,5 +1,5 @@
-import Navigation from "@/components/Shop/Navigation";
-import Header from "@/components/Shop/Header";
+// import Navigation from "@/components/Shop/Navigation";
+// import Header from "@/components/Shop/Header";
 import HeroImage from "@/components/Shop/HeroImage";
 import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
@@ -24,14 +24,12 @@ export default async function Shop() {
   if (!productsByTag) return notFound();
 
   return (
-    <div className="bg-white py-1 sm:py-10 lg:py-10">
-      <Header />
+    <div className="bg-white overflow-hidden">
       <HeroImage />
       <Suspense>
         <Carousel products={productsByTag} />
       </Suspense>
       <Section />
-      <Navigation />
       <ArtSection products={products} />
       <Featured />
       <GoodsSection products={products} />

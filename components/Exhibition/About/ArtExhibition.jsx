@@ -1,7 +1,7 @@
 export default function ArtExhibition() {
   return (
     <div
-      className="w-screen sm:px-0 lg:px-0 border-t border-black"
+      className="w-screen sm:px-0 lg:px-0 border-t border-black-400"
       id="featured"
     >
       <div className="bg-white">

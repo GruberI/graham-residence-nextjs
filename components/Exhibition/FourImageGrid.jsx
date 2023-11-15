@@ -1,7 +1,7 @@
 import { getCollectionProducts } from "../../lib/shopify";
 import Link from "next/link";
 
-export default async function MultiImageGrid() {
+export default async function FourImageGrid() {
   const products = await getCollectionProducts({ collection: "Artwork" });
   const productsByTag = products.filter((product) => {
     return product.tags.includes("kyle-steed");
@@ -11,7 +11,7 @@ export default async function MultiImageGrid() {
 
   const imagesArray = productsByTag.splice(6, 9);
   return (
-    <div className="mx-auto my-20 max-w-1xl sm:px-6 lg:grid lg:max-w-8xl lg:grid-cols-2 lg:gap-x-6 lg:px-8">
+    <div className="mx-auto my-20 max-w-1xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-6 lg:px-8">
       <div className="">
         <Link href={`/product/${imagesArray[0].handle}`}>
           <div className="aspect-h-2 aspect-w-3 ml-16">

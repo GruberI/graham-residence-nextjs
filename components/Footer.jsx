@@ -53,12 +53,30 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <div className="md:order-2 flex">
-          <a href="/shipping" className="lg:pt-0 sm:pt-5 hover:text-neutral-600">Shipping & Returns</a>
+        <div className="md:order-2 flex ">
+          <a
+            href="/privacy"
+            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-normal px-6"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="/shipping"
+            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-normal px-6"
+          >
+            Shipping & Returns
+          </a>
+        
+          <a
+            href="/terms"
+            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-normal px-6"
+          >
+            Terms & Conditions
+          </a>
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-xs leading-5 text-black-500">
-            &copy; 2023 The Graham Residence. 
+          <p className="text-center text-xs leading-5 text-black-400">
+            &copy; 2023 The Graham Residence
           </p>
         </div>
       </div>

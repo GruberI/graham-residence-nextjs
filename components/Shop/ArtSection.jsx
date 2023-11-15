@@ -6,6 +6,7 @@ export default async function ArtSection() {
   const productsByTag = products.filter((product) => {
     return product.tags.includes("thai-mainhard");
   });
+  const eightProducts = productsByTag.slice(0,8)
 
   if (!products?.length) return null;
 
@@ -16,7 +17,7 @@ export default async function ArtSection() {
           ARTWORK
         </h2>
       </div>
-      <ProductGridFour products={productsByTag} />
+      <ProductGridFour products={eightProducts} />
     </div>
   );
 }

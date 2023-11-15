@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Suspense } from "react";
 
-export default function Section() {
+export default function Quote() {
   return (
-    <div className="w-screen pb-20">
+    <div className="w-screen pb-20 bg-neutral-100">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-20 mb-0 lg:max-w-7xl lg:px-6 mb-20">
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
           <Suspense>
@@ -22,13 +22,15 @@ export default function Section() {
           </Suspense>
           <div className="flex flex-col w-11/12 m-auto p-10">
             <div className="pb-6">
-              <h1 className="text-4xl font-medium">CURATION IS ABOUT</h1>
-              <p className="text-3xl italic font-light">intentionality</p>
+              <h1 className="text-4xl font-medium">SHOP NOW</h1>
+              <p className="text-3xl italic font-light">the essentials</p>
             </div>
 
             <div className="pb-8">
               <p className="tracking-wide">
-              A mid-century modern retreat nestled among the boulders of the Mojave Desert, The Graham Residence is where the boundaries between home and gallery are erased.  Discover the best contemporary artists and shop curated goods inspired by West Coast minimalism.
+                Discover our stylish curation of decorative objects, tabletop
+                essentials, storied curious, trusted kitchen tools, and so much
+                more.
               </p>
             </div>
 

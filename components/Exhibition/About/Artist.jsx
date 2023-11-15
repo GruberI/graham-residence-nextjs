@@ -1,6 +1,6 @@
 export default function Artist() {
   return (
-    <div className="w-screen sm:px-0 lg:px-0 border-t  border-black">
+    <div className="w-screen sm:px-0 lg:px-0 border-t border-black-400">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-20 mb-0 lg:max-w-7xl lg:px-6">
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
           <div>
