@@ -25,8 +25,8 @@ export default async function Shop() {
 
   return (
     <div className="bg-white overflow-hidden">
-      <HeroImage />
       <Suspense>
+        <HeroImage />
         <Carousel products={productsByTag} />
       </Suspense>
       <Section />
