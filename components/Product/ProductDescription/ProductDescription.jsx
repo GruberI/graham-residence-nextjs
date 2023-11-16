@@ -17,7 +17,7 @@ export default function ProductDescription({ product }) {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-16">
       <div className="mx-auto max-w-2xl px-0 py-24 sm:px-0 lg:max-w-7xl lg:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-20">
           {/* Image gallery */}

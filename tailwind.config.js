@@ -13,7 +13,8 @@ module.exports = {
       //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       // },
       animation: {
-        fade: 'fadeOut 2s',
+        fadeTwo: 'fadeOut 2s',
+        fadeFour: 'fadeOut 4s'
       },
       keyframes: theme => ({
         fadeOut: {

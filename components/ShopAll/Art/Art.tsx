@@ -30,7 +30,7 @@ export default async function ShopAllArt({ productsByHandle, pageTitle }) {
   // const products = await getCollectionProducts({ collection: "Artwork" });
 
   return (
-    <>
+    <div className="mt-20">
       <ShopAllArtHeader pageTitle={pageTitle}/>
       <Suspense>
         <section>
@@ -41,6 +41,6 @@ export default async function ShopAllArt({ productsByHandle, pageTitle }) {
           )}
         </section>
       </Suspense>
-    </>
+    </div>
   );
 }

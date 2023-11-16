@@ -53,23 +53,23 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <div className="md:order-2 flex ">
+        <div className="md:order-2 flex">
           <a
             href="/privacy"
-            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-normal px-6"
+            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-thin px-10 lg:text-base sm:text-xs"
           >
             Privacy Policy
           </a>
           <a
             href="/shipping"
-            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-normal px-6"
+            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-thin px-10 lg:text-base sm:text-xs"
           >
             Shipping & Returns
           </a>
         
           <a
             href="/terms"
-            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-normal px-6"
+            className="lg:pt-0 sm:pt-5 hover:text-neutral-600 font-thin px-10 lg:text-base sm:text-xs"
           >
             Terms & Conditions
           </a>
