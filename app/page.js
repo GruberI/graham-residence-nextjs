@@ -1,7 +1,7 @@
 // import Navigation from "@/components/Shop/Navigation";
 // import Header from "@/components/Shop/Header";
 // import HeroImage from "@/components/Shop/HeroImage";
-import HeroImage2 from "@/components/Shop/HeroImage2"
+import HeroImageText from "@/components/Shop/HeroImageText"
 import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
 import Featured from "@/components/Shop/Featured";
@@ -27,7 +27,7 @@ export default async function Shop() {
   return (
     <div className="bg-white overflow-hidden">
       <Suspense>
-        <HeroImage2 />
+        <HeroImageText />
         <Carousel products={productsByTag} />
       </Suspense>
       <Section />

@@ -7,12 +7,15 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
   const [clientWindowHeight, setClientWindowHeight] = useState("");
-  const [color, setColor] = useState("#d9d2ca");
+  const [color, setColor] = useState("white");
+  const [buttonBg, setButtonBg] = useState("");
   const pathname = usePathname();
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
-    window.scrollY < 80 ? setColor("#d9d2ca") : setColor("black");
+    window.scrollY < 80
+      ? (setColor("white"), setButtonBg("none"))
+      : (setColor("black"), setButtonBg("black"));
   };
 
   useEffect(() => {
@@ -30,7 +33,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed top-0 z-40 animate-fadeTwo`}
+      className={`fixed top-0 z-40 animate-fadeTwo w-screen`}
       style={
         pathname == "/"
           ? { background: `rgba(255, 255, 255, ${backgroundTransparacy})` }
@@ -38,7 +41,7 @@ export default function Navbar() {
       }
     >
       <header className="relative" id="page-begin">
-        <nav aria-label="Top" className="w-screen sm:px-0 lg:px-0">
+        <nav aria-label="Top" className="sm:w-screen sm:px-0 lg:px-0">
           <div
             className={`border-b border-${
               pathname == "/" ? color : "black"
@@ -49,14 +52,14 @@ export default function Navbar() {
               <div className="flex flex-1">
                 <a href="/">
                   <p
-                    className={`font-light sm:pl-2 lg:px-4 lg:text-4xl md:text-1xl sm:text-1xl semibold`}
+                    className={`font-light sm:pl-2 lg:px-4 lg:text-4xl text-3xl semibold`}
                     style={
                       pathname == "/"
                         ? { color: `${color}` }
                         : { color: "black" }
                     }
                   >
-                    TGR<span className="lg:text-2xl"> SHOP</span>
+                    TGR<span className="text-2xl"> SHOP</span>
                   </p>
                 </a>
               </div>
@@ -67,20 +70,19 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-end mr-20">
                 <a
                   href="https://www.airbnb.com/rooms/18312865?source_impression_id=p3_1697958503_wgsynyWLg4S60ges"
-                  className="p-2 text-black hover:text-slate-500"
+                  className={`rounded-sm border px-3.5 py-2.5 text-sm font-normal shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
+                    pathname == "/" ? buttonBg : "black"
+                  } text-white`}
                   target="_blank"
+                  style={
+                    pathname == "/"
+                      ? { border: `1px solid ${color}` }
+                      : { border: "1px solid black" }
+                  }
                 >
-                  {/* <span className="sr-only">Search</span>
-                  <MagnifyingGlassIcon
-                    className="h-6 w-6 ease-in-out hover:scale-110"
-                    aria-hidden="true"
-                  /> */}
-                  <button
-                    type="submit"
-                    className="flex max-w-md bg-black text-white hover:bg-slate-800 px-6 lg:py-2 md:py-2 max-sm:py-2 sm:px-4 text-base font-light text-white[0] hover:bg-black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium lg:text-[14px] md:text-[13px] sm:text-[12px] animate-fadeFour">
-                   STAY WITH US
-                  </button>
+                  Stay With Us
                 </a>
+
                 {/* Cart */}
                 {/* <div className="ml-4 flow-root mr-7">
                   <Suspense fallback={<OpenCart />}>

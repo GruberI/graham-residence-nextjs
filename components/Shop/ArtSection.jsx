@@ -11,7 +11,7 @@ export default async function ArtSection() {
   if (!products?.length) return null;
 
   return (
-    <div className="mx-auto py-8 lg:px-18 sm:px-12 sm:py-16 lg:px-10">
+    <div className="max-w-7xl my-0 sm:my-16 md:mx-10 lg:mx-auto mx-4">
       <div className="mx-auto text-left pb-6" id="artwork">
         <h2 className="text-1xl text-black border-b border-black pb-2">
           ARTWORK

@@ -24,7 +24,7 @@ export default function ImageTransition ({ imgOne, imgTwo }) {
         />
          :
          <img
-          className={`absolute inset-0 lg:h-full lg:w-full duration-300 object-cover ${
+          className={`absolute inset-0 lg:h-full lg:w-full h-full w-full duration-300 object-cover ${
             hover ? 'scale-100' : 'opacity-0'
           } transition`}
           src={imgTwo.src}

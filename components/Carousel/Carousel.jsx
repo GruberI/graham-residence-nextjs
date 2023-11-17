@@ -77,7 +77,6 @@ export default class Carousel extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true,
           },
         },
         {
@@ -91,8 +90,9 @@ export default class Carousel extends Component {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
+            dots: true,
           },
         },
       ],

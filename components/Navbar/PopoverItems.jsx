@@ -52,7 +52,7 @@ export default function PopoverItems({ color, pathname }) {
 
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch z-40 max-sm:w-full">
-      <div className="flex h-14 space-x-8 overflow-x-auto border-t px-2 pb-px sm:h-full sm:justify-center sm:overflow-visible sm:border-t-0 sm:pb-0 z-50">
+      <div className="flex h-14 space-x-8 overflow-x-auto border-t px-8 sm:px-2 pb-px sm:h-full sm:justify-center sm:overflow-visible sm:border-t-0 sm:pb-0 z-50">
         {navigation.categories.map((category, categoryIdx) => (
           <Popover key={categoryIdx} className="flex">
             {({ open }) => (

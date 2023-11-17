@@ -1,0 +1,4 @@
+.scrollAction {
+    overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch;
+}

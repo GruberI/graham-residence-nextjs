@@ -22,6 +22,9 @@ module.exports = {
           '100%': { opacity: theme('opacity.1') },
         },
       }),
+      color: {
+        eggnog: '#93535f',
+      }
     }
   },
   plugins: [],

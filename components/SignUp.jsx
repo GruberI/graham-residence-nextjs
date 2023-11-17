@@ -24,7 +24,7 @@ export default function SignUp() {
               />
               <button
                 type="submit"
-                className="flex-none bg-white px-3.5 py-2.5 text-sm font-light hover:font-semibold shadow-sm border border-black hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="round-sm flex-none bg-white px-3.5 py-2.5 text-sm font-light hover:font-semibold shadow-sm border border-black hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 SIGN UP
               </button>
