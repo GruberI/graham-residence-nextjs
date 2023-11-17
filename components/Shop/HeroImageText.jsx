@@ -17,7 +17,7 @@ export default function HeroImageText() {
           <div className="lg:mt-96 sm:mt-96 mt-72 2xl:mt-[500px] flex items-center justify-center gap-x-6 animate-fadeTwo">
             <a
               href="/art"
-              className="rounded-sm border px-3.5 py-2.5 text-sm font-normal text-white shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+              className="rounded-sm border px-3.5 py-2.5 text-sm font-normal text-white shadow-sm hover:bg-slate-600  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
               Shop Art
             </a>
