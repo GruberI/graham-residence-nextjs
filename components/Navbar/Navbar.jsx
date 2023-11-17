@@ -78,12 +78,7 @@ export default function Navbar() {
                   <button
                     type="submit"
                     className="flex max-w-md bg-black text-white hover:bg-slate-800 px-6 lg:py-2 md:py-2 max-sm:py-2 sm:px-4 text-base font-light text-white[0] hover:bg-black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium lg:text-[14px] md:text-[13px] sm:text-[12px] animate-fadeFour">
-                    <span
-                      className={`md:hidden max-sm:hidden lg:hidden xl:inline pr-2 text-[${color}]`}
-                    >
-                      BOOK ON
-                    </span>{" "}
-                    AIRBNB
+                   STAY WITH US
                   </button>
                 </a>
                 {/* Cart */}
