@@ -1,4 +1,6 @@
 .scrollAction {
-    overflow-y: scroll !important;
-    -webkit-overflow-scrolling: touch;
+    overflow: scroll!important;
+  -webkit-scrollbar {
+        width: 2px;
+      }
 }

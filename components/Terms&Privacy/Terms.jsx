@@ -3,8 +3,8 @@ import "./index.css";
 
 export default function Terms() {
   return (
-    <div className="container lg:h-[32rem] sm:h-[16rem] h-[14rem] scrollAction">
-      <div className="bg-white p-8 shadow-md">
+    <div className="container lg:h-[32rem] sm:h-[16rem] h-[14rem] scrollAction border-b">
+      <div className="bg-white shadow-md">
         <div className="text-gray-700">
           <div className="max-w-2xl text-sm leading-6 text-gray-700 lg:max-w-none">
             <p>

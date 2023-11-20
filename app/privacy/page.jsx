@@ -1,4 +1,5 @@
 import Privacy from '../../components/Terms&Privacy/Privacy'
+import {  ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function PrivacyHome() {
   return (
@@ -18,10 +19,13 @@ export default function PrivacyHome() {
             <p className="text-base font-semibold leading-7 text-[#9c4f1f]">
             Date Effective: November 16, 2023
             </p>
-            <h1 className="mt-2 text-3xl font-thin tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="my-2 pb-2 text-3xl font-thin tracking-tight text-gray-900 sm:text-4xl">
               Privacy Policy
             </h1>
           <Privacy />
+          {/* <div>
+          <ChevronDownIcon />
+          </div> */}
           </div>
         </div>
       </div>
