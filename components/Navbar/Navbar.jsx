@@ -59,7 +59,7 @@ export default function Navbar() {
                         : { color: "black" }
                     }
                   >
-                    TGR<span className="text-2xl"> SHOP</span>
+                    TGR<span className="sm:text-2xl text-sm"> SHOP</span>
                   </p>
                 </a>
               </div>
@@ -70,7 +70,7 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-end mr-20">
                 <a
                   href="https://www.grahamresidence.com/"
-                  className={`rounded-sm border px-3.5 py-2.5 text-sm font-normal shadow-sm hover:bg-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
+                  className={`rounded-sm border sm:px-3.5 px-3 py-2.5 sm:text-sm text-xs font-normal shadow-sm hover:bg-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
                     pathname == "/" ? buttonBg : "black"
                   } text-white`}
                   target="_blank"
@@ -80,15 +80,8 @@ export default function Navbar() {
                       : { border: "1px solid black" }
                   }
                 >
-                  Stay With Us
+                  STAY WITH US
                 </a>
-
-                {/* Cart */}
-                {/* <div className="ml-4 flow-root mr-7">
-                  <Suspense fallback={<OpenCart />}>
-                    <Cart />
-                  </Suspense>
-                </div> */}
               </div>
             </div>
           </div>

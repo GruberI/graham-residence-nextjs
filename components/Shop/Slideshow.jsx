@@ -7,8 +7,9 @@ const imageArray = [
   "https://ipfs.filebase.io/ipfs/QmQNn2LNn6UdzbuqiSSXJpknNF62sDQbzugxGJm2E9cG8b",
   "https://ipfs.filebase.io/ipfs/QmTYVjdAsAbEKuSJ4dKQaHwkQJjfWJY4UWivoXiAfE9HSG",
   "https://ipfs.filebase.io/ipfs/QmWvWkJqJPjMNsLReNzvRqBwaz1fFqWxUzKLxrjFfvem9Y/QmcCMwxbycnVuXTghpA7ERg4B7Kg5L25NHsopeXy3Xqgub",
-  "https://ipfs.filebase.io/ipfs/QmfWF5UMbrXZH72P7nkxvCvywpjUwS6qpxoAQMKa1dc182"
+  "https://ipfs.filebase.io/ipfs/QmfWF5UMbrXZH72P7nkxvCvywpjUwS6qpxoAQMKa1dc182",
 ];
+const duplicatedImageArray = [...imageArray, ...imageArray, ...imageArray]
 
 export default function Slideshow() {
   const [index, setIndex] = useState(0);
@@ -18,7 +19,7 @@ export default function Slideshow() {
     setTimeout(
       () =>
         setIndex((currIndex) =>
-          currIndex === imageArray.length - 1 ? 0 : currIndex + 1
+          currIndex === duplicatedImageArray.length - 1 ? duplicatedImageArray.length - 1: currIndex + 1
         ),
       delay
     );
@@ -31,7 +32,7 @@ export default function Slideshow() {
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {imageArray.map((imgSrc, index) => (
+        {duplicatedImageArray.map((imgSrc, index) => (
           <div className="slide" key={index}>
             <img src={imgSrc} alt="" className="object-cover w-screen"/>
           </div>

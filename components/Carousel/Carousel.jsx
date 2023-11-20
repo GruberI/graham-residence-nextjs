@@ -92,7 +92,7 @@ export default class Carousel extends Component {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            dots: true,
+            dots: false,
           },
         },
       ],

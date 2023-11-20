@@ -1,6 +1,6 @@
 export default function HeroImageText() {
   return (
-    <div className="relative isolate overflow-hidden pt-36 h-screen">
+    <div className="relative isolate overflow-hidden pt-36">
       <img
         src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
         alt=""
@@ -11,10 +11,10 @@ export default function HeroImageText() {
           {/* <h1 className="text-2xl font-thin tracking-wide sm:text-6xl text-gray-300 text-[#d9d2ca] pt-1 animate-fadeTwo">
             THE GRAHAM RESIDENCE
           </h1> */}
-          <h1 className="lg:text-5xl md:text-5xl sm:text-4xl text-3xl pt-2 leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-extralight sm:mt-0 mt-6">
+          <h1 className="lg:text-5xl md:text-5xl sm:text-4xl text-3xl pt-2 leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-extralight">
             THE GRAHAM RESIDENCE
           </h1>
-          <div className="lg:mt-96 sm:mt-96 mt-72 2xl:mt-[500px] flex items-center justify-center gap-x-6 animate-fadeTwo">
+          <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[48vh] mb-[10vh]">
             <a
               href="/art"
               className="rounded-sm border px-3.5 py-2.5 text-sm font-normal text-white shadow-sm hover:bg-slate-600  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
