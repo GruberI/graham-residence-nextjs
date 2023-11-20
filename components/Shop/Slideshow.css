@@ -1,0 +1,14 @@
+.slideshow {
+  overflow: hidden;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 4000ms;
+}
+
+.slide {
+  display: inline-block;
+  height:100vh;
+  width: 100vw;
+}

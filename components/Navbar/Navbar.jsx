@@ -69,7 +69,7 @@ export default function Navbar() {
 
               <div className="flex flex-1 items-center justify-end mr-20">
                 <a
-                  href="https://www.airbnb.com/rooms/18312865?source_impression_id=p3_1697958503_wgsynyWLg4S60ges"
+                  href="https://www.grahamresidence.com/"
                   className={`rounded-sm border px-3.5 py-2.5 text-sm font-normal shadow-sm hover:bg-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
                     pathname == "/" ? buttonBg : "black"
                   } text-white`}

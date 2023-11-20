@@ -12,6 +12,7 @@ import Carousel from "../components/Carousel/Carousel.jsx";
 import { getCollectionProducts } from "../lib/shopify";
 import Section from "../components/Shop/Section.jsx";
 import { notFound } from "next/navigation";
+import Slideshow from '../components/Shop/Slideshow.jsx'
 
 export default async function Shop() {
   const products = await getProducts({});
@@ -34,6 +35,9 @@ export default async function Shop() {
       <ArtSection products={products} />
       <Featured />
       <GoodsSection products={products} />
+      <Suspense>
+        <Slideshow />
+      </Suspense>
       <StayWithUs />
     </div>
   );

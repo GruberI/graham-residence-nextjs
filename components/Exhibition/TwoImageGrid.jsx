@@ -8,8 +8,8 @@ export default function TwoImageGrid() {
             <Link href={"/product/dos-donts"}>
               <div className="aspect-[7/5] overflow-hidden bg-black-100">
                 <img
-                  src="https://ipfs.filebase.io/ipfs/QmV3eRyrqjm3Btet75umR5d9sP9CSeoJ8GLkq3ouVe6pym"
-                  alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
+                  src="https://ipfs.filebase.io/ipfs/QmQdoTPfZoTxpVxAcn1s6HhU1CpwUv9PsZwaP3kz2JMuiL"
+                  alt="Acrylic painting called Dos and Donts by Kyle Steed."
                   className="h-full w-full object-cover object-center"
                 />
               </div>
@@ -19,8 +19,8 @@ export default function TwoImageGrid() {
             <Link href={"/product/manhood-by-kyle-steed"}>
               <div className="aspect-[7/5] overflow-hidden bg-black-100">
                 <img
-                  src="https://ipfs.filebase.io/ipfs/QmNgNgovNe1FAYgWzfm6u8FDyrx57SUdfSEKSqLNmFwVLF"
-                  alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
+                  src="https://ipfs.filebase.io/ipfs/QmQNosX6WjSFEcNGLFonBPXFwmV9psowsJQTmyvSgvP9hZ"
+                  alt="Acrylic painting called Manhood by Kyle Steed."
                   className="h-full w-full object-cover object-center"
                 />
               </div>

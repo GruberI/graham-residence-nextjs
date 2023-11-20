@@ -1,14 +1,14 @@
 export default function Artist() {
   return (
-    <div className="w-screen sm:px-0 lg:px-0 border-t border-black-400">
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 pt-20 mb-0 lg:max-w-7xl lg:px-6">
+    <div className="m-auto border-t border-black max-w-7xl">
+      <div className="mx-auto px-4 sm:px-6 lg:px-6 my-20" >
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
           <div>
             <div className="overflow-hidden bg-black-100 aspect-square">
               <img
                 src="https://ipfs.filebase.io/ipfs/QmUPPSHdoa5JiaLXvRKV3mG4pWSKEvsTjty4T81nmFknF9"
                 alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
-                className="object-contain object-center"
+                className="object-cover h-full w-full"
               />
             </div>
           </div>

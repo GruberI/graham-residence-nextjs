@@ -26,11 +26,11 @@ const navigation = {
   ],
   other: [
     { name: "Exhibition", href: "/exhibition" },
-    {
-      name: "Property",
-      href: "https://www.grahamresidence.com/",
-      id: "property",
-    },
+    // {
+    //   name: "Property",
+    //   href: "https://www.grahamresidence.com/",
+    //   id: "property",
+    // },
     { name: "Contact", id: "contact-us" },
   ],
 };
