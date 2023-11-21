@@ -4,7 +4,6 @@ import Quote from '../../../components/Exhibition/ThaiMainhard/Quote'
 import SecondQuote from '../../../components/Exhibition/ThaiMainhard/SecondQuote'
 import TwoImageGrid from '../../../components/Exhibition/ThaiMainhard/TwoImageGrid'
 import SixImageGallery from '../../../components/Exhibition/ThaiMainhard/SixImageGallery'
-import Navigation from '../../../components/Shop/Navigation'
 import { Suspense } from "react";
 
 export default function Exhibition() {

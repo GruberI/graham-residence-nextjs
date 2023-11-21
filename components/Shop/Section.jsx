@@ -1,11 +1,8 @@
-import Link from "next/link";
 import { Suspense } from "react";
-
-// https://ipfs.filebase.io/ipfs/Qmdyf8RcB2LsQTmSXCLaS9qe9JomMZmFzARNou4hQcJvFy/QmW36C3Fm3rUSyKV7c4hLF4WeJk7v3iHwyWJjnGHr6SQS3"
 
 export default function Section() {
   return (
-    <div className="pb-20 sm:px-0 px-2">
+    <div className="pb-4 sm:px-0 px-2">
       <div className="mx-auto max-w-7xl px-6 sm:px-4 sm:my-20 my-16 mb-0 lg:px-6">
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
           <Suspense>
@@ -31,17 +28,27 @@ export default function Section() {
 
             <div className="pb-8">
               <p className="tracking-wide">
-              A mid-century modern retreat nestled among the boulders of the Mojave Desert, The Graham Residence is where the boundaries between home and gallery are erased.  Discover the best contemporary artists and shop curated goods inspired by West Coast minimalism.
+                A mid-century modern retreat nestled among the boulders of the
+                Mojave Desert, The Graham Residence is where the boundaries
+                between home and gallery are erased. Discover the best
+                contemporary artists and shop curated goods inspired by West
+                Coast minimalism.
               </p>
             </div>
 
-            <div>
-              <Link
-                href={"/home"}
-                className="underline underline-offset-8 flex justify-center pr-6 hover:text-neutral-600"
+            <div className="flex items-center justify-center gap-x-6">
+              <a
+                href="/art"
+                className="rounded-sm border border-black px-3.5 py-2.5 text-sm font-normal shadow-sm hover:bg-black hover:text-white  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
-                SHOP HOME
-              </Link>
+                Shop Artwork
+              </a>
+              <a
+                href="/home"
+                className="text-sm font-normal leading-6 hover:text-neutral-300 underline underline-offset-8"
+              >
+                Shop Home
+              </a>
             </div>
           </div>
         </div>

@@ -2,14 +2,17 @@ import Link from "next/link";
 
 export default function Featured() {
   return (
-    <div className="m-auto sm:px-0 mx-8 border-t border-black-400 py-24 sm:py-32" id="featured">
+    <div
+      className="m-auto sm:px-0 mx-8 border-t border-black pt-20 sm:pt-24 pb-12"
+      id="featured"
+    >
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
             <div>
               <div className="aspect-square overflow-hidden bg-black-100">
                 <img
-                  src="https://ipfs.filebase.io/ipfs/QmbVuKk4UdELdq7qnBhUHk4xEkBxAkUDH1Pqh9htv2MFEQ"
+                  src="https://ipfs.filebase.io/ipfs/QmUPPSHdoa5JiaLXvRKV3mG4pWSKEvsTjty4T81nmFknF9"
                   alt="Kyle Steed painting in The Graham Residence living room during the day."
                   className="h-full w-full object-cover object-center"
                 />
@@ -36,10 +39,10 @@ export default function Featured() {
                   understanding of self.
                 </p>
               </div>
-              <div>
+              <div className="pt-8">
                 <Link
                   href={"/exhibition"}
-                  className="underline underline-offset-8 flex justify-center pr-6 pt-8 hover:text-neutral-600"
+                  className="underline underline-offset-8 hover:text-neutral-600"
                 >
                   SEE THE EXHIBITION
                 </Link>

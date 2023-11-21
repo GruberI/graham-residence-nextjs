@@ -4,7 +4,7 @@ export default function TwoImageGrid() {
     <div className="w-screen sm:px-0 lg:px-0 py-6">
       <div className="bg-white">
         <div className="mx-auto max-w-1xl py-8 sm:py-26 lg:max-w-7xl lg:px-0 sm:px-10">
-          <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 sm:grid-cols-2">
             <Link href={"/product/dos-donts"}>
               <div className="aspect-[7/5] overflow-hidden bg-black-100">
                 <img
@@ -17,7 +17,7 @@ export default function TwoImageGrid() {
             </Link>
 
             <Link href={"/product/manhood-by-kyle-steed"}>
-              <div className="aspect-[7/5] overflow-hidden bg-black-100">
+              <div className="aspect-[7/5] overflow-hidden">
                 <img
                   src="https://ipfs.filebase.io/ipfs/QmQNosX6WjSFEcNGLFonBPXFwmV9psowsJQTmyvSgvP9hZ"
                   alt="Acrylic painting called Manhood by Kyle Steed."
