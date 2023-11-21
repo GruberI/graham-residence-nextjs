@@ -9,7 +9,7 @@ const imageArray = [
   "https://ipfs.filebase.io/ipfs/QmWvWkJqJPjMNsLReNzvRqBwaz1fFqWxUzKLxrjFfvem9Y/QmcCMwxbycnVuXTghpA7ERg4B7Kg5L25NHsopeXy3Xqgub",
   "https://ipfs.filebase.io/ipfs/QmfWF5UMbrXZH72P7nkxvCvywpjUwS6qpxoAQMKa1dc182",
 ];
-const duplicatedImageArray = [...imageArray, ...imageArray, ...imageArray]
+const duplicatedImageArray = [...imageArray, ...imageArray, ...imageArray, ...imageArray, ...imageArray, ...imageArray]
 
 export default function Slideshow() {
   const [index, setIndex] = useState(0);

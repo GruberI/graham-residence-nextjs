@@ -44,9 +44,17 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", color: "grey", height: '30%', width: '2%'}}
+      style={{
+        ...style,
+        display: "block",
+        color: "grey",
+        height: "30%",
+        width: "2%",
+      }}
       onClick={onClick}
-    ><ChevronRightIcon style={{ marginRight: '10%'}}/></div>
+    >
+      <ChevronRightIcon style={{ marginRight: "10%" }} />
+    </div>
   );
 }
 
@@ -55,9 +63,17 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", color: "grey", height: '30%', width: '5%' }}
+      style={{
+        ...style,
+        display: "block",
+        color: "grey",
+        height: "30%",
+        width: "5%",
+      }}
       onClick={onClick}
-    ><ChevronLeftIcon style={{ marginRight: '60%'}}/></div>
+    >
+      <ChevronLeftIcon style={{ marginRight: "60%" }} />
+    </div>
   );
 }
 
@@ -93,6 +109,10 @@ export default class Carousel extends Component {
             slidesToShow: 2,
             slidesToScroll: 1,
             dots: false,
+            autoplay: true,
+            speed: 4000,
+            autoplaySpeed: 4000,
+            cssEase: "linear",
           },
         },
       ],
@@ -106,10 +126,7 @@ export default class Carousel extends Component {
                 key={`${product.handle}${i}`}
                 className="aspect-square flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
               >
-                <Link
-                  className="relative"
-                  href={`/product/${product.handle}`}
-                >
+                <Link className="relative" href={`/product/${product.handle}`}>
                   <GridTileImage
                     alt={product.title}
                     label={{
