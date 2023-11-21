@@ -9,7 +9,7 @@ import { Suspense } from "react";
 
 export default function Exhibition() {
   return (
-    <div className="bg-white py-1 sm:py-10 lg:py-10">
+    <div className="bg-white py-1 sm:py-10">
       <Header />
       <Suspense>
         <TwoImageGrid />

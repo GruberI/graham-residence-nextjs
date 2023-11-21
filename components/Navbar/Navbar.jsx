@@ -52,7 +52,7 @@ export default function Navbar() {
               <div className="flex flex-1">
                 <a href="/">
                   <p
-                    className={`font-light sm:pl-2 lg:px-4 lg:text-4xl text-3xl semibold`}
+                    className={`font-light sm:px-6 lg:text-4xl text-3xl semibold`}
                     style={
                       pathname == "/"
                         ? { color: `${color}` }
