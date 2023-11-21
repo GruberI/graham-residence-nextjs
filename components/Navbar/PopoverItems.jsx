@@ -67,7 +67,7 @@ export default function PopoverItems({ color, pathname }) {
                   <Popover.Button
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
-                      `relative z-10 -mb-px flex items-center border-b-1 pt-px lg:text-sm md:text-xs sm:text-xs duration-300 ease-out outline-none `
+                      `relative z-10 -mb-px flex items-center border-b-1 pt-px text-xs sm:text-sm duration-300 ease-out outline-none `
                     )}
                     style={
                       pathname == "/" ? { color: color } : { color: "black" }
@@ -198,7 +198,7 @@ export default function PopoverItems({ color, pathname }) {
                   <Popover.Button
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
-                      `relative z-10 -mb-px flex items-center border-b-1 pt-px lg:text-sm md:text-xs sm:text-xs duration-300 ease-out outline-none `
+                      `relative z-10 -mb-px flex items-center border-b-1 pt-px text-xs sm:text-sm duration-300 ease-out outline-none `
                     )}
                     style={
                       pathname == "/" ? { color: color } : { color: "black" }
@@ -300,7 +300,7 @@ export default function PopoverItems({ color, pathname }) {
             <a
               key={item.name}
               onClick={() => handleClickScroll(item.id)}
-              className={`flex items-center lg:text-sm md:text-xs sm:text-xs scroll-smooth cursor-pointer`}
+              className={`flex items-center text-xs sm:text-sm scroll-smooth cursor-pointer`}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >
               <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
@@ -311,7 +311,7 @@ export default function PopoverItems({ color, pathname }) {
             <a
               key={item.name}
               href={item.href}
-              className={`flex items-center lg:text-sm md:text-xs sm:text-xs hover:text-neutral-300`}
+              className={`flex items-center text-xs sm:text-sm hover:text-neutral-300`}
               target={item.id === "property" ? "_blank" : undefined}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >
