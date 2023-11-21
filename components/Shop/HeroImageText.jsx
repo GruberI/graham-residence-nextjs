@@ -11,7 +11,7 @@ export default function HeroImageText() {
           {/* <h1 className="text-2xl font-thin tracking-wide sm:text-6xl text-gray-300 text-[#d9d2ca] pt-1 animate-fadeTwo">
             THE GRAHAM RESIDENCE
           </h1> */}
-          <h1 className="lg:text-5xl md:text-5xl sm:text-4xl text-3xl pt-2 leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-extralight">
+          <h1 className="sm:text-5xl text-3xl pt-2 leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-extralight">
             THE GRAHAM RESIDENCE
           </h1>
           <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[48vh] mb-[10vh]">

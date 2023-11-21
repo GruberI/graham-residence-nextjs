@@ -25,9 +25,8 @@ function classNames(...classes) {
 
 export default function ProductSection({ products }) {
   return (
-    <div className="bg-white">
-      <div>
-        <main className="mx-auto w-11/12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white sm:px-0 px-2">
+        <main className="mx-auto max-w-7xl">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-16">
             <h1 className="text2xl font-light tracking-widest text-gray-900">
               {" "}
@@ -85,7 +84,7 @@ export default function ProductSection({ products }) {
             <ProductGridThree products={products} />
           </section>
         </main>
-      </div>
+   
     </div>
   );
 }

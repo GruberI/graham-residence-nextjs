@@ -13,7 +13,7 @@ export default async function Gallery() {
   const sixProductSet = productsByTag.slice(0, 6);
 
   return (
-    <div className="mx-auto max-w-7xl mt-20">
+    <div className="mx-auto max-w-7xl mt-20 sm:px-0 px-2">
       <section aria-labelledby="products-heading" className="mt-8">
         <h2 id="products-heading" className="sr-only">
           Products
@@ -22,7 +22,7 @@ export default async function Gallery() {
       </section>
       <a
         href="/art/thai-mainhard"
-        className="p-2 text-black hover:text-black-500 pt-6 flex justify-center"
+        className="p-2 text-black hover:text-black-500 sm:pt-6 mb-6 flex justify-center"
       >
         <button
           type="submit"
