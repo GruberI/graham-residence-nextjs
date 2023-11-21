@@ -24,8 +24,17 @@ const navigation = {
       ],
     },
   ],
+  exhibitions: [
+    {name: 'Exhibitions',
+    current: [
+      {name: 'A Quiet Noise', href: "/exhibition" }
+    ],
+    past: [
+      {name: 'Desert Spring', href: "/exhibition/past" }
+    ]
+  }
+  ],
   other: [
-    { name: "Exhibition", href: "/exhibition" },
     // {
     //   name: "Property",
     //   href: "https://www.grahamresidence.com/",
@@ -51,8 +60,8 @@ export default function PopoverItems({ color, pathname }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <Popover.Group className="absolute inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch z-40 max-sm:w-full">
-      <div className="flex h-14 space-x-10 overflow-x-auto border-t sm:px-2 pb-px sm:h-full justify-center sm:overflow-visible sm:border-t-0 sm:pb-0 z-50">
+    <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-1 sm:self-stretch z-40 max-sm:w-full">
+      <div className="flex h-14 space-x-10 overflow-x-auto border-t pb-px sm:h-full justify-center sm:overflow-visible sm:ml-10">
         {navigation.categories.map((category, categoryIdx) => (
           <Popover key={categoryIdx} className="flex">
             {({ open }) => (
@@ -158,6 +167,107 @@ export default function PopoverItems({ color, pathname }) {
                                 className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4"
                               >
                                 {category.categories.map((item) => (
+                                  <li key={item.name} className="flex">
+                                    <a
+                                      href={item.href}
+                                      className="hover:text-gray-800"
+                                    >
+                                      {item.name}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Popover.Panel>
+                </Transition>
+              </>
+            )}
+          </Popover>
+        ))}
+
+        {navigation.exhibitions.map((category, categoryIdx) => (
+          <Popover key={categoryIdx} className="flex">
+            {({ open }) => (
+              <>
+                <div className="relative flex">
+                  <Popover.Button
+                    className={classNames(
+                      open ? "black" : "hover:text-neutral-300",
+                      `relative z-10 -mb-px flex items-center border-b-1 pt-px lg:text-sm md:text-xs sm:text-xs duration-300 ease-out outline-none `
+                    )}
+                    style={pathname == '/' ? {color: color} : {color: 'black'}}
+                  >
+                    <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">{category.name}</span>
+                  </Popover.Button>
+                </div>
+
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-200"
+                  enterFrom="opacity-0"
+                  enterTo="opacity-100"
+                  leave="transition ease-in duration-150"
+                  leaveFrom="opacity-100"
+                  leaveTo="opacity-0"
+                >
+                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2]">
+                    {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
+                    <div
+                      className="absolute inset-0 top-1/2 bg-white shadow"
+                      aria-hidden="true"
+                    />
+
+                    <div className="relative bg-white">
+                      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                        <div className="grid grid-cols-2 items-start gap-x-6 gap-y-10 pb-12 pt-10 md:grid-cols-1 lg:gap-x-8">
+                          <div className="grid grid-cols-1 gap-x-6 gap-y-10 grid-cols-2 lg:gap-x-8">
+                            <div>
+                              <a href="/exhibition">
+                                <p
+                                  id="art-heading"
+                                  className="font-medium text-gray-900"
+                                >
+                                  CURRENT
+                                </p>
+                              </a>
+                              <div className="mt-4 border-t border-gray-200 pt-6 sm:grid sm:grid-cols-2 sm:gap-x-6">
+                                <ul
+                                  role="list"
+                                  aria-labelledby="art-heading"
+                                  className="space-y-6 sm:space-y-4"
+                                >
+                                  {category.current.map((item) => (
+                                    <li key={item.name} className="flex">
+                                      <a
+                                        href={item.href}
+                                        className="hover:text-gray-800"
+                                      >
+                                        {item.name}
+                                      </a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="/exhibition/past">
+                                <p
+                                  id="home-heading"
+                                  className="font-medium text-gray-900"
+                                >
+                                  PREVIOUS
+                                </p>
+                              </a>
+                              <ul
+                                role="list"
+                                aria-labelledby="home-heading"
+                                className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4"
+                              >
+                                {category.past.map((item) => (
                                   <li key={item.name} className="flex">
                                     <a
                                       href={item.href}

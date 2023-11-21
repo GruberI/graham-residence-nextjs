@@ -41,7 +41,7 @@ export default function Navbar() {
       }
     >
       <header className="relative" id="page-begin">
-        <nav aria-label="Top" className="sm:w-screen sm:px-0 lg:px-0">
+        <nav aria-label="Top">
           <div
             className={`border-b border-${
               pathname == "/" ? color : "black"
