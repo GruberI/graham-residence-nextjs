@@ -25,14 +25,11 @@ const navigation = {
     },
   ],
   exhibitions: [
-    {name: 'Exhibitions',
-    current: [
-      {name: 'A Quiet Noise', href: "/exhibition" }
-    ],
-    past: [
-      {name: 'Desert Spring', href: "/exhibition/past" }
-    ]
-  }
+    {
+      name: "Exhibitions",
+      current: [{ name: "A Quiet Noise", href: "/exhibition" }],
+      past: [{ name: "Desert Spring", href: "/exhibition/past" }],
+    },
   ],
   other: [
     // {
@@ -72,9 +69,13 @@ export default function PopoverItems({ color, pathname }) {
                       open ? "black" : "hover:text-neutral-300",
                       `relative z-10 -mb-px flex items-center border-b-1 pt-px lg:text-sm md:text-xs sm:text-xs duration-300 ease-out outline-none `
                     )}
-                    style={pathname == '/' ? {color: color} : {color: 'black'}}
+                    style={
+                      pathname == "/" ? { color: color } : { color: "black" }
+                    }
                   >
-                    <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">{category.name}</span>
+                    <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                      {category.name}
+                    </span>
                   </Popover.Button>
                 </div>
 
@@ -199,9 +200,13 @@ export default function PopoverItems({ color, pathname }) {
                       open ? "black" : "hover:text-neutral-300",
                       `relative z-10 -mb-px flex items-center border-b-1 pt-px lg:text-sm md:text-xs sm:text-xs duration-300 ease-out outline-none `
                     )}
-                    style={pathname == '/' ? {color: color} : {color: 'black'}}
+                    style={
+                      pathname == "/" ? { color: color } : { color: "black" }
+                    }
                   >
-                    <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">{category.name}</span>
+                    <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                      {category.name}
+                    </span>
                   </Popover.Button>
                 </div>
 
@@ -231,7 +236,7 @@ export default function PopoverItems({ color, pathname }) {
                                   id="art-heading"
                                   className="font-medium text-gray-900"
                                 >
-                                  CURRENT
+                                  CURRENT EXHIBITION
                                 </p>
                               </a>
                               <div className="mt-4 border-t border-gray-200 pt-6 sm:grid sm:grid-cols-2 sm:gap-x-6">
@@ -296,9 +301,11 @@ export default function PopoverItems({ color, pathname }) {
               key={item.name}
               onClick={() => handleClickScroll(item.id)}
               className={`flex items-center lg:text-sm md:text-xs sm:text-xs scroll-smooth cursor-pointer`}
-              style={pathname == '/' ? {color: color} : {color: 'black'}}
+              style={pathname == "/" ? { color: color } : { color: "black" }}
             >
-              <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">{item.name}</span>
+              <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                {item.name}
+              </span>
             </a>
           ) : (
             <a
@@ -306,9 +313,11 @@ export default function PopoverItems({ color, pathname }) {
               href={item.href}
               className={`flex items-center lg:text-sm md:text-xs sm:text-xs hover:text-neutral-300`}
               target={item.id === "property" ? "_blank" : undefined}
-              style={pathname == '/' ? {color: color} : {color: 'black'}}
+              style={pathname == "/" ? { color: color } : { color: "black" }}
             >
-              <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">{item.name}</span>
+              <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                {item.name}
+              </span>
             </a>
           )
         )}
