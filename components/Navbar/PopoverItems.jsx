@@ -99,7 +99,7 @@ export default function PopoverItems({ color, pathname }) {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2]" onMouseLeave={() => handleLeave(open)}>
+                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-7/12 m-auto" onMouseLeave={() => handleLeave(open)}>
                     {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                     <div
                       className="absolute inset-0 top-1/2 bg-white shadow"
@@ -155,7 +155,7 @@ export default function PopoverItems({ color, pathname }) {
                                     <li key={item.name} className="flex">
                                       <a
                                         href={item.href}
-                                        className="hover:text-gray-800"
+                                        className="hover:text-gray-800 tracking-wide leading-7"
                                       >
                                         {item.name}
                                       </a>
@@ -176,7 +176,7 @@ export default function PopoverItems({ color, pathname }) {
                               <ul
                                 role="list"
                                 aria-labelledby="home-heading"
-                                className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4"
+                                className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4 tracking-wide leading-7"
                               >
                                 {category.home.map((item) => (
                                   <li key={item.name} className="flex">
