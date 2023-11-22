@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 import ProductSection from "./ProductSection";
+import ShopAllArtHero from './Hero'
 
 export const runtime = "edge";
 
@@ -31,7 +32,7 @@ export default async function ShopAllArt({ productsByHandle, pageTitle }) {
 
   return (
     <div className="mt-20">
-      <ShopAllArtHeader pageTitle={pageTitle}/>
+      <ShopAllArtHero pageTitle={pageTitle}/>
       <Suspense>
         <section>
           {productsByHandle.length === 0 ? (

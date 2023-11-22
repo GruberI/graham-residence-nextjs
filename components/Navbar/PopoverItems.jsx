@@ -47,7 +47,7 @@ const handleClickScroll = (id) => {
 
 export default function PopoverItems({ color, pathname }) {
   let timeout;
-  const timeoutDuration = 400;
+  const timeoutDuration = 2000;
   const buttonRef = useRef(null);
   const [openState, setOpenState] = useState(false);
 
@@ -110,7 +110,7 @@ export default function PopoverItems({ color, pathname }) {
                       className="hover:text-neutral-300 hover:underline hover:underline-offset-8"
                       onClick={() => handleClick(open)}
                     >
-                      {category.name}
+                      {category.name} ({openState ? "open" : "closed"})
                     </span>
                   </Popover.Button>
                 </div>
@@ -139,7 +139,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900"
+                                  className="font-medium text-gray-900 pt-1"
                                 >
                                   SHOP ALL
                                 </p>
