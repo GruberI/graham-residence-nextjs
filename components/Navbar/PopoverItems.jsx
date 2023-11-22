@@ -45,44 +45,42 @@ const handleClickScroll = (id) => {
   }
 };
 
+// export function useOnClickOutside() {
+//   useEffect(() => {
+//     // eslint-disable-next-line @typescript-eslint/no-explicit-any
+//     const listener = (event) => {
+//       if (!ref.current || ref.current.contains(event.target)) {
+//         return
+//       }
+//       handler(event)
+//     }
+
+//     document.addEventListener('mousedown', listener)
+//     document.addEventListener('touchstart', listener)
+
+//     return () => {
+//       document.removeEventListener('mousedown', listener)
+//       document.removeEventListener('touchstart', listener)
+//     }
+//   }, [ref, handler])
+// }
+
 export default function PopoverItems({ color, pathname }) {
   let timeout;
-  const timeoutDuration = 2000;
-  const buttonRef = useRef(null);
-  const [openState, setOpenState] = useState(false);
+  const timeoutDuration = 3500;
+  const triggerRef = useRef();
+  const timeOutRef = useRef();
 
-  const toggleMenu = (open) => {
-    setOpenState((openState) => !openState);
-
-    buttonRef?.current?.click();
+  const handleEnter = (isOpen) => {
+    clearTimeout(timeOutRef.current);
+    !isOpen && triggerRef.current?.click();
   };
 
-  const onHover = (open, action) => {
-    if (
-      (!open && !openState && action === "onMouseEnter") ||
-      (open && openState && action === "onMouseLeave")
-    ) {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => toggleMenu(open), timeoutDuration);
-    }
+  const handleLeave = (isOpen) => {
+    timeOutRef.current = setTimeout(() => {
+      isOpen && triggerRef.current?.click();
+    }, timeoutDuration);
   };
-
-  const handleClick = (open) => {
-    setOpenState(!open);
-    clearTimeout(timeout);
-  };
-
-  const handleClickOutside = (event) => {
-    if (buttonRef.current && !buttonRef.current.contains(event.target)) {
-      event.stopPropagation();
-    }
-  };
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  });
 
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-1 sm:self-stretch z-40 max-sm:w-full">
@@ -93,11 +91,11 @@ export default function PopoverItems({ color, pathname }) {
               <>
                 <div
                   className="relative flex"
-                  onMouseEnter={() => onHover(open, "onMouseEnter")}
-                  onMouseLeave={() => onHover(open, "onMouseLeave")}
+                  onMouseEnter={() => handleEnter(open)}
+                  onMouseLeave={() => handleLeave(open)}
                 >
                   <Popover.Button
-                    ref={buttonRef}
+                    ref={triggerRef}
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
                       `relative z-10 -mb-px flex items-center border-b-1 pt-px text-xs sm:text-sm duration-300 ease-out outline-none `
@@ -108,9 +106,9 @@ export default function PopoverItems({ color, pathname }) {
                   >
                     <span
                       className="hover:text-neutral-300 hover:underline hover:underline-offset-8"
-                      onClick={() => handleClick(open)}
+                   
                     >
-                      {category.name} ({openState ? "open" : "closed"})
+                      {category.name} 
                     </span>
                   </Popover.Button>
                 </div>
