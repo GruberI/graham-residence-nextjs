@@ -11,7 +11,7 @@ export default function ShopAllArtHero({ pageTitle }) {
         <div className="mx-auto max-w-2xl py-32 sm:py-24">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
           <div className="text-center mb-24">
-            <h1 className="text-4xl font-normal tracking-tight text-white sm:text-6xl animate-fade">
+            <h1 className="text-4xl font-normal tracking-tight text-white sm:text-6xl animate-fadeTwo">
             {restructuredTitle}
             </h1>
           </div>

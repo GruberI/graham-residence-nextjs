@@ -1,5 +1,5 @@
 import ShopAllArtHeader from "./Header";
-import { getCollection, getCollectionProducts } from "../../../lib/shopify";
+import { getCollection } from "../../../lib/shopify";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -27,12 +27,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function ShopAllArt({ productsByHandle, pageTitle }) {
+export default async function ShopAllArt({ productsByHandle }) {
   // const products = await getCollectionProducts({ collection: "Artwork" });
 
   return (
-    <div className="mt-20">
-      <ShopAllArtHero pageTitle={pageTitle}/>
+    <div>
       <Suspense>
         <section>
           {productsByHandle.length === 0 ? (

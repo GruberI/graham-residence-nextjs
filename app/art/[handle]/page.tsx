@@ -1,4 +1,5 @@
 import ShopAllArt from "../../../components/ShopAll/Art/Art";
+import ShopAllArtHeader from "../../../components/ShopAll/Art/Header";
 import { getCollectionProducts } from "../../../lib/shopify";
 import { notFound } from "next/navigation";
 
@@ -18,6 +19,9 @@ export default async function ShopAll({
   if (!products?.length) return notFound();
 
   return (
-    <ShopAllArt productsByHandle={productsByHandle} pageTitle={params.handle} />
+    <div className="sm:pt-40 pt-48">
+      <ShopAllArtHeader pageTitle={params.handle} />
+      <ShopAllArt productsByHandle={productsByHandle} />
+    </div>
   );
 }

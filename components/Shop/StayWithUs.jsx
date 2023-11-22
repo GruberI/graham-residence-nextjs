@@ -27,7 +27,7 @@ export default function StayWithUs() {
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
                 <img
-                  src="https://ipfs.filebase.io/ipfs/QmaZVMmmPxW4L4vysKkNdF3YaVtgcG3qXHWyX2nuUj9nB3"
+                  src="https://ipfs.filebase.io/ipfs/QmRNe1ozYPmn3kgLTkuTe9PvEgYZR3maqTYQBarpNSf7wD"
                   alt=""
                   className="aspect-[7/5] lg:w-[37rem] md:w-[30rem] sm:w-[20rem] w-[20rem] max-w-none bg-gray-50 object-cover"
                 />
