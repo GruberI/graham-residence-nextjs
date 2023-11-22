@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useRef, useEffect } from "react";
 import { Popover, Transition } from "@headlessui/react";
 
 const navigation = {
@@ -28,7 +28,7 @@ const navigation = {
     //   href: "https://www.grahamresidence.com/",
     //   id: "property",
     // },
-    { name: 'Exhibitions', href: "/exhibition"},
+    { name: "Exhibitions", href: "/exhibition" },
     { name: "Contact", id: "contact-us" },
   ],
 };
@@ -46,7 +46,43 @@ const handleClickScroll = (id) => {
 };
 
 export default function PopoverItems({ color, pathname }) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  let timeout;
+  const timeoutDuration = 400;
+  const buttonRef = useRef(null);
+  const [openState, setOpenState] = useState(false);
+
+  const toggleMenu = (open) => {
+    setOpenState((openState) => !openState);
+
+    buttonRef?.current?.click();
+  };
+
+  const onHover = (open, action) => {
+    if (
+      (!open && !openState && action === "onMouseEnter") ||
+      (open && openState && action === "onMouseLeave")
+    ) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => toggleMenu(open), timeoutDuration);
+    }
+  };
+
+  const handleClick = (open) => {
+    setOpenState(!open);
+    clearTimeout(timeout);
+  };
+
+  const handleClickOutside = (event) => {
+    if (buttonRef.current && !buttonRef.current.contains(event.target)) {
+      event.stopPropagation();
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
 
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-1 sm:self-stretch z-40 max-sm:w-full">
@@ -55,8 +91,13 @@ export default function PopoverItems({ color, pathname }) {
           <Popover key={categoryIdx} className="flex">
             {({ open }) => (
               <>
-                <div className="relative flex">
+                <div
+                  className="relative flex"
+                  onMouseEnter={() => onHover(open, "onMouseEnter")}
+                  onMouseLeave={() => onHover(open, "onMouseLeave")}
+                >
                   <Popover.Button
+                    ref={buttonRef}
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
                       `relative z-10 -mb-px flex items-center border-b-1 pt-px text-xs sm:text-sm duration-300 ease-out outline-none `
@@ -65,7 +106,10 @@ export default function PopoverItems({ color, pathname }) {
                       pathname == "/" ? { color: color } : { color: "black" }
                     }
                   >
-                    <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                    <span
+                      className="hover:text-neutral-300 hover:underline hover:underline-offset-8"
+                      onClick={() => handleClick(open)}
+                    >
                       {category.name}
                     </span>
                   </Popover.Button>
@@ -91,7 +135,7 @@ export default function PopoverItems({ color, pathname }) {
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-3 items-start gap-x-6 gap-y-10 pb-12 pt-10 md:grid-cols-1 lg:gap-x-8">
                           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:gap-x-8">
-                          <div>
+                            <div>
                               <a href="/">
                                 <p
                                   id="categories-heading"

@@ -1,7 +1,6 @@
 "use client";
-import { Suspense } from "react";
 import PopoverItems from "./PopoverItems";
-import { useState, useEffect } from "react";
+import { Fragment, useRef, useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
