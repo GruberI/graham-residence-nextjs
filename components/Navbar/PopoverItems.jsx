@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useState, useRef, useEffect } from "react";
+import { Fragment, useRef } from "react";
 import { Popover, Transition } from "@headlessui/react";
 
 const navigation = {
@@ -40,34 +40,12 @@ function classNames(...classes) {
 const handleClickScroll = (id) => {
   const element = document.getElementById(id);
   if (element) {
-    // Will scroll smoothly to the top of the next section
     element.scrollIntoView({ behavior: "smooth" });
   }
 };
 
-// export function useOnClickOutside() {
-//   useEffect(() => {
-//     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-//     const listener = (event) => {
-//       if (!ref.current || ref.current.contains(event.target)) {
-//         return
-//       }
-//       handler(event)
-//     }
-
-//     document.addEventListener('mousedown', listener)
-//     document.addEventListener('touchstart', listener)
-
-//     return () => {
-//       document.removeEventListener('mousedown', listener)
-//       document.removeEventListener('touchstart', listener)
-//     }
-//   }, [ref, handler])
-// }
-
 export default function PopoverItems({ color, pathname }) {
-  let timeout;
-  const timeoutDuration = 3500;
+  const timeoutDuration = 500;
   const triggerRef = useRef();
   const timeOutRef = useRef();
 
@@ -92,7 +70,6 @@ export default function PopoverItems({ color, pathname }) {
                 <div
                   className="relative flex"
                   onMouseEnter={() => handleEnter(open)}
-                  onMouseLeave={() => handleLeave(open)}
                 >
                   <Popover.Button
                     ref={triggerRef}
@@ -122,7 +99,7 @@ export default function PopoverItems({ color, pathname }) {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2]">
+                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2]" onMouseLeave={() => handleLeave(open)}>
                     {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                     <div
                       className="absolute inset-0 top-1/2 bg-white shadow"
