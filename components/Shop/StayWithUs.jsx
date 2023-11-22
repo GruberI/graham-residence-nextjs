@@ -1,6 +1,6 @@
 export default function StayWithUs() {
   return (
-    <div className="w-screen sm:py-24 py-3 sm:px-0 lg:px-0 border-t border-black mx-8">
+    <div className="w-screen sm:py-24 py-3 sm:px-0 lg:px-0 mx-8">
       <div className="overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
           <div className="mx-auto grid max-w-1xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">

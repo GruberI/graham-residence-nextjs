@@ -1,5 +1,6 @@
 import Header from '../../../components/Exhibition/ThaiMainhard/Header'
 import HeroImage from '../../../components/Exhibition/ThaiMainhard/HeroImage'
+import Banner from '../../../components/Exhibition/ThaiMainhard/Banner'
 import Quote from '../../../components/Exhibition/ThaiMainhard/Quote'
 import SecondQuote from '../../../components/Exhibition/ThaiMainhard/SecondQuote'
 import TwoImageGrid from '../../../components/Exhibition/ThaiMainhard/TwoImageGrid'
@@ -15,6 +16,7 @@ export default function Exhibition() {
     <TwoImageGrid />
     <SecondQuote />
     <SixImageGallery />
+    <Banner />
     </div>
   );
 }

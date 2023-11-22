@@ -1,9 +1,9 @@
 import Link from "next/link";
 export default function TwoImageGrid() {
   return (
-    <div className="w-screen sm:px-0 px-10 py-6">
+    <div className="w-screen sm:px-0 px-10 mt-20">
       <div className="bg-white">
-        <div className="mx-auto py-8 sm:py-26 sm:max-w-7xl">
+        <div className="mx-auto sm:max-w-7xl">
           <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
             <Link href={"/product/freefall-by-thai-mainhard"}>
               <div className="aspect-[7/5] overflow-hidden bg-black-100">

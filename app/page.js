@@ -13,6 +13,7 @@ import { getCollectionProducts } from "../lib/shopify";
 import Section from "../components/Shop/Section.jsx";
 import { notFound } from "next/navigation";
 import Slideshow from '../components/Shop/Slideshow.jsx'
+import SimpleSlider from '../components/Carousel/ImageCarousel.jsx'
 import ExhibitionList from '../components/Exhibition/ExhibitionList.jsx'
 
 export default async function Shop() {
@@ -38,7 +39,7 @@ export default async function Shop() {
       <Featured />
       <GoodsSection products={products} />
       <Suspense>
-        <Slideshow />
+      <SimpleSlider/>
       </Suspense>
       <StayWithUs />
     </div>
