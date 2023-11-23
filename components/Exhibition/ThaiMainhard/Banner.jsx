@@ -17,7 +17,7 @@ export default function Banner() {
                 <p>
                   MEET
                 </p>
-                <h1 className="text-6xl font-thin">
+                <h1 className="sm:text-6xl text-4xl sm:font-thin font-semibold">
                   Thai Mainhard
                 </h1>
   
@@ -30,7 +30,7 @@ export default function Banner() {
       >
         <button
           type="submit"
-          className="max-w-md text-base font-light text-black underline underline-offset-8 hover:text-neutral-500"
+          className="max-w-md text-base font-light text-black underline underline-offset-8 hover:text-neutral-500 sm:mb-0 mb-12"
         >
           SHOP THE FULL COLLECTION
         </button>

@@ -32,10 +32,10 @@ export default function ExhibitionList() {
           />
         </div>
         <p className="pt-4 text-xs">Exhibition</p>
-        <h1 className="text-2xl pt-2">
+        <h1 className="sm:text-2xl text-lg pt-2">
           {artistExhibitions[0].name} by {artistExhibitions[0].artist}
         </h1>
-        <p className="pt-1 tracking-tight font-thin">
+        <p className="pt-1 tracking-tight font-thin text-xs sm:text-base">
           On display at the Graham Residence, October 2023 - Current
         </p>
       </Link>
@@ -49,10 +49,10 @@ export default function ExhibitionList() {
           />
         </div>
         <p className="pt-4 text-xs">Exhibition</p>
-        <h1 className="text-2xl pt-2">
+        <h1 className="sm:text-2xl text-lg pt-2">
           {artistExhibitions[1].name} by {artistExhibitions[1].artist}
         </h1>
-        <p className="pt-1 tracking-tight font-thin">
+        <p className="pt-1 tracking-tight font-thin text-xs sm:text-base">
           On display at the Graham Residence, June 2023 - October 2023
         </p>
       </Link>

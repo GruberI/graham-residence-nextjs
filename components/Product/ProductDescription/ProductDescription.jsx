@@ -2,7 +2,6 @@
 import { Fragment, Tab } from "@headlessui/react";
 import { AddToCart } from "../../Cart/add-to-cart";
 import { VariantSelector } from "./variant-selector";
-import './ProductDescription.css'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -61,7 +60,7 @@ export default function ProductDescription({ product }) {
                     src={image.url}
                     alt={image.altText}
                     // className="h-full w-full object-cover object-center"
-                    className="mainImg w-11/12 object-center aspect-[3/4]"
+                    className="h-[600px] object-cover w-11/12 object-center aspect-[3/4]"
                   />
                 </Tab.Panel>
               ))}

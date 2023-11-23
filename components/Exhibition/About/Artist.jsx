@@ -1,7 +1,7 @@
 export default function Artist() {
   return (
     <div className="m-auto border-t border-black max-w-7xl">
-      <div className="mx-auto px-4 sm:px-6 lg:px-6 my-20" >
+      <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-20 mb-12" >
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
           <div>
             <div className="overflow-hidden bg-black-100 aspect-square">

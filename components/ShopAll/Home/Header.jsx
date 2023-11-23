@@ -7,11 +7,11 @@ export default function ShopAllHomeHeader() {
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
 
-      <div className="mx-auto max-w-2xl py-32 sm:py-50">
+      <div className="mx-auto max-w-2xl my-36 sm:pb-24">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
-        <div className="text-center mb-10">
-          <h1 className="text-4xl font-normal tracking-tight text-white sm:text-6xl animate-fade">
-            Curation is about intentionality
+        <div className="text-center">
+          <h1 className="text-4xl font-thin tracking-tight text-white sm:text-6xl animate-fadeTwo">
+            Every detail tells a story...
           </h1>
         </div>
       </div>
