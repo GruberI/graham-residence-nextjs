@@ -1,4 +1,4 @@
-export default function HeroImage() {
+export default function HeaderImage() {
     return (
       <div className="bg-white py-26 lg:px-6 sm:px-2 sm:pt-20">
       {/* <div className="bg-black h-20 w-screen inset-x-0 top-0 absolute z-10"></div> */}

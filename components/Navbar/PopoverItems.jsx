@@ -29,6 +29,7 @@ const navigation = {
     //   id: "property",
     // },
     { name: "Exhibitions", href: "/exhibition" },
+    { name: "About" , href: "/about"},
     { name: "Contact", id: "contact-us" },
   ],
 };
