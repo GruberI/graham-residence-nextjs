@@ -11,7 +11,7 @@ export default function ShopAllHomeHeader() {
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div className="text-center">
           <h1 className="text-4xl font-thin tracking-tight text-white sm:text-6xl animate-fadeTwo">
-            Every detail tells a story...
+            Every detail tells a story
           </h1>
         </div>
       </div>
