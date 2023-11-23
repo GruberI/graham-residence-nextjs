@@ -3,7 +3,7 @@ import { Suspense } from "react";
 export default function Section() {
   return (
     <div className="max-w-7xl m-auto border-t border-black">
-      <div className="mx-auto my-20 sm:pb-20">
+      <div className="mx-auto my-20 sm:pb-24">
         <div className="grid items-center gap-x-0 lg:gap-x-10 gap-y-16 sm:grid-cols-2">
           <Suspense>
             <div className="relative w-60 lg:w-96">
