@@ -2,14 +2,6 @@
 import Link from "next/link";
 
 export default async function FourImageGrid() {
-  //   const products = await getCollectionProducts({ collection: "Artwork" });
-  //   const productsByTag = products.filter((product) => {
-  //     return product.tags.includes("kyle-steed");
-  //   });
-
-  //   if (!products?.length) return null;
-
-  //   const imagesArray = productsByTag.splice(6, 9);
   return (
     <div className="mx-auto grid grid-cols-2 max-w-7xl py-20 gap-10">
       <div className="grid-rows-3">

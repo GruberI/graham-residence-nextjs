@@ -1,6 +1,3 @@
-// import Navigation from "@/components/Shop/Navigation";
-// import Header from "@/components/Shop/Header";
-// import HeroImage from "@/components/Shop/HeroImage";
 import HeroImageText from "@/components/Shop/HeroImageText"
 import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
@@ -12,9 +9,8 @@ import Carousel from "../components/Carousel/Carousel.jsx";
 import { getCollectionProducts } from "../lib/shopify";
 import Section from "../components/Shop/Section.jsx";
 import { notFound } from "next/navigation";
-import Slideshow from '../components/Shop/Slideshow.jsx'
 import SimpleSlider from '../components/Carousel/ImageCarousel.jsx'
-import ExhibitionList from '../components/Exhibition/ExhibitionList.jsx'
+
 
 export default async function Shop() {
   const products = await getProducts({});
