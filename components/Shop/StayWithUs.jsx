@@ -5,16 +5,16 @@ export default function StayWithUs() {
         <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
           <div className="mx-auto grid max-w-1xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
             <div className="lg:col-end-1 w-full lg:w-full lg:max-w-lg flex flex-col justify-center lg:pb-20 pl-0 sm:pl-20">
-              <p className="mt-20 text-1xl leading-8 flex justify-center">
+              <p className="mt-20 text-1xl leading-8 flex sm:justify-center justify-start">
                 Come stay at
               </p>
-              <p className="font-medium mt-2 sm:text-3xl text-2xl leading-8 flex justify-center">
+              <p className="font-thin mt-2 sm:text-3xl text-2xl leading-8 flex sm:justify-center justify-start">
                 {" "}
                 THE GRAHAM RESIDENCE
               </p>
               <a
                 href="https://www.airbnb.com/rooms/18312865?source_impression_id=p3_1697958503_wgsynyWLg4S60ges"
-                className="p-2 text-black hover:text-black-500 pt-6 flex justify-center"
+                className="text-black hover:text-black-500 pt-6 flex sm:justify-center justify-start"
               >
                 <button
                   type="submit"

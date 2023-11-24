@@ -26,7 +26,7 @@ function SampleNextArrow(props) {
         }}
         onClick={onClick}
       >
-        <ChevronRightIcon className="h-[54px] w-[52px] text-white absolute sm:-top-7 sm:right-10 right-4 animate-fadeTwo"/>
+        <ChevronRightIcon className="h-[54px] w-[52px] text-white absolute sm:-top-7 sm:right-10 right-4 animate-fadeTwo hidden sm:block"/>
       </div>
     );
   }
@@ -42,7 +42,7 @@ function SampleNextArrow(props) {
         }}
         onClick={onClick}
       >
-        <ChevronLeftIcon  className="absolute h-[50px] w-[50px] text-white sm:inset-x-10 inset-x-5 sm:-inset-y-8 animate-fadeTwo" />
+        <ChevronLeftIcon  className="absolute h-[50px] w-[50px] text-white sm:inset-x-10 inset-x-5 sm:-inset-y-8 animate-fadeTwo hidden sm:block" />
       </div>
     );
   }
@@ -57,6 +57,24 @@ function SampleNextArrow(props) {
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+            }
+          }
+        ]
     
       };
       return (

@@ -24,8 +24,7 @@ const faqs = [
 
 export default function Shipping() {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-36">
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-36 mt-24 sm:mt-0">
         <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
           <h2 className="text-3xl font-thin leading-10 tracking-wide text-gray-900 flex justify-center">
             Shipping & Handling
@@ -67,6 +66,5 @@ export default function Shipping() {
           </dl>
         </div>
       </div>
-    </div>
   );
 }

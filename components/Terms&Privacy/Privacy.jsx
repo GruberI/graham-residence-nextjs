@@ -2,7 +2,7 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
 export default function Privacy() {
   return (
-    <div className="container lg:h-[32rem] sm:h-[16rem] h-[14rem] border-r pr-1 overflow-scroll">
+    <div className="container lg:h-[32rem] sm:h-[16rem] h-[24rem] border-r pr-1 overflow-scroll">
       <div className="bg-white shadow-md">
         <div className="text-gray-700">
           <div className="max-w-2xl text-sm leading-6 text-gray-700 lg:max-w-none">

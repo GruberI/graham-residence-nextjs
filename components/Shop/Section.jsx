@@ -20,7 +20,7 @@ export default function Section() {
               />
             </div>
           </Suspense>
-          <div className="flex flex-col w-11/12 m-auto p-10">
+          <div className="flex flex-col sm:w-11/12 m-auto p-10">
             <div className="pb-6">
               <h1 className="text-4xl font-medium">CURATION IS ABOUT</h1>
               <p className="text-3xl italic font-light">intentionality</p>
@@ -39,13 +39,13 @@ export default function Section() {
             <div className="flex items-center justify-center gap-x-6">
               <a
                 href="/art"
-                className="rounded-sm border border-black px-3.5 py-2.5 text-sm font-normal shadow-sm hover:bg-black hover:text-white  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-sm border border-black px-3.5 py-2.5 sm:text-sm text-xs font-normal shadow-sm hover:bg-black hover:text-white  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 Shop Artwork
               </a>
               <a
                 href="/home"
-                className="text-sm font-normal leading-6 hover:text-neutral-300 underline underline-offset-8"
+                className="sm:text-sm text-xs font-normal leading-6 hover:text-neutral-300 underline underline-offset-8"
               >
                 Shop Home
               </a>

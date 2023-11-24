@@ -10,10 +10,10 @@ export default function Hero() {
       <div className="mx-auto max-w-2xl py-32 sm:py-30">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div className="text-center mb-24">
-          <p className="font-thin tracking-tight text-white sm:text-3xl animate-fadeTwo">
+          <p className="font-thin tracking-tight text-white sm:text-3xl text-lg animate-fadeTwo">
             Welcome to the
           </p>
-          <h1 className=" font-thin tracking-wide text-white sm:text-6xl animate-fadeTwo">
+          <h1 className="font-thin tracking-wide text-white sm:text-6xl text-5xl animate-fadeTwo">
             GRAHAM RESIDENCE
           </h1>
         </div>

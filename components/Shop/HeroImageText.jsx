@@ -8,7 +8,7 @@ export default function HeroImageText() {
       />
       <div className="mx-auto max-w-4xl py-10 sm:py-10 lg:py-10">
         <div className="text-center">
-          <h1 className="sm:text-5xl text-3xl pt-2 leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-extralight">
+          <h1 className="sm:text-5xl text-4xl pt-2 leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-extralight">
             THE GRAHAM RESIDENCE
           </h1>
           <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[48vh] mb-[10vh]">

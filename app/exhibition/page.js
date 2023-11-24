@@ -24,7 +24,7 @@ export default function MainExhibition() {
   return (
     <div className="m-auto max-w-7xl py-26 lg:px-6 sm:px-2 sm:mt-36 mt-48 mb-28">
       <div className="text-center mb-16">
-        <h1 className="font-thin sm:text-6xl text-4xl ">
+        <h1 className="font-thin sm:text-6xl text-5xl ">
           Exhibitions
         </h1>
       </div>

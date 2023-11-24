@@ -150,7 +150,7 @@ export default function PopoverItems({ color, pathname }) {
                                 <ul
                                   role="list"
                                   aria-labelledby="art-heading"
-                                  className="space-y-6 sm:space-y-4"
+                                  className="space-y-6 sm:space-y-4 pb-2 sm:pb-0"
                                 >
                                   {category.art.map((item) => (
                                     <li key={item.name} className="flex">

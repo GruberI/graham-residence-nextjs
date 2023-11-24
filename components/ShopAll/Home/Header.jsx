@@ -7,10 +7,10 @@ export default function ShopAllHomeHeader() {
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
 
-      <div className="mx-auto max-w-2xl my-36 sm:pb-24">
+      <div className="mx-auto max-w-2xl my-36 pb-24">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div className="text-center">
-          <h1 className="text-4xl font-thin tracking-tight text-white sm:text-6xl animate-fadeTwo">
+          <h1 className="font-thin tracking-tight text-white text-6xl animate-fadeTwo hidden sm:block">
             Every detail tells a story
           </h1>
         </div>
