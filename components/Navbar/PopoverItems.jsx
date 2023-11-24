@@ -115,7 +115,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 pt-1 hover:text-slate-400"
+                                  className="font-medium text-gray-900 hover:text-slate-400"
                                 >
                                  SHOP ALL
                                 </p>
@@ -123,7 +123,7 @@ export default function PopoverItems({ color, pathname }) {
                               <ul
                                 role="list"
                                 aria-labelledby="categories-heading"
-                                className="mt-4 space-y-6 pt-6 sm:space-y-4"
+                                className="space-y-6 pt-6 sm:space-y-4"
                               >
                                 {category.categories.map((item) => (
                                   <li key={item.name} className="flex">
@@ -156,7 +156,7 @@ export default function PopoverItems({ color, pathname }) {
                                     <li key={item.name} className="flex">
                                       <a
                                         href={item.href}
-                                        className="hover:text-gray-800 tracking-wide leading-7 text-xs lg:text-sm"
+                                        className="hover:text-gray-800 lg:tracking-widest leading-7 text-xs lg:text-sm"
                                       >
                                         {item.name}
                                       </a>
@@ -177,13 +177,13 @@ export default function PopoverItems({ color, pathname }) {
                               <ul
                                 role="list"
                                 aria-labelledby="home-heading"
-                                className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4 tracking-wide leading-7"
+                                className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4"
                               >
                                 {category.home.map((item) => (
                                   <li key={item.name} className="flex">
                                     <a
                                       href={item.href}
-                                      className="hover:text-gray-800 text-xs lg:text-sm"
+                                      className="hover:text-gray-800 tracking-widest leading-7 text-xs lg:text-sm"
                                     >
                                       {item.name}
                                     </a>
