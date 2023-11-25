@@ -6,7 +6,7 @@ export default function Section() {
       <div className="mx-auto my-20 sm:pb-24">
         <div className="grid items-center gap-x-0 lg:gap-x-10 gap-y-16 sm:grid-cols-2">
           <Suspense>
-            <div className="relative w-56 sm:w-60 md:w-72 lg:w-96 ml-10 sm:ml-0">
+            <div className="relative w-60 md:w-72 lg:w-96 ml-8 sm:ml-0">
               <img
                 src="https://ipfs.filebase.io/ipfs/QmcTx4pcZib2EmP6aPA8R8itqjhR5NqFwHZeBGtd2Td732"
                 alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
