@@ -20,7 +20,7 @@ export default function HeroImageText() {
             </a>
             <a
               href="/home"
-              className="text-sm font-normal leading-6 text-white hover:text-neutral-300"
+              className="text-sm font-normal leading-6 text-white hover:text-neutral-300 hover:underline hover:underline-offset-8"
             >
               Shop Home <span aria-hidden="true">→</span>
             </a>
