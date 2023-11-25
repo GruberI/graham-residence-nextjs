@@ -10,7 +10,7 @@ export default function Section() {
               <img
                 src="https://ipfs.filebase.io/ipfs/QmcTx4pcZib2EmP6aPA8R8itqjhR5NqFwHZeBGtd2Td732"
                 alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
-                className="object-cover object-center h-3/4 ml-16 sm:ml-0"
+                className="object-cover object-center h-[300px] sm:h-3/4 ml-16 sm:ml-0"
               />
               <img
                 src="
