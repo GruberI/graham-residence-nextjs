@@ -1,4 +1,4 @@
-import ExhibitionListTemp from "@/components/Exhibition/ExhibitionListTemp";
+import ExhibitionList from "@/components/Exhibition/ExhibitionList";
 
 const artistExhibitions = [
   {
@@ -28,7 +28,7 @@ export default function MainExhibition() {
           Exhibitions
         </h1>
       </div>
-      <ExhibitionListTemp />
+      <ExhibitionList />
     </div>
   );
 }
