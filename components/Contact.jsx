@@ -15,8 +15,8 @@ const contact = [
   {
     name: "artist representation",
     text: "Artist representation:",
-    subtext: "lindsey@lindseygoldbergdesigns.com",
-    email: "lindsey@lindseygoldbergdesigns.com",
+    subtext: "lindsey@lindseygoldbergdesign.com",
+    email: "lindsey@lindseygoldbergdesign.com",
   },
   {
     name: "photography",
@@ -28,7 +28,7 @@ const contact = [
 export default function Contact() {
   return (
     <main className="relative isolate" id="contact-us">
-      <div className="mx-auto max-w-8xl px-6 lg:px-8 border-t border-black">
+      <div className="mx-auto max-w-8xl px-6 lg:px-8 border-t border-black mb-20">
         <div className="mx-auto lg:mx-0 lg:max-w-none">
           <dl className="mx-auto mt-16 grid max-w-3xl grid-cols-1 gap-8 text-base leading-7 text-black sm:grid-cols-2 lg:mx-0 lg:max-w-none">
             {contact.map((value) => (

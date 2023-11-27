@@ -21,7 +21,7 @@ export default async function ShopAll({
   return (
     <div className="sm:pt-40 pt-48">
       <ShopAllArtHeader pageTitle={params.handle} />
-      <ShopAllArt productsByHandle={productsByHandle} />
+      <ShopAllArt productsByHandle={productsByHandle} productHandle={params.handle}/>
     </div>
   );
 }

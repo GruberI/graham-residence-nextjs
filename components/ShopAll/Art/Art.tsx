@@ -27,7 +27,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function ShopAllArt({ productsByHandle }) {
+export default async function ShopAllArt({ productsByHandle, productHandle }) {
   // const products = await getCollectionProducts({ collection: "Artwork" });
 
   return (
@@ -37,7 +37,7 @@ export default async function ShopAllArt({ productsByHandle }) {
           {productsByHandle.length === 0 ? (
             <p className="py-3 text-lg">{`No products found in this collection`}</p>
           ) : (
-            <ProductSection products={productsByHandle} />
+            <ProductSection products={productsByHandle} productHandle={productHandle}/>
           )}
         </section>
       </Suspense>

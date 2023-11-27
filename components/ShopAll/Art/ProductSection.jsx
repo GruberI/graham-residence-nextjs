@@ -4,6 +4,8 @@ import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ProductGridThree from "../../Product/ProductGridThree";
 import { Suspense } from "react";
+import Banner from "./Banner";
+import About from "./About";
 
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
@@ -24,7 +26,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ProductSection({ products }) {
+export default function ProductSection({ products, productHandle }) {
+  const firstSixProducts = products.slice(0, 6);
+  const remainingProducts = products.slice(6, products.length + 1);
   return (
     <div className="bg-white sm:px-0 px-2">
       <main className="mx-auto max-w-7xl">
@@ -81,11 +85,18 @@ export default function ProductSection({ products }) {
           </div>
         </div>
 
-        <section aria-labelledby="products-heading" className="pb-24 pt-10">
+        <section aria-labelledby="products-heading" className="pb-16 pt-10">
           <Suspense>
-            <ProductGridThree products={products} />
+            <ProductGridThree products={firstSixProducts} />
+          </Suspense>
+          <div className="my-10 pb-10">
+          <Banner artistName={productHandle} />
+          </div>
+          <Suspense>
+            <ProductGridThree products={remainingProducts} />
           </Suspense>
         </section>
+        <About artistName={productHandle} />
       </main>
     </div>
   );

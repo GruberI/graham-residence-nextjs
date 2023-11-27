@@ -35,13 +35,6 @@ export default function Section() {
               <p className="tracking-wide"><span className="font-semibold">Bedrooms</span> – 2</p>
               <p className="tracking-wide"><span className="font-semibold">Bathrooms</span> – 1</p>
               <p className="tracking-wide"><span className="font-semibold">Land</span>– 20-acres</p>
-              <p className="tracking-wide pt-10 pb-4">
-                The Graham Residence is owned and operated by:
-              </p>
-              <p className="tracking-wide">Yoni Goldberg and Lindsey Herron</p>
-              <p className="tracking-wide">
-                1533 Anita Ln, Newport Beach, CA 92660
-              </p>
             </div>
           </div>
         </div>
