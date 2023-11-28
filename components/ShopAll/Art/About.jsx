@@ -33,12 +33,10 @@ export default function About({ artistName }) {
           <div
             className="m-auto border-t border-black max-w-7xl"
             id="shopAllAbout"
+            key={i}
           >
             <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-20">
-              <div
-                className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2"
-                key={i}
-              >
+              <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
                 <div>
                   <div className="overflow-hidden bg-black-100 aspect-[3/4] h-5/6 w-10/12 m-auto">
                     <img

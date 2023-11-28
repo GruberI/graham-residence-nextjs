@@ -38,12 +38,12 @@ export default function Banner({ artistName }) {
     <>
       {bannerInfo.map((banner, i) => {
         return banner.handle === artistName ? (
-          <div className="m-auto border-t border-b border-black max-w-7xl">
+          <div
+            className="m-auto border-t border-b border-black max-w-7xl"
+            key={i}
+          >
             <div className="mx-auto px-4 sm:px-6 lg:px-6 my-16">
-              <div
-                className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2"
-                key={i}
-              >
+              <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
                 <div>
                   <div className="overflow-hidden bg-black-100 aspect-[4/3]">
                     <img
