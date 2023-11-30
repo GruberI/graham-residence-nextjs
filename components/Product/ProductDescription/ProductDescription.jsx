@@ -2,16 +2,38 @@
 import { Fragment, Tab } from "@headlessui/react";
 import { AddToCart } from "../../Cart/add-to-cart";
 import { VariantSelector } from "./variant-selector";
+import Prose from "@/components/prose";
+// import { usePathname, useSearchParams } from "next/navigation";
+// import { useState, useEffect } from "react";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function ProductDescription({ product }) {
+  // const [selectedVariant, setSelectedVariant] = useState("");
   const amount = product.priceRange.maxVariantPrice.amount;
+  // const pathname = usePathname();
+  // const searchParams = useSearchParams();
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.title,
+    description: product.descriptionHtml,
+    image: product.featuredImage.url,
+    offers: {
+      "@type": "AggregateOffer",
+      availability: product.availableForSale
+        ? "https://schema.org/InStock"
+        : "https://schema.org/OutOfStock",
+      priceCurrency: product.priceRange.minVariantPrice.currencyCode,
+      highPrice: product.priceRange.maxVariantPrice.amount,
+      lowPrice: product.priceRange.minVariantPrice.amount,
+    },
+  };
 
   const tabDetails = [
-    { title: "DESCRIPTION", description: `${product.description}` },
+    { title: "DESCRIPTION", description: `${productJsonLd.description}` },
     {
       title: "SHIPPING & HANDLING",
       description:
@@ -19,8 +41,19 @@ export default function ProductDescription({ product }) {
     },
   ];
 
+  // console.log("Product Variants", product.options);
+  // console.log('pathname', pathname)
+
+  // pathname == `/${product.handle}?color=${product.options.values}` ?
+  
   return (
     <div className="bg-white pt-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productJsonLd),
+        }}
+      />
       <div className="mx-auto max-w-2xl px-0 py-24 sm:px-0 lg:max-w-7xl lg:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-20">
           {/* Image gallery */}
@@ -125,7 +158,12 @@ export default function ProductDescription({ product }) {
                     {tabDetails.map((tab, i) => (
                       <Tab.Panel key={i} className="space-y-16 pt-10 lg:pt-12">
                         {/* <p className="text-md text-black-900 leading-7"> */}
-                        <div>{tab.description}</div>
+                        {tab.description ? (
+                          <Prose
+                            className="mb-6 text-sm leading-tight "
+                            html={product.descriptionHtml}
+                          />
+                        ) : null}
                         {/* </p> */}
                       </Tab.Panel>
                     ))}
