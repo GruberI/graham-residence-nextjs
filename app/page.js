@@ -15,9 +15,9 @@ import SimpleSlider from '../components/Carousel/ImageCarousel.jsx'
 export default async function Shop() {
   const products = await getProducts({});
   const productsByCollection = await getCollectionProducts({
-    collection: "Home Goods",
+    collection: "home-goods",
   });
-  console.log('products by collection', productsByCollection)
+  // console.log('products by collection', productsByCollection)
   const productsByTag = productsByCollection.filter((product) => {
     return product.tags.includes("Cortina");
   });
