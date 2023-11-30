@@ -18,7 +18,7 @@ export default async function Shop() {
     collection: "Artwork",
   });
   const productsByTag = productsByCollection.filter((product) => {
-    return product.tags.includes("acrylic");
+    return product.tags.includes("Cortina");
   });
 
   if (!productsByTag) return notFound();

@@ -11,8 +11,12 @@ export default function ProductDescription({ product }) {
   const amount = product.priceRange.maxVariantPrice.amount;
 
   const tabDetails = [
-    { title: "DESCRIPTION", description: `${product.description}`},
-    { title: "SHIPPING & HANDLING", description: "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley" }
+    { title: "DESCRIPTION", description: `${product.description}` },
+    {
+      title: "SHIPPING & HANDLING",
+      description:
+        "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley",
+    },
   ];
 
   return (
@@ -53,9 +57,9 @@ export default function ProductDescription({ product }) {
               </Tab.List>
             </div>
 
-            <Tab.Panels className=''>
+            <Tab.Panels className="">
               {product.images.map((image, i) => (
-                <Tab.Panel key={i} className='flex justify-center'>
+                <Tab.Panel key={i} className="flex justify-center">
                   <img
                     src={image.url}
                     alt={image.altText}
@@ -80,7 +84,9 @@ export default function ProductDescription({ product }) {
                 }).format(parseFloat(amount))}`}
               </p>
             </div>
-            <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-6 mb-20">{product.vendor.toUpperCase()}</p>
+            <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-6 mb-20">
+              {product.vendor.toUpperCase()}
+            </p>
             <VariantSelector
               options={product.options}
               variants={product.variants}
@@ -103,9 +109,7 @@ export default function ProductDescription({ product }) {
                             key={i}
                             className={({ selected }) =>
                               classNames(
-                                selected
-                                  ? "text-black"
-                                  : "text-zinc-400",
+                                selected ? "text-black" : "text-zinc-400",
                                 "whitespace-nowrap py-6 text-sm font-medium"
                               )
                             }
@@ -120,9 +124,9 @@ export default function ProductDescription({ product }) {
                   <Tab.Panels as={Fragment}>
                     {tabDetails.map((tab, i) => (
                       <Tab.Panel key={i} className="space-y-16 pt-10 lg:pt-12">
-                        <p className="text-md text-black-900 leading-7">
-                          {tab.description}
-                        </p>
+                        {/* <p className="text-md text-black-900 leading-7"> */}
+                        <div>{tab.description}</div>
+                        {/* </p> */}
                       </Tab.Panel>
                     ))}
                   </Tab.Panels>
