@@ -7,37 +7,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
-// function NextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{
-//         ...style,
-//         display: "block",
-//         color: "black",
-//         marginBottom: "10px",
-//       }}
-//       onClick={onClick}
-//     >
-//       <ChevronRightIcon />
-//     </div>
-//   );
-// }
-
-// function PrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block", color: "black" }}
-//       onClick={onClick}
-//     >
-//       <ChevronLeftIcon />
-//     </div>
-//   );
-// }
-
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
