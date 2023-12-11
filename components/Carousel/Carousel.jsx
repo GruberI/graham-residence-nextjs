@@ -92,7 +92,7 @@ export default class Carousel extends Component {
             {this.props.products.map((product, i) => (
               <li
                 key={`${product.handle}${i}`}
-                className="aspect-square flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
+                className="flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
               >
                 <Link className="relative" href={`/product/${product.handle}`}>
                   <GridTileImage

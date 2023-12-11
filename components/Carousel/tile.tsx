@@ -22,7 +22,7 @@ export function GridTileImage({
     <div
     // to change square to rectangle chnage h to full and w to 11/12
       className={clsx(
-        'group flex aspect-[1/1] mx-3 items-center justify-center overflow-hidden bg-white hover:border-blue-600 dark:bg-black',
+        'group flex aspect-square mx-3 items-center justify-center overflow-hidden bg-white hover:border-blue-600 dark:bg-black',
         {
           relative: label,
           'border-2 border-blue-600': active,

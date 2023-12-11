@@ -3,18 +3,28 @@ import { Fragment, Tab } from "@headlessui/react";
 import { AddToCart } from "../../Cart/add-to-cart";
 import { VariantSelector } from "./variant-selector";
 import Prose from "@/components/prose";
-// import { usePathname, useSearchParams } from "next/navigation";
-// import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function ProductDescription({ product }) {
-  // const [selectedVariant, setSelectedVariant] = useState("");
   const amount = product.priceRange.maxVariantPrice.amount;
-  // const pathname = usePathname();
-  // const searchParams = useSearchParams();
+  const searchParams = useSearchParams();
+  const variantName = product.variants[0].selectedOptions[0].name.toLowerCase();
+  const currentSearchParam = searchParams?.get(variantName);
+  const selectedVariant = product.variants.find((variant) =>
+    variant?.selectedOptions.some((item) => item.value === currentSearchParam)
+  );
+  const imgSrc = selectedVariant?.image.originalSrc;
+  const defaultIndex =
+    selectedVariant === undefined
+      ? 0
+      : product.images.findIndex((i) => {
+          return i.url === imgSrc;
+        });
+
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -30,6 +40,10 @@ export default function ProductDescription({ product }) {
       highPrice: product.priceRange.maxVariantPrice.amount,
       lowPrice: product.priceRange.minVariantPrice.amount,
     },
+    seo: {
+      description: product.seo.description,
+      title: product.seo.title,
+    },
   };
 
   const tabDetails = [
@@ -41,11 +55,6 @@ export default function ProductDescription({ product }) {
     },
   ];
 
-  // console.log("Product Variants", product.options);
-  // console.log('pathname', pathname)
-
-  // pathname == `/${product.handle}?color=${product.options.values}` ?
-  
   return (
     <div className="bg-white pt-16">
       <script
@@ -57,7 +66,11 @@ export default function ProductDescription({ product }) {
       <div className="mx-auto max-w-2xl px-0 py-24 sm:px-0 lg:max-w-7xl lg:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-20">
           {/* Image gallery */}
-          <Tab.Group as="div" className="flex flex-col-reverse">
+          <Tab.Group
+            as="div"
+            className="flex flex-col-reverse"
+            defaultIndex={defaultIndex}
+          >
             {/* Image selector */}
             <div className="mx-auto mt-6 hidden w-11/12 max-w-2xl sm:block lg:max-w-none">
               <Tab.List className="grid grid-cols-4 gap-8 ">
@@ -65,6 +78,7 @@ export default function ProductDescription({ product }) {
                   <Tab
                     key={i}
                     className="relative flex h-32 cursor-pointer items-center justify-center bg-white text-sm font-medium uppercase text-black-400 hover:bg-black-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
+                    style={{ display: i > 3 ? "none" : "flex" }}
                   >
                     {({ selected }) => (
                       <>
@@ -96,7 +110,6 @@ export default function ProductDescription({ product }) {
                   <img
                     src={image.url}
                     alt={image.altText}
-                    // className="h-full w-full object-cover object-center"
                     className="h-[600px] object-cover w-11/12 object-center aspect-[3/4]"
                   />
                 </Tab.Panel>
@@ -142,7 +155,9 @@ export default function ProductDescription({ product }) {
                             key={i}
                             className={({ selected }) =>
                               classNames(
-                                selected ? "text-black" : "text-zinc-400",
+                                selected
+                                  ? "text-black outline-none"
+                                  : "text-zinc-400",
                                 "whitespace-nowrap py-6 text-sm font-medium"
                               )
                             }
@@ -157,14 +172,16 @@ export default function ProductDescription({ product }) {
                   <Tab.Panels as={Fragment}>
                     {tabDetails.map((tab, i) => (
                       <Tab.Panel key={i} className="space-y-16 pt-10 lg:pt-12">
-                        {/* <p className="text-md text-black-900 leading-7"> */}
                         {tab.description ? (
                           <Prose
                             className="mb-6 text-sm leading-tight "
-                            html={product.descriptionHtml}
+                            html={
+                              tab.description === "DESCRIPTION"
+                                ? product.descriptionHtml
+                                : tab.description
+                            }
                           />
                         ) : null}
-                        {/* </p> */}
                       </Tab.Panel>
                     ))}
                   </Tab.Panels>
