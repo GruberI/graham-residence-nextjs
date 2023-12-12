@@ -48,17 +48,17 @@ export default function Navbar() {
           >
             <div className="flex h-20 items-center justify-between">
               {/* Logo */}
-              <div className="flex flex-1">
+              <div className="flex flex-2 lg:flex-1">
                 <a href="/">
                   <p
-                    className={`font-light sm:px-6 lg:text-4xl text-3xl semibold`}
+                    className={`font-light pl-6 sm:pl-1 md:pl-6 ml-0 sm:ml-2 md:ml-0 text-3xl sm:text-[18px] md:text-4xl semibold w-full sm:w-[100px] md:w-full`}
                     style={
                       pathname == "/"
                         ? { color: `${color}` }
                         : { color: "black" }
                     }
                   >
-                    TGR<span className="sm:text-2xl text-sm"> SHOP</span>
+                    TGR<span className="md:text-2xl  text-sm"> SHOP</span>
                   </p>
                 </a>
               </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-end sm:mr-20 mr-14">
                 <a
                   href="https://www.grahamresidence.com/"
-                  className={`rounded-sm border sm:px-3.5 px-3 py-2.5 sm:text-sm text-xs font-normal shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
+                  className={`rounded-sm border lg:px-3.5 px-3 py-2.5 lg:text-sm text-xs ml-2 md:ml-0 font-normal shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
                     pathname == "/" ? buttonBg : "black"
                   } text-white`}
                   target="_blank"
@@ -79,7 +79,7 @@ export default function Navbar() {
                       : { border: "1px solid black" }
                   }
                 >
-                  STAY WITH US
+                 STAY <span className="inline sm:hidden lg:inline">WITH US</span>
                 </a>
               </div>
             </div>
