@@ -50,8 +50,7 @@ export default function ProductDescription({ product }) {
     { title: "DESCRIPTION", description: `${productJsonLd.description}` },
     {
       title: "SHIPPING & HANDLING",
-      description:
-        "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley",
+      description: `${productJsonLd.seo.description}`,
     },
   ];
 
