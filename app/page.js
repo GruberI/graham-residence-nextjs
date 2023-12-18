@@ -24,6 +24,14 @@ export default async function Shop() {
 
   if (!productsByTag) return notFound();
 
+  fetch('https://api.instagram.com/oauth/authorize', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: '?client_id=703131838434878\n&redirect_uri=https://grahamresidence.hirejs.com/\n&scope=user_profile,user_media\n&response_type=code'
+});
+
   return (
     <div className="bg-white overflow-hidden">
       <Suspense>
