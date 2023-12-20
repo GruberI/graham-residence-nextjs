@@ -19,7 +19,7 @@ export default async function ShopAll({
 
   return (
     <div>
-      <ShopAllHome productsByHandle={productsByHandle} productHandle={params.handle} pageTitle={params.handle}/>
+      <ShopAllHome productsByHandle={productsByHandle} productHandle={params.handle}/>
     </div>
   );
 }
