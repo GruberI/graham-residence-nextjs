@@ -12,7 +12,7 @@ export default async function ShopAll() {
 
   return (
     <>
-      <ShopAllHome products={products} />
+      <ShopAllHome productsByHandle={products} />
     </>
   );
 }

@@ -4,12 +4,21 @@ import { AddToCart } from "../../Cart/add-to-cart";
 import { VariantSelector } from "./variant-selector";
 import Prose from "@/components/prose";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function ProductDescription({ product }) {
+  const [currentType, setCurrentType] = useState("");
+  useEffect(() => {
+    product.tags.includes("home-goods")
+      ? setCurrentType("home")
+      : setCurrentType("art");
+  }, []);
+  const restructuredVendor = product.vendor.toLowerCase().replaceAll(" ", "-");
   const amount = product.priceRange.maxVariantPrice.amount;
   const searchParams = useSearchParams();
   const variantName = product.variants[0].selectedOptions[0].name.toLowerCase();
@@ -24,7 +33,6 @@ export default function ProductDescription({ product }) {
       : product.images.findIndex((i) => {
           return i.url === imgSrc;
         });
-
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -129,9 +137,11 @@ export default function ProductDescription({ product }) {
                 }).format(parseFloat(amount))}`}
               </p>
             </div>
-            <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-6 mb-20">
-              {product.vendor.toUpperCase()}
-            </p>
+            <Link href={`/${currentType}/${restructuredVendor}`}>
+              <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-6 mb-20">
+                {product.vendor.toUpperCase()}
+              </p>
+            </Link>
             <VariantSelector
               options={product.options}
               variants={product.variants}

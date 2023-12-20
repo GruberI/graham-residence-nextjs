@@ -16,6 +16,8 @@ const navigation = {
         { name: "View All", href: "/art" },
       ],
       home: [
+        { name: "Atelier Saucier", href: "/home/atelier-saucier" },
+        { name: "Sophie Lou Jacobsen", href: "/home/sophie-lou-jacobsen" },
         { name: "View All", href: "/home" },
         // { name: 'Kitchen', href: '/kitchen' },
         // { name: 'Bedroom', href: '/bedroom-furniture' },
@@ -29,7 +31,7 @@ const navigation = {
     //   id: "property",
     // },
     { name: "Exhibitions", href: "/exhibition" },
-    { name: "About" , href: "/about"},
+    { name: "About", href: "/about" },
     { name: "Contact", id: "contact-us" },
   ],
 };
@@ -82,11 +84,8 @@ export default function PopoverItems({ color, pathname }) {
                       pathname == "/" ? { color: color } : { color: "black" }
                     }
                   >
-                    <span
-                      className="hover:text-neutral-300 hover:underline hover:underline-offset-8"
-                   
-                    >
-                      {category.name} 
+                    <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                      {category.name}
                     </span>
                   </Popover.Button>
                 </div>
@@ -100,7 +99,10 @@ export default function PopoverItems({ color, pathname }) {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-7/12 m-auto border" onMouseLeave={() => handleLeave(open)} >
+                  <Popover.Panel
+                    className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-7/12 m-auto border"
+                    onMouseLeave={() => handleLeave(open)}
+                  >
                     {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                     <div
                       className="absolute inset-0 top-1/2 bg-white shadow"
@@ -117,7 +119,7 @@ export default function PopoverItems({ color, pathname }) {
                                   id="categories-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400"
                                 >
-                                 SHOP ALL
+                                  SHOP ALL
                                 </p>
                               </a>
                               <ul
@@ -221,7 +223,6 @@ export default function PopoverItems({ color, pathname }) {
               className={`flex items-center text-xs sm:text-sm hover:text-neutral-300`}
               target={item.id === "property" ? "_blank" : undefined}
               style={pathname == "/" ? { color: color } : { color: "black" }}
-              
             >
               <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
                 {item.name}
@@ -229,7 +230,7 @@ export default function PopoverItems({ color, pathname }) {
             </a>
           )
         )}
-        </div>
+      </div>
     </Popover.Group>
   );
 }

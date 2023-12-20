@@ -1,14 +1,14 @@
-import ShopAllHomeHeader from './Header'
-import { getCollection, getCollectionProducts } from '../../../lib/shopify';
-import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import ShopAllHomeHeader from "./Header";
+import { getCollection, getCollectionProducts } from "../../../lib/shopify";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-import ProductSection from './ProductSection';
+import ProductSection from "./ProductSection";
 
-export const runtime = 'edge';
+export const runtime = "edge";
 
 export async function generateMetadata({
-  params
+  params,
 }: {
   params: { collection: string };
 }): Promise<Metadata> {
@@ -19,24 +19,29 @@ export async function generateMetadata({
   return {
     title: collection.seo?.title || collection.title,
     description:
-      collection.seo?.description || collection.description || `${collection.title} products`
+      collection.seo?.description ||
+      collection.description ||
+      `${collection.title} products`,
   };
 }
 
-export default async function ShopAllHome() {
-  const products = await getCollectionProducts({ collection: "home-goods" });
-
+export default async function ShopAllHome({
+  productsByHandle,
+  productHandle,
+}) {
   return (
-<>
-<ShopAllHomeHeader />
-<section>
-      {products.length === 0 ? (
-        <p className="py-3 text-lg">{`No products found in this collection`}</p>
-      ) : (
-        <ProductSection products={products} />
- 
-      )}
-    </section>
-</>
+    <>
+      <ShopAllHomeHeader productHandle={productHandle} />
+      <section>
+        {productsByHandle.length === 0 ? (
+          <p className="py-3 text-lg">{`No products found in this collection`}</p>
+        ) : (
+          <ProductSection
+            products={productsByHandle}
+            productHandle={productHandle}
+          />
+        )}
+      </section>
+    </>
   );
 }

@@ -4,7 +4,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ProductGridThree from "../../Product/ProductGridThree";
 import { Suspense } from "react";
-import Banner from "./Banner";
+import Banner from "../Banner";
 import About from "./About";
 
 const sortOptions = [
@@ -90,7 +90,7 @@ export default function ProductSection({ products, productHandle }) {
             <ProductGridThree products={firstSixProducts} />
           </Suspense>
           <div className="my-10 pb-10">
-          <Banner artistName={productHandle} />
+          <Banner title={productHandle} type={'art'}/>
           </div>
           <Suspense>
             <ProductGridThree products={remainingProducts} />
