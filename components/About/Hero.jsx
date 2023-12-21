@@ -7,14 +7,14 @@ export default function Hero() {
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
 
-      <div className="mx-auto max-w-2xl py-32 sm:py-30">
+      <div className="mx-auto max-w-4xl py-32 sm:py-30">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div className="text-center mb-24">
           <p className="font-thin tracking-tight text-white sm:text-3xl text-lg animate-fadeTwo">
-            Welcome to the
+            Welcome to
           </p>
           <h1 className="font-thin tracking-wide text-white sm:text-6xl text-5xl animate-fadeTwo">
-            GRAHAM RESIDENCE
+            THE GRAHAM RESIDENCE
           </h1>
         </div>
       </div>

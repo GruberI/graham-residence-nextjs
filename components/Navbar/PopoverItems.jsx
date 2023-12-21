@@ -32,8 +32,8 @@ const navigation = {
     // },
     { name: "Exhibitions", href: "/exhibition" },
     { name: "About", href: "/about" },
-    { name: "The Property", href: "/" },
     { name: "Contact", id: "contact-us" },
+    { name: "The Property", href: "/property" },
   ],
 };
 
