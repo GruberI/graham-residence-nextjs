@@ -22,6 +22,7 @@ export default function StayWithUs() {
                 >
                   BOOK ON AIRBNB
                 </button>
+                {/* <iframe id="booking-iframe" sandbox="allow-top-navigation allow-scripts allow-same-origin" style={{width: '100%', height: '900px'}} frameborder="0" src="https://booking.hospitable.com/widget/9ae5753d-6ef3-4c14-9738-d02164033a92/1291144"></iframe> */}
               </a>
             </div>
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
@@ -56,34 +57,9 @@ export default function StayWithUs() {
                 </div>
               </div>
             </div>
-            {/* </div> */}
           </div>
         </div>
       </div>
-      {/* <div className="bg-white">
-        <div className="mx-auto text-center">
-          <div className="inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch">
-            <div className="flex flex-col h-14 space-x-8 overflow-x-auto  lg:px-60 lg:pt-20 lg:pb-10 sm:h-full sm:justify-center sm:overflow-visible border-t sm:border-t-1 sm:pt-20 sm:pb-10 sm:px-20 border-black-400">
-              <h1 className="text-2xl">
-                Interested in staying at The Graham Residence?
-              </h1>
-              <div className="flex flex-1 items-center justify-center">
-                <a
-                  href="https://www.airbnb.com/rooms/18312865?source_impression_id=p3_1697958503_wgsynyWLg4S60ges"
-                  className="p-2 text-black hover:text-black-500 pt-10"
-                >
-                  <button
-                    type="submit"
-                    className="flex max-w-md items-center justify-center border-2 border-black px-6 py-2 text-base font-light text-black-500 hover:bg-black hover:black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium sm:w-full text-[12px]"
-                  >
-                    BOOK ON AIRBNB
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
