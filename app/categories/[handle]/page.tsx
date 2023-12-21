@@ -53,8 +53,11 @@ export default async function Categories({
   const productsByHandle = products.filter((product) => {
     return product.tags.includes(params.handle);
   });
+  const productHandle = products.filter((product) => {
+    return product.handle;
+  });
 
   if (!products?.length) return notFound();
 
-  return <ShopCategories productsByHandle={productsByHandle} />;
+  return <ShopCategories productsByHandle={productsByHandle} productHandle={productHandle}/>;
 }
