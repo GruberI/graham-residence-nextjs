@@ -39,20 +39,21 @@ export default function CalModal() {
             leaveTo="tranblack-x-full"
           >
             {/* FULL MODAL */}
-            {/* <Dialog.Panel className="fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px]"> */}
-            <Dialog.Panel className="fixed bottom-0 right-6 top-20 flex h-[84%] w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px] rounded-sm">
+            <Dialog.Panel className="fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px]">
+               {/* Partial MODAL */}
+            {/* <Dialog.Panel className="fixed bottom-0 right-6 top-20 flex h-[84%] w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px] rounded-sm"> */}
               <div className="flex items-start justify-end">
                 <button aria-label="Close cart" onClick={closeCal}>
                   <CloseCal />
                 </button>
               </div>
-              <p className="text-md mt-2 m-auto">Request to stay at</p>
-              <p className="font-bold text-lg m-auto">THE GRAHAM RESIDENCE</p>
+              <p className="text-md mt-10 m-auto mb-2">Request a stay at</p>
+              <p className="font-bold text-lg m-auto mb-6">THE GRAHAM RESIDENCE</p>
               <iframe
                 id="booking-iframe"
                 sandbox="allow-top-navigation allow-scripts allow-same-origin"
                 className="ml-3"
-                style={{ width: "100%", height: "560px", marginTop: "10px" }}
+                style={{ width: "100%", height: "800px", marginTop: "10px" }}
                 src="https://booking.hospitable.com/widget/9ae5753d-6ef3-4c14-9738-d02164033a92/1291144"
               ></iframe>
             </Dialog.Panel>

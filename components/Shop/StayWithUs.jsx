@@ -1,3 +1,6 @@
+import { Suspense } from "react";
+import Calendar from "../Navbar/CalendarWidget/Calendar";
+
 export default function StayWithUs() {
   return (
     <div className="w-screen sm:py-24 py-3 sm:px-0 lg:px-0 mx-8">
@@ -6,24 +9,25 @@ export default function StayWithUs() {
           <div className="mx-auto grid max-w-1xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
             <div className="lg:col-end-1 w-full lg:w-full lg:max-w-lg flex flex-col justify-center lg:pb-20 pl-0 sm:pl-20">
               <p className="mt-20 text-1xl leading-8 flex sm:justify-center justify-start">
-                Come stay at
+                Book here to vist
               </p>
               <p className="font-thin mt-2 sm:text-3xl text-2xl leading-8 flex sm:justify-center justify-start">
                 {" "}
                 THE GRAHAM RESIDENCE
               </p>
-              <a
-                href="https://www.airbnb.com/rooms/18312865?source_impression_id=p3_1697958503_wgsynyWLg4S60ges"
+              <div
+
                 className="text-black hover:text-black-500 pt-6 flex sm:justify-center justify-start"
               >
-                <button
+           <Calendar />
+                {/* <button
                   type="submit"
                   className="max-w-md border-2 border-black px-6 py-2 text-base font-light text-black-500 hover:bg-black hover:black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium sm:w-full text-[12px]"
                 >
                   BOOK ON AIRBNB
-                </button>
-                {/* <iframe id="booking-iframe" sandbox="allow-top-navigation allow-scripts allow-same-origin" style={{width: '100%', height: '900px'}} frameborder="0" src="https://booking.hospitable.com/widget/9ae5753d-6ef3-4c14-9738-d02164033a92/1291144"></iframe> */}
-              </a>
+                </button> */}
+       
+              </div>
             </div>
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
