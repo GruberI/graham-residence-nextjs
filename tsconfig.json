@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Carousel/Carousel.jsx", "app/art/page.jsx"  ],
+, "components/Carousel/Carousel.jsx", "app/art/page.jsx", "components/Navbar/CalendarWidget/open-cal.jsx"  ],
   "exclude": [
     "node_modules"
   ]

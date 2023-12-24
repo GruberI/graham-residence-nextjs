@@ -2,7 +2,7 @@
 import PopoverItems from "./PopoverItems";
 import { Fragment, useRef, useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Calendar from './CalendarWidget/Calendar';
+import Calendar from "./CalendarWidget/Calendar";
 
 export default function Navbar() {
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
@@ -82,7 +82,7 @@ export default function Navbar() {
                 >
                  STAY <span className="inline sm:hidden lg:inline">WITH US</span>
                 </a> */}
-                <Calendar buttonBg={buttonBg}/>
+                <Calendar />
               </div>
             </div>
           </div>
