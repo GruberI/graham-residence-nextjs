@@ -32,7 +32,7 @@ export default function OpenCal() {
   return (
     <div className="relative flex items-center justify-center rounded-md transition-colors dark:border-neutral-700 dark:text-white animate-fadeTwo">
       <p
-        className={`rounded-sm border lg:px-3.5 px-3 py-2.5 lg:text-sm text-xs ml-2 md:ml-0 font-normal shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
+        className={`rounded-sm border font-light px-8 py-2.5 lg:text-sm text-xs ml-2 md:ml-0 font-normal shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
           pathname == "/" ? buttonBg : "black"
         } text-white`}
         style={
@@ -41,10 +41,7 @@ export default function OpenCal() {
             : { border: "1px solid black" }
         }
       >
-        <span className={`inline sm:hidden md:hidden lg:inline`}>
-          STAY WITH US
-        </span>
-        <span className="hidden sm:inline md:inline lg:hidden">BOOK</span>
+        STAY
       </p>
     </div>
   );

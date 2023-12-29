@@ -1,8 +1,14 @@
+const imageByHandle = [
+  {
+    imageHandle: "atelier-saucier",
+    src: "https://ipfs.filebase.io/ipfs/QmZ3xMFpfF5q6bT1WDv9eGCCswDKzf69ZwYrEHUMJcmV2c/QmbPMLL9ccr3Bf769zGT2EaDpHmy3VHAMQpWMc8x9zVdTx",
+  },
+];
 export default function ShopAllHomeHeader({ productHandle }) {
   return (
     <div className="relative isolate overflow-hidden sm:pt-24 pt-40">
       <img
-        src="https://ipfs.filebase.io/ipfs/QmQNn2LNn6UdzbuqiSSXJpknNF62sDQbzugxGJm2E9cG8b"
+        src={productHandle === 'atelier-saucier' ? 'https://ipfs.filebase.io/ipfs/QmZ3xMFpfF5q6bT1WDv9eGCCswDKzf69ZwYrEHUMJcmV2c/QmbPMLL9ccr3Bf769zGT2EaDpHmy3VHAMQpWMc8x9zVdTx' : 'https://ipfs.filebase.io/ipfs/QmQNn2LNn6UdzbuqiSSXJpknNF62sDQbzugxGJm2E9cG8b'}
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />

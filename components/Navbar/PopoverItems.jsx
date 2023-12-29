@@ -65,7 +65,7 @@ export default function PopoverItems({ color, pathname }) {
   };
 
   return (
-    <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full">
+    <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full font-sans">
       <div className="flex h-14 space-x-10 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-12 md:ml-14">
         {navigation.categories.map((category, categoryIdx) => (
           <Popover key={categoryIdx} className="flex">

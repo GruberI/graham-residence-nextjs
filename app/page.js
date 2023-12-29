@@ -42,9 +42,6 @@ export default async function Shop() {
       <ArtSection products={products} />
       <Featured />
       <GoodsSection products={products} />
-      <Suspense>
-      <SimpleSlider/>
-      </Suspense>
       <StayWithUs />
     </div>
   );

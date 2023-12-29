@@ -1,8 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Josefin+Sans:wght@100;200;300;400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+/* @layer base {
+  @font-face {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 100;
+    font-display: optional;
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "Comorant";
+    font-style: normal;
+    font-weight: 100;
+    font-display: optional;
+    src: url(../fonts/Cormorant/Cormorant-Light.ttf) format("ttf");
+  }
+} */
+
+
+
+
+/* @font-face {
+  font-family: "CLight";  
+  src: local("Cormorant-Light"),
+    url("../fonts/Cormorant/Cormorant-Light.ttf") format("truetype");
+} */
+
+/* @font-face {
+  font-family: "JThin";   
+  src: local("JosefinSans-Thin"),
+    url("../fonts/Josefin_Sans/static/JosefinSans-Thin.ttf") format("truetype");
+} */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -19,9 +51,9 @@
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 2px;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 /* ===== Scrollbar CSS ===== */

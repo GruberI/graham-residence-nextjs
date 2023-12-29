@@ -47,13 +47,13 @@ export default function CalModal() {
                   <CloseCal />
                 </button>
               </div>
-              <p className="text-md mt-10 m-auto mb-2">Request a stay at</p>
-              <p className="font-bold text-lg m-auto mb-6">THE GRAHAM RESIDENCE</p>
+              <p className="text-md mt-6 m-auto mb-2">Request a stay at</p>
+              <p className="font-bold text-lg m-auto mb-4">THE GRAHAM RESIDENCE</p>
               <iframe
                 id="booking-iframe"
                 sandbox="allow-top-navigation allow-scripts allow-same-origin"
                 className="ml-3"
-                style={{ width: "100%", height: "800px", marginTop: "10px" }}
+                style={{ width: "100%", height: "900px", marginTop: "10px" }}
                 src="https://booking.hospitable.com/widget/9ae5753d-6ef3-4c14-9738-d02164033a92/1291144"
               ></iframe>
             </Dialog.Panel>

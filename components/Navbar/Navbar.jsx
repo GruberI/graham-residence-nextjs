@@ -52,14 +52,14 @@ export default function Navbar() {
               <div className="flex flex-2 lg:flex-1">
                 <a href="/">
                   <p
-                    className={`font-light sm:pl-1 md:pl-6 ml-0 sm:ml-2 md:ml-0 text-3xl sm:text-[18px] md:text-4xl semibold w-full sm:w-[100px] md:w-full`}
+                    className={`font-light sm:pl-1 md:pl-6 ml-0 sm:ml-2 md:ml-0 text-3xl sm:text-[18px] md:text-4xl semibold w-full sm:w-[100px] md:w-full font-comorant`}
                     style={
                       pathname == "/"
                         ? { color: `${color}` }
                         : { color: "black" }
                     }
                   >
-                    TGR<span className="md:text-2xl  text-sm"> SHOP</span>
+                    TGR<span className="md:text-2xl text-sm"> SHOP</span>
                   </p>
                 </a>
               </div>
