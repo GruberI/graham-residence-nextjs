@@ -7,16 +7,10 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-     sans: ['"Josefin Sans"', 'sans-serif'],
-     comorant: ['"Comorant"', 'serif']
-    },
     extend: {
-      // backgroundImage: {
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      //   "gradient-conic":
-      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      // },
+      fontFamily: {
+        cormorant: [`"Comorant, serif"`]
+       },
       animation: {
         fadeTwo: 'fadeOut 2s',
         fadeFour: 'fadeOut 4s'
