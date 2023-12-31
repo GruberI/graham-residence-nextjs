@@ -13,7 +13,7 @@ export default function Hero() {
           <p className="font-thin tracking-tight text-white sm:text-3xl text-lg animate-fadeTwo">
             Welcome to
           </p>
-          <h1 className="font-thin tracking-wide text-white sm:text-6xl text-5xl animate-fadeTwo">
+          <h1 className="font-thin tracking-wide text-white sm:text-6xl text-5xl animate-fadeTwo font-[cormorant]">
             THE GRAHAM RESIDENCE
           </h1>
         </div>

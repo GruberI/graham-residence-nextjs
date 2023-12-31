@@ -159,7 +159,7 @@ export default function PopoverItems({ color, pathname }) {
                                     <li key={item.name} className="flex">
                                       <a
                                         href={item.href}
-                                        className="hover:text-gray-800 lg:tracking-widest leading-7 text-xs lg:text-sm"
+                                        className="hover:text-gray-800 lg:tracking-widest leading-7 text-sm lg:text-base"
                                       >
                                         {item.name}
                                       </a>
@@ -186,7 +186,7 @@ export default function PopoverItems({ color, pathname }) {
                                   <li key={item.name} className="flex">
                                     <a
                                       href={item.href}
-                                      className="hover:text-gray-800 tracking-widest leading-7 text-xs lg:text-sm"
+                                      className="hover:text-gray-800 tracking-widest leading-7 text-sm lg:text-base"
                                     >
                                       {item.name}
                                     </a>

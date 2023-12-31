@@ -13,10 +13,10 @@ export default function ShopAllHomeHeader({ productHandle }) {
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
 
-      <div className="mx-auto max-w-2xl my-36 pb-24">
+      <div className="mx-auto max-w-3xl my-36 pb-24">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div className="text-center">
-          <h1 className="font-thin tracking-tight text-white text-6xl animate-fadeTwo hidden sm:block capitalize">
+          <h1 className="font-thin tracking-tight text-white text-7xl animate-fadeTwo hidden sm:block capitalize font-[cormorant]">
             {productHandle === undefined
               ? "Every detail tells a story"
               : productHandle.replaceAll("-", " ")}
