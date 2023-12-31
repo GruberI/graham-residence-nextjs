@@ -29,7 +29,7 @@ export default function Navigation() {
   return (
     <div
       aria-label="Top"
-      className="w-screen sm:px-0 lg:px-0 sticky top-0 z-[1] animate-fade mb-4"
+      className="w-screen px-10 sm:px-0 lg:px-0 sticky top-0 z-[1] animate-fade mb-4"
     >
       <div className="mx-auto text-center">
         <div className="inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch">
