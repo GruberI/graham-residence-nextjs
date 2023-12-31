@@ -15,7 +15,7 @@ export default function ShopAllHomeHeader({ productHandle }) {
     <div className="relative isolate overflow-hidden sm:pt-24 pt-40">
       {productHandle === undefined ? (
         <img
-          src="https://ipfs.filebase.io/ipfs/QmQNn2LNn6UdzbuqiSSXJpknNF62sDQbzugxGJm2E9cG8b"
+          src="https://ipfs.filebase.io/ipfs/QmQofT4Jvs8XVEnFiKDHsa3ZG5hBnFU3Jy8qGq2fEDrpdn/QmdLMUMfk9YmKVdidfJAtTqKPsxrSKa45mvc6viq8bBjoi"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
       ) : (
@@ -36,7 +36,7 @@ export default function ShopAllHomeHeader({ productHandle }) {
         <div className="text-center">
           <h1 className="font-thin tracking-tight text-white text-7xl animate-fadeTwo hidden sm:block capitalize font-[cormorant]">
             {productHandle === undefined
-              ? "Every detail tells a story"
+              ? "Shop Home"
               : productHandle.replaceAll("-", " ")}
           </h1>
         </div>
