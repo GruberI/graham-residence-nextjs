@@ -24,16 +24,23 @@ const navigation = {
       ],
     },
   ],
-  other: [
+  first: [
     // {
     //   name: "Property",
     //   href: "https://www.grahamresidence.com/",
     //   id: "property",
     // },
-    { name: "Exhibitions", href: "/exhibition" },
+    { name: "The Property", href: "/property" },
+    { name: "Gallery", href: "/exhibition" },
+  ],
+  second: [
+    // {
+    //   name: "Property",
+    //   href: "https://www.grahamresidence.com/",
+    //   id: "property",
+    // },
     { name: "About", href: "/about" },
     { name: "Contact", id: "contact-us" },
-    { name: "The Property", href: "/property" },
   ],
 };
 
@@ -66,7 +73,34 @@ export default function PopoverItems({ color, pathname }) {
 
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full">
-      <div className="flex h-14 space-x-10 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-12 md:ml-14">
+      <div className="flex h-14 space-x-6 md:space-x-10 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-12 md:ml-14 ">
+        {navigation.first.map((item) =>
+          item.id === "contact-us" ? (
+            <a
+              key={item.name}
+              onClick={() => handleClickScroll(item.id)}
+              className={`flex items-center text-xs sm:text-lg scroll-smooth cursor-pointer`}
+              style={pathname == "/" ? { color: color } : { color: "black" }}
+            >
+              <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                {item.name}
+              </span>
+            </a>
+          ) : (
+            <a
+              key={item.name}
+              href={item.href}
+              className={`flex items-center text-xs sm:text-lg hover:text-neutral-300 font-[400]`}
+              target={item.id === "property" ? "_blank" : undefined}
+              style={pathname == "/" ? { color: color } : { color: "black" }}
+            >
+              <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                {item.name}
+              </span>
+            </a>
+          )
+        )}
+
         {navigation.categories.map((category, categoryIdx) => (
           <Popover key={categoryIdx} className="flex">
             {({ open }) => (
@@ -79,7 +113,7 @@ export default function PopoverItems({ color, pathname }) {
                     ref={triggerRef}
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
-                      `relative z-10 -mb-px flex items-center border-b-1 pt-px text-sm sm:text-lg duration-300 ease-out outline-none `
+                      `relative z-10  flex items-center border-b-1 pt-px text-xs sm:text-lg duration-300 ease-out outline-none `
                     )}
                     style={
                       pathname == "/" ? { color: color } : { color: "black" }
@@ -113,7 +147,7 @@ export default function PopoverItems({ color, pathname }) {
                     <div className="relative bg-white">
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 sm::grid-cols-1 md:gird-cols-3 items-center gap-x-6 gap-y-10 pb-12 pt-10">
-                          <div className="grid grid-cols-1 gap-x-2ß sm:gap-y-8 lg:grid-cols-3">
+                          <div className="grid grid-cols-1 gap-x-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
                               <a href="/">
                                 <p
@@ -205,12 +239,12 @@ export default function PopoverItems({ color, pathname }) {
           </Popover>
         ))}
 
-        {navigation.other.map((item) =>
+        {navigation.second.map((item) =>
           item.id === "contact-us" ? (
             <a
               key={item.name}
               onClick={() => handleClickScroll(item.id)}
-              className={`flex items-center text-sm sm:text-lg scroll-smooth cursor-pointer`}
+              className={`flex items-center text-xs sm:text-lg scroll-smooth cursor-pointer`}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >
               <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
@@ -221,7 +255,7 @@ export default function PopoverItems({ color, pathname }) {
             <a
               key={item.name}
               href={item.href}
-              className={`flex items-center text-sm sm:text-lg hover:text-neutral-300 font-[400]`}
+              className={`flex items-center text-xs sm:text-lg hover:text-neutral-300 font-[400]`}
               target={item.id === "property" ? "_blank" : undefined}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >

@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
+    "types": [
+      "node"
+    ],
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "paths": {
-      "@/*": ["./*"]},
+      "@/*": ["./*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -18,18 +22,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "plugins": [{
+      "name": "next"
+    }]
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/Carousel/Carousel.jsx", "app/art/page.jsx", "components/Navbar/CalendarWidget/open-cal.jsx"  ],
+    "**/*.tsx", "components/Carousel/Carousel.jsx", "app/art/page.jsx", "components/Navbar/CalendarWidget/open-cal.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]
