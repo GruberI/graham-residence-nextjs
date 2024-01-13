@@ -14,14 +14,16 @@ export default function Instagram() {
         </div>
       </div>
       <script src="https://snapwidget.com/js/snapwidget.js"></script>
-      <iframe
-        src="https://snapwidget.com/embed/1055188"
-        class="snapwidget-widget"
-        allowtransparency="true"
-        frameborder="0"
-        scrolling="no"
-        style={{ border: "none", overflow: "hidden", width: "100%" }}
-      ></iframe>
+      <div className="max-w-7xl">
+        <iframe
+          src="https://snapwidget.com/embed/1055188"
+          class="snapwidget-widget"
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="no"
+          style={{ border: "none", overflow: "hidden", width: "100%" }}
+        ></iframe>
+      </div>
     </div>
   );
 }
