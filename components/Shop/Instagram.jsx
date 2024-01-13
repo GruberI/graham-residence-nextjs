@@ -14,7 +14,7 @@ export default function Instagram() {
         </div>
       </div>
       <script src="https://snapwidget.com/js/snapwidget.js"></script>
-      <div className="max-w-7xl">
+      <div className="max-w-7xl m-auto">
         <iframe
           src="https://snapwidget.com/embed/1055188"
           class="snapwidget-widget"
