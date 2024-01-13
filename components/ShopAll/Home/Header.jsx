@@ -9,6 +9,11 @@ const imageByHandle = [
     src: "https://ipfs.filebase.io/ipfs/QmbvZNPAsQda7iz8DV5jbp8x4iMeBrUUDvkYoZJA3CUbKy/QmYEiT9GLBmVUG94r4rFSNUQXog4BP7xZzT4TSofPEnFMA",
     alt: "Sophie Lou Jacobsen set table with glass vases",
   },
+  {
+    imageHandle: "loll-designs",
+    src: "https://ipfs.filebase.io/ipfs/QmSx8x1TUhyA6RzVtbdA9cqptig7ymmu53DaXuFiFjyBzQ/Qmd8XYCy2TMujYDW4LRVHeA5T653vprGKy1p6YTX9udehB",
+    alt: "Loll designs outdoor chairs infront of Graham Residence firepit",
+  },
 ];
 export default function ShopAllHomeHeader({ productHandle }) {
   return (

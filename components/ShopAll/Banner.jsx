@@ -44,6 +44,15 @@ const bannerInfo = [
     text: "Sophie Lou Jacobsen is a French-American designer currently based in New York City. She established her studio in 2019, with an initial focus on objects of everyday use, mostly using glass as a medium and exploring the interaction between object and user. Her work stems from the idea that objects have an innate power to enhance their user's mood through form and function. She focuses on simple objects and rituals, to see how she can alter these in ways that are surprising, delightful, and elevate the user experience. She believes that the objects which we surround ourselves with can and should be imbued with a certain poetry, creating a relationship between humans and objects built on mutual respect.",
     type: "home",
   },
+  {
+    handle: "loll-designs",
+    artist: "Loll Designs",
+    imgSrc:
+      "https://ipfs.filebase.io/ipfs/QmatPDsurpdYLRTsgUyLHDUvLE5onEfSFgqc6Z4cRjErwF/QmQ4uvkvcyadr6FN5sRWAHicFvN2QdXU8tjzXtxFBjGqSr",
+    imgAltText: "Red Loll Design chair with matching outdoor side table",
+    text: "Based in Duluth, MN, Loll Designs is a designer/manufacturer of durable, all-weather, outdoor furniture and accessories made with HDPE (high density polyethylene), partially from recycled plastics like milk jug containers and shampoo bottles. Using thoughtful, original designs and unique materials, Loll creates innovative, fun and high­ quality products proudly crafted in the USA.",
+    type: "home",
+  },
 ];
 
 const handleClickScroll = (id) => {

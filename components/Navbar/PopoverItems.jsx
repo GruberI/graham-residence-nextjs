@@ -18,6 +18,7 @@ const navigation = {
       home: [
         { name: "Atelier Saucier", href: "/home/atelier-saucier" },
         { name: "Sophie Lou Jacobsen", href: "/home/sophie-lou-jacobsen" },
+        { name: "Loll Designs", href: "/home/loll-designs" },
         { name: "View All", href: "/home" },
         // { name: 'Kitchen', href: '/kitchen' },
         // { name: 'Bedroom', href: '/bedroom-furniture' },

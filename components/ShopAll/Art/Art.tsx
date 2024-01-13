@@ -35,7 +35,7 @@ export default async function ShopAllArt({ productsByHandle, productHandle }) {
       <Suspense>
         <section>
           {productsByHandle.length === 0 ? (
-            <p className="py-3 text-lg">{`No products found in this collection`}</p>
+            <p className="py-3 text-lg ml-[40%] mt-20">{`No products found in this collection`}</p>
           ) : (
             <ProductSection products={productsByHandle} productHandle={productHandle}/>
           )}
