@@ -2,7 +2,7 @@ import Calendar from "../Navbar/CalendarWidget/Calendar";
 
 export default function Instagram() {
   return (
-    <div className="max-w-7xl m-auto border-t border-black">
+    <div className="m-auto border-t border-black">
       <div className="flex flex-col justify-center pt-20">
         <p className="font-thin sm:text-3xl text-2xl leading-8 flex sm:justify-center justify-start">
           {" "}
