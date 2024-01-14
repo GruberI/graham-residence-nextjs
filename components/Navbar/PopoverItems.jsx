@@ -1,6 +1,7 @@
 "use client";
 import { Fragment, useRef } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import Link from "next/link";
 
 const navigation = {
   categories: [
@@ -31,8 +32,8 @@ const navigation = {
     //   href: "https://www.grahamresidence.com/",
     //   id: "property",
     // },
-    { name: "The Property", href: "/property" },
-    { name: "Gallery", href: "/exhibition" },
+    { name: "The Property", href: "/" },
+    { name: "Gallery", href: "/gallery" },
   ],
   second: [
     // {
@@ -120,9 +121,9 @@ export default function PopoverItems({ color, pathname }) {
                       pathname == "/" ? { color: color } : { color: "black" }
                     }
                   >
-                    <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                    <Link href='/shop' className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
                       {category.name}
-                    </span>
+                    </Link>
                   </Popover.Button>
                 </div>
 
@@ -150,7 +151,7 @@ export default function PopoverItems({ color, pathname }) {
                         <div className="grid grid-cols-1 sm::grid-cols-1 md:gird-cols-3 items-center gap-x-6 gap-y-10 pb-12 pt-10">
                           <div className="grid grid-cols-1 gap-x-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
-                              <a href="/">
+                              <a href="/shop">
                                 <p
                                   id="categories-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400"

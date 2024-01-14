@@ -2,14 +2,14 @@ export default function HeroImageText() {
   return (
     <div className="relative isolate overflow-hidden pt-36">
       <img
-        src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
+        src="https://ipfs.filebase.io/ipfs/QmQofT4Jvs8XVEnFiKDHsa3ZG5hBnFU3Jy8qGq2fEDrpdn/QmdLMUMfk9YmKVdidfJAtTqKPsxrSKa45mvc6viq8bBjoi"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
-      <div className="mx-auto max-w-4xl py-10 sm:py-10 lg:py-10">
+      <div className="mx-auto max-w-4xl py-10 sm:py-0 lg:py-0">
         <div className="text-center">
-          <h1 className="sm:text-7xl text-4xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant]">
-            The Graham Residence
+          <h1 className="sm:text-7xl text-5xl leading-8 text-white animate-fadeTwo font-thin font-[cormorant] pt-12">
+            TGR SHOP
           </h1>
           <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[50vh] mb-[10vh]">
             <a

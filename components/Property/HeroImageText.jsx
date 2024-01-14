@@ -2,7 +2,7 @@ export default function HeroImageText() {
   return (
     <div className="relative isolate overflow-hidden pt-36">
       <img
-        src="https://ipfs.filebase.io/ipfs/QmZ5U3bi2hoBkgR4o6WgjuzdqK3kcMoeyEhMhgaA1vvuVQ/QmX4pzRU2hF7PZChBAvki6JerVX9WfAhCRhgrZM2UusP3B"
+        src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
@@ -30,3 +30,4 @@ export default function HeroImageText() {
     </div>
   );
 }
+
