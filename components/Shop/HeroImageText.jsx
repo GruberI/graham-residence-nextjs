@@ -8,9 +8,9 @@ export default function HeroImageText() {
       />
       <div className="mx-auto max-w-4xl py-10 sm:py-0 lg:py-0">
         <div className="text-center">
-          <h1 className="sm:text-7xl text-5xl leading-8 text-white animate-fadeTwo font-thin font-[cormorant] pt-12">
+          {/* <h1 className="sm:text-7xl text-5xl leading-8 text-white animate-fadeTwo font-thin font-[cormorant] pt-12">
             TGR SHOP
-          </h1>
+          </h1> */}
           <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[50vh] mb-[10vh]">
             <a
               href="/art"
