@@ -16,8 +16,8 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-black">
-      <div className="mx-auto px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+    <footer className="border-t border-black">
+      <div className="mx-auto px-6 py-12 md:flex md:items-center md:justify-between lg:px-8 mx-10">
         <div className="flex justify-center space-x-6 md:order-3">
           {navigation.map((item) => (
             <a
@@ -27,11 +27,11 @@ export default function Footer() {
               target="_blank"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="h-8 w-8" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <div className="md:order-2 flex sm:flex-row flex-col">
+        <div className="md:order-2 flex sm:flex-row flex-col lg:mr-12">
           <a
             href="/privacy"
             className="lg:pt-0 sm:pt-5 pt-8 hover:text-neutral-600 font-thin px-10 lg:text-base sm:text-xs flex justify-center space-between"
