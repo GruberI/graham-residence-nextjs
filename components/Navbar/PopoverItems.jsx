@@ -32,15 +32,9 @@ const navigation = {
     //   href: "https://www.grahamresidence.com/",
     //   id: "property",
     // },
-    { name: "The Property", href: "/" },
-    { name: "Gallery", href: "/gallery" },
+    { name: "Graham Gallery", href: "/gallery" },
   ],
   second: [
-    // {
-    //   name: "Property",
-    //   href: "https://www.grahamresidence.com/",
-    //   id: "property",
-    // },
     { name: "About", href: "/about" },
     { name: "Contact", id: "contact-us" },
   ],

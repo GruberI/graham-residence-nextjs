@@ -10,7 +10,6 @@ export default function Navbar() {
   const [color, setColor] = useState("white");
   const [buttonBg, setButtonBg] = useState("");
   const pathname = usePathname();
-  console.log('Pathname', pathname)
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
@@ -61,7 +60,6 @@ export default function Navbar() {
                     }
                   >
                     TGR
-                    <span className="md:text-2xl text-sm">{pathname.replace(/[^a-zA-Z ]/g, "")}</span>
                   </p>
                 </a>
               </div>

@@ -10,13 +10,13 @@ export default function Section() {
               <img
                 src="https://ipfs.filebase.io/ipfs/QmcTx4pcZib2EmP6aPA8R8itqjhR5NqFwHZeBGtd2Td732"
                 alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
-                className="object-cover object-center h-[300px] sm:h-3/4 ml-16 sm:ml-0"
+                className="object-cover object-center h-[300px] sm:h-3/4 max-h-3/4  ml-16 sm:ml-0"
               />
               <img
                 src="
                 https://ipfs.filebase.io/ipfs/QmNdt9bpx4hYyB4KMckJc3b3Swt4w1PwH9zYvM32K5g5HJ"
                 alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system."
-                className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-80 translate-y-2/4 lg:h-3/4 h-0"
+                className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-80 translate-y-2/4 lg:h-3/4 max-h-3/4 h-0"
               />
             </div>
           </Suspense>

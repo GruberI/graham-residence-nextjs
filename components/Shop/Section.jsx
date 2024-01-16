@@ -10,13 +10,13 @@ export default function Section() {
               <img
                 src="https://cdn.discordapp.com/attachments/1155605772756074670/1176038479172489257/102319_TGRfilm_090.jpg?ex=656d6a2f&is=655af52f&hm=70f13334d8259451a180133fed2d232768a788b0af9167a9d2c9f462d2bb3165&"
                 alt="Woman in red dress sitting on joshua tree boulders."
-                className="object-cover object-center h-[300px] sm:h-3/4 sm:ml-16 lg:ml-0"
+                className="object-cover object-center max-h-3/4 h-[300px] sm:h-3/4 sm:ml-16 lg:ml-0"
               />
               <img
                 src="
                 https://ipfs.filebase.io/ipfs/QmZFmFjbhMkbfNtVVJT2PL9fp91qyUxPzjMV5zBQkgRUts/QmNqNADtcpXcfCyzg1d99yuyfNFYWAvH2SeV8963drNFg4"
                 alt="Chair and side table in graham residence living room."
-                className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-64 lg:translate-x-80 translate-y-3/4 md:translate-y-2/4 h-[200px] sm:h-3/4"
+                className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-64 lg:translate-x-80 translate-y-3/4 md:translate-y-2/4 max-h-3/4 h-[200px] sm:h-3/4"
               />
             </div>
           </Suspense>

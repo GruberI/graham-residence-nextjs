@@ -9,8 +9,8 @@ export default function ExhibitionList() {
         "https://ipfs.filebase.io/ipfs/QmZUP4GfbWpnwySsEh2jJ1KdG96dPEK7fSnoGRK7AeCaZc/QmdFrNgmbK3FwH8DTjzPQJEXfk8CHXBeb72HSe37ArVRgW",
       imgAltText:
         "Painting by Kyle Steed hung in living room of Graham Residence",
-      href: "/exhibition/kyle-steed",
-      date: 'October 2023 - Current'
+      href: "/gallery/kyle-steed",
+      date: "October 2023 - Current",
     },
     {
       artist: "Thai Mainhard",
@@ -19,8 +19,8 @@ export default function ExhibitionList() {
         "https://ipfs.filebase.io/ipfs/QmWjsuayG2e1Nt996UGJEXEZGvd9x3DCqe9FyijEUxwQyD",
       imgAltText:
         "Various paintings by Thai resting on porch at the graham residence",
-      href: "/exhibition/thai-mainhard",
-      date: 'June 2023 - October 2023'
+      href: "/gallery/thai-mainhard",
+      date: "June 2023 - October 2023",
     },
   ];
   return (
@@ -36,8 +36,13 @@ export default function ExhibitionList() {
               />
             </div>
             <p className="pt-4 text-xs">Exhibition</p>
-            <h1 className="sm:text-2xl text-lg pt-2">{exhibit.name} by {exhibit.artist}</h1>
-            <p className="pt-1 tracking-tight font-thin text-xs sm:text-base"> On display at the Graham Residence, {exhibit.date}</p>
+            <h1 className="sm:text-2xl text-lg pt-2">
+              {exhibit.name} by {exhibit.artist}
+            </h1>
+            <p className="pt-1 tracking-tight font-thin text-xs sm:text-base">
+              {" "}
+              On display at the Graham Residence, {exhibit.date}
+            </p>
           </Link>
         );
       })}

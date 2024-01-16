@@ -2,7 +2,6 @@ import HeroImageText from "@/components/Shop/HeroImageText";
 import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
 import Featured from "@/components/Shop/Featured";
-// import StayWithUs from "@/components/Shop/StayWithUs";
 import { getProducts } from "@/lib/shopify";
 import { Suspense } from "react";
 import Carousel from "../../components/Carousel/Carousel.jsx";
@@ -37,12 +36,10 @@ export default async function Shop() {
         <Carousel products={productsByTag} />
       </Suspense>
       <Section />
-      {/* <ExhibitionList /> */}
       <ArtSection products={products} />
       <Featured />
       <GoodsSection products={products} />
       <Instagram />
-      {/* <StayWithUs /> */}
     </div>
   );
 }
