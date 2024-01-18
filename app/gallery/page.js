@@ -1,4 +1,9 @@
 import ExhibitionList from "@/components/Exhibition/ExhibitionList";
+import HeaderImage from "@/components/Exhibition/HeaderImage";
+import GalleryQuote from "@/components/Exhibition/GalleryQuote";
+import LargeImageTwo from "@/components/Exhibition/LargeImageTwo";
+import Section from "@/components/Exhibition/Section";
+import MeetArtist from "@/components/Exhibition/MeetArtist";
 
 const artistExhibitions = [
   {
@@ -25,10 +30,15 @@ export default function MainExhibition() {
     <div className="m-auto max-w-7xl py-26 lg:px-6 sm:px-2 sm:mt-36 mt-48 mb-28">
       <div className="text-center mb-16">
         <h1 className="font-thin sm:text-6xl text-5xl font-[cormorant]">
-          The Graham Gallery
+          Graham Gallery
         </h1>
       </div>
+      <HeaderImage />
+      <GalleryQuote />
+      <LargeImageTwo />
+      <Section />
       <ExhibitionList />
+      <MeetArtist />
     </div>
   );
 }
