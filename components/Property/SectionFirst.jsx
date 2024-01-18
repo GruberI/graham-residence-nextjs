@@ -14,7 +14,7 @@ export default function SectionFirst() {
           </div>
           <div>
             <div className="space-y-4">
-              <p className="tracking-wide leading-7 text-lg text-center sm:text-left">
+              <p className="tracking-wide leading-7 text-xl text-center sm:text-left">
                 The Graham Residence is a mid-century modern retreat situated on
                 20 acres of pristine high desert land surrounded by weathered
                 boulders, ancient junipers, Joshua trees and piñon pines in the
