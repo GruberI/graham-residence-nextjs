@@ -15,8 +15,8 @@ const contact = [
   {
     name: "photography",
     text: "Shoots & Events:",
-    subtext: "Peerspace",
-    href: "https://www.peerspace.com/pages/listings/619d39bcbdb172000d2c030e?sort_order=12",
+    subtext: "tgr@grahamresidence.com",
+    email: "tgr@grahamresidence.com",
   },
 ];
 export default function Contact() {
@@ -32,9 +32,10 @@ export default function Contact() {
                   <span className="hover:underline hover:underline-offset-8">
                     <Link
                       className="inline"
-                      href={
-                        value.email ? `mailto:${value.email}` : `${value.href}`
-                      }
+                      // href={
+                      //   value.email ? `mailto:${value.email}` : `${value.href}`
+                      // }
+                      href={value.email}
                       target="_blank"
                     >
                       {value.subtext}
