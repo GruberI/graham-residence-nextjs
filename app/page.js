@@ -8,7 +8,7 @@ import FourImageGrid from "../components/Property/FourImageGrid";
 import TwoRowGrid from "../components/Property/TwoRowGrid";
 import Book from "../components/Property/Book";
 import HeroImageText from "../components/Property/HeroImageText";
-import Instagram from "../components/Property/Instagram";
+import Instagram from "../components/Instagram";
 
 
 export default function Property() {
