@@ -11,7 +11,6 @@ export default function HeroImageText() {
           <h1 className="sm:text-7xl text-5xl leading-8 animate-fadeTwo font-light font-[cormorant] text-white">
             Graham Gallery
           </h1>
-         
         </div>
       </div>
     </div>
