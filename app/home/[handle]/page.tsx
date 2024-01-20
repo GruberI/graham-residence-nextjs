@@ -16,8 +16,6 @@ export default async function ShopAll({
   });
 
   if (!products?.length) return notFound();
-console.log('PRODUCT BY HANDLE', productsByHandle)
-console.log('PARAM BY HANDLE', params.handle)
   return (
     <div>
       <ShopAllHome productsByHandle={productsByHandle} productHandle={params.handle}/>

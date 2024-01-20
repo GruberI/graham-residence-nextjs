@@ -11,8 +11,8 @@ export default async function TwoRowGrid() {
         </div>
       </div>
 
-      <div className="grid-rows-1 col-span-2 flex">
-        <div className="aspect-[4/5]">
+      <div className="col-span-2 flex">
+        <div className="aspect-[4/5] w-[50%] h-full">
           <img
             src="https://ipfs.filebase.io/ipfs/QmTkXg3TM3XrvuAVRM4x3ztaKpri9MRbLGajFKMepXAiTG/QmbHzkjhzmdjgBpkxzg1jmrLp5bkLEhFGCjK2czduPsiWS"
             alt="starry night in desert"
@@ -20,9 +20,9 @@ export default async function TwoRowGrid() {
           />
         </div>
 
-        <div className="aspect-[4/5]">
+        <div className="aspect-[4/5] w-[50%] h-full">
           <img
-            src="https://ipfs.filebase.io/ipfs/QmUEvAXAGLRsykuXrfvJUZEQJ8Hbv2gmioa3YQFN6d3Mjw/QmXPYP1vawqAM1cDTtt3Suqh8NgtPZdSPZ5zdfctddDP5M"
+            src="https://ipfs.filebase.io/ipfs/QmeiFCmuZqKA94UHFPWnbyGEToKF8QePYmqQsPTeGJ8jtB/QmSiKUBDbNpTQjuoovtX1YFhPwm4cnfQJGLpGQeZPeE1xL"
             alt="white chair in the graham residence living room with sun streaming in"
             className="p-2"
           />

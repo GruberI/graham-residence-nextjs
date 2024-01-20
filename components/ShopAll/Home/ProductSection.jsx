@@ -28,6 +28,7 @@ function classNames(...classes) {
 export default function ProductSection({ products, productHandle }) {
   const firstEightProducts = products.slice(0, 8);
   const remainingProducts = products.slice(8, products.length + 1);
+  console.log('Remaining', remainingProducts.length)
   return (
     <div className="bg-white sm:px-0 px-2">
       <main className="mx-auto max-w-7xl">
@@ -88,9 +89,11 @@ export default function ProductSection({ products, productHandle }) {
           {/* Product grid */}
           <ProductGridFour products={firstEightProducts} />
           <div className="my-10 pb-10">
-            <Banner title={productHandle} type={'home'}/>
+            <Banner title={productHandle} type={"home"} />
           </div>
-          <ProductGridFour products={remainingProducts} />
+          {remainingProducts.length > 0 ? (
+            <ProductGridFour products={remainingProducts} />
+          ) : null}
           {/* <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4"> */}
           {/* Filters
               <form className="hidden lg:block">

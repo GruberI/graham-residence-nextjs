@@ -2,7 +2,6 @@ import CatgoriesHeader from "./Header";
 import ProductSection from "../Home/ProductSection";
 
 export default async function ShopCategories({ productsByHandle, productHandle }) {
-  console.log('Products By handle', productsByHandle)
   return (
     <>
       <CatgoriesHeader products={productsByHandle} />

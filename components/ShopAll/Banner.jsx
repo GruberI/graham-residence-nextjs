@@ -48,7 +48,7 @@ const bannerInfo = [
     handle: "loll-designs",
     artist: "Loll Designs",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmatPDsurpdYLRTsgUyLHDUvLE5onEfSFgqc6Z4cRjErwF/QmQ4uvkvcyadr6FN5sRWAHicFvN2QdXU8tjzXtxFBjGqSr",
+      "https://ipfs.filebase.io/ipfs/QmSi2SaJWbxooVAaHFzPks62jPcFS7KFPPd9SHFsrPfAxp/QmfTzU3PKJ98Ghrfm4C2JwYnscaijQuErCemtiCCP9ybZz",
     imgAltText: "Red Loll Design chair with matching outdoor side table",
     text: "Based in Duluth, MN, Loll Designs is a designer/manufacturer of durable, all-weather, outdoor furniture and accessories made with HDPE (high density polyethylene), partially from recycled plastics like milk jug containers and shampoo bottles. Using thoughtful, original designs and unique materials, Loll creates innovative, fun and high­ quality products proudly crafted in the USA.",
     type: "home",

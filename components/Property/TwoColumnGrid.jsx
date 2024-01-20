@@ -1,6 +1,6 @@
 export default async function TwoColumnGrid() {
   return (
-    <div className="mx-auto grid grid-cols-2">
+    <div className="grid grid-cols-2 w-screen">
       <div className="col-span-2">
         <div className="col-span-2">
           <img
@@ -12,19 +12,19 @@ export default async function TwoColumnGrid() {
       </div>
 
       <div className="col-span-2 flex">
-        <div className="aspect-[4/5]">
+        <div className="aspect-[4/5] w-[50%] h-full">
           <img
             src="https://ipfs.filebase.io/ipfs/QmV39MLBLsMtxi7ZMUA7CUaP8uPbsP6BqfUBVn6P7SYaLh/QmYRtJQwPp1KwczWak8p61h8v6wydHTAwP3sdAEAASuYm3"
             alt=""
-            className="p-2"
+            className="object-cover p-2"
           />
         </div>
 
-        <div className="aspect-[4/5]">
+        <div className="aspect-[4/5] w-[50%] h-full">
           <img
-            src="https://ipfs.filebase.io/ipfs/QmeiFCmuZqKA94UHFPWnbyGEToKF8QePYmqQsPTeGJ8jtB/QmSiKUBDbNpTQjuoovtX1YFhPwm4cnfQJGLpGQeZPeE1xL"
+            src="https://ipfs.filebase.io/ipfs/QmUEvAXAGLRsykuXrfvJUZEQJ8Hbv2gmioa3YQFN6d3Mjw/QmXPYP1vawqAM1cDTtt3Suqh8NgtPZdSPZ5zdfctddDP5M"
             alt=""
-            className="p-2"
+            className="object-cover p-2"
           />
         </div>
       </div>
