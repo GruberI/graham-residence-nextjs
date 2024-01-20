@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Fade from "react-reveal/Fade";
+
 
 export default function SectionFirst() {
   return (
@@ -18,7 +18,7 @@ export default function SectionFirst() {
               </div>
             </div>
             <div>
-              <Fade right>
+          
                 <div className="sm:space-y-6 space-y-10">
                   <p className="tracking-wide text-xl sm:text-5xl text-center sm:text-left font-thin sm:mt-0 mt-6">
                     The Graham Residence is a mid-century modern retreat where
@@ -27,7 +27,7 @@ export default function SectionFirst() {
                     Desert living at its finest.{" "}
                   </p>
                 </div>
-              </Fade>
+         
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Fade from "react-reveal/Fade";
+
 
 export default function Section() {
   return (
@@ -8,7 +8,7 @@ export default function Section() {
       <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-14 mb-6">
         <div className="grid grid-cols-1 items-center gap-x-12 gap-y-16 lg:grid-cols-2">
           <div>
-            <Fade left>
+        
               <div className="sm:space-y-4 space-y-0">
                 <p className="tracking-wide text-3xl sm:text-5xl text-center sm:text-left">
                   Within the walls of The Graham Residence lies Graham Gallery,
@@ -16,7 +16,7 @@ export default function Section() {
                   emerging contemporary artists.{" "}
                 </p>
               </div>
-            </Fade>
+        
           </div>
           <div>
             <div className="overflow-hidden bg-black-100 aspect-[4/5]">
