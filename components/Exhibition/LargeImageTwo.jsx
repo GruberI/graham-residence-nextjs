@@ -5,7 +5,7 @@ export default function LargeImageTwo() {
         <img
           src="https://ipfs.filebase.io/ipfs/QmWiLw6GMHjBmEs137UAgGZkKeZgxo7mzAMhSbnqrK2bxj/QmbVuKk4UdELdq7qnBhUHk4xEkBxAkUDH1Pqh9htv2MFEQ"
           alt=""
-          className="object-cover object-center"
+          className="object-cover object-center p-2"
         />
       </div>
       <span id="property-about"></span>

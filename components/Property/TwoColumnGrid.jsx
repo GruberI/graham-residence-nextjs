@@ -1,12 +1,12 @@
 export default async function TwoColumnGrid() {
   return (
-    <div className="grid grid-cols-2 w-screen">
+    <div className="grid grid-cols-2 w-screen px-2">
       <div className="col-span-2">
         <div className="col-span-2">
           <img
             src="https://ipfs.filebase.io/ipfs/QmWKp5TpnLHwUrvtvEASzE51Amkiyie6BmpFpw8sqjdpVR"
             alt="between eye and the sky"
-            className=""
+            className="p-2"
           />
         </div>
       </div>
@@ -33,7 +33,7 @@ export default async function TwoColumnGrid() {
         <img
           src="https://ipfs.filebase.io/ipfs/QmW8UUk56Qbr47pRVnzZc4aQMUMAJydvSjFjYnnDzGsjcv/QmT541GQpg2qZhJ4JQa94rEJBxPWjoYkbGxPRDCy2688Bi"
           alt="woman drawing curtains shut"
-          className=""
+          className="p-2"
         />
       </div>
     </div>

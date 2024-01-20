@@ -1,3 +1,7 @@
+"use client";
+import React from "react";
+import Fade from "react-reveal/Fade";
+
 export default function SectionFirst() {
   return (
     <div className="bg-[#f4f5f1]">
@@ -14,15 +18,16 @@ export default function SectionFirst() {
               </div>
             </div>
             <div>
-              <div className="sm:space-y-6 space-y-10">
-                <p className="tracking-wide text-xl sm:text-5xl text-center sm:text-left font-light sm:mt-0 mt-6 animate-fadeTwo">
-                  The Graham Residence is a mid-century modern retreat where the
-                  lines between home and art gallery are beautifully blurred.
-                  The home is situated on 20 acres of pristine land in the High
-                  Desert of Yucca Valley, just outside of Joshua Tree National
-                  Park{" "}
-                </p>
-              </div>
+              <Fade right>
+                <div className="sm:space-y-6 space-y-10">
+                  <p className="tracking-wide text-xl sm:text-5xl text-center sm:text-left font-thin sm:mt-0 mt-6">
+                    The Graham Residence is a mid-century modern retreat where
+                    the lines between home and gallery are blurred. Situated on
+                    20 acres of pristine land in the High Desert, this is Mojave
+                    Desert living at its finest.{" "}
+                  </p>
+                </div>
+              </Fade>
             </div>
           </div>
         </div>
