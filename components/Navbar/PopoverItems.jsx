@@ -87,7 +87,7 @@ export default function PopoverItems({ color, pathname }) {
               key={item.name}
               href={item.href}
               className={`flex items-center text-xs sm:text-lg hover:text-neutral-300 font-[400]`}
-              target={item.id === "property" ? "_blank" : undefined}
+              // target={item.id === "property" ? "_blank" : undefined}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >
               <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
