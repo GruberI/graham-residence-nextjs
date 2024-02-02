@@ -4,8 +4,8 @@ import Link from "next/link.js";
 export default function Product({ product }) {
   const amount = product.priceRange.maxVariantPrice.amount;
   const imgOne = {
-    src: product.featuredImage.url,
-    altText: product.featuredImage.altText,
+    src: product.featuredImage?.url,
+    altText: product.featuredImage?.altText,
   };
   const imgTwo = {
     src: product.images[1]?.url,
