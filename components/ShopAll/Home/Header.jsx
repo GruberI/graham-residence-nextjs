@@ -6,7 +6,7 @@ const imageByHandle = [
   },
   {
     imageHandle: "sophie-lou-jacobsen",
-    src: "https://ipfs.filebase.io/ipfs/QmbvZNPAsQda7iz8DV5jbp8x4iMeBrUUDvkYoZJA3CUbKy/QmYEiT9GLBmVUG94r4rFSNUQXog4BP7xZzT4TSofPEnFMA",
+    src: "https://ipfs.filebase.io/ipfs/QmU7bKqnKnEWBXTJZRTL6SJLgczTvXoGNUowZ1hJiCyWkb/QmWJ2ZeTDfLr8Ng8H7ynR8o1tPjJVeeUARds3ipechFGrG",
     alt: "Sophie Lou Jacobsen set table with glass vases",
   },
   {
