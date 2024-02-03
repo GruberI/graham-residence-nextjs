@@ -6,7 +6,7 @@ export default async function TwoColumnGrid() {
           <img
             src="https://ipfs.filebase.io/ipfs/QmWKp5TpnLHwUrvtvEASzE51Amkiyie6BmpFpw8sqjdpVR"
             alt="between eye and the sky"
-            className="p-2"
+            className="px-2"
           />
         </div>
       </div>

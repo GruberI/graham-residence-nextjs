@@ -62,7 +62,7 @@ export default function ProductDescription({ product }) {
         product.vendor === "Sophie Lou Jacobsen"
           ? "Products will ship within 3-5 business days."
           : product.vendor === "Atelier Saucier"
-          ? "Products will ship within 2-5 business days. Please allow 5-7 days for Standard shipping, dependent on delivery location and its proximity to AS Los Angeles Studio. Express delivery options are available."
+          ? "Products will ship within 2-5 business days. Please allow 5-7 days for Standard shipping, dependent on delivery location and its proximity to AS Los Angeles Studio.<br> Express delivery options are available."
           : product.vendor === "Loll Designs"
           ? "Products will  ship within 3-5 business days via fedex standard. Most Loll furniture arrives flat-packed but is easy to assemble."
           : "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley<br>Ships unframed",
