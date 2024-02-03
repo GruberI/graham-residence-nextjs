@@ -8,7 +8,7 @@ import Carousel from "../../components/Carousel/Carousel.jsx";
 import { getCollectionProducts } from "../../lib/shopify/index";
 import Section from "../../components/Shop/Section.jsx";
 import { notFound } from "next/navigation";
-import Instagram from "@/components/Instagram.jsx";
+import Instagram from "../../components/Shop/Instagram";
 
 export default async function Shop() {
   const products = await getProducts({});
