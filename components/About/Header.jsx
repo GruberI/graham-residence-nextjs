@@ -1,10 +1,10 @@
 "use client";
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 export default function Header() {
   return (
     <div
-      className="m-auto sm:px-0 mx-8 border-t border-black pt-20 sm:pt-24 pb-12"
+      className="m-auto sm:px-0 mx-8 border-t border-black pt-20 sm:pt-40 pb-12"
       id="featured"
     >
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 mb-10">
@@ -18,7 +18,7 @@ export default function Header() {
               />
             </div>
           </div>
-          <Fade>
+          <Slide direction="right">
             <div className="ml-5 flex flex-col content-start">
               <div className="space-y-3">
                 <p className="tracking-wide leading-7 text-lg">
@@ -47,7 +47,7 @@ export default function Header() {
                 </p>
               </div>
             </div>
-          </Fade>
+          </Slide>
         </div>
       </div>
     </div>
