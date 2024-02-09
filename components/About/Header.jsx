@@ -12,7 +12,7 @@ export default function Header() {
           <div>
             <div className="aspect-[7/5] overflow-hidden bg-black-100">
               <img
-                src="https://ipfs.filebase.io/ipfs/QmYkCbyMjgWfNgPkiYWjBVPpPCAgGWoZ92Kn5embnV2nog/QmVQju1dQhXSVRyi8Jbu1ZkKLSkak9oUd77jZprmMQLz8q"
+                src="https://ipfs.filebase.io/ipfs/QmXxDzFFdxJwH15qfzL8UFbvYwkRjhPCvZ4ptXQ9NiNx4F/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW"
                 alt="Kyle Steed painting in The Graham Residence living room during the day."
                 className="h-full w-full object-cover object-center"
               />

@@ -4,7 +4,7 @@ export default async function TwoRowGrid() {
         <div className="col-span-2">
           <div className="col-span-2 ">
             <img
-              src="https://ipfs.filebase.io/ipfs/QmXxDzFFdxJwH15qfzL8UFbvYwkRjhPCvZ4ptXQ9NiNx4F/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW"
+              src="https://ipfs.filebase.io/ipfs/QmYkCbyMjgWfNgPkiYWjBVPpPCAgGWoZ92Kn5embnV2nog/QmVQju1dQhXSVRyi8Jbu1ZkKLSkak9oUd77jZprmMQLz8q"
               alt="arial shot of property with winding road"
               className="p-2"
             />

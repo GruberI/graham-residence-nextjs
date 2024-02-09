@@ -1,15 +1,7 @@
 export default async function TwoColumnGrid() {
   return (
     <div className="grid grid-cols-2 w-screen px-2 bg-[#f4f5f1]">
-      <div className="col-span-2">
-        <div className="col-span-2">
-          <img
-            src="https://ipfs.filebase.io/ipfs/QmYSdmzuQvmSkQh98mmGpegKVAVeDMqbDUbYMqVgwm7vmB/QmVfke7qA6KkigHdCcPYPXYN4fdC2LujUEytrjzWws4Ywn"
-            alt="between eye and the sky"
-            className="p-2"
-          />
-        </div>
-      </div>
+     
 
       <div className="col-span-2 flex">
         <div className="aspect-[4/5] w-[50%] h-full">
