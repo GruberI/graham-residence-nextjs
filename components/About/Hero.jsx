@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
-    <div className="relative isolate overflow-hidden sm:pt-40 pt-40">
+    <div className="relative isolate overflow-hidden sm:pt-30 pt-40">
       <img
-        src="https://ipfs.filebase.io/ipfs/QmRNe1ozYPmn3kgLTkuTe9PvEgYZR3maqTYQBarpNSf7wD"
+        src="https://ipfs.filebase.io/ipfs/QmYTuXismQUCXVPb6MTPNd1AMwVbi7BjQRYAG6gtHQHymP/QmNqmfpcLzdfj9CeVsURAbP8ZfWGUndiRifrHAp8veYiwa"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
