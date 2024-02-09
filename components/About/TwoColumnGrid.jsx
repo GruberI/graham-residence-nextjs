@@ -4,28 +4,28 @@ export default async function TwoColumnGrid() {
      
 
       <div className="col-span-2 flex">
-        <div className="aspect-[4/5] w-[50%] h-full">
+        <div className="w-full h-screen aspect-[3/4]">
           <img
             src="https://ipfs.filebase.io/ipfs/Qmdyf8RcB2LsQTmSXCLaS9qe9JomMZmFzARNou4hQcJvFy/QmW36C3Fm3rUSyKV7c4hLF4WeJk7v3iHwyWJjnGHr6SQS3"
             alt=""
-            className="object-cover p-2"
+            className="object-cover p-2 h-full w-full"
           />
         </div>
 
-        <div className="aspect-[4/5] w-[50%] h-full">
+        <div className="w-full h-screen">
           <img
             src="https://ipfs.filebase.io/ipfs/QmUuGPS8vHhaawFrK2C31J9Z24RAno5Z2mBKkQ5eKr1hR6/QmPGzMAWV9nBSZPj6CasFmeRJAovRGGHi1iWuD4QToNroM"
             alt=""
-            className="object-cover p-2"
+            className="object-cover p-2 h-full w-full aspect-[3/4]"
           />
         </div>
       </div>
 
-      <div className="col-span-2">
+      <div className="col-span-2 h-screen w-full">
         <img
           src="https://ipfs.filebase.io/ipfs/QmYTuXismQUCXVPb6MTPNd1AMwVbi7BjQRYAG6gtHQHymP/QmNqmfpcLzdfj9CeVsURAbP8ZfWGUndiRifrHAp8veYiwa"
           alt="woman drawing curtains shut"
-          className="p-2"
+          className="p-2 h-full w-full object-cover"
         />
       </div>
     </div>
