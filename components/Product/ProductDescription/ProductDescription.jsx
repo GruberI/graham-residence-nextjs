@@ -126,7 +126,7 @@ export default function ProductDescription({ product }) {
                   <img
                     src={image.url}
                     alt={image.altText}
-                    className="h-[620px] object-cover w-10/12 object-center aspect-[3/4]"
+                    className="sm:h-[620px] object-cover w-11/12 sm:w-10/12 object-center aspect-[3/4]"
                   />
                 </Tab.Panel>
               ))}
@@ -136,10 +136,10 @@ export default function ProductDescription({ product }) {
           {/* Product Info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-2 lg:mt-0">
             <div className="flex place-content-between">
-              <h1 className="text-2xl font-light text-black-600 truncate">
+              <h1 className="text-sm sm:text-2xl font-light text-black-600 truncate">
                 {product.title.toUpperCase()}
               </h1>
-              <p className="text-2xl tracking-normal text-black-600">
+              <p className="text-sm sm:text-2xl tracking-normal text-black-600">
                 {`${new Intl.NumberFormat("en-US", {
                   style: "currency",
                   currency: "USD",
