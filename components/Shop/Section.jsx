@@ -27,7 +27,7 @@ export default function Section() {
             </div>
 
             <div className="pb-8">
-              <p className="tracking-wide">
+              <p className="tracking-wide text-xl sm:text-2xl">
                 A mid-century modern retreat nestled among the boulders of the
                 Mojave Desert, The Graham Residence is where the boundaries
                 between home and gallery are erased. Discover the best
