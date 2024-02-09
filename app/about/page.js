@@ -1,8 +1,8 @@
 import Header from "../../components/About/Header";
 import Hero from "../../components/About/Hero";
-import Section from '../../components/About/Section'
-import ImageCarousel from '../../components/Carousel/ImageCarousel'
-// import AltHeader from '../../components/About/AltHeader'
+import Text from '../../components/About/Text'
+import TwoColumnGrid from '../../components/About/TwoColumnGrid'
+import TwoRowGrid from '../../components/About/TwoRowGrid'
 
 export default async function About() {
   
@@ -10,8 +10,9 @@ export default async function About() {
      <>
         <Hero />
         <Header />
-        <Section />
-        <ImageCarousel />
+        <TwoColumnGrid />
+        <Text />
+        <TwoRowGrid />
      </>
     );
   }
