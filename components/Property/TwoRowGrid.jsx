@@ -24,7 +24,7 @@ export default async function TwoRowGrid() {
           <img
             src="https://ipfs.filebase.io/ipfs/QmeiFCmuZqKA94UHFPWnbyGEToKF8QePYmqQsPTeGJ8jtB/QmSiKUBDbNpTQjuoovtX1YFhPwm4cnfQJGLpGQeZPeE1xL"
             alt="white chair in the graham residence living room with sun streaming in"
-            className="p-2"
+            className="p-2 h-[99.99%]"
           />
         </div>
       </div>

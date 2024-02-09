@@ -88,8 +88,8 @@ export default function ProductDescription({ product }) {
             defaultIndex={defaultIndex}
           >
             {/* Image selector */}
-            <div className="mx-auto mt-6 hidden w-11/12 max-w-2xl sm:block lg:max-w-none">
-              <Tab.List className="grid grid-cols-4 gap-8 ">
+            <div className=" mt-6 hidden w-11/12 max-w-2xl sm:block lg:max-w-none pl-14">
+              <Tab.List className="grid grid-cols-4 gap-8">
                 {product.images.map((image, i) => (
                   <Tab
                     key={i}
@@ -126,7 +126,7 @@ export default function ProductDescription({ product }) {
                   <img
                     src={image.url}
                     alt={image.altText}
-                    className="h-[600px] object-cover w-11/12 object-center aspect-[3/4]"
+                    className="h-[620px] object-cover w-10/12 object-center aspect-[3/4]"
                   />
                 </Tab.Panel>
               ))}

@@ -9,6 +9,7 @@ import TwoRowGrid from "../components/Property/TwoRowGrid";
 import Book from "../components/Property/Book";
 import HeroImageText from "../components/Property/HeroImageText";
 import Instagram from "../components/Instagram";
+import HouseSpecs from '../components/Property/HouseSpecs'
 
 
 export default function Property() {
@@ -22,6 +23,7 @@ export default function Property() {
       <TwoColumnGrid />
       <Text />
       <TwoRowGrid/>
+      <HouseSpecs />
       <Book />
       <Instagram />
       {/* <FourImageGrid /> */}
