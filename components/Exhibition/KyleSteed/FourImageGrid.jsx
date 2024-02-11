@@ -1,7 +1,7 @@
 // import { getCollectionProducts } from "../../lib/shopify";
 import Link from "next/link";
 
-export default async function FourImageGrid() {
+export default function FourImageGrid() {
   return (
     <div className="mx-auto grid grid-cols-2 max-w-7xl py-20 gap-10">
       <div className="grid-rows-3">

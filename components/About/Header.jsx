@@ -7,10 +7,10 @@ export default function Header() {
       className="m-auto sm:px-0 mx-8 border-t border-black pt-20 sm:pt-24 pb-12"
       id="featured"
     >
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 mb-10">
-        <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 mb-10">
+        <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
           <div>
-            <div className="aspect-[7/5] overflow-hidden bg-black-100">
+            <div className="aspect-[8/6] overflow-hidden bg-black-100">
               <img
                 src="https://ipfs.filebase.io/ipfs/QmXxDzFFdxJwH15qfzL8UFbvYwkRjhPCvZ4ptXQ9NiNx4F/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW"
                 alt="Kyle Steed painting in The Graham Residence living room during the day."

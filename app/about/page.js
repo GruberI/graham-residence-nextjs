@@ -3,6 +3,7 @@ import Hero from "../../components/About/Hero";
 import Text from '../../components/About/Text'
 import TwoColumnGrid from '../../components/About/TwoColumnGrid'
 import TwoRowGrid from '../../components/About/TwoRowGrid'
+import AboutGoldberg from '../../components/About/AboutGoldberg'
 
 export default async function About() {
   
@@ -13,6 +14,7 @@ export default async function About() {
         <TwoColumnGrid />
         <Text />
         <TwoRowGrid />
+        <AboutGoldberg />
      </>
     );
   }
