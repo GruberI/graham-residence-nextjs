@@ -16,7 +16,7 @@ export default async function Shop() {
     collection: "home-goods",
   });
   const productsByTag = productsByCollection.filter((product) => {
-    return product.tags.includes("carousel");
+    return product.tags.includes("carousel-images");
   });
 
   if (!productsByTag) return notFound();
