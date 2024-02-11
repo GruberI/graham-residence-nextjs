@@ -49,9 +49,9 @@ export default class Carousel extends Component {
   render() {
     const settings = {
       dots: false,
-      infinite: true,
       slidesToShow: 5,
       slidesToScroll: 1,
+      infinite: false,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       responsive: [
@@ -60,7 +60,7 @@ export default class Carousel extends Component {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
-            infinite: true,
+            infinite: false,
           },
         },
         {
