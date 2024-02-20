@@ -6,7 +6,7 @@ import Link from "next/link";
 const navigation = {
   categories: [
     {
-      name: "Shop",
+      name: "Shoppe",
       categories: [
         // { name: "New Arrivals", href: "/categories/new-arrivals" },
       ],

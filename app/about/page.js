@@ -2,7 +2,7 @@ import Header from "../../components/About/Header";
 import Hero from "../../components/About/Hero";
 import Text from '../../components/About/Text'
 import TwoColumnGrid from '../../components/About/TwoColumnGrid'
-import TwoRowGrid from '../../components/About/TwoRowGrid'
+import TwoColumnGrid2 from '../../components/About/TwoColumnGrid2'
 import AboutGoldberg from '../../components/About/AboutGoldberg'
 
 export default async function About() {
@@ -11,10 +11,10 @@ export default async function About() {
      <>
         <Hero />
         <Header />
-        <TwoColumnGrid />
         <Text />
-        <TwoRowGrid />
         <AboutGoldberg />
+        <TwoColumnGrid />
+        <TwoColumnGrid2 />
      </>
     );
   }

@@ -36,9 +36,9 @@ export default async function Shop() {
         <Carousel products={productsByTag} />
       </Suspense>
       <Section />
-      <ArtSection products={products} />
-      <Featured />
       <GoodsSection products={products} />
+      <Featured />
+      <ArtSection products={products} />
       <Instagram />
     </div>
   );

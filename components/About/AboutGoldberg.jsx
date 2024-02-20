@@ -1,9 +1,9 @@
 export default function AboutGoldberg() {
   return (
-    <div className="mx-auto grid grid-cols-2 max-w-7xl py-24 gap-8 mt-4">
+    <div className="mx-auto grid grid-cols-2 max-w-7xl py-16 gap-8 mt-4 mb-16">
       <div className="grid-rows-3">
         <div className="my-20 ml-20 mb-36">
-        <p className="font-bold text-xl">Yoni Goldberg</p>
+        <p className="font-bold text-xl">Yoni</p>
           <p className="pb-6 text-lg">
             <span className="text-slate-500">The Maker - committed to his craft</span>
           </p>
@@ -34,7 +34,7 @@ export default function AboutGoldberg() {
         </div>
 
         <div className="my-20 mr-10 mt-36">
-        <p className="font-bold text-xl">Lindsey Goldberg</p>
+        <p className="font-bold text-xl">Lindsey</p>
           <p className="pb-6 text-lg">
             <span className="text-slate-500">The Visionary - sees possibility everywhere</span>
           </p>
