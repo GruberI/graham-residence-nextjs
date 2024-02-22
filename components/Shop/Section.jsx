@@ -14,8 +14,8 @@ export default function Section() {
               />
               <img
                 src="
-                https://ipfs.filebase.io/ipfs/QmZFmFjbhMkbfNtVVJT2PL9fp91qyUxPzjMV5zBQkgRUts/QmNqNADtcpXcfCyzg1d99yuyfNFYWAvH2SeV8963drNFg4"
-                alt="Chair and side table in graham residence living room."
+                https://ipfs.filebase.io/ipfs/QmQhHuri4tVjFRqByeUsHbUBnXnT2mLM33p8NY1AL8SRRY/QmT53c8kCr8pAf3GGy7uWeQZz6vsAJxuGqvPZ4bEeXDuQP"
+                alt="martini glasses."
                 className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-64 lg:translate-x-80 translate-y-3/4 md:translate-y-2/4 max-h-3/4 h-[200px] sm:h-3/4"
               />
             </div>

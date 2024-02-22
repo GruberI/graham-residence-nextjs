@@ -6,7 +6,7 @@ import Link from "next/link";
 const navigation = {
   categories: [
     {
-      name: "Shoppe",
+      name: "Shop",
       categories: [
         // { name: "New Arrivals", href: "/categories/new-arrivals" },
       ],
@@ -31,10 +31,10 @@ const navigation = {
       name: "The Property",
       href: "/",
       id: "property",
-    },
-    { name: "Graham Gallery", href: "/gallery" },
+    }
   ],
   second: [
+    { name: "Graham Gallery", href: "/gallery" },
     { name: "About", href: "/about" },
     { name: "Contact", id: "contact-us" },
   ],

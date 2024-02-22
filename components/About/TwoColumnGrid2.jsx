@@ -1,6 +1,6 @@
 export default async function TwoColumnGrid2() {
     return (
-      <div className="grid grid-cols-2 w-screen px-2 bg-[#f4f5f1]">
+      <div className="grid grid-cols-2 w-screen px-2 bg-[#f4f5f1] pb-20">
        
   
         <div className="col-span-2 flex">

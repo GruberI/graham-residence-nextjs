@@ -1,6 +1,6 @@
 export default function AboutGoldberg() {
   return (
-    <div className="mx-auto grid grid-cols-2 max-w-7xl py-16 gap-8 mt-4 mb-16">
+    <div className="mx-auto grid grid-cols-2 max-w-7xl py-10 gap-8 mb-16">
       <div className="grid-rows-3">
         <div className="my-20 ml-20 mb-36">
         <p className="font-bold text-xl">Yoni</p>

@@ -20,10 +20,10 @@ export default function SectionFirst() {
               <Slide direction="right">
                 <div className="sm:space-y-6 space-y-10">
                   <p className="tracking-wide text-xl sm:text-5xl text-center sm:text-left font-thin sm:mt-0 mt-6">
-                    The Graham Residence is a mid-century modern retreat where
-                    the lines between home and gallery are blurred. Situated on
-                    20 acres of pristine land in the High Desert, this is Mojave
-                    Desert living at its finest.{" "}
+                    The Graham Residence is a mid-century modern retreat near
+                    Joshua Tree National Park where the lines between home and
+                    gallery are blurred. Situated on 20 acres of pristine land,
+                    this is Mojave Desert living at its finest.{" "}
                   </p>
                 </div>
               </Slide>

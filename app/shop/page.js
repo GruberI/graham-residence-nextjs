@@ -4,7 +4,7 @@ import GoodsSection from "@/components/Shop/GoodsSection";
 import Featured from "@/components/Shop/Featured";
 import { getProducts } from "@/lib/shopify";
 import { Suspense } from "react";
-import Carousel from "../../components/Carousel/Carousel.jsx";
+// import Carousel from "../../components/Carousel/Carousel.jsx";
 import { getCollectionProducts } from "../../lib/shopify/index";
 import Section from "../../components/Shop/Section.jsx";
 import { notFound } from "next/navigation";
@@ -33,7 +33,7 @@ export default async function Shop() {
     <div className="bg-white overflow-hidden">
       <Suspense>
         <HeroImageText />
-        <Carousel products={productsByTag} />
+        {/* <Carousel products={productsByTag} /> */}
       </Suspense>
       <Section />
       <GoodsSection products={products} />

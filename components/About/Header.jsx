@@ -23,25 +23,28 @@ export default function Header() {
               <div className="space-y-3">
                 <p className="tracking-wide leading-7 text-lg">
                   <span className="font-semibold">The Graham Residence</span>{" "}
-                  began in 2017 when Lindsey and Yoni were living in LA and
-                  found themselves craving space to reset out in nature. One
-                  visit to Joshua Tree National Park had them returning until
-                  they stumbled upon the property that would become The Graham
-                  Residence.{" "}
+                  began when Lindsey and Yoni were living in LA and found
+                  themselves craving space to reset out in nature. As design and
+                  nature lovers, they often found that they had to sacrifice
+                  either design or nature in their travels, but The Graham
+                  Residence united them both, with thoughtful mid-century design
+                  and sliding glass doors that showcase the sprawling high
+                  desert landscape around it. Since launching in 2017, The
+                  Graham Residence has hosted thousands of guests from all over
+                  the world. It has also been home to countless photoshoots,
+                  elopements, and events.{" "}
                 </p>
-                <p className="tracking-wide leading-7 text-lg">
-                  As design and nature lovers, they often found that they had to
-                  sacrifice either design or nature in their travels, but The
-                  Graham Residence unites them both, with thoughtful mid-century
-                  design and sliding glass doors that showcase the sprawling
-                  high desert landscape around it.{" "}
-                </p>
+                {/* <p className="tracking-wide leading-7 text-lg">
+                  Since launching in 2017, The Graham Residence has hosted
+                  thousands of guests from all over the world. It has also been
+                  home to countless photoshoots, elopements, and events.{" "}
+                </p> */}
 
                 <p className="tracking-wide leading-7 text-lg">
                   TGR is ever-evolving. In 2023, Lindsey launched Graham
                   Gallery, curating the home with rotating works of art by
                   emerging contemporary artists, all of which are available for
-                  purchase. In 2024, Lindsey and Yoni launched an ecommerce
+                  purchase. In 2024, Lindsey and Yoni launched an e-commerce
                   shop, selling curated goods within the home that guests kept
                   asking about.
                 </p>
