@@ -21,7 +21,7 @@ export default async function TwoColumnGrid() {
         </div>
       </div>
 
-      <div className="col-span-2 h-screen w-full">
+      <div className="col-span-2 sm:h-screen w-full">
         <img
           src="https://ipfs.filebase.io/ipfs/QmRCwsnbLzYRuaF68NT3zewf6RMXcV4cb4v6KpksiWPVaH/QmZiaUKpt7EHwUWVbJbyCQgBWgGicYjxkTqDHUZdm7pvfy"
           alt="woman drawing curtains shut"

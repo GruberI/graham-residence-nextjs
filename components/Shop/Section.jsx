@@ -1,3 +1,5 @@
+"use client";
+import { Fade } from "react-awesome-reveal";
 import { Suspense } from "react";
 
 export default function Section() {
@@ -10,13 +12,13 @@ export default function Section() {
               <img
                 src="https://ipfs.filebase.io/ipfs/QmdHbHnkrncrN8JFbwgB5Agyh8HrQx8uawuX6P8bUNruNb/QmYNcbR11hoFE87eZmhBdY4iFmNWXpPHofAHf77vx99gez"
                 alt="Sophie-lou-jacobsen glasses stacked on top of each other on table."
-                className="object-cover object-center max-h-3/4 h-[300px] sm:h-3/4 sm:ml-16 lg:ml-0"
+                className="object-cover object-center max-h-3/4 h-[300px] sm:h-3/4 sm:ml-16 lg:ml-0 max-w-96l"
               />
               <img
                 src="
                 https://ipfs.filebase.io/ipfs/QmQhHuri4tVjFRqByeUsHbUBnXnT2mLM33p8NY1AL8SRRY/QmT53c8kCr8pAf3GGy7uWeQZz6vsAJxuGqvPZ4bEeXDuQP"
                 alt="martini glasses."
-                className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-64 lg:translate-x-80 translate-y-3/4 md:translate-y-2/4 max-h-3/4 h-[200px] sm:h-3/4"
+                className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-64 lg:translate-x-80 translate-y-3/4 md:translate-y-2/4 max-h-3/4 h-[200px] sm:h-3/4 max-w-96"
               />
             </div>
           </Suspense>
@@ -25,7 +27,10 @@ export default function Section() {
               <h1 className="lg:text-4xl text-2xl sm:font-medium font-semibold">
                 CURATION IS ABOUT
               </h1>
-              <p className="text-3xl italic font-light">intentionality</p>
+              <Fade>
+                {" "}
+                <p className="text-3xl italic font-light">intentionality</p>
+              </Fade>
             </div>
 
             <div className="pb-8">

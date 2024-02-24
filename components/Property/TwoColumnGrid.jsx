@@ -2,7 +2,7 @@ export default async function TwoColumnGrid() {
   return (
     <div className="grid grid-cols-2 w-screen px-2 bg-[#f4f5f1]">
       <div className="col-span-2">
-        <div className="col-span-2 h-screen w-full">
+        <div className="col-span-2 sm:h-screen w-full">
           <img
             src="https://ipfs.filebase.io/ipfs/QmWKp5TpnLHwUrvtvEASzE51Amkiyie6BmpFpw8sqjdpVR"
             alt="between eye and the sky"
@@ -29,7 +29,7 @@ export default async function TwoColumnGrid() {
         </div>
       </div>
 
-      <div className="col-span-2 h-screen w-full">
+      <div className="col-span-2 sm:h-screen w-full">
         <img
           src="https://ipfs.filebase.io/ipfs/QmW8UUk56Qbr47pRVnzZc4aQMUMAJydvSjFjYnnDzGsjcv/QmT541GQpg2qZhJ4JQa94rEJBxPWjoYkbGxPRDCy2688Bi"
           alt="woman drawing curtains shut"

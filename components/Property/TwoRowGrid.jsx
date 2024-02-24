@@ -2,7 +2,7 @@ export default async function TwoRowGrid() {
   return (
     <div className="mx-auto grid grid-cols-2 px-2">
       <div className="col-span-2">
-        <div className="col-span-2 h-screen w-full">
+        <div className="col-span-2 sm:h-screen w-full">
           <img
             src="https://ipfs.filebase.io/ipfs/Qmbd4FWxjiDw2VzcsjTVXZnhLRwVjQJF1w42KeCaLL5PfN/Qmb2NMXEKqzVVNYurkxEYvrABw5Pn1RhzWdtt4Wggp96eg"
             alt="arial shot of property with winding road"
