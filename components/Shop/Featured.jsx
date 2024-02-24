@@ -39,7 +39,7 @@ export default function Featured() {
             </div>
             <div className="pt-8">
               <Link
-                href={"/exhibition/kyle-steed"}
+                href={"/gallery/kyle-steed"}
                 className="underline underline-offset-8 hover:text-neutral-600"
               >
                 SEE THE EXHIBITION
