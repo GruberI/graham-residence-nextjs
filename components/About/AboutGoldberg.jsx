@@ -66,9 +66,9 @@ export default function AboutGoldberg() {
           />
         </div>
 
-        <div className="mx-10 m-auto">
+        <div className="mx-10 m-auto mt-6">
           <p className="font-bold text-xl">Yoni</p>
-          <p className="pb-6 text-md">
+          <p className="pb-4 sm:pb-6 text-md">
             <span className="text-slate-500">
               The Maker - committed to his craft
             </span>
@@ -91,9 +91,9 @@ export default function AboutGoldberg() {
         />
       </div>
 
-      <div className="mx-10 m-auto sm:hidden mb-10">
+      <div className="mx-10 m-auto sm:hidden mb-10 mt-6">
         <p className="font-bold text-xl">Lindsey</p>
-        <p className="pb-6 text-md">
+        <p className="pb-4 sm:pb-6 text-md">
           <span className="text-slate-500">
             The Visionary - sees possibility everywhere
           </span>

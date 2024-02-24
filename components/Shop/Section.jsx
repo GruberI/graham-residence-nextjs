@@ -23,7 +23,7 @@ export default function Section() {
             </div>
           </Suspense>
           <div className="flex flex-col lg:w-11/12 m-auto p-2 my-10 lg:my-0 md:p-10">
-            <div className="pb-6 pt-10 lg:pt-0">
+            <div className="pb-6 pt-4 sm:pt-10 lg:pt-0">
               <h1 className="lg:text-4xl text-2xl sm:font-medium font-semibold">
                 CURATION IS ABOUT
               </h1>

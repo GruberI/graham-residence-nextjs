@@ -3,6 +3,7 @@ import Link from "next/link.js";
 
 export default function Product({ product }) {
   const amount = product.priceRange.maxVariantPrice.amount;
+  const available = product.availableForSale
   const imgOne = {
     src: product.featuredImage?.url,
     altText: product.featuredImage?.altText,
@@ -12,12 +13,14 @@ export default function Product({ product }) {
     altText: product.images[1]?.altText,
   };
 
+  console.log('Product:', product)
+
   return (
     <Link
       href={`/product/${product.handle}`}
       className="group relative h-full w-full"
     >
-      <ImageTransition imgOne={imgOne} imgTwo={imgTwo} />
+      <ImageTransition imgOne={imgOne} imgTwo={imgTwo} available={available}/>
       <div className="mt-4 flex flex-col text-base mb-10">
         <div className="flex flex-row justify-between ">
           <p className="text-sm font-light text-neutral-600">
