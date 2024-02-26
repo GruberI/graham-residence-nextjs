@@ -2,7 +2,7 @@ import ImageTransition from "./ImageTransition.jsx";
 import Link from "next/link.js";
 
 export default function Product({ product }) {
-  const amount = product.priceRange.maxVariantPrice.amount;
+  const amount = product.priceRange.minVariantPrice.amount;
   const available = product.availableForSale
   const imgOne = {
     src: product.featuredImage?.url,
@@ -12,8 +12,6 @@ export default function Product({ product }) {
     src: product.images[1]?.url,
     altText: product.images[1]?.altText,
   };
-
-  console.log('Product:', product)
 
   return (
     <Link

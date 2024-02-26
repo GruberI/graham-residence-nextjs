@@ -26,6 +26,8 @@ export default function ProductDescription({ product }) {
   const selectedVariant = product.variants.find((variant) =>
     variant?.selectedOptions.some((item) => item.value === currentSearchParam)
   );
+  const selectedVariantPrice =
+    selectedVariant === undefined ? amount : selectedVariant.price.amount;
   const imgSrc = selectedVariant?.image.originalSrc;
   const defaultIndex =
     selectedVariant === undefined
@@ -68,8 +70,6 @@ export default function ProductDescription({ product }) {
           : "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley<br>Ships unframed",
     },
   ];
-
-  console.log(product.vendor);
 
   return (
     <div className="bg-white pt-16">
@@ -143,7 +143,13 @@ export default function ProductDescription({ product }) {
                 {`${new Intl.NumberFormat("en-US", {
                   style: "currency",
                   currency: "USD",
-                }).format(parseFloat(amount))}`}
+                }).format(
+                  parseFloat(
+                    selectedVariant === undefined
+                      ? amount
+                      : selectedVariantPrice
+                  )
+                )}`}
               </p>
             </div>
             <Link href={`/${currentType}/${restructuredVendor}`}>
