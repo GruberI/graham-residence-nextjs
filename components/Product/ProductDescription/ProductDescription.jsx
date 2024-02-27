@@ -19,7 +19,7 @@ export default function ProductDescription({ product }) {
       : setCurrentType("art");
   }, []);
   const restructuredVendor = product.vendor.toLowerCase().replaceAll(" ", "-");
-  const amount = product.priceRange.maxVariantPrice.amount;
+  const amount = product.priceRange.minVariantPrice.amount;
   const searchParams = useSearchParams();
   const variantName = product.variants[0].selectedOptions[0].name.toLowerCase();
   const currentSearchParam = searchParams?.get(variantName);
