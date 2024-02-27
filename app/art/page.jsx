@@ -13,9 +13,6 @@ export default async function ShopAll() {
   return (
     <div className="mt-20">
       <ShopAllArt productsByHandle={products} />
-      <div className="pb-20">
-        <Contact />
-      </div>
     </div>
   );
 }
