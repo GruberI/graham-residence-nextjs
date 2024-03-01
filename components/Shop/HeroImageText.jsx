@@ -1,6 +1,6 @@
 export default function HeroImageText() {
   return (
-    <div className="relative isolate overflow-hidden h-[600px]>
+    <div className="relative isolate overflow-hidden h-[600px]">
       <img
         src="https://ipfs.filebase.io/ipfs/QmayojLyPFZXZvzX5gBzis26uVZSdB27Y85EfSSGvvdGMB/QmVVSQswM9dDiPjLvwfvMXf3P8F8spNp47WEsPXjTSZvQV"
         alt=""
