@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-export default function ImageTransition({ imgOne, imgTwo, available }) {
+export default function ImageTransition({
+  imgOne,
+  imgTwo,
+  available,
+  fineArt,
+}) {
   const [hover, setHover] = useState(false);
 
   return (
@@ -9,7 +14,7 @@ export default function ImageTransition({ imgOne, imgTwo, available }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      {available === false ? (
+      {available === false && fineArt ? (
         <>
           <img
             src={imgOne.src}
