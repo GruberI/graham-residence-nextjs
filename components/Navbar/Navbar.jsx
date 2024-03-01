@@ -67,21 +67,8 @@ export default function Navbar() {
               {/* Flyout menus */}
               <PopoverItems color={color} pathname={pathname} />
 
+              {/* Booking widget */}
               <div className="flex flex-1 items-center justify-end sm:mr-20 mr-14">
-                {/* <a
-                  href="https://www.grahamresidence.com/"
-                  className={`rounded-sm border lg:px-3.5 px-3 py-2.5 lg:text-sm text-xs ml-2 md:ml-0 font-normal shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
-                    pathname == "/" ? buttonBg : "black"
-                  } text-white`}
-                  target="_blank"
-                  style={
-                    pathname == "/"
-                      ? { border: `1px solid ${color}` }
-                      : { border: "1px solid black" }
-                  }
-                >
-                 STAY <span className="inline sm:hidden lg:inline">WITH US</span>
-                </a> */}
                 <Calendar />
               </div>
             </div>

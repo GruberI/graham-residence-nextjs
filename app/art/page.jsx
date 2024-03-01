@@ -1,6 +1,5 @@
 import ShopAllArt from "../../components/ShopAll/Art/Art";
 import { getCollectionProducts } from "../../lib/shopify";
-import Contact from "@/components/Contact";
 import { notFound } from "next/navigation";
 
 export const runtime = "edge";

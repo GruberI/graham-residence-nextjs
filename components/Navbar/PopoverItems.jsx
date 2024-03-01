@@ -6,14 +6,15 @@ import Link from "next/link";
 const navigation = {
   categories: [
     {
-      name: "Shop",
+      name: "The Collection",
       categories: [
-        // { name: "New Arrivals", href: "/categories/new-arrivals" },
-      ],
-      art: [
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
-        { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
+        { name: "View All", href: "/gallery" },
+      ],
+      art: [
+        { name: "Paintings", href: "/art" },
+        { name: "Photography", href: "/art/yoni-goldberg" },
         { name: "View All", href: "/art" },
       ],
       home: [
@@ -21,9 +22,8 @@ const navigation = {
         { name: "Sophie Lou Jacobsen", href: "/home/sophie-lou-jacobsen" },
         { name: "Loll Designs", href: "/home/loll-designs" },
         { name: "View All", href: "/home" },
-        // { name: 'Kitchen', href: '/kitchen' },
-        // { name: 'Bedroom', href: '/bedroom-furniture' },
       ],
+      shop: [],
     },
   ],
   first: [
@@ -31,10 +31,9 @@ const navigation = {
       name: "The Property",
       href: "/",
       id: "property",
-    }
+    },
   ],
   second: [
-    { name: "Graham Gallery", href: "/gallery" },
     { name: "About", href: "/about" },
     { name: "Contact", id: "contact-us" },
   ],
@@ -69,7 +68,7 @@ export default function PopoverItems({ color, pathname }) {
 
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full">
-      <div className="flex h-14 space-x-3 sm:space-x-4 md:space-x-12 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-10 md:ml-20 lg:ml-14">
+      <div className="flex h-14 space-x-4 sm:space-x-4 md:space-x-12 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-10 md:ml-20 lg:ml-14">
         {navigation.first.map((item) =>
           item.id === "contact-us" ? (
             <a
@@ -109,15 +108,18 @@ export default function PopoverItems({ color, pathname }) {
                     ref={triggerRef}
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
-                      `relative z-10  flex items-center border-b-1 pt-px text-xs sm:text-lg duration-300 ease-out outline-none `
+                      `relative z-10 flex items-center border-b-1 pt-px text-xs sm:text-lg duration-300 ease-out outline-none`
                     )}
                     style={
                       pathname == "/" ? { color: color } : { color: "black" }
                     }
                   >
-                    <Link href='/shop' className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+                    <p
+                      // href="/shop"
+                      className="hover:text-neutral-300 hover:underline hover:underline-offset-8 "
+                    >
                       {category.name}
-                    </Link>
+                    </p>
                   </Popover.Button>
                 </div>
 
@@ -145,18 +147,19 @@ export default function PopoverItems({ color, pathname }) {
                         <div className="grid grid-cols-1 sm::grid-cols-1 md:gird-cols-3 items-center gap-x-6 gap-y-10 pb-12 pt-10">
                           <div className="grid grid-cols-1 gap-x-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
-                              <a href="/shop">
-                                <p
+                              <a href="/gallery">
+                              <p
                                   id="categories-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400"
                                 >
-                                  SHOP ALL
+                                  EXHIBITIONS
                                 </p>
                               </a>
+                              <div className="mt-4 border-t border-gray-200 pt-6 sm:grid sm:grid-cols-2 sm:gap-x-6">
                               <ul
                                 role="list"
                                 aria-labelledby="categories-heading"
-                                className="space-y-6 pt-6 sm:space-y-4"
+                                className="space-y-6 sm:space-y-4"
                               >
                                 {category.categories.map((item) => (
                                   <li key={item.name} className="flex">
@@ -169,12 +172,13 @@ export default function PopoverItems({ color, pathname }) {
                                   </li>
                                 ))}
                               </ul>
+                              </div>
                             </div>
                             <div>
                               <a href="/art">
                                 <p
                                   id="art-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-4 sm:mt-0"
                                 >
                                   ART
                                 </p>
@@ -202,7 +206,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/home">
                                 <p
                                   id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-4 sm:mt-0"
                                 >
                                   HOME
                                 </p>
@@ -223,6 +227,16 @@ export default function PopoverItems({ color, pathname }) {
                                   </li>
                                 ))}
                               </ul>
+                            </div>
+                            <div>
+                              <a href="/shop">
+                                <p
+                                  id="categories-heading"
+                                  className="font-medium text-gray-900 hover:text-slate-400 absolute right-10"
+                                >
+                                  SHOP ALL...
+                                </p>
+                              </a>
                             </div>
                           </div>
                         </div>
