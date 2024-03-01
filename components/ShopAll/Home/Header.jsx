@@ -17,7 +17,7 @@ const imageByHandle = [
 ];
 export default function ShopAllHomeHeader({ productHandle }) {
   return (
-    <div className="relative isolate overflow-hidden sm:pt-24 pt-40">
+    <div className="relative isolate overflow-hidden h-[600px]">
       {productHandle === undefined ? (
         <img
           src="https://ipfs.filebase.io/ipfs/QmQofT4Jvs8XVEnFiKDHsa3ZG5hBnFU3Jy8qGq2fEDrpdn/QmdLMUMfk9YmKVdidfJAtTqKPsxrSKa45mvc6viq8bBjoi"
@@ -36,16 +36,9 @@ export default function ShopAllHomeHeader({ productHandle }) {
         })
       )}
 
-      <div className="mx-auto max-w-3xl my-36 pb-24">
+      {/* <div className="mx-auto max-w-3xl my-36 pb-24">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
-        <div className="text-center">
-          <h1 className="font-thin tracking-tight text-white text-7xl animate-fadeTwo hidden sm:block capitalize font-[cormorant]">
-            {productHandle === undefined
-              ? "Shop Home"
-              : productHandle.replaceAll("-", " ")}
-          </h1>
-        </div>
-      </div>
+      </div> */}
     </div>
   );
 }

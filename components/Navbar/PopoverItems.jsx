@@ -13,7 +13,7 @@ const navigation = {
         { name: "View All", href: "/gallery" },
       ],
       art: [
-        { name: "Paintings", href: "/art" },
+        { name: "Paintings", href: "/art/paintings" },
         { name: "Photography", href: "/art/yoni-goldberg" },
         { name: "View All", href: "/art" },
       ],

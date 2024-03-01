@@ -23,8 +23,8 @@ export default function AboutGoldberg() {
           <div className="rows-span-1 sm:rows-span-2 w-[450px] h-[600px] m-auto">
             <img
               src="https://ipfs.filebase.io/ipfs/QmZ9kYjVu8B45JEDmR4MJgoMNPeGVH3AxK91bgTnEEsHTs/QmbJ6vqa8H36GGDJKHH1pw9zgQrr6ePMpENFijLTNPBQxj"
-              alt=""
-              className="h-full w-full object-cover"
+              alt="linds"
+              className="h-full w-full object-cover mt-10 sm:mt-0"
             />
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function AboutGoldberg() {
           <div className="rows-span-1 sm:rows-span-2 w-[450px] h-[600px] m-auto">
             <img
               src="https://ipfs.filebase.io/ipfs/QmZVVWhGpYyCajfbK1ath9Rw6UAhjS5HGQ44VCXUtxBSfz/Qmdbz2AEodoUxvPwS3L9P9J8JzJ2w2BH1yvhbJLDLZfQTF"
-              alt=""
+              alt="yoni"
               className="h-full w-full object-cover"
             />
           </div>
