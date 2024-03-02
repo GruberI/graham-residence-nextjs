@@ -3,7 +3,7 @@ import {  ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function PrivacyHome() {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen overflow-x-hidden">
       <div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
         <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
           <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
