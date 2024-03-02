@@ -26,7 +26,6 @@ export default function Book() {
               id="booking-iframe"
               sandbox="allow-top-navigation allow-scripts allow-same-origin"
               style={{ width: "110%", height: "650px" }}
-              frameborder="0"
               src="https://booking.hospitable.com/widget/9ae5753d-6ef3-4c14-9738-d02164033a92/1291144"
               className="pt-0 sm:pt-16 mr-8"
             ></iframe>

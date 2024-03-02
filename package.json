@@ -24,7 +24,8 @@
     "react-dom": "^18",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "supports-color": "^9.4.0"
+    "supports-color": "^9.4.0",
+    "uri-js": "^4.2.2"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

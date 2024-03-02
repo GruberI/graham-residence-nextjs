@@ -10,10 +10,8 @@ export default function Instagram() {
       <div className="max-w-7xl m-auto px-2 sm:px-0 hidden sm:flex md:h-[250px] sm:h-[100px] h-[100px]">
         <iframe
           src="https://snapwidget.com/embed/1055188"
-          class="snapwidget-widget"
+          className="snapwidget-widget"
           allowtransparency="true"
-          frameborder="0"
-          scrolling="no"
           style={{
             border: "none",
             overflow: "hidden",
@@ -25,10 +23,8 @@ export default function Instagram() {
       <div className="inline sm:hidden">
         <iframe
           src="https://snapwidget.com/embed/1057391"
-          class="snapwidget-widget"
+          className="snapwidget-widget"
           allowtransparency="true"
-          frameborder="0"
-          scrolling="no"
           style={{
             border: "none",
             overflow: "hidden",
