@@ -10,7 +10,7 @@ import Modal from "../components/Modal";
 
 export default function Property() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* <Header />
       <Navigation />
       <HeaderImage /> */}
