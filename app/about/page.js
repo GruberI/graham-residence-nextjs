@@ -8,7 +8,7 @@ import Instagram from "../../components/Instagram";
 
 export default async function About() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Hero />
       <Header />
       {/* <Text /> */}
@@ -16,6 +16,6 @@ export default async function About() {
       <TwoColumnGrid />
       <TwoColumnGrid2 />
       <Instagram />
-    </>
+    </div>
   );
 }
