@@ -68,7 +68,7 @@ export default function PopoverItems({ color, pathname }) {
 
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full">
-      <div className="flex h-14 space-x-4 sm:space-x-2 md:space-x-12 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-10 md:ml-20 lg:ml-14">
+      <div className="flex h-14 space-x-6 md:space-x-12 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-10 md:ml-20 lg:ml-14">
         {navigation.first.map((item) =>
           item.id === "contact-us" ? (
             <a
@@ -144,28 +144,28 @@ export default function PopoverItems({ color, pathname }) {
 
                     <div className="relative bg-white">
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 sm::grid-cols-1 md:gird-cols-3 items-center gap-x-6 gap-y-10 pb-12 pt-10">
-                          <div className="grid grid-cols-1 gap-x-2 sm:gap-y-8 lg:grid-cols-3">
+                        <div className="grid grid-cols-1 items-center gap-x-2 sm:gap-x-6 gap-y-1 sm:gap-y-10 pb-12 pt-10">
+                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
                               <a href="/gallery">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400"
+                                  className="font-medium text-gray-900 hover:text-slate-400 text-sm sm:text-lg"
                                 >
                                   EXHIBITIONS
                                 </p>
                               </a>
-                              <div className="mt-4 border-t border-gray-200 pt-6 sm:grid sm:grid-cols-2 sm:gap-x-6">
+                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-2 sm:gap-x-6">
                                 <ul
                                   role="list"
                                   aria-labelledby="categories-heading"
-                                  className="space-y-6 sm:space-y-4"
+                                  className="space-y-2 sm:space-y-4"
                                 >
                                   {category.categories.map((item) => (
                                     <li key={item.name} className="flex">
                                       <a
                                         href={item.href}
-                                        className="hover:text-gray-800"
+                                        className="hover:text-gray-800 text-sm"
                                       >
                                         {item.name}
                                       </a>
@@ -178,16 +178,16 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/art">
                                 <p
                                   id="art-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-4 sm:mt-0"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm sm:text-lg"
                                 >
                                   ART
                                 </p>
                               </a>
-                              <div className="mt-4 border-t border-gray-200 pt-6 sm:grid sm:grid-cols-2 sm:gap-x-6">
+                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-2 sm:gap-x-6">
                                 <ul
                                   role="list"
                                   aria-labelledby="art-heading"
-                                  className="space-y-6 sm:space-y-4 pb-2 sm:pb-0"
+                                  className="space-y-1 sm:space-y-4"
                                 >
                                   {category.art.map((item) => (
                                     <li key={item.name} className="flex">
@@ -206,7 +206,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/home">
                                 <p
                                   id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-4 sm:mt-0"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm sm:text-lg"
                                 >
                                   HOME
                                 </p>
@@ -214,7 +214,7 @@ export default function PopoverItems({ color, pathname }) {
                               <ul
                                 role="list"
                                 aria-labelledby="home-heading"
-                                className="mt-4 space-y-6 border-t border-gray-200 pt-6 sm:space-y-4"
+                                className="pt-4 space-y-1 border-t border-gray-200 sm:space-y-4"
                               >
                                 {category.home.map((item) => (
                                   <li key={item.name} className="flex">
@@ -232,7 +232,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/shop">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 absolute right-10"
+                                  className="font-medium text-gray-900 hover:text-slate-400 absolute sm:right-10 text-sm sm:text-lg pt-1"
                                 >
                                   SHOP ALL
                                 </p>

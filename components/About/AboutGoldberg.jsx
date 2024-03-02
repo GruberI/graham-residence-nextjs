@@ -73,7 +73,7 @@ export default function AboutGoldberg() {
           />
         </div>
 
-        <div className="mx-10 m-auto mt-6">
+        <div className="mx-10 m-auto mt-6 pb-10 sm:pb-0">
           <p className="font-bold text-xl">Yoni</p>
           <p className="pb-4 sm:pb-6 text-md">
             <span className="text-slate-500">
