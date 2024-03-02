@@ -234,7 +234,7 @@ export default function PopoverItems({ color, pathname }) {
                                   id="categories-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 absolute right-10"
                                 >
-                                  SHOP ALL...
+                                  SHOP ALL
                                 </p>
                               </a>
                             </div>
