@@ -9,7 +9,7 @@ export default function AboutGoldberg() {
           <div className="my-20 ml-20 mb-36">
             <p className="font-bold text-xl">Yoni</p>
             <Fade>
-              <p className="pb-6 text-lg">
+              <p className="pb-6 text-sm sm:text-lg">
                 <span className="text-slate-500">
                   The Maker - committed to his craft
                 </span>
@@ -45,7 +45,7 @@ export default function AboutGoldberg() {
           <div className="my-20 mr-10 mt-36 pb-10">
             <p className="font-bold text-xl">Lindsey</p>
             <Fade>
-              <p className="pb-6 text-lg">
+              <p className="pb-6 text-sm sm:text-lg">
                 <span className="text-slate-500">
                   The Visionary - sees possibility everywhere
                 </span>

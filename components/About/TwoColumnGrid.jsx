@@ -4,7 +4,7 @@ export default async function TwoColumnGrid() {
      
 
       <div className="col-span-2 flex">
-        <div className="w-full sm:h-screen">
+        <div className="aspect-[3/4]">
           <img
             src="https://ipfs.filebase.io/ipfs/QmNdt9bpx4hYyB4KMckJc3b3Swt4w1PwH9zYvM32K5g5HJ"
             alt=""
@@ -12,7 +12,7 @@ export default async function TwoColumnGrid() {
           />
         </div>
 
-        <div className="w-full sm:h-screen">
+        <div className="aspect-[3/4]">
           <img
             src="https://ipfs.filebase.io/ipfs/QmfBrg5ZBp1mjgKS7AqGKd4e8MbLFVvT33ND3WfbadEY7k/QmbyitaXxSxH1pWtT1TTzD7PgsujdfZTEEpqD5PGdDb9DX"
             alt=""

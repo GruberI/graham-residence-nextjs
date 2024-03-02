@@ -35,8 +35,8 @@ export default function About({ artistName }) {
             id="shopAllAbout"
             key={i}
           >
-            <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-20">
-              <div className="grid grid-cols-1  gap-x-10 gap-y-16 lg:grid-cols-2">
+            <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-16 sm:mt-20">
+              <div className="grid grid-cols-1 sm:gap-x-10 sm:gap-y-16 lg:grid-cols-2 m-auto">
                 <div>
                   <div className="overflow-hidden bg-black-100 aspect-[3/4] h-5/6 w-10/12 m-auto">
                     <img
@@ -47,7 +47,7 @@ export default function About({ artistName }) {
                   </div>
                 </div>
                 <div>
-                  <div className="m-auto space-y-6 w-10/12">
+                  <div className="m-auto space-y-6 sm:w-10/12 text-center sm:text-left">
                     <h1 className="text-2xl font-thin underline underline-offset-8">
                       ABOUT THE ARTIST
                     </h1>

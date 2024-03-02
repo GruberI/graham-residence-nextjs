@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 export default function Header() {
   return (
     <div
-      className="m-auto sm:px-0 mx-8 border-t border-black pt-20 sm:pt-24 pb-12"
+      className="m-auto sm:px-0 mx-8 pt-20 sm:pt-24 pb-6 sm:pb-12"
       id="featured"
     >
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 mb-10">

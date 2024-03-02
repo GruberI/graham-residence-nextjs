@@ -72,7 +72,7 @@ export default function Banner({ title, type }) {
             className="m-auto border-t border-b border-black max-w-7xl"
             key={i}
           >
-            <div className="mx-auto px-4 sm:px-6 lg:px-6 my-16">
+            <div className="mx-auto px-4 sm:px-6 lg:px-6 my-10 sm:my-16 pt-6">
               <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
                 <div>
                   <div className="overflow-hidden bg-black-100 aspect-[4/3]">
@@ -84,13 +84,13 @@ export default function Banner({ title, type }) {
                   </div>
                 </div>
                 <div>
-                  <div className="m-auto space-y-6 flex flex-col justify-center items-center w-11/12">
+                  <div className="m-auto space-y-4 sm:space-y-6 flex flex-col justify-center items-center w-11/12">
                     <p>{type === "art" ? "MEET" : "WHAT WE LOVE ABOUT"}</p>
                     <h1 className="sm:text-5xl text-4xl sm:font-thin font-semibold">
                       {banner.artist}
                     </h1>
 
-                    <p className="tracking-wide leading-7">{banner.text}</p>
+                    <p className="tracking-wide leading-7 text-center">{banner.text}</p>
                     {type === "art" ? (
                       <a
                         onClick={() => handleClickScroll("shopAllAbout")}
@@ -98,7 +98,7 @@ export default function Banner({ title, type }) {
                       >
                         <button
                           type="submit"
-                          className="max-w-md text-base font-light text-black underline underline-offset-8 hover:text-neutral-500 sm:mb-0 mb-12"
+                          className="max-w-md text-base font-light text-black underline underline-offset-8 hover:text-neutral-500 sm:mb-0 mb-6"
                         >
                           LEARN MORE
                         </button>
