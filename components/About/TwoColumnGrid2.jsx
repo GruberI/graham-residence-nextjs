@@ -1,8 +1,8 @@
 export default async function TwoColumnGrid2() {
   return (
-    <div className="grid grid-cols-2 w-screen px-2 bg-[#f4f5f1] pb-20">
+    <div className="grid grid-cols-2 w-screen px-2">
       <div className="col-span-2 flex">
-        <div className="w-full aspect-[3/4]">
+        <div className="w-full h-screen">
           <img
             src="https://ipfs.filebase.io/ipfs/QmNxRGDXKMcBK6ehDcvAEtaQoaWQbPoJWtzTQUnsuvkQLH/QmTWzJNS45ewpJiznRbws5UL2NUSe49TknNcA71KWibBQP"
             alt=""
@@ -10,11 +10,11 @@ export default async function TwoColumnGrid2() {
           />
         </div>
 
-        <div className="w-full">
+        <div className="w-full h-screen">
           <img
             src="https://ipfs.filebase.io/ipfs/QmZiPZYmzCfRpLYmbjoveouAMJDdHqQr4jk1w6WGPrcB4m/QmesruK88eqKhgZn1NYFTEskR8VwZBWyLwPwqT2npA6LGa"
             alt=""
-            className="object-cover p-2 h-full w-full aspect-[3/4]"
+            className="object-cover p-2 h-full w-full"
           />
         </div>
       </div>

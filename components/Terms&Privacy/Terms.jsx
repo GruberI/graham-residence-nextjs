@@ -2,10 +2,10 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
 export default function Terms() {
   return (
-    <div className="container lg:h-[32rem] sm:h-[16rem] h-[24rem] border-r pr-1 overflow-scroll" >
+    <div className="container lg:h-[40rem] sm:h-[16rem] h-[24rem] border-r pr-1 overflow-scroll w-[37rem]" >
       <div className="bg-white shadow-md">
         <div className="text-gray-700">
-          <div className="max-w-2xl text-sm leading-6 text-gray-700 lg:max-w-none">
+          <div className="text-sm leading-6 text-gray-700">
             <p>
               THESE TERMS OF USE (THE “TERMS”) ARE A LEGAL CONTRACT BETWEEN YOU
               AND THE GRAHAM RESIDENCE (“The Graham Residence”, “WE”, “US”, OR

@@ -12,19 +12,19 @@ export default async function TwoRowGrid() {
       </div>
 
       <div className="col-span-2 flex">
-        <div className="aspect-[4/5] w-full">
+        <div className="w-full h-screen">
           <img
             src="https://ipfs.filebase.io/ipfs/QmTkXg3TM3XrvuAVRM4x3ztaKpri9MRbLGajFKMepXAiTG/QmbHzkjhzmdjgBpkxzg1jmrLp5bkLEhFGCjK2czduPsiWS"
             alt="starry night in desert"
-            className="p-2 h-full w-full"
+            className="p-2 h-full w-full object-cover"
           />
         </div>
 
-        <div className="aspect-[4/5] w-full">
+        <div className="w-full h-screen">
           <img
             src="https://ipfs.filebase.io/ipfs/QmeiFCmuZqKA94UHFPWnbyGEToKF8QePYmqQsPTeGJ8jtB/QmSiKUBDbNpTQjuoovtX1YFhPwm4cnfQJGLpGQeZPeE1xL"
             alt="white chair in the graham residence living room with sun streaming in"
-            className="p-2 h-full w-full"
+            className="p-2 h-full w-full object-cover"
           />
         </div>
       </div>

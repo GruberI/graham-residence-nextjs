@@ -1,3 +1,6 @@
+"use client";
+import { Fade } from "react-awesome-reveal";
+
 export default function AboutGoldberg() {
   return (
     <div>
@@ -5,11 +8,13 @@ export default function AboutGoldberg() {
         <div className="grid-rows-3">
           <div className="my-20 ml-20 mb-36">
             <p className="font-bold text-xl">Yoni</p>
-            <p className="pb-6 text-lg">
-              <span className="text-slate-500">
-                The Maker - committed to his craft
-              </span>
-            </p>
+            <Fade>
+              <p className="pb-6 text-lg">
+                <span className="text-slate-500">
+                  The Maker - committed to his craft
+                </span>
+              </p>
+            </Fade>
             <p className="text-xl">
               A professional photographer of over a decade, Yoni specializes in
               portraiture and architecture photography. A jack of all trades, he
@@ -39,11 +44,13 @@ export default function AboutGoldberg() {
 
           <div className="my-20 mr-10 mt-36 pb-10">
             <p className="font-bold text-xl">Lindsey</p>
-            <p className="pb-6 text-lg">
-              <span className="text-slate-500">
-                The Visionary - sees possibility everywhere
-              </span>
-            </p>
+            <Fade>
+              <p className="pb-6 text-lg">
+                <span className="text-slate-500">
+                  The Visionary - sees possibility everywhere
+                </span>
+              </p>
+            </Fade>
             <p className="text-xl">
               {" "}
               A visionary with big ideas, and over a decade of experience in

@@ -5,18 +5,21 @@ const contact = [
     text: "Artwork & shop inquires:",
     subtext: "tgr@grahamresidence.com",
     email: "tgr@grahamresidence.com",
+    subject: "TGR Artwork or Shop Inquiry",
   },
   {
     name: "artist representation",
     text: "Artist representation:",
     subtext: "lindsey@lindseygoldbergdesign.com",
     email: "lindsey@lindseygoldbergdesign.com",
+    subject: "Artist representation by Lindsey Goldberg Design",
   },
   {
     name: "photography",
     text: "Shoots & Events:",
     subtext: "tgr@grahamresidence.com",
     email: "tgr@grahamresidence.com",
+    subject: "Photography Inquiry for TGR",
   },
 ];
 export default function Contact() {
@@ -26,20 +29,22 @@ export default function Contact() {
         <div className="mx-auto lg:mx-0 lg:max-w-none">
           <dl className="mx-auto mt-16 max-w-3xl grid-cols-1 gap-8 text-base leading-7 text-black lg:mx-0 lg:max-w-none">
             {contact.map((value) => (
-              <div key={value.name} className="relative flex justify-center text-center">
+              <div
+                key={value.name}
+                className="relative flex justify-center text-center"
+              >
                 <p>
                   {value.text}{" "}
                   <span className="hover:underline hover:underline-offset-8">
-                    <Link
+                    <a
                       className="inline"
                       // href={
                       //   value.email ? `mailto:${value.email}` : `${value.href}`
                       // }
-                      href={value.email}
-                      target="_blank"
+                      href={`mailto:"${value.email}?subject=${value.subject}`}
                     >
                       {value.subtext}
-                    </Link>{" "}
+                    </a>{" "}
                   </span>
                 </p>
               </div>
