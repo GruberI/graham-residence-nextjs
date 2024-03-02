@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "Where do you ship to?",
     answer:
-      "We currently are only set up to ship within the continental US..",
+      "We currently are only set up to ship within the continental US.",
   },
   {
     question: "How long does shipping take?",
