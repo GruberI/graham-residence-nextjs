@@ -4,8 +4,8 @@ import { Slide } from "react-awesome-reveal";
 export default function Section() {
   return (
     <div className="m-auto max-w-7xl">
-      <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-14">
-        <div className="grid grid-cols-1 items-center gap-x-12 gap-y-16 lg:grid-cols-2">
+      <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-16 sm:mt-14">
+        <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 sm:gap-y-16 lg:grid-cols-2">
           <div>
             <Slide direction="left">
               <div className="sm:space-y-4 space-y-0">

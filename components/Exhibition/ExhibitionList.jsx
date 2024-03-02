@@ -25,7 +25,7 @@ const artistExhibitions = [
 
 export default function ExhibitionList() {
   return (
-    <div className="mt-10 border-t border-black pt-20 max-w-7xl m-auto">
+    <div className="sm:mt-10 border-t border-black pt-20 max-w-7xl m-auto">
       <h1 className="sm:text-5xl text-4xl text-center pb-16">Exhibitions</h1>
       <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 sm:grid-cols-2 px-4 sm:px-2 md:px-0">
         {artistExhibitions.map((exhibit, i) => {
