@@ -2,7 +2,7 @@ export default async function TwoColumnGrid2() {
   return (
     <div className="grid grid-cols-2 w-screen px-2">
       <div className="col-span-2 flex">
-        <div className="w-full h-screen">
+        <div className="w-full sm:h-screen">
           <img
             src="https://ipfs.filebase.io/ipfs/QmNxRGDXKMcBK6ehDcvAEtaQoaWQbPoJWtzTQUnsuvkQLH/QmTWzJNS45ewpJiznRbws5UL2NUSe49TknNcA71KWibBQP"
             alt=""
@@ -10,7 +10,7 @@ export default async function TwoColumnGrid2() {
           />
         </div>
 
-        <div className="w-full h-screen">
+        <div className="w-full sm:h-screen">
           <img
             src="https://ipfs.filebase.io/ipfs/QmZiPZYmzCfRpLYmbjoveouAMJDdHqQr4jk1w6WGPrcB4m/QmesruK88eqKhgZn1NYFTEskR8VwZBWyLwPwqT2npA6LGa"
             alt=""
