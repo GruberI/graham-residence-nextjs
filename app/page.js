@@ -9,7 +9,6 @@ import HouseSpecs from "../components/Property/HouseSpecs";
 import Modal from "../components/Modal";
 
 export default function Property() {
-
   return (
     <div>
       {/* <Header />

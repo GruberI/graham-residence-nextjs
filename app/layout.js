@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
           <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png"/>
           <link rel="preload" href="../fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf" as="font" type="font/ttf" crossOrigin="anonymous"/>
+          <meta name='viewport' content='width=device-width, height=device-height, initial-scale:1, user-scalable=no' />
       </head>
       <body className={`${inter.children}`}>
         <div className="relative fixed">
