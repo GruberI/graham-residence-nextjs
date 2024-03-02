@@ -4,7 +4,6 @@ import axios from "axios";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
-  // const [data, setData] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,18 +20,6 @@ export default function SignUp() {
         setEmail("");
       });
   };
-
-  // const getData = () => {
-  //   axios
-  //     .get("https://sheet.best/api/sheets/0e1fde1b-e262-445c-879b-05847e7c34a5")
-  //     .then((response) => {
-  //       setData(response.data);
-  //     }).catch(error => console.log(error));
-  // };
-
-  // useEffect(() => {
-  //   getData(data);
-  // }, [data]);
 
   return (
     <div className="bg-white py-10 sm:py-24 border-t border-black mt-20">

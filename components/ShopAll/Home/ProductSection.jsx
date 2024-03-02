@@ -28,7 +28,6 @@ function classNames(...classes) {
 export default function ProductSection({ products, productHandle }) {
   const firstEightProducts = products.slice(0, 8);
   const remainingProducts = products.slice(8, products.length + 1);
-  console.log('Remaining', remainingProducts.length)
   return (
     <div className="bg-white sm:px-0 px-2">
       <main className="mx-auto max-w-7xl">

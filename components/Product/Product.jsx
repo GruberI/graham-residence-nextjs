@@ -2,7 +2,6 @@ import ImageTransition from "./ImageTransition.jsx";
 import Link from "next/link.js";
 
 export default function Product({ product }) {
-  console.log("product,", product);
   const amount = product.priceRange.minVariantPrice.amount;
   const available = product.availableForSale;
   const imgOne = {
