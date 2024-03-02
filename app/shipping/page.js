@@ -7,17 +7,17 @@ const faqs = [
   {
     question: "What is your return policy?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "We accept returns on unused home goods with original packaging. Reach out to us at tgr@grahamresidence.com to initiate a return.",
   },
   {
     question: "Where do you ship to?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "We currently are only set up to ship within the continental US..",
   },
   {
     question: "How long does shipping take?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Shipping and handling times vary amongst brands we carry. Please see item-specific shipping details on each product page.",
   },
   // More questions...
 ];
