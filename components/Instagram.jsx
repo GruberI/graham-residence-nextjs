@@ -12,6 +12,7 @@ export default function Instagram() {
           src="https://snapwidget.com/embed/1055188"
           className="snapwidget-widget"
           allowtransparency="true"
+          scrolling="no"
           style={{
             border: "none",
             overflow: "hidden",
@@ -25,6 +26,7 @@ export default function Instagram() {
           src="https://snapwidget.com/embed/1057391"
           className="snapwidget-widget"
           allowtransparency="true"
+          scrolling="no"
           style={{
             border: "none",
             overflow: "hidden",
