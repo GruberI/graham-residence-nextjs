@@ -8,9 +8,9 @@ const navigation = {
     {
       name: "The Collection",
       categories: [
+        { name: "Exhibitions", href: "/gallery" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
-        { name: "Thai Mainhard", href: "/art/thai-mainhard" },
-        { name: "View All", href: "/gallery" },
+        { name: "Thai Mainhard", href: "/art/thai-mainhard" }
       ],
       art: [
         { name: "Paintings", href: "/art/paintings" },
@@ -144,7 +144,7 @@ export default function PopoverItems({ color, pathname }) {
 
                     <div className="relative bg-white">
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 items-center gap-x-2 sm:gap-x-6 gap-y-1 sm:gap-y-10 pb-12 pt-10">
+                        <div className="grid grid-cols-1 items-center gap-x-2 sm:gap-x-4 gap-y-1 sm:gap-y-10 pb-12 pt-10">
                           <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
                               <a href="/gallery">
@@ -152,7 +152,7 @@ export default function PopoverItems({ color, pathname }) {
                                   id="categories-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 text-sm sm:text-lg"
                                 >
-                                  EXHIBITIONS
+                                  GRAHAM GALLERY
                                 </p>
                               </a>
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-2 sm:gap-x-6">
