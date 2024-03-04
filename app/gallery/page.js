@@ -4,6 +4,7 @@ import HeroImageText from "@/components/Exhibition/HeroImage";
 // import LargeImageTwo from "@/components/Exhibition/LargeImageTwo";
 import Section from "@/components/Exhibition/Section";
 import MeetArtist from "@/components/Exhibition/MeetArtist";
+import Featured from '@/components/Shop/Featured'
 
 const artistExhibitions = [
   {
@@ -33,6 +34,7 @@ export default function MainExhibition() {
       <Section />
       {/* <LargeImageTwo /> */}
       <ExhibitionList />
+      <Featured />
       <MeetArtist />
     </div>
   );
