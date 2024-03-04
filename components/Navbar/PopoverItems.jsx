@@ -10,7 +10,7 @@ const navigation = {
       categories: [
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
-        { name: "All Exhibitions", href: "/gallery" }
+        { name: "All Exhibitions", href: "/gallery#exhibitions" },
       ],
       art: [
         { name: "Paintings", href: "/art/paintings" },
@@ -29,8 +29,7 @@ const navigation = {
   first: [
     {
       name: "The Property",
-      href: "/",
-      id: "property",
+      href: "/"
     },
   ],
   second: [
@@ -69,32 +68,18 @@ export default function PopoverItems({ color, pathname }) {
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full">
       <div className="flex h-14 space-x-6 md:space-x-12 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-10 md:ml-20 lg:ml-14">
-        {navigation.first.map((item) =>
-          item.id === "contact-us" ? (
-            <a
-              key={item.name}
-              onClick={() => handleClickScroll(item.id)}
-              className={`flex items-center text-xs md:text-lg scroll-smooth cursor-pointer`}
-              style={pathname == "/" ? { color: color } : { color: "black" }}
-            >
-              <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
-                {item.name}
-              </span>
-            </a>
-          ) : (
-            <a
-              key={item.name}
-              href={item.href}
-              className={`flex items-center text-xs md:text-lg hover:text-neutral-300 font-[400]`}
-              // target={item.id === "property" ? "_blank" : undefined}
-              style={pathname == "/" ? { color: color } : { color: "black" }}
-            >
-              <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
-                {item.name}
-              </span>
-            </a>
-          )
-        )}
+        {navigation.first.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className={`flex items-center text-xs md:text-lg scroll-smooth cursor-pointer`}
+            style={pathname == "/" ? { color: color } : { color: "black" }}
+          >
+            <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+              {item.name}
+            </span>
+          </a>
+        ))}
 
         {navigation.categories.map((category, categoryIdx) => (
           <Popover key={categoryIdx} className="flex">

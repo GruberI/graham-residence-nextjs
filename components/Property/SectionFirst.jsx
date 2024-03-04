@@ -3,7 +3,7 @@ import { Slide } from "react-awesome-reveal";
 
 export default function SectionFirst() {
   return (
-    <div className="bg-[#f4f5f1]">
+    <div className="bg-[#f4f5f1]" id="property">
       <div className="m-auto mx-10 sm:pt-0 pt-10 pb-10 sm:pb-0">
         <div className="mx-auto px-4 sm:px-6 lg:px-6">
           <div className="grid grid-cols-1 items-center gap-x-10  lg:grid-cols-2">

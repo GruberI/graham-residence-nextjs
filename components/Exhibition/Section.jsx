@@ -28,6 +28,7 @@ export default function Section() {
           </div>
         </div>
       </div>
+      <div id="exhibitions"></div>
     </div>
   );
 }
