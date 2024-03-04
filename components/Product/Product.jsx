@@ -1,4 +1,5 @@
-import ImageTransition from "./ImageTransition.jsx";
+import ImageTransition from "./ImageTransition";
+import ImageTransitionPhoto from "./ImageTransitionPhoto";
 import Link from "next/link.js";
 
 export default function Product({ product }) {
@@ -13,18 +14,23 @@ export default function Product({ product }) {
     altText: product.images[1]?.altText,
   };
   const fineArt = product.tags.includes("fine-art");
+  const photography = product.tags.includes("photography");
 
   return (
     <Link
       href={`/product/${product.handle}`}
       className="group relative h-full w-full"
     >
-      <ImageTransition
-        imgOne={imgOne}
-        imgTwo={imgTwo}
-        available={available}
-        fineArt={fineArt}
-      />
+      {photography === true ? (
+        <ImageTransitionPhoto img={imgOne} />
+      ) : (
+        <ImageTransition
+          imgOne={imgOne}
+          imgTwo={imgTwo}
+          available={available}
+          fineArt={fineArt}
+        />
+      )}
       <div className="mt-4 flex flex-col text-base mb-10">
         <div className="flex flex-row justify-between ">
           <p className="text-sm font-light text-neutral-600">

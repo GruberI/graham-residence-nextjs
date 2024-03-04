@@ -22,9 +22,13 @@ export default function ProductDescription({ product }) {
   const amount = product.priceRange.minVariantPrice.amount;
   const searchParams = useSearchParams();
   const variantName = product.variants[0].selectedOptions[0].name.toLowerCase();
+  const variantNameSecond =
+    product.variants[0]?.selectedOptions[1].name.toLowerCase();
   const currentSearchParam = searchParams?.get(variantName);
-  const selectedVariant = product.variants.find((variant) =>
-    variant?.selectedOptions.some((item) => item.value === currentSearchParam)
+  const currentSearchParamSecond = searchParams?.get(variantNameSecond);
+  const selectedVariant = product.variants.find(
+    (variant) =>
+      variant?.title === `${currentSearchParam} / ${currentSearchParamSecond}`
   );
   const selectedVariantPrice =
     selectedVariant === undefined ? amount : selectedVariant.price.amount;
