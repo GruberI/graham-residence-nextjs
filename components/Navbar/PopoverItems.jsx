@@ -8,9 +8,9 @@ const navigation = {
     {
       name: "The Collection",
       categories: [
-        { name: "Exhibitions", href: "/gallery" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
-        { name: "Thai Mainhard", href: "/art/thai-mainhard" }
+        { name: "Thai Mainhard", href: "/art/thai-mainhard" },
+        { name: "All Exhibitions", href: "/gallery" }
       ],
       art: [
         { name: "Paintings", href: "/art/paintings" },
