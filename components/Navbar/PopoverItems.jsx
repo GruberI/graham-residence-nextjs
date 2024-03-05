@@ -7,6 +7,7 @@ const navigation = {
   categories: [
     {
       name: "The Collection",
+      href: "/shop",
       categories: [
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
@@ -72,7 +73,7 @@ export default function PopoverItems({ color, pathname }) {
           <a
             key={item.name}
             href={item.href}
-            className={`flex items-center text-xs md:text-lg scroll-smooth cursor-pointer`}
+            className={`flex items-center text-xs md:text-base xl:text-lg scroll-smooth cursor-pointer`}
             style={pathname == "/" ? { color: color } : { color: "black" }}
           >
             <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
@@ -93,15 +94,18 @@ export default function PopoverItems({ color, pathname }) {
                     ref={triggerRef}
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
-                      `relative z-10 flex items-center border-b-1 pt-px text-xs md:text-lg duration-300 ease-out outline-none`
+                      `relative z-10 flex items-center border-b-1 pt-px text-xs md:text-base xl:text-lg duration-300 ease-out outline-none`
                     )}
                     style={
                       pathname == "/" ? { color: color } : { color: "black" }
                     }
                   >
-                    <p className="hover:text-neutral-300 hover:underline hover:underline-offset-8 ">
+                    <Link
+                      href={category.href}
+                      className="hover:text-neutral-300 hover:underline hover:underline-offset-8"
+                    >
                       {category.name}
-                    </p>
+                    </Link>
                   </Popover.Button>
                 </div>
 
@@ -126,13 +130,13 @@ export default function PopoverItems({ color, pathname }) {
 
                     <div className="relative bg-white">
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 items-center gap-x-2 sm:gap-x-4 gap-y-1 sm:gap-y-10 pb-12 pt-10">
+                        <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
                           <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
                               <a href="/gallery">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 text-sm md:text-lg"
+                                  className="font-medium text-gray-900 hover:text-slate-400 text-sm xl:text-lg"
                                 >
                                   GRAHAM GALLERY
                                 </p>
@@ -160,7 +164,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/art">
                                 <p
                                   id="art-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm md:text-lg"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
                                   ART
                                 </p>
@@ -188,7 +192,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/home">
                                 <p
                                   id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm md:text-lg"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
                                   HOME
                                 </p>
@@ -214,7 +218,7 @@ export default function PopoverItems({ color, pathname }) {
                               <Link href="/shop">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 absolute sm:right-10 text-sm md:text-lg pt-1"
+                                  className="font-medium text-gray-900 hover:text-slate-400 absolute sm:right-10 text-sm xl:text-lg pt-1"
                                 >
                                   SHOP ALL
                                 </p>
@@ -236,7 +240,7 @@ export default function PopoverItems({ color, pathname }) {
             <a
               key={item.name}
               onClick={() => handleClickScroll(item.id)}
-              className={`flex items-center text-xs md:text-lg scroll-smooth cursor-pointer`}
+              className={`flex items-center text-xs md:text-base xl:text-lg scroll-smooth cursor-pointer`}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >
               <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
@@ -247,7 +251,7 @@ export default function PopoverItems({ color, pathname }) {
             <Link
               key={item.name}
               href={item.href}
-              className={`flex items-center text-xs md:text-lg hover:text-neutral-300 font-[400]`}
+              className={`flex items-center text-xs md:text-base xl:text-lg hover:text-neutral-300 font-[400]`}
               target={item.id === "property" ? "_blank" : undefined}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >
