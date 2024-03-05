@@ -135,7 +135,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/gallery">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 text-sm sm:text-lg"
+                                  className="font-medium text-gray-900 hover:text-slate-400 text-sm md:text-lg"
                                 >
                                   GRAHAM GALLERY
                                 </p>
@@ -163,7 +163,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/art">
                                 <p
                                   id="art-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm sm:text-lg"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm md:text-lg"
                                 >
                                   ART
                                 </p>
@@ -191,7 +191,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/home">
                                 <p
                                   id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm sm:text-lg"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm md:text-lg"
                                 >
                                   HOME
                                 </p>
@@ -217,7 +217,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/shop">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 absolute sm:right-10 text-sm sm:text-lg pt-1"
+                                  className="font-medium text-gray-900 hover:text-slate-400 absolute sm:right-10 text-sm md:text-lg pt-1"
                                 >
                                   SHOP ALL
                                 </p>

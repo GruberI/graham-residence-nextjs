@@ -88,13 +88,13 @@ export default function Modal() {
                       <div className="mt-3 text-center sm:mt-5">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900 mb-1"
+                          className="text-base font-thin leading-6 text-gray-900 mb-1"
                         >
                           Stay up to date with
                         </Dialog.Title>
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900 mb-5"
+                          className="text-base font-thin leading-6 text-gray-900 mb-5"
                         >
                           THE GRAHAM RESIDENCE
                         </Dialog.Title>
