@@ -23,7 +23,7 @@ export default function ProductDescription({ product }) {
   const searchParams = useSearchParams();
   const variantName = product.variants[0].selectedOptions[0].name.toLowerCase();
   const variantNameSecond =
-    product.variants[0]?.selectedOptions[1].name.toLowerCase();
+    product.variants[0]?.selectedOptions[1]?.name.toLowerCase();
   const currentSearchParam = searchParams?.get(variantName);
   const currentSearchParamSecond = searchParams?.get(variantNameSecond);
   const selectedVariant = product.variants.find(

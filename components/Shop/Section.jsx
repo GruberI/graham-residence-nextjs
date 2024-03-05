@@ -12,13 +12,13 @@ export default function Section() {
               <img
                 src="https://ipfs.filebase.io/ipfs/QmdHbHnkrncrN8JFbwgB5Agyh8HrQx8uawuX6P8bUNruNb/QmYNcbR11hoFE87eZmhBdY4iFmNWXpPHofAHf77vx99gez"
                 alt="Sophie-lou-jacobsen glasses stacked on top of each other on table."
-                className="object-cover object-center max-h-3/4 h-[300px] sm:h-3/4 sm:ml-16 lg:ml-0 max-w-96l"
+                className="object-cover object-center max-h-3/4 h-[300px] sm:h-3/4 sm:ml-16 lg:ml-0 max-w-[96]"
               />
               <img
                 src="
                 https://ipfs.filebase.io/ipfs/QmQhHuri4tVjFRqByeUsHbUBnXnT2mLM33p8NY1AL8SRRY/QmT53c8kCr8pAf3GGy7uWeQZz6vsAJxuGqvPZ4bEeXDuQP"
                 alt="martini glasses."
-                className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-64 lg:translate-x-80 translate-y-3/4 md:translate-y-2/4 max-h-3/4 h-[200px] sm:h-3/4 max-w-96"
+                className="absolute inset-0 object-cover object-center translate-x-44 sm:translate-x-64 lg:translate-x-80 translate-y-3/4 md:translate-y-2/4 max-h-3/4 h-[200px] sm:h-3/4 max-w-[96]"
               />
             </div>
           </Suspense>
