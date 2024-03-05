@@ -1,4 +1,4 @@
-import Terms from '../../components/Terms&Privacy/Terms';
+import Terms from "../../components/Terms&Privacy/Terms";
 
 export default function TermsConditions() {
   return (
@@ -21,7 +21,7 @@ export default function TermsConditions() {
             <h1 className="my-2 pb-2 text-3xl font-thin tracking-tight text-gray-900 sm:text-4xl">
               Terms & Conditions
             </h1>
-          <Terms />
+            <Terms />
           </div>
         </div>
       </div>

@@ -1,9 +1,8 @@
 "use client";
 import clsx from "clsx";
-import { ProductOption, ProductVariant } from "../../../lib/shopify/types";
-import { createUrl } from "../../../lib/utils";
+import { ProductOption, ProductVariant } from "@/lib/shopify/types";
+import { createUrl } from "@/lib/utils";
 import { usePathname, useSearchParams } from "next/navigation";
-import { setDefaultAutoSelectFamilyAttemptTimeout } from "net";
 
 type Combination = {
   id: string;

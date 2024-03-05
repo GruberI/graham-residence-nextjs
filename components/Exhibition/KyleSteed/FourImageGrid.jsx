@@ -1,4 +1,3 @@
-// import { getCollectionProducts } from "../../lib/shopify";
 import Link from "next/link";
 
 export default function FourImageGrid() {

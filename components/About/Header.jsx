@@ -34,12 +34,6 @@ export default function Header() {
                   the world. It has also been home to countless photoshoots,
                   elopements, and events.{" "}
                 </p>
-                {/* <p className="tracking-wide leading-7 text-lg">
-                  Since launching in 2017, The Graham Residence has hosted
-                  thousands of guests from all over the world. It has also been
-                  home to countless photoshoots, elopements, and events.{" "}
-                </p> */}
-
                 <p className="tracking-wide leading-7 text-lg">
                   TGR is ever-evolving. In 2023, Lindsey launched Graham
                   Gallery, curating the home with rotating works of art by

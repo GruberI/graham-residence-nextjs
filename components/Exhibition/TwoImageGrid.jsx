@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function TwoImageGrid({products}) {
+export default function TwoImageGrid({ products }) {
   return (
     <div className="w-screen sm:px-0 px-10 mt-20">
       <div className="mx-auto sm:max-w-7xl">
@@ -11,8 +11,10 @@ export default function TwoImageGrid({products}) {
                 alt={products[0].imgAltText}
                 className="h-full w-full object-cover object-center"
               />
-            </div> 
-            <h2 className="pt-6 tracking-widest leading-7">{products[0].title}</h2>
+            </div>
+            <h2 className="pt-6 tracking-widest leading-7">
+              {products[0].title}
+            </h2>
           </Link>
 
           <Link href={products[1].href}>
@@ -23,7 +25,9 @@ export default function TwoImageGrid({products}) {
                 className="h-full w-full object-cover object-center"
               />
             </div>
-            <h2 className="pt-6 tracking-widest leading-7">{products[1].title}</h2>
+            <h2 className="pt-6 tracking-widest leading-7">
+              {products[1].title}
+            </h2>
           </Link>
         </div>
       </div>

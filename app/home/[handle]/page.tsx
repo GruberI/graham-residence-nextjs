@@ -1,6 +1,6 @@
-import ShopAllHome from "../../../components/ShopAll/Home/Home";
-import { getCollectionProducts } from "../../../lib/shopify";
 import { notFound } from "next/navigation";
+import ShopAllHome from "@/components/ShopAll/Home/Home";
+import { getCollectionProducts } from "@/lib/shopify";
 
 export const runtime = "edge";
 
@@ -18,7 +18,10 @@ export default async function ShopAll({
   if (!products?.length) return notFound();
   return (
     <div>
-      <ShopAllHome productsByHandle={productsByHandle} productHandle={params.handle}/>
+      <ShopAllHome
+        productsByHandle={productsByHandle}
+        productHandle={params.handle}
+      />
     </div>
   );
 }

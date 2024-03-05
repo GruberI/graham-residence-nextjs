@@ -29,7 +29,7 @@ const navigation = {
   first: [
     {
       name: "The Property",
-      href: "/"
+      href: "/",
     },
   ],
   second: [
@@ -99,10 +99,7 @@ export default function PopoverItems({ color, pathname }) {
                       pathname == "/" ? { color: color } : { color: "black" }
                     }
                   >
-                    <p
-                      // href="/shop"
-                      className="hover:text-neutral-300 hover:underline hover:underline-offset-8 "
-                    >
+                    <p className="hover:text-neutral-300 hover:underline hover:underline-offset-8 ">
                       {category.name}
                     </p>
                   </Popover.Button>
@@ -148,12 +145,12 @@ export default function PopoverItems({ color, pathname }) {
                                 >
                                   {category.categories.map((item) => (
                                     <li key={item.name} className="flex">
-                                      <a
+                                      <Link
                                         href={item.href}
                                         className="hover:text-gray-800 text-sm"
                                       >
                                         {item.name}
-                                      </a>
+                                      </Link>
                                     </li>
                                   ))}
                                 </ul>
@@ -176,12 +173,12 @@ export default function PopoverItems({ color, pathname }) {
                                 >
                                   {category.art.map((item) => (
                                     <li key={item.name} className="flex">
-                                      <a
+                                      <Link
                                         href={item.href}
                                         className="hover:text-gray-800 lg:tracking-widest leading-7 text-sm lg:text-base"
                                       >
                                         {item.name}
-                                      </a>
+                                      </Link>
                                     </li>
                                   ))}
                                 </ul>
@@ -203,25 +200,25 @@ export default function PopoverItems({ color, pathname }) {
                               >
                                 {category.home.map((item) => (
                                   <li key={item.name} className="flex">
-                                    <a
+                                    <Link
                                       href={item.href}
                                       className="hover:text-gray-800 tracking-widest leading-7 text-sm lg:text-base"
                                     >
                                       {item.name}
-                                    </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
                             </div>
                             <div>
-                              <a href="/shop">
+                              <Link href="/shop">
                                 <p
                                   id="categories-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 absolute sm:right-10 text-sm md:text-lg pt-1"
                                 >
                                   SHOP ALL
                                 </p>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -247,7 +244,7 @@ export default function PopoverItems({ color, pathname }) {
               </span>
             </a>
           ) : (
-            <a
+            <Link
               key={item.name}
               href={item.href}
               className={`flex items-center text-xs md:text-lg hover:text-neutral-300 font-[400]`}
@@ -257,7 +254,7 @@ export default function PopoverItems({ color, pathname }) {
               <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
                 {item.name}
               </span>
-            </a>
+            </Link>
           )
         )}
       </div>

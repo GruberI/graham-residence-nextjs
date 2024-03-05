@@ -1,7 +1,7 @@
 "use client";
-import PopoverItems from "./PopoverItems";
-import { Fragment, useRef, useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import PopoverItems from "./PopoverItems";
+import { useState, useEffect } from "react";
 import Calendar from "./CalendarWidget/Calendar";
 
 export default function Navbar() {

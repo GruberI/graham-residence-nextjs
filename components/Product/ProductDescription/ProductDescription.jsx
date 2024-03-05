@@ -1,11 +1,11 @@
 "use client";
+import { useState, useEffect } from "react";
 import { Fragment, Tab } from "@headlessui/react";
-import { AddToCart } from "../../Cart/add-to-cart";
-import { VariantSelector } from "./variant-selector";
-import Prose from "@/components/prose";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import Prose from "@/components/prose";
+import { AddToCart } from "../../Cart/add-to-cart";
+import { VariantSelector } from "./variant-selector";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -224,9 +224,3 @@ export default function ProductDescription({ product }) {
     </div>
   );
 }
-
-// [aria-labelledby^="headlessui-tabs-tab"] img {
-//   height: 435px;
-//   object-fit: contain;
-//   border: 1px solid rgba(0,0,0,.05);
-// }

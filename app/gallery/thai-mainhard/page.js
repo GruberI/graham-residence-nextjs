@@ -1,12 +1,12 @@
-import Header from "../../../components/Exhibition/ThaiMainhard/Header";
-import HeaderImage from "../../../components/Exhibition/ThaiMainhard/HeaderImage";
-import Banner from "../../../components/Exhibition/Banner";
-import Quote from "../../../components/Exhibition/Quote";
-import SecondQuote from "../../../components/Exhibition/ThaiMainhard/SecondQuote";
-import TwoImageGrid from "../../../components/Exhibition/TwoImageGrid";
-import SixImageGrid from "../../../components/Exhibition/SixImageGrid";
 import { Suspense } from "react";
-import { getCollectionProducts } from "../../../lib/shopify";
+import Header from "@/components/Exhibition/ThaiMainhard/Header";
+import HeaderImage from "@/components/Exhibition/ThaiMainhard/HeaderImage";
+import Banner from "@/components/Exhibition/Banner";
+import Quote from "@/components/Exhibition/Quote";
+import SecondQuote from "@/components/Exhibition/ThaiMainhard/SecondQuote";
+import TwoImageGrid from "@/components/Exhibition/TwoImageGrid";
+import SixImageGrid from "@/components/Exhibition/SixImageGrid";
+import { getCollectionProducts } from "@/lib/shopify";
 
 const twoImgProducts = [
   {

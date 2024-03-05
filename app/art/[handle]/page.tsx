@@ -1,6 +1,6 @@
-import ShopAllArt from "../../../components/ShopAll/Art/Art";
-import ShopAllArtHeader from "../../../components/ShopAll/Art/Header";
-import { getCollectionProducts } from "../../../lib/shopify";
+import ShopAllArt from "@/components/ShopAll/Art/Art";
+import ShopAllArtHeader from "@/components/ShopAll/Art/Header";
+import { getCollectionProducts } from "@/lib/shopify";
 import { notFound } from "next/navigation";
 
 export const runtime = "edge";
@@ -21,7 +21,10 @@ export default async function ShopAll({
   return (
     <div className="sm:pt-40 pt-48">
       <ShopAllArtHeader pageTitle={params.handle} />
-      <ShopAllArt productsByHandle={productsByHandle} productHandle={params.handle}/>
+      <ShopAllArt
+        productsByHandle={productsByHandle}
+        productHandle={params.handle}
+      />
     </div>
   );
 }

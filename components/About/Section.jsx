@@ -31,10 +31,18 @@ export default function Section() {
             </div>
 
             <div className="pb-8 space-y-3">
-              <p className="tracking-wide"><span className="font-semibold">Square feet</span> – 1,200</p>
-              <p className="tracking-wide"><span className="font-semibold">Bedrooms</span> – 2</p>
-              <p className="tracking-wide"><span className="font-semibold">Bathrooms</span> – 1</p>
-              <p className="tracking-wide"><span className="font-semibold">Land</span>– 20-acres</p>
+              <p className="tracking-wide">
+                <span className="font-semibold">Square feet</span> – 1,200
+              </p>
+              <p className="tracking-wide">
+                <span className="font-semibold">Bedrooms</span> – 2
+              </p>
+              <p className="tracking-wide">
+                <span className="font-semibold">Bathrooms</span> – 1
+              </p>
+              <p className="tracking-wide">
+                <span className="font-semibold">Land</span>– 20-acres
+              </p>
             </div>
           </div>
         </div>

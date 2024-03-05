@@ -90,7 +90,7 @@ export default function ProductSection({ products, productHandle }) {
             <ProductGridThree products={firstSixProducts} />
           </Suspense>
           <div className="my-10 pb-10">
-          <Banner title={productHandle} type={'art'}/>
+            <Banner title={productHandle} type={"art"} />
           </div>
           <Suspense>
             <ProductGridThree products={remainingProducts} />

@@ -1,14 +1,14 @@
+import { Suspense } from "react";
+import { notFound } from "next/navigation";
 import HeroImageText from "@/components/Shop/HeroImageText";
 import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
 import Featured from "@/components/Shop/Featured";
+import Section from "@/components/Shop/Section.jsx";
+import Instagram from "@/components/Shop/Instagram";
+// import Carousel from "@/components/Carousel/Carousel.jsx";
 import { getProducts } from "@/lib/shopify";
-import { Suspense } from "react";
-// import Carousel from "../../components/Carousel/Carousel.jsx";
-import { getCollectionProducts } from "../../lib/shopify/index";
-import Section from "../../components/Shop/Section.jsx";
-import { notFound } from "next/navigation";
-import Instagram from "../../components/Shop/Instagram";
+import { getCollectionProducts } from "@/lib/shopify/index";
 
 export default async function Shop() {
   const products = await getProducts({});

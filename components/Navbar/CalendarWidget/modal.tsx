@@ -1,5 +1,4 @@
 "use client";
-
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import CloseCal from "./close-cal";
@@ -40,15 +39,17 @@ export default function CalModal() {
           >
             {/* FULL MODAL */}
             <Dialog.Panel className="fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px]">
-               {/* Partial MODAL */}
-            {/* <Dialog.Panel className="fixed bottom-0 right-6 top-20 flex h-[84%] w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px] rounded-sm"> */}
+              {/* Partial MODAL */}
+              {/* <Dialog.Panel className="fixed bottom-0 right-6 top-20 flex h-[84%] w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px] rounded-sm"> */}
               <div className="flex items-start justify-end">
                 <button aria-label="Close cart" onClick={closeCal}>
                   <CloseCal />
                 </button>
               </div>
               <p className="text-md mt-4 m-auto mb-2">Request a stay at</p>
-              <p className="font-bold text-lg m-auto mb-2">THE GRAHAM RESIDENCE</p>
+              <p className="font-bold text-lg m-auto mb-2">
+                THE GRAHAM RESIDENCE
+              </p>
               <iframe
                 id="booking-iframe"
                 sandbox="allow-top-navigation allow-scripts allow-same-origin"
