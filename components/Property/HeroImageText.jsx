@@ -9,9 +9,10 @@ export default function HeroImageText() {
       <div className="mx-auto max-w-4xl py-10 sm:py-10 lg:py-10">
         <div className="text-center">
           <h1 className="sm:text-6xl text-4xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant]">
-            THE GRAHAM RESIDENCE
+            The Graham Residence
           </h1>
           <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[50vh] mb-[10vh]">
+          {/* Shop buttons */}
             {/* <a
               href="/art"
               className="rounded-sm border px-3.5 py-2.5 text-sm font-normal text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
