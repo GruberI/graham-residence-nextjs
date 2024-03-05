@@ -1,12 +1,8 @@
-import { getCollectionProducts } from "../../lib/shopify";
+import { getCollectionProducts } from "@/lib/shopify";
 import ProductGridFour from "../Product/ProductGridFour";
 
 export default async function GoodsSection() {
   const products = await getCollectionProducts({ collection: "home-goods" });
-
-  // const productsByTag = products.filter((product) => {
-  //   return product.tags.includes("yoni-goldberg");
-  // });
   const eightProducts = products.slice(0,8)
 
   if (!products?.length) return null;

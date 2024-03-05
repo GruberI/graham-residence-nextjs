@@ -1,4 +1,4 @@
-import Terms from "../../components/Terms&Privacy/Terms";
+import Terms from "@/components/Terms&Privacy/Terms";
 
 export default function TermsConditions() {
   return (

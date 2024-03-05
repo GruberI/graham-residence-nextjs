@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Product from "./Product";
 
 export default function ProductGridFour({ products }) {

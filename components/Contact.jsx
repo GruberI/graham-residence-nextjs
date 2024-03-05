@@ -36,15 +36,12 @@ export default function Contact() {
                 <p>
                   {value.text}{" "}
                   <span className="hover:underline hover:underline-offset-8">
-                    <a
+                    <Link
                       className="inline"
-                      // href={
-                      //   value.email ? `mailto:${value.email}` : `${value.href}`
-                      // }
                       href={`mailto:"${value.email}?subject=${value.subject}`}
                     >
                       {value.subtext}
-                    </a>{" "}
+                    </Link>{" "}
                   </span>
                 </p>
               </div>

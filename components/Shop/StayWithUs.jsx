@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Calendar from "../Navbar/CalendarWidget/Calendar";
 
 export default function StayWithUs() {
@@ -15,18 +14,8 @@ export default function StayWithUs() {
                 {" "}
                 THE GRAHAM RESIDENCE
               </p>
-              <div
-
-                className="text-black hover:text-black-500 pt-6 flex sm:justify-center justify-start"
-              >
-           <Calendar />
-                {/* <button
-                  type="submit"
-                  className="max-w-md border-2 border-black px-6 py-2 text-base font-light text-black-500 hover:bg-black hover:black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium sm:w-full text-[12px]"
-                >
-                  BOOK ON AIRBNB
-                </button> */}
-       
+              <div className="text-black hover:text-black-500 pt-6 flex sm:justify-center justify-start">
+                <Calendar />
               </div>
             </div>
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">

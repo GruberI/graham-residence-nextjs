@@ -1,4 +1,4 @@
-'use client' 
+"use client";
 
 const navigation = {
   categories: [
@@ -21,12 +21,11 @@ const handleClickScroll = (id) => {
   const element = document.getElementById(id);
   if (element) {
     // Will scroll smoothly to the top of the next section
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({ behavior: "smooth" });
   }
 };
 
 export default function Navigation() {
-
   return (
     <div
       aria-label="Top"
@@ -41,7 +40,6 @@ export default function Navigation() {
                   key={item.name}
                   onClick={() => handleClickScroll(item.id)}
                   className="flex items-center text-sm font-sm text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
-                 
                 >
                   {item.name}
                 </a>

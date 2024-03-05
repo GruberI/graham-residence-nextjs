@@ -1,15 +1,13 @@
-import ShopAllArtHeader from "./Header";
 import { getCollection } from "../../../lib/shopify";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import ProductSection from "./ProductSection";
-// import ShopAllArtHero from './Hero'
 
 export const runtime = "edge";
 
 export async function generateMetadata({
-  params
+  params,
 }: {
   params: { collection: string };
 }): Promise<Metadata> {
@@ -34,7 +32,10 @@ export default async function ShopAllArt({ productsByHandle, productHandle }) {
           {productsByHandle.length === 0 ? (
             <p className="py-3 text-lg ml-[40%] mt-20">{`No products found in this collection`}</p>
           ) : (
-            <ProductSection products={productsByHandle} productHandle={productHandle}/>
+            <ProductSection
+              products={productsByHandle}
+              productHandle={productHandle}
+            />
           )}
         </section>
       </Suspense>

@@ -1,4 +1,4 @@
-import { getCollectionProducts } from "../../lib/shopify";
+import { getCollectionProducts } from "@/lib/shopify";
 import ProductGridFour from "../Product/ProductGridFour";
 
 export default async function ArtSection() {
@@ -6,7 +6,7 @@ export default async function ArtSection() {
   const productsByTag = products.filter((product) => {
     return product.tags.includes("thai-mainhard");
   });
-  const eightProducts = productsByTag.slice(0,8)
+  const eightProducts = productsByTag.slice(0, 8);
 
   if (!products?.length) return null;
 

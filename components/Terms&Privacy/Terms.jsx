@@ -2,7 +2,7 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
 export default function Terms() {
   return (
-    <div className="container lg:h-[40rem] sm:h-[16rem] h-[24rem] border-r pr-1 overflow-scroll w-full sm:w-[37rem]" >
+    <div className="container lg:h-[40rem] sm:h-[16rem] h-[24rem] border-r pr-1 overflow-scroll w-full sm:w-[37rem]">
       <div className="bg-white shadow-md">
         <div className="text-gray-700">
           <div className="text-sm leading-6 text-gray-700">
