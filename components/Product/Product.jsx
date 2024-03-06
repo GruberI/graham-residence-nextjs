@@ -36,10 +36,14 @@ export default function Product({ product }) {
           <p className="text-sm font-light text-neutral-600">
             {product.vendor}
           </p>
-          <p className="mt-1 text-sm">{`${new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD",
-          }).format(parseFloat(amount))}`}</p>
+          <p className="mt-1 text-sm">
+            {!available
+              ? "Sold"
+              : `${new Intl.NumberFormat("en-US", {
+                  style: "currency",
+                  currency: "USD",
+                }).format(parseFloat(amount))}`}
+          </p>
         </div>
         <div>
           <h3 className="truncate font-light text-base text-black">

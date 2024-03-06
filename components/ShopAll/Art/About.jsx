@@ -13,7 +13,7 @@ const aboutInfo = [
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmWsdYRhborxuwVwuZh9aBdVYBfj4REw9s6skbxbR241g2/QmPTsikynbqneuVguJtRKhqDyy1T4McPGUVZP8S7uimsqH",
     imgAltText: "Thai Mainhard sitting on stool surrounded by her paintings",
-    text: "Thai Mainhard is a Brazilian born artist based in Los Angeles. In her works she encounters human nature, exploring happiness, frustration, surprise, connection, spirituality, and overall thinking processing.",
+    text: "Brazilian born painter Thai Mainhard's practice harnesses her own raw and immediate need to create. Each abstract painting combines expressive mark making with dense blocks of color exploring the opposing forces that make up our lives. Mainhard encounters human nature, exploring happiness, frustration, surprise, connection, spirituality, and overall thinking processing. Each of her works is emotional; it is a lush expression of her inner jungle. Going through a deep internal process, the artist creates artwork that represents human nature’s fragility and opposes it to the robustness of emotions and feelings.",
   },
   {
     handle: "yoni-goldberg",

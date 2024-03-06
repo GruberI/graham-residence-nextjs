@@ -14,24 +14,13 @@ export default function ImageTransition({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      {available === false && fineArt ? (
-        <>
-          <img
-            src={imgOne.src}
-            alt={imgOne.altText}
-            className="object-cover object-center lg:h-full lg:w-full relative"
-          />
-          <div className="absolute top-2 right-3 px-2 py-4 rounded-full bg-white font-black italic opacity-70">
-            Sold
-          </div>
-        </>
-      ) : (
+      {
         <img
           src={imgOne.src}
           alt={imgOne.altText}
           className="object-cover object-center lg:h-full lg:w-full relative"
         />
-      )}
+      }
       {imgTwo.src == undefined ? (
         <img
           className={`absolute inset-0 lg:h-full lg:w-full duration-300 object-cover ${
