@@ -65,14 +65,14 @@ const handleClickScroll = (id) => {
 
 export default function Banner({ title, type }) {
   return (
-    <div className={`my-10 pb-10 ${title === undefined ? "hidden" : "block"}`}>
+    <div className={`mb-20 ${title === undefined ? "hidden" : "block"}`}>
       {bannerInfo.map((banner, i) => {
         return banner.handle === title ? (
           <div
             className="m-auto border-t border-b border-black max-w-7xl"
             key={i}
           >
-            <div className="mx-auto px-4 sm:px-6 lg:px-6 my-10 sm:my-16 pt-6">
+            <div className="mx-auto px-4 sm:px-6 lg:px-6 my-10 sm:my-16 pt-6 sm:pb-6">
               <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
                 <div>
                   <div className="overflow-hidden bg-black-100 aspect-[4/3]">
