@@ -151,7 +151,7 @@ export default function PopoverItems({ color, pathname }) {
                                     <li key={item.name} className="flex">
                                       <Link
                                         href={item.href}
-                                        className="hover:text-gray-800 text-sm"
+                                        className="hover:text-gray-800 text-sm lg:text-base"
                                       >
                                         {item.name}
                                       </Link>
