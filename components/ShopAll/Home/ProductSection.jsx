@@ -87,9 +87,7 @@ export default function ProductSection({ products, productHandle }) {
         <section aria-labelledby="products-heading" className="pb-24 pt-6">
           {/* Product grid */}
           <ProductGridFour products={firstEightProducts} />
-          <div className="my-10 pb-10">
-            <Banner title={productHandle} type={"home"} />
-          </div>
+          <Banner title={productHandle} type={"home"} />
           {remainingProducts.length > 0 ? (
             <ProductGridFour products={remainingProducts} />
           ) : null}

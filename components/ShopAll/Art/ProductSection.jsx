@@ -27,6 +27,7 @@ function classNames(...classes) {
 }
 
 export default function ProductSection({ products, productHandle }) {
+  console.log("productHandle", productHandle);
   const firstSixProducts = products.slice(0, 6);
   const remainingProducts = products.slice(6, products.length + 1);
   return (
@@ -89,9 +90,7 @@ export default function ProductSection({ products, productHandle }) {
           <Suspense>
             <ProductGridThree products={firstSixProducts} />
           </Suspense>
-          <div className="my-10 pb-10">
-            <Banner title={productHandle} type={"art"} />
-          </div>
+          <Banner title={productHandle} type={"home"} />
           <Suspense>
             <ProductGridThree products={remainingProducts} />
           </Suspense>

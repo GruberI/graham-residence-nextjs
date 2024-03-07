@@ -15,7 +15,7 @@ const navigation = {
       ],
       art: [
         { name: "Paintings", href: "/art/paintings" },
-        { name: "Photography", href: "/art/yoni-goldberg" },
+        { name: "Photography", href: "/art/photography" },
         { name: "View All", href: "/art" },
       ],
       home: [

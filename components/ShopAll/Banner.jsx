@@ -65,7 +65,7 @@ const handleClickScroll = (id) => {
 
 export default function Banner({ title, type }) {
   return (
-    <>
+    <div className={`my-10 pb-10 ${title === undefined ? "hidden" : "block"}`}>
       {bannerInfo.map((banner, i) => {
         return banner.handle === title ? (
           <div
@@ -90,7 +90,9 @@ export default function Banner({ title, type }) {
                       {banner.artist}
                     </h1>
 
-                    <p className="tracking-wide leading-7 text-center">{banner.text}</p>
+                    <p className="tracking-wide leading-7 text-center">
+                      {banner.text}
+                    </p>
                     {type === "art" ? (
                       <a
                         onClick={() => handleClickScroll("shopAllAbout")}
@@ -111,6 +113,6 @@ export default function Banner({ title, type }) {
           </div>
         ) : null;
       })}
-    </>
+    </div>
   );
 }
