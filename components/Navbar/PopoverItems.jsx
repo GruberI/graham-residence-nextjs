@@ -141,7 +141,7 @@ export default function PopoverItems({ color, pathname }) {
                                   GRAHAM GALLERY
                                 </p>
                               </a>
-                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-2 sm:gap-x-6">
+                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"
                                   aria-labelledby="categories-heading"

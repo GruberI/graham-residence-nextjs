@@ -72,8 +72,6 @@ export default function ProductDescription({ product }) {
     (variant) => variant?.title === `16 x 12 / Black`
   );
 
-  console.log("photographySelectedVariant", photographySelectedVariant);
-
   const tabDetails = [
     { title: "DESCRIPTION", description: `${productJsonLd.description}` },
     {
