@@ -26,10 +26,17 @@ export default function ProductDescription({ product }) {
     product.variants[0]?.selectedOptions[1]?.name.toLowerCase();
   const currentSearchParam = searchParams?.get(variantName);
   const currentSearchParamSecond = searchParams?.get(variantNameSecond);
-  const selectedVariant = product.variants.find(
-    (variant) =>
-      variant?.title === `${currentSearchParam} / ${currentSearchParamSecond}`
-  );
+  const selectedVariant = currentSearchParamSecond
+    ? product.variants.find(
+        (variant) =>
+          variant?.title ===
+          `${currentSearchParam} / ${currentSearchParamSecond}`
+      )
+    : product.variants.find((variant) =>
+        variant?.selectedOptions.some(
+          (item) => item.value === currentSearchParam
+        )
+      );
   const selectedVariantPrice =
     selectedVariant === undefined ? amount : selectedVariant.price.amount;
   const imgSrc = selectedVariant?.image.originalSrc;
@@ -59,6 +66,13 @@ export default function ProductDescription({ product }) {
       title: product.seo.title,
     },
   };
+
+  const photography = product.tags.includes("photography");
+  const photographySelectedVariant = product.variants.find(
+    (variant) => variant?.title === `16 x 12 / Black`
+  );
+
+  console.log("photographySelectedVariant", photographySelectedVariant);
 
   const tabDetails = [
     { title: "DESCRIPTION", description: `${productJsonLd.description}` },
@@ -110,6 +124,11 @@ export default function ProductDescription({ product }) {
                         <span className="absolute inset-0 overflow-hidden">
                           <img
                             src={image.url}
+                            // src={
+                            //   photography
+                            //     ? photographySelectedVariant.image.originalSrc
+                            //     : image.url
+                            // }
                             alt={image.altText}
                             className="h-full w-full object-cover object-center"
                           />
