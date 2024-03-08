@@ -87,7 +87,7 @@ export default function Modal() {
                       </div>
                       <div className="flex flex-row">
                         <div className="">
-                          <div className="text-center sm:pt-24 mx-4 sm:mx-10 my-4">
+                          <div className="text-center sm:pt-24 mx-4 sm:mx-10 my-4 sm:my-0">
                             <Dialog.Title
                               as="h3"
                               className="text-xs sm:text-sm font-bold leading-6 text-gray-900 mb-6 mt-12 sm:mt-0"
