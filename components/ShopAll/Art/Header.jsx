@@ -4,7 +4,7 @@ export default function ShopAllArtHeader({ pageTitle }) {
     <div className="bg-white px-6 pt-4">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-black font-thin tracking-wide sm:text-7xl text-4xl capitalize font-[cormorant]">
-          {pageTitle === "yoni-goldberg" ? "Photography" : restructuredTitle}
+          {restructuredTitle}
         </h2>
       </div>
     </div>

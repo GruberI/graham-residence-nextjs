@@ -168,7 +168,8 @@ export default function Modal() {
                               <p className="text-gray-500 text-xs">
                                 {" "}
                                 By signing up, you agree to receive emails from{" "}
-                                <br className="hidden sm:inline"></br> The Graham Residence
+                                <br className="hidden sm:inline"></br> The
+                                Graham Residence
                               </p>
                             </form>
                           </div>
