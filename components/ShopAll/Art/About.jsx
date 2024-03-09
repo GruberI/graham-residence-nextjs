@@ -21,7 +21,7 @@ const aboutInfo = [
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmedvMhXHkATo8RM28psWPEEsawxE35iTYZckzVmi5cC8n",
     imgAltText: "Yoni Goldberg behind the camera",
-    text: "Yoni Goldberg is a Newport Beach based photographer, some say the best that ever lived and finding info about him online is hard",
+    text: "Yoni Goldberg is a Los Angeles based Photographer and Director. He has been shooting commercially for the past 14 years whilst also pursuing his artistic practice. He began his journey in New York City after graduating NYU with a degree in psychology and chemistry. After a few years of honing his skills under the tutelage of some of the industry’s top photographers, he moved to LA and began shooting. His work is often inspired by nature and he finds great comfort living in close proximity to the ocean.",
   },
 ];
 

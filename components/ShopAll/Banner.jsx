@@ -23,7 +23,7 @@ const bannerInfo = [
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmcHQJjQw1tbvCbhPkq8SXpfzhJ5WSLpk84kWihd51WisR/QmTHRhpRttN8oEqUAGkSUc6fDRQLnnHoxKWgQ2yvzURdV5",
     imgAltText: "Yoni Goldberg behind the camera",
-    text: "Yoni Goldberg is a Newport Beach based photographer, some say the best that ever lived and finding info about him online is hard.",
+    text: "Yoni Goldberg is a Los Angeles based photographer and co-owner of The Graham Residence.",
     type: "art",
   },
   {
