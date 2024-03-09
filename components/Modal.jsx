@@ -84,16 +84,16 @@ export default function Modal() {
                       <Suspense>
                         <div className="flex flex-row">
                           <div className="">
-                            <div className="text-center sm:pt-24  my-4 sm:my-0 w-[75%] m-auto">
+                            <div className="text-center md:pt-24 pt-10 pb-10 md:pb-0 my-4 sm:my-0 w-[75%] m-auto">
                               <Dialog.Title
                                 as="h3"
-                                className="text-xs sm:text-sm font-bold leading-6 text-gray-900 mb-2 mt-12 sm:mt-0"
+                                className="text-xs sm:text-sm font-bold leading-6 text-gray-900 mb-2"
                               >
                                 JOIN THE LIST
                               </Dialog.Title>
                               <Dialog.Title
                                 as="h3"
-                                className="text-xs sm:text-sm font-bold leading-6 text-gray-900 mb-6 mt-12 sm:mt-0"
+                                className="text-xs sm:text-sm font-bold leading-6 text-gray-900 mb-6"
                               >
                                 You'll be the first to know about upcoming
                                 exhibitions, new releases and sales
