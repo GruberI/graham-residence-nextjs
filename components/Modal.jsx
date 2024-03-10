@@ -74,7 +74,7 @@ export default function Modal() {
                       <div className="absolute sm:right-0 right-0 top-0 pr-4 pt-4 sm:block">
                         <button
                           type="button"
-                          className="rounded-md sm:bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
+                          className="rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
                           onClick={() => closeModal()}
                         >
                           <span className="sr-only">Close</span>
@@ -82,18 +82,18 @@ export default function Modal() {
                         </button>
                       </div>
                       <Suspense>
-                        <div className="flex flex-row">
+                        <div className="flex flex-row sm:w-[750px] m-4 sm:m-0">
                           <div className="">
-                            <div className="text-center md:pt-24 pt-10 pb-10 md:pb-0 my-4 sm:my-0 w-[75%] m-auto">
+                            <div className="text-center sm:w-[70%] m-auto pt-10 sm:pt-14 pb-10 md:pb-10">
                               <Dialog.Title
                                 as="h3"
-                                className="text-xs sm:text-sm font-bold leading-6 text-gray-900 mb-2"
+                                className="text-lg sm:text-sm font-bold leading-6 text-gray-900 mb-2"
                               >
                                 JOIN THE LIST
                               </Dialog.Title>
                               <Dialog.Title
                                 as="h3"
-                                className="text-xs sm:text-sm font-bold leading-6 text-gray-900 mb-6"
+                                className="text-xs sm:text-sm sm:font-bold leading-6 text-gray-900 mb-6"
                               >
                                 You'll be the first to know about upcoming
                                 exhibitions, new releases and sales
@@ -141,9 +141,9 @@ export default function Modal() {
                               </form>
                             </div>
                           </div>
-                          <div className="hidden md:inline sm:w-[300px]">
+                          <div className="hidden md:inline sm:w-[360px]">
                             <img
-                              src="https://ipfs.filebase.io/ipfs/QmUqRcVmsVA6z6zYx4PJVR2NsHCngmPq27uLNhcWZx3HCs/QmfUk75HpsgyfELNRUHqkfhTJbaFsVmeSMcGdHL2HPzv3c"
+                              src="https://ipfs.filebase.io/ipfs/QmUd4Vuk5eYeLRCcB3gMcFPJyzhHFDY9kcC7Jza6xYq1QE/QmNPXLSM6pVtdWPQ2fjUuXge5Jic9HzLcGBnouW2ejCkqc"
                               alt=""
                             />
                           </div>

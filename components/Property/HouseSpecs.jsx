@@ -4,7 +4,7 @@ export default function HouseSpecs() {
       <div className="m-auto mx-10 sm:pt-0 pt-10 pb-10">
         <div className="mx-auto px-4 sm:px-6 lg:px-6">
           <img
-            src="https://ipfs.filebase.io/ipfs/Qmc4bptgemp9gX5xD7A9jpoMVATyYHLNPmfu4zr4s35UbQ/QmX7SB4rNJmBpmgWg2H9tgcnBZU41fpdRXtPkW2i1NwHvq"
+            src="https://ipfs.filebase.io/ipfs/QmZFQxAVgv8rZwMeCJMKUE4ukiAQeLFj8fCRaGr4xNW2JA/QmWXUEEhHFSEzYaSm2r2dPNLQZsc7zysfe24eU9o97pfUy"
             alt=""
             className="object-cover p-2"
           />
