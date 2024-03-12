@@ -3,6 +3,14 @@ import { Fade } from "react-awesome-reveal";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 export default function HeroImageText() {
+  const handleClickScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="relative isolate overflow-hidden pt-36">
       <img
@@ -17,7 +25,15 @@ export default function HeroImageText() {
           </h1>
           <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[54vh]">
             <Fade>
-              <ChevronDownIcon className="h-[30px] text-[#d9d2ca] mt-10 font-thin opacity-60" />
+               <a
+                  onClick={() => handleClickScroll('property')}
+                  className="flex items-center text-sm font-sm text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
+                >
+                  <ChevronDownIcon
+                className="h-[30px] text-[#d9d2ca] mt-10 font-thin opacity-60"
+             
+              />
+                </a>
             </Fade>
             {/* Shop buttons */}
             {/* <a
