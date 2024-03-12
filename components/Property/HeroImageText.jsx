@@ -20,20 +20,17 @@ export default function HeroImageText() {
       />
       <div className="mx-auto max-w-4xl py-10 sm:py-10 lg:py-10">
         <div className="text-center">
-          <h1 className="sm:text-7xl text-4xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant]">
+          <h1 className="sm:text-7xl text-4xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-2 sm:mt-0">
             The Graham Residence
           </h1>
           <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[54vh]">
             <Fade>
-               <a
-                  onClick={() => handleClickScroll('property')}
-                  className="flex items-center text-sm font-sm text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
-                >
-                  <ChevronDownIcon
-                className="h-[30px] text-[#d9d2ca] mt-10 font-thin opacity-60"
-             
-              />
-                </a>
+              <a
+                onClick={() => handleClickScroll("property")}
+                className="flex items-center text-sm font-sm text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
+              >
+                <ChevronDownIcon className="h-[30px] text-[#d9d2ca] mt-10 font-thin opacity-60" />
+              </a>
             </Fade>
             {/* Shop buttons */}
             {/* <a

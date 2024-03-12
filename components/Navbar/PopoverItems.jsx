@@ -241,7 +241,7 @@ export default function PopoverItems({ color, pathname }) {
             <a
               key={item.name}
               onClick={() => handleClickScroll(item.id)}
-              className={`flex items-center text-xs md:text-base xl:text-lg scroll-smooth cursor-pointer`}
+              className={`flex items-center text-sm md:text-base xl:text-lg scroll-smooth cursor-pointer`}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >
               <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
