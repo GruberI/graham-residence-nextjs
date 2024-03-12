@@ -1,3 +1,7 @@
+"use client";
+import { Fade } from "react-awesome-reveal";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
+
 export default function HeroImageText() {
   return (
     <div className="relative isolate overflow-hidden pt-36">
@@ -11,7 +15,10 @@ export default function HeroImageText() {
           <h1 className="sm:text-7xl text-4xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant]">
             The Graham Residence
           </h1>
-          <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[50vh] mb-[10vh]">
+          <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[54vh]">
+            <Fade>
+              <ChevronDownIcon className="h-[30px] text-[#d9d2ca] mt-10 font-thin opacity-60" />
+            </Fade>
             {/* Shop buttons */}
             {/* <a
               href="/art"

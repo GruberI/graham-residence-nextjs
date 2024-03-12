@@ -29,13 +29,13 @@ const navigation = {
   ],
   first: [
     {
-      name: "The Property",
-      href: "/",
+      name: "Graham Gallery",
+      href: "/gallery",
     },
   ],
   second: [
     { name: "About", href: "/about" },
-    { name: "Contact", id: "contact-us" },
+    // { name: "Contact", id: "contact-us" },
   ],
 };
 
@@ -119,7 +119,7 @@ export default function PopoverItems({ color, pathname }) {
                   leaveTo="opacity-0"
                 >
                   <Popover.Panel
-                    className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-7/12 m-auto border"
+                    className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-6/12 m-auto border"
                     onMouseLeave={() => handleLeave(open)}
                   >
                     {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
@@ -131,8 +131,8 @@ export default function PopoverItems({ color, pathname }) {
                     <div className="relative bg-white">
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
-                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
-                            <div>
+                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-2">
+                            {/* <div>
                               <a href="/gallery">
                                 <p
                                   id="categories-heading"
@@ -159,7 +159,7 @@ export default function PopoverItems({ color, pathname }) {
                                   ))}
                                 </ul>
                               </div>
-                            </div>
+                            </div> */}
                             <div>
                               <a href="/art">
                                 <p
@@ -189,12 +189,12 @@ export default function PopoverItems({ color, pathname }) {
                               </div>
                             </div>
                             <div>
-                              <a href="/home">
+                              <a href="/shop">
                                 <p
                                   id="home-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
-                                  HOME
+                                  GOODS
                                 </p>
                               </a>
                               <ul
@@ -214,6 +214,7 @@ export default function PopoverItems({ color, pathname }) {
                                 ))}
                               </ul>
                             </div>
+                            {/* put back in a bit */}
                             <div>
                               <Link href="/shop">
                                 <p
