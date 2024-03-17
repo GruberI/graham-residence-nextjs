@@ -214,7 +214,6 @@ export default function PopoverItems({ color, pathname }) {
                                 ))}
                               </ul>
                             </div>
-                            {/* put back in a bit */}
                             <div>
                               <Link href="/shop">
                                 <p
