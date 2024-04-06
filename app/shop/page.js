@@ -10,10 +10,10 @@ import Instagram from "@/components/Shop/Instagram";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
 
-// export const metadata = {
-//   title: 'The Graham Residence Shop',
-//   description: 'Discover the best contemporary artists and shop curated goods inspired by West Coast minimalism.',
-// }
+export const metadata = {
+  title: 'The Graham Residence Shop',
+  description: 'Discover the best contemporary artists and shop curated goods inspired by West Coast minimalism.',
+}
 
 export default async function Shop() {
   const products = await getProducts({});

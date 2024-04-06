@@ -8,10 +8,10 @@ import StickyCart from "@/components/Cart/stickyCart.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata = {
-//   title: 'The Graham Residence',
-//   description: 'The Graham Residence is a mid-century modern retreat near Joshua Tree National Park where the lines between home and gallery are blurred.',
-// }
+export const metadata = {
+  title: 'The Graham Residence',
+  description: 'The Graham Residence is a mid-century modern retreat near Joshua Tree National Park where the lines between home and gallery are blurred.',
+}
 
 export default function RootLayout({ children }) {
   return (
