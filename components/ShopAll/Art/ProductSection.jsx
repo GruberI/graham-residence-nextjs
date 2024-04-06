@@ -33,7 +33,7 @@ export default function ProductSection({ products, productHandle }) {
   return (
     <div className="bg-white sm:px-0 px-2">
       <main className="mx-auto max-w-7xl">
-        <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-16">
+        <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 sm:pt-16 pt-24">
           <h1 className="text2xl font-light tracking-widest text-gray-900">
             {" "}
             {`${products.length} ARTWORKS`}

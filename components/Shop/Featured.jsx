@@ -37,10 +37,10 @@ export default function Featured() {
                 memory, identity as well as longing and understanding of self.
               </p>
             </div>
-            <div className="pt-8">
+            <div className="sm:pt-8 pt-4 pb-4">
               <Link
                 href={"/gallery/kyle-steed"}
-                className="underline underline-offset-8 hover:text-neutral-600"
+                className="underline underline-offset-8 hover:text-neutral-600 text-sm sm:text-lg"
               >
                 SEE THE EXHIBITION
               </Link>
