@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script
+        {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-M4X900NBP2"
         ></script>
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-M4X900NBP2');
-        </script>
+        </script> */}
         <link rel="shortcut icon" href="./images/favicon_io/icon.ico" />
         <link
           rel="apple-touch-icon"
