@@ -59,7 +59,7 @@ export default function Navbar() {
                         : { color: "black" }
                     }
                   >
-                    TGR
+                    TGC
                   </p>
                 </a>
               </div>
