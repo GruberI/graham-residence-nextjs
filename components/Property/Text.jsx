@@ -1,7 +1,7 @@
 "use client";
 import { Fade } from "react-awesome-reveal";
 
-export default function Text({text}) {
+export default function Text({ text }) {
   return (
     <div className="max-w-7xl m-auto mt-10 sm:mt-20 sm:mb-14 mb-10">
       <div className="text-center">

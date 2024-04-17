@@ -11,7 +11,7 @@ const posts = [
     buttonText: "STAY",
   },
   {
-    id: 1,
+    id: 2,
     title: "The Graham Gallery",
     href: "/gallery",
     description:
@@ -22,7 +22,7 @@ const posts = [
     buttonText: "EXPLORE",
   },
   {
-    id: 1,
+    id: 3,
     title: "The Graham Shop",
     href: "/shop",
     description:
