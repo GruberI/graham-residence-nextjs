@@ -52,6 +52,7 @@ export default class Carousel extends Component {
       slidesToShow: 5,
       slidesToScroll: 1,
       infinite: true,
+      adaptiveHeight: true,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       responsive: [
@@ -86,7 +87,16 @@ export default class Carousel extends Component {
       ],
     };
     return (
-      <div className="w-11/12 m-auto">
+      <div className="mx-10 mb-20 m-auto border-t border-black">
+        <div className="my-10">
+          <h1 className="sm:text-3xl text-2xl">New Arrivals</h1>
+          <a
+            href="/home"
+            className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 "
+          >
+            VIEW ALL
+          </a>
+        </div>
         <div className="mt-10 mb-4">
           <Slider {...settings}>
             {this.props.products.map((product, i) => (
