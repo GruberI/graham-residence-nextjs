@@ -8,7 +8,7 @@ export default function Terms() {
           <div className="text-sm leading-6 text-gray-700">
             <p>
               THESE TERMS OF USE (THE “TERMS”) ARE A LEGAL CONTRACT BETWEEN YOU
-              AND THE GRAHAM RESIDENCE (“The Graham Residence”, “WE”, “US”, OR
+              AND THE GRAHAM COLLECTIVE (“The Graham Collective”, “WE”, “US”, OR
               “OUR”). THESE TERMS GOVERN ANY ACCESS OR USE OF THE WEBSITE
               LOCATED AT HTTPS://GRAHAMRESIDENCE.COM, ALL ASSOCIATED SITES,
               MARKETPLACE OR APPLICATION PROGRAM INTERFACE, AND ANY OTHER
@@ -22,7 +22,7 @@ export default function Terms() {
               PLATFORM. NOTE: THESE TERMS CONTAIN A DISPUTE RESOLUTION AND
               ARBITRATION PROVISION, INCLUDING CLASS ACTION WAIVER THAT AFFECTS
               YOUR RIGHTS UNDER THESE TERMS AND WITH RESPECT TO DISPUTES YOU MAY
-              HAVE WITH THE GRAHAM RESIDENCE. YOU MAY OPT OUT OF THE BINDING
+              HAVE WITH THE GRAHAM COLLECTIVE. YOU MAY OPT OUT OF THE BINDING
               INDIVIDUAL ARBITRATION AND CLASS ACTION WAIVER AS PROVIDED BELOW.
             </p>
             <p className="pt-4">
@@ -39,17 +39,17 @@ export default function Terms() {
               permission to use the Platform and agree to its Terms. If you are
               a parent or legal guardian of a Minor, you hereby agree to bind
               the Minor to these Terms and to fully indemnify and hold harmless
-              The Graham Residence if the Minor breaches any of these Terms. If
+              The Graham Collective if the Minor breaches any of these Terms. If
               you are not at least 13 years old, you may not use the Platform at
               any time or in any manner or submit any information to The Graham
-              Residence or the Platform. The Graham Residence provides content
+              Collective or the Platform. The Graham Collective provides content
               through the Platform and through the Services that is copyrighted
-              and/or trademarked work of The Graham Residence or The Graham
-              Residence’s third-party licensors and suppliers or other users of
+              and/or trademarked work of The Graham Collective or The Graham
+              Collective’s third-party licensors and suppliers or other users of
               the Platform (collectively, the “Materials”). Materials may
               include logos, graphics, video, images, software and other
               content. Subject to the terms and conditions of these Terms, and
-              your compliance with these Terms, The Graham Residence hereby
+              your compliance with these Terms, The Graham Collective hereby
               grants you a limited, personal, non-exclusive and non-transferable
               license to use and to display the Materials and to use this
               Platform solely for your personal use. Except for the foregoing
@@ -61,7 +61,7 @@ export default function Terms() {
               you must immediately destroy any downloaded or printed Materials.
               Using the Platform and the Services on the Platform. You can
               simply view the Platform and not use any Services on the Platform.
-              You need not register with The Graham Residence to simply visit
+              You need not register with The Graham Collective to simply visit
               and view the Platform.
             </p>
           </div>
@@ -105,12 +105,12 @@ export default function Terms() {
             <p className="pt-6 text-sm">
               By using the Platform and/or the Services provided on or through
               the Platform, you consent to receiving electronic communications
-              from The Graham Residence. These electronic communications may
+              from The Graham Collective. These electronic communications may
               include notices about applicable fees and charges, transactional
               information and other information concerning or related to the
               Platform and/or Services provided on or through the Platform.
               These electronic communications are part of your relationship with
-              The Graham Residence. You agree that any notices, agreements,
+              The Graham Collective. You agree that any notices, agreements,
               disclosures or other communications that we send you
               electronically will satisfy any legal communication requirements,
               including that such communications be in writing.
@@ -122,8 +122,8 @@ export default function Terms() {
               </strong>
             </p>
             <p className="pt-4 text-sm">
-              Please review The Graham Residence Privacy Policy which explains
-              how we use information that you submit to The Graham Residence.
+              Please review The Graham Collective Privacy Policy which explains
+              how we use information that you submit to The Graham Collective.
             </p>
 
             <p className="pt-4">
@@ -148,7 +148,7 @@ export default function Terms() {
             </p>
             <p className="pt-4 text-sm">
               This Platform may be linked to other websites that are not The
-              Graham Residence sites, including, without limitation, social
+              Graham Collective sites, including, without limitation, social
               networking, blogging, and similar websites which you are able to
               access from this Platform from links using your existing account
               and log-in credentials for such third-party sites and websites
@@ -163,18 +163,18 @@ export default function Terms() {
               Platform through a link but it may appear that you are still on
               this Platform. In the event you make any sales transaction on the
               Third-Party Platform that is accessed through our Platform, The
-              Graham Residence may be entitled to earn sales commissions from
+              Graham Collective may be entitled to earn sales commissions from
               the third party in connection with such transaction. In any case,
               you acknowledge and agree that the Third-Party Platforms may have
               different privacy policies and terms and conditions and/or user
-              guides and business practices than The Graham Residence, and you
+              guides and business practices than The Graham Collective, and you
               further acknowledge and agree that your use of such Third-Party
               Platforms is governed by the respective Third-Party Platform
               privacy policy and terms and conditions and/or user guides. You
               hereby agree to comply with any and all terms and conditions,
               users guides and privacy policies of any of Third-Party Platforms.
-              The Graham Residence is providing links to the Third-Party
-              Platforms to you as a convenience, and The Graham Residence does
+              The Graham Collective is providing links to the Third-Party
+              Platforms to you as a convenience, and The Graham Collective does
               not verify, make any representations or take responsibility for
               such Third-Party Platforms, including, without limitation, the
               truthfulness, accuracy, quality or completeness of the content,
@@ -188,7 +188,7 @@ export default function Terms() {
               decide to access any of the Third-Party Platforms linked to from
               this Platform, you do this entirely at your own risk and you must
               follow the privacy policies and terms and conditions for those
-              Third-Party Platforms. YOU AGREE THAT The Graham Residence WILL
+              Third-Party Platforms. YOU AGREE THAT The Graham Collective WILL
               NOT, UNDER ANY CIRCUMSTANCES, BE RESPONSIBLE OR LIABLE, DIRECTLY
               OR INDIRECTLY, FOR ANY GOODS, SERVICES, INFORMATION, RESOURCES
               AND/OR CONTENT AVAILABLE ON OR THROUGH ANY THIRD-PARTY SITES
@@ -198,7 +198,7 @@ export default function Terms() {
               CONTENT OR BUSINESS PRACTICES OF ANY THIRD-PARTY. Any reference on
               the Platform to any product, service, publication, institution,
               organization of any third-party entity or individual does not
-              constitute or imply The Graham Residence’s endorsement or
+              constitute or imply The Graham Collective’s endorsement or
               recommendation.
             </p>
 
@@ -227,7 +227,7 @@ export default function Terms() {
               Unless otherwise explicitly stated herein or in the Privacy
               Policy, you agree that any Submission provided by you in
               connection with this Platform is provided on a non-proprietary and
-              non-confidential basis. You hereby grant to The Graham Residence a
+              non-confidential basis. You hereby grant to The Graham Collective a
               non-exclusive, perpetual, irrevocable, royalty-free, fully
               paid-up, worldwide license (including the right to sublicense
               through multiple tiers) to use, reproduce, process, adapt,
@@ -240,9 +240,9 @@ export default function Terms() {
               computer networks and in various media and/or make changes to the
               Submissions as necessary to conform and adapt them to any
               requirements or limitations of any networks, devices, services or
-              media. The Graham Residence agrees to use any personally
+              media. The Graham Collective agrees to use any personally
               identifiable information contained in any of your Submissions in
-              accordance with The Graham Residence’s Privacy Policy. You agree
+              accordance with The Graham Collective’s Privacy Policy. You agree
               to pay for all royalties, fees, damages and any other monies owing
               any person by reason of any Submissions posted by you to or
               through this Platform.
@@ -251,7 +251,7 @@ export default function Terms() {
               When you provide Submissions you agree that those Submissions
               shall not be in violation of the “Unauthorized Activities”
               paragraph below. THOSE PROHIBITIONS DO NOT REQUIRE The Graham
-              Residence TO MONITOR, POLICE, OR REMOVE ANY SUBMISSIONS OR OTHER
+              Collective TO MONITOR, POLICE, OR REMOVE ANY SUBMISSIONS OR OTHER
               INFORMATION SUBMITTED BY YOU OR ANY OTHER USER.
             </p>
             <br />
@@ -387,17 +387,17 @@ export default function Terms() {
 
             <p className="pt-4 text-sm">
               This list of prohibitions provides examples and is not complete or
-              exclusive. The Graham Residence reserves the right to (a)
+              exclusive. The Graham Collective reserves the right to (a)
               terminate your access to the Platform and/or Services, your
               ability to post to this Platform (or use the Services) and (b)
               refuse, delete or remove any Submissions; with or without cause
               and with or without notice, for any reason or no reason, or for
-              any action that The Graham Residence determines is inappropriate
+              any action that The Graham Collective determines is inappropriate
               or disruptive to this Platform or to any other user of this
-              Platform and/or Services. The Graham Residence MAY REPORT TO LAW
+              Platform and/or Services. The Graham Collective MAY REPORT TO LAW
               ENFORCEMENT AUTHORITIES ANY ACTIONS THAT MAY BE ILLEGAL, AND ANY
               REPORTS IT RECEIVES OF SUCH CONDUCT. WHEN LEGALLY REQUIRED OR AT
-              The Graham Residence’S DISCRETION, The Graham Residence WILL
+              The Graham Collective’S DISCRETION, The Graham Collective WILL
               COOPERATE WITH LAW ENFORCEMENT AGENCIES IN ANY INVESTIGATION OF
               ALLEGED ILLEGAL ACTIVITY ON THIS PLATFORM OR ON THE INTERNET.
             </p>
@@ -408,11 +408,11 @@ export default function Terms() {
             </p>
             <br />
             <p className="pt-4 text-sm">
-              You agree to indemnify and hold The Graham Residence and its
+              You agree to indemnify and hold The Graham Collective and its
               officers, directors, employees, affiliates, agents, licensors, and
               business partners harmless from and against any and all costs,
               damages, liabilities, and expenses (including attorneys’ fees and
-              costs of defense) The Graham Residence or any other indemnified
+              costs of defense) The Graham Collective or any other indemnified
               party suffers in relation to, arising from, or for the purpose of
               avoiding, any claim or demand from a third-party that your use of
               this Platform or the use of this Platform by any person using your
@@ -428,18 +428,18 @@ export default function Terms() {
               </strong>
             </p>
             <p className="pt-4 text-sm">
-              The Graham Residence, the The Graham Residence logo, and any other
+              The Graham Collective, the The Graham Collective logo, and any other
               product or service name or slogan on the Platform are trademarks
-              of The Graham Residence and its affiliates, suppliers or
+              of The Graham Collective and its affiliates, suppliers or
               licensors. You may not use any metatags or other “hidden text”
-              utilizing “The Graham Residence” or any other name, trademark or
-              product or service name of The Graham Residence or our affiliates,
+              utilizing “The Graham Collective” or any other name, trademark or
+              product or service name of The Graham Collective or our affiliates,
               suppliers or licensors without our prior written permission.
               Unless otherwise specified in these Terms, all information and
               screens appearing on this Platform, including documents, services,
               site design, text, graphics, logos, images and icons, as well as
               the arrangement thereof, are the sole property of The Graham
-              Residence. All rights not expressly granted herein are reserved.
+              Collective. All rights not expressly granted herein are reserved.
               Except as otherwise required or limited by applicable law, any
               reproduction, distribution, modification, retransmission, or
               publication of any copyrighted material is strictly prohibited
@@ -452,14 +452,14 @@ export default function Terms() {
               </strong>
             </p>
             <p className="pt-4 text-sm">
-              The Graham Residence respects the intellectual property rights of
-              others, and we ask you to do the same. The Graham Residence may,
+              The Graham Collective respects the intellectual property rights of
+              others, and we ask you to do the same. The Graham Collective may,
               in appropriate circumstances and at our discretion, terminate
               service and/or access to this Platform for users who infringe the
               intellectual property rights of others. If you believe that your
               work is the subject of copyright infringement and/or trademark
               infringement and appears on our Platform, please provide The
-              Graham Residence’s designated agent the following information:
+              Graham Collective’s designated agent the following information:
             </p>
 
             <ul
@@ -499,7 +499,7 @@ export default function Terms() {
                   infringing or to be the subject of infringing activity and
                   that is to be removed or access to which is to be disabled at
                   the Platform, and information reasonably sufficient to permit
-                  The Graham Residence to locate the material.
+                  The Graham Collective to locate the material.
                 </span>
               </li>
               <li className="flex gap-x-3">
@@ -509,7 +509,7 @@ export default function Terms() {
                 />
                 <span>
                   Information reasonably sufficient to permit The Graham
-                  Residence to contact you as the complaining party, such as an
+                  Collective to contact you as the complaining party, such as an
                   address, telephone number, and, if available, an electronic
                   mail address at which you may be contacted.
                 </span>
@@ -540,7 +540,7 @@ export default function Terms() {
             </ul>
 
             <p className="pt-4 text-sm">
-              The Graham Residence’s agent for notice of claims of copyright or
+              The Graham Collective’s agent for notice of claims of copyright or
               trademark infringement on this Platform can be reached at
               tgr@grahamresidence.com
             </p>
@@ -562,7 +562,7 @@ export default function Terms() {
               copyright-protected material that you provided, if such removal is
               pursuant to a valid DMCA take-down notice that we have received.
               If you receive such notice from us, you may provide us with a
-              counter-notification in writing to The Graham Residence designated
+              counter-notification in writing to The Graham Collective designated
               agent that includes all of the following information:
             </p>
             <ul
@@ -611,7 +611,7 @@ export default function Terms() {
                   the judicial district in which your physical address is
                   located, or if your physical address is outside of the United
                   States, for any judicial district in which The Graham
-                  Residence may be located, and that you will accept service of
+                  Collective may be located, and that you will accept service of
                   process from the person who provided notification of allegedly
                   infringing material or an agent of such person.
                 </span>
@@ -624,7 +624,7 @@ export default function Terms() {
               </strong>
             </p>
             <p className="pt-4 text-sm">
-              The Graham Residence reserves the right, in its sole discretion,
+              The Graham Collective reserves the right, in its sole discretion,
               to terminate the access of any user of our website and/or service
               who is the subject or repeated DMCA or other infringement
               notifications.
@@ -636,18 +636,18 @@ export default function Terms() {
               </strong>
               Your use of this Platform and/or the Services is at your own risk.
               The Materials have not been verified or authenticated in whole or
-              in part by The Graham Residence, and they may include inaccuracies
-              or typographical or other errors. The Graham Residence does not
+              in part by The Graham Collective, and they may include inaccuracies
+              or typographical or other errors. The Graham Collective does not
               warrant the accuracy of timeliness of the Materials contained on
-              this Platform. The Graham Residence has no liability for any
+              this Platform. The Graham Collective has no liability for any
               errors or omissions in the Materials, whether provided by The
-              Graham Residence, our licensors or suppliers or other users.
+              Graham Collective, our licensors or suppliers or other users.
             </p>
             <p className="pt-4">
-              ANY WARRANTIES MADE BY THE GRAHAM RESIDENCE ARE FOR THE BENEFIT OF
+              ANY WARRANTIES MADE BY THE GRAHAM COLLECTIVE ARE FOR THE BENEFIT OF
               THE USER OF THE WEBSITE ONLY AND NOT FOR THE BENEFIT OF ANY THIRD
               PARTY. ANY MATERIALS PROVIDED THROUGH THE PLATFORM ARE LICENSED
-              AND NOT SOLD. The Graham Residence, FOR ITSELF AND ITS LICENSORS,
+              AND NOT SOLD. The Graham Collective, FOR ITSELF AND ITS LICENSORS,
               MAKES NO EXPRESS, IMPLIED OR STATUTORY REPRESENTATIONS,
               WARRANTIES, OR GUARANTEES IN CONNECTION WITH THE PLATFORM, THE
               SERVICES, OR ANY MATERIALS RELATING TO THE QUALITY, SUITABILITY,
@@ -662,7 +662,7 @@ export default function Terms() {
               PROVIDED TO YOU ON AN “AS IS,” “AS AVAILABLE” AND “WHERE-IS” BASIS
               WITH NO WARRANTY OF IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS
               FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF THIRD-PARTY
-              RIGHTS. The Graham Residence DOES NOT PROVIDE ANY WARRANTIES
+              RIGHTS. The Graham Collective DOES NOT PROVIDE ANY WARRANTIES
               AGAINST VIRUSES, SPYWARE OR MALWARE THAT MAY BE INSTALLED ON YOUR
               COMPUTER. WE WILL NOT BE RESPONSIBLE OR LIABLE TO YOU FOR ANY LOSS
               AND TAKE NO RESPONSIBILITY FOR, AND WILL NOT BE LIABLE TO YOU FOR,
@@ -683,11 +683,11 @@ export default function Terms() {
                 Indemnity.
               </strong>
               To the fullest extent permitted by applicable law, you will
-              indemnify, defend and hold harmless The Graham Residence and its
+              indemnify, defend and hold harmless The Graham Collective and its
               subsidiaries and affiliates, and each of their respective
               officers, directors, employees, affiliates, agents, licensors, and
               service providers, and subcontractors (collectively, the “The
-              Graham Residence Parties”) from and against any and all losses,
+              Graham Collective Parties”) from and against any and all losses,
               liabilities, claims, demands, damages, expenses or costs
               (including attorneys’ fees and costs of defense) (“Claims”)
               arising out of or in connection with:
@@ -747,11 +747,11 @@ export default function Terms() {
             </ul>
 
             <p className="pt-4">
-              You will cooperate with the The Graham Residence Parties in
+              You will cooperate with the The Graham Collective Parties in
               defending such Claims and pay all fees, costs and expenses
               associated with defending such Claims (including, but not limited
-              to, attorneys' fees). The Graham Residence Parties will have
-              control of the defense or settlement, at The Graham Residence’s
+              to, attorneys' fees). The Graham Collective Parties will have
+              control of the defense or settlement, at The Graham Collective’s
               sole option, of any third-party Claims. Limitation of Liability.
             </p>
 
@@ -772,20 +772,20 @@ export default function Terms() {
 
             <p className="pt-4">
               TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT
-              SHALL The Graham Residence PARTIES BE LIABLE TO YOU FOR ANY
+              SHALL The Graham Collective PARTIES BE LIABLE TO YOU FOR ANY
               INDIRECT, EXTRAORDINARY, EXEMPLARY, PUNITIVE, SPECIAL, INCIDENTAL,
               OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF DATA, REVENUE,
               BUSINESS, PROFITS, GOODWILL, USE OR OTHER ECONOMIC ADVANTAGE)
               ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR THE SERVICES
               OR PLATFORM, OR ANY AND ALL MATERIALS, WHETHER CAUSED BY STRICT
               LIABILITY OR TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT, OR
-              OTHERWISE, AND EVEN IF The Graham Residence KNOWS THERE IS A
+              OTHERWISE, AND EVEN IF The Graham Collective KNOWS THERE IS A
               POSSIBILITY OF SUCH DAMAGE. TO THE MAXIMUM EXTENT PERMITTED BY
               APPLICABLE LAW, IN NO EVENT SHALL THE MAXIMUM AGGREGATE LIABILITY
-              OF The Graham Residence PARTIES ARISING OUT OF OR IN CONNECTION
+              OF The Graham Collective PARTIES ARISING OUT OF OR IN CONNECTION
               WITH THESE TERMS OR THE SERVICES OR PLATFORM, OR ANY AND ALL
               MATERIALS EXCEED THE GREATER OF (A) $100 OR (B) THE AMOUNT
-              RECEIVED BY The Graham Residence FOR ITS SERVICES DIRECTLY
+              RECEIVED BY The Graham Collective FOR ITS SERVICES DIRECTLY
               RELATING TO THE ITEMS THAT ARE THE SUBJECT OF THE CLAIM. THE
               FOREGOING LIMITATIONS WILL APPLY EVEN IF THE ABOVE STATED REMEDY
               FAILS OF ITS ESSENTIAL PURPOSE.
@@ -796,14 +796,14 @@ export default function Terms() {
                 Termination.
               </strong>
               If you breach any of the provisions of these Terms, all licenses
-              granted by The Graham Residence will terminate automatically.
+              granted by The Graham Collective will terminate automatically.
               Additionally, notwithstanding anything contained in these Terms,
               in its sole discretion, without prior notice, and without any
-              liability to you, The Graham Residence may temporarily or
+              liability to you, The Graham Collective may temporarily or
               permanently, suspend, restrict, or terminate access to any or all
               of Services at any time and for any or no reason. You acknowledge
-              and agree that The Graham Residence shall have no liability or
-              obligation to you in such event. The Graham Residence is under no
+              and agree that The Graham Collective shall have no liability or
+              obligation to you in such event. The Graham Collective is under no
               obligations to disclose its reason for any termination or
               suspension of the Service for you or generally.
             </p>
@@ -818,7 +818,7 @@ export default function Terms() {
             </p>
             <p>
               If you send or transmit any communications, comments, questions,
-              suggestions, or related materials to The Graham Residence, whether
+              suggestions, or related materials to The Graham Collective, whether
               by letter, email, telephone, or otherwise (collectively,
               “Feedback”), suggesting or recommending changes to the Platform,
               any Services offered through the Platform or Materials, including,
@@ -826,7 +826,7 @@ export default function Terms() {
               thereto, all such Feedback is, and will be treated as,
               non-confidential and non-proprietary. Except as prohibited by
               applicable law, you hereby assign all right, title, and interest
-              in, and The Graham Residence is free to use, without any
+              in, and The Graham Collective is free to use, without any
               attribution or compensation to you, any ideas, know-how, concepts,
               techniques, or other intellectual property and proprietary rights
               contained in the Feedback, whether or not patentable, for any
@@ -838,7 +838,7 @@ export default function Terms() {
               royalty-free, fully paid up license (including the right to
               sublicense) to use and exploit all Feedback as We may determine in
               our sole discretion. Notwithstanding the foregoing, you understand
-              and agree that The Graham Residence is not obligated to use,
+              and agree that The Graham Collective is not obligated to use,
               display, reproduce, or distribute any such ideas, know-how,
               concepts, or techniques contained in the Feedback, and you have no
               right to compel such use, display, reproduction, or distribution.
@@ -860,7 +860,7 @@ export default function Terms() {
               Most customer concerns can be resolved quickly and to a customer’s
               satisfaction by contacting us at orders@grahamresidence.com This
               Provision facilitates the prompt and efficient resolution of any
-              disputes that may arise between you and The Graham Residence.
+              disputes that may arise between you and The Graham Collective.
               Arbitration is a form of private dispute resolution in which
               persons with a dispute waive their rights to file a lawsuit, to
               proceed in court and to a jury trial, and instead submit their
@@ -871,7 +871,7 @@ export default function Terms() {
             </p>
             <p className="pt-2">
               Please read this Provision carefully. It provides that all
-              Disputes between you and The Graham Residence shall be resolved by
+              Disputes between you and The Graham Collective shall be resolved by
               binding arbitration. Arbitration replaces the right to go to
               court. In the absence of this arbitration agreement, you may
               otherwise have a right or opportunity to bring claims in a court,
@@ -886,13 +886,13 @@ export default function Terms() {
               fees).
             </p>
             <p className="pt-2">
-              For the purpose of this Provision, “The Graham Residence” means
-              The Graham Residence and its parents, subsidiary, and affiliate
+              For the purpose of this Provision, “The Graham Collective” means
+              The Graham Collective and its parents, subsidiary, and affiliate
               companies, and each of their respective officers, directors,
               employees, and agents. The term “Dispute” means any dispute,
-              claim, or controversy between you and The Graham Residence
+              claim, or controversy between you and The Graham Collective
               regarding, arising out of or relating to any aspect of your
-              relationship with The Graham Residence, whether based in contract,
+              relationship with The Graham Collective, whether based in contract,
               statute, regulation, ordinance, tort (including, but not limited
               to, fraud, misrepresentation, fraudulent inducement, or
               negligence), or any other legal or equitable cause of action or
@@ -901,7 +901,7 @@ export default function Terms() {
               of the Class Action Waiver clause below). “Dispute” is to be given
               the broadest possible meaning that will be enforced, and shall
               include any claims against other parties relating to services or
-              products provided or billed to you (such as The Graham Residence’s
+              products provided or billed to you (such as The Graham Collective’s
               licensors, suppliers, dealers or third-party vendors) whenever you
               also assert claims against us in the same proceeding.
             </p>
@@ -918,12 +918,12 @@ export default function Terms() {
                 Pre-Arbitration Claim Resolution.
               </strong>
               For all Disputes, whether pursued in court or arbitration, you
-              must first give The Graham Residence an opportunity to resolve the
+              must first give The Graham Collective an opportunity to resolve the
               Dispute. You must commence this process by mailing written
-              notification to The Graham Residence, [Answer #10]. That written
+              notification to The Graham Collective, [Answer #10]. That written
               notification must include (1) your name, (2) your address, (3) a
               written description of your Claim, and (4) a description of the
-              specific relief you seek. If The Graham Residence does not resolve
+              specific relief you seek. If The Graham Collective does not resolve
               the Dispute within 45 days after it receives your written
               notification, you may pursue your Dispute in arbitration. You may
               pursue your Dispute in a court only under the circumstances
@@ -934,18 +934,18 @@ export default function Terms() {
               <strong className="font-semibold text-gray-900">
                 Exclusions from Arbitration/Right to Opt Out
               </strong>
-              Notwithstanding the above, you or The Graham Residence may choose
+              Notwithstanding the above, you or The Graham Collective may choose
               to pursue a Dispute in court and not by arbitration if (a) the
               Dispute qualifies, it may be initiated in small claims court; or
               (b) YOU OPT-OUT OF THESE ARBITRATION PROCEDURES WITHIN 30 DAYS
               FROM THE DATE THAT YOU FIRST CONSENT TO THESE TERMS (the “Opt-Out
               Deadline”). You may opt out of this Provision by mailing written
-              notification to The Graham Residence, [Answer #10]. Your written
+              notification to The Graham Collective, [Answer #10]. Your written
               notification must include (1) your name, (2) your address, and (3)
               a clear statement that you do not wish to resolve disputes with
-              The Graham Residence through arbitration. Your decision to opt-out
+              The Graham Collective through arbitration. Your decision to opt-out
               of this Arbitration Provision will have no adverse effect on your
-              relationship with The Graham Residence. ANY OPT-OUT REQUEST
+              relationship with The Graham Collective. ANY OPT-OUT REQUEST
               RECEIVED AFTER THE OPT-OUT DEADLINE WILL NOT BE VALID AND YOU MUST
               PURSUE YOUR DISPUTE IN ARBITRATION OR SMALL CLAIMS COURT.
             </p>
@@ -956,7 +956,7 @@ export default function Terms() {
               </strong>
               If this Provision applies and the Dispute is not resolved as
               provided above (Pre-Arbitration Claim Resolution) either you or
-              The Graham Residence may initiate arbitration proceedings. The
+              The Graham Collective may initiate arbitration proceedings. The
               American Arbitration Association (“AAA”), www.adr.org, or JAMS,
               www.jamsadr.com, will arbitrate all Disputes, and the arbitration
               will be conducted before a single arbitrator. The arbitration
@@ -994,7 +994,7 @@ export default function Terms() {
               may be entered in any court having jurisdiction over the parties
               for purposes of enforcement. Location of Arbitration – The
               arbitration will take place in New York, NY in English language.
-              Payment of Arbitration Fees and Costs – The Graham Residence will
+              Payment of Arbitration Fees and Costs – The Graham Collective will
               pay all arbitration filing fees and AAA or JAMS hearing fees and
               any arbitrator's hearing fees, costs and expenses upon your
               written request to the arbitrator given at or before the first
@@ -1004,7 +1004,7 @@ export default function Terms() {
               and costs may be awarded as provided pursuant to applicable law.
               In addition to any rights to recover fees and costs under
               applicable law, if you provide notice and negotiate in good faith
-              with The Graham Residence as provided in the section above titled
+              with The Graham Collective as provided in the section above titled
               “Pre-Arbitration Claim Resolution” and the arbitrator concludes
               that you are the prevailing party in the arbitration, you will be
               entitled to recover reasonable attorney’s fees and costs as
@@ -1016,7 +1016,7 @@ export default function Terms() {
               otherwise preside over any form of a class or representative
               proceeding or claims (such as a class action, consolidated action,
               representative action, or private attorney general action) unless
-              both you and The Graham Residence specifically agree to do so in
+              both you and The Graham Collective specifically agree to do so in
               writing following initiation of the arbitration. IF YOU CHOOSE TO
               PURSUE YOUR DISPUTE IN COURT BY OPTING OUT OF THE ARBITRATION
               PROVISION, AS SPECIFIED ABOVE, THIS CLASS ACTION WAIVER WILL NOT
@@ -1031,9 +1031,9 @@ export default function Terms() {
                 Jury Waiver.
               </strong>
               You understand and agree that by entering into these Terms you and
-              The Graham Residence are each waiving the right to a jury trial or
+              The Graham Collective are each waiving the right to a jury trial or
               a trial before a judge in a public court. In the absence of this
-              Provision, you and The Graham Residence might otherwise have had a
+              Provision, you and The Graham Collective might otherwise have had a
               right or opportunity to bring Disputes in a court, before a judge
               or jury, and/or to participate or be represented in a case filed
               in court by others (including class actions). Except as otherwise
@@ -1061,11 +1061,11 @@ export default function Terms() {
                 Continuation:
               </strong>
               This Provision shall survive the termination of your service with
-              The Graham Residence or its affiliates. Notwithstanding any
+              The Graham Collective or its affiliates. Notwithstanding any
               provision in these Terms to the contrary, we agree that if The
-              Graham Residence makes any change to this Provision (other than a
+              Graham Collective makes any change to this Provision (other than a
               change to the Notice Address), you may reject any such change and
-              require The Graham Residence to adhere to the present language in
+              require The Graham Collective to adhere to the present language in
               this Provision if a dispute between us arises.
             </p>
 
@@ -1078,10 +1078,10 @@ export default function Terms() {
 
             <p className="pt-4">
               <strong className="font-semibold text-gray-900">General.</strong>
-              The Graham Residence prefers to advise you if we feel you are not
+              The Graham Collective prefers to advise you if we feel you are not
               complying with these Terms and to recommend any necessary
               corrective action. However, certain violations of these Terms, as
-              determined by The Graham Residence, may result in immediate
+              determined by The Graham Collective, may result in immediate
               termination of your access to this Platform without prior notice
               to you. The Federal Arbitration Act, the laws of the State of New
               York, and applicable U.S. federal law, without regard to the
@@ -1095,23 +1095,23 @@ export default function Terms() {
               the State of New York. If any of these Terms is found to be
               inconsistent with applicable law, then such term shall be
               interpreted to reflect the intentions of the parties, and no other
-              terms will be modified. The Graham Residence’s failure to enforce
+              terms will be modified. The Graham Collective’s failure to enforce
               any of these Terms is not a waiver of such term. Except as
               expressly stated otherwise, these Terms are the entire agreement
-              between you and The Graham Residence and supersede all prior or
+              between you and The Graham Collective and supersede all prior or
               contemporaneous negotiations, discussions or agreements between
-              you and The Graham Residence about this Platform. The proprietary
+              you and The Graham Collective about this Platform. The proprietary
               rights, disclaimer of warranties, representations made by you,
               indemnities, limitations of liability and general provisions shall
               survive any termination of these Terms.
             </p>
 
             <p className="pt-2">
-              The Graham Residence may make changes to the content and Services
-              offered on the Platform at any time. The Graham Residence can
+              The Graham Collective may make changes to the content and Services
+              offered on the Platform at any time. The Graham Collective can
               change, update, or add or remove provisions of these Terms, at any
               time by posting the updated Terms on this Platform. By using this
-              Platform after The Graham Residence has updated the Terms, you are
+              Platform after The Graham Collective has updated the Terms, you are
               agreeing to all the updated Terms; if you do not agree with any of
               the updated Terms, you must stop using the Platform.
             </p>
@@ -1121,7 +1121,7 @@ export default function Terms() {
                 Contact Us.
               </strong>
               If you have any questions about these Terms or otherwise need to
-              contact The Graham Residence for any reason, you can reach us at
+              contact The Graham Collective for any reason, you can reach us at
               tgr@grahamresidence.com.
             </p>
           </div>

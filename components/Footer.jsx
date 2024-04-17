@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-black-400">
-            &copy; 2024 The Graham Residence
+            &copy; 2024 The Graham Collective
           </p>
         </div>
       </div>

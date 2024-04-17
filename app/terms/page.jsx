@@ -16,7 +16,7 @@ export default function TermsConditions() {
         <div className="px-2 lg:contents lg:mt-20 sm:mt-10">
           <div className="mx-auto max-w-3xl sm:pb-32 lg:pt-16 sm:pt-6 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
             <p className="text-base font-semibold leading-7 text-[#9c4f1f]">
-              The Graham Residence
+              The Graham Collective
             </p>
             <h1 className="my-2 pb-2 text-3xl font-thin tracking-tight text-gray-900 sm:text-4xl">
               Terms & Conditions

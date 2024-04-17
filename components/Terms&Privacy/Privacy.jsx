@@ -7,8 +7,8 @@ export default function Privacy() {
         <div className="text-gray-700">
           <div className="text-sm leading-6 text-gray-700">
             <p>
-              The Graham Residence and its subsidiaries and affiliates (“The
-              Graham Residence”, “we”, “us”, or “our”) recognizes the importance
+              The Graham Collective and its subsidiaries and affiliates (“The
+              Graham Collective”, “we”, “us”, or “our”) recognizes the importance
               of privacy and values the privacy of our customers, website users,
               vendors and suppliers. This Notice describes how we collect, use,
               disclose and otherwise process the personal data described in this
@@ -20,7 +20,7 @@ export default function Privacy() {
             </p>
             <p>
               Except as otherwise noted, this Notice applies to the personal
-              data that The Graham Residence processes related to:
+              data that The Graham Collective processes related to:
             </p>
             <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
               <li className="flex gap-x-3">
@@ -95,7 +95,7 @@ export default function Privacy() {
             <p className="pt-6 text-sm">
               You understand that your use of our Services, and any dispute over
               privacy, is subject to this Notice, the respective terms of use
-              (the “Terms”), between you and The Graham Residence, such as our
+              (the “Terms”), between you and The Graham Collective, such as our
               Terms of Use and any other relevant applicable agreements.
             </p>
 
@@ -141,7 +141,7 @@ export default function Privacy() {
                 <span>
                   Communications and interactions: When you email, call, or
                   otherwise communicate with us and with members of The Graham
-                  Residence team, we collect and maintain a record of your
+                  Collective team, we collect and maintain a record of your
                   contact details, communications, and our responses. We also
                   maintain records of communications and information that you
                   provide when you otherwise engage with us, such as through our
@@ -237,7 +237,7 @@ export default function Privacy() {
                 />
                 <span>
                   If you post information about us or engage with us on third
-                  party platforms or choose to link your The Graham Residence
+                  party platforms or choose to link your The Graham Collective
                   account to our Services with a third-party account (e.g.,
                   GooglePay), we may collect personal information about you from
                   that third party platform or account. These third-party
@@ -331,7 +331,7 @@ export default function Privacy() {
                 />
                 <span>
                   If you post information about us or engage with us on third
-                  party platforms or choose to link your The Graham Residence
+                  party platforms or choose to link your The Graham Collective
                   account to our Services with a third-party account (e.g.,
                   GooglePay), we may collect personal information about you from
                   that third party platform or account. These third-party
@@ -398,7 +398,7 @@ export default function Privacy() {
                 <span>
                   Communications and interactions: When you email, call, or
                   otherwise communicate with us and with members of The Graham
-                  Residence team, we collect and maintain a record of your
+                  Collective team, we collect and maintain a record of your
                   contact details, communications, and our responses. We also
                   maintain records of communications and information that you
                   provide when you otherwise engage with us, such as through our
@@ -475,7 +475,7 @@ export default function Privacy() {
                 />
                 <span>
                   If you post information about us or engage with us on third
-                  party platforms or choose to link your The Graham Residence
+                  party platforms or choose to link your The Graham Collective
                   account to our Services with a third-party account (e.g.,
                   GooglePay), we may collect personal information about you from
                   that third party platform or account. These third-party
@@ -791,7 +791,7 @@ export default function Privacy() {
                   aria-hidden="true"
                 />
                 <span>
-                  Other The Graham Residence users: Any information, including
+                  Other The Graham Collective users: Any information, including
                   personal information, that you post to our Services,
                   including, without limitation, reviews, comments, and text
                   will be viewable by other users of the Services.
@@ -835,7 +835,7 @@ export default function Privacy() {
                   aria-hidden="true"
                 />
                 <span>
-                  In support of business transfers: If The Graham Residence or
+                  In support of business transfers: If The Graham Collective or
                   our affiliates are or may be acquired by, merged with, or
                   invested in by another company, or if any of our assets are or
                   may be transferred to another company, whether as part of a
@@ -1089,7 +1089,7 @@ export default function Privacy() {
               about any relevant third party sharing in the prior calendar year.
               If you are a California resident and would like to make such a
               request, please submit your request in writing by emailing us at
-              info@The Graham Residence.com, using the subject line "Request for
+              info@The Graham Collective.com, using the subject line "Request for
               California Privacy Information." In your request, please attest to
               the fact that you are a California resident and provide a current
               California address. We will reply to valid requests by sending a

@@ -136,7 +136,7 @@ export default function Modal() {
                                   {" "}
                                   By signing up, you agree to receive emails
                                   from <br className="hidden sm:inline"></br>{" "}
-                                  The Graham Residence
+                                  The Graham Collective
                                 </p>
                               </form>
                             </div>
