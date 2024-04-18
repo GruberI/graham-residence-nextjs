@@ -32,19 +32,6 @@ export default function HeroImageText() {
                 <ChevronDownIcon className="h-[30px] text-[#d9d2ca] mt-10 font-thin opacity-60" />
               </a>
             </Fade>
-            {/* Shop buttons */}
-            {/* <a
-              href="/art"
-              className="rounded-sm border px-3.5 py-2.5 text-sm font-normal text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-            >
-              Shop Artwork
-            </a>
-            <a
-              href="/home"
-              className="text-sm font-normal leading-6 text-white hover:text-neutral-300 hover:underline hover:underline-offset-8"
-            >
-              Shop Home <span aria-hidden="true">→</span>
-            </a> */}
           </div>
         </div>
       </div>

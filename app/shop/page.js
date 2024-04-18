@@ -5,10 +5,12 @@ import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
 import Featured from "@/components/Shop/Featured";
 import Section from "@/components/Shop/Section.jsx";
-import Instagram from "@/components/Shop/Instagram";
+import PhotoSection from "@/components/Shop/PhotoSection";
+// import Instagram from "@/components/Shop/Instagram";
 // import Carousel from "@/components/Carousel/Carousel.jsx";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
+import VendorFeature from "@/components/Shop/VendorFeature"
 
 export const metadata = {
   title: 'The Graham Residence Shop',
@@ -42,9 +44,10 @@ export default async function Shop() {
       </Suspense>
       <Section />
       <GoodsSection products={products} />
-      <Featured />
+      <VendorFeature />
       <ArtSection products={products} />
-      <Instagram />
+      <Featured />
+      <PhotoSection products={products}/>
     </div>
   );
 }

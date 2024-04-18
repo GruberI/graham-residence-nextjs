@@ -92,7 +92,7 @@ export default class Carousel extends Component {
           <h1 className="sm:text-3xl text-2xl">New Arrivals</h1>
           <a
             href="/home"
-            className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
+            className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 "
           >
             VIEW ALL
           </a>
