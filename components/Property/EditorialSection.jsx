@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const posts = [
   {
     id: 1,
@@ -61,9 +63,11 @@ export default function EditorialSection() {
                   {post.description}
                 </div>
 
-                <button className="bg-white text-black py-2 w-24 sm:w-28">
-                  {post.buttonText}
-                </button>
+                <Link href={post.href}>
+                  <button className="bg-white text-black py-2 w-24 sm:w-28">
+                    {post.buttonText}
+                  </button>
+                </Link>
               </div>
             </article>
           ))}

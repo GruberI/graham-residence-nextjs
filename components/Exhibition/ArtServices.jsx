@@ -7,7 +7,7 @@ export default function ArtServices() {
         <h1 className="sm:text-5xl text-4xl text-center pb-10">
           Art Advisory Services
         </h1>
-        <h3 className="sm:text-lg text-xl text-center pb-4 mx-20">
+        <h3 className="sm:text-lg text-xl text-center pb-4 mx-6 md:mx-20">
           Lindsey Goldberg provides art advisory services for projects of any
           size and scope. As your dedicated advisor, with deep industry
           expertise and a keen eye, she will help find the perfect artwork for
@@ -15,7 +15,7 @@ export default function ArtServices() {
         </h3>
       </div>
       {/* Section 1 */}
-      <div className="m-auto sm:px-0 mx-8 pt-6 sm:pt-10 " id="featured">
+      <div className="m-auto sm:px-0 md:mx-8 pt-6 sm:pt-10 " id="featured">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="grid grid-cols-1 items-center gap-x-2 gap-y-16 lg:grid-cols-2">
             <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
@@ -26,7 +26,7 @@ export default function ArtServices() {
               />
             </div>
 
-            <div className="ml-5 flex flex-col content-start">
+            <div className="ml-5 flex flex-col content-start mb-10 sm:mb-0">
               <div>
                 <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
                   For Individuals
@@ -55,7 +55,7 @@ export default function ArtServices() {
       {/* Section 2 */}
       <div className="m-auto sm:px-0 mx-8" id="featured">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-16 lg:grid-cols-2 hidden lg:inline-flex">
             <div className="ml-5 flex flex-col content-start">
               <div>
                 <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
@@ -87,6 +87,41 @@ export default function ArtServices() {
               />
             </div>
           </div>
+          {/*Small / Mobile view*/}
+
+          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-16 lg:grid-cols-2 inline-flex lg:hidden">
+            <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
+              <img
+                src="https://ipfs.filebase.io/ipfs/QmYRLnrT8zADbjBXsjSqV9mA97Bw1HW6EDXonPHuMSKZ6h"
+                alt="Kyle Steed painting in The Graham Residence living room during the day."
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+            <div className="ml-5 flex flex-col content-start mb-10 sm:mb-0">
+              <div>
+                <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
+                  For Organizations
+                </p>
+              </div>
+
+              <div className="mt-2 space-y-10">
+                <p className="tracking-wide leading-7">
+                  Artwork completes a space. It fosters culture and connection.
+                  The Graham Collective curates original artworks for
+                  workspaces, hospitality, retail, and healthcare projects.
+                </p>
+              </div>
+              <div className="pt-4 pb-4">
+                <Link
+                  href={"/gallery/kyle-steed"}
+                  className="underline underline-offset-8 hover:text-neutral-600 text-xs"
+                >
+                  GET STARTED
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* ----- */}
         </div>
       </div>
       {/* Section 3 */}

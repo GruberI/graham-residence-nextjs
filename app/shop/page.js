@@ -10,12 +10,13 @@ import PhotoSection from "@/components/Shop/PhotoSection";
 // import Carousel from "@/components/Carousel/Carousel.jsx";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
-import VendorFeature from "@/components/Shop/VendorFeature"
+import VendorFeature from "@/components/Shop/VendorFeature";
 
 export const metadata = {
-  title: 'The Graham Residence Shop',
-  description: 'Discover the best contemporary artists and shop curated goods inspired by West Coast minimalism.',
-}
+  title: "The Graham Residence Shop",
+  description:
+    "Discover the best contemporary artists and shop curated goods inspired by West Coast minimalism.",
+};
 
 export default async function Shop() {
   const products = await getProducts({});
@@ -47,7 +48,7 @@ export default async function Shop() {
       <VendorFeature />
       <ArtSection products={products} />
       <Featured />
-      <PhotoSection products={products}/>
+      <PhotoSection products={products} />
     </div>
   );
 }

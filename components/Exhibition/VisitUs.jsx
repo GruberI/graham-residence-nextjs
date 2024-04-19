@@ -49,13 +49,15 @@ export default function VisitUs() {
                   <Link href={post.href}>{post.title}</Link>
                 </h3>
 
-                <div className="text-center font-light mx-20 mb-8">
+                <div className="text-center font-light sm:mx-20 mb-8">
                   {post.description}
                 </div>
-
-                <button className="bg-white text-black py-2 w-28 sm:w-48 text-[10px]">
-                  {post.buttonText}
-                </button>
+                <Link href={post.href}>
+                  {" "}
+                  <button className="bg-white text-black py-2 w-40 sm:w-48 text-[10px] hover:text-white hover:bg-black">
+                    {post.buttonText}
+                  </button>
+                </Link>
               </div>
             </article>
           ))}
