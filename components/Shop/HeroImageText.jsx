@@ -6,6 +6,15 @@ export default function HeroImageText() {
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
+
+      <div className="mx-auto max-w-4xl mt-80 sm:mt-64">
+        <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
+        <div className="text-center mb-36">
+          <h1 className="font-thin tracking-wide text-white sm:text-6xl text-3xl animate-fadeTwo font-[cormorant]">
+            The Graham Shop
+          </h1>
+        </div>
+      </div>
     </div>
   );
 }

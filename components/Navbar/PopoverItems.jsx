@@ -4,9 +4,19 @@ import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 
 const navigation = {
+  first: [
+    {
+      name: "Residence",
+      href: "/residence",
+    },
+    {
+      name: "Gallery",
+      href: "/gallery",
+    }
+  ],
   categories: [
     {
-      name: "The Collection",
+      name: "Shop",
       href: "/shop",
       categories: [
         { name: "Kyle Steed", href: "/art/kyle-steed" },
@@ -25,12 +35,6 @@ const navigation = {
         { name: "View All", href: "/home" },
       ],
       shop: [],
-    },
-  ],
-  first: [
-    {
-      name: "Graham Gallery",
-      href: "/gallery",
     },
   ],
   second: [
