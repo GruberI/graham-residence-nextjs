@@ -35,8 +35,7 @@ export default function Section() {
 
             <div className="pb-8">
               <p className="tracking-wide text-xl sm:text-2xl">
-                Discover the best contemporary artists and shop curated goods
-                inspired by West Coast minimalism.
+              Great design has the power to bring delight to every day. Discover the best contemporary artists and shop curated goods inspired by West Coast minimalism.
               </p>
             </div>
 

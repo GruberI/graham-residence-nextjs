@@ -14,7 +14,7 @@ export default function Hero() {
             About the
           </p>
           <h1 className="font-thin tracking-wide text-white sm:text-6xl text-3xl animate-fadeTwo font-[cormorant]">
-            THE GRAHAM RESIDENCE
+            The Graham Collective
           </h1>
         </div>
       </div>
