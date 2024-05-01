@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import SignUp from "@/components/SignUp";
 import StickyCart from "@/components/Cart/stickyCart.jsx";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
         <Contact />
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-M4X900NBP2" />
     </html>
   );
 }

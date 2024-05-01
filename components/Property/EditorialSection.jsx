@@ -3,68 +3,67 @@ import Link from "next/link";
 const posts = [
   {
     id: 1,
-    title: "The Graham Residence",
-    href: "/about",
+    title: "Residence",
+    href: "/residence",
     description:
       "A serene mid-century modern retreat near Joshua Tree National Park .",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmNMPqyr8TZUSXnjttbCzJ3xd6aHoXRFe1SBn7Knc56FgA/QmS9PPjdbzKRuFei3QZ4HhxxLfyBfLCxnzez1mdSyyfmZj",
     date: "Mar 16, 2020",
-    buttonText: "STAY",
+    buttonText: "LEARN MORE",
   },
   {
     id: 2,
-    title: "The Graham Gallery",
+    title: "Gallery",
     href: "/gallery",
     description:
       "Contextual gallery spaces exhibiting the best in emerging contemporary art.",
     imageUrl:
-      "https://ipfs.filebase.io/ipfs/QmeXQ83SihmhTBByGoU23be534CxH1Ccgg9FaUWFuwz5nS",
+      "https://ipfs.filebase.io/ipfs/QmcmqwxzxdKtcsq89tPi1a1afZqFQFEXk3T5KGDFHo7G9e/RackMultipart20240501-172-6jtxp6.jpg",
     date: "Mar 16, 2020",
-    buttonText: "EXPLORE",
+    buttonText: "COLLECT",
   },
   {
     id: 3,
-    title: "The Graham Shop",
+    title: "Shop",
     href: "/shop",
     description:
       "An intentionally curated selection of our favorite home goods.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmYZRYNpXVYf4D4SwoppYJa5rmRrVyKFPq4Nyf5T421DDA/QmekpobXk8pKQ4no7187Zio7vGqjYCdRriTnJJ7D7X8WcY",
     date: "Mar 16, 2020",
-    buttonText: "SHOP",
+    buttonText: "EXPLORE",
   },
 ];
 
 export default function EditorialSection() {
   return (
-    <div className="bg-white mb-10">
+    <div className="bg-neutral-100 py-10">
       <div className="mx-auto mx-12 sm:mx-20">
         <div className="mx-auto mt-16 grid auto-rows-fr grid-cols-1 gap-12 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 aspect-square"
+              className="flex flex-col items-start justify-between"
             >
-              <img
-                src={post.imageUrl}
-                alt=""
-                className="absolute inset-0 -z-10 h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 -z-10" />
-              <div className="absolute inset-0 -z-10 ring-1 ring-inset ring-gray-900/10" />
+              <div className="w-full">
+                <img
+                  src={post.imageUrl}
+                  alt=""
+                  className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square"
+                />
+              </div>
 
-              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 absolute top-[38%] right-[2%] justify-center">
-                <h3 className="mt-3 text-xl font-semibold leading-6 text-white">
+              <div className="flex flex-col">
+                <h3 className="text-2xl font-semibold leading-6 text-gray-900 m-auto mt-6">
                   <a href={post.href}>{post.title}</a>
                 </h3>
-
-                <div className="ml-2 text-center mb-4 font-light">
+                <p className="line-clamp-3 text-sm text-gray-600 m-auto text-center w-9/12 my-2">
                   {post.description}
-                </div>
+                </p>
 
-                <Link href={post.href}>
-                  <button className="bg-white text-black py-2 w-24 sm:w-28">
+                <Link href={post.href} className="m-auto">
+                  <button className="bg-white text-sm lg:text-sm text-black py-2.5 w-32 sm:w-36 border border-black mt-2 hover:bg-black hover:text-white">
                     {post.buttonText}
                   </button>
                 </Link>

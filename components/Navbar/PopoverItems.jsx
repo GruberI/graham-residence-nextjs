@@ -9,10 +9,30 @@ const navigation = {
       name: "Residence",
       href: "/residence",
     },
+  ],
+  gallery: [
     {
       name: "Gallery",
       href: "/gallery",
-    }
+      exhibitions: [
+        { name: "On View", href: "/" },
+        { name: "Upcoming", href: "/" },
+        { name: "Past", href: "/" },
+        { name: "View All", href: "/" },
+      ],
+      artists: [
+        { name: "Kyle Steed", href: "/art/kyle-steed" },
+        { name: "Thai Mainhard", href: "/art/thai-mainhard" },
+        { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
+        { name: "View All", href: "/art" },
+      ],
+      contact: [
+        { name: "Visit Us", href: "/" },
+        { name: "Consulting", href: "/" },
+        { name: "Artist Submission", href: "/" },
+        { name: "Subscribe", href: "/gallery#subscribe" },
+      ],
+    },
   ],
   categories: [
     {
@@ -86,12 +106,12 @@ export default function PopoverItems({ color, pathname }) {
           </a>
         ))}
 
-        {navigation.categories.map((category, categoryIdx) => (
+        {navigation.gallery.map((category, categoryIdx) => (
           <Popover key={categoryIdx} className="flex">
             {({ open }) => (
               <>
                 <div
-                  className="relative flex"
+                  className="flex relative"
                   onMouseEnter={() => handleEnter(open)}
                 >
                   <Popover.Button
@@ -126,7 +146,6 @@ export default function PopoverItems({ color, pathname }) {
                     className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-6/12 m-auto border"
                     onMouseLeave={() => handleLeave(open)}
                   >
-                    {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                     <div
                       className="absolute inset-0 top-1/2 bg-white shadow"
                       aria-hidden="true"
@@ -135,14 +154,68 @@ export default function PopoverItems({ color, pathname }) {
                     <div className="relative bg-white">
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
-                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-2">
-                            {/* <div>
+                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
+                            <div>
+                              <a href="gallery/exhibitions">
+                                <p
+                                  id="art-heading"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                >
+                                  EXHIBITIONS
+                                </p>
+                              </a>
+                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-2 sm:gap-x-6">
+                                <ul
+                                  role="list"
+                                  aria-labelledby="art-heading"
+                                  className="space-y-1 sm:space-y-4"
+                                >
+                                  {category.exhibitions.map((item) => (
+                                    <li key={item.name} className="flex">
+                                      <Link
+                                        href={item.href}
+                                        className="hover:text-gray-800 lg:tracking-widest leading-7 text-sm lg:text-base"
+                                      >
+                                        {item.name}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="/shop">
+                                <p
+                                  id="home-heading"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                >
+                                  ARTISTS
+                                </p>
+                              </a>
+                              <ul
+                                role="list"
+                                aria-labelledby="home-heading"
+                                className="pt-4 space-y-1 border-t border-gray-200 sm:space-y-4"
+                              >
+                                {category.artists.map((item) => (
+                                  <li key={item.name} className="flex">
+                                    <Link
+                                      href={item.href}
+                                      className="hover:text-gray-800 tracking-widest leading-7 text-sm lg:text-base"
+                                    >
+                                      {item.name}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div>
                               <a href="/gallery">
                                 <p
                                   id="categories-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 text-sm xl:text-lg"
                                 >
-                                  GRAHAM GALLERY
+                                  GET IN TOUCH
                                 </p>
                               </a>
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
@@ -151,7 +224,7 @@ export default function PopoverItems({ color, pathname }) {
                                   aria-labelledby="categories-heading"
                                   className="space-y-2 sm:space-y-4"
                                 >
-                                  {category.categories.map((item) => (
+                                  {category.contact.map((item) => (
                                     <li key={item.name} className="flex">
                                       <Link
                                         href={item.href}
@@ -163,7 +236,67 @@ export default function PopoverItems({ color, pathname }) {
                                   ))}
                                 </ul>
                               </div>
-                            </div> */}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Popover.Panel>
+                </Transition>
+              </>
+            )}
+          </Popover>
+        ))}
+
+        {navigation.categories.map((category, categoryIdx) => (
+          <Popover key={categoryIdx} className="flex">
+            {({ open }) => (
+              <>
+                <div
+                  className="flex"
+                  onMouseEnter={() => handleEnter(open)}
+                >
+                  <Popover.Button
+                    ref={triggerRef}
+                    className={classNames(
+                      open ? "black" : "hover:text-neutral-300",
+                      `relative z-10 flex items-center border-b-1 pt-px text-xs md:text-base xl:text-lg duration-300 ease-out outline-none`
+                    )}
+                    style={
+                      pathname == "/" ? { color: color } : { color: "black" }
+                    }
+                  >
+                    <Link
+                      href={category.href}
+                      className="hover:text-neutral-300 hover:underline hover:underline-offset-8"
+                    >
+                      {category.name}
+                    </Link>
+                  </Popover.Button>
+                </div>
+
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-200"
+                  enterFrom="opacity-0"
+                  enterTo="opacity-100"
+                  leave="transition ease-in duration-150"
+                  leaveFrom="opacity-100"
+                  leaveTo="opacity-0"
+                >
+                  <Popover.Panel
+                    className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-6/12 m-auto border"
+                    onMouseLeave={() => handleLeave(open)}
+                  >
+                    <div
+                      className="absolute inset-0 top-1/2 bg-white shadow"
+                      aria-hidden="true"
+                    />
+
+                    <div className="relative bg-white">
+                      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                        <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
+                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-2">
                             <div>
                               <a href="/art">
                                 <p
