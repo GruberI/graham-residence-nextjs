@@ -1,6 +1,6 @@
 export default function Banner({ banner }) {
   return (
-    <div className="m-auto border-t border-black max-w-7xl">
+    <div className="m-auto border-t border-black max-w-7xl mb-10">
       <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-20">
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
           <div>
@@ -15,7 +15,7 @@ export default function Banner({ banner }) {
           <div>
             <div className="m-auto space-y-6 flex flex-col justify-center items-center w-10/12">
               <p>MEET</p>
-              <h1 className="sm:text-6xl text-4xl sm:font-thin font-semibold">
+              <h1 className="sm:text-5xl text-4xl sm:font-thin font-semibold">
                 {banner.artist}
               </h1>
 
