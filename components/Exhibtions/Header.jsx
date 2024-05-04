@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="bg-white mt-48 lg:mt-40" id="current-exhibit">
+    <div className="bg-white mt-48 lg:mt-40 pb-8 sm:pb-0" id="current-exhibit">
       <div className="mx-10">
         <h1 className="sm:text-5xl text-3xl sm:pb-6 pb-1 tracking-widest sm:mt-6 mb-10 text-center">
           Current Exhibitions

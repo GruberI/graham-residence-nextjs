@@ -21,7 +21,7 @@ export default function UpcomingExhibitionList() {
   return (
     <div className="sm:mt-10 border-t border-black pt-10 sm:pt-16 m-auto sm:pb-20 mx-10">
       <div className="mb-10">
-        <h1 className="sm:text-3xl text-2xl">Upcoming Exhibitions</h1>
+        <h1 className="sm:text-3xl text-2xl text-center sm:text-left">Upcoming Exhibitions</h1>
       </div>
       <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 sm:grid-cols-2 px-4 sm:px-2 md:px-0">
         {artistExhibitions.map((exhibit, i) => {

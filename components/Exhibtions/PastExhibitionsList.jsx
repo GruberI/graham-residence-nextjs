@@ -24,9 +24,9 @@ const artistExhibitions = [
 
 export default function PastExhibitionList() {
   return (
-    <div className="sm:mt-24 border-t border-b border-black pt-10 sm:pt-16 m-auto sm:pb-10 mx-10">
+    <div className="sm:mt-24 border-t border-b border-black pt-10 sm:pt-16 m-auto pb-10 mx-10">
       <div className="mb-10">
-        <h1 className="sm:text-3xl text-2xl">Past Exhibitions</h1>
+        <h1 className="sm:text-3xl text-2xl text-center sm:text-left">Past Exhibitions</h1>
       </div>
       <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 sm:grid-cols-2 px-4 sm:px-2 md:px-0">
         {artistExhibitions.map((exhibit, i) => {

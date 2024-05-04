@@ -24,9 +24,9 @@ const navigation = {
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
         { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
-        { name: "David Matthew King", href: "/art/david-matthew-king"},
-        { name: "Marcel Rozek", href: "/art/marcel-rozek"},
-        { name: "View All", href: "/art" },
+        // { name: "David Matthew King", href: "/art/david-matthew-king"},
+        // { name: "Marcel Rozek", href: "/art/marcel-rozek"},
+        { name: "View All", href: "/gallery/artists" },
       ],
       contact: [
         { name: "Visit Us", href: "/gallery#visit-us" },
