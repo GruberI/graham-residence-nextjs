@@ -9,11 +9,17 @@ export default function Section() {
           <div>
             <Slide direction="left">
               <div className="sm:space-y-4 space-y-0">
-                <p className="tracking-wide text-2xl md:text-3xl lg:text-5xl text-center lg:text-left">
+                <p className="tracking-wide text-2xl md:text-3xl lg:text-5xl text-center lg:text-left mb-10">
                   Within the walls of The Graham Residence lies Graham Gallery,
                   a rotating exhibition space featuring original artwork by
                   emerging contemporary artists.{" "}
                 </p>
+                <a
+                  href="/exhibitions"
+                  className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 pt-6"
+                >
+                  Explore Exhibitions
+                </a>
               </div>
             </Slide>
           </div>

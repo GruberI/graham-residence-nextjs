@@ -25,6 +25,12 @@ export default function SectionFirst() {
                     gallery are blurred. Situated on 20 acres of pristine land,
                     this is Mojave Desert living at its finest.{" "}
                   </p>
+                  <a
+                    href="#property-book"
+                    className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 pl-2"
+                  >
+                    Book a stay
+                  </a>
                 </div>
               </Slide>
             </div>

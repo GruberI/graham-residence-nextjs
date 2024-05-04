@@ -2,7 +2,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-export default function SignUp() {
+export default function JoinList() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
@@ -22,14 +22,14 @@ export default function SignUp() {
   };
 
   return (
-    <div className="bg-white py-10 sm:py-24 border-t border-black mt-20" id="subscribe">
-      <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div className="bg-white pt-10 sm:pt-20 border-t border-black sm:mt-20 mt-10 pb-20 sm:pb-0 max-w-7xl m-auto">
+      <div className="mx-auto sm:px-6 lg:px-8">
         <div className="relative isolate overflow-hidden px-6 sm:px-24">
           <h2 className="mx-auto max-w-2xl text-center text-2xl font-sm text-black sm:text-3xl">
-            subscribe
+            join the list
           </h2>
           <p className="mx-auto mt-2 max-w-xl text-center text-sm leading-8">
-            Sign up to be notified when we have new exhibitions and events
+            Sign up to collect previews evenst, openins and drops
           </p>
           <form
             className="mx-auto mt-10 flex max-w-md gap-x-4"
@@ -58,6 +58,7 @@ export default function SignUp() {
           </form>
         </div>
       </div>
+      <div id="past-exhibitions"></div>
     </div>
   );
 }

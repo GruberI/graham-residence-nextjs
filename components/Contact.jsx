@@ -3,8 +3,8 @@ const contact = [
   {
     name: "artwork",
     text: "Artwork & shop inquires:",
-    subtext: "tgr@grahamresidence.com",
-    email: "tgr@grahamresidence.com",
+    subtext: "info@graham-collective.com",
+    email: "info@graham-collective.com",
     subject: "TGR Artwork or Shop Inquiry",
   },
   {

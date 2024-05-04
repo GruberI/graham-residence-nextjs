@@ -15,21 +15,23 @@ const navigation = {
       name: "Gallery",
       href: "/gallery",
       exhibitions: [
-        { name: "On View", href: "/" },
-        { name: "Upcoming", href: "/" },
-        { name: "Past", href: "/" },
+        { name: "On View", href: "/exhibitions#current-exhibit" },
+        { name: "Upcoming", href: "/exhibitions#upcoming-exhibitions" },
+        { name: "Past", href: "/exhibitions#past-exhibitions" },
         { name: "View All", href: "/" },
       ],
       artists: [
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
         { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
+        { name: "David Matthew King", href: "/art/david-matthew-king"},
+        { name: "Marcel Rozek", href: "/art/marcel-rozek"},
         { name: "View All", href: "/art" },
       ],
       contact: [
-        { name: "Visit Us", href: "/" },
-        { name: "Consulting", href: "/" },
-        { name: "Artist Submission", href: "/" },
+        { name: "Visit Us", href: "/gallery#visit-us" },
+        // { name: "Consulting", href: "/"},
+        { name: "Artist Submission", href: "/gallery/#consulting-services" },
         { name: "Subscribe", href: "/gallery#subscribe" },
       ],
     },
@@ -170,7 +172,7 @@ export default function PopoverItems({ color, pathname }) {
                         <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
                           <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
-                              <a href="gallery/exhibitions">
+                              <a href="/exhibitions">
                                 <p
                                   id="art-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"

@@ -3,7 +3,7 @@ import HeroImageText from "@/components/Exhibition/HeroImage";
 import Section from "@/components/Exhibition/Section";
 import MeetArtist from "@/components/Exhibition/MeetArtist";
 import Featured from "@/components/Shop/Featured";
-import ArtServices from "@/components/Exhibition/ArtServices";
+import ArtServicesText from "@/components/Exhibition/ArtServicesText";
 import VisitUs from "@/components/Exhibition/VisitUs";
 import ArtistSubmissionContact from "@/components/Exhibition/ArtistSubmissionContact";
 
@@ -20,7 +20,7 @@ export default function MainExhibition() {
       <ExhibitionList />
       <Featured />
       <MeetArtist />
-      <ArtServices />
+      <ArtServicesText />
       <VisitUs />
       <ArtistSubmissionContact />
     </div>

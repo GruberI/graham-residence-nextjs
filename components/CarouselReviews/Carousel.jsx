@@ -7,6 +7,29 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
+const reviews = [
+  {
+    review:
+      "I have truly never stayed somewhere so special. It feels extremely remote. You wake up truly immersed in the epic landscape. The beds are super comfortable. Their taste is impeccable. There was an installation by a painter while we were there and the paintings were exquisite. I really cant say enough about how special this place is. Stay here if you can.",
+    name: "Hannah",
+  },
+  {
+    review:
+      "Stunning place. The house looks like it could be in Architectural Digest and the surrounding terrain is very pretty. Quality of the property is on par with a five star hotel. Highly recommend it for anybody looking for a scenic getaway in the Joshua Tree area",
+    name: "Ryan",
+  },
+  {
+    review:
+      "A stunning home in a spectacular setting. From the treasure map that guides you along the dirt roads to the house to every thoughtful detail within, it is the perfect place to enjoy the beauty and solitude of the desert.",
+    name: "Vanessa",
+  },
+  {
+    review:
+      "This enchanting house offers a serene retreat that seamlessly blends modern comfort with natural beauty. From the moment you arrive, you're greeted by panoramic views of the desert and the iconic Joshua trees, creating an atmosphere of tranquility and wonder.",
+    name: "James",
+  },
+];
+
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -49,7 +72,7 @@ export default class Carousel extends Component {
   render() {
     const settings = {
       dots: false,
-      slidesToShow: 5,
+      slidesToShow: 3,
       slidesToScroll: 1,
       infinite: true,
       adaptiveHeight: true,
@@ -87,43 +110,20 @@ export default class Carousel extends Component {
       ],
     };
     return (
-      <div className="mx-10 mb-20 m-auto border-t border-black">
-        <div className="my-10">
-          <h1 className="sm:text-3xl text-2xl">New Arrivals</h1>
-          <a
-            href="/home"
-            className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 "
-          >
-            VIEW ALL
-          </a>
-        </div>
-        <div className="mt-10 mb-4">
+      <div className="mx-10 m-auto mb-10">
+        <h1 className="sm:text-3xl text-2xl text-center mb-10">What guests are saying</h1>
+
+        <div className="">
           <Slider {...settings}>
-            {this.props.products.map((product, i) => (
+            {reviews.map((review, i) => (
               <li
-                key={`${product.handle}${i}`}
-                className="flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
+                key={i}
+                className="flex-none min-[575px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 min-h-[270px]"
               >
-                <Link className="relative" href={`/product/${product.handle}`}>
-                  <GridTileImage
-                    alt={product.title}
-                    label={{
-                      title: product.title,
-                      amount: product.priceRange.maxVariantPrice.amount,
-                      currencyCode:
-                        product.priceRange.maxVariantPrice.currencyCode,
-                    }}
-                    src={product.featuredImage?.url}
-                    fill
-                    sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
-                  />
-                </Link>
-                {/* <Label
-                  title={product.title}
-                  amount={product.priceRange.maxVariantPrice.amount}
-                  currencyCode={product.currencyCode}
-                  position={product.position}
-                /> */}
+                <div className="mx-10">
+                  <p>{review.review}</p>
+                  <p className="mt-4">-{review.name}</p>
+                </div>
               </li>
             ))}
           </Slider>

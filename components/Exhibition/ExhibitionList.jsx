@@ -39,7 +39,7 @@ export default function ExhibitionList() {
   return (
     <div className="sm:mt-10 border-t border-black pt-10 max-w-7xl m-auto pb-20">
       <div className="mb-10">
-        <h1 className="sm:text-3xl text-2xl pb-2">Recent Exhibitions</h1>
+        <h1 className="sm:text-3xl text-2xl pb-2">Exhibitions</h1>
         <a
           href="/home"
           className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"

@@ -2,7 +2,7 @@ export default function Hero() {
     return (
       <div className="relative isolate overflow-hidden h-[600px]">
         <img
-          src="https://ipfs.filebase.io/ipfs/QmRNe1ozYPmn3kgLTkuTe9PvEgYZR3maqTYQBarpNSf7wD"
+          src="https://ipfs.filebase.io/ipfs/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW"
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
