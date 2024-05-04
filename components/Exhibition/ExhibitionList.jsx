@@ -21,6 +21,16 @@ const artistExhibitions = [
     href: "/gallery/kyle-steed",
     date: "October 2023 - January 2024",
   },
+  {
+    artist: "Thai Mainhard",
+    name: "Desert Spring",
+    imgSrc:
+      "https://ipfs.filebase.io/ipfs/QmWjsuayG2e1Nt996UGJEXEZGvd9x3DCqe9FyijEUxwQyD",
+    imgAltText:
+      "Various paintings by Thai resting on porch at the graham residence",
+    href: "/gallery/thai-mainhard",
+    date: "June 2023 - October 2023",
+  },
 ];
 
 const recentExhibits = artistExhibitions.slice(0, 2);
@@ -29,7 +39,7 @@ export default function ExhibitionList() {
   return (
     <div className="sm:mt-10 border-t border-black pt-10 max-w-7xl m-auto pb-20">
       <div className="mb-10">
-        <h1 className="sm:text-5xl text-4xl pb-2">Recent Exhibitions</h1>
+        <h1 className="sm:text-3xl text-2xl pb-2">Recent Exhibitions</h1>
         <a
           href="/home"
           className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"

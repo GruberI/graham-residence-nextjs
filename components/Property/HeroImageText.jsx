@@ -23,13 +23,19 @@ export default function HeroImageText() {
           <h1 className="text-4xl sm:text-7xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-2 sm:mt-0">
             The Graham Collective
           </h1>
-          <div className="flex items-center justify-center gap-x-6 animate-fadeTwo mt-[54vh]">
+          <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[44vh]">
             <Fade>
+              <p className="text-white text-xs sm:text-lg max-w-2xl">
+                A celebration of California modernity and the quiet
+                transcendence of the high desert, with destinations, fine art,
+                and intentionally curated home essentials from leading
+                craftsman.
+              </p>
               <a
                 onClick={() => handleClickScroll("property")}
                 className="flex items-center text-sm font-sm text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
               >
-                <ChevronDownIcon className="h-[30px] text-[#d9d2ca] mt-10 font-thin opacity-60" />
+                <ChevronDownIcon className="h-[30px] text-white mt-6 font-thin opacity-60" />
               </a>
             </Fade>
           </div>

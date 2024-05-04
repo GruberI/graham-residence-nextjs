@@ -32,7 +32,7 @@ export default function Product({ product }) {
         />
       )}
       <div className="mt-4 flex flex-col text-base mb-10">
-        <div className="flex flex-row justify-between ">
+        <div className="flex flex-row justify-between">
           <p className="text-sm font-light text-neutral-600">
             {product.vendor}
           </p>

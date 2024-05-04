@@ -19,18 +19,20 @@ const productsByCollection = await getCollectionProducts({
   collection: "home-goods",
 });
 const productsByTag = productsByCollection.filter((product) => {
-  return product.tags.includes("carousel");
+  return product.tags.includes("home-new-carousel");
 });
 
-const text =
-  "A celebration of California modernity and the quiet transcendence of the high desert, with destinations, fine art, and intentionally curated home essentials from leading craftsman.";
+console.log('products', productsByTag.length)
+
+// const text =
+//   "A celebration of California modernity and the quiet transcendence of the high desert, with destinations, fine art, and intentionally curated home essentials from leading craftsman.";
 
 export default function Property() {
   return (
     <div className="overflow-x-hidden">
       <Modal />
       <HeroImageText />
-      <TextFirst text={text} />
+      {/* <TextFirst text={text} /> */}
       <EditorialSection />
       {/* <SectionFirst /> */}
       {/* <TwoColumnGrid /> */}

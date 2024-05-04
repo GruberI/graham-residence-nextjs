@@ -2,6 +2,16 @@ import Link from "next/link";
 
 const artistExhibitions = [
   {
+    artist: "David Mathew King & Marcel Rozek",
+    name: "Desert Spring",
+    imgSrc:
+      "https://ipfs.filebase.io/ipfs/QmR4MdakCJMN97PTbavV7Lj3NCoY2sDAF5PEPmDPtgPwE9/RackMultipart20240501-85-1ky2nl0.jpg",
+    imgAltText:
+      "Various paintings by Thai resting on porch at the graham residence",
+    href: "/gallery/david-marcel",
+    date: "May 2024 - July 2024",
+  },
+  {
     artist: "Kyle Steed",
     name: "A Quiet Noise",
     imgSrc:
@@ -10,17 +20,7 @@ const artistExhibitions = [
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",
     date: "October 2023 - Current",
-  },
-  {
-    artist: "Thai Mainhard",
-    name: "Desert Spring",
-    imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmWjsuayG2e1Nt996UGJEXEZGvd9x3DCqe9FyijEUxwQyD",
-    imgAltText:
-      "Various paintings by Thai resting on porch at the graham residence",
-    href: "/gallery/thai-mainhard",
-    date: "June 2023 - October 2023",
-  },
+  }
 ];
 
 export default function ExhibitionList() {

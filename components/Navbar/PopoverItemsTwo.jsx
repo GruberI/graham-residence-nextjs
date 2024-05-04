@@ -79,28 +79,14 @@ export default function PopoverItems({ color, pathname }) {
   const triggerRef = useRef();
   const timeOutRef = useRef();
 
-  const triggerRefSecond = useRef();
-  const timeOutRefSecond = useRef();
-
-  const handleEnterGallery = (isOpen) => {
+  const handleEnter = (isOpen) => {
     clearTimeout(timeOutRef.current);
     !isOpen && triggerRef.current?.click();
   };
 
-  const handleLeaveGallery = (isOpen) => {
+  const handleLeave = (isOpen) => {
     timeOutRef.current = setTimeout(() => {
       isOpen && triggerRef.current?.click();
-    }, timeoutDuration);
-  };
-
-  const handleEnterShop = (isOpen) => {
-    clearTimeout(timeOutRefSecond.current);
-    !isOpen && triggerRefSecond.current?.click();
-  };
-
-  const handleLeaveShop = (isOpen) => {
-    timeOutRefSecond.current = setTimeout(() => {
-      isOpen && triggerRefSecond.current?.click();
     }, timeoutDuration);
   };
 
@@ -126,7 +112,7 @@ export default function PopoverItems({ color, pathname }) {
               <>
                 <div
                   className="flex relative"
-                  onMouseEnter={() => handleEnterGallery(open)}
+                  onMouseEnter={() => handleEnter(open)}
                 >
                   <Popover.Button
                     ref={triggerRef}
@@ -158,7 +144,7 @@ export default function PopoverItems({ color, pathname }) {
                 >
                   <Popover.Panel
                     className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-6/12 m-auto border"
-                    onMouseLeave={() => handleLeaveGallery(open)}
+                    onMouseLeave={() => handleLeave(open)}
                   >
                     <div
                       className="absolute inset-0 top-1/2 bg-white shadow"
@@ -268,10 +254,10 @@ export default function PopoverItems({ color, pathname }) {
               <>
                 <div
                   className="flex"
-                  onMouseEnter={() => handleEnterShop(open)}
+                  onMouseEnter={() => handleEnter(open)}
                 >
                   <Popover.Button
-                    ref={triggerRefSecond}
+                    ref={triggerRef}
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
                       `relative z-10 flex items-center border-b-1 pt-px text-xs md:text-base xl:text-lg duration-300 ease-out outline-none`
@@ -300,7 +286,7 @@ export default function PopoverItems({ color, pathname }) {
                 >
                   <Popover.Panel
                     className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-6/12 m-auto border"
-                    onMouseLeave={() => handleLeaveShop(open)}
+                    onMouseLeave={() => handleLeave(open)}
                   >
                     <div
                       className="absolute inset-0 top-1/2 bg-white shadow"

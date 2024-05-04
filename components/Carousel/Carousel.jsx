@@ -6,6 +6,7 @@ import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
+import Label from "./label";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -14,7 +15,7 @@ function SampleNextArrow(props) {
       className={className}
       style={{
         ...style,
-        display: "block",
+        display: "inline",
         color: "grey",
         height: "30%",
         width: "2%",
@@ -33,7 +34,7 @@ function SamplePrevArrow(props) {
       className={className}
       style={{
         ...style,
-        display: "block",
+        display: "inline",
         color: "grey",
         height: "30%",
         width: "5%",
@@ -117,13 +118,14 @@ export default class Carousel extends Component {
                     fill
                     sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
                   />
+                  <Label
+                    title={product.title}
+                    amount={product.priceRange.maxVariantPrice.amount}
+                    currencyCode={product.currencyCode}
+                    position={product.position}
+                    vendor={product.vendor}
+                  />
                 </Link>
-                {/* <Label
-                  title={product.title}
-                  amount={product.priceRange.maxVariantPrice.amount}
-                  currencyCode={product.currencyCode}
-                  position={product.position}
-                /> */}
               </li>
             ))}
           </Slider>
