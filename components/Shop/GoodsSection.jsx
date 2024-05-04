@@ -1,5 +1,6 @@
 import { getCollectionProducts } from "@/lib/shopify";
 import ProductGridFour from "../Product/ProductGridFour";
+import Carousel from "../Carousel/Carousel";
 
 export default async function GoodsSection() {
   const products = await getCollectionProducts({ collection: "home-goods" });
@@ -20,7 +21,8 @@ export default async function GoodsSection() {
       >
         VIEW ALL
       </a>
-      <ProductGridFour products={eightProducts} />
+      {/* <ProductGridFour products={eightProducts} /> */}
+      <Carousel products={eightProducts}/>
     </div>
   );
 }

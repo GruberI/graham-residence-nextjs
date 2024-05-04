@@ -12,7 +12,8 @@ import EditorialSection from "@/components/Property/EditorialSection";
 import ExhibitionList from "@/components/Property/RecentExhibitions";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
-import Carousel from "@/components/Carousel/Carousel";
+// import Carousel from "@/components/Carousel/Carousel";
+import NewArrivalsSection from '@/components/Shop/NewArrivalsSection'
 
 const products = await getProducts({});
 const productsByCollection = await getCollectionProducts({
@@ -21,8 +22,6 @@ const productsByCollection = await getCollectionProducts({
 const productsByTag = productsByCollection.filter((product) => {
   return product.tags.includes("home-new-carousel");
 });
-
-console.log('products', productsByTag.length)
 
 // const text =
 //   "A celebration of California modernity and the quiet transcendence of the high desert, with destinations, fine art, and intentionally curated home essentials from leading craftsman.";
@@ -38,7 +37,7 @@ export default function Property() {
       {/* <TwoColumnGrid /> */}
       <TwoRowGrid />
       <ExhibitionList />
-      <Carousel products={productsByTag} />
+      <NewArrivalsSection />
       {/* <Text text={text[1]} /> */}
       {/* <HouseSpecs /> */}
       {/* <Book />  */}

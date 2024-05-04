@@ -27,7 +27,6 @@ function classNames(...classes) {
 }
 
 export default function ProductSection({ products, productHandle }) {
-  console.log("productHandle", productHandle);
   const firstSixProducts = products.slice(0, 6);
   const remainingProducts = products.slice(6, products.length + 1);
   return (
@@ -87,13 +86,11 @@ export default function ProductSection({ products, productHandle }) {
         </div>
 
         <section aria-labelledby="products-heading" className="pb-16 pt-10">
-          <Suspense>
-            <ProductGridThree products={firstSixProducts} />
-          </Suspense>
+          <ProductGridThree products={firstSixProducts} />
+
           <Banner title={productHandle} type={"art"} />
-          <Suspense>
-            <ProductGridThree products={remainingProducts} />
-          </Suspense>
+
+          <ProductGridThree products={remainingProducts} />
         </section>
         <About artistName={productHandle} />
       </main>

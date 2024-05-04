@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Featured() {
   return (
     <div
-      className="m-auto sm:px-0 mx-8 border-t border-black pt-20 sm:pt-24 pb-10"
+      className="m-auto sm:px-0 mx-8 border-t border-b border-black pt-20 sm:pt-24 pb-10"
       id="featured"
     >
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">

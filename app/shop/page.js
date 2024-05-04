@@ -3,11 +3,12 @@ import { notFound } from "next/navigation";
 import HeroImageText from "@/components/Shop/HeroImageText";
 import ArtSection from "@/components/Shop/ArtSection";
 import GoodsSection from "@/components/Shop/GoodsSection";
+import PrintsSection from "@/components/Shop/PrintsSection";
 import Featured from "@/components/Shop/Featured";
 import Section from "@/components/Shop/Section.jsx";
-import PhotoSection from "@/components/Shop/PhotoSection";
+// import PhotoSection from "@/components/Shop/PhotoSection";
 // import Instagram from "@/components/Shop/Instagram";
-// import Carousel from "@/components/Carousel/Carousel.jsx";
+import Carousel from "@/components/Carousel/Carousel.jsx";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
 import VendorFeature from "@/components/Shop/VendorFeature";
@@ -38,17 +39,17 @@ export default async function Shop() {
   });
 
   return (
-    <div className="bg-white overflow-hidden">
+    <div >
       <Suspense>
         <HeroImageText />
         {/* <Carousel products={productsByTag} /> */}
       </Suspense>
       <Section />
-      <GoodsSection products={products} />
+      <GoodsSection />
       <VendorFeature />
       <ArtSection products={products} />
       <Featured />
-      <PhotoSection products={products} />
+      <PrintsSection products={products} />
     </div>
   );
 }

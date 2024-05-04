@@ -5,6 +5,8 @@ import TwoColumnGrid2 from "@/components/About/TwoColumnGrid2";
 import AboutGoldberg from "@/components/About/AboutGoldberg";
 import Instagram from "@/components/Instagram";
 import Text from "@/components/About/Text";
+import ArtServices from "@/components/Exhibition/ArtServices";
+import VisitUs from "@/components/Exhibition/VisitUs";
 
 export const metadata = {
   title: "Discover The Graham Residence",
@@ -22,8 +24,10 @@ export default async function About() {
       <Header />
       <AboutGoldberg />
       <TwoColumnGrid />
-      <Text text={text} />
-      <TwoColumnGrid2 />
+      <ArtServices />
+      <VisitUs />
+      {/* <Text text={text} />
+      <TwoColumnGrid2 /> */}
       <Instagram />
     </div>
   );

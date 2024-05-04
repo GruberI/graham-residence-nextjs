@@ -53,6 +53,25 @@ const bannerInfo = [
     text: "Based in Duluth, MN, Loll Designs is a designer/manufacturer of durable, all-weather, outdoor furniture and accessories made with HDPE (high density polyethylene), partially from recycled plastics like milk jug containers and shampoo bottles. Using thoughtful, original designs and unique materials, Loll creates innovative, fun and high­ quality products proudly crafted in the USA.",
     type: "home",
   },
+  {
+    handle: "david-matthew-king",
+    artist: "David Matthew King",
+    imgSrc:
+      "https://ipfs.filebase.io/ipfs/QmSAUVmRBkzishf8LjH4mwSbWaD2VhgMT3Zd7yQo3zfDoD",
+    imgAltText: "David Matthew King",
+    text: "David Mathew King unleashes his creative freedom by combining his poetic sense of rhythm and elision with self-imposed constraints.",
+    type: "art",
+  },
+  ,
+  {
+    handle: "marcel-rozek",
+    artist: "Marcel Rozek",
+    imgSrc:
+      "https://ipfs.filebase.io/ipfs/QmTGSWvQgJ93LmDcyvUCWf79tUjb4YeatUSP9vMJPSz7xE",
+    imgAltText: "Marcel Rozek",
+    text: "Marcel Rozek creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School.",
+    type: "art",
+  },
 ];
 
 const handleClickScroll = (id) => {

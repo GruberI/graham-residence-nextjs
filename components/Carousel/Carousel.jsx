@@ -88,8 +88,8 @@ export default class Carousel extends Component {
       ],
     };
     return (
-      <div className="mx-10 mb-20 m-auto border-t border-black">
-        <div className="my-10">
+      <div className="mb-20">
+        {/* <div className="my-10">
           <h1 className="sm:text-3xl text-2xl">New Arrivals</h1>
           <a
             href="/home"
@@ -97,7 +97,7 @@ export default class Carousel extends Component {
           >
             VIEW ALL
           </a>
-        </div>
+        </div> */}
         <div className="mt-10 mb-4">
           <Slider {...settings}>
             {this.props.products.map((product, i) => (
@@ -116,7 +116,7 @@ export default class Carousel extends Component {
                     }}
                     src={product.featuredImage?.url}
                     fill
-                    sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
+                    sizes="(min-width: 1024px) 22vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
                   />
                   <Label
                     title={product.title}
