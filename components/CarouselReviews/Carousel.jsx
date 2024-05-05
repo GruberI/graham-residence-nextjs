@@ -25,8 +25,38 @@ const reviews = [
   },
   {
     review:
-      "This enchanting house offers a serene retreat that seamlessly blends modern comfort with natural beauty. From the moment you arrive, you're greeted by panoramic views of the desert and the iconic Joshua trees, creating an atmosphere of tranquility and wonder.",
-    name: "James",
+      "This place was truly one of a kind.The house was stunning, fresh, and modern against the beauty of nature around it. I would absolutely love to come back!",
+    name: "Freddy",
+  },
+  {
+    review:
+      "Amazing house. Location is incredible. Beautiful design/decor. Private. An incredible weekend!",
+    name: "Lauren",
+  },
+  {
+    review:
+      "An unforgettable desert escape nestled on pristine land and a beautifully designed steel-and-glass home with all the creature comforts. You would never know that you are only 15 minutes from town.",
+    name: "Ashley",
+  },
+  {
+    review:
+      "Lindsey and Yoni’s place is nestled on rolling hills and gorgeous boulders. The views and house itself are sublime and next level (newly built) mid century modern. This is truly one of the gems is the area. Not to be missed",
+    name: "Brian",
+  },
+  {
+    review:
+      "A pristine gem in the wilderness. One of the all time best stays in JTree - a perfect combination of high desert, comfort and style.",
+    name: "Dagen",
+  },
+  {
+    review:
+      "The Graham Residence is a serene sanctuary. It’s the perfect setting for a relaxing getaway to disconnect from the hustle of city life. Perfectly appointed, it has all the amenities and small touches to create a memorable stay. From the seclusion, to the stargazing, comfortable beds, and everything in between…you won’t be disappointed!",
+    name: "Charles",
+  },
+  {
+    review:
+      "Absolutely magical… a dream come true home. We enjoyed every second of our stay. Beautifully decorated, every little detail was thought of by our host. The location is one of the best you can find at Joshua Tree - stunning views. Everything worked perfectly and the mattress was super comfortable! We can’t wait to be back!",
+    name: "Paulina",
   },
 ];
 

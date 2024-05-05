@@ -15,7 +15,7 @@ export default function Section() {
                   emerging contemporary artists.{" "}
                 </p>
                 <a
-                  href="/exhibitions"
+                  href="/gallery#exhibitions"
                   className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 pt-6"
                 >
                   Explore Exhibitions

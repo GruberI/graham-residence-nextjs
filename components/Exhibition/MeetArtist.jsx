@@ -29,7 +29,7 @@ const artistExhibitions = [
 
 export default function MeetArtist() {
   return (
-    <div className="mt-20 border-t border-black pt-12 m-auto max-w-7xl">
+    <div className="mt-10 m-auto max-w-7xl">
        <div className="mb-10">
         <h1 className="sm:text-3xl text-2xl pb-2">Meet the Artists</h1>
         <a

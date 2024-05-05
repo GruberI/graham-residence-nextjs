@@ -41,7 +41,7 @@ export default function ExhibitionList() {
       <div className="mb-10">
         <h1 className="sm:text-3xl text-2xl pb-2">Exhibitions</h1>
         <a
-          href="/home"
+          href="/exhibitions"
           className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
         >
           VIEW ALL
