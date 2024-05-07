@@ -1,18 +1,23 @@
+'use client'
+import HeaderImage from "./HeaderImage";
+import { Fade } from "react-awesome-reveal";
+
+
 export default function Header() {
-    return (
-      <div className="bg-white py-26 lg:px-6 sm:px-2 sm:pt-20 pt-48">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-bold sm:text-5xl text-3xl sm:pb-6 pb-1 tracking-widest sm:mt-6 font-[cormorant]">
-            HIGH DESERT RENDESVOUS
-          </h1>
-          <p className="sm:pb-8 pb-3 pt-2 sm:pt-0 sm:text-6xl text-2xl">
-            By David Matthew King & Marcel Rozek
-          </p>
-          <p className="pb-8 sm:pb-0 sm:text-base text-xs">
-            EXHIBITION BY THE GRAHAM RESIDENCE
-          </p>
-        </div>
+  return (
+    <div className="bg-white mt-48 sm:mt-40 mb-20">
+      <div className="max-w-4xl text-center m-auto">
+        <h1 className="text-4xl sm:text-6xl text-2xl">Convergence</h1>
       </div>
-    );
-  }
-  
+      <div>
+        <HeaderImage />
+      </div>
+      <div className="mt-4">
+        <p className="text-xl">A conversation of sorts</p>
+        <Fade>
+        <h2 className="mt-4 text-center text-2xl sm:text-5xl italic">Marcel Rozek and David Matthew King</h2>
+        </Fade>
+      </div>
+    </div>
+  );
+}

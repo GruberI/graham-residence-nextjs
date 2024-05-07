@@ -17,7 +17,7 @@ export default function FourImageGrid() {
         <Link href={"/product/descent-of-sun-by-kyle-steed"}>
           <div className="rows-span-2">
             <img
-              src=" https://ipfs.filebase.io/ipfs/QmcAp8z35sM8pSgnSDoQmeFrDZ8dMSufjoKgrw8d9n8nKH/RackMultipart20240501-64-17fidtt.jpg"
+              src="https://ipfs.filebase.io/ipfs/QmcAp8z35sM8pSgnSDoQmeFrDZ8dMSufjoKgrw8d9n8nKH/RackMultipart20240501-64-17fidtt.jpg"
               alt=""
             />
             <p className="pt-4">Title</p>
