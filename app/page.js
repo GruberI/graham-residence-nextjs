@@ -13,7 +13,7 @@ import ExhibitionList from "@/components/Property/RecentExhibitions";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
 // import Carousel from "@/components/Carousel/Carousel";
-import NewArrivalsSection from '@/components/Shop/NewArrivalsSection'
+import NewArrivalsSection from "@/components/Shop/NewArrivalsSection";
 
 const products = await getProducts({});
 const productsByCollection = await getCollectionProducts({

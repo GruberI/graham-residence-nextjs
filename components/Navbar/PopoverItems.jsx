@@ -18,7 +18,7 @@ const navigation = {
         { name: "On View", href: "/exhibitions#current-exhibit" },
         { name: "Upcoming", href: "/exhibitions#upcoming-exhibitions" },
         { name: "Past", href: "/exhibitions#past-exhibitions" },
-        { name: "View All", href: "/" },
+        { name: "View All", href: "/exhibitions" },
       ],
       artists: [
         { name: "Kyle Steed", href: "/art/kyle-steed" },
@@ -41,20 +41,21 @@ const navigation = {
       name: "Shop",
       href: "/shop",
       categories: [
-        { name: "Kyle Steed", href: "/art/kyle-steed" },
-        { name: "Thai Mainhard", href: "/art/thai-mainhard" },
-        { name: "All Exhibitions", href: "/gallery#exhibitions" },
+        { name: "New Arrivals", href: "/home/new-arrivals" },
+        { name: "Ethereal Prints", href: "/art/photography" },
+        { name: "Shop All", href: "/home" },
       ],
       art: [
         { name: "Paintings", href: "/art/paintings" },
         { name: "Photography", href: "/art/photography" },
-        { name: "View All", href: "/art" },
+        { name: "Shop All", href: "/art" },
+        { name: "By Artist", href: "/gallery/artist" },
       ],
       home: [
         { name: "Atelier Saucier", href: "/home/atelier-saucier" },
         { name: "Sophie Lou Jacobsen", href: "/home/sophie-lou-jacobsen" },
-        // { name: "Loll Designs", href: "/home/loll-designs" },
-        { name: "View All", href: "/home" },
+        { name: "Loll Designs", href: "/home/loll-designs" },
+        { name: "Shop All", href: "/home" },
       ],
       shop: [],
     },
@@ -200,7 +201,7 @@ export default function PopoverItems({ color, pathname }) {
                               </div>
                             </div>
                             <div>
-                              <a href="/shop">
+                              <a href="/gallery/artists">
                                 <p
                                   id="home-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
@@ -226,7 +227,7 @@ export default function PopoverItems({ color, pathname }) {
                               </ul>
                             </div>
                             <div>
-                              <a href="/gallery">
+                              <a href="/gallery#visit-us">
                                 <p
                                   id="categories-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 text-sm xl:text-lg"
@@ -312,14 +313,14 @@ export default function PopoverItems({ color, pathname }) {
                     <div className="relative bg-white">
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
-                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-2">
+                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
                               <a href="/art">
                                 <p
                                   id="art-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
-                                  ART
+                                  BROWSE BY
                                 </p>
                               </a>
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-2 sm:gap-x-6">
@@ -328,7 +329,7 @@ export default function PopoverItems({ color, pathname }) {
                                   aria-labelledby="art-heading"
                                   className="space-y-1 sm:space-y-4"
                                 >
-                                  {category.art.map((item) => (
+                                  {category.categories.map((item) => (
                                     <li key={item.name} className="flex">
                                       <Link
                                         href={item.href}
@@ -355,7 +356,7 @@ export default function PopoverItems({ color, pathname }) {
                                 aria-labelledby="home-heading"
                                 className="pt-4 space-y-1 border-t border-gray-200 sm:space-y-4"
                               >
-                                {category.home.map((item) => (
+                                {category.art.map((item) => (
                                   <li key={item.name} className="flex">
                                     <Link
                                       href={item.href}
@@ -368,6 +369,32 @@ export default function PopoverItems({ color, pathname }) {
                               </ul>
                             </div>
                             <div>
+                              <a href="/home">
+                                <p
+                                  id="home-heading"
+                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                >
+                                  HOME
+                                </p>
+                              </a>
+                              <ul
+                                role="list"
+                                aria-labelledby="home-heading"
+                                className="pt-4 space-y-1 border-t border-gray-200 sm:space-y-4"
+                              >
+                                {category.home.map((item) => (
+                                  <li key={item.name} className="flex">
+                                    <Link
+                                      href={item.href}
+                                      className="hover:text-gray-800 tracking-widest leading-7 text-sm lg:text-base"
+                                    >
+                                      {item.name}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            {/* <div>
                               <Link href="/shop">
                                 <p
                                   id="categories-heading"
@@ -376,7 +403,7 @@ export default function PopoverItems({ color, pathname }) {
                                   SHOP ALL
                                 </p>
                               </Link>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>

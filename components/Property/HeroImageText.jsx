@@ -32,7 +32,7 @@ export default function HeroImageText() {
                 craftsman.
               </p>
               <a
-                onClick={() => handleClickScroll("property")}
+                onClick={() => handleClickScroll("editorial")}
                 className="flex items-center text-sm font-sm text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
               >
                 <ChevronDownIcon className="h-[30px] text-white mt-6 font-thin opacity-60" />

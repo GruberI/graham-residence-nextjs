@@ -10,7 +10,7 @@ export default function FourImageGrid() {
               src="https://ipfs.filebase.io/ipfs/Qmbgo9ASEHYQAnR17mwwi3RwXsXaWoqg1ZiQ9Gd2cTUAiv/QmU2XuwgGwo3UXixsfT1CJd1ews8RuVPG8frB1QBo6brFz"
               alt="between eye and the sky"
             />
-            <p className="pt-4 mb-10">Between Eye and Sky</p>
+            <p className="pt-4 pb-4 mb-10">Between Eye and Sky</p>
           </div>
         </Link>
 

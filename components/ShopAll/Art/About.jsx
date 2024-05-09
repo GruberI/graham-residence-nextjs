@@ -1,7 +1,11 @@
+"use client";
+import Link from "next/link";
+
 const aboutInfo = [
   {
     handle: "kyle-steed",
     artist: "Kyle Steed",
+    href: '/gallery/kyle-steed',
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmQTWf7mwwEodd5RUH2ShWPtbNqqJDr5DwXbwPJgv33Qhs",
     imgAltText: "Kyle Steed painting in living room of the graham residence",
@@ -10,6 +14,7 @@ const aboutInfo = [
   {
     handle: "thai-mainhard",
     artist: "Thai Mainhard",
+    href: '/gallery/thai-mainhard',
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmWsdYRhborxuwVwuZh9aBdVYBfj4REw9s6skbxbR241g2/QmPTsikynbqneuVguJtRKhqDyy1T4McPGUVZP8S7uimsqH",
     imgAltText: "Thai Mainhard sitting on stool surrounded by her paintings",
@@ -18,6 +23,7 @@ const aboutInfo = [
   {
     handle: "yoni-goldberg",
     artist: "Yoni Goldberg",
+    href: '/art/yoni-goldberg',
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmedvMhXHkATo8RM28psWPEEsawxE35iTYZckzVmi5cC8n",
     imgAltText: "Yoni Goldberg behind the camera",
@@ -26,6 +32,7 @@ const aboutInfo = [
   {
     handle: "david-matthew-king",
     artist: "David Matthew King",
+    href: '/gallery/david-marcel',
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmbYUMVCrxRBHhp1CYFks2iScTP177RyT7tciNFuECdZQc/RackMultipart20240501-97-1qxik96.jpg",
     imgAltText: "David Matthew King",
@@ -35,6 +42,7 @@ const aboutInfo = [
   {
     handle: "marcel-rozek",
     artist: "Marcel Rozek",
+    href: '/gallery/david-marcel',
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmZv3MNH2ynMf3u9guCgxgqov8GcfiB3pUXvYp4aZvNjpp",
     imgAltText: "Marcel Rozek",
@@ -69,6 +77,14 @@ export default function About({ artistName }) {
                       ABOUT THE ARTIST
                     </h1>
                     <p className="tracking-wide leading-7">{about.text}</p>
+                    <div className="pt-4 pb-4 text-center">
+                      <Link
+                        href={about.href}
+                        className="hover:text-neutral-600 text-sm hover:underline hover:underline-offset-8"
+                      >
+                        SEE THE EXHIBITION
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
