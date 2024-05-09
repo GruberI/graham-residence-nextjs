@@ -11,7 +11,7 @@ export default function ArtistSubmissionContact() {
       </p>
       <button className="bg-white border border-black text-black px-2 py-2 hover:text-white hover:bg-black sm:w-[20%] m-auto font-bold shadow-sm">
         <Link
-          href={`mailto:"lindsey@lindseygoldbergdesign.com?subject=Portfolio`}
+          href={`mailto:lindsey@graham-collective.com?subject=Portfolio`}
         >
           SUBMIT YOUR WORK
         </Link>

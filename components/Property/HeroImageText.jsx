@@ -26,10 +26,7 @@ export default function HeroImageText() {
           <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[44vh]">
             <Fade>
               <p className="text-white text-xs sm:text-lg max-w-2xl">
-                A celebration of California modernity and the quiet
-                transcendence of the high desert, with destinations, fine art,
-                and intentionally curated home essentials from leading
-                craftsman.
+              A celebration of California modernity and the quiet transcendence of the Mojave Desert, with fine art & intentionally curated objects
               </p>
               <a
                 onClick={() => handleClickScroll("editorial")}
