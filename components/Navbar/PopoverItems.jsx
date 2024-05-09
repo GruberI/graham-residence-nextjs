@@ -43,7 +43,7 @@ const navigation = {
       categories: [
         { name: "New Arrivals", href: "/home/new-arrivals" },
         { name: "Ethereal Prints", href: "/art/photography" },
-        { name: "Shop All", href: "/home" },
+        { name: "Shop All", href: "/shop/all-product" },
       ],
       art: [
         { name: "Paintings", href: "/art/paintings" },
@@ -181,7 +181,7 @@ export default function PopoverItems({ color, pathname }) {
                                   EXHIBITIONS
                                 </p>
                               </a>
-                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-2 sm:gap-x-6">
+                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"
                                   aria-labelledby="art-heading"
@@ -323,7 +323,7 @@ export default function PopoverItems({ color, pathname }) {
                                   BROWSE BY
                                 </p>
                               </a>
-                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-2 sm:gap-x-6">
+                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"
                                   aria-labelledby="art-heading"

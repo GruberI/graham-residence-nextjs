@@ -61,7 +61,7 @@ export default function ArtistGrid({ artists }) {
             </Menu>
           </div> */}
         </div>
-      <div className="grid gap-x-10 gap-y-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 pt-10">
+      <div className="grid gap-x-10 gap-y-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-10">
         {artists.map((artist, i) => (
           <Link key={i} href={artist.href}>
             <div

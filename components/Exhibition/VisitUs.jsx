@@ -5,23 +5,23 @@ const posts = [
     id: 1,
     title: "Showroom",
     location: "Newport Beach, CA",
-    href: "/about",
+    href: "mailto:lindsey@graham-collective.com?subject=Artist representation by Lindsey Goldberg Design",
     description:
       "Our office and showroom is open Monday through Saturday by appointment",
     imageUrl:
-      "https://ipfs.filebase.io/ipfs/QmeKYTm5tnJNDn8BR882obb1ARrUmT4Gr43Mss5VBAcnQb",
+      "https://ipfs.filebase.io/ipfs/QmZ8cbeqVMQb9KLVUznbbG1ZhAkCYzqqjW9JzkCWGPcgd6",
     date: "Mar 16, 2020",
     buttonText: "REQUEST AN APPOINTMENT",
   },
   {
     id: 2,
     title: "The Graham Residence",
-    href: `mailto:lindsey@graham-collective.com?subject=Artist representation by Lindsey Goldberg Design`,
+    href: `/residence#property-book`,
     location: "Yucca Valley, CA",
     description:
       "A mid-century modern retreat where the lines between home and gallery are blurred",
     imageUrl:
-      "https://ipfs.filebase.io/ipfs/QmeV1Upu8jC9pfABNP61Rtm5cs1qgNHqykJNrcY1YkeoLw",
+      "https://ipfs.filebase.io/ipfs/QmNVyoKRAfJ86QBPSidzSQhA5Ecuth4G3A1me3i3XEAmqy",
     date: "Mar 16, 2020",
     buttonText: "REQUEST TO BOOK",
   },

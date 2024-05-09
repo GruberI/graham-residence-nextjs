@@ -19,7 +19,7 @@ export default async function PrintsSection() {
         </h2>
       </div>
       <a
-        href="/art"
+        href="/art/photography"
         className="text-[10px] font-thin leading-6 hover:text-neutral-300 hover:underline hover:underline-offset-8"
       >
         VIEW ALL
