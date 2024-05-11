@@ -10,8 +10,8 @@ const contact = [
   {
     name: "artist representation",
     text: "Artist representation:",
-    subtext: "lindsey@lindseygoldbergdesign.com",
-    email: "lindsey@lindseygoldbergdesign.com",
+    subtext: "lindsey@graham-collective.com",
+    email: "lindsey@graham-collective.com",
     subject: "Artist representation by Lindsey Goldberg Design",
   },
   {

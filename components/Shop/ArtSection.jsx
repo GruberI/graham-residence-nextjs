@@ -14,8 +14,8 @@ export default async function ArtSection() {
   return (
     <div className="max-w-7xl my-0 sm:my-16 md:mx-10 lg:mx-auto mx-4">
       <div className="mx-auto text-left border-t border-black" id="artwork">
-        <h2 className="text-2xl text-black pt-6">
-          Latest Artworks
+        <h2 className="text-2xl text-black pt-6 font-comorant">
+          New Arrivals
         </h2>
       </div>
       <a

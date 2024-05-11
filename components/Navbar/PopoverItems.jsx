@@ -12,7 +12,7 @@ const navigation = {
   ],
   gallery: [
     {
-      name: "Gallery",
+      name: "Art",
       href: "/gallery",
       exhibitions: [
         { name: "On View", href: "/exhibitions#current-exhibit" },

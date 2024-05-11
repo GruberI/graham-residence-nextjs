@@ -11,7 +11,7 @@ const artistExhibitions = [
     artist: "Alex Maceda",
     name: "Savoring",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmYKpfrcT9ocuPDjX7ND8iCP5bhMJwopuLbskWc4to6KrQ",
+      "https://ipfs.filebase.io/ipfs/Qmc1vcmrBJDzuvArAhqDuiE9SLygtXuHQYsiR6nCUt1Zju",
     imgAltText: "Alex Maceda",
     date: "November 2024 - January 2025",
   },

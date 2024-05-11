@@ -38,8 +38,8 @@ const posts = [
 
 export default function EditorialSection() {
   return (
-    <div className="bg-neutral-100 py-10 mx-auto" id='editorial'>
-      <div className="mx-12 sm:mx-20 max-w-7xl">
+    <div className="bg-neutral-100 py-10" id='editorial'>
+      <div className="m-auto max-w-7xl">
         <div className="mx-auto mt-16 grid auto-rows-fr grid-cols-1 gap-12 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article

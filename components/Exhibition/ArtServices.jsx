@@ -8,10 +8,9 @@ export default function ArtServices() {
           Art Advisory Services
         </h1>
         <h3 className="sm:text-lg text-xl text-center pb-4 mx-6 md:mx-20">
-          Lindsey Goldberg provides art advisory services for projects of any
-          size and scope. As your dedicated advisor, with deep industry
-          expertise and a keen eye, she will help find the perfect artwork for
-          any space and lifestyle.
+          Curator & Co-Founder Lindsey Goldberg provides bespoke art advisory
+          services tailored for projects of any size and scope. Let’s find the
+          perfect artwork for your space or project.
         </h3>
       </div>
       {/* Section 1 */}
@@ -35,9 +34,9 @@ export default function ArtServices() {
 
               <div className="mt-2 space-y-10">
                 <p className="tracking-wide leading-7">
-                  Connect with an art advisor, free to charge. Lindsey will get
-                  to know your taste, space, and preferences, then curate
-                  options for you and guide you through the end-to-end process.
+                  Lindsey will take the time to understand your unique taste,
+                  space, and preferences before curating personalized options
+                  and guiding you through the entire process seamlessly.
                 </p>
               </div>
               <div className="pt-4 pb-4">
@@ -106,9 +105,8 @@ export default function ArtServices() {
 
               <div className="mt-2 space-y-10">
                 <p className="tracking-wide leading-7">
-                  Artwork completes a space. It fosters culture and connection.
-                  The Graham Collective curates original artworks for
-                  workspaces, hospitality, retail, and healthcare projects.
+                  A trusted source for interior designers, art consultants,
+                  architects, and developers.
                 </p>
               </div>
               <div className="pt-4 pb-4">

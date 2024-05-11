@@ -6,7 +6,7 @@ export default async function TwoRowGrid() {
           <img
             src="https://ipfs.filebase.io/ipfs/QmayojLyPFZXZvzX5gBzis26uVZSdB27Y85EfSSGvvdGMB/QmVVSQswM9dDiPjLvwfvMXf3P8F8spNp47WEsPXjTSZvQV"
             alt="arial shot of property with winding road"
-            className="p-2 h-full w-full"
+            className="p-2 h-full w-full object-cover"
           />
         </div>
       </div>

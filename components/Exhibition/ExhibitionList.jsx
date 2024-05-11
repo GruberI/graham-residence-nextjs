@@ -3,11 +3,11 @@ import Link from "next/link";
 const artistExhibitions = [
   {
     artist: "David Mathew King & Marcel Rozek",
-    name: "Desert Spring",
+    name: "Convergence",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmR4MdakCJMN97PTbavV7Lj3NCoY2sDAF5PEPmDPtgPwE9/RackMultipart20240501-85-1ky2nl0.jpg",
     imgAltText:
-      "Various paintings by Thai resting on porch at the graham residence",
+      "David Mathew King & Marcel Rozek at the graham residence",
     href: "/gallery/david-marcel",
     date: "May 2024 - July 2024",
   },
@@ -64,7 +64,7 @@ export default function ExhibitionList() {
               </h1>
               <p className="pt-1 tracking-tight font-thin text-xs sm:text-base">
                 {" "}
-                On display at the Graham Residence, {exhibit.date}
+                At the Graham Residence, {exhibit.date}
               </p>
             </Link>
           );
