@@ -5,14 +5,16 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import SignUp from "@/components/SignUp";
 import StickyCart from "@/components/Cart/stickyCart.jsx";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'The Graham Collective',
-  description: 'The Graham Residence is a mid-century modern retreat near Joshua Tree National Park where the lines between home and gallery are blurred.',
-}
+  title: "The Graham Collective",
+  description:
+    "Joshua Tree Airbnb, Vacation Rental, best joshua tree airbnb, shop fine art, emerging artists, Vacation Rental, contextualized artwork, fine art, the graham residence, graham residence airbnb, vacation rental yucca valley, high desert airbnb, mid century, mid century modern airbnb, sophie lou jacobsen, atelier saucier, westbourne, loll designs",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -68,6 +70,7 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-M4X900NBP2" />
+      <Script src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=RWhpnR" />
     </html>
   );
 }

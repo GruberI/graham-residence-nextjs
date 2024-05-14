@@ -5,7 +5,7 @@ const artistExhibitions = [
     artist: "David Mathew King & Marcel Rozek",
     name: "Convergence",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmR4MdakCJMN97PTbavV7Lj3NCoY2sDAF5PEPmDPtgPwE9/RackMultipart20240501-85-1ky2nl0.jpg",
+      "https://ipfs.filebase.io/ipfs/QmbapwiUd9S4ZFEq9ht8mYoN2JQsv7fhMosahi47hCGXYh",
     imgAltText:
       "Various paintings by Thai resting on porch at the graham residence",
     href: "/gallery/david-marcel",

@@ -348,7 +348,7 @@ export default function PopoverItems({ color, pathname }) {
                                   id="home-heading"
                                   className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
-                                  GOODS
+                                  ARTWORK
                                 </p>
                               </a>
                               <ul

@@ -1,5 +1,5 @@
 export default function ShopAllArtHeader({ pageTitle }) {
-  const restructuredTitle = pageTitle.replace("-", " ");
+  const restructuredTitle = pageTitle.replaceAll("-", " ");
   return (
     <div className="bg-white px-6 pt-4">
       <div className="mx-auto max-w-3xl text-center">

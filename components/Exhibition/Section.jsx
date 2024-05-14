@@ -9,7 +9,7 @@ export default function Section() {
           <div>
             <Slide direction="left">
               <div className="sm:space-y-4 space-y-0">
-                <p className="tracking-wide text-2xl md:text-3xl lg:text-5xl text-center lg:text-left mb-10">
+                <p className="tracking-wide text-2xl md:text-3xl lg:text-5xl md:text-center lg:text-left mb-10">
                   Within the walls of The Graham Residence lies Graham Gallery,
                   a rotating exhibition space featuring original artwork by
                   emerging contemporary artists.{" "}

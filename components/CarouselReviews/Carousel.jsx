@@ -150,7 +150,7 @@ export default class Carousel extends Component {
                 key={i}
                 className="flex-none min-[575px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 min-h-[270px]"
               >
-                <div className="mx-10">
+                <div className="mx-2 sm:mx-10 text-xs sm:text-base lg:text-lg">
                   <p>{review.review}</p>
                   <p className="mt-4">-{review.name}</p>
                 </div>

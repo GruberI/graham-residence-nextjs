@@ -1,20 +1,20 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link.js";
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+// import { Fragment } from "react";
+// import { Menu, Transition } from "@headlessui/react";
+// import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function ArtistGrid({ artists }) {
   const [hover, setHover] = useState(false);
   return (
     <div className="mx-auto max-w-7xl py-4">
-    <div className="flex items-baseline justify-between border-b border-gray-200 pb-6">
-          <h1 className="text-lg font-light tracking-wide text-gray-900">
-            All Artists
-          </h1>
+      <div className="flex items-baseline justify-between border-b border-gray-200 pb-6">
+        <h1 className="text-lg font-light tracking-wide text-gray-900">
+          All Artists
+        </h1>
 
-          {/* <div className="flex items-center hidden">
+        {/* <div className="flex items-center hidden">
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
@@ -60,7 +60,7 @@ export default function ArtistGrid({ artists }) {
               </Transition>
             </Menu>
           </div> */}
-        </div>
+      </div>
       <div className="grid gap-x-10 gap-y-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-10">
         {artists.map((artist, i) => (
           <Link key={i} href={artist.href}>
@@ -70,8 +70,7 @@ export default function ArtistGrid({ artists }) {
               onMouseLeave={() => setHover(false)}
             >
               <img
-                className="absolute inset-0 lg:h-full lg:w-full h-full w-full duration-100 object-cover 
-            hover:opacity-75 hover:scale-105 transition"
+                className="absolute inset-0 lg:h-full lg:w-full h-full w-full duration-100 object-cover object-center hover:opacity-75 hover:scale-105 transition"
                 src={artist.src}
                 alt={artist.altText}
               />

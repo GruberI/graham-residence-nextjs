@@ -55,10 +55,10 @@ export default function AboutGoldberg() {
               {" "}
               A visionary with big ideas, and over a decade of experience in
               brand partnerships, Lindsey left the corporate world to pursue her
-              passion, art advising and curation. Her intuitive nature allows
+              passion for Art Advising and Curation. Her intuitive nature allows
               her to foster meaningful relationships with artists and
-              collectors. Through The Graham Residence, she provides a space & platform for
-              artists and guests alike to inspire and be inspired.
+              collectors. Through The Graham Collective, she provides a space &
+              platform for artists and clients alike to inspire and be inspired.
             </p>
           </div>
         </div>
@@ -109,9 +109,9 @@ export default function AboutGoldberg() {
           A visionary with big ideas, and over a decade of experience in brand
           partnerships, Lindsey left the corporate world to pursue her passion,
           art advising and curation. Her intuitive nature allows her to foster
-          meaningful relationships with artists and collectors. Through The Graham Residence, she
-          provides a space & platform for artists and guests alike to inspire
-          and be inspired.
+          meaningful relationships with artists and collectors. Through The
+          Graham Residence, she provides a space & platform for artists and
+          guests alike to inspire and be inspired.
         </p>
       </div>
     </div>

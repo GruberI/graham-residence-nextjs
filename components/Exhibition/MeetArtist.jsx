@@ -30,7 +30,7 @@ const artistExhibitions = [
 export default function MeetArtist() {
   return (
     <div className="mt-10 m-auto max-w-7xl mb-10">
-       <div className="mb-10">
+       <div className="mb-10 pl-4 sm:pl-0">
         <h1 className="sm:text-3xl text-2xl pb-2">Meet the Artists</h1>
         <a
           href="/gallery/artists"

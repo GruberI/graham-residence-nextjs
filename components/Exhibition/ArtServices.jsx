@@ -41,7 +41,7 @@ export default function ArtServices() {
               </div>
               <div className="pt-4 pb-4">
                 <Link
-                  href={"/gallery/kyle-steed"}
+                  href={`mailto:lindsey@graham-collective.com?subject=Art Services`}
                   className="underline underline-offset-8 hover:text-neutral-600 text-xs"
                 >
                   GET STARTED
@@ -71,7 +71,7 @@ export default function ArtServices() {
               </div>
               <div className="pt-4 pb-4">
                 <Link
-                  href={"/gallery/kyle-steed"}
+                  href={`mailto:lindsey@graham-collective.com?subject=Art Services for my Organization`}
                   className="underline underline-offset-8 hover:text-neutral-600 text-xs"
                 >
                   GET STARTED
@@ -111,7 +111,7 @@ export default function ArtServices() {
               </div>
               <div className="pt-4 pb-4">
                 <Link
-                  href={"/gallery/kyle-steed"}
+                  href={`mailto:lindsey@graham-collective.com?subject=Art Services for my Organization`}
                   className="underline underline-offset-8 hover:text-neutral-600 text-xs"
                 >
                   GET STARTED
@@ -151,7 +151,7 @@ export default function ArtServices() {
               </div>
               <div className="pt-4 pb-4">
                 <Link
-                  href={"/gallery/kyle-steed"}
+                  href={`mailto:lindsey@graham-collective.com?subject=Art Services for Trade Partners`}
                   className="underline underline-offset-8 hover:text-neutral-600 text-xs"
                 >
                   GET STARTED

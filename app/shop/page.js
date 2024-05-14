@@ -14,9 +14,9 @@ import { getCollectionProducts } from "@/lib/shopify/index";
 import VendorFeature from "@/components/Shop/VendorFeature";
 
 export const metadata = {
-  title: "The Graham Residence Shop",
+  title: "Graham Collective | Curated Luxury Home Goods and Fine Art",
   description:
-    "Discover the best contemporary artists and shop curated goods inspired by West Coast minimalism.",
+    "Gifts for the home found within The Graham Residence, a secluded luxury vacation rental near Joshua Tree National Park.",
 };
 
 export default async function Shop() {
@@ -39,7 +39,7 @@ export default async function Shop() {
   });
 
   return (
-    <div >
+    <div>
       <Suspense>
         <HeroImageText />
         {/* <Carousel products={productsByTag} /> */}

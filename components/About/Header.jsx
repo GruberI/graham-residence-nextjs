@@ -7,7 +7,7 @@ export default function Header() {
       className="m-auto sm:px-0 mx-8 pt-20 sm:pt-24 pb-6 sm:pb-12"
       id="featured"
     >
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 mb-10">
+      <div className="mx-auto  px-4 sm:px-6  lg:px-8 mb-10">
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
           <div>
             <div className="aspect-[8/6] overflow-hidden bg-black-100">
@@ -18,33 +18,38 @@ export default function Header() {
               />
             </div>
           </div>
-          <Slide direction="right">
-            <div className="ml-5 flex flex-col content-start">
-              <div className="space-y-3">
-                <p className="tracking-wide leading-7 text-lg">
-                  <span className="font-semibold">The Graham Residence</span>{" "}
-                  began when Lindsey and Yoni were living in LA and found
-                  themselves craving space to reset out in nature. As design and
-                  nature lovers, they often found that they had to sacrifice
-                  either design or nature in their travels, but The Graham
-                  Residence united them both, with thoughtful mid-century design
-                  and sliding glass doors that showcase the sprawling high
-                  desert landscape around it. Since launching in 2017, The
-                  Graham Residence has hosted thousands of guests from all over
-                  the world. It has also been home to countless photoshoots,
-                  elopements, and events.{" "}
-                </p>
-                <p className="tracking-wide leading-7 text-lg">
-                  TGR is ever-evolving. In 2023, Lindsey launched Graham
-                  Gallery, curating the home with rotating works of art by
-                  emerging contemporary artists, all of which are available for
-                  purchase. In 2024, Lindsey and Yoni launched an e-commerce
-                  shop, selling curated goods within the home that guests kept
-                  asking about.
-                </p>
-              </div>
+
+          <div className="ml-5 flex flex-col content-start">
+            <div className="space-y-3">
+              <Slide direction="right">
+                <h3 className="text-xl sm:text-3xl mb-4">
+                  It all started with The Graham Residence...
+                </h3>
+              </Slide>
+              <p className="tracking-wide leading-7 text-lg">
+                Lindsey and Yoni were living in LA and found themselves craving
+                space to reset out in nature. As design and nature lovers, they
+                often found that they had to sacrifice one or the other in their
+                travels, but The Graham Residence united both, with thoughtful
+                mid-century design and sliding glass doors that showcase the
+                sprawling high desert landscape.
+              </p>
+              <p className="tracking-wide leading-7 text-lg">
+                Since launching in 2017, The Graham Residence has hosted
+                thousands of guests from all over the world. It has also been
+                home to countless photoshoots, elopements, and events.
+              </p>
+              <p className="tracking-wide leading-7 text-lg mt-10">
+                In 2023, Lindsey launched Graham Gallery, inspired by the vision
+                to create a contextual gallery space and guest experience. The
+                home is curated with rotating works of art by emerging
+                contemporary artists, all of which are available for
+                acquisition. In 2024, Lindsey and Yoni expanded the collective
+                to include a shop, selling curated goods from within the home
+                that guests kept asking about.
+              </p>
             </div>
-          </Slide>
+          </div>
         </div>
       </div>
     </div>

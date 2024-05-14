@@ -4,14 +4,17 @@ import Carousel from "../Carousel/Carousel";
 
 export default async function GoodsSection() {
   const products = await getCollectionProducts({ collection: "home-goods" });
-  const eightProducts = products.slice(0, 8);
+  const productsByTag = products.filter((product) => {
+    return product.tags.includes("shop-tgr");
+  });
+  const eightProducts = productsByTag.slice(0, 8);
 
   if (!products?.length) return null;
 
   return (
     <div className="max-w-7xl my-0 sm:my-16 md:mx-10 lg:mx-auto mx-4">
       <div className="mx-auto text-left" id="artwork">
-      <h2 className="text-2xl text-black border-t border-black pt-6">
+        <h2 className="text-2xl text-black border-t border-black pt-6">
           Shop the Graham Residence
         </h2>
       </div>
@@ -22,7 +25,7 @@ export default async function GoodsSection() {
         VIEW ALL
       </a>
       {/* <ProductGridFour products={eightProducts} /> */}
-      <Carousel products={eightProducts}/>
+      <Carousel products={eightProducts} />
     </div>
   );
 }
