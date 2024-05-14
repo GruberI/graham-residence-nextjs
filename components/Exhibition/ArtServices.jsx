@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function ArtServices() {
   return (
-    <div className="border-t border-black pt-20 m-auto max-w-7xl mt-4">
+    <div className="border-t border-black pt-16 sm:pt-20 m-auto max-w-7xl mt-4">
       <div>
-        <h1 className="sm:text-5xl text-4xl text-center pb-10">
+        <h1 className="sm:text-5xl text-4xl text-center pb-10 sm:pb-20">
           Art Advisory Services
         </h1>
         <h3 className="sm:text-lg text-xl text-center pb-4 mx-6 md:mx-20">
@@ -14,9 +14,9 @@ export default function ArtServices() {
         </h3>
       </div>
       {/* Section 1 */}
-      <div className="m-auto sm:px-0 md:mx-8 pt-6 sm:pt-10 " id="featured">
+      <div className="m-auto sm:px-0 mx-8 pb-6" id="featured">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-6 sm:gap-y-16 lg:grid-cols-2">
             <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
               <img
                 src="https://ipfs.filebase.io/ipfs/QmQ1YMea1LndtBE6WQBS8Y9NBpFjmJiorfmNu14uVNSTY1/Qmf8dtvrCjLHQrmJQ5aLiraxfz9BznfpSnJqHEmnXbm4P5"
@@ -25,7 +25,7 @@ export default function ArtServices() {
               />
             </div>
 
-            <div className="ml-5 flex flex-col content-start mb-10 sm:mb-0">
+            <div className="ml-5 flex flex-col content-start">
               <div>
                 <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
                   For Individuals
@@ -54,7 +54,7 @@ export default function ArtServices() {
       {/* Section 2 */}
       <div className="m-auto sm:px-0 mx-8" id="featured">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-16 lg:grid-cols-2 hidden lg:inline-flex">
+          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-6 sm:gap-y-16 lg:grid-cols-2 hidden lg:inline-flex">
             <div className="ml-5 flex flex-col content-start">
               <div>
                 <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
@@ -88,7 +88,7 @@ export default function ArtServices() {
           </div>
           {/*Small / Mobile view*/}
 
-          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-16 lg:grid-cols-2 inline-flex lg:hidden">
+          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-6 sm:gap-y-16 lg:grid-cols-2 inline-flex lg:hidden">
             <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
               <img
                 src="https://ipfs.filebase.io/ipfs/QmYRLnrT8zADbjBXsjSqV9mA97Bw1HW6EDXonPHuMSKZ6h"
@@ -125,7 +125,7 @@ export default function ArtServices() {
       {/* Section 3 */}
       <div className="m-auto sm:px-0 mx-8 pb-6" id="featured">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-x-2 gap-y-6 sm:gap-y-16 lg:grid-cols-2">
             <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
               <img
                 src="https://ipfs.filebase.io/ipfs/QmUjUzzJEa6VB3fZHRqUSdbMGcg1kMqhYuQa619JDW2UTN/QmVpb1BPJBQSvonDcnoCCvRybgUoB788toom51D4C742D9"

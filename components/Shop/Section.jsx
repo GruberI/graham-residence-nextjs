@@ -4,7 +4,7 @@ import { Suspense } from "react";
 
 export default function Section() {
   return (
-    <div className="my-20">
+    <div className="my-16 sm:my-20">
       <div className="mx-auto max-w-7xl px-6 sm:px-4 mb-0 lg:px-6">
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 md:grid-cols-2">
           <Suspense>
@@ -30,7 +30,7 @@ export default function Section() {
               />
             </div> */}
           </Suspense>
-          <div className="flex flex-col m-auto p-2 my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
+          <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
             <div className="pb-6 pt-0 sm:pt-10 lg:pt-0">
               <h1 className="lg:text-4xl text-2xl sm:font-medium font-semibold">
                 CURATION IS ABOUT

@@ -4,7 +4,7 @@ export default function SectionFirst() {
       className="m-auto border-t border-black pt-20 pb-10"
       id="featured"
     >
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 sm:gap-y-16 lg:grid-cols-2">
           <div>
             <div className="aspect-[2/3] overflow-hidden bg-black-100">

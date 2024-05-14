@@ -12,7 +12,7 @@ export default function Header() {
       <div>
         <HeaderImage />
       </div>
-      <div className="mt-4">
+      <div className="mt-4 mx-6 sm:mx-0">
         <p className="text-xl">A conversation of sorts</p>
         <Fade>
         <h2 className="mt-4 text-center text-2xl sm:text-5xl italic">Marcel Rozek and David Matthew King</h2>

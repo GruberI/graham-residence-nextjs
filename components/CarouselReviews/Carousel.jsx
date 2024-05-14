@@ -121,26 +121,23 @@ export default class Carousel extends Component {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             initialSlide: 2,
           },
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             dots: false,
-            autoplay: true,
-            speed: 4000,
-            autoplaySpeed: 4000,
             cssEase: "linear",
           },
         },
       ],
     };
     return (
-      <div className="mx-10 m-auto mb-10">
+      <div className="mx-10 m-auto mb-10 mt-10 mt-0">
         <h1 className="sm:text-3xl text-2xl text-center mb-10">What guests are saying</h1>
 
         <div className="">

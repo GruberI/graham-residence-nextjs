@@ -29,8 +29,8 @@ const posts = [
 
 export default function VisitUs() {
   return (
-    <div className="mt-20 border-t border-black pt-20 m-auto max-w-7xl">
-      <h1 className="sm:text-5xl text-4xl pb-4 lg:pb-16 text-center">
+    <div className="mt-20 border-t border-black pt-16 sm:pt-20 m-auto max-w-7xl pb-10">
+      <h1 className="sm:text-5xl text-4xl pb-0 lg:pb-16 text-center">
         Visit Us
       </h1>
       <div className="mx-auto mt-16 grid auto-rows-fr grid-cols-1 gap-16 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -44,7 +44,7 @@ export default function VisitUs() {
               />
             </div>
 
-            <div className="text-center my-10">
+            <div className="text-center my-4 sm:my-10">
               <h3 className="text-2xl font-semibold leading-6 text-gray-900">
                 <a href={post.href}>{post.title}</a>
               </h3>

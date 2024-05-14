@@ -133,17 +133,19 @@ export default async function Exhibition() {
     <div className="bg-white max-w-7xl m-auto">
       <Header />
       <SectionFirst />
-      <ThreeImageGrid />
-      <Quote quote={quote} />
-      <TwoImageSection imageData={twoImageSectionData[0]} />
-      <ThreeImageSection imageData={threeImageSectionData[0]} />
-      <SixImageGrid products={sixProductSet} />
-      <Banner banner={banner} />
-      <TwoImageSection imageData={twoImageSectionData[1]} />
-      <ThreeImageSection imageData={threeImageSectionData[1]} />
-      <SecondQuote />
-      <SixImageGrid products={sixProductMarcel} />
-      <Banner banner={bannerTwo} />
+      <div className="max-w-7xl">
+        <ThreeImageGrid />
+        <Quote quote={quote} />
+        <TwoImageSection imageData={twoImageSectionData[0]} />
+        <ThreeImageSection imageData={threeImageSectionData[0]} />
+        <SixImageGrid products={sixProductSet} />
+        <Banner banner={banner} />
+        <TwoImageSection imageData={twoImageSectionData[1]} />
+        <ThreeImageSection imageData={threeImageSectionData[1]} />
+        <SecondQuote />
+        <SixImageGrid products={sixProductMarcel} />
+        <Banner banner={bannerTwo} />
+      </div>
     </div>
   );
 }

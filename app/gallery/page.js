@@ -7,10 +7,11 @@ import ArtServicesText from "@/components/Exhibition/ArtServicesText";
 import VisitUs from "@/components/Exhibition/VisitUs";
 import ArtistSubmissionContact from "@/components/Exhibition/ArtistSubmissionContact";
 
-// export const metadata = {
-//   title: 'Graham Gallery',
-//   description: 'Graham Gallery is a rotating exhibition space featuring original artwork by emerging contemporary artists',
-// }
+export const metadata = {
+  title: "Graham Collective | Gallery, Exhibitions, Residencies & Artwork",
+  description:
+    "A rotating exhibition space featuring original artwork by emerging & mid career contemporary artists. Set in context unlike a typical gallery, our experiential space transports and inspires",
+};
 
 export default function MainExhibition() {
   return (

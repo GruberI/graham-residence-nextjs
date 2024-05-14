@@ -3,7 +3,7 @@ import { Suspense } from "react";
 export default function Book() {
   return (
     <div
-      className="m-auto pt-10 sm:pt-24 pb-0 sm:pb-24 bg-white"
+      className="m-auto pt-10 sm:pt-24 pb-0 sm:pb-20 bg-white"
       id="property-book"
     >
       <div className="m-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 bg-[#f5f5f5] sm:shadow-inner p-14">
