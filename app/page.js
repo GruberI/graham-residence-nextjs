@@ -1,7 +1,7 @@
 // import SectionFirst from "@/components/Property/SectionFirst";
 // import TwoColumnGrid from "@/components/Property/TwoColumnGrid";
 // import Text from "@/components/Property/Text";
-import TextFirst from "@/components/Property/TextFirst";
+// import TextFirst from "@/components/Property/TextFirst";
 import TwoRowGrid from "@/components/Property/TwoRowGrid";
 // import Book from "@/components/Property/Book";
 import HeroImageText from "@/components/Property/HeroImageText";

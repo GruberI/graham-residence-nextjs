@@ -25,7 +25,7 @@ export default function HeroImageText() {
           </h1>
           <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[44vh]">
             <Fade>
-              <p className="text-white text-xs sm:text-lg max-w-2xl">
+              <p className="text-white text-lg max-w-3-xl sm:max-w-2xl">
               A celebration of California modernity and the quiet transcendence of the Mojave Desert, with fine art & intentionally curated objects
               </p>
               <a

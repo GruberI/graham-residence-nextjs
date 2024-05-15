@@ -135,7 +135,7 @@ export default function PopoverItems({ color, pathname }) {
                     ref={triggerRef}
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
-                      `relative z-10 flex items-center border-b-1 pt-px text-xs md:text-base xl:text-lg duration-300 ease-out outline-none`
+                      `relative z-10 flex items-center border-b-1 pt-px text-base xl:text-lg duration-300 ease-out outline-none`
                     )}
                     style={
                       pathname == "/" ? { color: color } : { color: "black" }
@@ -277,7 +277,7 @@ export default function PopoverItems({ color, pathname }) {
                     ref={triggerRefSecond}
                     className={classNames(
                       open ? "black" : "hover:text-neutral-300",
-                      `relative z-10 flex items-center border-b-1 pt-px text-xs md:text-base xl:text-lg duration-300 ease-out outline-none`
+                      `relative z-10 flex items-center border-b-1 pt-px text-base xl:text-lg duration-300 ease-out outline-none`
                     )}
                     style={
                       pathname == "/" ? { color: color } : { color: "black" }
@@ -431,7 +431,7 @@ export default function PopoverItems({ color, pathname }) {
             <Link
               key={item.name}
               href={item.href}
-              className={`flex items-center text-xs md:text-base xl:text-lg hover:text-neutral-300 font-[400]`}
+              className={`flex items-center text-base xl:text-lg hover:text-neutral-300 font-[400]`}
               target={item.id === "property" ? "_blank" : undefined}
               style={pathname == "/" ? { color: color } : { color: "black" }}
             >
