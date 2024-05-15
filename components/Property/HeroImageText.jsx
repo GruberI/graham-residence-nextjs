@@ -12,20 +12,20 @@ export default function HeroImageText() {
   };
 
   return (
-    <div className="relative isolate overflow-hidden pt-36">
+    <div className="relative isolate overflow-hidden pt-36 sm:pt-28">
       <img
         src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
-      <div className="mx-auto max-w-4xl py-10 sm:py-10 lg:py-10">
+      <div className="mx-auto max-w-4xl py-10 sm:py-12 ">
         <div className="text-center">
-          <h1 className="text-4xl sm:text-7xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-2 sm:mt-0">
+          <h1 className="text-4xl sm:text-7xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-6 sm:mt-0">
             The Graham Collective
           </h1>
-          <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[44vh]">
+          <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[36vh] sm:mt-[47vh]">
             <Fade>
-              <p className="text-white text-lg max-w-3-xl sm:max-w-2xl">
+              <p className="text-white sm:text-lg max-w-2xl">
               A celebration of California modernity and the quiet transcendence of the Mojave Desert, with fine art & intentionally curated objects
               </p>
               <a
