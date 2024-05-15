@@ -57,7 +57,7 @@ export default function Residence() {
       <HouseSpecs />
       <Book />
       <Carousel />
-      <Instagram />
+      {/* <Instagram /> */}
     </>
   );
 }
