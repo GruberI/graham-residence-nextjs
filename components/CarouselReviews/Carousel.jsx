@@ -137,7 +137,7 @@ export default class Carousel extends Component {
       ],
     };
     return (
-      <div className="mx-10 m-auto mb-10 mt-10 sm:mt-0 max-w-7xl mx-auto">
+      <div className="m-auto mb-10 mt-10 sm:mt-0 max-w-7xl">
         <h1 className="sm:text-3xl text-2xl text-center mb-10">
           What guests are saying
         </h1>

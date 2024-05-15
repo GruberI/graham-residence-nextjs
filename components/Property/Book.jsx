@@ -3,10 +3,10 @@ import { Suspense } from "react";
 export default function Book() {
   return (
     <div
-      className="m-auto pt-10 sm:pt-24 pb-0 sm:pb-20 bg-white"
+      className="bg-[#f5f5f5] sm:shadow-inner m-auto mt-10 mb-16"
       id="property-book"
     >
-      <div className="m-auto px-4 sm:px-6 lg:px-8 bg-[#f5f5f5] sm:shadow-inner p-14">
+      <div className="m-auto px-4 sm:px-6 lg:px-8 p-14 max-w-7xl mx-auto">
         <Suspense>
           <div className="grid grid-cols-1 flex items-center gap-y-6 sm:gap-y-16 lg:grid-cols-2 max-w-7xl mx-auto">
             <div className="flex items-end flex-col ml-0 sm:ml-20">

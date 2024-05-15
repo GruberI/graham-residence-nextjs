@@ -1,7 +1,8 @@
 export default function Instagram() {
   return (
     <div className="m-auto border-t border-black">
-      <div className="flex flex-col justify-center pt-16 sm:pt-20">
+     <div className="max-w-7xl mx-auto">
+     <div className="flex flex-col justify-center pt-16 sm:pt-20">
         <a
           href="https://www.instagram.com/graham___collective/"
           target="_blank"
@@ -11,7 +12,7 @@ export default function Instagram() {
           @GRAHAM__COLLECTIVE
         </a>
       </div>
-      <div className="max-w-7xl m-auto px-2 sm:px-0 hidden sm:flex md:h-[250px] sm:h-[100px] h-[100px]">
+      <div className="m-auto px-2 sm:px-0 hidden sm:flex md:h-[250px] sm:h-[100px] h-[100px]">
         <iframe
           src="https://snapwidget.com/embed/1055188"
           className="snapwidget-widget"
@@ -34,11 +35,12 @@ export default function Instagram() {
           style={{
             border: "none",
             overflow: "hidden",
-            width: "640px",
+            width: "450px",
             height: "160px",
           }}
         ></iframe>
       </div>
+     </div>
     </div>
   );
 }
