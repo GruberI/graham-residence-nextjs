@@ -22,7 +22,7 @@ export default function SectionFirst() {
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mx-4">
               <p className="tracking-wide leading-7">
                 Graham Gallery is honored to present Convergence, an artistic
                 dialogue between Los Angeles-based artists Marcel Rozek and

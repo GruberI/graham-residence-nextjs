@@ -56,10 +56,8 @@ export default function Residence() {
       <TwoRowGrid imgSrc={imagesSecond} />
       <HouseSpecs />
       <Book />
-      <div className="hidden sm:block">
-        <Carousel />
-        <Instagram />
-      </div>
+      <Carousel />
+      <Instagram />
     </>
   );
 }

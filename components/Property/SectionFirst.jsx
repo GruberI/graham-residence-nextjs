@@ -1,5 +1,5 @@
-// "use client";
-// import { Slide } from "react-awesome-reveal";
+"use client";
+import { Slide } from "react-awesome-reveal";
 
 export default function SectionFirst() {
   return (
@@ -18,7 +18,7 @@ export default function SectionFirst() {
             </div>
             <div>
               <div className="sm:space-y-6 space-y-10">
-                {/* <Slide direction="right"> */}
+                <Slide direction="right">
                   <p className="tracking-wide text-xl sm:text-3xl xl:text-5xl text-center sm:text-left font-thin sm:mt-6 mt-10 mb-4 sm:mb-10 px-0 sm:px-16 lg:px-0">
                     The Graham Residence is a mid-century modern retreat near
                     Joshua Tree National Park where the lines between home and
@@ -28,11 +28,11 @@ export default function SectionFirst() {
 
                   <a
                     href="#property-book"
-                    className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 sm:pl-2"
+                    className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 sm:pl-2 flex justify-center sm:justify-start "
                   >
                     Book a stay
                   </a>
-                {/* </Slide> */}
+                </Slide>
               </div>
             </div>
           </div>

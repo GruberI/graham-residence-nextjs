@@ -2,22 +2,22 @@ import Link from "next/link";
 const contact = [
   {
     name: "artwork",
-    text: "Artwork & shop inquires:",
-    subtext: "info@graham-collective.com",
+    text: "Artwork & shop inquires: ",
+    subtext: " info@graham-collective.com",
     email: "info@graham-collective.com",
     subject: "TGR Artwork or Shop Inquiry",
   },
   {
     name: "artist representation",
-    text: "Artist representation:",
-    subtext: "lindsey@graham-collective.com",
+    text: "Artist representation: ",
+    subtext: " lindsey@graham-collective.com",
     email: "lindsey@graham-collective.com",
     subject: "Artist representation by Lindsey Goldberg Design",
   },
   {
     name: "photography",
-    text: "Shoots & Events:",
-    subtext: "tgr@grahamresidence.com",
+    text: "Shoots & Events: ",
+    subtext: " tgr@grahamresidence.com",
     email: "tgr@grahamresidence.com",
     subject: "Photography Inquiry for TGR",
   },
@@ -31,19 +31,18 @@ export default function Contact() {
             {contact.map((value) => (
               <div
                 key={value.name}
-                className="relative flex justify-center text-center"
+                className="relative flex justify-center text-center flex-col sm:flex-row"
               >
-                <p>
-                  {value.text}{" "}
-                  <span className="hover:underline hover:underline-offset-8">
-                    <Link
-                      className="inline"
-                      href={`mailto:"${value.email}?subject=${value.subject}`}
-                    >
-                      {value.subtext}
-                    </Link>{" "}
-                  </span>
-                </p>
+                <p>{value.text} </p>
+
+                <Link
+                  className=""
+                  href={`mailto:"${value.email}?subject=${value.subject}`}
+                >
+                  <p className="hover:underline hover:underline-offset-8">
+                   {value.subtext}
+                  </p>
+                </Link>
               </div>
             ))}
           </dl>

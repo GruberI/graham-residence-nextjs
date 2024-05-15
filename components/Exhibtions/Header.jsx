@@ -22,7 +22,7 @@ export default function Header() {
                 The vibrant work of two LA based artists converse with one
                 another among the muted landscape.
               </p>
-              <p className="w-11/12 lg:w-8/12">
+              <p className="w-11/12 lg:w-8/12 mt-2 sm:mt-0">
                 {" "}
                 On display at the Graham Residence, May 2024 - July 2024
               </p>
