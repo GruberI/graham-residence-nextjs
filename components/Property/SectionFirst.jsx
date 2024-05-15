@@ -17,22 +17,23 @@ export default function SectionFirst() {
               </div>
             </div>
             <div>
-              <Slide direction="right">
-                <div className="sm:space-y-6 space-y-10">
+              <div className="sm:space-y-6 space-y-10">
+                <Slide direction="right">
                   <p className="tracking-wide text-xl sm:text-3xl xl:text-5xl text-center sm:text-left font-thin sm:mt-6 mt-10 mb-4 sm:mb-10 px-0 sm:px-16 lg:px-0">
                     The Graham Residence is a mid-century modern retreat near
                     Joshua Tree National Park where the lines between home and
                     gallery are blurred. Situated on 20 acres of pristine land,
                     this is Mojave Desert living at its finest.{" "}
                   </p>
+
                   <a
                     href="#property-book"
                     className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 sm:pl-2"
                   >
                     Book a stay
                   </a>
-                </div>
-              </Slide>
+                </Slide>
+              </div>
             </div>
           </div>
         </div>
