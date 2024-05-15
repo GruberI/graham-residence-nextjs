@@ -137,7 +137,7 @@ export default class Carousel extends Component {
       ],
     };
     return (
-      <div className="mx-10 m-auto mb-10 mt-10 mt-0">
+      <div className="mx-10 m-auto mb-10 mt-10 sm:mt-0">
         <h1 className="sm:text-3xl text-2xl text-center mb-10">What guests are saying</h1>
 
         <div className="">
@@ -145,7 +145,7 @@ export default class Carousel extends Component {
             {reviews.map((review, i) => (
               <li
                 key={i}
-                className="flex-none min-[575px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 min-h-[270px]"
+                className="flex-none min-[575px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 min-h-[240px] sm:min-h-[380px]"
               >
                 <div className="mx-2 sm:mx-10 text-xs sm:text-base lg:text-lg">
                   <p>{review.review}</p>

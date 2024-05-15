@@ -51,10 +51,10 @@ export default function Residence() {
     <>
       <Hero />
       <SectionFirst />
-      <div className="max-w-7xl">
-        <TwoRowGrid imgSrc={imagesFirst} />
-        <Text text={text} />
-        <TwoRowGrid imgSrc={imagesSecond} />
+      <TwoRowGrid imgSrc={imagesFirst} />
+      <Text text={text} />
+      <TwoRowGrid imgSrc={imagesSecond} />
+      <div className="max-w-7xl m-auto">
         <HouseSpecs />
         <Book />
         <Carousel />
