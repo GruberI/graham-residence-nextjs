@@ -133,9 +133,11 @@ export default async function Exhibition() {
     <div className="bg-white max-w-7xl m-auto">
       <Header />
       <SectionFirst />
-      <div className="max-w-7xl">
+    
         <ThreeImageGrid />
+        <div className="mb-16 sm:mb-0">
         <Quote quote={quote} />
+        </div>
         <TwoImageSection imageData={twoImageSectionData[0]} />
         <ThreeImageSection imageData={threeImageSectionData[0]} />
         <SixImageGrid products={sixProductSet} />
@@ -145,7 +147,7 @@ export default async function Exhibition() {
         <SecondQuote />
         <SixImageGrid products={sixProductMarcel} />
         <Banner banner={bannerTwo} />
-      </div>
+ 
     </div>
   );
 }
