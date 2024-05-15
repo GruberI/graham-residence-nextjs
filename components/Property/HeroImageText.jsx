@@ -23,7 +23,7 @@ export default function HeroImageText() {
           <h1 className="text-4xl sm:text-7xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-6 sm:mt-0">
             The Graham Collective
           </h1>
-          <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[36vh] sm:mt-[47vh]">
+          <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[40vh] sm:mt-[47vh]">
             <Fade>
               <p className="text-white sm:text-lg max-w-2xl">
               A celebration of California modernity and the quiet transcendence of the Mojave Desert, with fine art & intentionally curated objects
