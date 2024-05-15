@@ -5,7 +5,7 @@ export default function TwoImageSection({ imageData }) {
         <img
           src={imageData.imgFirst.imgSrc}
           alt=""
-          className="object-cover max-h-[600px]"
+          className="w-full sm:w-6/12"
         />
         <div className="flex flex-col justify-center sm:justify-end w-full ml-10 sm:ml-0">
           <a href={imageData.href}>
@@ -18,11 +18,7 @@ export default function TwoImageSection({ imageData }) {
         </div>
       </div>
       <div className="row-start-2 row-span-2">
-        <img
-          src={imageData.imgSecond.imgSrc}
-          alt=""
-          className="object-cover max-h-[600px]"
-        />
+        <img src={imageData.imgSecond.imgSrc} alt="" />
       </div>
     </div>
   );
