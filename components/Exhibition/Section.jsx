@@ -24,7 +24,7 @@ export default function Section() {
             </Slide>
           </div>
           <div>
-            <div className="overflow-hidden bg-black-100 aspect-[4/5] py-10 sm:py-2 lg:py-10">
+            <div className="overflow-hidden bg-black-100 aspect-[4/5] py-8 sm:py-2 lg:py-10">
               <img
                 src="https://ipfs.filebase.io/ipfs/Qma519dMyvcX4uuviSq2uZjL2Jhv7yVJdkCfsDBSndXwRV/QmXk9Z8WTi9Gc9L5ziRm4gTUZzUczckNFt9hR8G3Fi3bGR"
                 alt="Person holding Kyle Steed painting outside"
