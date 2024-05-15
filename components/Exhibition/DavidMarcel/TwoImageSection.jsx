@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function TwoImageSection({ imageData }) {
   return (
-    <div className="max-w-7xl grid sm:grid-rows-3 grid-cols-1 sm:grid-cols-3 sm:grid-flow-col gap-6 m-auto mt-0 sm:mt-20">
+    <div className="grid sm:grid-rows-3 grid-cols-1 sm:grid-cols-3 sm:grid-flow-col gap-6 m-auto mt-0 sm:mt-20">
       <div className="sm:col-span-2 sm:row-end-3 sm:row-span-2 flex flex-col sm:flex-row gap-4">
         <img src={imageData.imgFirst.imgSrc} alt="" className="w-full sm:w-6/12" />
 

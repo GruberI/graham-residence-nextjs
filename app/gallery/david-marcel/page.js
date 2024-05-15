@@ -130,24 +130,22 @@ export default async function Exhibition() {
 
   const sixProductMarcel = productsByTagMarcel.slice(0, 3);
   return (
-    <div className="bg-white max-w-7xl m-auto">
+    <div className="bg-white max-w-7xl mx-auto">
       <Header />
       <SectionFirst />
-    
-        <ThreeImageGrid />
-        <div className="mb-16 sm:mb-0">
+      <ThreeImageGrid />
+      <div className="mb-16 sm:mb-0">
         <Quote quote={quote} />
-        </div>
-        <TwoImageSection imageData={twoImageSectionData[0]} />
-        <ThreeImageSection imageData={threeImageSectionData[0]} />
-        <SixImageGrid products={sixProductSet} />
-        <Banner banner={banner} />
-        <TwoImageSection imageData={twoImageSectionData[1]} />
-        <ThreeImageSection imageData={threeImageSectionData[1]} />
-        <SecondQuote />
-        <SixImageGrid products={sixProductMarcel} />
-        <Banner banner={bannerTwo} />
- 
+      </div>
+      <TwoImageSection imageData={twoImageSectionData[0]} />
+      <ThreeImageSection imageData={threeImageSectionData[0]} />
+      <SixImageGrid products={sixProductSet} />
+      <Banner banner={banner} />
+      <TwoImageSection imageData={twoImageSectionData[1]} />
+      <ThreeImageSection imageData={threeImageSectionData[1]} />
+      <SecondQuote />
+      <SixImageGrid products={sixProductMarcel} />
+      <Banner banner={bannerTwo} />
     </div>
   );
 }

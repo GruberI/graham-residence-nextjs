@@ -1,6 +1,6 @@
 export default function Banner({ banner }) {
   return (
-    <div className="m-auto border-t border-b border-black max-w-7xl mb-10 pb-20">
+    <div className="m-auto border-t border-b border-black mb-10 pb-20">
       <div className="mx-auto px-4 sm:px-6 lg:px-6 mt-20">
         <div className="grid grid-cols-1 items-center gap-x-10 gap-y-8 sm:gap-y-16 lg:grid-cols-2">
           <div>
