@@ -49,7 +49,7 @@ const navigation = {
         { name: "Paintings", href: "/art/paintings" },
         { name: "Photography", href: "/art/photography" },
         { name: "Shop All", href: "/art" },
-        { name: "By Artist", href: "/gallery/artist" },
+        { name: "By Artist", href: "/gallery/artists" },
       ],
       home: [
         { name: "Atelier Saucier", href: "/home/atelier-saucier" },
