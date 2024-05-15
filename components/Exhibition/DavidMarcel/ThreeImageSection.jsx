@@ -12,7 +12,7 @@ export default function ThreeImageSection({ imageData }) {
       <div className="flex flex-col-reverse sm:flex-row">
         <div className="sm:row-start-2 sm:row-span-2 sm:content-end text-end pl-20 pr-4 justify-center mt-10 ms:mt-0">
           <a href={imageData.href}>
-            <p>{imageData.Title}</p>
+            <p>{imageData.title}</p>
             <p>by {imageData.artist}</p>
             <p>{imageData.size}</p>
             <p>{imageData.type} on Canvas</p>

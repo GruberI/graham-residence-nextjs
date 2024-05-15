@@ -40,7 +40,7 @@ const twoImageSectionData = [
   {
     artist: "David Matthew King",
     title: "Untitled (12.3.22)",
-    href: "/product/untitled-12-03-22",
+    href: "/product/between-eye-and-sky-by-kyle-steed",
     size: "60 x 52 in.",
     type: "Acrylic",
     price: "6,200",
@@ -75,13 +75,13 @@ const threeImageSectionData = [
   {
     artist: "David Matthew King",
     title: "Untitled (10.9.22)",
-    href: "/product/untitled-12-03-22",
+    href: "/product/untitled-2",
     size: "60 x 52 in.",
     type: "Acrylic",
     price: "6,200",
     imgFirst: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmRTsK696AZY88Uxg4qwjv228kya4bR6FY9iSpGVDadJZf",
+        "https://ipfs.filebase.io/ipfs/QmaMPzHRD6eNLbUCMNcHEnDjK7YuQUwTgco1AyWARVGjHA",
     },
     imgSecond: {
       imgSrc:
@@ -95,7 +95,7 @@ const threeImageSectionData = [
   {
     artist: "Marcel Rozek",
     title: "Cold Grey Over Warm",
-    href: "/product/untitled-12-03-22",
+    href: "/product/cold-grey-over-warm",
     size: "60 x 52 in.",
     type: "Acrylic",
     price: "6,200",

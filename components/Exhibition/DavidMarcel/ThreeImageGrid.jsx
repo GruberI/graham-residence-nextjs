@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function ThreeImageGrid() {
   return (
     <div className="mx-auto grid grid-cols-2 grid-rows-2 grid-flow-col gap-x-10 sm:pt-10 gap-y-10">
