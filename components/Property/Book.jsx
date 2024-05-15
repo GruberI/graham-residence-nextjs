@@ -8,7 +8,7 @@ export default function Book() {
     >
       <div className="m-auto px-4 sm:px-6 lg:px-8 bg-[#f5f5f5] sm:shadow-inner p-14">
         <Suspense>
-          <div className="grid grid-cols-1 flex items-center gap-y-6 sm:gap-y-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 flex items-center gap-y-6 sm:gap-y-16 lg:grid-cols-2 max-w-7xl mx-auto">
             <div className="flex items-end flex-col ml-0 sm:ml-20">
               <p className="m-auto mb-2 text-xl sm:text-2xl text-center mt-6 sm:mt-0">
                 We'd love to host you at{" "}

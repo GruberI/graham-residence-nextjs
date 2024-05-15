@@ -15,7 +15,7 @@ export default function Banner({ banner }) {
           <div>
             <div className="m-auto space-y-6 flex flex-col justify-center items-center w-11/12 sm:w-10/12">
               <p>MEET</p>
-              <h1 className="sm:text-5xl text-3xl sm:font-thin font-semibold">
+              <h1 className="sm:text-5xl text-2xl sm:font-thin font-semibold">
                 {banner.artist}
               </h1>
 

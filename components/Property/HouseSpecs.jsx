@@ -1,6 +1,6 @@
 export default function HouseSpecs() {
   return (
-    <div className="mt-4 sm:mt-16">
+    <div className="mt-4 sm:mt-16 w-full">
       <div className="m-auto sm:mx-10 sm:pt-0 pt-10 pb-10">
         <div className="mx-auto px-4 sm:px-6 lg:px-6">
           <img

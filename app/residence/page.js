@@ -54,11 +54,9 @@ export default function Residence() {
       <TwoRowGrid imgSrc={imagesFirst} />
       <Text text={text} />
       <TwoRowGrid imgSrc={imagesSecond} />
-      <div className="max-w-7xl m-auto">
-        <HouseSpecs />
-        <Book />
-        <Carousel />
-      </div>
+      <HouseSpecs />
+      <Book />
+      <Carousel />
       <Instagram />
     </>
   );
