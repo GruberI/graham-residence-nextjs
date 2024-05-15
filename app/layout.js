@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="viewport"
-          content="width=device-width, height=device-height, initial-scale:1, user-scalable=no"
+          content="width=device-width, height=device-height, initial-scale:1.0, user-scalable=no"
         />
       </head>
       <body className={`${inter.children}`}>
