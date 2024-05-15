@@ -1,5 +1,5 @@
 "use client";
-// import { Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 export default function SectionFirst() {
   return (
@@ -17,7 +17,7 @@ export default function SectionFirst() {
               </div>
             </div>
             <div>
-              {/* <Slide direction="right"> */}
+              <Slide direction="right">
                 <div className="sm:space-y-6 space-y-10">
                   <p className="tracking-wide text-xl sm:text-3xl xl:text-5xl text-center sm:text-left font-thin sm:mt-6 mt-10 mb-4 sm:mb-10 px-0 sm:px-16 lg:px-0">
                     The Graham Residence is a mid-century modern retreat near
@@ -32,7 +32,7 @@ export default function SectionFirst() {
                     Book a stay
                   </a>
                 </div>
-              {/* </Slide> */}
+              </Slide>
             </div>
           </div>
         </div>
