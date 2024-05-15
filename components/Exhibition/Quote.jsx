@@ -1,6 +1,6 @@
 export default function Quote({ quote }) {
   return (
-    <div className="m-auto mt-20">
+    <div className="m-auto mt-20 max-w-7xl">
       <div className="mx-auto text-center">
         <div className="inset-x-0 bottom-0 sm:static sm:self-stretch border-t border-b border-black py-16 px-10">
           <h1

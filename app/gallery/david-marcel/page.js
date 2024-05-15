@@ -130,7 +130,7 @@ export default async function Exhibition() {
 
   const sixProductMarcel = productsByTagMarcel.slice(0, 3);
   return (
-    <div className="bg-white max-w-7xl mx-auto">
+    <div>
       <Header />
       <SectionFirst />
       <ThreeImageGrid />
