@@ -13,18 +13,16 @@ export default async function NewArrivalsSection() {
 
   return (
     <div className="max-w-7xl my-0 sm:my-10 m-auto">
-      <div className="text-left" id="artwork">
-        <h1 className="text-2xl text-black pt-6">
-          New Arrivals
-        </h1>
+      <div className="ml-4 sm:ml-0" id="artwork">
+        <h1 className="text-2xl text-black pt-6">New Arrivals</h1>
+        <a
+          href="/art"
+          className="text-[10px] font-thin leading-6 hover:text-neutral-300 hover:underline hover:underline-offset-8"
+        >
+          VIEW ALL
+        </a>
       </div>
-      <a
-        href="/art"
-        className="text-[10px] font-thin leading-6 hover:text-neutral-300 hover:underline hover:underline-offset-8"
-      >
-        VIEW ALL
-      </a>
-      <Carousel products={eightProducts}/>
+      <Carousel products={eightProducts} />
     </div>
   );
 }

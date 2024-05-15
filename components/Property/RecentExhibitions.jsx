@@ -26,7 +26,7 @@ const artistExhibitions = [
 export default function ExhibitionList() {
   return (
     <div className="sm:mt-10 border-t border-b border-black pt-10 sm:pt-16 m-auto pb-20 mx-10 max-w-7xl mx-auto">
-      <div className="mb-10">
+      <div className="mb-10 ml-4 sm:ml-0">
         <h1 className="sm:text-3xl text-2xl">Recent Exhibitions</h1>
         <a
           href="/exhibitions"

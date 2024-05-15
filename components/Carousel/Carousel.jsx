@@ -79,7 +79,6 @@ export default class Carousel extends Component {
             slidesToShow: 2,
             slidesToScroll: 1,
             dots: false,
-            autoplay: true,
             speed: 4000,
             autoplaySpeed: 4000,
             cssEase: "linear",
@@ -89,15 +88,6 @@ export default class Carousel extends Component {
     };
     return (
       <div className="mb-20">
-        {/* <div className="my-10">
-          <h1 className="sm:text-3xl text-2xl">New Arrivals</h1>
-          <a
-            href="/home"
-            className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
-          >
-            VIEW ALL
-          </a>
-        </div> */}
         <div className="mt-10 mb-4">
           <Slider {...settings}>
             {this.props.products.map((product, i) => (
