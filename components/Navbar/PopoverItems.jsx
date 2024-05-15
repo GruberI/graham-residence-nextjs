@@ -176,7 +176,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/exhibitions">
                                 <p
                                   id="art-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                  className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
                                   EXHIBITIONS
                                 </p>
@@ -204,7 +204,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/gallery/artists">
                                 <p
                                   id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                  className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
                                   ARTISTS
                                 </p>
@@ -230,7 +230,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/gallery#visit-us">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 text-sm xl:text-lg"
+                                  className="font-medium text-gray-900 hover:text-neutral-300 text-sm xl:text-lg"
                                 >
                                   GET IN TOUCH
                                 </p>
@@ -315,14 +315,14 @@ export default function PopoverItems({ color, pathname }) {
                         <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
                           <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
-                              <a href="/art">
+                             
                                 <p
                                   id="art-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                  className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
                                   BROWSE BY
                                 </p>
-                              </a>
+                            
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"
@@ -346,7 +346,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/shop">
                                 <p
                                   id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                  className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
                                   ARTWORK
                                 </p>
@@ -372,7 +372,7 @@ export default function PopoverItems({ color, pathname }) {
                               <a href="/home">
                                 <p
                                   id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                  className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
                                 >
                                   HOME
                                 </p>
@@ -398,7 +398,7 @@ export default function PopoverItems({ color, pathname }) {
                               <Link href="/shop">
                                 <p
                                   id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-slate-400 absolute sm:right-10 text-sm xl:text-lg pt-1"
+                                  className="font-medium text-gray-900 hover:text-neutral-300 absolute sm:right-10 text-sm xl:text-lg pt-1"
                                 >
                                   SHOP ALL
                                 </p>
