@@ -9,7 +9,9 @@ export default function Instagram() {
           className="font-thin sm:text-3xl text-2xl leading-8 flex sm:justify-center justify-start mb-16 sm:mb-20 mx-auto"
         >
           {" "}
-          @GRAHAM__COLLECTIVE
+          <div className="flex flex-row">
+            <p>@GRAHAM<span className="tracking-tightest">__</span> COLLECTIVE</p>
+          </div>
         </a>
       </div>
       <div className="m-auto px-2 sm:px-0 hidden sm:flex md:h-[250px] sm:h-[100px] h-[100px]">

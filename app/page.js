@@ -51,7 +51,7 @@ const imagesFirst = [
 
 export default function Property() {
   return (
-    <div className="overflow-x-hidden">
+    <div >
       {/* <Modal /> */}
       <HeroImageText />
       {/* <TextFirst text={text} /> */}

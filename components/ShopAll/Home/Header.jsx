@@ -14,6 +14,11 @@ const imageByHandle = [
     src: "https://ipfs.filebase.io/ipfs/QmSx8x1TUhyA6RzVtbdA9cqptig7ymmu53DaXuFiFjyBzQ/Qmd8XYCy2TMujYDW4LRVHeA5T653vprGKy1p6YTX9udehB",
     alt: "Loll designs outdoor chairs infront of Graham Residence firepit",
   },
+  {
+    imageHandle: 'new-arrivals',
+    src: "https://ipfs.filebase.io/ipfs/QmQNn2LNn6UdzbuqiSSXJpknNF62sDQbzugxGJm2E9cG8b",
+    alt: "The Graham Residence living room",
+  }
 ];
 export default function ShopAllHomeHeader({ productHandle }) {
   return (

@@ -8,15 +8,16 @@ export default function Section() {
         <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 sm:gap-y-16 lg:grid-cols-2">
           <div>
             <Slide direction="left">
-              <div className="sm:space-y-4 space-y-0">
-                <p className="tracking-wide text-2xl md:text-3xl lg:text-5xl md:text-center lg:text-left mb-10">
-                  Within the walls of The Graham Residence lies Graham Gallery,
+              <div className="sm:space-y-2 space-y-0">
+                <p className="tracking-wide text-2xl md:text-3xl lg:text-5xl md:text-center lg:text-left pb-6">
+                  Within the walls of The Graham Residence, lies Graham Gallery,
                   a rotating exhibition space featuring original artwork by
-                  emerging contemporary artists.{" "}
+                  contemporary artists. Set in a context unlike a typical
+                  gallery, our experiential space transports and inspires.{" "}
                 </p>
                 <a
                   href="/gallery#exhibitions"
-                  className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 pt-6"
+                  className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
                 >
                   Explore Exhibitions
                 </a>

@@ -23,7 +23,10 @@ module.exports = {
       }),
       color: {
         eggnog: '#93535f',
-      }
+      },
+    },
+    letterSpacing: {
+      tightest: '-.185em'
     }
   },
   plugins: [],

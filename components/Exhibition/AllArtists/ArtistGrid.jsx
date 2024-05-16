@@ -10,7 +10,7 @@ export default function ArtistGrid({ artists }) {
   return (
     <div className="mx-auto max-w-7xl py-4">
       <div className="flex items-baseline justify-between border-b border-gray-200 pb-6">
-        <h1 className="text-lg font-light tracking-wide text-gray-900">
+        <h1 className="text-lg font-light tracking-wide text-gray-900 ml-4 sm:ml-0">
           All Artists
         </h1>
 
@@ -61,7 +61,7 @@ export default function ArtistGrid({ artists }) {
             </Menu>
           </div> */}
       </div>
-      <div className="grid gap-x-10 gap-y-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-10">
+      <div className="grid gap-x-10 gap-y-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-10 mx-6">
         {artists.map((artist, i) => (
           <Link key={i} href={artist.href}>
             <div
