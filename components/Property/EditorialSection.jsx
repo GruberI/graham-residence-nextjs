@@ -38,7 +38,7 @@ const posts = [
 
 export default function EditorialSection() {
   return (
-    <div className="bg-neutral-100 py-10" id='editorial'>
+    <div className="bg-neutral-100 py-10" id="editorial">
       <div className="m-auto max-w-7xl">
         <div className="mx-auto mt-16 grid auto-rows-fr grid-cols-1 gap-12 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
@@ -47,11 +47,15 @@ export default function EditorialSection() {
               className="flex flex-col items-start justify-between"
             >
               <div className="w-full">
-                <img
-                  src={post.imageUrl}
-                  alt=""
-                  className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square"
-                />
+                <a
+                  href={post.href}
+                >
+                  <img
+                    src={post.imageUrl}
+                    alt=""
+                    className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square"
+                  />
+                </a>
               </div>
 
               <div className="flex flex-col">
