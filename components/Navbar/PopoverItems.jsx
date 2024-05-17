@@ -42,7 +42,7 @@ const navigation = {
       href: "/shop",
       categories: [
         { name: "New Arrivals", href: "/home/new-arrivals" },
-        { name: "Ethereal Prints", href: "/art/photography" },
+        { name: "Ethereal Prints", href: "/art/ethereal-prints" },
         { name: "Shop All", href: "/shop/all-product" },
       ],
       art: [

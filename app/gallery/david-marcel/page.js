@@ -40,7 +40,7 @@ const twoImageSectionData = [
   {
     artist: "David Matthew King",
     title: "Untitled (12.3.22)",
-    href: "/product/between-eye-and-sky-by-kyle-steed",
+    href: "/product/untitled-12-3-22",
     size: "60 x 52 in.",
     type: "Acrylic",
     price: "6,200",
