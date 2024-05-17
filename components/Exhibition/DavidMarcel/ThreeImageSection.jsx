@@ -9,7 +9,7 @@ export default function ThreeImageSection({ imageData }) {
           <img src={imageData.imgThird.imgSrc} alt="" />
         </div>
       </div>
-      <div className="flex flex-col-reverse sm:flex-row">
+      <div className="flex flex-col-reverse sm:flex-row mx-10 sm:mx-auto">
         <div className="sm:row-start-2 sm:row-span-2 sm:content-end text-end pl-20 pr-4 justify-center mt-10 ms:mt-0">
           <a href={imageData.href}>
             <p>{imageData.title}</p>

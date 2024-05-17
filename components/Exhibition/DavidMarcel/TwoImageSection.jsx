@@ -1,13 +1,13 @@
 export default function TwoImageSection({ imageData }) {
   return (
-    <div className="grid sm:grid-rows-3 grid-cols-1 sm:grid-cols-3 sm:grid-flow-col gap-6 m-auto mt-0 sm:mt-20 max-w-7xl">
-      <div className="sm:col-span-2 sm:row-end-3 sm:row-span-2 flex flex-col sm:flex-row gap-4">
+    <div className="grid sm:grid-rows-3 grid-cols-1 sm:grid-cols-3 sm:grid-flow-col gap-6 mt-0 sm:mt-20 max-w-7xl mx-10 sm:mx-auto" >
+      <div className="sm:col-span-2 sm:row-end-3 sm:row-span-2 flex flex-col sm:flex-row gap-4 ">
         <img
           src={imageData.imgFirst.imgSrc}
           alt=""
           className="w-full sm:w-6/12"
         />
-        <div className="flex flex-col justify-center sm:justify-end w-full ml-10 sm:ml-0">
+        <div className="flex flex-col justify-center sm:justify-end w-full ml-0">
           <a href={imageData.href}>
             <p>{imageData.title}</p>
             <p>by {imageData.artist}</p>

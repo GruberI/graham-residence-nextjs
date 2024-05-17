@@ -1,28 +1,25 @@
 export default function SectionFirst() {
   return (
-    <div
-      className="m-auto border-t border-black pt-20 pb-10"
-      id="featured"
-    >
+    <div className="m-auto border-t border-black pt-20 pb-20" id="featured">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 sm:gap-y-16 lg:grid-cols-2">
           <div>
-            <div className="aspect-[2/3] overflow-hidden bg-black-100">
+            <div className="overflow-hidden bg-black-100 flex justify-end">
               <img
                 src="https://ipfs.filebase.io/ipfs/QmTvdgVEUP4WwHDCxhzpK4UN6fB8dV8Uxm422BpBvQ2MvW"
                 alt="Kyle Steed painting in The Graham Residence living room during the day."
-                className="h-11/12 w-11/12 object-cover object-center m-auto"
+                className="object-cover object-center m-auto w-10/12 sm:w-9/12 sm:mr-10"
               />
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col pt-10">
             <div className="pb-6">
-              <p className="text-2xl tracking-tight text-black-900 sm:text-3xl italic">
+              <p className="text-2xl tracking-tight text-black-900 sm:text-3xl italic text-center sm:text-left">
                 Convergence
               </p>
             </div>
 
-            <div className="space-y-4 mx-4">
+            <div className="space-y-4 mx-4 text-center sm:text-left">
               <p className="tracking-wide leading-7">
                 Graham Gallery is honored to present Convergence, an artistic
                 dialogue between Los Angeles-based artists Marcel Rozek and
@@ -60,7 +57,9 @@ export default function SectionFirst() {
               </p>
             </div>
             <div className="sm:pt-8 pt-4 pb-4">
-              <p className="text-center">-Lindsey Goldberg, Founder and Curator</p>
+              <p className="text-center">
+                -Lindsey Goldberg, Founder and Curator
+              </p>
             </div>
           </div>
         </div>
