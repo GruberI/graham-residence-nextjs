@@ -9,6 +9,8 @@ const posts = [
       "A serene mid-century modern retreat near Joshua Tree National Park .",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmNMPqyr8TZUSXnjttbCzJ3xd6aHoXRFe1SBn7Knc56FgA/QmS9PPjdbzKRuFei3QZ4HhxxLfyBfLCxnzez1mdSyyfmZj",
+    mobileImageUrl:
+      "https://ipfs.filebase.io/ipfs/QmNMPqyr8TZUSXnjttbCzJ3xd6aHoXRFe1SBn7Knc56FgA/QmS9PPjdbzKRuFei3QZ4HhxxLfyBfLCxnzez1mdSyyfmZj",
     date: "Mar 16, 2020",
     buttonText: "LEARN MORE",
   },
@@ -20,6 +22,8 @@ const posts = [
       "Contextual gallery spaces exhibiting the best in emerging contemporary art.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmcmqwxzxdKtcsq89tPi1a1afZqFQFEXk3T5KGDFHo7G9e/RackMultipart20240501-172-6jtxp6.jpg",
+    mobileImageUrl:
+      "https://ipfs.filebase.io/ipfs/QmbapwiUd9S4ZFEq9ht8mYoN2JQsv7fhMosahi47hCGXYh",
     date: "Mar 16, 2020",
     buttonText: "COLLECT",
   },
@@ -30,6 +34,8 @@ const posts = [
     description:
       "An intentionally curated selection of our favorite home goods.",
     imageUrl:
+      "https://ipfs.filebase.io/ipfs/QmYZRYNpXVYf4D4SwoppYJa5rmRrVyKFPq4Nyf5T421DDA/QmekpobXk8pKQ4no7187Zio7vGqjYCdRriTnJJ7D7X8WcY",
+    mobileImageUrl:
       "https://ipfs.filebase.io/ipfs/QmYZRYNpXVYf4D4SwoppYJa5rmRrVyKFPq4Nyf5T421DDA/QmekpobXk8pKQ4no7187Zio7vGqjYCdRriTnJJ7D7X8WcY",
     date: "Mar 16, 2020",
     buttonText: "EXPLORE",
@@ -44,25 +50,28 @@ export default function EditorialSection() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex flex-col items-start justify-between"
+              className="flex flex-col items-start justify-center"
             >
               <div className="w-full">
-                <a
-                  href={post.href}
-                >
+                <a href={post.href}>
                   <img
                     src={post.imageUrl}
                     alt=""
-                    className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square"
+                    className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square hidden sm:block"
+                  />
+                  <img
+                    src={post.mobileImageUrl}
+                    alt=""
+                    className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square block sm:hidden"
                   />
                 </a>
               </div>
 
               <div className="flex flex-col">
-                <h3 className="text-2xl font-semibold leading-6 text-gray-900 m-auto mt-6">
+                <h3 className="text-2xl font-semibold leading-6 text-gray-900 mx-auto pt-4">
                   <a href={post.href}>{post.title}</a>
                 </h3>
-                <p className="line-clamp-3 text-sm text-gray-600 m-auto text-center w-9/12 my-2">
+                <p className="line-clamp-3 text-sm text-gray-600 m-auto text-center w-10/12 my-2">
                   {post.description}
                 </p>
 

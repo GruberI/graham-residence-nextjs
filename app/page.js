@@ -51,7 +51,7 @@ const imagesFirst = [
 
 export default function Property() {
   return (
-    <div >
+    <div>
       {/* <Modal /> */}
       <HeroImageText />
       {/* <TextFirst text={text} /> */}
