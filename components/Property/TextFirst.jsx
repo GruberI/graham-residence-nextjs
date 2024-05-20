@@ -11,7 +11,7 @@ export default function Text({ text }) {
               {text}
             </h1>
             <a
-              href="/home"
+              href="/about"
               className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
             >
               LEARN MORE

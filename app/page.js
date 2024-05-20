@@ -1,7 +1,7 @@
 // import SectionFirst from "@/components/Property/SectionFirst";
 // import TwoColumnGrid from "@/components/Property/TwoColumnGrid";
 // import Text from "@/components/Property/Text";
-// import TextFirst from "@/components/Property/TextFirst";
+import TextFirst from "@/components/Property/TextFirst";
 import TwoRowGrid from "@/components/Property/TwoRowGrid";
 // import Book from "@/components/Property/Book";
 import HeroImageText from "@/components/Property/HeroImageText";
@@ -31,8 +31,8 @@ export const metadata = {
     "Shop curated fine art & home goods found within The Graham Residence, a contextualized art space just outside Joshua Tree National Park.",
 };
 
-// const text =
-//   "A celebration of California modernity and the quiet transcendence of the high desert, with destinations, fine art, and intentionally curated home essentials from leading craftsman.";
+const text =
+  "A celebration of California modernity and the quiet transcendence of the high desert, with destinations, fine art, and intentionally curated home essentials from leading craftsman.";
 
 const imagesFirst = [
   {
@@ -54,7 +54,7 @@ export default function Property() {
     <div>
       {/* <Modal /> */}
       <HeroImageText />
-      {/* <TextFirst text={text} /> */}
+      <TextFirst text={text} />
       <EditorialSection />
       {/* <SectionFirst /> */}
       {/* <TwoColumnGrid /> */}
