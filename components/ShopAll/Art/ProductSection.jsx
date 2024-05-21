@@ -6,6 +6,7 @@ import ProductGridThree from "../../Product/ProductGridThree";
 import { Suspense } from "react";
 import Banner from "../Banner";
 import About from "./About";
+import { disconnect } from "process";
 
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
@@ -88,7 +89,11 @@ export default function ProductSection({ products, productHandle }) {
         <section aria-labelledby="products-heading" className="pb-16 pt-10">
           <ProductGridThree products={firstSixProducts} />
 
-          <Banner title={productHandle} type={"art"} />
+          {products.length > 6 ? (
+            <Banner title={productHandle} type={"art"} />
+          ) : (
+            ""
+          )}
 
           <ProductGridThree products={remainingProducts} />
         </section>
