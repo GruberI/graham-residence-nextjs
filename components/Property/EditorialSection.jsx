@@ -23,7 +23,7 @@ const posts = [
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmcmqwxzxdKtcsq89tPi1a1afZqFQFEXk3T5KGDFHo7G9e/RackMultipart20240501-172-6jtxp6.jpg",
     mobileImageUrl:
-      "https://ipfs.filebase.io/ipfs/QmbapwiUd9S4ZFEq9ht8mYoN2JQsv7fhMosahi47hCGXYh",
+      "https://ipfs.filebase.io/ipfs/QmXyHncUksnDL916JNoBhq8NmdrAZefKhHNMdYQ5KcAPBr",
     date: "Mar 16, 2020",
     buttonText: "COLLECT",
   },

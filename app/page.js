@@ -52,20 +52,14 @@ const imagesFirst = [
 export default function Property() {
   return (
     <div>
-      {/* <Modal /> */}
       <HeroImageText />
       <TextFirst text={text} />
       <EditorialSection />
       {/* <SectionFirst /> */}
-      {/* <TwoColumnGrid /> */}
       <TwoRowGrid imgSrc={imagesFirst} />
       <ExhibitionList />
       <NewArrivalsSection />
-      {/* <Text text={text[1]} /> */}
-      {/* <HouseSpecs /> */}
-      {/* <Book />  */}
       <Instagram />
-      {/* <Script src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=RWhpnR" /> */}
     </div>
   );
 }
