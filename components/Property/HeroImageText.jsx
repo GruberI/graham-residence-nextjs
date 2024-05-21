@@ -16,14 +16,19 @@ export default function HeroImageText() {
       <img
         src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
         alt=""
-        className="absolute inset-0 -z-10 h-screen w-full object-cover"
+        className="absolute inset-0 -z-10 h-full w-full object-cover hidden sm:flex"
+      />
+      <img
+        src="https://ipfs.filebase.io/ipfs/QmYcH8KTdnqo3kgzybNPrfBb6tJD8T6aWvpngxy97sXqMs"
+        alt=""
+        className="absolute inset-0 -z-10 h-screen w-full object-cover flex sm:hidden"
       />
       <div className="mx-auto max-w-4xl py-10 sm:py-12 ">
         <div className="text-center">
-          <h1 className="text-4xl sm:text-7xl leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-6 sm:mt-0">
+          <h1 className="text-5xl sm:text-7xl sm:leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-6 sm:mt-0">
             The Graham Collective
           </h1>
-          <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[40vh] sm:mt-[60vh]">
+          <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[54vh] sm:mt-[68vh]">
             <Fade>
               {/* <p className="text-white sm:text-lg max-w-2xl">
               A celebration of California modernity and the quiet transcendence of the Mojave Desert, with fine art & intentionally curated objects
