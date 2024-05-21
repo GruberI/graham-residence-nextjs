@@ -36,7 +36,7 @@ const artists = [
     name: "Nicole Taylor DeWitt",
     src: "https://ipfs.filebase.io/ipfs/QmaSUbgq9Hza2nhjQnkw7NyqZXa35pLGJo1x9Yxqkz9Kms",
     altText: "",
-    href: "/art/Nicole-Taylor-Dewitt",
+    href: "/art/nicole-taylor-dewitt",
   },
   // {
   //   name: "Alex Maceda",
