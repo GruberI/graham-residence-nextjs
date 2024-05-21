@@ -72,6 +72,15 @@ const bannerInfo = [
     text: "Marcel Rozek creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School.",
     type: "art",
   },
+  {
+    handle: "nicole-taylor-dewitt",
+    artist: "Nicole Taylor Dewitt",
+    imgSrc:
+      "https://ipfs.filebase.io/ipfs/QmciC6CE7RXXefhXpCPUFanCnVGwrpyhKb1hM61FXUNsNr",
+    imgAltText: "Nicole Dewitt",
+    text: "Nicole Taylor DeWitt (b. 1997) is an American visual artist living in Yucca Valley, California. Inspired by life in the Mojave Desert, her curiosity and unique perspective bring unseen landscapes into focus.",
+    type: "art",
+  },
 ];
 
 const handleClickScroll = (id) => {

@@ -5,7 +5,7 @@ const aboutInfo = [
   {
     handle: "kyle-steed",
     artist: "Kyle Steed",
-    href: '/gallery/kyle-steed',
+    href: "/gallery/kyle-steed",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmQTWf7mwwEodd5RUH2ShWPtbNqqJDr5DwXbwPJgv33Qhs",
     imgAltText: "Kyle Steed painting in living room of the graham residence",
@@ -14,7 +14,7 @@ const aboutInfo = [
   {
     handle: "thai-mainhard",
     artist: "Thai Mainhard",
-    href: '/gallery/thai-mainhard',
+    href: "/gallery/thai-mainhard",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmWsdYRhborxuwVwuZh9aBdVYBfj4REw9s6skbxbR241g2/QmPTsikynbqneuVguJtRKhqDyy1T4McPGUVZP8S7uimsqH",
     imgAltText: "Thai Mainhard sitting on stool surrounded by her paintings",
@@ -23,7 +23,7 @@ const aboutInfo = [
   {
     handle: "yoni-goldberg",
     artist: "Yoni Goldberg",
-    href: '/art/yoni-goldberg',
+    href: "/art/yoni-goldberg",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmedvMhXHkATo8RM28psWPEEsawxE35iTYZckzVmi5cC8n",
     imgAltText: "Yoni Goldberg behind the camera",
@@ -32,7 +32,7 @@ const aboutInfo = [
   {
     handle: "david-matthew-king",
     artist: "David Matthew King",
-    href: '/gallery/david-marcel',
+    href: "/gallery/david-marcel",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmbYUMVCrxRBHhp1CYFks2iScTP177RyT7tciNFuECdZQc/RackMultipart20240501-97-1qxik96.jpg",
     imgAltText: "David Matthew King",
@@ -42,11 +42,20 @@ const aboutInfo = [
   {
     handle: "marcel-rozek",
     artist: "Marcel Rozek",
-    href: '/gallery/david-marcel',
+    href: "/gallery/david-marcel",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmZv3MNH2ynMf3u9guCgxgqov8GcfiB3pUXvYp4aZvNjpp",
     imgAltText: "Marcel Rozek",
     text: "Marcel Rozek (b. 1992, Akron, Ohio ) Rozek, who now resides in Los Angeles, creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School. When he begins a painting, he pours a mixture of diluted paint onto an unprimed canvas, allowing the paint to create the organic forms and movement. With this technique, pools of color spread out and blend together before permeating the canvas. When colors mix, they absorb at different rates, resulting in new color palettes and dreamy, spectral shapes. Rozek sees in his art a reflection of himself, with each piece conveying a different meaning. Rozek's message is one that compels the viewer to reflect on their own vision of the world. Rozek graduated from Ohio's Myers School of Art in 2017, earning a bachelor's degree in studio art, with a minor in drawing and painting. Since finishing his undergraduate degree, Rozek's artwork has been displayed in Istanbul, London, and Amsterdam.",
+  },
+  {
+    handle: "nicole-taylor-dewitt",
+    artist: "Nicole Taylor Dewitt",
+    href: "/gallery/nicole-taylor-dewitt",
+    imgSrc:
+      "https://ipfs.filebase.io/ipfs/QmSPbp19XsqStZPRUL91YSpmRbWaRHMAB98rCbDdrehEaA",
+    imgAltText: "Marcel Rozek",
+    text: "Nicole Taylor DeWitt (b. 1997) is an American visual artist living in Yucca Valley, California. Inspired by life in the Mojave Desert, her curiosity and unique perspective bring unseen landscapes into focus. A decade of film developing expertise and experimentation converge to create striking analog images and one-of-a-kind photographic compositions. Through various forms of abstraction, she explores an open-ended creative process. Past creative endeavors include co-ownership, operation, and creative direction of Hi-Desert Film Lab, curatorial work, and collaboration with Third Man Records to start Third Man Photo Studio. Exhibitions including Nicole’s photographic work have been held in California, Tennessee, and Florida. Past features include Kodak, the Nashville Scene, and Palm Springs Life Magazine.",
   },
 ];
 
@@ -72,18 +81,22 @@ export default function About({ artistName }) {
                   </div>
                 </div>
                 <div>
-                  <div className="m-auto space-y-6 sm:w-10/12 text-center sm:text-left">
+                  <div className="m-auto space-y-6 sm:w-10/12 text-center sm:text-left pt-4">
                     <h1 className="text-2xl font-thin underline underline-offset-8">
                       ABOUT THE ARTIST
                     </h1>
                     <p className="tracking-wide leading-7">{about.text}</p>
                     <div className="pt-4 pb-4 text-center">
-                      <Link
-                        href={about.href}
-                        className="hover:text-neutral-600 text-sm hover:underline hover:underline-offset-8"
-                      >
-                        SEE THE EXHIBITION
-                      </Link>
+                      {about.handle === "nicole-taylor-dewitt" ? (
+                        ""
+                      ) : (
+                        <Link
+                          href={about.href}
+                          className="hover:text-neutral-600 text-sm hover:underline hover:underline-offset-8"
+                        >
+                          SEE THE EXHIBITION
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>
