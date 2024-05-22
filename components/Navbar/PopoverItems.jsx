@@ -12,7 +12,7 @@ const navigation = {
   ],
   gallery: [
     {
-      name: "Art",
+      name: "Gallery",
       href: "/gallery",
       exhibitions: [
         { name: "On View", href: "/exhibitions#current-exhibit" },
@@ -32,8 +32,10 @@ const navigation = {
         { name: "Visit Us", href: "/gallery#visit-us" },
         // { name: "Consulting", href: "/"},
         { name: "Artist Submission", href: "/gallery/#consulting-services" },
+        { name: "Advisory Services", href: "/about#art-advisory" },
         { name: "Subscribe", href: "/gallery#subscribe" },
       ],
+      shop: [{ href: "/art" }],
     },
   ],
   categories: [
@@ -254,7 +256,17 @@ export default function PopoverItems({ color, pathname }) {
                                 </ul>
                               </div>
                             </div>
+                            
                           </div>
+                          <div>
+                              <a href="/art/paintings">
+                                <p
+                                  className="font-medium text-gray-900 hover:text-neutral-300 text-sm xl:text-lg absolute bottom-3 right-6"
+                                >
+                                  SHOP ALL
+                                </p>
+                              </a>
+                            </div>
                         </div>
                       </div>
                     </div>
@@ -315,14 +327,13 @@ export default function PopoverItems({ color, pathname }) {
                         <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
                           <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
-                             
-                                <p
-                                  id="art-heading"
-                                  className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
-                                >
-                                  BROWSE BY
-                                </p>
-                            
+                              <p
+                                id="art-heading"
+                                className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
+                              >
+                                BROWSE BY
+                              </p>
+
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"

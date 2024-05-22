@@ -6,7 +6,7 @@ const posts = [
     title: "Residence",
     href: "/residence",
     description:
-      "A serene mid-century modern retreat near Joshua Tree National Park .",
+      "A serene retreat in the Mojave Desert.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmNMPqyr8TZUSXnjttbCzJ3xd6aHoXRFe1SBn7Knc56FgA/QmS9PPjdbzKRuFei3QZ4HhxxLfyBfLCxnzez1mdSyyfmZj",
     mobileImageUrl:
@@ -19,7 +19,7 @@ const posts = [
     title: "Gallery",
     href: "/gallery",
     description:
-      "Contextual gallery spaces exhibiting the best in emerging contemporary art.",
+      "Spaces exhibiting the best emerging contemporary art.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmcmqwxzxdKtcsq89tPi1a1afZqFQFEXk3T5KGDFHo7G9e/RackMultipart20240501-172-6jtxp6.jpg",
     mobileImageUrl:
@@ -32,7 +32,7 @@ const posts = [
     title: "Shop",
     href: "/shop",
     description:
-      "An intentionally curated selection of our favorite home goods.",
+      "A curated selection of our favorite home goods.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmYZRYNpXVYf4D4SwoppYJa5rmRrVyKFPq4Nyf5T421DDA/QmekpobXk8pKQ4no7187Zio7vGqjYCdRriTnJJ7D7X8WcY",
     mobileImageUrl:
@@ -68,10 +68,10 @@ export default function EditorialSection() {
               </div>
 
               <div className="flex flex-col">
-                <h3 className="text-2xl font-semibold leading-6 text-gray-900 mx-auto pt-4">
+                <h3 className="text-3xl font-semibold leading-6 text-gray-900 mx-auto pt-6">
                   <a href={post.href}>{post.title}</a>
                 </h3>
-                <p className="line-clamp-3 text-sm text-gray-600 m-auto text-center w-10/12 my-2">
+                <p className="line-clamp-3 text-xl text-gray-600 m-auto text-center w-10/12 my-2">
                   {post.description}
                 </p>
 
