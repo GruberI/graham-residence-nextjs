@@ -3,14 +3,18 @@ export default function ThreeImageSection({ imageData }) {
     <div className="mx-auto grid grid-rows-1 grid-col-1 sm:grid-col-3 grid-flow-col sm:py-12 border-t border-black mt-20 pt-20 max-w-7xl">
       <div className="sm:row-start-1 sm:row-end-3 hidden sm:flex flex-col">
         <div>
-          <img src={imageData.imgSecond.imgSrc} alt="" />
+          <a href={imageData.href}>
+            <img src={imageData.imgSecond.imgSrc} alt="" />
+          </a>
         </div>
         <div className="pt-24">
-          <img src={imageData.imgThird.imgSrc} alt="" />
+          <a href={imageData.href}>
+            <img src={imageData.imgThird.imgSrc} alt="" />
+          </a>
         </div>
       </div>
       <div className="flex flex-col-reverse sm:flex-row mx-10 sm:mx-auto">
-        <div className="sm:row-start-2 sm:row-span-2 sm:content-end text-end pl-20 pr-4 justify-center mt-10 ms:mt-0">
+        <div className="sm:row-start-2 sm:row-span-2 sm:content-end text-end pl-20 pr-4 justify-center mt-6 sm:mt-0">
           <a href={imageData.href}>
             <p>{imageData.title}</p>
             <p>by {imageData.artist}</p>
@@ -20,7 +24,7 @@ export default function ThreeImageSection({ imageData }) {
           </a>
         </div>
         <div className="row-start-1 row-span-3">
-          <a href="/product/untitled-2">
+          <a href={imageData.href}>
             <img
               src={imageData.imgFirst.imgSrc}
               alt=""
