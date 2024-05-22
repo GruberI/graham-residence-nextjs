@@ -5,7 +5,7 @@ export default function Convergence() {
     <>
       <Header />
       <HeaderImage />
-      <div className="w-6/12 m-auto mt-12">
+      <div className="sm:w-6/12 m-auto mt-12">
         <div class="klaviyo-form-Vj7VSy"></div>
       </div>
     </>

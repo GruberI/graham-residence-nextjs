@@ -1,15 +1,15 @@
 export default function Header() {
-    return (
-      <div className="bg-white py-26 lg:px-6 sm:px-2 sm:pt-24 pt-48">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="font-semibold sm:text-6xl text-4xl tracking-widest sm:mt-6 mb-4 font-[cormorant]">
-            Convergence
-          </h1>
-          <p className="pb-6 text-xl">by David Matthew King and Marcel Rozek</p>
-          <p className="text-xs m-auto font-semibold">
-            EXHIBITION BY THE GRAHAM RESIDENCE
-          </p>
-        </div>
+  return (
+    <div className="bg-white py-26 lg:px-6 sm:px-2 pt-48 sm:pt-28">
+      <div className="mx-auto max-w-2xl text-center">
+        <h1 className="font-thin sm:text-6xl text-5xl tracking-widest sm:mt-4 mb-4">
+          Convergence
+        </h1>
+        <p className="pb-2 text-lg sm:text-xl">A conversation of sorts</p>
+        <p className="pb-6 text-lg sm:text-2xl">
+          Marcel Rozek & David Matthew King
+        </p>
       </div>
-    );
-  }
+    </div>
+  );
+}
