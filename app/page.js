@@ -32,7 +32,7 @@ export const metadata = {
 };
 
 const text =
-  "A celebration of California modernity and the quiet transcendence of the high desert, with destinations, fine art, and intentionally curated home essentials from leading craftsman.";
+  "A celebration of California modernity and the quiet transcendence of the Mojave desert";
 
 const imagesFirst = [
   {

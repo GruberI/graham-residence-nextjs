@@ -6,7 +6,7 @@ const posts = [
     title: "Residence",
     href: "/residence",
     description:
-      "A serene retreat in the Mojave Desert.",
+      "A getaway nestled in the boulders of Yucca Valley.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmNMPqyr8TZUSXnjttbCzJ3xd6aHoXRFe1SBn7Knc56FgA/QmS9PPjdbzKRuFei3QZ4HhxxLfyBfLCxnzez1mdSyyfmZj",
     mobileImageUrl:
@@ -19,7 +19,7 @@ const posts = [
     title: "Gallery",
     href: "/gallery",
     description:
-      "Spaces exhibiting the best emerging contemporary art.",
+      "Exhibiting emerging contemporary artists.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmcmqwxzxdKtcsq89tPi1a1afZqFQFEXk3T5KGDFHo7G9e/RackMultipart20240501-172-6jtxp6.jpg",
     mobileImageUrl:
@@ -32,7 +32,7 @@ const posts = [
     title: "Shop",
     href: "/shop",
     description:
-      "A curated selection of our favorite home goods.",
+      "A curated selection of our favorite home objects.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmYZRYNpXVYf4D4SwoppYJa5rmRrVyKFPq4Nyf5T421DDA/QmekpobXk8pKQ4no7187Zio7vGqjYCdRriTnJJ7D7X8WcY",
     mobileImageUrl:
