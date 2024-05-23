@@ -25,7 +25,7 @@ export default function HeroImageText() {
       />
       <div className="mx-auto max-w-4xl py-10 sm:py-12 ">
         <div className="text-center">
-          <h1 className="text-5xl sm:text-7xl sm:leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-6 sm:mt-0">
+          <h1 className="text-4xl sm:text-7xl sm:leading-8 text-gray-300 text-[#d9d2ca] animate-fadeTwo font-thin font-[cormorant] mt-6 sm:mt-0">
             The Graham Collective
           </h1>
           <div className="flex flex-col items-center justify-center gap-x-6 animate-fadeTwo mt-[54vh] sm:mt-[68vh]">
