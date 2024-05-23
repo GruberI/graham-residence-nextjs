@@ -8,7 +8,7 @@ const artistExhibitions = [
       "https://ipfs.filebase.io/ipfs/QmR4MdakCJMN97PTbavV7Lj3NCoY2sDAF5PEPmDPtgPwE9/RackMultipart20240501-85-1ky2nl0.jpg",
     imgAltText:
       "David Mathew King & Marcel Rozek at the graham residence",
-    href: "/gallery/david-marcel",
+    href: "/convergence",
     date: "May 2024 - July 2024",
   },
   {

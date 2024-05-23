@@ -8,8 +8,8 @@ const artistExhibitions = [
       "https://ipfs.filebase.io/ipfs/QmbapwiUd9S4ZFEq9ht8mYoN2JQsv7fhMosahi47hCGXYh",
     imgAltText:
       "Various paintings by Thai resting on porch at the graham residence",
-    href: "/gallery/david-marcel",
-    date: "May 2024 - July 2024",
+    href: "/convergence",
+    date: "June 2024 - August 2024",
   },
   {
     artist: "Kyle Steed",

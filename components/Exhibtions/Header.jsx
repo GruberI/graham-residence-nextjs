@@ -7,7 +7,7 @@ export default function Header() {
         <h1 className="sm:text-5xl text-3xl sm:pb-6 pb-1 tracking-widest sm:mt-6 mb-10 text-center">
           Current Exhibitions
         </h1>
-        <Link href={"/gallery/david-marcel"}>
+        <Link href={"/convergence"}>
           <div className="flex flex-col">
             <img
               src="https://ipfs.filebase.io/ipfs/QmZ4am2kZo6LMK7KptheixUvctBBdvBML9rZxTAiJXxGRr/RackMultipart20240501-16-jji7xo.jpg"
