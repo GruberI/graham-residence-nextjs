@@ -4,7 +4,7 @@ export default function Quote({ quote }) {
       <div className="mx-auto text-center">
         <div className="inset-x-0 bottom-0 sm:static sm:self-stretch border-t border-b border-black py-16 px-10">
           <h1
-            className={`sm:text-${quote.size}xl text-lg italic tracking-widest font-bold`}
+            className={`sm:text-${quote.size}xl text-lg italic tracking-widest`}
           >
             {quote.text}
           </h1>

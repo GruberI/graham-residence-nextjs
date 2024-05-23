@@ -13,7 +13,7 @@ import TwoImageSection from "@/components/Exhibition/DavidMarcel/TwoImageSection
 import ThreeImageSection from "@/components/Exhibition/DavidMarcel/ThreeImageSection";
 
 const quote = {
-  text: `Sometimes the thing that’s being communicated is too dark for words or symbols. The paintings are sometimes just a signal that the light inside is still on.`,
+  text: `I am always trying to make the most with the least. My function is to present things in a new way and to take something that you might be familiar with and make it disorienting or slightly less familiar.`,
   size: "3",
   artist: "David Matthew King",
 };
