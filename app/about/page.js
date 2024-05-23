@@ -1,13 +1,14 @@
 import Header from "@/components/About/Header";
 import Hero from "@/components/About/Hero";
-import TwoColumnGrid from "@/components/About/TwoColumnGrid";
+// import TwoColumnGrid from "@/components/About/TwoColumnGrid";
 // import TwoColumnGrid2 from "@/components/About/TwoColumnGrid2";
 import AboutGoldberg from "@/components/About/AboutGoldberg";
 import Instagram from "@/components/Instagram";
-import Text from "@/components/About/Text";
+// import Text from "@/components/About/Text";
 import ArtServices from "@/components/Exhibition/ArtServices";
 import VisitUs from "@/components/Exhibition/VisitUs";
 import TwoRowGrid from "@/components/Property/TwoRowGrid";
+import OneImage from '@/components/About/OneImage'
 
 export const metadata = {
   title: "About The Graham Collective | ",
@@ -39,7 +40,8 @@ export default async function About() {
       <Hero />
       <Header />
       <AboutGoldberg />
-      <TwoRowGrid imgSrc={images} />
+      {/* <TwoRowGrid imgSrc={images} /> */}
+      <OneImage />
       <ArtServices />
       <VisitUs />
       {/* <Text text={text} />
