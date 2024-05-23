@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Text({ text }) {
   return (
-    <div className="max-w-7xl m-auto my-0 sm:my-20">
+    <div className="max-w-7xl m-auto my-10 sm:my-20">
       <div className="text-center mx-4 sm:mx-0">
         <div className="inset-x-0 bottom-0 sm:static sm:self-stretch">
           <Fade>
