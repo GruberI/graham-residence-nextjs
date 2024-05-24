@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           content="width=device-width, height=device-height, initial-scale:1.0, user-scalable=no"
         />
       </head>
-      <body className={`${inter.children}`}>
+      <body className={`${inter.children} dark:text-white`}>
         <div className="relative fixed">
           <StickyCart />
           <Navbar />
