@@ -7,7 +7,7 @@ export default function Text({ text }) {
       <div className="text-center mx-4 sm:mx-0">
         <div className="inset-x-0 bottom-0 sm:static sm:self-stretch">
           <Fade>
-            <h1 className="text-2xl sm:text-2xl tracking-widest font-thin animate-fadeTwo">
+            <h1 className="text-2xl sm:text-3xl tracking-widest font-thin animate-fadeTwo">
               {text}
             </h1>
             {/* <a

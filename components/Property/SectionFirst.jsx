@@ -20,7 +20,7 @@ export default function SectionFirst() {
             <div>
               <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
                 <div className="pb-6 pt-0 sm:pt-10 lg:pt-0">
-                  <h1 className="lg:text-4xl text-2xl sm:font-medium font-semibold">
+                  <h1 className="lg:text-4xl text-2xl">
                     THE GRAHAM RESIDENCE
                   </h1>
                   <Fade>
@@ -43,7 +43,7 @@ export default function SectionFirst() {
                 <div className="flex items-center gap-x-6">
                   <a
                     href="/residence#property-book"
-                    className="sm:text-sm text-xs font-normal leading-6 hover:text-neutral-300 underline underline-offset-8"
+                    className="sm:text-sm text-xs leading-6 hover:text-neutral-300 underline underline-offset-8"
                   >
                     BOOK A STAY
                   </a>

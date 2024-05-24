@@ -30,7 +30,7 @@ export default function ExhibitionList() {
         <h1 className="sm:text-3xl text-2xl">Recent Exhibitions</h1>
         <a
           href="/exhibitions"
-          className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 "
+          className="text-xs font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
         >
           VIEW ALL
         </a>
@@ -47,11 +47,11 @@ export default function ExhibitionList() {
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <p className="pt-4 text-xs">Exhibition</p>
+                <p className="pt-4 text-lg">Exhibition</p>
                 <h1 className="sm:text-2xl text-lg pt-2">
                   {exhibit.name} by {exhibit.artist}
                 </h1>
-                <p className="pt-1 tracking-tight font-thin text-xs sm:text-base">
+                <p className="pt-1 tracking-tight font-thin text-xs sm:text-lg">
                   {" "}
                   At the Graham Residence, {exhibit.date}
                 </p>
