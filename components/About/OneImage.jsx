@@ -8,6 +8,7 @@ export default async function OneImage() {
           className="p-2 h-full w-full object-cover"
         />
       </div>
+      <div id="art-advisory"></div>
     </div>
   );
 }

@@ -28,7 +28,6 @@ export default async function TwoRowGrid({ imgSrc }) {
           />
         </div>
       </div>
-      <div id="art-advisory"></div>
     </div>
   );
 }
