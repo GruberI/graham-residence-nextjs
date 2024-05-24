@@ -5,7 +5,7 @@ const artistExhibitions = [
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmeF2jropWjRdpn3zR2ePGjuPAhng21z5SPC78HoQm5xV2",
     imgAltText: "Nicole Taylor DeWitt",
-    date: "August 2024 - October 2024",
+    date: "August 15th - September 12th",
   },
   {
     artist: "Alex Maceda",
@@ -13,7 +13,7 @@ const artistExhibitions = [
     imgSrc:
       "https://ipfs.filebase.io/ipfs/Qmeau1sVkRRnTb5zUMnWzbCbRtdf6UqAvYfAJ26aYzeE3k",
     imgAltText: "Alex Maceda",
-    date: "November 2024 - January 2025",
+    date: "September 19th - November 5th",
   },
 ];
 

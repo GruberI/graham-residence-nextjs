@@ -9,7 +9,7 @@ const artistExhibitions = [
     imgAltText:
       "Various paintings by Thai resting on porch at the graham residence",
     href: "/convergence",
-    date: "June 2024 - August 2024",
+    date: "June 4th - July 31st",
   },
   {
     artist: "Kyle Steed",
@@ -19,7 +19,7 @@ const artistExhibitions = [
     imgAltText:
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",
-    date: "October 2023 - Current",
+    date: "February 2024 - March 2024",
   },
 ];
 

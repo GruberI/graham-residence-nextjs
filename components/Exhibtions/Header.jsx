@@ -24,7 +24,7 @@ export default function Header() {
               </p>
               <p className="w-11/12 lg:w-8/12 mt-2 sm:mt-0">
                 {" "}
-                On display at the Graham Residence, May 2024 - July 2024
+                On display at the Graham Residence, June 4th - July 31
               </p>
             </div>
           </div>

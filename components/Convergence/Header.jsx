@@ -1,3 +1,6 @@
+"use client";
+import { Fade } from "react-awesome-reveal";
+
 export default function Header() {
   return (
     <div className="bg-white py-26 lg:px-6 sm:px-2 pt-48 sm:pt-28">
@@ -6,9 +9,12 @@ export default function Header() {
           Convergence
         </h1>
         <p className="pb-2 text-lg sm:text-xl">A conversation of sorts</p>
-        <p className="pb-6 text-lg sm:text-2xl">
+        <p className="pb-2 text-lg sm:text-2xl">
           Marcel Rozek & David Matthew King
         </p>
+        <Fade>
+          <p className="text-xl">June 4th - July 31st</p>
+        </Fade>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export default function HeroImageText() {
       <img
         src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
         alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover hidden sm:flex"
+        className="absolute inset-0 -z-10 h-screen w-full object-cover hidden sm:flex"
       />
       <img
         src="https://ipfs.filebase.io/ipfs/QmV39MLBLsMtxi7ZMUA7CUaP8uPbsP6BqfUBVn6P7SYaLh/QmYRtJQwPp1KwczWak8p61h8v6wydHTAwP3sdAEAASuYm3"
