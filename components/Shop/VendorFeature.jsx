@@ -40,8 +40,8 @@ export default function VendorFeature() {
                 />
               </div>
 
-              <div className="text-center my-10">
-                <h3 className="text-2xl font-semibold leading-6 text-gray-900 mx-10 sm:mx-20">
+              <div className="text-center my-6">
+                <h3 className="text-2xl font-semibold text-gray-900 mx-10 sm:mx-20">
                   <a href={post.href}>{post.title}</a>
                 </h3>
                 <h3 className="mt-2">{post.location}</h3>
