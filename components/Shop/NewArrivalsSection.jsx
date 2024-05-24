@@ -5,7 +5,7 @@ import Carousel from "../Carousel/Carousel";
 export default async function NewArrivalsSection() {
   const products = await getCollectionProducts({ collection: "home-goods" });
   const productsByTag = products.filter((product) => {
-    return product.tags.includes("home-goods");
+    return product.tags.includes("new-arrivals");
   });
   const eightProducts = productsByTag.slice(0, 8);
 

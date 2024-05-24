@@ -40,7 +40,7 @@ const navigation = {
   ],
   categories: [
     {
-      name: "Collect",
+      name: "Shop",
       href: "/shop",
       categories: [
         { name: "New Arrivals", href: "/home/new-arrivals" },

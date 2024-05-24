@@ -5,7 +5,7 @@ import Carousel from "../Carousel/Carousel";
 export default async function ArtSection() {
   const products = await getCollectionProducts({ collection: "Artwork" });
   const productsByTag = products.filter((product) => {
-    return product.tags.includes("thai-mainhard");
+    return product.tags.includes("new-arrivals");
   });
   const eightProducts = productsByTag.slice(0, 8);
 

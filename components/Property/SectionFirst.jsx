@@ -1,5 +1,6 @@
 "use client";
 import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function SectionFirst() {
   return (
@@ -17,22 +18,36 @@ export default function SectionFirst() {
               </div>
             </div>
             <div>
-              <div className="sm:space-y-6 space-y-10">
-                <Slide direction="right">
-                  <p className="tracking-wide text-xl sm:text-3xl xl:text-5xl text-center sm:text-left font-thin sm:mt-6 mt-10 mb-4 sm:mb-10 px-0 sm:px-16 lg:px-0">
-                    The Graham Residence is a mid-century modern retreat near
-                    Joshua Tree National Park where the lines between home and
-                    gallery are blurred. Situated on 20 acres of pristine land,
-                    this is Mojave Desert living at its finest.{" "}
-                  </p>
+              <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
+                <div className="pb-6 pt-0 sm:pt-10 lg:pt-0">
+                  <h1 className="lg:text-4xl text-2xl sm:font-medium font-semibold">
+                    THE GRAHAM RESIDENCE
+                  </h1>
+                  <Fade>
+                    {" "}
+                    <p className="text-3xl italic font-light">
+                      is a mid-century modern retreat{" "}
+                    </p>
+                  </Fade>
+                </div>
 
+                <div className="pb-8">
+                  <p className="tracking-wide text-xl sm:text-2xl">
+                    A destination where the lines between home and gallery are
+                    blurred. Located near Joshua Tree National Park and nestled
+                    into the boulders on 20 acres of pristine land, this is
+                    Mojave Desert living at its finest.
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-x-6">
                   <a
-                    href="#property-book"
-                    className="text-lg font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 sm:pl-2 flex justify-center sm:justify-start "
+                    href="/residence#property-book"
+                    className="sm:text-sm text-xs font-normal leading-6 hover:text-neutral-300 underline underline-offset-8"
                   >
-                    Book a stay
+                    BOOK A STAY
                   </a>
-                </Slide>
+                </div>
               </div>
             </div>
           </div>
