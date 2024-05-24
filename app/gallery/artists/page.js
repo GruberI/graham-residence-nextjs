@@ -18,13 +18,13 @@ const artists = [
     name: "David Matthew King",
     src: "https://ipfs.filebase.io/ipfs/QmNf6xc84xSjKfvRy8yh1KpDfcETgmKkMJ65deSqCBRyvM",
     altText: "",
-    href: "/art/david-matthew-king",
+    href: "/convergence",
   },
   {
     name: "Marcel Rozek",
     src: "https://ipfs.filebase.io/ipfs/QmbKrYmSnjHLCtjSH4gaZUh68wJECaeuXwBUSKqHFL78Ep",
     altText: "",
-    href: "/art/marcel-rozek",
+    href: "/convergence",
   },
   {
     name: "Yoni Goldberg",

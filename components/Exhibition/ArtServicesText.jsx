@@ -12,7 +12,7 @@ export default function ArtServices() {
       <div className="text-center">
         <a
           href="/about#art-advisory"
-          className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 pt-2"
+          className="text-xs font-thin leading-6 hover:text-neutral-300 underline underline-offset-8 pt-2"
         >
           LEARN MORE
         </a>

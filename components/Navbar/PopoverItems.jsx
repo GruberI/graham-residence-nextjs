@@ -21,11 +21,11 @@ const navigation = {
         { name: "View All", href: "/exhibitions" },
       ],
       artists: [
-        { name: "David Matthew King", href: "/art/david-matthew-king" },
-        { name: "Marcel Rozek", href: "/art/marcel-rozek" },
+        // { name: "David Matthew King", href: "/convergence" },
+        // { name: "Marcel Rozek", href: "/convergence" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
-        // { name: "Thai Mainhard", href: "/art/thai-mainhard" },
-        // { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
+        { name: "Thai Mainhard", href: "/art/thai-mainhard" },
+        { name: "Nicole Taylor Dewitt", href: "/art/nicole-taylor-dewitt" },
         { name: "View All", href: "/gallery/artists" },
       ],
       contact: [

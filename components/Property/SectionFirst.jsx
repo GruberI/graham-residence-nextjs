@@ -18,37 +18,34 @@ export default function SectionFirst() {
               </div>
             </div>
             <div>
-              <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
-                <div className="pb-6 pt-0 sm:pt-10 lg:pt-0">
-                  <h1 className="lg:text-4xl text-2xl">
-                    THE GRAHAM RESIDENCE
-                  </h1>
-                  <Fade>
-                    {" "}
+              <Fade>
+                <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
+                  <div className="pb-6 pt-0 sm:pt-10 lg:pt-0">
+                    <h1 className="lg:text-4xl text-2xl">
+                      THE GRAHAM RESIDENCE
+                    </h1>{" "}
                     <p className="text-3xl italic font-light">
                       is a mid-century modern retreat{" "}
                     </p>
-                  </Fade>
+                  </div>
+                  <div className="pb-8">
+                    <p className="tracking-wide text-xl sm:text-2xl">
+                      A destination where the lines between home and gallery are
+                      blurred. Located near Joshua Tree National Park and
+                      nestled into the boulders on 20 acres of pristine land,
+                      this is Mojave Desert living at its finest.
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-x-6">
+                    <a
+                      href="/residence#property-book"
+                      className="sm:text-sm text-xs leading-6 hover:text-neutral-300 underline underline-offset-8"
+                    >
+                      BOOK A STAY
+                    </a>
+                  </div>
                 </div>
-
-                <div className="pb-8">
-                  <p className="tracking-wide text-xl sm:text-2xl">
-                    A destination where the lines between home and gallery are
-                    blurred. Located near Joshua Tree National Park and nestled
-                    into the boulders on 20 acres of pristine land, this is
-                    Mojave Desert living at its finest.
-                  </p>
-                </div>
-
-                <div className="flex items-center gap-x-6">
-                  <a
-                    href="/residence#property-book"
-                    className="sm:text-sm text-xs leading-6 hover:text-neutral-300 underline underline-offset-8"
-                  >
-                    BOOK A STAY
-                  </a>
-                </div>
-              </div>
+              </Fade>
             </div>
           </div>
         </div>

@@ -34,7 +34,7 @@ export default function MeetArtist() {
         <h1 className="sm:text-3xl text-2xl pb-2">Meet the Artists</h1>
         <a
           href="/gallery/artists"
-          className="text-[10px] font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
+          className="text-xs font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
         >
           VIEW ALL
         </a>
