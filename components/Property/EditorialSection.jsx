@@ -21,7 +21,7 @@ const posts = [
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmXHxptW92cavgyjPWSCTb6Df6mtssHXksAPiYd7RqddUF",
     mobileImageUrl:
-      "https://ipfs.filebase.io/ipfs/QmXyHncUksnDL916JNoBhq8NmdrAZefKhHNMdYQ5KcAPBr",
+      "https://ipfs.filebase.io/ipfs/QmXHxptW92cavgyjPWSCTb6Df6mtssHXksAPiYd7RqddUF",
     date: "Mar 16, 2020",
     buttonText: "COLLECT",
   },
@@ -42,7 +42,7 @@ const posts = [
 export default function EditorialSection() {
   return (
     // <div className="bg-neutral-100 sm:py-16 pb-10 sm:pb-16" id="editorial">
-    <div className="bg-white pt-2pb-10 sm:pb-16" id="editorial">
+    <div className="bg-white mt-0 mb-16 mx-4 sm:mx-0" id="editorial">
       <div className="m-auto max-w-7xl">
         <div className="mx-auto mt-14 sm:mt-16 grid auto-rows-fr grid-cols-1 gap-12 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
@@ -56,22 +56,17 @@ export default function EditorialSection() {
                     <img
                       src={post.imageUrl}
                       alt=""
-                      className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square brightness-90 hidden sm:block"
+                      className="w-full bg-gray-100 object-cover aspect-square brightness-90"
                     />
                   </div>
                   <div className="absolute inset-0">
-                    <h3 className="text-5xl leading-6 mx-auto pt-6 text-white z-40 text-center pt-[41%]">
+                    <h3 className="sm:text-5xl  text-4xl leading-6 mx-auto pt-6 text-white z-40 text-center pt-[46%] sm:pt-[41%]">
                       {post.title}
                     </h3>
-                    <p className="line-clamp-3 text-xl text-white m-auto text-center w-10/12 my-2 pt-4">
+                    <p className="line-clamp-3 text-xl text-white m-auto text-center w-10/12 my-2 pt-4 hidden sm:block">
                       {post.description}
                     </p>
                   </div>
-                  <img
-                    src={post.mobileImageUrl}
-                    alt=""
-                    className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square block sm:hidden"
-                  />
                 </a>
               </div>
 
