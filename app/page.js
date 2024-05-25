@@ -1,28 +1,20 @@
-// import SectionFirst from "@/components/Property/SectionFirst";
-// import TwoColumnGrid from "@/components/Property/TwoColumnGrid";
-// import Text from "@/components/Property/Text";
-import TextFirst from "@/components/Property/TextFirst";
-import TwoRowGrid from "@/components/Property/TwoRowGrid";
-// import Book from "@/components/Property/Book";
-import HeroImageText from "@/components/Property/HeroImageText";
-import Instagram from "@/components/Instagram";
-// import HouseSpecs from "@/components/Property/HouseSpecs";
-// import Modal from "@/components/Modal";
-import EditorialSection from "@/components/Property/EditorialSection";
-import ExhibitionList from "@/components/Property/RecentExhibitions";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
-// import Carousel from "@/components/Carousel/Carousel";
+import TextFirst from "@/components/Property/TextFirst";
+import TwoRowGrid from "@/components/Property/TwoRowGrid";
+import HeroImageText from "@/components/Property/HeroImageText";
+import Instagram from "@/components/Instagram";
+import EditorialSection from "@/components/Property/EditorialSection";
+import ExhibitionList from "@/components/Property/RecentExhibitions"
 import NewArrivalsSection from "@/components/Shop/NewArrivalsSection";
-// import Script from 'next/script'
 
-const products = await getProducts({});
-const productsByCollection = await getCollectionProducts({
-  collection: "home-goods",
-});
-const productsByTag = productsByCollection.filter((product) => {
-  return product.tags.includes("home-new-carousel");
-});
+// const products = await getProducts({});
+// const productsByCollection = await getCollectionProducts({
+//   collection: "home-goods",
+// });
+// const productsByTag = productsByCollection.filter((product) => {
+//   return product.tags.includes("home-new-carousel");
+// });
 
 export const metadata = {
   title:
@@ -55,7 +47,6 @@ export default function Property() {
       <HeroImageText />
       <TextFirst text={text} />
       <EditorialSection />
-      {/* <SectionFirst /> */}
       <TwoRowGrid imgSrc={imagesFirst} />
       <ExhibitionList />
       <NewArrivalsSection />

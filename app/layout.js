@@ -1,12 +1,12 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import SignUp from "@/components/SignUp";
 import StickyCart from "@/components/Cart/stickyCart.jsx";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           content="width=device-width, height=device-height, initial-scale:1.0, user-scalable=no"
         />
       </head>
-      <body className={`${inter.children} dark:text-white`}>
+      <body className={`${inter.children}`}>
         <div className="relative fixed">
           <StickyCart />
           <Navbar />

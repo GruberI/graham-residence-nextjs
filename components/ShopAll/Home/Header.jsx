@@ -11,7 +11,7 @@ const imageByHandle = [
   },
   {
     imageHandle: "loll-designs",
-    src: "https://ipfs.filebase.io/ipfs/QmSx8x1TUhyA6RzVtbdA9cqptig7ymmu53DaXuFiFjyBzQ/Qmd8XYCy2TMujYDW4LRVHeA5T653vprGKy1p6YTX9udehB",
+    src: "https://ipfs.filebase.io/ipfs/QmfMtsvcvGdWVqgwESF3gatXebQAoXku3oLpbv9rF5rcMG",
     alt: "Loll designs outdoor chairs infront of Graham Residence firepit",
   },
   {
@@ -25,7 +25,7 @@ export default function ShopAllHomeHeader({ productHandle }) {
     <div className="relative isolate overflow-hidden h-[600px]">
       {productHandle === undefined ? (
         <img
-          src="https://ipfs.filebase.io/ipfs/QmQofT4Jvs8XVEnFiKDHsa3ZG5hBnFU3Jy8qGq2fEDrpdn/QmdLMUMfk9YmKVdidfJAtTqKPsxrSKa45mvc6viq8bBjoi"
+          src="https://ipfs.filebase.io/ipfs/QmQ61VnMppAA4kboH8eqNj6evSJEMAfgdVjAG1gYzGireH"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
       ) : (
