@@ -6,7 +6,7 @@ export default function Instagram() {
         <a
           href="https://www.instagram.com/graham___collective/"
           target="_blank"
-          className="font-thin sm:text-3xl text-2xl leading-8 flex sm:justify-center justify-start mb-16 sm:mb-20 mx-auto"
+          className="font-thin sm:text-2xl text-xl leading-8 flex sm:justify-center justify-start mb-16 sm:mb-20 mx-auto"
         >
           {" "}
           <div className="flex flex-row">
