@@ -60,7 +60,7 @@ export default function EditorialSection() {
                     />
                   </div>
                   <div className="absolute inset-0">
-                    <h3 className="sm:text-5xl text-4xl leading-6 mx-auto pt-6 text-white text-center pt-[46%] sm:pt-[36%]">
+                    <h3 className="sm:text-5xl text-4xl leading-6 mx-auto pt-6 text-white text-center sm:pt-[36%]">
                       {post.title}
                     </h3>
                     <p className="line-clamp-3 text-xl text-white m-auto text-center w-10/12 my-2 hidden sm:block">
