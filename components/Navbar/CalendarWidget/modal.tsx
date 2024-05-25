@@ -38,7 +38,7 @@ export default function CalModal() {
             leaveTo="tranblack-x-full"
           >
             {/* FULL MODAL */}
-            <Dialog.Panel className="fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px]">
+            <Dialog.Panel className="fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl md:w-[390px]">
               {/* Partial MODAL */}
               {/* <Dialog.Panel className="fixed bottom-0 right-6 top-20 flex h-[84%] w-full flex-col border-l border-neutral-200 bg-[#f5f5f5] p-6 text-black backdrop-blur-xl dark:border-neutral-700 dark:bg-black/80 dark:text-white md:w-[390px] rounded-sm"> */}
               <div className="flex items-start justify-end">

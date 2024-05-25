@@ -30,7 +30,7 @@ export default function OpenCal() {
   }, [clientWindowHeight]);
 
   return (
-    <div className="relative flex items-center justify-center rounded-md transition-colors dark:border-neutral-700 dark:text-white animate-fadeTwo">
+    <div className="relative flex items-center justify-center rounded-md transition-colors animate-fadeTwo">
       <p
         className={`rounded-sm border font-light px-8 py-2.5 lg:text-sm text-xs ml-2 md:ml-0 font-normal shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
           pathname == "/" ? buttonBg : "black"

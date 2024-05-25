@@ -1,5 +1,3 @@
-// "use client";
-
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import LoadingDots from "../loading-dots";
 import { useRouter } from "next/navigation";
@@ -41,7 +39,7 @@ export default function DeleteItemButton({ item }: { item: CartItem }) {
       {isPending ? (
         <LoadingDots className="bg-white" />
       ) : (
-        <XMarkIcon className="hover:text-accent-3 mx-[1px] h-4 w-4 text-white dark:text-black" />
+        <XMarkIcon className="hover:text-accent-3 mx-[1px] h-4 w-4 text-black dark:text-slate-900" />
       )}
     </button>
   );

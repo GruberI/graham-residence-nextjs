@@ -92,7 +92,7 @@ export default function ProductDescription({ product }) {
   ];
 
   return (
-    <div className="bg-white pt-16">
+    <div className="bg-white pt-16 dark:text-black dark:bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -223,7 +223,7 @@ export default function ProductDescription({ product }) {
                       <Tab.Panel key={i} className="space-y-16 pt-10 lg:pt-12">
                         {tab.description ? (
                           <Prose
-                            className="mb-6 text-lg leading-normal"
+                            className="mb-6 text-lg leading-normal dark:text-slate-900 dark:bg-white"
                             html={
                               tab.description === "DESCRIPTION"
                                 ? product.descriptionHtml
