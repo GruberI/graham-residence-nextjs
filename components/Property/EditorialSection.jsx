@@ -52,7 +52,7 @@ export default function EditorialSection() {
             >
               <div className="w-full">
                 <a href={post.href} className="relative">
-                  <div className="relative brightness-90">
+                  <div className="brightness-90">
                     <img
                       src={post.imageUrl}
                       alt=""
