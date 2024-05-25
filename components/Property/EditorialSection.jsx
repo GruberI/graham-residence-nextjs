@@ -71,7 +71,7 @@ export default function EditorialSection() {
                 <h3 className="text-3xl font-semibold leading-6 text-gray-900 mx-auto pt-6">
                   <a href={post.href}>{post.title}</a>
                 </h3>
-                <p className="line-clamp-3 text-xl text-gray-600 m-auto text-center w-10/12 my-2">
+                <p className="line-clamp-3 text-2xl text-gray-600 m-auto text-center w-10/12 my-2">
                   {post.description}
                 </p>
 

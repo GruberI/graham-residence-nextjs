@@ -19,14 +19,14 @@ export default function Featured() {
           </div>
           <div className="ml-5 flex flex-col content-start">
             <div className="border-b border-black pb-10">
-              <h2 className="font-medium text-black-500">FEATURED ARTIST</h2>
-              <p className="mt-2 text-3xl font-light tracking-tight text-black-900 sm:text-4xl">
+              <p className="text-2xl text-black-500">FEATURED ARTIST</p>
+              <h2 className="mt-2 text-2xl font-light tracking-tight text-black-900 sm:text-4xl">
                 Kyle Steed
-              </p>
+              </h2>
             </div>
 
             <div className="mt-10 space-y-10">
-              <p className="tracking-wide leading-7">
+              <p className="tracking-wide leading-7 text-2xl">
                 Kyle Andrew Steed (b. 1982; Savannah, GA) is a self-taught
                 painter, photographer, muralist and typographer. For the first
                 fourteen years of his life he moved across the southern US
@@ -40,7 +40,7 @@ export default function Featured() {
             <div className="sm:pt-8 pt-4 pb-4">
               <Link
                 href={"/gallery/kyle-steed"}
-                className="underline underline-offset-8 hover:text-neutral-600 text-sm sm:text-lg"
+                className="underline underline-offset-8 hover:text-neutral-600 text-sm"
               >
                 SEE THE EXHIBITION
               </Link>

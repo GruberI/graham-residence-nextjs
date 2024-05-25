@@ -45,16 +45,16 @@ export default function VisitUs() {
             </div>
 
             <div className="text-center my-4 sm:my-10">
-              <h3 className="text-2xl font-semibold leading-6 text-gray-900">
+              <h2 className="text-4xl font-semibold leading-6 text-gray-900">
                 <a href={post.href}>{post.title}</a>
-              </h3>
-              <h3 className="mt-2">{post.location}</h3>
-              <p className="line-clamp-3 text-sm text-gray-600 mx-10 my-4">
+              </h2>
+              <p className="mt-2 text-xl">{post.location}</p>
+              <p className="line-clamp-3 text-2xl text-gray-600 mx-10 my-4">
                 {post.description}
               </p>
 
               <Link href={post.href}>
-                <button className="bg-white text-xs text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white">
+                <button className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white">
                   {post.buttonText}
                 </button>
               </Link>

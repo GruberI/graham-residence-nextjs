@@ -6,8 +6,7 @@ const artistExhibitions = [
     name: "Convergence",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmR4MdakCJMN97PTbavV7Lj3NCoY2sDAF5PEPmDPtgPwE9/RackMultipart20240501-85-1ky2nl0.jpg",
-    imgAltText:
-      "David Mathew King & Marcel Rozek at the graham residence",
+    imgAltText: "David Mathew King & Marcel Rozek at the graham residence",
     href: "/convergence",
     date: "May 2024 - July 2024",
   },
@@ -19,7 +18,7 @@ const artistExhibitions = [
     imgAltText:
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",
-    date: "October 2023 - January 2024",
+    date: "Oct 2023 - Jan 2024",
   },
   {
     artist: "Thai Mainhard",
@@ -39,10 +38,10 @@ export default function ExhibitionList() {
   return (
     <div className="sm:mt-10 border-t border-black pt-10 max-w-7xl m-auto pb-20 mt-10 sm:mt-0">
       <div className="mb-10 pl-4 sm:pl-0">
-        <h1 className="sm:text-3xl text-2xl pb-2">Exhibitions</h1>
+        <h2 className="sm:text-4xl text-2xl pb-2">Exhibitions</h2>
         <a
           href="/exhibitions"
-          className="text-xs font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
+          className="text-sm font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
         >
           VIEW ALL
         </a>
@@ -58,11 +57,11 @@ export default function ExhibitionList() {
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <p className="pt-4 text-lg">Exhibition</p>
-              <h1 className="sm:text-2xl text-lg pt-2">
+              <p className="pt-4 text-2xl">Exhibition</p>
+              <h3 className="sm:text-3xl text-lg pt-2">
                 {exhibit.name} by {exhibit.artist}
-              </h1>
-              <p className="pt-1 tracking-tight font-thin text-xs sm:text-lg">
+              </h3>
+              <p className="pt-1 tracking-tight font-thin text-xs sm:text-2xl">
                 {" "}
                 At the Graham Residence, {exhibit.date}
               </p>

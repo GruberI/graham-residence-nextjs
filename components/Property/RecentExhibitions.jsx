@@ -19,7 +19,7 @@ const artistExhibitions = [
     imgAltText:
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",
-    date: "February 2024 - March 2024",
+    date: "Feb 2024 - March 2024",
   },
 ];
 
@@ -27,10 +27,10 @@ export default function ExhibitionList() {
   return (
     <div className="sm:mt-10 border-t border-b border-black pt-10 sm:pt-16 m-auto pb-20 max-w-7xl mx-auto">
       <div className="mb-10 ml-4 sm:ml-0">
-        <h1 className="sm:text-3xl text-2xl">Recent Exhibitions</h1>
+        <h2 className="sm:text-4xl text-3xl pb-2">Recent Exhibitions</h2>
         <a
           href="/exhibitions"
-          className="text-xs font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
+          className="text-sm font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
         >
           VIEW ALL
         </a>
@@ -47,11 +47,11 @@ export default function ExhibitionList() {
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <p className="pt-4 text-lg">Exhibition</p>
-                <h1 className="sm:text-2xl text-lg pt-2">
+                <p className="pt-4 text-2xl">Exhibition</p>
+                <h3 className="sm:text-3xl text-2xl pt-2">
                   {exhibit.name} by {exhibit.artist}
-                </h1>
-                <p className="pt-1 tracking-tight font-thin text-xs sm:text-lg">
+                </h3>
+                <p className="pt-1 tracking-tight font-thin text-xl sm:text-2xl">
                   {" "}
                   At the Graham Residence, {exhibit.date}
                 </p>

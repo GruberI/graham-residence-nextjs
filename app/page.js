@@ -1,5 +1,5 @@
-import { getProducts } from "@/lib/shopify";
-import { getCollectionProducts } from "@/lib/shopify/index";
+// import { getProducts } from "@/lib/shopify";
+// import { getCollectionProducts } from "@/lib/shopify/index";
 import TextFirst from "@/components/Property/TextFirst";
 import TwoRowGrid from "@/components/Property/TwoRowGrid";
 import HeroImageText from "@/components/Property/HeroImageText";

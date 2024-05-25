@@ -31,10 +31,10 @@ export default function MeetArtist() {
   return (
     <div className="mt-10 m-auto max-w-7xl mb-10">
        <div className="mb-10 pl-4 sm:pl-0">
-        <h1 className="sm:text-3xl text-2xl pb-2">Meet the Artists</h1>
+        <h2 className="sm:text-4xl text-2xl pb-2">Meet the Artists</h2>
         <a
           href="/gallery/artists"
-          className="text-xs font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
+          className="text-sm font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
         >
           VIEW ALL
         </a>
@@ -50,7 +50,7 @@ export default function MeetArtist() {
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <h1 className="sm:text-xl text-lg pt-4">{exhibit.artist}</h1>
+              <p className="sm:text-2xl text-lg pt-4">{exhibit.artist}</p>
             </Link>
           );
         })}

@@ -138,9 +138,9 @@ export default class Carousel extends Component {
     };
     return (
       <div className="mb-10 mt-10 sm:mt-0 max-w-7xl m-auto">
-        <h1 className="sm:text-3xl text-2xl text-center mb-10">
+        <h3 className="sm:text-3xl text-2xl text-center mb-10">
           What guests are saying
-        </h1>
+        </h3>
 
         <div className="">
           <Slider {...settings}>
