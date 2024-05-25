@@ -59,7 +59,7 @@ export default function EditorialSection() {
                       className="w-full bg-gray-100 object-cover aspect-square brightness-90"
                     />
                   </div>
-                  <div className="absolute inset-10 sm:inset-0">
+                  <div className="absolute sm:inset-0">
                     <h3 className="sm:text-5xl text-4xl leading-6 mx-auto pt-6 text-white text-center pt-[40%] sm:pt-[36%]">
                       {post.title}
                     </h3>
