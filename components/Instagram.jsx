@@ -4,7 +4,7 @@ export default function Instagram() {
      <div className="max-w-7xl mx-auto">
      <div className="flex flex-col justify-center pt-16 sm:pt-20">
         <a
-          href="https://www.instagram.com/graham___collective/"
+          href="https://www.instagram.com/graham__collective/"
           target="_blank"
           className="font-thin sm:text-2xl text-xl leading-8 flex sm:justify-center justify-start mb-16 sm:mb-20 mx-auto"
         >
