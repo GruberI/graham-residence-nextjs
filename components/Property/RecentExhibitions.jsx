@@ -47,9 +47,9 @@ export default function ExhibitionList() {
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <h2 className="sm:text-2xl text-xl pt-2">{exhibit.name}</h2>
-                <p className="text-lg">{exhibit.artist}</p>
-                <p className="pt-1 tracking-tight font-thin text-lg">
+                <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
+                <p className="text-lg pt-1">{exhibit.artist}</p>
+                <p className="tracking-tight font-thin text-lg">
                   {" "}
                   Graham Residence, {exhibit.date}
                 </p>

@@ -3,7 +3,7 @@ import Link from "next/link";
 const posts = [
   {
     id: 1,
-    title: "Sophie Lou Jacobsen’s  poetic glassware is made for hosting",
+    title: "Poetic glassware made for hosting",
     href: "/home/sophie-lou-jacobsen",
     description:
       "Designed to enhance their user's mood through form and function",
@@ -14,7 +14,7 @@ const posts = [
   },
   {
     id: 2,
-    title: "Modern tablescapes for every occasion and every day",
+    title: "Modern tablescapes for every occasion",
     href: "/home/atelier-saucier",
     description:
       "Two best friends bring you a fresh, elevated perspective on all things table linens",
@@ -41,16 +41,15 @@ export default function VendorFeature() {
               </div>
 
               <div className="text-center my-6">
-                <h3 className="text-2xl font-semibold text-gray-900 mx-10 sm:mx-20">
+                <h2 className="text-2xl font-semibold text-gray-900 mx-10 sm:mx-16">
                   <a href={post.href}>{post.title}</a>
-                </h3>
-                <h3 className="mt-2">{post.location}</h3>
+                </h2>
                 {/* <p className="line-clamp-3 text-sm text-gray-600 mx-10 my-4">
                   {post.description}
                 </p> */}
 
                 <Link href={post.href}>
-                  <button className="bg-white text-xs text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white">
+                  <button className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-4 hover:bg-black hover:text-white">
                     {post.buttonText}
                   </button>
                 </Link>

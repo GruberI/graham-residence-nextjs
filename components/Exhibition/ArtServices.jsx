@@ -4,10 +4,10 @@ export default function ArtServices() {
   return (
     <div className="border-t border-black pt-16 sm:pt-20 m-auto max-w-7xl mt-4">
       <div>
-        <h1 className="sm:text-5xl text-3xl text-center pb-6">
+        <h1 className="sm:text-4xl text-3xl text-center pb-6">
           Art Advisory Services
         </h1>
-        <h3 className="sm:text-lg text-base text-center pb-10 sm:pb-10 mx-6 md:mx-20">
+        <h3 className="sm:text-2xl text-xl text-center pb-10 sm:pb-10 mx-6 md:mx-20">
           Curator & Co-Founder Lindsey Goldberg provides bespoke art advisory
           services tailored for projects of any size and scope. Let’s find the
           perfect artwork for your space or project.
@@ -27,7 +27,7 @@ export default function ArtServices() {
 
             <div className="ml-5 flex flex-col content-start">
               <div>
-                <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
+                <p className="sm:text-4xl text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
                   For Individuals
                 </p>
               </div>
@@ -42,7 +42,7 @@ export default function ArtServices() {
               <div className="pt-4 pb-4">
                 <Link
                   href={`mailto:lindsey@graham-collective.com?subject=Art Services`}
-                  className="underline underline-offset-8 hover:text-neutral-600 text-xs"
+                  className="underline underline-offset-8 hover:text-neutral-600 text-sm"
                 >
                   GET STARTED
                 </Link>
@@ -57,7 +57,7 @@ export default function ArtServices() {
           <div className="grid grid-cols-1 items-center gap-x-2 gap-y-6 sm:gap-y-16 lg:grid-cols-2 hidden lg:inline-flex">
             <div className="ml-5 flex flex-col content-start">
               <div>
-                <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
+                <p className="sm:text-4xl text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
                   For Organizations
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function ArtServices() {
               <div className="pt-4 pb-4">
                 <Link
                   href={`mailto:lindsey@graham-collective.com?subject=Art Services for my Organization`}
-                  className="underline underline-offset-8 hover:text-neutral-600 text-xs"
+                  className="underline underline-offset-8 hover:text-neutral-600 text-sm"
                 >
                   GET STARTED
                 </Link>
@@ -98,7 +98,7 @@ export default function ArtServices() {
             </div>
             <div className="ml-5 flex flex-col content-start mb-10 sm:mb-0">
               <div>
-                <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
+                <p className="sm:text-4xl text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
                   For Organizations
                 </p>
               </div>
@@ -112,7 +112,7 @@ export default function ArtServices() {
               <div className="pt-4 pb-4">
                 <Link
                   href={`mailto:lindsey@graham-collective.com?subject=Art Services for my Organization`}
-                  className="underline underline-offset-8 hover:text-neutral-600 text-xs"
+                  className="underline underline-offset-8 hover:text-neutral-600 text-sm"
                 >
                   GET STARTED
                 </Link>
@@ -136,7 +136,7 @@ export default function ArtServices() {
 
             <div className="ml-5 flex flex-col content-start">
               <div>
-                <p className="text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
+                <p className="sm:text-4xl text-3xl font-thin tracking-normal text-black-900 sm:text-4xl">
                   For Trade Partners
                 </p>
               </div>
@@ -152,7 +152,7 @@ export default function ArtServices() {
               <div className="pt-4 pb-4">
                 <Link
                   href={`mailto:lindsey@graham-collective.com?subject=Art Services for Trade Partners`}
-                  className="underline underline-offset-8 hover:text-neutral-600 text-xs"
+                  className="underline underline-offset-8 hover:text-neutral-600 text-sm"
                 >
                   GET STARTED
                 </Link>

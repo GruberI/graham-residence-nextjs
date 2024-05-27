@@ -48,8 +48,8 @@ export default function VisitUs() {
               <h2 className="text-4xl font-semibold leading-6 text-gray-900">
                 <a href={post.href}>{post.title}</a>
               </h2>
-              <p className="mt-2 text-xl">{post.location}</p>
-              <p className="line-clamp-3 text-2xl text-gray-600 mx-10 my-4">
+              <p className="mt-2 text-lg">{post.location}</p>
+              <p className="line-clamp-3 text-xl text-gray-600 mx-10 my-4">
                 {post.description}
               </p>
 

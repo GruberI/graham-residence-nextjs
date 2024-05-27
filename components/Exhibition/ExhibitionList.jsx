@@ -3,7 +3,7 @@ import Link from "next/link";
 const artistExhibitions = [
   {
     artist: "David Mathew King & Marcel Rozek",
-    name: "Convergence",
+    name: "CONVERGENCE",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmR4MdakCJMN97PTbavV7Lj3NCoY2sDAF5PEPmDPtgPwE9/RackMultipart20240501-85-1ky2nl0.jpg",
     imgAltText: "David Mathew King & Marcel Rozek at the graham residence",
@@ -12,7 +12,7 @@ const artistExhibitions = [
   },
   {
     artist: "Kyle Steed",
-    name: "A Quiet Noise",
+    name: "A QUIET NOISE",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmZUP4GfbWpnwySsEh2jJ1KdG96dPEK7fSnoGRK7AeCaZc/QmdFrNgmbK3FwH8DTjzPQJEXfk8CHXBeb72HSe37ArVRgW",
     imgAltText:
@@ -38,7 +38,7 @@ export default function ExhibitionList() {
   return (
     <div className="sm:mt-10 border-t border-black pt-10 max-w-7xl m-auto pb-20 mt-10 sm:mt-0">
       <div className="mb-10 pl-4 sm:pl-0">
-        <h2 className="sm:text-4xl text-2xl pb-2">Exhibitions</h2>
+        <h2 className="sm:text-4xl text-3xl pb-2">Exhibitions</h2>
         <a
           href="/exhibitions"
           className="text-sm font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
@@ -57,14 +57,13 @@ export default function ExhibitionList() {
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <p className="pt-4 text-2xl">Exhibition</p>
-              <h3 className="sm:text-3xl text-lg pt-2">
-                {exhibit.name} by {exhibit.artist}
-              </h3>
-              <p className="pt-1 tracking-tight font-thin text-xs sm:text-2xl">
-                {" "}
-                At the Graham Residence, {exhibit.date}
-              </p>
+              {/* <p className="pt-4 text-2xl">Exhibition</p> */}
+              <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
+                <p className="text-lg pt-1">{exhibit.artist}</p>
+                <p className="tracking-tight font-thin text-lg">
+                  {" "}
+                  Graham Residence, {exhibit.date}
+                </p>
             </Link>
           );
         })}

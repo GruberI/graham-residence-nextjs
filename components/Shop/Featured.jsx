@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function Featured() {
   return (
     <div
-      className="m-auto sm:px-0 mx-8 border-t border-b border-black pt-20 sm:pt-24 pb-20"
+      className="mx-auto sm:px-0 mx-4 border-t border-b border-black pt-10 sm:pt-24 pb-10 sm:pb-20 max-w-7xl"
       id="featured"
     >
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
+      <div className="mx-auto px-2 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-16 lg:grid-cols-2">
           <div>
             <div className="aspect-square overflow-hidden bg-black-100">
               <img
@@ -17,16 +17,16 @@ export default function Featured() {
               />
             </div>
           </div>
-          <div className="ml-5 flex flex-col content-start">
-            <div className="border-b border-black pb-10">
+          <div className="sm:ml-5  flex flex-col content-start">
+            <div className="border-b border-black pb-6 sm:pb-10">
               <p className="text-2xl text-black-500">FEATURED ARTIST</p>
               <h2 className="mt-2 text-2xl font-light tracking-tight text-black-900 sm:text-4xl">
                 Kyle Steed
               </h2>
             </div>
 
-            <div className="mt-10 space-y-10">
-              <p className="tracking-wide leading-7 text-2xl">
+            <div className="mt-6 sm:mt-10 space-y-10">
+              <p className="sm:text-2xl text-xl">
                 Kyle Andrew Steed (b. 1982; Savannah, GA) is a self-taught
                 painter, photographer, muralist and typographer. For the first
                 fourteen years of his life he moved across the southern US

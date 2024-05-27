@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ArtistSubmissionContact() {
   return (
-    <div className="mt-10 sm:mt-10 m-auto max-w-7xl flex justify-center flex-col">
+    <div className="mt-10 sm:mt-10 m-auto flex justify-center flex-col border-t border-black pt-20">
       <h2 className="sm:text-4xl text-3xl text-center pb-2">
         Artist Submission
       </h2>

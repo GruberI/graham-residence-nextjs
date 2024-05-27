@@ -1,7 +1,7 @@
 const artistExhibitions = [
   {
     artist: "Nicole Taylor DeWitt",
-    name: "Bend",
+    name: "BEND",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmeF2jropWjRdpn3zR2ePGjuPAhng21z5SPC78HoQm5xV2",
     imgAltText: "Nicole Taylor DeWitt",
@@ -9,7 +9,7 @@ const artistExhibitions = [
   },
   {
     artist: "Alex Maceda",
-    name: "Savoring",
+    name: "SAVORING",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/Qmeau1sVkRRnTb5zUMnWzbCbRtdf6UqAvYfAJ26aYzeE3k",
     imgAltText: "Alex Maceda",
@@ -21,7 +21,7 @@ export default function UpcomingExhibitionList() {
   return (
     <div className="sm:mt-10 border-t border-b border-black pt-10 sm:pt-16 m-auto mx-10 pb-10 sm:pb-20">
       <div className="mb-10">
-        <h1 className="sm:text-3xl text-2xl text-center sm:text-left">
+        <h1 className="sm:text-4xl text-3xl text-center sm:text-left">
           Upcoming Exhibitions
         </h1>
       </div>
@@ -36,13 +36,11 @@ export default function UpcomingExhibitionList() {
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <p className="pt-4 text-xs">Exhibition</p>
-              <h1 className="sm:text-2xl text-lg pt-2">
-                {exhibit.name} by {exhibit.artist}
-              </h1>
-              <p className="pt-1 tracking-tight font-thin text-xs sm:text-base">
+              <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
+              <p className="text-lg pt-1">{exhibit.artist}</p>
+              <p className="tracking-tight font-thin text-lg">
                 {" "}
-                On display at the Graham Residence, {exhibit.date}
+                Graham Residence, {exhibit.date}
               </p>
             </div>
           );

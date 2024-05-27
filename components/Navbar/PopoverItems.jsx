@@ -203,14 +203,12 @@ export default function PopoverItems({ color, pathname }) {
                               </div>
                             </div>
                             <div>
-                              <a href="/gallery/artists">
-                                <p
-                                  id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
-                                >
-                                  ARTISTS
-                                </p>
-                              </a>
+                              <p
+                                id="home-heading"
+                                className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
+                              >
+                                ARTISTS
+                              </p>
                               <ul
                                 role="list"
                                 aria-labelledby="home-heading"
@@ -229,14 +227,12 @@ export default function PopoverItems({ color, pathname }) {
                               </ul>
                             </div>
                             <div>
-                              <a href="/gallery#visit-us">
-                                <p
-                                  id="categories-heading"
-                                  className="font-medium text-gray-900 hover:text-neutral-300 text-sm xl:text-lg"
-                                >
-                                  GET IN TOUCH
-                                </p>
-                              </a>
+                              <p
+                                id="categories-heading"
+                                className="font-medium text-gray-900 hover:text-neutral-300 text-sm xl:text-lg"
+                              >
+                                GET IN TOUCH
+                              </p>
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"
@@ -256,17 +252,7 @@ export default function PopoverItems({ color, pathname }) {
                                 </ul>
                               </div>
                             </div>
-                            
                           </div>
-                          <div>
-                              <a href="/art/paintings">
-                                <p
-                                  className="font-medium text-gray-900 hover:text-neutral-300 text-sm xl:text-lg absolute bottom-3 right-6"
-                                >
-                                  SHOP ALL
-                                </p>
-                              </a>
-                            </div>
                         </div>
                       </div>
                     </div>
@@ -354,14 +340,12 @@ export default function PopoverItems({ color, pathname }) {
                               </div>
                             </div>
                             <div>
-                              <a href="/shop">
-                                <p
-                                  id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
-                                >
-                                  ARTWORK
-                                </p>
-                              </a>
+                              <p
+                                id="home-heading"
+                                className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
+                              >
+                                ARTWORK
+                              </p>
                               <ul
                                 role="list"
                                 aria-labelledby="home-heading"
@@ -380,14 +364,12 @@ export default function PopoverItems({ color, pathname }) {
                               </ul>
                             </div>
                             <div>
-                              <a href="/home">
-                                <p
-                                  id="home-heading"
-                                  className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
-                                >
-                                  HOME
-                                </p>
-                              </a>
+                              <p
+                                id="home-heading"
+                                className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
+                              >
+                                HOME
+                              </p>
                               <ul
                                 role="list"
                                 aria-labelledby="home-heading"

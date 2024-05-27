@@ -7,15 +7,15 @@ export default function AboutGoldberg() {
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 max-w-7xl py-10 gap-8 mb-1 hidden sm:flex">
         <div className="grid-rows-3">
           <div className="my-20 ml-20 mb-36">
-            <p className="font-bold text-xl">Yoni</p>
+            <p className="font-bold text-2xl">Yoni</p>
             <Fade>
-              <p className="pb-6 text-sm sm:text-lg">
+              <p className="pb-6 text-lg sm:text-xl">
                 <span className="text-slate-500">
                   The Maker - committed to his craft
                 </span>
               </p>
             </Fade>
-            <p className="text-xl">
+            <p className="text-2xl">
               A professional photographer of over a decade, Yoni specializes in
               portraiture and architecture photography. A jack of all trades, he
               enjoys managing and operating The Graham Residence. He is a
@@ -43,15 +43,15 @@ export default function AboutGoldberg() {
           </div>
 
           <div className="my-20 mr-10 mt-36 pb-10">
-            <p className="font-bold text-xl">Lindsey</p>
+            <p className="font-bold text-2xl">Lindsey</p>
             <Fade>
-              <p className="pb-6 text-sm sm:text-lg">
+              <p className="pb-6 text-lg sm:text-xl">
                 <span className="text-slate-500">
                   The Visionary - sees possibility everywhere
                 </span>
               </p>
             </Fade>
-            <p className="text-xl">
+            <p className="text-2xl">
               {" "}
               A visionary with big ideas, and over a decade of experience in
               brand partnerships, Lindsey left the corporate world to pursue her

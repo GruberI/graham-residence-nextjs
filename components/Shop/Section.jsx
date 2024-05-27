@@ -54,13 +54,13 @@ export default function Section() {
                 href="/art"
                 className="rounded-sm border border-black px-3.5 py-2.5 sm:text-sm text-xs font-normal shadow-sm hover:bg-black hover:text-white  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
-                Shop Artwork
+                SHOP ARTWORK
               </a>
               <a
                 href="/home"
                 className="sm:text-sm text-xs font-normal leading-6 hover:text-neutral-300 underline underline-offset-8"
               >
-                Shop Home
+                SHOP HOME
               </a>
             </div>
           </div>
