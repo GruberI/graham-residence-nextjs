@@ -2,11 +2,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="bg-white mt-48 lg:mt-40 pb-8 sm:pb-0" id="current-exhibit">
+    <div className="bg-white mt-48 lg:mt-40 pb-8 sm:pb-0">
       <div className="mx-10">
-        <h1 className="sm:text-6xl text-3xl sm:pb-6 pb-1 tracking-widest sm:mt-4 mb-10 text-center font-[cormorant] font-light">
-          Current Exhibitions
-        </h1>
         <Link href={"/convergence"}>
           <div className="flex flex-col">
             <img

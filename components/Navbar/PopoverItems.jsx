@@ -15,7 +15,7 @@ const navigation = {
       name: "Gallery",
       href: "/gallery",
       exhibitions: [
-        { name: "On View", href: "/exhibitions#current-exhibit" },
+        { name: "On View", href: "/exhibitions" },
         { name: "Upcoming", href: "/exhibitions#upcoming-exhibitions" },
         { name: "Past", href: "/exhibitions#past-exhibitions" },
         { name: "View All", href: "/exhibitions" },

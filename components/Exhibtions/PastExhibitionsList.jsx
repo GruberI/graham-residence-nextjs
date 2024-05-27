@@ -24,7 +24,7 @@ const artistExhibitions = [
 
 export default function PastExhibitionList() {
   return (
-    <div className="sm:mt-10 border-t border-b border-black pt-10 sm:pt-16 m-auto pb-10 mx-10">
+    <div className="sm:mt-10 pt-10 sm:pt-16 m-auto pb-10 mx-10">
       <div className="mb-10">
         <h1 className="sm:text-4xl text-3xl text-center sm:text-left">
           Past Exhibitions

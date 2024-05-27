@@ -16,7 +16,7 @@ export default function Exhibitions() {
     <div>
       <Header />
       <UpcomingExhibitionList />
-      <JoinList />
+      {/* <JoinList /> */}
       <PastExhibitionsList />
       <ArtistSubmissionContact />
     </div>
