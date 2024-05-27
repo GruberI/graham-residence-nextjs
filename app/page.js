@@ -4,8 +4,8 @@ import TextFirst from "@/components/Property/TextFirst";
 import TwoRowGrid from "@/components/Property/TwoRowGrid";
 import HeroImageText from "@/components/Property/HeroImageText";
 import Instagram from "@/components/Instagram";
-import EditorialSection from "@/components/Property/EditorialSection";
-import ExhibitionList from "@/components/Property/RecentExhibitions"
+import Editorial from "@/components/Property/Editorial";
+import ExhibitionList from "@/components/Property/RecentExhibitions";
 import NewArrivalsSection from "@/components/Shop/NewArrivalsSection";
 
 // const products = await getProducts({});
@@ -46,7 +46,7 @@ export default function Property() {
     <div>
       <HeroImageText />
       <TextFirst text={text} />
-      <EditorialSection />
+      <Editorial />
       <TwoRowGrid imgSrc={imagesFirst} />
       <ExhibitionList />
       <NewArrivalsSection />
