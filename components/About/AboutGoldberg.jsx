@@ -7,10 +7,10 @@ export default function AboutGoldberg() {
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 max-w-7xl py-10 gap-8 mb-1 hidden sm:flex">
         <div className="grid-rows-3">
           <div className="my-20 ml-20 mb-36">
-            <p className="font-bold text-2xl">Yoni</p>
+            <p className="font-semibold text-2xl">YONI</p>
             <Fade>
               <p className="pb-6 text-lg sm:text-xl">
-                <span className="text-slate-500">
+                <span className="font-[cormorant] italic">
                   The Maker - committed to his craft
                 </span>
               </p>
@@ -43,10 +43,10 @@ export default function AboutGoldberg() {
           </div>
 
           <div className="my-20 mr-10 mt-36 pb-10">
-            <p className="font-bold text-2xl">Lindsey</p>
+            <p className="font-semibold text-2xl">LINDSEY</p>
             <Fade>
               <p className="pb-6 text-lg sm:text-xl">
-                <span className="text-slate-500">
+                <span className=" font-[cormorant] italic">
                   The Visionary - sees possibility everywhere
                 </span>
               </p>
@@ -76,7 +76,7 @@ export default function AboutGoldberg() {
         <div className="mx-10 m-auto mt-6 pb-10 sm:pb-0">
           <p className="font-bold text-xl">Yoni</p>
           <p className="pb-4 sm:pb-6 text-md">
-            <span className="text-slate-500">
+            <span>
               The Maker - committed to his craft
             </span>
           </p>

@@ -27,7 +27,7 @@ const posts = [
 
 export default function VendorFeature() {
   return (
-    <div className="mt-10 sm:mt-20 border-t border-black pt-20 m-auto max-w-7xl">
+    <div className="mt-10 sm:mt-16 border-t border-black m-auto max-w-7xl">
       <div className="">
         <div className="mx-auto mt-0 sm:mt-16 grid auto-rows-fr grid-cols-1 gap-16 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           {posts.map((post) => (
