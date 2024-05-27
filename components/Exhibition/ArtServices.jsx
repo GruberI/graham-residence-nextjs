@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ArtServices() {
   return (
-    <div className="border-t border-black pt-16 sm:pt-20 m-auto max-w-7xl mt-4">
+    <div className="pt-16 sm: pt-10 m-auto max-w-7xl mt-4">
       <div>
         <h1 className="sm:text-4xl text-3xl text-center pb-6">
           Art Advisory Services
