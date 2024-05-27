@@ -3,7 +3,7 @@ import Link from "next/link";
 const posts = [
   {
     id: 1,
-    title: "Showroom",
+    title: "SHOWROOM",
     location: "Newport Beach, CA",
     href: "mailto:lindsey@graham-collective.com?subject=Artist representation by Lindsey Goldberg Design",
     description:
@@ -15,7 +15,7 @@ const posts = [
   },
   {
     id: 2,
-    title: "The Graham Residence",
+    title: "THE GRAHAM RESIDENCE",
     href: `/residence#property-book`,
     location: "Yucca Valley, CA",
     description:
@@ -45,11 +45,11 @@ export default function VisitUs() {
             </div>
 
             <div className="text-center my-4 sm:my-10">
-              <h2 className="text-4xl font-semibold leading-6 text-gray-900">
+              <h2 className="sm:text-2xl text-xl font-semibold leading-6 text-gray-900">
                 <a href={post.href}>{post.title}</a>
               </h2>
               <p className="mt-2 text-lg">{post.location}</p>
-              <p className="line-clamp-3 text-xl text-gray-600 mx-10 my-4">
+              <p className="line-clamp-3 text-lg text-gray-600 mx-10 my-4">
                 {post.description}
               </p>
 
