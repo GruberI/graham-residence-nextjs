@@ -26,7 +26,7 @@ export default function Header() {
                   It all started with The Graham Residence...
                 </h3>
               </Fade>
-              <p className="text-xl">
+              <p className="text-xl md:text-lg">
                 Lindsey and Yoni were living in LA and found themselves craving
                 space to reset out in nature. As design and nature lovers, they
                 often found that they had to sacrifice one or the other in their
@@ -34,12 +34,12 @@ export default function Header() {
                 mid-century design and sliding glass doors that showcase the
                 sprawling high desert landscape.
               </p>
-              <p className="text-xl pt-2">
+              <p className="text-xl md:text-lg pt-2">
                 Since launching in 2017, The Graham Residence has hosted
                 thousands of guests from all over the world. It has also been
                 home to countless photoshoots, elopements, and events.
               </p>
-              <p className="text-xl pt-2">
+              <p className="text-xl md:text-lg pt-2">
                 In 2023, Lindsey launched Graham Gallery, inspired by the vision
                 to create a contextual gallery space and guest experience. The
                 home is curated with rotating works of art by emerging

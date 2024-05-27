@@ -176,14 +176,12 @@ export default function PopoverItems({ color, pathname }) {
                         <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
                           <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
-                              <a href="/exhibitions">
-                                <p
-                                  id="art-heading"
-                                  className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
-                                >
-                                  EXHIBITIONS
-                                </p>
-                              </a>
+                              <p
+                                id="art-heading"
+                                className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
+                              >
+                                EXHIBITIONS
+                              </p>
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"
@@ -206,7 +204,7 @@ export default function PopoverItems({ color, pathname }) {
                             <div>
                               <p
                                 id="home-heading"
-                                className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
                               >
                                 ARTISTS
                               </p>
@@ -230,7 +228,7 @@ export default function PopoverItems({ color, pathname }) {
                             <div>
                               <p
                                 id="categories-heading"
-                                className="font-medium text-gray-900 hover:text-neutral-300 text-sm xl:text-lg"
+                                className="font-medium text-gray-900 text-sm xl:text-lg"
                               >
                                 GET IN TOUCH
                               </p>
@@ -343,7 +341,7 @@ export default function PopoverItems({ color, pathname }) {
                             <div>
                               <p
                                 id="home-heading"
-                                className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
                               >
                                 ARTWORK
                               </p>
@@ -367,7 +365,7 @@ export default function PopoverItems({ color, pathname }) {
                             <div>
                               <p
                                 id="home-heading"
-                                className="font-medium text-gray-900 hover:text-neutral-300 mt-2 sm:mt-0 text-sm xl:text-lg"
+                                className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
                               >
                                 HOME
                               </p>

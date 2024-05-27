@@ -43,7 +43,6 @@ export default function HeroImageText() {
           </div>
         </div>
       </div>
-      <div id='first-page-scroll'></div>
     </div>
   );
 }
