@@ -83,10 +83,22 @@ export default function ProductDescription({ product }) {
           ? "Products will ship within 2-5 business days. Please allow 5-7 days for Standard shipping, dependent on delivery location and its proximity to AS Los Angeles Studio.<br> Express delivery options are available."
           : product.vendor === "Loll Designs"
           ? "Products will  ship within 3-5 business days via fedex standard. Most Loll furniture arrives flat-packed but is easy to assemble."
+          : product.vendor === "West Bourne"
+          ? "Products will ship within 3-5 business days via fedex standard."
+          : product.vendor === "Thai Mainhard"
+          ? "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley<br>Ships unframed"
           : product.vendor === "Yoni Goldberg"
           ? "Shipment date is determined by the type (unframed or framed) and the size of the artwork ordered.<br><br><strong>Unframed Prints:</strong><br>Unframed prints will be shipped in a tube for safe keeping. All unframed prints will ship within 7-10 business days from the date ordered.<br><br><strong>All Framed Artwork:</strong><br>At this time, framed artwork can only be shipped to addresses in the contiguous United States. For all framed orders, please allow 2-3 weeks for delivery.<br><br>For any shipping questions or quotes please email us at tgr@grahamresidence.com"
           : product.vendor === "thegrahamresidence"
           ? "Ships via USPS within 1-2 business days."
+          : product.vendor === "Kyle Steed"
+          ? "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley<br>Ships unframed"
+          : product.vendor === "Marcel Rozek"
+          ? "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley<br>Ships unframed"
+          : product.vendor === "David Matthew King"
+          ? "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley<br>Ships unframed"
+          : product.vendor === "Nicole Taylor Dewitt"
+          ? "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley<br>Ships unframed"
           : "At your door in 4-6 weeks or can be picked up locally in LA/OC/Yucca Valley<br>Ships unframed",
     },
   ];
