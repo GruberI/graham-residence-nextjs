@@ -15,7 +15,7 @@ export default function Header() {
               <h1 className="my-2 text-3xl">CONVERGENCE</h1>
               <p className="w-11/12 lg:w-9/12 text-xl">
                 {" "}
-                The vibrant work of two LA based artists converse with one
+                The vibrant works of two LA based artists converse with one
                 another among the muted landscape.
               </p>
               <p className="w-11/12 lg:w-8/12 mt-2 sm:mt-0">
