@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="bg-white mt-48 lg:mt-40 pb-8 sm:pb-0">
       <div className="mx-10">
-        <Link href={"/convergence"}>
+        <Link href={"gallery/convergence"}>
           <div className="flex flex-col">
             <img
               src="https://ipfs.filebase.io/ipfs/QmZ4am2kZo6LMK7KptheixUvctBBdvBML9rZxTAiJXxGRr/RackMultipart20240501-16-jji7xo.jpg"

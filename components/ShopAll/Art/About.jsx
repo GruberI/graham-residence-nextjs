@@ -32,7 +32,7 @@ const aboutInfo = [
   {
     handle: "david-matthew-king",
     artist: "David Matthew King",
-    href: "/convergence",
+    href: "art/david-matthew-king",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmNW873L58XpDxbbwUoibxVcBvKssP3JcVu1bFxNB9aqyv",
     imgAltText: "David Matthew King",
@@ -42,7 +42,7 @@ const aboutInfo = [
   {
     handle: "marcel-rozek",
     artist: "Marcel Rozek",
-    href: "/convergence",
+    href: "art/marcel-rozek",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmZv3MNH2ynMf3u9guCgxgqov8GcfiB3pUXvYp4aZvNjpp",
     imgAltText: "Marcel Rozek",

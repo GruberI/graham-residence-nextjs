@@ -21,8 +21,8 @@ const navigation = {
         { name: "View All", href: "/exhibitions" },
       ],
       artists: [
-        { name: "David Matthew King", href: "/convergence" },
-        { name: "Marcel Rozek", href: "/convergence" },
+        { name: "David Matthew King", href: "art/david-matthew-king" },
+        { name: "Marcel Rozek", href: "art/marcel-rozek" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
         { name: "Nicole Taylor Dewitt", href: "/art/nicole-taylor-dewitt" },
