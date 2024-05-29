@@ -8,7 +8,7 @@ const artistExhibitions = [
       "https://ipfs.filebase.io/ipfs/QmbapwiUd9S4ZFEq9ht8mYoN2JQsv7fhMosahi47hCGXYh",
     imgAltText:
       "Various paintings by Thai resting on porch at the graham residence",
-    href: "gallery/convergence",
+    href: "/gallery/david-marcel",
     date: "June 4th - July 31st",
   },
   {
