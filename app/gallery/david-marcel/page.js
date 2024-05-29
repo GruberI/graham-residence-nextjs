@@ -1,16 +1,14 @@
 import Header from "@/components/Exhibition/DavidMarcel/Header";
-// import HeaderImage from "@/components/Exhibition/DavidMarcel/HeaderImage";
 import Banner from "@/components/Exhibition/Banner";
 import Quote from "@/components/Exhibition/Quote";
 import SecondQuote from "@/components/Exhibition/DavidMarcel/SecondQuote";
-// import TwoImageGrid from "@/components/Exhibition/TwoImageGrid";
 import SixImageGrid from "@/components/Exhibition/SixImageGrid";
-// import FourImageGrid from "@/components/Exhibition/DavidMarcel/FourImageGrid";
 import ThreeImageGrid from "@/components/Exhibition/DavidMarcel/ThreeImageGrid";
 import { getCollectionProducts } from "@/lib/shopify";
 import SectionFirst from "@/components/Exhibition/DavidMarcel/SectionFirst";
 import TwoImageSection from "@/components/Exhibition/DavidMarcel/TwoImageSection";
 import ThreeImageSection from "@/components/Exhibition/DavidMarcel/ThreeImageSection";
+import OneImage from '@/components/About/OneImage'
 
 const quote = {
   text: `I am always trying to make the most with the least. My function is to present things in a new way and to take something that you might be familiar with and make it disorienting or slightly less familiar.`,
@@ -129,10 +127,13 @@ export default async function Exhibition() {
   const sixProductSet = productsByTag.slice(0, 3);
 
   const sixProductMarcel = productsByTagMarcel.slice(0, 3);
+
+  const oneImageComponentSrc = 'https://ipfs.filebase.io/ipfs/QmRCwsnbLzYRuaF68NT3zewf6RMXcV4cb4v6KpksiWPVaH/QmZiaUKpt7EHwUWVbJbyCQgBWgGicYjxkTqDHUZdm7pvfy'
   return (
     <div>
       <Header />
       <SectionFirst />
+      <OneImage imgSrc={oneImageComponentSrc}/>
       <ThreeImageGrid />
       <div className="mb-16 sm:mb-0">
         <Quote quote={quote} />

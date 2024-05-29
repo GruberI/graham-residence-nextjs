@@ -1,14 +1,14 @@
 import Header from "@/components/About/Header";
 import Hero from "@/components/About/Hero";
-// import TwoColumnGrid from "@/components/About/TwoColumnGrid";
-// import TwoColumnGrid2 from "@/components/About/TwoColumnGrid2";
 import AboutGoldberg from "@/components/About/AboutGoldberg";
 import Instagram from "@/components/Instagram";
-// import Text from "@/components/About/Text";
 import ArtServices from "@/components/Exhibition/ArtServices";
 import VisitUs from "@/components/Exhibition/VisitUs";
-import TwoRowGrid from "@/components/Property/TwoRowGrid";
-import OneImage from '@/components/About/OneImage'
+import OneImage from "@/components/About/OneImage";
+// import TwoColumnGrid from "@/components/About/TwoColumnGrid";
+// import TwoColumnGrid2 from "@/components/About/TwoColumnGrid2";
+// import TwoRowGrid from "@/components/Property/TwoRowGrid";
+// import Text from "@/components/About/Text";
 
 export const metadata = {
   title: "About The Graham Collective | ",
@@ -34,18 +34,18 @@ const images = [
   },
 ];
 
+const oneImageComponentSrc =
+  "https://ipfs.filebase.io/ipfs/QmRCwsnbLzYRuaF68NT3zewf6RMXcV4cb4v6KpksiWPVaH/QmZiaUKpt7EHwUWVbJbyCQgBWgGicYjxkTqDHUZdm7pvfy";
+
 export default async function About() {
   return (
     <div className="overflow-x-hidden">
       <Hero />
       <Header />
       <AboutGoldberg />
-      {/* <TwoRowGrid imgSrc={images} /> */}
-      <OneImage />
+      <OneImage imgSrc={oneImageComponentSrc} />
       <ArtServices />
       <VisitUs />
-      {/* <Text text={text} />
-      <TwoColumnGrid2 /> */}
       <Instagram />
     </div>
   );

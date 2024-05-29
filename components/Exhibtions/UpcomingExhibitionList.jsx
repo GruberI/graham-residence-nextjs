@@ -19,7 +19,7 @@ const artistExhibitions = [
 
 export default function UpcomingExhibitionList() {
   return (
-    <div className="sm:mt-10 border-t border-b border-black pt-10 sm:pt-16 m-auto mx-10 pb-10 sm:pb-20">
+    <div className="sm:mt-10 border-t border-b border-black pt-10 m-auto mx-10 pb-16">
       <div className="mb-10">
         <h1 className="sm:text-4xl text-3xl text-center sm:text-left">
           Upcoming Exhibitions
@@ -46,6 +46,7 @@ export default function UpcomingExhibitionList() {
           );
         })}
       </div>
+      <div id="past-exhibitions"></div>
     </div>
   );
 }
