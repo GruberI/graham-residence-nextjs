@@ -51,7 +51,7 @@ export default function Editorial() {
                     className="absolute inset-0 -z-10 h-full w-full object-cover brightness-90"
                   />
                 </div>
-                <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-white">
+                <div className="flex flex-wrap justify-center gap-y-1 overflow-hidden text-sm leading-6 text-white absolute inset-0 items-center">
                   <h3 className="text-5xl">{post.title}</h3>
                 </div>
                 {/* <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
