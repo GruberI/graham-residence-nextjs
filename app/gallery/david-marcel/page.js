@@ -20,10 +20,10 @@ const quote = {
 
 const banner = {
   imgSrc:
-    "https://ipfs.filebase.io/ipfs/QmbYUMVCrxRBHhp1CYFks2iScTP177RyT7tciNFuECdZQc/RackMultipart20240501-97-1qxik96.jpg",
+    "https://ipfs.filebase.io/ipfs/QmXEkQboKC81Tu9k63hnzYetB1Fgj8yJMDDxq9wKh5nnU8",
   imgAltText: "",
   artist: "David Matthew King",
-  text: "King unleashes his creative freedom by combining his poetic sense of rhythm and elision with self-imposed constraints. The artist limits his palette to predominantly elementary colors with the deliberate omission of pure black and pure white. This constellation of solid colored, humble components suggests the reduction of art to its basic material elements. The simplicity of the form is played down by a deceptive form of mark making: scraping and scrubbing acrylic paint into raw canvas in repeating forms until they billow or leap from the natural ground. King stages oppositions between clear contours of forms and freshness of the unprimed canvas, that left in the raw material state becomes absolutely necessary in the same way silence is necessary to music, conversation, thought or reflection.",
+  text: "King unleashes his creative freedom by combining his poetic sense of rhythm and elision with self-imposed constraints. He limits his palette to predominantly primary colors and the deliberate omission of black and white. This constellation of solid colored and humble components suggests the reduction of art to its basic material elements. King stages oppositions between clear contours of forms and freshness of the unprimed canvas that left in the raw material state become absolutely necessary in the same way silence is necessary to music, conversation, thought or reflection. ",
   href: "/art/david-matthew-king",
 };
 
@@ -32,7 +32,7 @@ const bannerTwo = {
     "https://ipfs.filebase.io/ipfs/QmZv3MNH2ynMf3u9guCgxgqov8GcfiB3pUXvYp4aZvNjpp",
   imgAltText: "",
   artist: "Marcel Rozek",
-  text: " Rozek, who now resides in Los Angeles, creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School. When he begins a painting, he pours a mixture of diluted paint onto an unprimed canvas, allowing the paint to create the organic forms and movement. With this technique, pools of color spread out and blend together before permeating the canvas. When colors mix, they absorb at different rates, resulting in new color palettes and dreamy, spectral shapes. Rozek sees in his art a reflection of himself, with each piece conveying a different meaning. Rozek's message is one that compels the viewer to reflect on their own vision of the world.",
+  text: "Rozek, creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School. He is a process oriented painter, working by pouring diluted oil paint onto a raw unprimed canvas, allowing interactions between the materials he uses and the space the work exists within to become the subject. With this technique, pools of color spread and blend together before permeating the canvas. Organic shapes naturally take form, and when colors mix, they absorb at different rates, creating new color palettes and dreamy spectral shapes. Rozek sees in his art a reflection of himself, with each piece conveying a different meaning. Rozek's message is one that compels the viewer to reflect on their own vision of the world.",
   href: "/art/marcel-rozek",
 };
 

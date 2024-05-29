@@ -21,9 +21,9 @@ export default function SectionFirst() {
 
             <div className="space-y-4 mx-4 text-center sm:text-left">
               <p className="tracking-wide leading-7">
-                Graham Gallery is honored to present Convergence, an artistic
+                The Graham Collective is honored to present Convergence, an artistic
                 dialogue between Los Angeles-based artists Marcel Rozek and
-                David Matthew King. The exhibition is set within the High Desert
+                David Matthew King. The exhibition is set in the high desert
                 of Yucca Valley, where the boundary between home and gallery are
                 blurred. Weathered boulders, ancient junipers, and piñon pines
                 form a serene backdrop to the exhibition, where the only
@@ -31,29 +31,30 @@ export default function SectionFirst() {
                 occasional coyote.
               </p>
               <p className="tracking-wide leading-7">
-                King’s work radiates the bright elementary colors of childhood
-                joy and wonder, juxtaposed against the massive boulders that
-                define the local topography. On his choice of ostensibly simple
+                King’s work radiates the bright colors of childhood, juxtaposed 
+                against massive boulders that define the local topography. Together
+                they create a feeling of joy and wonder and reflect how I feel upon
+                arriving at The Graham Residence. On his choice of primary
                 colors, he says “I am always trying to make the most with the
                 least. My function is to present things in a new way and to take
                 something that you might be familiar with and make it
                 disorienting or slightly less familiar.”
               </p>
               <p className="tracking-wide leading-7">
-                In contrast, Rozek’s artworks are firmly grounded by the
-                desert’s rugged terrain. His intricate, initially abstract work
-                takes on a new type of realism as it reflects the detailed
-                patterns of sand dunes and the hardy flora and fauna that thrive
-                in the high desert all around. Rozek’s meticulous attention to
-                detail brings the viewer face-to-face with the textures and life
-                forms that define the desert’s harsh beauty
+                Rozek is a process oriented painter working by pouring diluted 
+                oil paint onto a raw unprimed canvas, allowing interactions 
+                between the materials he uses and the space the work exists within 
+                to become the subject. Organic shapes naturally take form, and here 
+                at The Graham Residence his works are firmly grounded by the
+                desert’s rugged terrain. I see in them the detailed patterns of sand
+                dunes and the hardy flora and fauna that thrive in the high desert. 
+                Rozek’s meticulous attention to detail brings me face-to-face with the 
+                textures and life forms that define the desert’s harsh beauty
               </p>
               <p className="tracking-wide leading-7">
                 Together, King and Rozek’s pieces engage in a captivating
-                conversation, contrasting King’s vivid abstraction with Rozek’s
-                nod to detailed realism. The interplay of these two perspectives
-                offers viewers a multifaceted exploration of the desert
-                landscape, reflecting solitude, resilience, and natural beauty.
+                conversation of exploration, experimentation, wonder, resilience, 
+                and natural beauty.
               </p>
             </div>
             <div className="sm:pt-8 pt-4 pb-4">
