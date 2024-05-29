@@ -25,7 +25,7 @@ const posts = [
     id: 3,
     title: "Shop",
     href: "/shop",
-    description: "A curated selection of our favorite home objects.",
+    description: "A selection of our favorite home objects.",
     imageUrl:
       "https://ipfs.filebase.io/ipfs/QmYZRYNpXVYf4D4SwoppYJa5rmRrVyKFPq4Nyf5T421DDA/QmekpobXk8pKQ4no7187Zio7vGqjYCdRriTnJJ7D7X8WcY",
     date: "Mar 16, 2020",
@@ -48,16 +48,18 @@ export default function Editorial() {
                   <img
                     src={post.imageUrl}
                     alt=""
-                    className="absolute inset-0 -z-10 h-full w-full object-cover brightness-90"
+                    className="absolute inset-0 -z-10 h-full w-full object-cover brightness-75"
                   />
                 </div>
-                <div className="flex flex-wrap justify-center gap-y-1 overflow-hidden text-sm leading-6 text-white absolute inset-0 items-center">
-                  <h3 className="text-5xl">{post.title}</h3>
+                <div className="flex flex-wrap justify-center gap-y-1 overflow-hidden text-sm leading-6 text-white absolute inset-0 items-center flex-col">
+                
+                    <h3 className="text-5xl">{post.title}</h3>
+                    <h3 className="mt-3 text-2xl leading-6 text-white w-9/12 text-center">
+                      <span className="" />
+                      {post.description}
+                    </h3>
+                
                 </div>
-                {/* <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                  <span className="absolute right-10" />
-                  {post.description}
-                </h3> */}
               </a>
             </article>
           ))}
