@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useState, useEffect } from "react";
+import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 
@@ -34,6 +34,7 @@ const navigation = {
         // { name: "Consulting", href: "/"},
         { name: "Artist Submission", href: "/gallery/#consulting-services" },
         { name: "Advisory Services", href: "/about#art-advisory" },
+        { name: "Subscribe", href: "/gallery#subscribe" },
       ],
       shop: [{ href: "/art" }],
     },
@@ -82,36 +83,13 @@ const handleClickScroll = (id) => {
 
 export default function PopoverItems({ color, pathname }) {
   const [activePopover, setActivePopover] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize(); // Check on mount
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const handleMouseEnter = (popover) => {
-    if (!isMobile) {
-      setActivePopover(popover);
-    }
+    setActivePopover(popover);
   };
 
   const handleMouseLeave = () => {
-    if (!isMobile) {
-      setActivePopover(null);
-    }
-  };
-
-  const handlePopoverClick = (popover) => {
-    if (isMobile) {
-      setActivePopover(activePopover === popover ? null : popover);
-    }
+    setActivePopover(null);
   };
 
   return (
@@ -136,7 +114,6 @@ export default function PopoverItems({ color, pathname }) {
             className="flex"
             onMouseEnter={() => handleMouseEnter(galleryIdx)}
             onMouseLeave={handleMouseLeave}
-            onClick={() => handlePopoverClick(galleryIdx)}
           >
             {({ open }) => (
               <>
@@ -272,7 +249,6 @@ export default function PopoverItems({ color, pathname }) {
             className="flex"
             onMouseEnter={() => handleMouseEnter(categoryIdx + navigation.gallery.length)}
             onMouseLeave={handleMouseLeave}
-            onClick={() => handlePopoverClick(categoryIdx + navigation.gallery.length)}
           >
             {({ open }) => (
               <>
