@@ -21,13 +21,13 @@ export default function SectionFirst() {
 
             <div className="space-y-4 mx-4 text-center sm:text-left">
               <p>
-                The Graham Collective is honored to present Convergence, an artistic
+                Graham Collective is honored to present Convergence, an artistic
                 dialogue between Los Angeles-based artists Marcel Rozek and
                 David Matthew King. The exhibition is set in the high desert
                 of Yucca Valley, where the boundary between home and gallery are
                 blurred. Weathered boulders, ancient junipers, and piñon pines
                 form a serene backdrop to the exhibition, where the only
-                neighbors in sight are blue jays, hummingbirds, and the
+                neighbors in sight are blue jays, hummingbirds, and an
                 occasional coyote.
               </p>
               <p>
@@ -36,20 +36,20 @@ export default function SectionFirst() {
                 they create a feeling of joy and wonder and reflect how I feel upon
                 arriving at The Graham Residence. On his choice of primary
                 colors, he says “I am always trying to make the most with the
-                least. My function is to present things in a new way and to take
-                something that you might be familiar with and make it
+                least. I like to present things in a new way, taking
+                something that might feel familiar and making it
                 disorienting or slightly less familiar.”
               </p>
               <p>
                 Rozek is a process oriented painter working by pouring diluted 
-                oil paint onto a raw unprimed canvas, allowing interactions 
+                oil paint onto raw unprimed canvas, allowing interactions 
                 between the materials he uses and the space the work exists within 
                 to become the subject. Organic shapes naturally take form, and here 
                 at The Graham Residence his works are firmly grounded by the
-                desert’s rugged terrain. I see in them the detailed patterns of sand
-                dunes and the hardy flora and fauna that thrive in the high desert. 
+                desert’s rugged terrain. I see in them the detailed patterns of rock formations
+                and the hardy flora and fauna that thrive in the high desert. 
                 Rozek’s meticulous attention to detail brings me face-to-face with the 
-                textures and life forms that define the desert’s harsh beauty
+                textures and life forms that define the desert’s harsh beauty.
               </p>
               <p>
                 Together, King and Rozek’s pieces engage in a captivating
