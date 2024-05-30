@@ -16,7 +16,7 @@ const imageByHandle = [
   },
   {
     imageHandle: "west-bourne",
-    src: "https://ipfs.filebase.io/ipfs/QmWRcXMpJychjC4w678Ln691fkMYP6KdeiXA38uWWnWLNk",
+    src: "https://ipfs.filebase.io/ipfs/QmcxTaiyxAMAkF9WyRbPYWvnfCdAXReEWLbmjmNWoP2RjF",
     alt: "West Bourne",
   },
   {
