@@ -6,7 +6,7 @@ export default function ThreeImageGrid() {
           <img
             src="https://ipfs.filebase.io/ipfs/QmVD6xBTVjjP8USC1gqfwsxgt18PgEFrujrmaUSXLu68WC"
             alt=""
-            className=" w-full"
+            className="w-full"
           />
         </div>
       </div>
@@ -16,7 +16,7 @@ export default function ThreeImageGrid() {
           <img
             src="https://ipfs.filebase.io/ipfs/QmYz8R9PL8BJ4hrfQxvYiA6whyzR4NxXSYtojCyL1p4P14"
             alt=""
-            className=" w-full"
+            className="w-full"
           />
         </div>
         <div className="">

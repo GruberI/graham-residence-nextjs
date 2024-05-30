@@ -229,7 +229,7 @@ export default async function Exhibition() {
     <div>
       <Header />
       <SectionFirst />
-      <OneImage imgSrc={oneImageComponentSrcFirst} />
+      {/* <OneImage imgSrc={oneImageComponentSrcFirst} /> */}
       <ThreeImageGrid />
       <Quote quote={quote} />
       <TwoImageSection imageData={twoImageSectionData[0]} />
