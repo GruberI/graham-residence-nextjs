@@ -5,10 +5,6 @@ import Instagram from "@/components/Instagram";
 import ArtServices from "@/components/Exhibition/ArtServices";
 import VisitUs from "@/components/Exhibition/VisitUs";
 import OneImage from "@/components/About/OneImage";
-// import TwoColumnGrid from "@/components/About/TwoColumnGrid";
-// import TwoColumnGrid2 from "@/components/About/TwoColumnGrid2";
-// import TwoRowGrid from "@/components/Property/TwoRowGrid";
-// import Text from "@/components/About/Text";
 
 export const metadata = {
   title: "About The Graham Collective | ",

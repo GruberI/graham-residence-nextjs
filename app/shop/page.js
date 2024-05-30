@@ -6,9 +6,6 @@ import GoodsSection from "@/components/Shop/GoodsSection";
 import PrintsSection from "@/components/Shop/PrintsSection";
 import Featured from "@/components/Shop/Featured";
 import Section from "@/components/Shop/Section.jsx";
-// import PhotoSection from "@/components/Shop/PhotoSection";
-// import Instagram from "@/components/Shop/Instagram";
-import Carousel from "@/components/Carousel/Carousel.jsx";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
 import VendorFeature from "@/components/Shop/VendorFeature";
@@ -42,7 +39,6 @@ export default async function Shop() {
     <div>
       <Suspense>
         <HeroImageText />
-        {/* <Carousel products={productsByTag} /> */}
       </Suspense>
       <Section />
       <ArtSection products={products} />

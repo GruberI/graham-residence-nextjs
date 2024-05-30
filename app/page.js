@@ -1,5 +1,3 @@
-// import { getProducts } from "@/lib/shopify";
-// import { getCollectionProducts } from "@/lib/shopify/index";
 import TextFirst from "@/components/Property/TextFirst";
 import TwoRowGrid from "@/components/Property/TwoRowGrid";
 import HeroImageText from "@/components/Property/HeroImageText";
@@ -7,14 +5,6 @@ import Instagram from "@/components/Instagram";
 import Editorial from "@/components/Property/Editorial";
 import ExhibitionList from "@/components/Property/RecentExhibitions";
 import NewArrivalsSection from "@/components/Shop/NewArrivalsSection";
-
-// const products = await getProducts({});
-// const productsByCollection = await getCollectionProducts({
-//   collection: "home-goods",
-// });
-// const productsByTag = productsByCollection.filter((product) => {
-//   return product.tags.includes("home-new-carousel");
-// });
 
 export const metadata = {
   title:
