@@ -42,7 +42,7 @@ const twoImageSectionData = [
     price: "$4,800",
     imgFirst: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmYRiF3HbU2TR7TwHxhkZJ866twWnf5qMwxF3ubkdbx4Jt",
+        "https://ipfs.filebase.io/ipfs/QmWg2Z1AGjraQxaRaLGng4ia8LRDaNw14ePk82FaJC3Vm7",
     },
     imgSecond: {
       imgSrc:
@@ -78,7 +78,7 @@ const twoImageSectionData = [
     },
     imgSecond: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmSz1LHaCdcKcAaCHa1ppvFXpLMoMLPqRuVBEAJsyRqDgc",
+        "https://ipfs.filebase.io/ipfs/QmRVfFTMEQqYAkfWyZuQvbUw4on29x3oJqos5EWpgKkKnF",
     },
   },
   {
@@ -90,11 +90,11 @@ const twoImageSectionData = [
     price: "$10,600",
     imgFirst: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmZLEgNQRLzQygV2v12CEFdJcJWrn4JKyv6H1ykaoFsg2t",
+        "https://ipfs.filebase.io/ipfs/QmTJ7x2nzXTt5PKQdtiwGiDntTzxaMdxKFSznoiHyh9VJD",
     },
     imgSecond: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmSz1LHaCdcKcAaCHa1ppvFXpLMoMLPqRuVBEAJsyRqDgc",
+        "https://ipfs.filebase.io/ipfs/QmWVeKFGBSDvwEymHgh5NLMUX7JVE2Fu3R5L7opvyoNpHp",
     },
   },
   {
@@ -106,11 +106,11 @@ const twoImageSectionData = [
     price: "$10,600",
     imgFirst: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmZLEgNQRLzQygV2v12CEFdJcJWrn4JKyv6H1ykaoFsg2t",
+        "https://ipfs.filebase.io/ipfs/QmaaiyYo3m7NZyhbFxmBAinH6kHiEu915MnvVXjBNQJXMK",
     },
     imgSecond: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmSz1LHaCdcKcAaCHa1ppvFXpLMoMLPqRuVBEAJsyRqDgc",
+        "https://ipfs.filebase.io/ipfs/QmQW1BqzAkaH2XwcpAtJW81jQXqoVSwV9jMhJYB9qzRVEV",
     },
   },
 ];
@@ -242,7 +242,7 @@ export default async function Exhibition() {
       <TwoImageSectionSquare imageData={twoImageSectionData[3]} />
       <ThreeImageSection imageData={threeImageSectionData[2]} />
       <TwoImageSection imageData={twoImageSectionData[4]} />
-      <TwoImageSection imageData={twoImageSectionData[4]} />
+      <TwoImageSection imageData={twoImageSectionData[5]} />
       <SecondQuote />
       <ArtistBio bio={marcelBio} />
       <ArtistBio bio={davidBio} />
