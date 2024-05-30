@@ -1,6 +1,6 @@
 export default function ThreeImageSection({ imageData }) {
   return (
-    <div className="mx-auto grid grid-rows-1 grid-col-1 sm:grid-col-3 grid-flow-col sm:py-12 border-t border-black mt-20 pt-20 max-w-7xl">
+    <div className="mx-auto grid grid-rows-1 grid-col-1 sm:grid-col-3 grid-flow-col border-t border-b border-black max-w-7xl py-16">
       <div className="sm:row-start-1 sm:row-end-3 hidden sm:flex flex-col">
         <div>
           <a href={imageData.href}>
@@ -20,7 +20,7 @@ export default function ThreeImageSection({ imageData }) {
             <p>by {imageData.artist}</p>
             <p>{imageData.size}</p>
             <p>{imageData.type} on Canvas</p>
-            <p>${imageData.price}</p>
+            <p>{imageData.price}</p>
           </a>
         </div>
         <div className="row-start-1 row-span-3">
