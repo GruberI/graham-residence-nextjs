@@ -24,7 +24,7 @@ export default function JoinList() {
   return (
     <div className="bg-white max-w-7xl mx-auto">
       <div className="max-w-3xl m-auto">
-        <div class="klaviyo-form-YiLnCF"></div>
+        <div className="klaviyo-form-YiLnCF"></div>
       </div>
       {/* <div className="mx-auto sm:px-6 lg:px-8">
         <div className="relative isolate overflow-hidden px-6 sm:px-24">

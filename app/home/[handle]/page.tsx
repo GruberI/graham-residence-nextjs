@@ -16,6 +16,7 @@ export default async function ShopAll({
   });
 
   if (!products?.length) return notFound();
+
   return (
     <div>
       <ShopAllHome

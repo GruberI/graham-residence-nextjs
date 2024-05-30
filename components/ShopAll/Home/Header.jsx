@@ -15,6 +15,11 @@ const imageByHandle = [
     alt: "Loll designs outdoor chairs infront of Graham Residence firepit",
   },
   {
+    imageHandle: "west-bourne",
+    src: "https://ipfs.filebase.io/ipfs/QmWRcXMpJychjC4w678Ln691fkMYP6KdeiXA38uWWnWLNk",
+    alt: "West Bourne",
+  },
+  {
     imageHandle: 'new-arrivals',
     src: "https://ipfs.filebase.io/ipfs/QmQNn2LNn6UdzbuqiSSXJpknNF62sDQbzugxGJm2E9cG8b",
     alt: "The Graham Residence living room",
