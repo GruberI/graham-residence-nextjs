@@ -24,7 +24,7 @@ export default async function ArtSection() {
       >
         VIEW ALL
       </a>
-      <Carousel products={eightProducts}/>
+      <Carousel products={eightProducts} />
       {/* <ProductGridFour products={eightProducts} /> */}
     </div>
   );

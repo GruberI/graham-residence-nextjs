@@ -134,11 +134,6 @@ export default function ProductDescription({ product }) {
                         <span className="absolute inset-0 overflow-hidden">
                           <img
                             src={image.url}
-                            // src={
-                            //   photography
-                            //     ? photographySelectedVariant.image.originalSrc
-                            //     : image.url
-                            // }
                             alt={image.altText}
                             className="h-full w-full object-cover object-center"
                           />

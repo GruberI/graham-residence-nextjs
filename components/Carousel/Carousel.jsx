@@ -83,6 +83,7 @@ export default class Carousel extends Component {
         },
       ],
     };
+
     return (
       <div className="mb-20">
         <div className="mt-10 mb-4">
@@ -97,9 +98,9 @@ export default class Carousel extends Component {
                     alt={product.title}
                     label={{
                       title: product.title,
-                      amount: product.priceRange.maxVariantPrice.amount,
+                      amount: product.priceRange.minVariantPrice.amount,
                       currencyCode:
-                        product.priceRange.maxVariantPrice.currencyCode,
+                        product.priceRange.minVariantPrice.currencyCode,
                     }}
                     src={product.featuredImage?.url}
                     fill
@@ -107,7 +108,7 @@ export default class Carousel extends Component {
                   />
                   <Label
                     title={product.title}
-                    amount={product.priceRange.maxVariantPrice.amount}
+                    amount={product.priceRange.minVariantPrice.amount}
                     currencyCode={product.currencyCode}
                     position={product.position}
                     vendor={product.vendor}
