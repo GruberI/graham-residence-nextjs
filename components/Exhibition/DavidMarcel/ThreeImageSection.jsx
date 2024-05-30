@@ -1,6 +1,6 @@
 export default function ThreeImageSection({ imageData }) {
   return (
-    <div className="mx-auto grid grid-rows-1 grid-col-1 sm:grid-col-3 grid-flow-col border-t border-b border-black max-w-7xl py-16">
+    <div className="mx-auto grid grid-rows-1 grid-col-1 sm:grid-col-3 grid-flow-col max-w-7xl py-16">
       <div className="sm:row-start-1 sm:row-end-3 hidden sm:flex flex-col">
         <div>
           <a href={imageData.href}>

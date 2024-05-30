@@ -1,6 +1,6 @@
 export default function SectionFirst() {
   return (
-    <div className="m-auto border-t border-black pt-16 pb-16 max-w-7xl" id="featured">
+    <div className="m-auto border-t border-black py-16 max-w-7xl" id="featured">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 sm:gap-y-16 lg:grid-cols-2">
           <div>

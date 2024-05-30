@@ -1,6 +1,6 @@
 export default function TwoImageSection({ imageData }) {
   return (
-    <div className="grid sm:grid-rows-3 grid-cols-1 sm:grid-cols-3 sm:grid-flow-col gap-6 my-16 max-w-7xl mx-10 sm:mx-auto">
+    <div className="grid sm:grid-rows-3 grid-cols-1 sm:grid-cols-3 sm:grid-flow-col gap-6 max-w-7xl mx-10 sm:mx-auto py-16">
       <div className="sm:col-span-2 sm:row-end-3 sm:row-span-2 flex flex-col sm:flex-row gap-4">
         <a href={imageData.href} className="flex flex-col sm:flex-row">
           <img

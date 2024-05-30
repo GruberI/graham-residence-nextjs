@@ -1,5 +1,4 @@
 import Header from "@/components/Exhibition/DavidMarcel/Header";
-import Banner from "@/components/Exhibition/Banner";
 import Quote from "@/components/Exhibition/Quote";
 import SecondQuote from "@/components/Exhibition/DavidMarcel/SecondQuote";
 import ThreeImageGrid from "@/components/Exhibition/DavidMarcel/ThreeImageGrid";
@@ -222,6 +221,9 @@ const oneImageComponentSrcFirst =
 const oneImageComponentSrcSecond =
   "https://ipfs.filebase.io/ipfs/Qmcjf1EbzsQNPejDxixC9wKQE2sviwixbqpCjPjN36qo4p";
 
+const oneImageComponentSrcThird =
+  "https://ipfs.filebase.io/ipfs/QmTGSWvQgJ93LmDcyvUCWf79tUjb4YeatUSP9vMJPSz7xE";
+
 export default async function Exhibition() {
   return (
     <div>
@@ -229,9 +231,7 @@ export default async function Exhibition() {
       <SectionFirst />
       <OneImage imgSrc={oneImageComponentSrcFirst} />
       <ThreeImageGrid />
-      <div className="mb-16 sm:mb-0">
-        <Quote quote={quote} />
-      </div>
+      <Quote quote={quote} />
       <TwoImageSection imageData={twoImageSectionData[0]} />
       <ThreeImageSection imageData={threeImageSectionData[0]} />
       <TwoImageSection imageData={twoImageSectionData[2]} />
@@ -246,6 +246,8 @@ export default async function Exhibition() {
       <SecondQuote />
       <ArtistBio bio={marcelBio} />
       <ArtistBio bio={davidBio} />
+      <div className="pb-16"></div>
+      <OneImage imgSrc={oneImageComponentSrcThird} />
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function ArtistBio({ bio }) {
       </figure>
       <div>
         <h2 className="text-2xl">{bio.title}</h2>
-        <p className="mt-6">{bio.text}</p>
+        <p className="mt-6 text-lg">{bio.text}</p>
       </div>
     </div>
   );

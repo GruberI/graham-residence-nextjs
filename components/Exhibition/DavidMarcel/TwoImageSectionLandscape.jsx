@@ -1,6 +1,6 @@
 export default function TwoImageSectionLandscape({ imageData }) {
   return (
-    <div className="max-w-7xl py-16 mx-10 sm:mx-auto border-t border-black">
+    <div className="max-w-7xl mx-10 sm:mx-auto py-16">
       <div className="flex flex-col md:flex-row pb-10 justify-start">
         <div>
           <a href={imageData[1].href}>
