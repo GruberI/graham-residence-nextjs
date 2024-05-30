@@ -4,6 +4,7 @@ import SecondQuote from "@/components/Exhibition/DavidMarcel/SecondQuote";
 import ThreeImageGrid from "@/components/Exhibition/DavidMarcel/ThreeImageGrid";
 import SectionFirst from "@/components/Exhibition/DavidMarcel/SectionFirst";
 import TwoImageSection from "@/components/Exhibition/DavidMarcel/TwoImageSection";
+import TwoImageSectionWide from "@/components/Exhibition/DavidMarcel/TwoImageSectionWide";
 import ThreeImageSection from "@/components/Exhibition/DavidMarcel/ThreeImageSection";
 import TwoImageSectionLandscape from "@/components/Exhibition/DavidMarcel/TwoImageSectionLandscape";
 import TwoImageSectionSquare from "@/components/Exhibition/DavidMarcel/TwoImageSectionSquare";
@@ -26,11 +27,11 @@ const twoImageSectionData = [
     price: "$6,200",
     imgFirst: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmRTsK696AZY88Uxg4qwjv228kya4bR6FY9iSpGVDadJZf",
+        "https://ipfs.filebase.io/ipfs/QmWZ2yxNFNJCFSVc3B1Wm5n1ZwifSfiCLB5kXJRs3KXY1B",
     },
     imgSecond: {
       imgSrc:
-        "https://ipfs.filebase.io/ipfs/QmWZ2yxNFNJCFSVc3B1Wm5n1ZwifSfiCLB5kXJRs3KXY1B",
+        "https://ipfs.filebase.io/ipfs/QmRTsK696AZY88Uxg4qwjv228kya4bR6FY9iSpGVDadJZf",
     },
   },
   {
@@ -237,7 +238,7 @@ export default async function Exhibition() {
       <TwoImageSection imageData={twoImageSectionData[2]} />
       <TwoImageSectionLandscape imageData={landscapeImgData} />
       <OneImage imgSrc={oneImageComponentSrcSecond} />
-      <TwoImageSection imageData={twoImageSectionData[1]} />
+      <TwoImageSectionWide imageData={twoImageSectionData[1]} />
       <ThreeImageSection imageData={threeImageSectionData[1]} />
       <TwoImageSectionSquare imageData={twoImageSectionData[3]} />
       <ThreeImageSection imageData={threeImageSectionData[2]} />
