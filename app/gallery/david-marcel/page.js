@@ -11,7 +11,7 @@ import OneImage from "@/components/Exhibition/DavidMarcel/OneImage";
 import ArtistBio from "@/components/Exhibition/DavidMarcel/ArtistBio";
 
 const quote = {
-  text: `I am always trying to make the most with the least. My function is to present things in a new way and to take something that you might be familiar with and make it disorienting or slightly less familiar.`,
+  text: `I am always trying to make the most with the least. I like to present things in a new way, taking something that might feel familiar and making it disorienting or slightly less familiar.`,
   size: "3",
   artist: "David Matthew King",
 };
