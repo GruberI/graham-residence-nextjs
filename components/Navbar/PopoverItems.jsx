@@ -34,7 +34,6 @@ const navigation = {
         // { name: "Consulting", href: "/"},
         { name: "Artist Submission", href: "/gallery/#consulting-services" },
         { name: "Advisory Services", href: "/about#art-advisory" },
-        { name: "Subscribe", href: "/gallery#subscribe" },
       ],
       shop: [{ href: "/art" }],
     },
@@ -235,7 +234,7 @@ export default function PopoverItems({ color, pathname }) {
                                 id="categories-heading"
                                 className="font-medium text-gray-900 text-sm xl:text-lg"
                               >
-                                CONTACT
+                                GET IN TOUCH
                               </p>
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
