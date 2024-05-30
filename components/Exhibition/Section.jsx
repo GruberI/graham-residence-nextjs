@@ -12,7 +12,7 @@ export default function Section() {
                 <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
                   <div className="pb-6 pt-0 sm:pt-10 lg:pt-0">
                     <h1 className="lg:text-4xl text-2xl">THE GRAHAM GALLERY</h1>{" "}
-                    <p className="text-3xl italic font-light">
+                    <p className="text-2xl sm:text-3xl italic font-light">
                       is a rotating exhibition experience{" "}
                     </p>
                   </div>

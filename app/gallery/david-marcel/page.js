@@ -68,7 +68,7 @@ const twoImageSectionData = [
   {
     artist: "Marcel Rozek",
     title: "Red Entry",
-    href: "/product/red-entry",
+    href: "/product/cold-grey-over-warm-copy",
     size: "42 x 42 in.",
     type: "Oil",
     price: "Sold",
@@ -100,7 +100,7 @@ const twoImageSectionData = [
   {
     artist: "Marcel Rozek",
     title: "Comet",
-    href: "/product/coment",
+    href: "/product/comet",
     size: "72 x 60 in.",
     type: "Oil",
     price: "$10,600",
@@ -182,7 +182,7 @@ const landscapeImgData = [
   {
     artist: "David Matthew King",
     title: "Untitled (8.8.23)",
-    href: "/product/untitled-8-8-23",
+    href: "/product/untitled-west-bedroom",
     size: "30 x 40 in.",
     type: "Acrylic",
     price: "$6,800",
@@ -192,7 +192,7 @@ const landscapeImgData = [
   {
     artist: "David Matthew King",
     title: "Untitled (8.17.23)",
-    href: "/products/untitled-east-bedroom",
+    href: "/product/untitled-east-bedroom",
     size: "30 x 40 in.",
     type: "Acrylic",
     price: "$6,800",
