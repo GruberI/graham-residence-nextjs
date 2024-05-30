@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 
@@ -21,8 +21,8 @@ const navigation = {
         { name: "View All", href: "/exhibitions" },
       ],
       artists: [
-        { name: "David Matthew King", href: "art/david-matthew-king" },
-        { name: "Marcel Rozek", href: "art/marcel-rozek" },
+        { name: "David Matthew King", href: "/art/david-matthew-king" },
+        { name: "Marcel Rozek", href: "/art/marcel-rozek" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
         { name: "Nicole Taylor Dewitt", href: "/art/nicole-taylor-dewitt" },
@@ -83,13 +83,36 @@ const handleClickScroll = (id) => {
 
 export default function PopoverItems({ color, pathname }) {
   const [activePopover, setActivePopover] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Check on mount
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleMouseEnter = (popover) => {
-    setActivePopover(popover);
+    if (!isMobile) {
+      setActivePopover(popover);
+    }
   };
 
   const handleMouseLeave = () => {
-    setActivePopover(null);
+    if (!isMobile) {
+      setActivePopover(null);
+    }
+  };
+
+  const handlePopoverClick = (popover) => {
+    if (isMobile) {
+      setActivePopover(activePopover === popover ? null : popover);
+    }
   };
 
   return (
@@ -114,6 +137,7 @@ export default function PopoverItems({ color, pathname }) {
             className="flex"
             onMouseEnter={() => handleMouseEnter(galleryIdx)}
             onMouseLeave={handleMouseLeave}
+            onClick={() => handlePopoverClick(galleryIdx)}
           >
             {({ open }) => (
               <>
@@ -211,7 +235,7 @@ export default function PopoverItems({ color, pathname }) {
                                 id="categories-heading"
                                 className="font-medium text-gray-900 text-sm xl:text-lg"
                               >
-                                GET IN TOUCH
+                                CONTACT
                               </p>
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
@@ -247,10 +271,9 @@ export default function PopoverItems({ color, pathname }) {
           <Popover
             key={`${categoryIdx}-categories`}
             className="flex"
-            onMouseEnter={() =>
-              handleMouseEnter(categoryIdx + navigation.gallery.length)
-            }
+            onMouseEnter={() => handleMouseEnter(categoryIdx + navigation.gallery.length)}
             onMouseLeave={handleMouseLeave}
+            onClick={() => handlePopoverClick(categoryIdx + navigation.gallery.length)}
           >
             {({ open }) => (
               <>
@@ -275,9 +298,7 @@ export default function PopoverItems({ color, pathname }) {
 
                 <Transition
                   as={Fragment}
-                  show={
-                    activePopover === categoryIdx + navigation.gallery.length
-                  }
+                  show={activePopover === categoryIdx + navigation.gallery.length}
                   enter="transition ease-out duration-200"
                   enterFrom="opacity-0"
                   enterTo="opacity-100"
