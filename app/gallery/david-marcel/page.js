@@ -219,7 +219,7 @@ const oneImageComponentSrcFirst =
   "https://ipfs.filebase.io/ipfs/QmNuETrsfU5Qtihn85foFNnJ9cokAvak5WSvVJUdTRXCuR";
 
 const oneImageComponentSrcSecond =
-  "https://ipfs.filebase.io/ipfs/Qmcjf1EbzsQNPejDxixC9wKQE2sviwixbqpCjPjN36qo4p";
+  "https://ipfs.filebase.io/ipfs/QmNUPdceuh6R8LnrRdQKfvgtM1se7Pzs3uUjhyrsvLou5M";
 
 const oneImageComponentSrcThird =
   "https://ipfs.filebase.io/ipfs/QmTGSWvQgJ93LmDcyvUCWf79tUjb4YeatUSP9vMJPSz7xE";
