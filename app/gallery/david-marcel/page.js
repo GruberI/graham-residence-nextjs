@@ -51,8 +51,8 @@ const twoImageSectionData = [
   },
   {
     artist: "David Matthew King",
-    title: "Untitled 10.11.22",
-    href: "/product/untitled-10-11-22",
+    title: "Untitled 11.10.22",
+    href: "/product/untitled-11-10-22",
     size: "40 x 30 in.",
     type: "Acrylic",
     price: "$3,800",
