@@ -172,10 +172,10 @@ const threeImageSectionData = [
       imgSrc:
         "https://ipfs.filebase.io/ipfs/QmNuETrsfU5Qtihn85foFNnJ9cokAvak5WSvVJUdTRXCuR",
     },
-    imgThird: {
-      imgSrc:
-        "https://ipfs.filebase.io/ipfs/Qmcjf1EbzsQNPejDxixC9wKQE2sviwixbqpCjPjN36qo4p",
-    },
+    // imgThird: {
+    //   imgSrc:
+    //     "https://ipfs.filebase.io/ipfs/Qmcjf1EbzsQNPejDxixC9wKQE2sviwixbqpCjPjN36qo4p",
+    // },
   },
 ];
 

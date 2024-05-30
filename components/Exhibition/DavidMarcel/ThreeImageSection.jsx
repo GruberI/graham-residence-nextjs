@@ -7,11 +7,13 @@ export default function ThreeImageSection({ imageData }) {
             <img src={imageData.imgSecond.imgSrc} alt="" />
           </a>
         </div>
-        <div className="pt-24">
-          <a href={imageData.href}>
-            <img src={imageData.imgThird.imgSrc} alt="" />
-          </a>
-        </div>
+        {imageData.imgThird && (
+          <div className="pt-24">
+            <a href={imageData.href}>
+              <img src={imageData.imgThird.imgSrc} alt="" />
+            </a>
+          </div>
+        )}
       </div>
       <div className="flex flex-col-reverse sm:flex-row  sm:col-span-3 mx-10 sm:mx-auto sm:h-[80%]">
         <div className="sm:row-start-2 sm:row-span-2 sm:content-end text-end pl-20 pr-4 justify-center mt-6 sm:mt-0">

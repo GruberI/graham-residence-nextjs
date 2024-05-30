@@ -16,7 +16,7 @@ export default function Header() {
           A conversation of sorts
         </p>
         <Fade>
-          <h2 className="mt-4 text-center text-2xl sm:text-5xl italic">
+          <h2 className="mt-4 text-center text-2xl sm:text-4xl italic">
             Marcel Rozek and David Matthew King
           </h2>
         </Fade>
