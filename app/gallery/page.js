@@ -19,7 +19,7 @@ export default function MainExhibition() {
     <div>
       <PageHeaderHero
         imgSrc="https://ipfs.filebase.io/ipfs/QmSj81HkBTKDeavdAuhSnNgLSkqderZfq6NCFneNDzZG4d"
-        title="The Graham Gallery"
+        title="Graham Gallery"
       />
       {/* <HeroImageText /> */}
       <Section />
