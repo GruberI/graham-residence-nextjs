@@ -13,7 +13,7 @@ export function PageHeaderHero({
         />
       ) : null}
 
-      <div className="mx-auto w-full mt-0 h-full flex items-center justify-center px-10">
+      <div className="mx-auto w-full mt-0 h-full flex items-center justify-center">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div className="text-center">
           {smallTitle ? (

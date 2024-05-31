@@ -87,7 +87,10 @@ export default function PopoverItems({ color, pathname }) {
   const [activePopover, setActivePopover] = useState(null);
 
   const handleMouseEnter = (popover) => {
-    setActivePopover(popover);
+    // disable interaction on mobile.
+    if (window && window.innerWidth > 768) {
+      setActivePopover(popover);
+    }
   };
 
   const handleMouseLeave = () => {
