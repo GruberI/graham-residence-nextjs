@@ -247,7 +247,9 @@ export default function PopoverItems({ color, pathname }) {
           <Popover
             key={`${categoryIdx}-categories`}
             className="flex"
-            onMouseEnter={() => handleMouseEnter(categoryIdx + navigation.gallery.length)}
+            onMouseEnter={() =>
+              handleMouseEnter(categoryIdx + navigation.gallery.length)
+            }
             onMouseLeave={handleMouseLeave}
           >
             {({ open }) => (
@@ -273,7 +275,9 @@ export default function PopoverItems({ color, pathname }) {
 
                 <Transition
                   as={Fragment}
-                  show={activePopover === categoryIdx + navigation.gallery.length}
+                  show={
+                    activePopover === categoryIdx + navigation.gallery.length
+                  }
                   enter="transition ease-out duration-200"
                   enterFrom="opacity-0"
                   enterTo="opacity-100"
@@ -381,6 +385,7 @@ export default function PopoverItems({ color, pathname }) {
         {navigation.second.map((item) => (
           <a
             key={item.name}
+            href={item.href}
             onClick={() => handleClickScroll(item.id)}
             className={`flex items-center text-base xl:text-lg scroll-smooth cursor-pointer`}
             style={pathname == "/" ? { color: color } : { color: "black" }}
