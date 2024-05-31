@@ -33,8 +33,8 @@ export default function OpenCal() {
     <div className="relative flex items-center justify-center rounded-md transition-colors animate-fadeTwo">
       <p
         className={`rounded-sm border font-light px-8 py-2.5 lg:text-sm text-xs ml-2 md:ml-0 font-normal shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
-          pathname == "/" ? buttonBg : "black"
-        } text-${color}`}
+          pathname == "/" ? buttonBg : "white"
+        } text-${pathname == "/" ? color : "black"}`}
         style={
           pathname == "/"
             ? { border: `1px solid ${color}` }
