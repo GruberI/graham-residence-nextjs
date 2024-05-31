@@ -7,7 +7,7 @@ export default function Hero() {
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
 
-      <div className="mx-auto w-full mt-0 sm:mt-64 h-full flex items-center justify-center px-10">
+      <div className="mx-auto w-full mt-0 h-full flex items-center justify-center px-10">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div className="text-center">
           <h1 className="font-thin tracking-wide text-white sm:text-7xl text-4xl animate-fadeTwo font-[cormorant]">
