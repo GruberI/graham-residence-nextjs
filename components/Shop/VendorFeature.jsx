@@ -27,16 +27,16 @@ const posts = [
 
 export default function VendorFeature() {
   return (
-    <div className="mt-10 sm:mt-16 border-t border-black m-auto max-w-7xl">
-      <div className="">
-        <div className="mx-auto mt-0 sm:mt-16 grid auto-rows-fr grid-cols-1 gap-16 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+    <div className="border-t border-black m-auto max-w-7xl pb-10 pt-10 sm:pt-16">
+      <div className="mx-4 sm:mx-0">
+        <div className="mx-auto grid auto-rows-fr grid-cols-1 gap-10 sm:gap-16 lg:max-w-none lg:grid-cols-2">
           {posts.map((post) => (
             <article key={post.id} className="flex flex-col">
-              <div className="w-full">
+              <div className="">
                 <img
                   src={post.imageUrl}
                   alt=""
-                  className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square"
+                  className="aspect-[16/9] w-full bg-gray-100 object-cover aspect-square"
                 />
               </div>
 

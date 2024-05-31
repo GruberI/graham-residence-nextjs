@@ -12,9 +12,9 @@ export default async function GoodsSection() {
   if (!products?.length) return null;
 
   return (
-    <div className="max-w-7xl my-0 sm:my-16 md:mx-10 lg:mx-auto mx-4">
+    <div className="max-w-7xl md:mx-10 lg:mx-auto mx-4 pt-4 border-t border-black">
       <div className="mx-auto text-left" id="artwork">
-        <h2 className="sm:text-4xl text-3xl pb-2 text-black border-t border-black pt-6">
+        <h2 className="sm:text-4xl text-3xl pb-2 text-black pt-6">
           Shop the Graham Residence
         </h2>
       </div>
