@@ -12,9 +12,9 @@ export default async function NewArrivalsSection() {
   if (!products?.length) return null;
 
   return (
-    <div className="max-w-7xl my-0 sm:my-10 m-auto">
+    <div className="max-w-7xl pt-10 m-auto">
       <div className="ml-4 sm:ml-0" id="artwork">
-        <h1 className="sm:text-4xl text-3xl text-black pt-6 pb-2">New Arrivals</h1>
+        <h1 className="sm:text-4xl text-3xl text-black pb-2">New Arrivals</h1>
         <a
           href="/art"
           className="text-sm font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"
