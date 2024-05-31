@@ -1,6 +1,6 @@
 export default function ArtServices() {
   return (
-    <div className="mt-0 lg:mt-20 m-auto max-w-7xl border-black  border-t pt-16">
+    <div className="m-auto max-w-7xl border-black border-t py-16">
       <h2 className="sm:text-4xl text-3xl text-center pb-10">
         Art Advisory Services
       </h2>

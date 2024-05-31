@@ -36,7 +36,7 @@ const recentExhibits = artistExhibitions.slice(0, 2);
 
 export default function ExhibitionList() {
   return (
-    <div className="sm:mt-10 border-t border-black pt-10 max-w-7xl m-auto pb-20 mt-10 sm:mt-0">
+    <div className="border-t border-black max-w-7xl m-auto py-10">
       <div className="mb-10 pl-4 sm:pl-0">
         <h2 className="sm:text-4xl text-3xl pb-2">Exhibitions</h2>
         <a

@@ -29,9 +29,9 @@ const artistExhibitions = [
 
 export default function MeetArtist() {
   return (
-    <div className="mt-10 m-auto max-w-7xl mb-10">
+    <div className="m-auto max-w-7xl pt-10 pb-16">
        <div className="mb-10 pl-4 sm:pl-0">
-        <h2 className="sm:text-4xl text-2xl pb-2">Meet the Artists</h2>
+        <h2 className="sm:text-4xl text-3xl pb-2">Meet the Artists</h2>
         <a
           href="/gallery/artists"
           className="text-sm font-thin leading-6 hover:text-neutral-300 underline underline-offset-8"

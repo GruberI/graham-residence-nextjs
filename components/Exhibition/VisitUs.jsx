@@ -29,23 +29,23 @@ const posts = [
 
 export default function VisitUs() {
   return (
-    <div className="mt-20 border-t border-black pt-16 sm:pt-20 m-auto max-w-7xl pb-10">
-      <h1 className="sm:text-5xl text-4xl pb-0 lg:pb-16 text-center">
+    <div className="border-t border-black m-auto max-w-7xl py-16">
+      <h1 className="sm:text-5xl text-4xl text-center pb-12">
         Visit Us
       </h1>
-      <div className="mx-auto mt-16 grid auto-rows-fr grid-cols-1 gap-16 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div className="mx-auto grid auto-rows-fr grid-cols-1 gap-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         {posts.map((post) => (
-          <article key={post.id} className="flex flex-col">
+          <article key={post.id} className="flex flex-col mx-4">
             <div>
               <img
                 src={post.imageUrl}
                 alt=""
-                className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-square"
+                className="aspect-[16/9] w-full bg-gray-100 object-cover aspect-square"
               />
             </div>
 
-            <div className="text-center my-4 sm:my-10">
-              <h2 className="sm:text-2xl text-xl font-semibold leading-6 text-gray-900">
+            <div className="text-center">
+              <h2 className="sm:text-2xl text-xl font-semibold leading-6 text-gray-900 pt-6">
                 <a href={post.href}>{post.title}</a>
               </h2>
               <p className="mt-2 text-lg">{post.location}</p>
