@@ -29,14 +29,14 @@ export default function ProductSection({ products, productHandle }) {
   const firstEightProducts = products.slice(0, 8);
   const remainingProducts = products.slice(8, products.length + 1);
 
-  const productTitle = productHandle?.replace(/[^a-zA-Z0-9 ]/g, " ")
-  
+  const productTitle = productHandle?.replace(/[^a-zA-Z0-9 ]/g, " ");
+
   return (
     <div className="bg-white sm:px-0 px-2">
       <main className="mx-auto max-w-7xl">
-        <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
+        <div className="hidden items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
           <h1 className="text-4xl font-light tracking-wide text-gray-900 capitalize">
-            {productTitle ? productTitle : 'All Products'}
+            {productTitle ? productTitle : "All Products"}
           </h1>
 
           <div className="flex items-center hidden">
@@ -87,7 +87,7 @@ export default function ProductSection({ products, productHandle }) {
           </div>
         </div>
 
-        <section aria-labelledby="products-heading" className="pb-24 pt-6">
+        <section aria-labelledby="products-heading" className="pb-24 pt-6 px-6">
           {/* Product grid */}
           <ProductGridFour products={firstEightProducts} />
           <Banner title={productHandle} type={"home"} />

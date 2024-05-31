@@ -5,6 +5,7 @@ import Instagram from "@/components/Instagram";
 import ArtServices from "@/components/Exhibition/ArtServices";
 import VisitUs from "@/components/Exhibition/VisitUs";
 import OneImage from "@/components/About/OneImage";
+import PageHeaderHero from "@/components/global/PageHeaderHero";
 
 export const metadata = {
   title: "About The Graham Collective | ",
@@ -36,7 +37,12 @@ const oneImageComponentSrc =
 export default async function About() {
   return (
     <div className="overflow-x-hidden">
-      <Hero />
+      <PageHeaderHero
+        imgSrc="https://ipfs.filebase.io/ipfs/QmYTuXismQUCXVPb6MTPNd1AMwVbi7BjQRYAG6gtHQHymP/QmNqmfpcLzdfj9CeVsURAbP8ZfWGUndiRifrHAp8veYiwa"
+        title="The Graham Collective"
+        smallTitle="About the"
+      />
+
       <Header />
       <AboutGoldberg />
       <OneImage imgSrc={oneImageComponentSrc} />

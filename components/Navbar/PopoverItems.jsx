@@ -1,5 +1,6 @@
 "use client";
-import { Fragment, useState } from "react";
+import { usePathname } from "next/navigation";
+import { Fragment, useState, useEffect } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 
@@ -82,15 +83,23 @@ const handleClickScroll = (id) => {
 };
 
 export default function PopoverItems({ color, pathname }) {
+  const viewingPathName = usePathname();
   const [activePopover, setActivePopover] = useState(null);
 
   const handleMouseEnter = (popover) => {
-    setActivePopover(popover);
+    // disable interaction on mobile.
+    if (window && window.innerWidth > 768) {
+      setActivePopover(popover);
+    }
   };
 
   const handleMouseLeave = () => {
     setActivePopover(null);
   };
+
+  useEffect(() => {
+    if (activePopover !== null) setActivePopover(null);
+  }, [viewingPathName]);
 
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full">
