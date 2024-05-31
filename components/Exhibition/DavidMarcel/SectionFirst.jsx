@@ -14,12 +14,12 @@ export default function SectionFirst() {
           </div>
           <div className="flex flex-col pt-10 mx-2">
             <div className="pb-4">
-              <p className="tracking-tight text-black-900 text-4xl sm:text-3xl italic text-center sm:text-left sm:pl-4">
+              <p className="tracking-tight text-black-900 text-4xl sm:text-3xl italic text-left sm:pl-4">
                 Convergence
               </p>
             </div>
 
-            <div className="space-y-4 mx-4 text-center sm:text-left">
+            <div className="space-y-4 mx-4 text-left">
               <p className="text-lg sm:text-base">
                 Graham Collective is honored to present Convergence, an artistic
                 dialogue between Los Angeles-based artists Marcel Rozek and
