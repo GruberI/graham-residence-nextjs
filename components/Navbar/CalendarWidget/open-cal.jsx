@@ -13,7 +13,7 @@ export default function OpenCal() {
     setClientWindowHeight(window.scrollY);
     window.scrollY < 80
       ? (setColor("white"), setButtonBg("none"))
-      : (setColor("black"), setButtonBg("black"));
+      : (setColor("black"), setButtonBg("white"));
   };
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function OpenCal() {
       <p
         className={`rounded-sm border font-light px-8 py-2.5 lg:text-sm text-xs ml-2 md:ml-0 font-normal shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-800 bg-${
           pathname == "/" ? buttonBg : "black"
-        } text-white`}
+        } text-${color}`}
         style={
           pathname == "/"
             ? { border: `1px solid ${color}` }
