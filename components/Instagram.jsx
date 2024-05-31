@@ -1,6 +1,6 @@
 export default function Instagram() {
   return (
-    <div className="m-auto border-t border-black pt-16">
+    <div className="m-auto border-t border-black py-12">
      <div className="max-w-7xl mx-auto">
      <div className="flex flex-col justify-center">
         <a

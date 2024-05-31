@@ -32,7 +32,7 @@ export default function SignUp() {
   // };
 
   return (
-    <div className="bg-white my-20 border-t border-black pt-20" id="subscribe">
+    <div className="bg-white border-t border-black py-20" id="subscribe">
       <div className="max-w-2xl m-auto">
         <div className="klaviyo-form-WZwxcH"></div>
       </div>
