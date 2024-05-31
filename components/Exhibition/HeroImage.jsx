@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="mx-auto max-w-4xl mt-80 sm:mt-64">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div className="text-center mb-36">
-          <h1 className="font-thin tracking-wide text-white sm:text-7xl text-5xl animate-fadeTwo font-[cormorant]">
+          <h1 className="tracking-wide text-white sm:text-7xl text-5xl animate-fadeTwo font-[cormorant]">
             The Graham Gallery
           </h1>
         </div>

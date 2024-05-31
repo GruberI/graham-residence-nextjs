@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 export default function SectionFirst() {
   return (
     <div className="w-full" id="property">
-      <div className="m-auto">
+      <div className="m-auto pt-10 sm:pt-0">
         <div className="mx-auto px-4 sm:px-6 lg:px-6">
           <div className="grid grid-cols-1 items-center gap-x-10 lg:grid-cols-2">
             <div>
@@ -21,7 +21,7 @@ export default function SectionFirst() {
               <Fade>
                 <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 mx-0 sm:mx-16 md:mx-2 lg:mx-0">
                   <div className="pb-6 pt-6 sm:pt-10 lg:pt-0">
-                    <h2 className="lg:text-4xl text-2xl">
+                    <h2 className="lg:text-4xl text-[23px]">
                       THE GRAHAM RESIDENCE
                     </h2>{" "}
                     <h3 className="sm:text-3xl text-xl italic font-light">
@@ -39,7 +39,7 @@ export default function SectionFirst() {
                   <div className="flex items-center gap-x-6">
                     <a
                       href="/residence#property-book"
-                      className="sm:text-sm leading-6 hover:text-neutral-300 underline underline-offset-8"
+                      className="sm:text-sm leading-6 hover:text-neutral-300 underline underline-offset-8 pb-6 sm:pb-0"
                     >
                       BOOK A STAY
                     </a>

@@ -1,6 +1,6 @@
 export default function TwoImageSectionWide({ imageData }) {
   return (
-    <div className="flex flex-col space-y-10 sm:space-y-0 sm:grid sm:grid-rows-3 sm:grid-cols-7 max-w-6xl mx-10 sm:mx-auto py-40">
+    <div className="flex flex-col space-y-10 sm:space-y-0 sm:grid sm:grid-rows-3 sm:grid-cols-7 max-w-6xl mx-10 sm:mx-auto pt-16">
       <a
         href={imageData.href}
         className="flex flex-col sm:flex-row w-full sm:col-span-2 sm:row-span-2"

@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Header() {
   return (
-    <div className="bg-white mt-48 sm:mt-36 mb-20">
+    <div className="bg-white mt-48 sm:mt-36 sm:mb-20 mb-14">
       <div className="max-w-4xl text-center m-auto">
         <h1 className="text-5xl sm:text-7xl pb-2 sm:pb-6">Convergence</h1>
       </div>

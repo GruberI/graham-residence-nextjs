@@ -17,7 +17,7 @@ export default function Featured() {
               />
             </div>
           </div>
-          <div className="sm:ml-5  flex flex-col content-start">
+          <div className="sm:ml-5  flex flex-col content-start mx-4 sm:mx-0">
             <div className="border-b border-black pb-6">
               <p className="text-2xl text-black-500">FEATURED ARTIST</p>
               <h2 className="mt-2 font-thin tracking-tight text-black-900 sm:text-2xl text-lg">

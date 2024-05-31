@@ -1,7 +1,7 @@
 export default function ArtistBio({ bio }) {
   return (
-    <div className="max-w-7xl mx-auto">
-      <figure className="mt-16 py-10">
+    <div className="max-w-7xl mx-4 sm:mx-auto">
+      <figure className="sm:mt-16 py-10">
         <img className="aspect-video object-cover" src={bio.imgSrc} alt="" />
       </figure>
       <div>

@@ -15,7 +15,7 @@ export default function AboutGoldberg() {
                 </span>
               </p>
             </Fade>
-            <p className="text-2xl">
+            <p className="sm:text-xl text-lg">
               A professional photographer of over a decade, Yoni specializes in
               portraiture and architecture photography. A jack of all trades, he
               enjoys managing and operating The Graham Residence. He is a
@@ -51,7 +51,7 @@ export default function AboutGoldberg() {
                 </span>
               </p>
             </Fade>
-            <p className="text-2xl">
+            <p className="sm:text-xl text-lg">
               {" "}
               A visionary with big ideas, and over a decade of experience in
               brand partnerships, Lindsey left the corporate world to pursue her
@@ -74,13 +74,13 @@ export default function AboutGoldberg() {
         </div>
 
         <div className="mx-10 m-auto mt-6 pb-10 sm:pb-0">
-          <p className="font-bold text-xl">Yoni</p>
-          <p className="pb-4 sm:pb-6 text-md">
+          <p className="font-bold text-2xl">YONI</p>
+          <p className="pb-4 sm:pb-6 text-lg">
             <span>
               The Maker - committed to his craft
             </span>
           </p>
-          <p className="text-sm">
+          <p className="text-xl">
             A professional photographer of over a decade, Yoni specializes in
             portraiture and architecture photography. A jack of all trades, he
             enjoys managing and operating The Graham Residence. He is a lifelong
@@ -99,13 +99,13 @@ export default function AboutGoldberg() {
       </div>
 
       <div className="mx-10 m-auto sm:hidden mb-10 mt-6">
-        <p className="font-bold text-xl">Lindsey</p>
-        <p className="pb-4 sm:pb-6 text-md">
+        <p className="font-bold text-2xl">LINDSEY</p>
+        <p className="pb-4 sm:pb-6 text-lg">
           <span className="text-slate-500">
             The Visionary - sees possibility everywhere
           </span>
         </p>
-        <p className="text-sm">
+        <p className="text-xl">
           A visionary with big ideas, and over a decade of experience in brand
           partnerships, Lindsey left the corporate world to pursue her passion,
           art advising and curation. Her intuitive nature allows her to foster

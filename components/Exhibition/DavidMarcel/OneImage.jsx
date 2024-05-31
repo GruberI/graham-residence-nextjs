@@ -1,6 +1,6 @@
 export default async function OneImage({ imgSrc }) {
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="mx-auto max-w-7xl px-2 sm:px-0">
       <div className="w-full">
         <img
           src={imgSrc}

@@ -30,14 +30,14 @@ export default function Section() {
               />
             </div>
           </Suspense>
-          <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
-            <div className="pb-6 pt-0 sm:pt-10 lg:pt-0">
-              <h1 className="lg:text-3xl text-2xl">
+          <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 mx-0 sm:mx-16 md:mx-2 lg:mx-0">
+            <div className="pb-6 pt-2 sm:pt-10 lg:pt-0">
+              <h1 className="text-3xl">
                 CURATION
               </h1>
               <Fade>
                 {" "}
-                <p className="text-3xl italic font-light">is all about intentionality</p>
+                <p className="text-2xl italic font-light">is <span className="hidden sm:inline">all</span> about intentionality</p>
               </Fade>
             </div>
 

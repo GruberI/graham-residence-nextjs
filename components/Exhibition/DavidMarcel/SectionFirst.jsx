@@ -1,7 +1,7 @@
 export default function SectionFirst() {
   return (
     <div className="m-auto border-t border-black py-16 max-w-7xl" id="featured">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-2 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 sm:gap-y-16 lg:grid-cols-2">
           <div>
             <div className="overflow-hidden bg-black-100 flex justify-start">
@@ -14,13 +14,13 @@ export default function SectionFirst() {
           </div>
           <div className="flex flex-col pt-10 mx-2">
             <div className="pb-4">
-              <p className="text-2xl tracking-tight text-black-900 sm:text-3xl italic text-center sm:text-left sm:pl-4">
+              <p className="tracking-tight text-black-900 text-4xl sm:text-3xl italic text-center sm:text-left sm:pl-4">
                 Convergence
               </p>
             </div>
 
             <div className="space-y-4 mx-4 text-center sm:text-left">
-              <p>
+              <p className="text-lg sm:text-base">
                 Graham Collective is honored to present Convergence, an artistic
                 dialogue between Los Angeles-based artists Marcel Rozek and
                 David Matthew King. The exhibition is set in the high desert
@@ -30,7 +30,7 @@ export default function SectionFirst() {
                 neighbors in sight are blue jays, hummingbirds, and an
                 occasional coyote.
               </p>
-              <p>
+              <p className="text-lg sm:text-base">
                 King’s work radiates the bright colors of childhood, juxtaposed 
                 against massive boulders that define the local topography. Together
                 they create a feeling of joy and wonder and reflect how I feel upon
@@ -40,7 +40,7 @@ export default function SectionFirst() {
                 something that might feel familiar and making it
                 disorienting or slightly less familiar.”
               </p>
-              <p>
+              <p className="text-lg sm:text-base">
                 Rozek is a process oriented painter working by pouring diluted 
                 oil paint onto raw unprimed canvas, allowing interactions 
                 between the materials he uses and the space the work exists within 

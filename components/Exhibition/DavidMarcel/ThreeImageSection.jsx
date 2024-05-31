@@ -1,6 +1,6 @@
 export default function ThreeImageSection({ imageData }) {
   return (
-    <div className="three-image-section mx-auto grid grid-rows-1 grid-cols-1 sm:grid-cols-5 grid-flow-col max-w-7xl py-16">
+    <div className="three-image-section mx-auto grid grid-rows-1 grid-cols-1 sm:grid-cols-5 grid-flow-col max-w-7xl pt-16">
       <div
         className={`sm:row-start-1 ${
           imageData.imgThird ? "sm:row-end-3" : ""
@@ -27,7 +27,7 @@ export default function ThreeImageSection({ imageData }) {
         >
           <a
             href={imageData.href}
-            className="flex flex-col space-y-1 sm:space-y-3"
+            className="flex flex-col space-y-1 sm:space-y-2"
           >
             <p className="font-light">
               {imageData.title}
