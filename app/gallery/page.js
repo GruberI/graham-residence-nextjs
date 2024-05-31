@@ -6,6 +6,7 @@ import Featured from "@/components/Shop/Featured";
 import ArtServicesText from "@/components/Exhibition/ArtServicesText";
 import VisitUs from "@/components/Exhibition/VisitUs";
 import ArtistSubmissionContact from "@/components/Exhibition/ArtistSubmissionContact";
+import PageHeaderHero from "@/components/global/PageHeaderHero";
 
 export const metadata = {
   title: "Graham Collective | Gallery, Exhibitions, Residencies & Artwork",
@@ -16,7 +17,11 @@ export const metadata = {
 export default function MainExhibition() {
   return (
     <div>
-      <HeroImageText />
+      <PageHeaderHero
+        imgSrc="https://ipfs.filebase.io/ipfs/QmSj81HkBTKDeavdAuhSnNgLSkqderZfq6NCFneNDzZG4d"
+        title="The Graham Gallery"
+      />
+      {/* <HeroImageText /> */}
       <Section />
       <ExhibitionList />
       <Featured />

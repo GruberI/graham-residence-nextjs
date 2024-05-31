@@ -9,6 +9,7 @@ import Section from "@/components/Shop/Section.jsx";
 import { getProducts } from "@/lib/shopify";
 import { getCollectionProducts } from "@/lib/shopify/index";
 import VendorFeature from "@/components/Shop/VendorFeature";
+import PageHeaderHero from "@/components/global/PageHeaderHero";
 
 export const metadata = {
   title: "Graham Collective | Curated Luxury Home Goods and Fine Art",
@@ -37,9 +38,14 @@ export default async function Shop() {
 
   return (
     <div>
-      <Suspense>
+      <PageHeaderHero
+        imgSrc="https://ipfs.filebase.io/ipfs/QmWJ2ZeTDfLr8Ng8H7ynR8o1tPjJVeeUARds3ipechFGrG"
+        title="The Graham Shop"
+      />
+
+      {/* <Suspense>
         <HeroImageText />
-      </Suspense>
+      </Suspense> */}
       <Section />
       <ArtSection products={products} />
       <VendorFeature />
