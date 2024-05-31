@@ -7,7 +7,7 @@ export default function SectionFirst() {
     <div className="w-full" id="property">
       <div className="m-auto pt-10 sm:pt-0">
         <div className="mx-auto px-4 sm:px-6 lg:px-6">
-          <div className="grid grid-cols-1 items-center gap-x-10 lg:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-x-8 lg:grid-cols-2">
             <div>
               <div className="overflow-hidden bg-black-100 aspect-[4/5] sm:py-10 lg:py-32 sm:px-20 lg:px-16">
                 <img
