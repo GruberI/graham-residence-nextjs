@@ -2,6 +2,9 @@ export function PageHeaderHero({
   title = "",
   smallTitle = null,
   imgSrc = null,
+  classes = {
+    title: "",
+  },
 }) {
   return (
     <div className="relative isolate overflow-hidden mt-[135px] md:mt-[0px] h-[440px] md:h-[600px]">
@@ -23,7 +26,9 @@ export function PageHeaderHero({
           ) : null}
 
           {title ? (
-            <h1 className="font-thin tracking-wide text-white sm:text-7xl text-4xl animate-fadeTwo font-[cormorant]">
+            <h1
+              className={`font-thin tracking-wide text-white sm:text-7xl text-4xl animate-fadeTwo font-[cormorant] ${classes.title}`}
+            >
               {title}
             </h1>
           ) : null}

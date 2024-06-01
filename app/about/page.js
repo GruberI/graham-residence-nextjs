@@ -39,8 +39,11 @@ export default async function About() {
     <div className="overflow-x-hidden">
       <PageHeaderHero
         imgSrc="https://ipfs.filebase.io/ipfs/QmYTuXismQUCXVPb6MTPNd1AMwVbi7BjQRYAG6gtHQHymP/QmNqmfpcLzdfj9CeVsURAbP8ZfWGUndiRifrHAp8veYiwa"
-        title="The Graham Collective"
+        title="Graham Collective"
         smallTitle="About the"
+        classes={{
+          title: "mb-8 md:mb-0",
+        }}
       />
 
       <Header />
