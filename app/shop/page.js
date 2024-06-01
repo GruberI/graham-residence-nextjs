@@ -40,7 +40,10 @@ export default async function Shop() {
     <div>
       <PageHeaderHero
         imgSrc="https://ipfs.filebase.io/ipfs/QmWJ2ZeTDfLr8Ng8H7ynR8o1tPjJVeeUARds3ipechFGrG"
-        title="The Graham Shop"
+        title="Graham Shop"
+        classes={{
+          title: "mb-[50px] md:mb-0",
+        }}
       />
 
       {/* <Suspense>
