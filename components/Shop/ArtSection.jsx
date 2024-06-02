@@ -6,7 +6,7 @@ export default async function ArtSection() {
   const productsByTag = products.filter((product) => {
     return product.tags.includes("new-arrivals");
   });
-  const eightProducts = productsByTag.slice(0, 8);
+  const twentyProducts = productsByTag.slice(0, 20);
 
   if (!products?.length) return null;
 
@@ -23,7 +23,7 @@ export default async function ArtSection() {
       >
         VIEW ALL
       </a>
-      <Carousel products={eightProducts} />
+      <Carousel products={twentyProducts} />
     </div>
   );
 }
