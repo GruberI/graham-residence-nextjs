@@ -1,5 +1,4 @@
 import { getCollectionProducts } from "@/lib/shopify";
-import ProductGridFour from "../Product/ProductGridFour";
 import Carousel from "../Carousel/Carousel";
 
 export default async function NewArrivalsSection() {
