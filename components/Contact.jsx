@@ -16,7 +16,7 @@ const contact = [
   },
   {
     name: "photography",
-    text: "Shoots & Events: ",
+    text: "Shoots & events: ",
     subtext: " tgr@grahamresidence.com",
     email: "tgr@grahamresidence.com",
     subject: "Photography Inquiry for TGR",
@@ -37,7 +37,7 @@ export default function Contact() {
 
                 <Link
                   className=""
-                  href={`mailto:"${value.email}?subject=${value.subject}`}
+                  href={`mailto:${value.email}?subject=${value.subject}`}
                 >
                   <p className="hover:underline hover:underline-offset-8">
                    {value.subtext}
