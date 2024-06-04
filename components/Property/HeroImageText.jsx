@@ -12,18 +12,19 @@ export default function HeroImageText() {
   };
 
   return (
-    <div className="relative isolate overflow-hidden pt-36 sm:pt-28 h-screen">
+    <div className="relative isolate overflow-hidden pt-20 sm:pt-28 h-[450px] md:h-screen">
       <img
         src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover hidden sm:flex"
       />
       <img
-        src="https://ipfs.filebase.io/ipfs/QmV39MLBLsMtxi7ZMUA7CUaP8uPbsP6BqfUBVn6P7SYaLh/QmYRtJQwPp1KwczWak8p61h8v6wydHTAwP3sdAEAASuYm3"
+        // src="https://ipfs.filebase.io/ipfs/QmV39MLBLsMtxi7ZMUA7CUaP8uPbsP6BqfUBVn6P7SYaLh/QmYRtJQwPp1KwczWak8p61h8v6wydHTAwP3sdAEAASuYm3"
+        src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover flex sm:hidden"
       />
-      <div className="mx-auto max-w-4xl py-10 sm:py-12 ">
+      <div className="mx-auto max-w-4xl pb-10 sm:py-12 ">
         <div className="text-center">
           <h1 className="text-4xl sm:text-7xl sm:leading-8 text-gray-300 text-white animate-fadeTwo font-thin font-[cormorant] mt-6 sm:mt-0 relative">
             The Graham Collective

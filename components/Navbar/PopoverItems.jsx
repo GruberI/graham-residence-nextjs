@@ -102,7 +102,7 @@ export default function PopoverItems({ color, pathname }) {
   }, [viewingPathName]);
 
   return (
-    <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full">
+    <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full hidden md:block">
       <div className="flex h-14 space-x-6 md:space-x-12 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-10 md:ml-20 lg:ml-14">
         {navigation.first.map((item) => (
           <a
