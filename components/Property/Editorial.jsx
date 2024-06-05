@@ -37,7 +37,7 @@ export default function Editorial() {
   return (
     <div className="bg-white mt-0 mb-16 mx-4 sm:mx-0" id="editorial">
       <div className="m-auto max-w-7xl">
-        <div className="mt-14 sm:mt-16 grid auto-rows-fr grid-cols-1 gap-10 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mt-10 sm:mt-16 grid auto-rows-fr grid-cols-1 gap-10 sm:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}
@@ -52,13 +52,11 @@ export default function Editorial() {
                   />
                 </div>
                 <div className="flex flex-wrap justify-center gap-y-1 overflow-hidden text-sm leading-6 text-white absolute inset-0 items-center flex-col">
-                
-                    <h3 className="text-5xl">{post.title}</h3>
-                    <h3 className="mt-3 text-2xl leading-6 text-white w-9/12 text-center">
-                      <span className="" />
-                      {post.description}
-                    </h3>
-                
+                  <h3 className="text-5xl">{post.title}</h3>
+                  <h3 className="mt-3 text-2xl leading-6 text-white w-9/12 text-center">
+                    <span className="" />
+                    {post.description}
+                  </h3>
                 </div>
               </a>
             </article>
