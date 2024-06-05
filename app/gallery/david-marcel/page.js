@@ -186,7 +186,7 @@ const landscapeImgData = [
     href: "/product/untitled-west-bedroom",
     size: "30 x 40 in.",
     type: "Acrylic",
-    price: "$6,800",
+    price: "$3,800",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmbgX83DNvMYtEsGiVNUtAgau4HzmDgvMdfdvF4ZGmUZ3M",
   },
@@ -196,7 +196,7 @@ const landscapeImgData = [
     href: "/product/untitled-east-bedroom",
     size: "30 x 40 in.",
     type: "Acrylic",
-    price: "$6,800",
+    price: "$3,800",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmWhSTrgZbcdMNbp2zvdjKJkEriYjpxs3VkL9t59zfWRwo",
   },
