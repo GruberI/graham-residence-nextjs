@@ -32,7 +32,7 @@ const aboutInfo = [
   {
     handle: "david-matthew-king",
     artist: "David Matthew King",
-    href: "art/david-matthew-king",
+    href: "/gallery/david-marcel",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmNW873L58XpDxbbwUoibxVcBvKssP3JcVu1bFxNB9aqyv",
     imgAltText: "David Matthew King",
@@ -42,7 +42,7 @@ const aboutInfo = [
   {
     handle: "marcel-rozek",
     artist: "Marcel Rozek",
-    href: "art/marcel-rozek",
+    href: "/gallery/david-marcel",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmZv3MNH2ynMf3u9guCgxgqov8GcfiB3pUXvYp4aZvNjpp",
     imgAltText: "Marcel Rozek",
@@ -54,7 +54,7 @@ const aboutInfo = [
     href: "/gallery/nicole-taylor-dewitt",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmSPbp19XsqStZPRUL91YSpmRbWaRHMAB98rCbDdrehEaA",
-    imgAltText: "Marcel Rozek",
+    imgAltText: "Nicole Taylor Dewitt",
     text: "Nicole Taylor DeWitt (b. 1997) is an American visual artist living in Yucca Valley, California. Inspired by life in the Mojave Desert, her curiosity and unique perspective bring unseen landscapes into focus. A decade of film developing expertise and experimentation converge to create striking analog images and one-of-a-kind photographic compositions. Through various forms of abstraction, she explores an open-ended creative process. Past creative endeavors include co-ownership, operation, and creative direction of Hi-Desert Film Lab, curatorial work, and collaboration with Third Man Records to start Third Man Photo Studio. Exhibitions including Nicole’s photographic work have been held in California, Tennessee, and Florida. Past features include Kodak, the Nashville Scene, and Palm Springs Life Magazine.",
   },
 ];
