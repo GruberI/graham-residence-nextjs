@@ -70,7 +70,9 @@ function SampleNextArrow(props) {
         display: "block",
         color: "grey",
         height: "30%",
-        width: "2%",
+        width: 30,
+        top: "50%",
+        right: 5,
       }}
       onClick={onClick}
     >
@@ -89,11 +91,13 @@ function SamplePrevArrow(props) {
         display: "block",
         color: "grey",
         height: "30%",
-        width: "5%",
+        width: 30,
+        top: "50%",
+        left: 5,
       }}
       onClick={onClick}
     >
-      <ChevronLeftIcon style={{ marginRight: "60%" }} />
+      <ChevronLeftIcon style={{ marginRight: "0%" }} />
     </div>
   );
 }
@@ -143,13 +147,13 @@ export default class Carousel extends Component {
         </h3>
 
         <div className="">
-          <Slider {...settings}>
+          <Slider className="px-5" {...settings}>
             {reviews.map((review, i) => (
               <li
                 key={i}
                 className="flex-none min-[575px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 min-h-[240px] sm:min-h-[380px]"
               >
-                <div className="mx-4 sm:mx-10 text-xs sm:text-base lg:text-lg">
+                <div className="mx-4 sm:mx-10 text-sm sm:text-base lg:text-lg">
                   <p>{review.review}</p>
                   <p className="mt-4">-{review.name}</p>
                 </div>

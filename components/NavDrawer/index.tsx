@@ -9,14 +9,17 @@ export const NavDrawer = ({ color = "#fff" }: { color?: string }) => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [navStack, setNavStack] = useState<NavItem[][]>([NAV_ITEMS]);
-  const [backText, setBackText] = useState<string>("Back");
+  const [backItem, setBackItem] = useState<NavItem>(null);
 
   const currentMenu = navStack[navStack.length - 1];
 
   const handleItemClick = useCallback((item: NavItem) => {
     if (item.children) {
-      setNavStack((prevStack) => [...prevStack, item.children]);
-      setBackText(item.title);
+      const { children, path, title } = item;
+      const backItem = { title, path };
+
+      setNavStack((prevStack) => [...prevStack, [backItem, ...item.children]]);
+      setBackItem(item);
     } else {
       handleBackClick();
     }
@@ -24,11 +27,20 @@ export const NavDrawer = ({ color = "#fff" }: { color?: string }) => {
 
   const handleBackClick = useCallback(() => {
     setNavStack((prevStack) => prevStack.slice(0, prevStack.length - 1));
+    setBackItem(null);
   }, []);
 
   useEffect(() => {
-    if (isOpen) setIsOpen(false);
+    if (isOpen) {
+      setIsOpen(false);
+    }
   }, [pathname]);
+
+  useEffect(() => {
+    if (!isOpen) setNavStack([NAV_ITEMS]);
+  }, [isOpen]);
+
+  console.log({ navStack });
 
   return (
     <div className="group nav-drawer flex md:hidden">
@@ -89,7 +101,7 @@ export const NavDrawer = ({ color = "#fff" }: { color?: string }) => {
                     >
                       <Carat className="w-5 h-5" fill="#000" />
                       <span className="font-[cormorant] font-medium tracking-[0] text-2xl">
-                        {backText}
+                        Back
                       </span>
                     </button>
                   )}

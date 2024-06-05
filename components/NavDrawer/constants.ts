@@ -89,4 +89,5 @@ export const NAV_ITEMS: NavItem[] = [
       },
     ],
   },
+  { title: "About", path: "/about" },
 ];
