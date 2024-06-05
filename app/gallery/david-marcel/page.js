@@ -143,7 +143,7 @@ const threeImageSectionData = [
     href: "/product/cold-grey-over-warm",
     size: "60 x 52 in.",
     type: "Acrylic",
-    price: "$6,200",
+    price: "$10,400",
     imgFirst: {
       imgSrc:
         "https://ipfs.filebase.io/ipfs/QmZRLE1qXk7NxDamYJBiExKMDrabBxbbkKHrVz2S7N4pNK",
