@@ -41,7 +41,7 @@ export default function ShopAllHomeHeader({ productHandle }) {
     return <PageHeaderHero imgSrc={headerData.src} title={headerData.title} />;
 
   return (
-    <div className="relative isolate overflow-hidden mt-[135px] md:mt-[0px] h-[440px] md:h-[600px]">
+    <div className="relative isolate overflow-hidden mt-[80px] md:mt-[0px] h-[440px] md:h-[600px]">
       {productHandle === undefined ? (
         <img
           src="https://ipfs.filebase.io/ipfs/QmQ61VnMppAA4kboH8eqNj6evSJEMAfgdVjAG1gYzGireH"

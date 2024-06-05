@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import PopoverItems from "./PopoverItems";
 import { useState, useEffect } from "react";
 import Calendar from "./CalendarWidget/Calendar";
+import { NavDrawer } from "../NavDrawer";
 
 export default function Navbar() {
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
@@ -45,11 +46,16 @@ export default function Navbar() {
           <div
             className={`border-b border-${
               pathname == "/" ? color : "black"
-            } px-4 pb-14 sm:px-0 sm:pb-0`}
+            } px-4 pb-0 sm:px-0 sm:pb-0`}
           >
             <div className="flex h-20 items-center justify-between">
               {/* Logo */}
-              <div className="flex flex-2 lg:flex-1">
+              <div className="flex items-center space-x-2.5 flex-2 lg:flex-1">
+                <NavDrawer
+                  color={
+                    (color === "white") & (pathname === "/") ? "#fff" : "#000"
+                  }
+                />
                 <a href="/">
                   <p
                     className={`font-thin sm:pl-1 md:pl-6 ml-0 sm:ml-2 md:ml-0 w-full sm:w-[100px] md:w-full font-[cormorant]`}
@@ -59,8 +65,12 @@ export default function Navbar() {
                         : { color: "black" }
                     }
                   >
-                  <span className="hidden lg:inline text-xl text-2xl">The Graham Collective</span>
-                  <span className="inline lg:hidden text-2xl font-[cormorant]">TGC</span>
+                    <span className="hidden lg:inline text-xl text-2xl">
+                      The Graham Collective
+                    </span>
+                    <span className="inline lg:hidden text-2xl font-[cormorant]">
+                      TGC
+                    </span>
                   </p>
                 </a>
               </div>

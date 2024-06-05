@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="relative isolate overflow-hidden mt-[135px] md:mt-[0px] h-[440px] md:h-[600px]">
+    <div className="relative isolate overflow-hidden mt-[80px] md:mt-[0px] h-[440px] md:h-[600px]">
       <img
         src="https://ipfs.filebase.io/ipfs/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW"
         alt=""
