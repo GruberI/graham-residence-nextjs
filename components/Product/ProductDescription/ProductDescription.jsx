@@ -82,7 +82,7 @@ export default function ProductDescription({ product }) {
           : product.vendor === "Atelier Saucier"
           ? "Products will ship within 2-5 business days. Please allow 5-7 days for Standard shipping."
           : product.vendor === "Loll Designs"
-          ? "Products will  ship within 3-5 business days via fedex standard. Most Loll furniture arrives flat-packed but is easy to assemble."
+          ? "Products will ship within 3-5 business days via fedex standard. Most Loll furniture arrives flat-packed but is easy to assemble."
           : product.vendor === "West-Bourne"
           ? "Products will ship within 3-5 business days. Please allow 5-7 days for Standard shipping."
           : product.vendor === "Thai Mainhard"
