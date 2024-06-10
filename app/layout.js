@@ -4,7 +4,6 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
-import Contact from "../components/Contact";
 import SignUp from "@/components/SignUp";
 import StickyCart from "@/components/Cart/stickyCart.jsx";
 
@@ -57,7 +56,6 @@ export default function RootLayout({ children }) {
         </div>
         <main className="max-w-full overflow-x-hidden">{children}</main>
         <SignUp />
-        <Contact />
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-M4X900NBP2" />
