@@ -38,18 +38,30 @@ export default function Footer() {
           >
             Privacy Policy
           </a>
+        
+          <a
+            href="/terms"
+            className="lg:pt-0 sm:pt-5 pt-2 hover:text-neutral-600 font-thin px-10 lg:text-base sm:text-xs flex justify-center"
+          >
+            Terms & Conditions
+          </a>
           <a
             href="/shipping"
             className="lg:pt-0 sm:pt-5 pt-2 hover:text-neutral-600 font-thin px-10 lg:text-base sm:text-xs flex justify-center"
           >
             Shipping & Returns
           </a>
-
           <a
-            href="/terms"
+            href="/about"
             className="lg:pt-0 sm:pt-5 pt-2 hover:text-neutral-600 font-thin px-10 lg:text-base sm:text-xs flex justify-center"
           >
-            Terms & Conditions
+            About
+          </a>
+          <a
+            href="mailto:info@graham-collective.com"
+            className="lg:pt-0 sm:pt-5 pt-2 hover:text-neutral-600 font-thin px-10 lg:text-base sm:text-xs flex justify-center"
+          >
+            Contact
           </a>
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
