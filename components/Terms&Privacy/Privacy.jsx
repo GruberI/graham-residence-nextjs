@@ -1060,7 +1060,7 @@ export default function Privacy() {
               from us by following the instructions in the communication you
               received from, such as by using the unsubscribe link in email
               communications we send to you. Or alternatively, by emailing your
-              request to tgr@grahamresidence.com. Please note that we may still
+              request to info@graham-collective.com. Please note that we may still
               send you transactional communications, such as emails related to
               your account or our ongoing business relationship.
             </p>

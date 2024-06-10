@@ -542,7 +542,7 @@ export default function Terms() {
             <p className="pt-4 text-sm">
               The Graham Collective’s agent for notice of claims of copyright or
               trademark infringement on this Platform can be reached at
-              tgr@grahamresidence.com
+              info@graham-collective.com
             </p>
             <br />
             <p>
@@ -1122,7 +1122,7 @@ export default function Terms() {
               </strong>
               If you have any questions about these Terms or otherwise need to
               contact The Graham Collective for any reason, you can reach us at
-              tgr@grahamresidence.com.
+              info@graham-collective.com.
             </p>
           </div>
         </div>

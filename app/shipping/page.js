@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "What is your return policy?",
     answer:
-      "We accept returns on unused home goods with original packaging. Reach out to us at tgr@grahamresidence.com to initiate a return.",
+      "We accept returns on unused home goods with original packaging within 14 days of purchase. Reach out to us at info@graham-collective.com to initiate a return.",
   },
   {
     question: "Where do you ship to?",
@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "How long does shipping take?",
     answer:
-      "Shipping and handling times vary amongst brands we carry. Please see item-specific shipping details on each product page.",
+      "Shipping and handling times vary amongst brands we carry. Please see item-specific shipping details on the checkout page.",
   },
   // More questions...
 ];
