@@ -26,7 +26,7 @@ const navigation = {
         { name: "Marcel Rozek", href: "/art/marcel-rozek" },
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
-        { name: "Nicole Taylor Dewitt", href: "/art/nicole-taylor-dewitt" },
+        { name: "Nicole Taylor DeWitt", href: "/art/nicole-taylor-dewitt" },
         { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
         { name: "View All", href: "/gallery/artists" },
       ],
