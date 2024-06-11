@@ -50,11 +50,11 @@ const aboutInfo = [
   },
   {
     handle: "nicole-taylor-dewitt",
-    artist: "Nicole Taylor Dewitt",
+    artist: "Nicole Taylor DeWitt",
     href: "/gallery/nicole-taylor-dewitt",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmSPbp19XsqStZPRUL91YSpmRbWaRHMAB98rCbDdrehEaA",
-    imgAltText: "Nicole Taylor Dewitt",
+    imgAltText: "Nicole Taylor DeWitt",
     text: "Nicole Taylor DeWitt (b. 1997) is an American visual artist living in Yucca Valley, California. Inspired by life in the Mojave Desert, her curiosity and unique perspective bring unseen landscapes into focus. A decade of film developing expertise and experimentation converge to create striking analog images and one-of-a-kind photographic compositions. Through various forms of abstraction, she explores an open-ended creative process. Past creative endeavors include co-ownership, operation, and creative direction of Hi-Desert Film Lab, curatorial work, and collaboration with Third Man Records to start Third Man Photo Studio. Exhibitions including Nicole’s photographic work have been held in California, Tennessee, and Florida. Past features include Kodak, the Nashville Scene, and Palm Springs Life Magazine.",
   },
 ];
