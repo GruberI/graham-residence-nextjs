@@ -73,7 +73,7 @@ const bannerInfo = [
     type: "art",
   },
   {
-    handle: "nicole-taylor-dewitt",
+    handle: "nicole-taylor-deWitt",
     artist: "Nicole Taylor DeWitt",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmciC6CE7RXXefhXpCPUFanCnVGwrpyhKb1hM61FXUNsNr",
