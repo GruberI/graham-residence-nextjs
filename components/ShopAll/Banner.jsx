@@ -74,10 +74,10 @@ const bannerInfo = [
   },
   {
     handle: "nicole-taylor-dewitt",
-    artist: "Nicole Taylor Dewitt",
+    artist: "Nicole Taylor DeWitt",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmciC6CE7RXXefhXpCPUFanCnVGwrpyhKb1hM61FXUNsNr",
-    imgAltText: "Nicole Dewitt",
+    imgAltText: "Nicole DeWitt",
     text: "Nicole Taylor DeWitt (b. 1997) is an American visual artist living in Yucca Valley, California. Inspired by life in the Mojave Desert, her curiosity and unique perspective bring unseen landscapes into focus.",
     type: "art",
   },
