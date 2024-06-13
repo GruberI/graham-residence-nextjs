@@ -31,14 +31,11 @@ export default function HeroImageText() {
           </h1>
           <div className="hidden md:flex flex-col items-center justify-center gap-x-6 animate-fadeTwo">
             <Fade>
-              {/* <p className="text-white sm:text-lg max-w-2xl">
-              A celebration of California modernity and the quiet transcendence of the Mojave Desert, with fine art & intentionally curated objects
-              </p> */}
               <a
                 onClick={() => handleClickScroll("first-page-scroll")}
                 className="flex items-center text-sm font-sm text-black hover:text-neutral-600 scroll-smooth cursor-pointer"
               >
-                <ChevronDownIcon className="h-[30px] text-white mt-6 font-thin opacity-60 absolute bottom-10" />
+                <ChevronDownIcon className="h-[50px] text-white mt-6 font-thin opacity-70 absolute bottom-10" />
               </a>
             </Fade>
           </div>
