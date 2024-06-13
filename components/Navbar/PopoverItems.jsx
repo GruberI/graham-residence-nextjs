@@ -65,9 +65,9 @@ const navigation = {
       shop: [],
     },
   ],
-  // second: [
-  //   { name: "About", href: "/about" }
-  // ],
+  second: [
+    { name: "About", href: "/about" }
+  ],
 };
 
 function classNames(...classes) {
@@ -389,7 +389,6 @@ export default function PopoverItems({ color, pathname }) {
             )}
           </Popover>
         ))}
-        {/* About Section
         {navigation.second.map((item) => (
           <a
             key={item.name}
@@ -402,7 +401,7 @@ export default function PopoverItems({ color, pathname }) {
               {item.name}
             </span>
           </a>
-        ))} */}
+        ))}
       </div>
     </Popover.Group>
   );
