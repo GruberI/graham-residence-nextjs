@@ -115,13 +115,13 @@ export default function ProductDescription({ product }) {
       <div className="mx-auto max-w-2xl px-0 sm:py-24 py-14 sm:px-0 lg:max-w-7xl lg:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-20">
           {/* Mobile Carousel */}
-          <div className="block sm:hidden">
+          {/* <div className="block sm:hidden">
             <SimpleSlider images={product.images} />
-          </div>
+          </div> */}
           {/* Image gallery */}
           <Tab.Group
             as="div"
-            className="sm:flex flex-col-reverse hidden"
+            className="flex flex-col-reverse"
             defaultIndex={defaultIndex}
           >
             {/* Image selector */}
