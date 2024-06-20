@@ -42,7 +42,7 @@ export default async function Shop() {
         imgSrc="https://ipfs.filebase.io/ipfs/QmWJ2ZeTDfLr8Ng8H7ynR8o1tPjJVeeUARds3ipechFGrG"
         title="Graham Shop"
         classes={{
-          title: "mb-[50px] md:mb-0",
+          title: "mb-[51px] md:mb-0",
         }}
       />
 

@@ -27,7 +27,7 @@ export function PageHeaderHero({
 
           {title ? (
             <h1
-              className={`font-thin tracking-wide text-white sm:text-7xl text-4xl animate-fadeTwo font-[cormorant] ${classes.title}`}
+              className={`font-thin tracking-wide text-white sm:text-7xl text-5xl animate-fadeTwo font-[cormorant] ${classes.title}`}
             >
               {title}
             </h1>
