@@ -7,16 +7,13 @@ function SimpleSlider({ images }) {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    swipeToSlide: true,
   };
   return (
     <div className="slider-container mx-4">
       <Slider {...settings}>
         {images.map((image, i) => {
-          return (
-            <div key={i} className="px-2">
-              <img src={image.url} alt="" />
-            </div>
-          );
+          return <img src={image.url} alt="" key={i} className="px-2" />;
         })}
       </Slider>
     </div>
