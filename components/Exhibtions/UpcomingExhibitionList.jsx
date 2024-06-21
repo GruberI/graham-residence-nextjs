@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const artistExhibitions = [
   {
     artist: "Nicole Taylor DeWitt",
@@ -6,6 +8,7 @@ const artistExhibitions = [
       "https://ipfs.filebase.io/ipfs/QmeF2jropWjRdpn3zR2ePGjuPAhng21z5SPC78HoQm5xV2",
     imgAltText: "Nicole Taylor DeWitt",
     date: "August 15th - September 12th",
+    link: "/art/nicole-taylor-dewitt",
   },
   {
     artist: "Alex Maceda",
@@ -14,6 +17,7 @@ const artistExhibitions = [
       "https://ipfs.filebase.io/ipfs/Qmeau1sVkRRnTb5zUMnWzbCbRtdf6UqAvYfAJ26aYzeE3k",
     imgAltText: "Alex Maceda",
     date: "September 19th - November 5th",
+    link: "/exhibitions",
   },
 ];
 
@@ -37,7 +41,9 @@ export default function UpcomingExhibitionList() {
                 />
               </div>
               <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
-              <p className="text-lg pt-1">{exhibit.artist}</p>
+              <Link href={exhibit.link}>
+                <p className="text-lg pt-1 hover:text-zinc-500">{exhibit.artist}</p>
+              </Link>
               <p className="tracking-tight font-thin text-lg">
                 {" "}
                 Graham Residence, {exhibit.date}

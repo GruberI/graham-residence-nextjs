@@ -78,7 +78,7 @@ const bannerInfo = [
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmciC6CE7RXXefhXpCPUFanCnVGwrpyhKb1hM61FXUNsNr",
     imgAltText: "Nicole DeWitt",
-    text: "Nicole Taylor DeWitt (b. 1997) is an American visual artist living in Yucca Valley, California. Inspired by life in the Mojave Desert, her curiosity and unique perspective bring unseen landscapes into focus.",
+    text: "Nicole Taylor DeWitt (b. 1997) is an American visual artist, currently based in Los Angeles, California. With focus on 35mm film, Polaroids, and flatbed distortions - DeWitt features in-camera multi-exposures and photographic deconstruction to create structured abstraction within her work.",
     type: "art",
   },
 ];

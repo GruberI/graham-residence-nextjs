@@ -2,13 +2,16 @@ import Link from "next/link";
 
 const artistExhibitions = [
   {
-    artist: "David Mathew King & Marcel Rozek",
+    artist: "David Mathew King",
+    artistSecond: "Marcel Rozek",
     name: "CONVERGENCE",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmR4MdakCJMN97PTbavV7Lj3NCoY2sDAF5PEPmDPtgPwE9/RackMultipart20240501-85-1ky2nl0.jpg",
     imgAltText: "David Mathew King & Marcel Rozek at the graham residence",
     href: "/gallery/david-marcel",
     date: "May 2024 - July 2024",
+    link: "/art/david-matthew-king",
+    linkSecond: "/art/marcel-rozek",
   },
   {
     artist: "Kyle Steed",
@@ -19,6 +22,7 @@ const artistExhibitions = [
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",
     date: "Oct 2023 - Jan 2024",
+    link: "/art/kyle-steed",
   },
   {
     artist: "Thai Mainhard",
@@ -29,6 +33,7 @@ const artistExhibitions = [
       "Various paintings by Thai resting on porch at the graham residence",
     href: "/gallery/thai-mainhard",
     date: "June 2023 - October 2023",
+    link: "/art/thai-mainhard",
   },
 ];
 
@@ -59,11 +64,37 @@ export default function ExhibitionList() {
               </div>
               {/* <p className="pt-4 text-2xl">Exhibition</p> */}
               <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
-                <p className="text-lg pt-1">{exhibit.artist}</p>
-                <p className="tracking-tight font-thin text-lg">
-                  {" "}
-                  Graham Residence, {exhibit.date}
-                </p>
+              <p className="text-lg pt-1">
+                {" "}
+                {exhibit.artistSecond ? (
+                  <>
+                    <Link href={exhibit.link}>
+                      <span className="hover:text-zinc-500">
+                        {exhibit.artist}
+                      </span>
+                    </Link>
+                    <span> & </span>
+                    <span className="hover:text-zinc-500">
+                      <Link href={exhibit.linkSecond}>
+                        {exhibit.artistSecond}
+                      </Link>
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <Link href={exhibit.link}>
+                      {" "}
+                      <span className="hover:text-zinc-500">
+                        {exhibit.artist}
+                      </span>
+                    </Link>
+                  </>
+                )}
+              </p>
+              <p className="tracking-tight font-thin text-lg">
+                {" "}
+                Graham Residence, {exhibit.date}
+              </p>
             </Link>
           );
         })}

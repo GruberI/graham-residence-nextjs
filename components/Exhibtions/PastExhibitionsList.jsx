@@ -8,6 +8,7 @@ const artistExhibitions = [
     imgAltText:
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",
+    link: "/art/kyle-steed",
     date: "October 2023 - January 2024",
   },
   {
@@ -18,6 +19,7 @@ const artistExhibitions = [
     imgAltText:
       "Various paintings by Thai resting on porch at the graham residence",
     href: "/gallery/thai-mainhard",
+    link: "/art/thai-mainhard",
     date: "June 2023 - October 2023",
   },
 ];
@@ -33,8 +35,8 @@ export default function PastExhibitionList() {
       <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 sm:grid-cols-2 px-4 sm:px-2 md:px-0">
         {artistExhibitions.map((exhibit, i) => {
           return (
-            <Link href={exhibit.href} key={i}>
-              <div className="flex flex-col">
+            <div className="flex flex-col" key={i}>
+              <Link href={exhibit.href}>
                 <div className="aspect-[7/5] overflow-hidden" key={i}>
                   <img
                     src={exhibit.imgSrc}
@@ -43,13 +45,15 @@ export default function PastExhibitionList() {
                   />
                 </div>
                 <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
-                <p className="text-lg pt-1">{exhibit.artist}</p>
-                <p className="tracking-tight font-thin text-lg">
-                  {" "}
-                  Graham Residence, {exhibit.date}
-                </p>
-              </div>
-            </Link>
+              </Link>
+              <Link href={exhibit.link}>
+                <p className="text-lg pt-1 hover:text-zinc-500">{exhibit.artist}</p>
+              </Link>
+              <p className="tracking-tight font-thin text-lg">
+                {" "}
+                Graham Residence, {exhibit.date}
+              </p>
+            </div>
           );
         })}
       </div>

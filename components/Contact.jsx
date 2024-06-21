@@ -36,7 +36,6 @@ export default function Contact() {
                 <p>{value.text} </p>
 
                 <Link
-                  className=""
                   href={`mailto:${value.email}?subject=${value.subject}`}
                 >
                   <p className="hover:underline hover:underline-offset-8">
