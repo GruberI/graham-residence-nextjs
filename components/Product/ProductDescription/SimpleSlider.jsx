@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 
 function SimpleSlider({ images }) {
-  console.log("images", images);
   const settings = {
     dots: false,
     infinite: true,
