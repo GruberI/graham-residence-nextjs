@@ -11,9 +11,11 @@ import React from "react";
 export function AddToCart({
   variants,
   availableForSale,
+  type,
 }: {
   variants: ProductVariant[];
   availableForSale: boolean;
+  type: string;
 }) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -28,8 +30,8 @@ export function AddToCart({
   const title = !availableForSale
     ? "Out of stock"
     : !selectedVariantId
-      ? "Please select options"
-      : undefined;
+    ? "Please select options"
+    : undefined;
 
   return (
     <button
@@ -41,15 +43,14 @@ export function AddToCart({
         if (!availableForSale || !selectedVariantId) return;
         // **** WHERE I SWITCHED THE CODE FROM ORIGINAL *** //
         startTransition(async () => {
-        
-            const error = await addItem(selectedVariantId);
-    
-            if (error) {
-              // Trigger the error boundary in the root error.js
-              throw new Error(error.toString());
-            }
+          const error = await addItem(selectedVariantId);
 
-            router.refresh();
+          if (error) {
+            // Trigger the error boundary in the root error.js
+            throw new Error(error.toString());
+          }
+
+          router.refresh();
         });
       }}
       className={clsx(
@@ -62,13 +63,16 @@ export function AddToCart({
       )}
     >
       <div className="absolute left-0 ml-4">
-        {!isPending ? (
-          <span />
-        ) : (
-          <LoadingDots className="mb-3 bg-white" />
-        )}
+        {!isPending ? <span /> : <LoadingDots className="mb-3 bg-white" />}
       </div>
-      <span>{availableForSale ? "Add To Cart" : "Out Of Stock"}</span>
+      <span className="text-xl">
+        {" "}
+        {availableForSale
+          ? "Add To Cart"
+          : !availableForSale && type === "art"
+          ? "Sold"
+          : "Out Of Stock"}
+      </span>
     </button>
   );
 }

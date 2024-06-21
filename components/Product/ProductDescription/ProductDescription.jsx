@@ -202,6 +202,7 @@ export default function ProductDescription({ product }) {
             <AddToCart
               variants={product.variants}
               availableForSale={product.availableForSale}
+              type={currentType}
             />
 
             <section aria-labelledby="details-heading" className="mt-28">
