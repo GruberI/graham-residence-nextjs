@@ -48,15 +48,7 @@ const aboutInfo = [
     imgAltText: "Marcel Rozek",
     text: "Marcel Rozek (b. 1992, Akron, Ohio ) creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School. He is a process oriented painter, working by pouring diluted oil paint onto a raw unprimed canvas, allowing interactions between the materials he uses and the space the work exists within to become the subject. With this technique, pools of color spread and blend together before permeating the canvas. Organic shapes naturally take form, and when colors mix, they absorb at different rates, creating new color palettes and dreamy spectral shapes. Rozek sees in his art a reflection of himself, with each piece conveying a different meaning. Rozek's message is one that compels the viewer to reflect on their own vision of the world.",
   },
-  {
-    handle: "nicole-taylor-dewitt",
-    artist: "Nicole Taylor DeWitt",
-    href: "/gallery/nicole-taylor-dewitt",
-    imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmSPbp19XsqStZPRUL91YSpmRbWaRHMAB98rCbDdrehEaA",
-    imgAltText: "Nicole Taylor DeWitt",
-    text: "Nicole Taylor DeWitt (b. 1997) is an American visual artist, currently based in Los Angeles, California. With focus on 35mm film, Polaroids, and flatbed distortions - DeWitt features in-camera multi-exposures and photographic deconstruction to create structured abstraction within her work. A decade of film developing expertise and experimentation converge to create striking analog images and one-of-a-kind photographic compositions. Through various forms of visual media, she explores an open-ended creative process. Past creative endeavors include co-ownership, operation, and creative direction of Hi-Desert Film Lab, curatorial work, and collaboration with Third Man Records to start Third Man Photo Studio.Exhibitions including Nicole’s photographic work have been held in California, Tennessee, and Florida. Features include Kodak, the Nashville Scene, and Palm Springs Life Magazine.",
-  },
+  
 ];
 
 export default function About({ artistName }) {
@@ -87,7 +79,7 @@ export default function About({ artistName }) {
                     </h1>
                     <p className="tracking-wide leading-7">{about.text}</p>
                     <div className="pb-16 text-center">
-                      {about.handle === "nicole-taylor-dewitt" || 'yoni-goldberg' ? (
+                      {about.handle === "Martin Klein" || 'yoni-goldberg' ? (
                         ""
                       ) : (
                         <Link

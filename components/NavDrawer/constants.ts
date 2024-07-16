@@ -32,7 +32,6 @@ export const NAV_ITEMS: NavItem[] = [
           { title: "Marcel Rozek", path: "/art/marcel-rozek" },
           { title: "Kyle Steed", path: "/art/kyle-steed" },
           { title: "Thai Mainhard", path: "/art/thai-mainhard" },
-          { title: "Nicole Taylor DeWitt", path: "/art/nicole-taylor-dewitt" },
           { title: "Yoni Goldberg", path: "/art/yoni-goldberg" },
           { title: "View All", path: "/gallery/artists" },
         ],

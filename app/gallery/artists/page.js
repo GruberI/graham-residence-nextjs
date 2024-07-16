@@ -3,12 +3,6 @@ import ArtistGrid from "@/components/Exhibition/AllArtists/ArtistGrid";
 
 const artists = [
   {
-    name: "Nicole Taylor DeWitt",
-    src: "https://ipfs.filebase.io/ipfs/QmaSUbgq9Hza2nhjQnkw7NyqZXa35pLGJo1x9Yxqkz9Kms",
-    altText: "",
-    href: "/art/nicole-taylor-dewitt",
-  },
-  {
     name: "Marcel Rozek",
     src: "https://ipfs.filebase.io/ipfs/QmbKrYmSnjHLCtjSH4gaZUh68wJECaeuXwBUSKqHFL78Ep",
     altText: "",
