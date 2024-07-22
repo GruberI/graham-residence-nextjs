@@ -37,8 +37,10 @@ export default function Product({ product }) {
             {product.vendor}
           </p>
           <p className="mt-1 text-sm">
-            {!available
+            {!available && product.tags.includes("fine-art")
               ? "Sold"
+              : !available && product.tags.includes("home-goods")
+              ? "Sold Out"
               : `${new Intl.NumberFormat("en-US", {
                   style: "currency",
                   currency: "USD",
