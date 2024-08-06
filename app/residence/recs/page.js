@@ -1,5 +1,4 @@
 
-import Header from "@/components/About/Header";
 import Instagram from "@/components/Instagram";
 import PageHeaderHero from "@/components/global/PageHeaderHero";
 import Recs from "../../../components/Residence/Recs";

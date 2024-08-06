@@ -1,5 +1,4 @@
 import Header from "@/components/About/Header";
-import Hero from "@/components/About/Hero";
 import AboutGoldberg from "@/components/About/AboutGoldberg";
 import Instagram from "@/components/Instagram";
 import ArtServices from "@/components/Exhibition/ArtServices";

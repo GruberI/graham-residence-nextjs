@@ -31,12 +31,18 @@ const artists = [
     src: "https://ipfs.filebase.io/ipfs/QmZDJyiEUP5mncx3fYrPdreAq2i5gmsvkSr7ZThcKfxT37",
     altText: "",
     href: "/art/kyle-steed",
-  }
+  },
   // {
   //   name: "Alex Maceda",
   //   src: "https://ipfs.filebase.io/ipfs/Qmc1vcmrBJDzuvArAhqDuiE9SLygtXuHQYsiR6nCUt1Zju",
   //   altText: "",
-  //   href: "/art/marcel-rozek",
+  //   href: "/art/alex-maceda",
+  // },
+  // {
+  //   name: "Erin Lynn Welsh",
+  //   src: "https://ipfs.filebase.io/ipfs/QmRKaHtSJANocaVGfCsR8Qto18ABTzYSuj5f5KeywYdLML",
+  //   altText: "",
+  //   href: "/art/erin-lynn-welsh",
   // },
 ];
 export default function Artists() {

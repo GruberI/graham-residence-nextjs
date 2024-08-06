@@ -39,9 +39,15 @@ export default function SectionFirst() {
                   <div className="flex items-center gap-x-6">
                     <a
                       href="/residence#property-book"
-                      className="sm:text-sm leading-6 hover:text-neutral-300 underline underline-offset-8 pb-6 sm:pb-0"
+                      className="sm:text-sm leading-6 hover:text-neutral-500 hover:underline hover:underline-offset-8 pb-6 sm:pb-0"
                     >
                       BOOK A STAY
+                    </a>
+                    <a
+                      href="/residence/photos"
+                      className="sm:text-sm leading-6 hover:text-neutral-500 hover:underline hover:underline-offset-8 pb-6 sm:pb-0"
+                    >
+                      GALLERY
                     </a>
                   </div>
                 </div>

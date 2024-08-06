@@ -48,6 +48,7 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, height=device-height, initial-scale:1.0, user-scalable=no"
         />
+        <meta name="facebook-domain-verification" content="r043wisufo6eic9svblw9sssmahycs" />
       </head>
       <body className={`${inter.children}`}>
         <div className="relative fixed">

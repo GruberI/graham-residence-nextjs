@@ -27,6 +27,8 @@ const navigation = {
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
         { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
+        // {name: "Alex Maceda", href: "/art/alex-maceda"},
+        // {name: "Erin Lynn Welsh", href: "/art/erin-lynn-welsh"},
         { name: "View All", href: "/gallery/artists" },
       ],
       contact: [
