@@ -30,6 +30,7 @@ export const NAV_ITEMS: NavItem[] = [
         children: [
           { title: "David Matthew King", path: "/art/david-matthew-king" },
           { title: "Marcel Rozek", path: "/art/marcel-rozek" },
+          { title: "Katherine Adams", path: "/art/katherine-adams" },
           { title: "Kyle Steed", path: "/art/kyle-steed" },
           { title: "Thai Mainhard", path: "/art/thai-mainhard" },
           { title: "Yoni Goldberg", path: "/art/yoni-goldberg" },
