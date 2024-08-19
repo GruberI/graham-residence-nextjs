@@ -1,4 +1,3 @@
-import Hero from "@/components/Residence/Hero";
 import SectionFirst from "@/components/Property/SectionFirst";
 import TwoRowGrid from "@/components/Property/TwoRowGrid";
 import HouseSpecs from "@/components/Property/HouseSpecs";
@@ -49,7 +48,7 @@ const imagesSecond = [
 export default function Residence() {
   return (
     <>
-      <Hero />
+      
       <SectionFirst />
       <TwoRowGrid imgSrc={imagesFirst} />
       <Text text={text} />
