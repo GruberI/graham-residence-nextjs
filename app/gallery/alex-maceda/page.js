@@ -7,7 +7,7 @@ import { getCollectionProducts } from "@/lib/shopify";
 export default async function Exhibition() {
   const products = await getCollectionProducts({ collection: "Artwork" });
   const productsByTag = products.filter((product) => {
-    return product.tags.includes("Alex-Maceda");
+    return product.tags.includes("alex-maceda");
   });
 
   if (!products?.length) return null;
