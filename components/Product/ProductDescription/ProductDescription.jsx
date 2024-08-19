@@ -88,6 +88,8 @@ export default function ProductDescription({ product }) {
           ? "Products will ship within 3-5 business days. Please allow 5-7 days for Standard shipping."
           : product.vendor === "Thai Mainhard"
           ? "Shipping, local delivery and pickup options vary per piece and will be viewable on the cart checkout page. <br><br> For questions or expedited shipping please contact us at info@graham-collective.com."
+          : product.vendor === "Katherine Adams"
+          ? "Shipping, local delivery and pickup options vary per piece and will be viewable on the cart checkout page. <br><br> For questions or expedited shipping please contact us at info@graham-collective.com."
           : product.vendor === "Yoni Goldberg"
           ? "All photographic prints ship free of charge. <br> <br> Shipment date is determined by the type (unframed or framed) and the size of the artwork ordered.<br><br><strong>Unframed Prints:</strong><br>Unframed prints will be shipped in a tube for safe keeping. All unframed prints will ship within 7-10 business days from the date ordered.<br><br><strong>All Framed Artwork:</strong><br>At this time, framed artwork can only be shipped to addresses in the contiguous United States. For all framed orders, please allow 2-3 weeks for delivery.<br><br>For any shipping questions or quotes please email us at info@graham-collective.com"
           : product.vendor === "thegrahamresidence"

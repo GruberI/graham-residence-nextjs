@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 export const runtime = "edge";
 
 export default async function ShopAll() {
-  const products = await getCollectionProducts({ collection: "sculpture" });
+  const products = await getCollectionProducts({ collection: "Artwork" });
   const productsByTag = products.filter((product) => {
-    return product.tags.includes("sculpture");
+    return product.tags.includes("Sculpture");
   });
 
   if (!products?.length) return notFound();

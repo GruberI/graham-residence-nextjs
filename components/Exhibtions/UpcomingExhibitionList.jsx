@@ -4,11 +4,11 @@ const artistExhibitions = [
  
   {
     artist: "Alex Maceda",
-    name: "SAVORING",
+    name: "The Desert Will Hold You",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/Qmeau1sVkRRnTb5zUMnWzbCbRtdf6UqAvYfAJ26aYzeE3k",
     imgAltText: "Alex Maceda",
-    date: "Graham Residence, September 19th - November 5th",
+    date: "Graham Residence, September 21st - November 5th",
     link: "/exhibitions",
   },
   {
