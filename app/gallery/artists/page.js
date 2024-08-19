@@ -32,6 +32,11 @@ const artists = [
     altText: "",
     href: "/art/kyle-steed",
   },
+  {
+     name: "Katherine Adams",
+     src: "https://ipfs.filebase.io/ipfs/QmXjkEhPX6Rk5xSm3ZwfQRcDnMF5gYHmFkBfqfPUWn1xPn",
+     altText: "",
+     href: "/art/katherine-adams",
   // {
   //   name: "Alex Maceda",
   //   src: "https://ipfs.filebase.io/ipfs/Qmc1vcmrBJDzuvArAhqDuiE9SLygtXuHQYsiR6nCUt1Zju",
@@ -43,7 +48,7 @@ const artists = [
   //   src: "https://ipfs.filebase.io/ipfs/QmRKaHtSJANocaVGfCsR8Qto18ABTzYSuj5f5KeywYdLML",
   //   altText: "",
   //   href: "/art/erin-lynn-welsh",
-  // },
+   },
 ];
 export default function Artists() {
   return (

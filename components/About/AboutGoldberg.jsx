@@ -82,9 +82,8 @@ export default function AboutGoldberg() {
           </p>
           <p className="text-xl">
             A professional photographer of over a decade, Yoni specializes in
-            portraiture and architecture photography. A jack of all trades, he
-            enjoys managing and operating The Graham Residence. He is a lifelong
-            learner, always preferring to tackle problems on his own. In his
+            fashion, portraiture and interiors photography. He
+            enjoys managing and operating The Graham Residence & The Graham Collective. In his
             free time he can be found sailing off the coast of California.
           </p>
         </div>
