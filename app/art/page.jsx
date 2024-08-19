@@ -13,11 +13,14 @@ export const metadata = {
 export default async function ShopAll() {
   const products = await getCollectionProducts({ collection: "Artwork" });
 
-  if (!products?.length) return notFound();
+  const excludedTag = "alex-maceda";
+  const filteredProducts = products.filter(product => !product.tags.includes(excludedTag));
+
+  if (!filteredProducts?.length) return notFound();
 
   return (
     <div className="mt-20">
-      <ShopAllArt productsByHandle={products} />
+      <ShopAllArt productsByHandle={filteredProducts} />
     </div>
   );
 }
