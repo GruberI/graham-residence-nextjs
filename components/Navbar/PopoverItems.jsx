@@ -24,6 +24,7 @@ const navigation = {
       artists: [
         { name: "David Matthew King", href: "/art/david-matthew-king" },
         { name: "Marcel Rozek", href: "/art/marcel-rozek" },
+        { name: "Katherine Adams", href: "/art/katherine-adams"},
         { name: "Kyle Steed", href: "/art/kyle-steed" },
         { name: "Thai Mainhard", href: "/art/thai-mainhard" },
         { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
@@ -53,6 +54,7 @@ const navigation = {
       art: [
         { name: "Paintings", href: "/art/paintings" },
         { name: "Photography", href: "/art/photography" },
+        { name: "Sculpture", href: "/art/sculpture" },
         { name: "Shop All", href: "/art" },
         { name: "By Artist", href: "/gallery/artists" },
       ],

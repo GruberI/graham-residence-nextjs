@@ -71,6 +71,7 @@ export const NAV_ITEMS: NavItem[] = [
         children: [
           { title: "Paintings", path: "/art/paintings" },
           { title: "Photography", path: "/art/photography" },
+          { title: "Sculpture", path: "/art/sculpture" },
           { title: "Shop All", path: "/art" },
           { title: "By Artist", path: "/gallery/artists" },
         ],

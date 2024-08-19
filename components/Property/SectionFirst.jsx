@@ -37,18 +37,18 @@ export default function SectionFirst() {
                     </p>
                   </div>
                   <div className="flex items-center gap-x-6">
-                    <a
-                      href="/residence#property-book"
-                      className="sm:text-sm leading-6 hover:text-neutral-500 hover:underline hover:underline-offset-8 pb-6 sm:pb-0"
-                    >
+                  <button
+    onClick={() => window.location.href = '/residence#property-book'}
+    className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white"
+  >
                       BOOK A STAY
-                    </a>
-                    <a
-                      href="/residence/photos"
-                      className="sm:text-sm leading-6 hover:text-neutral-500 hover:underline hover:underline-offset-8 pb-6 sm:pb-0"
+                    </button>
+                    <button
+    onClick={() => window.location.href = '/residence/photos'}
+    className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white"
                     >
-                      GALLERY
-                    </a>
+                      PHOTO GALLERY
+                    </button>
                   </div>
                 </div>
               </Fade>
