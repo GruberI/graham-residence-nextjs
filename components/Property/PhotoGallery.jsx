@@ -1,6 +1,6 @@
 export default function PhotoGallery() {
   return (
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-3 max-w-7xl">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-3 mt-28 mb-10">
       {/* COl 1 */}
       <div class="grid gap-4">
         <div>
