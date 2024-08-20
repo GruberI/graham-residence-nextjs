@@ -9,7 +9,7 @@ export default function ArtExhibition() {
           
             
               <img
-                src="https://ipfs.filebase.io/ipfs/QmeZESJ42SKkVCEqP4B6e8a7vuSuwt1AsBH7Wk3QMSuRx8"
+                src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/_DSC1235.jpg"
                 alt="Painting."
                 className="float-left mr-8 mb-4 max-w-[500px] h-auto object-contain object-center"
               />
