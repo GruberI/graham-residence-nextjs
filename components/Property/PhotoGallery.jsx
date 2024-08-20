@@ -1,6 +1,6 @@
 export default function PhotoGallery() {
   return (
-    <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
       {/* COl 1 */}
       <div class="grid gap-4">
         <div>
@@ -45,6 +45,20 @@ export default function PhotoGallery() {
             alt="gallery-photo"
           />
         </div>
+        <div>
+          <img
+            class="h-full max-w-full object-cover object-center"
+            src="https://ipfs.filebase.io/ipfs/QmehgyBPaHAGyYVNLbGK4y3PdbHVFpe73QUwumjFGG6Xjs"
+            alt="gallery-photo"
+          />
+        </div>
+        <div>
+          <img
+            class="h-full max-w-full object-cover object-center"
+            src="https://ipfs.filebase.io/ipfs/QmUSvbboQFikoE66MD4fSeWyvK8y8kHxhf9FBfarjLUNRB"
+            alt="gallery-photo"
+          />
+        </div>
       </div>
       {/* COL 2 */}
       <div class="grid gap-4">
@@ -80,6 +94,27 @@ export default function PhotoGallery() {
           <img
             class="h-full max-w-full object-cover object-center"
             src="https://ipfs.filebase.io/ipfs/Qmf8nxMk9fu7L7iXvpn7YJ9HMwWa8FrZh97LYZCKNt4LrP"
+            alt="gallery-photo"
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full object-cover object-center"
+            src="https://ipfs.filebase.io/ipfs/QmNMaE8hjSe68HrdNWjXbS4RQwikhL1RQgm8Ms4yevyB7f"
+            alt="gallery-photo"
+          />
+        </div>
+        <div>
+          <img
+            class="h-full max-w-full object-cover object-center"
+            src="https://ipfs.filebase.io/ipfs/QmUSvbboQFikoE66MD4fSeWyvK8y8kHxhf9FBfarjLUNRB"
+            alt="gallery-photo"
+          />
+        </div>
+        <div>
+          <img
+            class="h-full max-w-full object-cover object-center"
+            src="https://ipfs.filebase.io/ipfs/QmSnByY3oja5EscVvzuD4UqxF5e1mjafLKWt7Miu3uhAgv"
             alt="gallery-photo"
           />
         </div>
@@ -121,23 +156,6 @@ export default function PhotoGallery() {
             alt="gallery-photo"
           />
         </div>
-      </div>
-      {/* COL 4 */}
-      <div class="grid gap-4">
-        <div>
-          <img
-            class="h-full max-w-full object-cover object-center"
-            src="https://ipfs.filebase.io/ipfs/QmehgyBPaHAGyYVNLbGK4y3PdbHVFpe73QUwumjFGG6Xjs"
-            alt="gallery-photo"
-          />
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full object-cover object-center"
-            src="https://ipfs.filebase.io/ipfs/QmNMaE8hjSe68HrdNWjXbS4RQwikhL1RQgm8Ms4yevyB7f"
-            alt="gallery-photo"
-          />
-        </div>
         <div>
           <img
             class="h-auto max-w-full object-cover object-center"
@@ -147,15 +165,15 @@ export default function PhotoGallery() {
         </div>
         <div>
           <img
-            class="h-full max-w-full object-cover object-center"
-            src="https://ipfs.filebase.io/ipfs/QmUSvbboQFikoE66MD4fSeWyvK8y8kHxhf9FBfarjLUNRB"
+            class="h-auto max-w-full object-cover object-center"
+            src="https://ipfs.filebase.io/ipfs/QmRjTqi27UGxVrXMxYHmT4t4YPzhCa4gAsaUiiwy2Tv2TW"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
             class="h-auto max-w-full object-cover object-center"
-            src="https://ipfs.filebase.io/ipfs/QmRjTqi27UGxVrXMxYHmT4t4YPzhCa4gAsaUiiwy2Tv2TW"
+            src="https://ipfs.filebase.io/ipfs/QmaH2heZDGUmuy5XJ9yFbyFYdrLXL3v8S37UmFAAoL3yPs"
             alt="gallery-photo"
           />
         </div>

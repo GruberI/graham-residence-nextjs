@@ -8,6 +8,7 @@ const nextConfig = {
             port: '',
           },
         ],
+        domains: ["ipfs.filebase.io"]
       },
 }
 

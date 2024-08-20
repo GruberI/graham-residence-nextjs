@@ -18,7 +18,7 @@ export default function MainExhibition() {
   return (
     <div>
       <PageHeaderHero
-        imgSrc="https://ipfs.filebase.io/ipfs/QmSj81HkBTKDeavdAuhSnNgLSkqderZfq6NCFneNDzZG4d"
+        imgSrc="https://cdn.shopify.com/s/files/1/0737/4258/2042/files/GalleryHero.jpg?v=1724123715"
         title="Graham Gallery"
       />
       {/* <HeroImageText /> */}
