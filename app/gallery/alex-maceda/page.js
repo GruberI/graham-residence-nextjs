@@ -14,7 +14,7 @@ export default async function Exhibition() {
 
   const sixProductSet = productsByTag.slice(0, 6);
   return (
-    <div className="bg-white py-1 sm:py-10">
+    <div className="bg-white py-1 sm:py-10 sm:pt-40 pt-48">
       <Header />
       <ArtExhibition />
       <SixImageGrid products={sixProductSet} />
