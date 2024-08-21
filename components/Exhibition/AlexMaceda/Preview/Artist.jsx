@@ -37,7 +37,7 @@ export default function Artist() {
 
               <p className="tracking-wide leading-7">
               She holds a BA in Classical Studies with a Minor in Studio Art from Dartmouth College 
-              and an MBA from Stanford Graduate School of Business. She is an incoming MFA candidate 
+              and an MBA from Stanford Graduate School of Business. She is an MFA candidate 
               in Painting at the New York Studio School. Alex is passionate about mental health and 
               a dedicated student of yoga, meditation and other healing modalities. She was raised 
               in between the San Francisco Bay Area and Manila, Philippines.

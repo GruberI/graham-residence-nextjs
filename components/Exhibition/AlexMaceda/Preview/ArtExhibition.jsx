@@ -17,7 +17,7 @@ export default function ArtExhibition() {
               <div className="klaviyo-form-Vj7VSy"></div>
               <div className="flex-grow items-start px-4 min-w-0">
                 <div className="flex justify-center">
-                  <h2 className="text-left text-4xl font-thin tracking-wide text-black-900"></h2>
+                  <h2 className="text-center text-4xl font-thin tracking-wide text-black-900"></h2>
                   Collector preview will be sent out on September 10th.
                 </div>
                 <div className="mt-6 space-y-6"></div>
