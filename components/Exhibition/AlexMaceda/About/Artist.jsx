@@ -8,12 +8,12 @@ export default function Artist() {
               <img
                 src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/2024_aM70298.jpg"
                 alt="Alex"
-                className="object-cover h-full w-full"
+                className="object-cover h-full w-full items-start"
               />
             </div>
           </div>
           <div>
-            <div className="space-y-4">
+            <div className="items-start space-y-4">
               <p>
                 <span className="font-semibold">ALEX MACEDA</span> (b. 1989)
               </p>
@@ -37,7 +37,7 @@ export default function Artist() {
 
               <p className="tracking-wide leading-7">
               She holds a BA in Classical Studies with a Minor in Studio Art from Dartmouth College 
-              and an MBA from Stanford Graduate School of Business. She is an incoming MFA candidate 
+              and an MBA from Stanford Graduate School of Business. She is an MFA candidate 
               in Painting at the New York Studio School. Alex is passionate about mental health and 
               a dedicated student of yoga, meditation and other healing modalities. She was raised 
               in between the San Francisco Bay Area and Manila, Philippines.
