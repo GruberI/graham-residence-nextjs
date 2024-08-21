@@ -9,7 +9,7 @@ export default function SectionFirst() {
         <div className="mx-auto px-4 sm:px-6 lg:px-6">
           <div className="grid grid-cols-1 items-center gap-x-8 lg:grid-cols-2">
             <div>
-              <div className="overflow-hidden bg-black-100 aspect-[4/5] sm:py-5 lg:py-5 sm:px-20 lg:px-16">
+              <div className="overflow-hidden bg-black-100 aspect-[1/1] sm:py-5 lg:py-5 sm:px-20 lg:px-16">
                 <img
                   src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/alex-maceda.jpg"
                   alt="Alex Maceda Painting"
