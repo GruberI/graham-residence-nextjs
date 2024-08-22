@@ -13,7 +13,7 @@ export default async function Exhibition() {
     return product?.tags?.includes("alex-maceda");
   });
   return (
-    <div className="sm:pt-40 pt-48">
+    <div className="sm:pt-40 mx-2 pt-48">
       <CollectorPreview />
       <ProductGridThree products={productsByTag} />
     </div>

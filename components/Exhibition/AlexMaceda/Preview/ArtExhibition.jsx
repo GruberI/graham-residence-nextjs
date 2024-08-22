@@ -16,10 +16,11 @@ export default function ArtExhibition() {
             <div className="max-w-2xl m-auto">
               <div className="klaviyo-form-Vj7VSy"></div>
               <div className="flex-grow items-start px-4 min-w-0">
-                <div className="flex justify-center">
+                <div className="flex flex-col justify-center text-center">
                   <h2 className="text-center text-4xl font-thin tracking-wide text-black-900"></h2>
-                  Collector preview will be sent out on September 10th.
-                </div>
+                  <p>Collector preview will be sent out on September 10th.</p>
+                  <div>For sales inquiries: <a href="mailto:lindsey@graham-collective.com">Lindsey Goldberg</a>
+                </div></div>
                 <div className="mt-6 space-y-6"></div>
               </div>
             </div>
