@@ -6,13 +6,13 @@ const artistExhibitions = [
     artist: "Alex Maceda",
     name: "The Desert Will Hold You",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/Qmeau1sVkRRnTb5zUMnWzbCbRtdf6UqAvYfAJ26aYzeE3k",
+      "https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/2024_aM70298.jpg",
     imgAltText: "Alex Maceda",
-    date: "Graham Residence, September 21st - November 5th",
+    date: "Graham Residence, September 24th - November 5th",
     link: "/exhibitions",
   },
   {
-    artist: "Martin Klein",
+    artist: "TBA",
     name: "TBA",
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmZyc5oudsFP1spjHD2ANSHgpKNwRDvsqdE2e4sPZJmFNS",
