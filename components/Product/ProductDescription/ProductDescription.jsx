@@ -175,20 +175,22 @@ export default function ProductDescription({ product }) {
           {/* Product Info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-2 lg:mt-0">
             <div className="flex place-content-between">
-              <h1 className="text-sm sm:text-2xl font-light text-black-600 truncate">
+              <h1 className="text-sm sm:text-2xl font-light text-black-600 whitespace-normal break-words">
                 {product.title.toUpperCase()}
               </h1>
               <p className="text-sm sm:text-2xl tracking-normal text-black-600">
-                {`${new Intl.NumberFormat("en-US", {
-                  style: "currency",
-                  currency: "USD",
-                }).format(
-                  parseFloat(
-                    selectedVariant === undefined
-                      ? amount
-                      : selectedVariantPrice
-                  )
-                )}`}
+  {product.availableForSale
+    ? `${new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      }).format(
+        parseFloat(
+          selectedVariant === undefined
+            ? amount
+            : selectedVariantPrice
+        )
+      )}`
+    : "Sold"}
               </p>
             </div>
             <Link href={`/${currentType}/${restructuredVendor}`}>

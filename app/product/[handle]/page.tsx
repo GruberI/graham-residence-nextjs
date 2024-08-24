@@ -12,6 +12,7 @@ export async function generateMetadata({
   params: { handle: string };
 }): Promise<Metadata> {
   const product = await getProduct(params.handle);
+  const isSoldOut = !product.availableForSale;
 
   if (!product) return notFound();
 
