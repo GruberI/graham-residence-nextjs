@@ -11,7 +11,7 @@ export default function Featured() {
           <div>
             <div className="aspect-square overflow-hidden bg-black-100">
               <img
-                src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/0080__DSC2633w2.jpg"
+                src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/0080__DSC2633w2.jpg"
                 alt="Alex Maceda"
                 className="h-full w-full object-cover object-center"
               />

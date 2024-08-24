@@ -9,7 +9,7 @@ export default function ArtExhibition() {
           
             
               <img
-                src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/_DSC1235.jpg"
+                src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/_DSC1235.jpg"
                 alt="Painting."
                 className="float-left mr-8 mb-4 max-w-[500px] h-auto object-contain object-center"
               />

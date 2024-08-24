@@ -1,5 +1,5 @@
 import ExhibitionList from "@/components/Exhibition/ExhibitionList";
-import HeroImageText from "@/components/Exhibition/HeroImage";
+// import HeroImageText from "@/components/Exhibition/HeroImage";
 import Section from "@/components/Exhibition/Section";
 import MeetArtist from "@/components/Exhibition/MeetArtist";
 import Featured from "@/components/Shop/Featured";
@@ -17,15 +17,15 @@ export const metadata = {
 export default function MainExhibition() {
   return (
     <div>
-      <PageHeaderHero
+     {/*} <PageHeaderHero
         imgSrc="https://cdn.shopify.com/s/files/1/0737/4258/2042/files/GalleryHero.jpg?v=1724123715"
         title="Graham Gallery"
-      />
+  /> */}
       {/* <HeroImageText /> */}
       <Section />
       <ExhibitionList />
       <Featured />
-      <MeetArtist />
+      {/* <MeetArtist /> */}
       <ArtServicesText />
       <VisitUs />
       <ArtistSubmissionContact />

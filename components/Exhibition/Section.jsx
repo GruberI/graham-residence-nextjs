@@ -4,14 +4,14 @@ import { Fade } from "react-awesome-reveal";
 export default function Section() {
   return (
     <div className="m-auto max-w-7xl">
-      <div className="mx-auto px-4 sm:px-6 lg:px-6 pt-10">
+      <div className="mx-auto px-4 sm:px-6 lg:px-6 pt-20">
         <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 sm:gap-y-16 lg:grid-cols-2">
           <div>
             <Fade>
               <div>
                 <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 sm:mx-16 md:mx-2 lg:mx-0">
                   <div className="pb-6 pt-0 sm:pt-10 lg:pt-0">
-                    <h1 className="lg:text-4xl text-2xl">THE GRAHAM GALLERY</h1>{" "}
+                    <h1 className="lg:text-4xl text-2xl">GRAHAM COLLECTIVE</h1>{" "}
                     <p className="text-2xl sm:text-3xl italic font-light">
                       is a rotating exhibition experience{" "}
                     </p>
@@ -19,8 +19,7 @@ export default function Section() {
 
                   <div className="pb-8">
                     <p className="tracking-wide text-xl sm:text-2xl">
-                      Within the walls of The Graham Residence, lies Graham
-                      Gallery, a rotating exhibition space featuring original
+                      Within the walls of The Graham Residence lies a rotating exhibition space featuring original
                       artwork by contemporary artists. Set in a context unlike a
                       typical gallery, our experiential space transports and
                       inspires.

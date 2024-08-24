@@ -11,7 +11,7 @@ export default function SectionFirst() {
             <div>
               <div className="overflow-hidden bg-black-100 aspect-[1/1] sm:py-5 lg:py-5 sm:px-20 lg:px-16">
                 <img
-                  src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/alex-maceda.jpg"
+                  src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/alex-maceda.jpg"
                   alt="Alex Maceda Painting"
                   className="object-cover h-full w-full"
                 />
