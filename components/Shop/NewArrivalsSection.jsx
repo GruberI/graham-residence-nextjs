@@ -2,7 +2,7 @@ import { getCollectionProducts } from "@/lib/shopify";
 import Carousel from "../Carousel/Carousel";
 
 export default async function NewArrivalsSection() {
-  const products = await getCollectionProducts({ collection: "home-goods" });
+  const products = await getCollectionProducts({ collection: "Artwork" });
   const productsByTag = products.filter((product) => {
     return product.tags.includes("new-arrivals");
   });
