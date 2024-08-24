@@ -9,7 +9,7 @@ const artistExhibitions = [
       "https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/2024_aM70298.jpg",
     imgAltText: "Alex Maceda",
     date: "Graham Residence, September 24th - November 5th",
-    link: "/exhibitions",
+    link: "/gallery/tdwhy",
   },
   {
     artist: "TBA",
@@ -35,14 +35,17 @@ export default function UpcomingExhibitionList() {
           return (
             <div className="flex flex-col" key={i}>
               <div className="aspect-[7/5] overflow-hidden" key={i}>
+              <Link href={exhibit.link}>
                 <img
                   src={exhibit.imgSrc}
                   alt={exhibit.imgAltText}
                   className="h-full w-full object-cover object-center"
                 />
+                </Link>
               </div>
-              <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
               <Link href={exhibit.link}>
+              <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
+              
                 <p className="text-lg pt-1 hover:text-zinc-500">{exhibit.artist}</p>
               </Link>
               <p className="tracking-tight font-thin text-lg">
