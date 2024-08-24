@@ -11,7 +11,7 @@ export default async function Exhibition() {
 
   if (!products?.length) return null;
 
-  const sixProductSet = productsByTag.slice(0, 6);
+  //const sixProductSet = productsByTag.slice(0, 6);
   return (
     <div className="bg-white py-1 sm:py-10">
       <Header />

@@ -37,7 +37,7 @@ export default function Product({ product }) {
             {product.vendor}
           </p>
           <p className="mt-1 text-sm">
-            {!available && product.tags.includes("fine-art") || !available && product.tags.includes("sculpture")
+            {!available && product.tags.includes("fine-art") || !available && product.tags.includes("Sculpture")
               ? "Sold"
               : !available && product.tags.includes("home-goods")
               ? "Sold Out"
