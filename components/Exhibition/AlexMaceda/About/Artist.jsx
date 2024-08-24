@@ -6,7 +6,7 @@ export default function Artist() {
           <div>
             <div className="overflow-hidden bg-black-100 aspect-square">
               <img
-                src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/2024_aM70298.jpg"
+                src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/2024_aM70298.jpg"
                 alt="Alex"
                 className="object-cover h-full w-full items-start"
               />
