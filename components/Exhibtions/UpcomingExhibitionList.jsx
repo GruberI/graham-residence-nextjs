@@ -6,7 +6,7 @@ const artistExhibitions = [
     artist: "Alex Maceda",
     name: "The Desert Will Hold You",
     imgSrc:
-      "https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/2024_aM70298.jpg",
+      "https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/2024_aM70298.jpg",
     imgAltText: "Alex Maceda",
     date: "Graham Residence, September 24th - November 5th",
     link: "/exhibitions",

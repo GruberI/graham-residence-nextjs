@@ -7,7 +7,7 @@ export default function ArtExhibition() {
       <div>
         <div className="w-full">
           <img
-            src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/0028_L1011914w.jpg"
+            src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/0028_L1011914w.jpg"
             alt="Paintings."
             className="mx-auto max-w-full h-auto object-contain"
           />

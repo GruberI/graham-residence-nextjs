@@ -4,8 +4,8 @@ const posts = [
   {
     id: 1,
     title: "SHOWROOM",
-    location: "Newport Beach, CA",
-    href: "mailto:lindsey@graham-collective.com?subject=Artist representation by Lindsey Goldberg Design",
+    location: "Costa Mesa, CA",
+    href: "mailto:info@graham-collective.com?subject=Appointment",
     description:
       "Our office and showroom is open Monday through Saturday by appointment",
     imageUrl:
