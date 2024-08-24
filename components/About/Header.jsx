@@ -37,13 +37,11 @@ export default function Header() {
                 home to countless photoshoots, elopements, and events.
               </p>
               <p className="text-lg pt-2">
-                In 2023, Lindsey launched Graham Gallery, inspired by the vision
+                In 2023, Lindsey launched Graham Collective, inspired by the vision
                 to create a contextual gallery space and guest experience. The
-                home is curated with rotating works of art by emerging
+                Graham Residence is curated with rotating works of art by emerging
                 contemporary artists, all of which are available for
-                acquisition. In 2024, Lindsey and Yoni expanded the collective
-                to include a shop, selling curated goods from within the home
-                that guests kept asking about.
+                acquisition. 
               </p>
             </div>
           </div>

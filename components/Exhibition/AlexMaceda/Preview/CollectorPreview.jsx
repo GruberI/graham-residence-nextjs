@@ -1,5 +1,5 @@
 "use client";
-import { Slide } from "react-awesome-reveal";
+// import { Slide } from "react-awesome-reveal";
 import { Fade } from "react-awesome-reveal";
 
 export default function SectionFirst() {
@@ -22,7 +22,7 @@ export default function SectionFirst() {
                 <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 mx-0 sm:mx-16 md:mx-2 lg:mx-0">
                   <div className="pb-6 pt-6 sm:pt-10 lg:pt-0">
                     <h2 className="lg:text-4xl text-[23px]">
-                      For British Eyes Only
+                      Collector Preview
                     </h2>{" "}
                     <h3 className="sm:text-3xl text-xl italic font-light">
                     </h3>
