@@ -14,7 +14,7 @@ export default function HeroImageText() {
   return (
     <div className="relative isolate overflow-hidden pt-20 sm:pt-28 h-[450px] md:h-screen">
       <img
-        src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
+        src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/the-graham-residence.jpeg"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover hidden sm:flex"
       />
