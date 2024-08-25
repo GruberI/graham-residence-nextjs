@@ -48,7 +48,7 @@ export default function Product({ product }) {
           </p>
         </div>
         <div>
-          <h3 className="truncate font-light text-base text-black">
+          <h3 className="whitespace-normal break-words font-light text-base text-black">
             {product.title}
           </h3>
         </div>
