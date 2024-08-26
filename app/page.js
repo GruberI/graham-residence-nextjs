@@ -19,7 +19,7 @@ const text =
 const imagesFirst = [
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmayojLyPFZXZvzX5gBzis26uVZSdB27Y85EfSSGvvdGMB/QmVVSQswM9dDiPjLvwfvMXf3P8F8spNp47WEsPXjTSZvQV",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/david-marcel-tgr.jpg",
   },
   {
     imgSrc:
