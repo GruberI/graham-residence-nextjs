@@ -12,7 +12,7 @@ const twoImgProducts = [
   {
     href: "/product/freefall-by-thai-mainhard",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmZ5qt2VKWvpKGxsj8ytEEmKpJW14GF87MaG3mnjFykQxH/Qmewdaobh9iovKd1HKLCgVYFXcGddCqRBHtAZF5DPKzvkk",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/ThaiDesertSpring/006.jpg",
     imgAltText:
       "Thai Mainhard painting hung in hallway of the graham residence.",
     title: "Freefall",
@@ -34,7 +34,7 @@ const quote = {
 
 const banner = {
   imgSrc:
-    "https://ipfs.filebase.io/ipfs/QmWjsuayG2e1Nt996UGJEXEZGvd9x3DCqe9FyijEUxwQyD",
+    "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/ThaiDesertSpring/004.jpg",
   imgAltText:
     "Acrylic paintings by Thai Mainhard on display at the graham residence",
   artist: "Thai Mainhard",

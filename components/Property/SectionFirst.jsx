@@ -11,7 +11,7 @@ export default function SectionFirst() {
             <div>
               <div className="overflow-hidden bg-black-100 aspect-[4/5] sm:py-10 lg:py-32 sm:px-20 lg:px-16">
                 <img
-                  src="https://ipfs.filebase.io/ipfs/QmRNe1ozYPmn3kgLTkuTe9PvEgYZR3maqTYQBarpNSf7wD"
+                  src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/002.jpg"
                   alt="Arial view of The Graham Residence at sunset with person in hotub and white car parked"
                   className="object-cover h-full w-full"
                 />

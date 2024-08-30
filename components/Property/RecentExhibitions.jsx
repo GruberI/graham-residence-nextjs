@@ -18,7 +18,7 @@ const artistExhibitions = [
     artist: "Kyle Steed",
     name: "A QUIET NOISE",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmZUP4GfbWpnwySsEh2jJ1KdG96dPEK7fSnoGRK7AeCaZc/QmdFrNgmbK3FwH8DTjzPQJEXfk8CHXBeb72HSe37ArVRgW",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/005.jpg",
     imgAltText:
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",

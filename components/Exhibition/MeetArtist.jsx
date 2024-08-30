@@ -20,7 +20,7 @@ const artistExhibitions = [
   {
     artist: "Thai Mainhard",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmdajQkhoMRCbL1kXwsphD6QYhcEGYpdqD9wvZwwmuQpay",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/ThaiDesertSpring/005.jpg",
     imgAltText:
       "Various paintings by Thai resting on porch at the graham residence",
     href: "/art/thai-mainhard",

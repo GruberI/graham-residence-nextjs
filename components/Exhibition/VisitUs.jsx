@@ -9,7 +9,7 @@ const posts = [
     description:
       "Our office and showroom is open Monday through Saturday by appointment",
     imageUrl:
-      "https://ipfs.filebase.io/ipfs/QmZ8cbeqVMQb9KLVUznbbG1ZhAkCYzqqjW9JzkCWGPcgd6",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/003.jpg",
     date: "Mar 16, 2020",
     buttonText: "REQUEST AN APPOINTMENT",
   },
@@ -21,7 +21,7 @@ const posts = [
     description:
       "A mid-century modern retreat where the lines between home and gallery are blurred",
     imageUrl:
-      "https://ipfs.filebase.io/ipfs/QmNVyoKRAfJ86QBPSidzSQhA5Ecuth4G3A1me3i3XEAmqy",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/001.jpg",
     date: "Mar 16, 2020",
     buttonText: "REQUEST TO BOOK",
   },

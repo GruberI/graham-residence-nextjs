@@ -9,7 +9,7 @@ export default function Header() {
           <div>
             <div className="aspect-[7/6] overflow-hidden bg-black-100">
               <img
-                src="https://ipfs.filebase.io/ipfs/QmXxDzFFdxJwH15qfzL8UFbvYwkRjhPCvZ4ptXQ9NiNx4F/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW"
+                src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW.jpg"
                 alt="The graham residence nestled in the rocks at dawn."
                 className="h-full w-full object-cover object-center"
               />

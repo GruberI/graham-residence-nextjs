@@ -18,7 +18,7 @@ const text =
 const images = [
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmRCwsnbLzYRuaF68NT3zewf6RMXcV4cb4v6KpksiWPVaH/QmZiaUKpt7EHwUWVbJbyCQgBWgGicYjxkTqDHUZdm7pvfy",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/005.jpg",
   },
   {
     imgSrc:
@@ -31,13 +31,13 @@ const images = [
 ];
 
 const oneImageComponentSrc =
-  "https://ipfs.filebase.io/ipfs/QmRCwsnbLzYRuaF68NT3zewf6RMXcV4cb4v6KpksiWPVaH/QmZiaUKpt7EHwUWVbJbyCQgBWgGicYjxkTqDHUZdm7pvfy";
+  "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/005.jpg";
 
 export default async function About() {
   return (
     <div className="overflow-x-hidden">
       <PageHeaderHero
-        imgSrc="https://ipfs.filebase.io/ipfs/QmYTuXismQUCXVPb6MTPNd1AMwVbi7BjQRYAG6gtHQHymP/QmNqmfpcLzdfj9CeVsURAbP8ZfWGUndiRifrHAp8veYiwa"
+        imgSrc="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/002.jpg"
         title="Graham Collective"
         smallTitle="About the"
         classes={{

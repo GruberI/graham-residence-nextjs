@@ -7,7 +7,7 @@ const posts = [
     href: "/residence",
     description: "Nestled in the boulders of Yucca Valley.",
     imageUrl:
-      "https://ipfs.filebase.io/ipfs/QmXxDzFFdxJwH15qfzL8UFbvYwkRjhPCvZ4ptXQ9NiNx4F/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/QmQH3YRaFjaqw6e9EVY6iGztdDxGZnu3Q5tJEKaAi6NoTW.jpg",
     date: "Mar 16, 2020",
     buttonText: "LEARN MORE",
   },

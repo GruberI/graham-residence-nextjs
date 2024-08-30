@@ -18,30 +18,30 @@ const text =
 const imagesFirst = [
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmP14gcpg6Nf26kZexkQT6bZNYBfanhg1G5hyijes3NjE8",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/_DSC2009copy-(1).jpg",
   },
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmV39MLBLsMtxi7ZMUA7CUaP8uPbsP6BqfUBVn6P7SYaLh/QmYRtJQwPp1KwczWak8p61h8v6wydHTAwP3sdAEAASuYm3",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/005.jpg",
   },
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmZyRYS1GjGNB3EMCFieDVyzmtYrdBKA5KdcEx93abvR21",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/007.jpg",
   },
 ];
 
 const imagesSecond = [
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/Qmbd4FWxjiDw2VzcsjTVXZnhLRwVjQJF1w42KeCaLL5PfN/Qmb2NMXEKqzVVNYurkxEYvrABw5Pn1RhzWdtt4Wggp96eg",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/008.jpg",
   },
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmTkXg3TM3XrvuAVRM4x3ztaKpri9MRbLGajFKMepXAiTG/QmbHzkjhzmdjgBpkxzg1jmrLp5bkLEhFGCjK2czduPsiWS",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/009.jpg",
   },
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmZ3zm4PhNqiNEMgVg2ZuebquKVYwDkdKQhJFjLrvfzfA8",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/006.jpg",
   },
 ];
 

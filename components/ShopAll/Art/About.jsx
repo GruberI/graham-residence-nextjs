@@ -34,7 +34,7 @@ const aboutInfo = [
     artist: "David Matthew King",
     href: "/gallery/david-marcel",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmNW873L58XpDxbbwUoibxVcBvKssP3JcVu1bFxNB9aqyv",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/DavidMatthewKing/david-matthew-king.jpg",
     imgAltText: "David Matthew King",
     text: "King unleashes his creative freedom by combining his poetic sense of rhythm and elision with self-imposed constraints. He limits his palette to predominantly primary colors and the deliberate omission of black and white. This constellation of solid colored and humble components suggests the reduction of art to its basic material elements. King stages oppositions between clear contours of forms and freshness of the unprimed canvas that left in the raw material state become absolutely necessary in the same way silence is necessary to music, conversation, thought or reflection. David Matthew King was born in San Pedro, California. After moving to New York City in 2004 to pursue a career in songwriting, he began studying painting and drawing at City University of New York where he earned a Bachelor's Degree in English Literature with a minor in Studio Art. After teaching English for eight years, King resumed studying painting, drawing, collage, color theory and abstraction technique at the Art Students League of New York. He has had several solo and two-person exhibitions across the US and Europe.",
   },
@@ -43,7 +43,7 @@ const aboutInfo = [
     artist: "Marcel Rozek",
     href: "/gallery/david-marcel",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmZv3MNH2ynMf3u9guCgxgqov8GcfiB3pUXvYp4aZvNjpp",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/MarcelRozek/marcel-rozekw.jpg",
     imgAltText: "Marcel Rozek",
     text: "Marcel Rozek (b. 1992, Akron, Ohio ) creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School. He is a process oriented painter, working by pouring diluted oil paint onto a raw unprimed canvas, allowing interactions between the materials he uses and the space the work exists within to become the subject. With this technique, pools of color spread and blend together before permeating the canvas. Organic shapes naturally take form, and when colors mix, they absorb at different rates, creating new color palettes and dreamy spectral shapes. Rozek sees in his art a reflection of himself, with each piece conveying a different meaning. Rozek's message is one that compels the viewer to reflect on their own vision of the world.",
   },

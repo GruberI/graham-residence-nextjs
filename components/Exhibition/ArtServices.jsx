@@ -19,8 +19,8 @@ export default function ArtServices() {
           <div className="grid grid-cols-1 items-center gap-x-2 gap-y-6 sm:gap-y-16 lg:grid-cols-2">
             <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
               <img
-                src="https://ipfs.filebase.io/ipfs/QmQ1YMea1LndtBE6WQBS8Y9NBpFjmJiorfmNu14uVNSTY1/Qmf8dtvrCjLHQrmJQ5aLiraxfz9BznfpSnJqHEmnXbm4P5"
-                alt="Kyle Steed painting in The Graham Residence living room during the day."
+                src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/007.jpg"
+                alt="Marcel Rozek Piece Behind Crib."
                 className="h-full w-full object-cover object-center"
               />
             </div>
@@ -80,8 +80,8 @@ export default function ArtServices() {
             </div>
             <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
               <img
-                src="https://ipfs.filebase.io/ipfs/QmYRLnrT8zADbjBXsjSqV9mA97Bw1HW6EDXonPHuMSKZ6h"
-                alt="Kyle Steed painting in The Graham Residence living room during the day."
+                src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/004.jpg"
+                alt="Heather Day in NYC."
                 className="h-full w-full object-cover object-center"
               />
             </div>
@@ -91,8 +91,8 @@ export default function ArtServices() {
           <div className="grid grid-cols-1 items-center gap-x-2 gap-y-6 sm:gap-y-16 lg:grid-cols-2 inline-flex lg:hidden">
             <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
               <img
-                src="https://ipfs.filebase.io/ipfs/QmYRLnrT8zADbjBXsjSqV9mA97Bw1HW6EDXonPHuMSKZ6h"
-                alt="Kyle Steed painting in The Graham Residence living room during the day."
+                src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/004.jpg"
+                alt="Heather Day in NYC."
                 className="h-full w-full object-cover object-center"
               />
             </div>
@@ -128,7 +128,7 @@ export default function ArtServices() {
           <div className="grid grid-cols-1 items-center gap-x-2 gap-y-6 sm:gap-y-16 lg:grid-cols-2">
             <div className="aspect-square overflow-hidden bg-black-100 w-[90%] h-[90%]">
               <img
-                src="https://ipfs.filebase.io/ipfs/QmUjUzzJEa6VB3fZHRqUSdbMGcg1kMqhYuQa619JDW2UTN/QmVpb1BPJBQSvonDcnoCCvRybgUoB788toom51D4C742D9"
+                src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/QmVpb1BPJBQSvonDcnoCCvRybgUoB788toom51D4C742D9.png"
                 alt="Kyle Steed painting in The Graham Residence living room during the day."
                 className="h-full w-full object-cover object-center"
               />
