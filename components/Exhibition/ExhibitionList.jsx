@@ -6,7 +6,7 @@ const artistExhibitions = [
     artistSecond: "Marcel Rozek",
     name: "CONVERGENCE",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmR4MdakCJMN97PTbavV7Lj3NCoY2sDAF5PEPmDPtgPwE9/RackMultipart20240501-85-1ky2nl0.jpg",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/006.jpg",
     imgAltText: "David Mathew King & Marcel Rozek at the graham residence",
     href: "/gallery/david-marcel",
     date: "May 2024 - July 2024",
@@ -17,7 +17,7 @@ const artistExhibitions = [
     artist: "Kyle Steed",
     name: "A QUIET NOISE",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmZUP4GfbWpnwySsEh2jJ1KdG96dPEK7fSnoGRK7AeCaZc/QmdFrNgmbK3FwH8DTjzPQJEXfk8CHXBeb72HSe37ArVRgW",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/005.jpg",
     imgAltText:
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",

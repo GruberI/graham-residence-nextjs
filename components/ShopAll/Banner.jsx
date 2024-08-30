@@ -12,7 +12,7 @@ const bannerInfo = [
     handle: "thai-mainhard",
     artist: "Thai Mainhard",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmdajQkhoMRCbL1kXwsphD6QYhcEGYpdqD9wvZwwmuQpay",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/ThaiDesertSpring/005.jpg",
     imgAltText: "Thai Mainhard sitting on stool surrounded by her paintings",
     text: "Thai Mainhard is a Brazilian born artist based in Los Angeles. In her works she encounters human nature, exploring happiness, frustration, surprise, connection, spirituality, and overall thinking processing.",
     type: "art",

@@ -4,7 +4,7 @@ const artistExhibitions = [
     artist: "Kyle Steed",
     name: "A QUIET NOISE",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmZUP4GfbWpnwySsEh2jJ1KdG96dPEK7fSnoGRK7AeCaZc/QmdFrNgmbK3FwH8DTjzPQJEXfk8CHXBeb72HSe37ArVRgW",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/005.jpg",
     imgAltText:
       "Painting by Kyle Steed hung in living room of Graham Residence",
     href: "/gallery/kyle-steed",
@@ -15,7 +15,7 @@ const artistExhibitions = [
     artist: "Thai Mainhard",
     name: "DESERT SPRING",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmWjsuayG2e1Nt996UGJEXEZGvd9x3DCqe9FyijEUxwQyD",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/ThaiDesertSpring/004.jpg",
     imgAltText:
       "Various paintings by Thai resting on porch at the graham residence",
     href: "/gallery/thai-mainhard",

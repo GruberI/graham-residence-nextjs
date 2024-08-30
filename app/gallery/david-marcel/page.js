@@ -14,14 +14,14 @@ const quote = {
 
 const marcelBio = {
   imgSrc:
-    "https://ipfs.filebase.io/ipfs/QmZv3MNH2ynMf3u9guCgxgqov8GcfiB3pUXvYp4aZvNjpp",
+    "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/MarcelRozek/marcel-rozekw.jpg",
   title: "Marcel Rozek (b. 1992, Akron, Ohio)",
   text: "Rozek, who now resides in Los Angeles, creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School. Rozek is a process oriented painter, working by pourin diluted oil paint onto raw unprimed canvas, allowing interactions between the materials he uses and the space the work exists within to become th subject. With this technique, pools of color spread out and blend together before permeating the canvas. Organic shapes naturally tak form and when colors mix, they absorb at different rates, resulting in new color palettes and dreamy, spectral shapes. Roze sees in his ar a reflection of himself, with each piece conveying a different meaning. Rozek’s message is one tha compels the viewer to reflect on their ow vision of the world. Rozek graduated from Ohio’s Myers School of Art in 2017 earning a bachelor’s degree in studio art, with a minor i drawing and painting. Since finishing his undergraduat degree, Rozek’s artwork has been displayed in Istanbul, London, and Amsterdam",
 };
 
 const davidBio = {
   imgSrc:
-    "https://ipfs.filebase.io/ipfs/QmXEkQboKC81Tu9k63hnzYetB1Fgj8yJMDDxq9wKh5nnU8",
+    "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/DavidMatthewKing/David-Matthew-King2w.jpg",
   title: "David Matthew King (b. 1981, Southern California)",
   text: "David Matthew King was born in San Pedro, California. After moving to New York City in 2004 to pursue a career in songwriting, he began studying painting and drawing at the City University of New York where he earned a Bachelor’s Degree in English Literature with a minor in Studio Art. After teaching English for 8 years King resumed study in painting, drawing, collage, color theory and abstraction technique at the Art Students League of New York. He has had several solo and two-person exhibitions across the US and Europe. King unleashes his creative freedom by combining his poetic sense of rhythm and elision with self-imposed constraints. The artist limits his palette to predominantly elementary colors with the deliberate omission of black and white. This constellation of solid colored, humble components suggests the reduction of art to its basic material elements. King stages oppositions between clear contours of forms and freshness of the unprimed canvas, that left in the raw material state becomes absolutely necessary in the same way silence is necessary to music, conversation, thought or reflection.",
 };

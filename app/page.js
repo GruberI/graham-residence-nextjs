@@ -23,11 +23,11 @@ const imagesFirst = [
   },
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmbVDJcsqbLmaA1bZTL8AC5dS59PFqG9rmeZQkKpuPHt8b",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Homepage/lkw.jpg",
   },
   {
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmUEvAXAGLRsykuXrfvJUZEQJ8Hbv2gmioa3YQFN6d3Mjw/QmXPYP1vawqAM1cDTtt3Suqh8NgtPZdSPZ5zdfctddDP5M",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Homepage/morning.jpeg",
   },
 ];
 

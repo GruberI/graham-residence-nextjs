@@ -8,8 +8,8 @@ export default function TermsConditions() {
           <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
             <img
               className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
-              src="https://ipfs.filebase.io/ipfs/QmV4sFB6rCVrjyofcPiU7FgWsh6HPth5yBdjPTdh7rgTPu/QmUtaJJtknkRpsNKJfJyYkjKyFahqZ1eQhm1J8xKyg2z8h"
-              alt="joshua tree in desert at night"
+              src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Terms/001.jpgh"
+              alt="books"
             />
           </div>
         </div>

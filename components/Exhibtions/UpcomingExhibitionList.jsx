@@ -12,12 +12,12 @@ const artistExhibitions = [
     link: "/gallery/tdwhy",
   },
   {
-    artist: "TBA",
-    name: "TBA",
+    artist: "To Be Announced",
+    name: "",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmZyc5oudsFP1spjHD2ANSHgpKNwRDvsqdE2e4sPZJmFNS",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/0270__DSC3122.jpg",
     imgAltText: "TBA",
-    date: "Graham Residence, November 15th - January 15th",
+    date: "Winter Exhibition",
     link: "/exhibitions",
   },
 ];

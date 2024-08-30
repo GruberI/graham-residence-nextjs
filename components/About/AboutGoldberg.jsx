@@ -27,7 +27,7 @@ export default function AboutGoldberg() {
 
           <div className="rows-span-1 sm:rows-span-2 w-[450px] h-[600px] m-auto">
             <img
-              src="https://ipfs.filebase.io/ipfs/QmZ9kYjVu8B45JEDmR4MJgoMNPeGVH3AxK91bgTnEEsHTs/QmbJ6vqa8H36GGDJKHH1pw9zgQrr6ePMpENFijLTNPBQxj"
+              src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/006.jpg"
               alt="linds"
               className="h-full w-full object-cover mt-10 sm:mt-0"
             />
@@ -91,7 +91,7 @@ export default function AboutGoldberg() {
 
       <div className="w-[350px] h-[500px] m-10 m-auto sm:hidden">
         <img
-          src="https://ipfs.filebase.io/ipfs/QmZ9kYjVu8B45JEDmR4MJgoMNPeGVH3AxK91bgTnEEsHTs/QmbJ6vqa8H36GGDJKHH1pw9zgQrr6ePMpENFijLTNPBQxj"
+          src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/006.jpg"
           alt=""
           className="h-full w-full object-cover"
         />
