@@ -10,11 +10,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cormorant: [`"Comorant, serif"`]
-       },
+        cormorant: ['"Cormorant", serif'], // Cormorant font
+        libre: ['"Libre Baskerville"', 'serif'], // Libre Baskerville font
+        ebgaramond: ['"EB Garamond"', 'serif'], // EB Garamond font added here
+        sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'], // Example of a common sans-serif stack
+        mono: ['"Courier New"', 'Courier', 'monospace'], // Example of a monospace stack
+        montserrat: ['"Montserrat"', 'sans-serif'],
+      },
       animation: {
         fadeTwo: 'fadeOut 2s',
-        fadeFour: 'fadeOut 4s'
+        fadeFour: 'fadeOut 4s',
       },
       keyframes: theme => ({
         fadeOut: {
@@ -22,13 +27,13 @@ module.exports = {
           '100%': { opacity: theme('opacity.1') },
         },
       }),
-      color: {
+      colors: {
         eggnog: '#93535f',
       },
     },
     letterSpacing: {
-      tightest: '-.185em'
-    }
+      tightest: '-.185em',
+    },
   },
   plugins: [],
 };

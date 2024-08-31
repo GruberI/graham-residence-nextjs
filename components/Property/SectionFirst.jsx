@@ -21,7 +21,7 @@ export default function SectionFirst() {
               <Fade>
                 <div className="flex flex-col m-auto p-2 sm:my-4 lg:my-0 md:p-10 mx-0 sm:mx-16 md:mx-2 lg:mx-0">
                   <div className="pb-6 pt-6 sm:pt-10 lg:pt-0">
-                    <h2 className="lg:text-4xl text-[23px]">
+                    <h2 className="lg:text-xl font-light text-gray-500 text-[23px]">
                       THE GRAHAM RESIDENCE
                     </h2>{" "}
                     <h3 className="sm:text-3xl text-xl italic font-light">
@@ -29,7 +29,7 @@ export default function SectionFirst() {
                     </h3>
                   </div>
                   <div className="pb-8">
-                    <p className="tracking-wide text-xl sm:text-2xl">
+                    <p className="tracking-wide text-l sm:text-xl">
                       A destination where the lines between home and gallery are
                       blurred. Located near Joshua Tree National Park and
                       nestled into the boulders on 20 acres of pristine land,
