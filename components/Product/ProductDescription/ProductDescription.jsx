@@ -181,9 +181,8 @@ export default function ProductDescription({ product }) {
                 {/* Combine DESCRIPTION and SHIPPING & HANDLING into one Prose component */}
 <Prose
   className="mb-3 text-lg leading-normal dark:text-slate-900 dark:bg-white"
-  html={`${productJsonLd.description}<br /> ${shippingHandlingDescription}`}
+  html={`${productJsonLd.description}<br /> `}
 />
-                <br></br>
 
                 {/* Add To Cart Button */}
                 <AddToCart
