@@ -2,17 +2,19 @@
 // import { Slide } from "react-awesome-reveal";
 import { Fade } from "react-awesome-reveal";
 
-export default function SectionFirst() {
+export default function SectionFirst({ isContentVisible, handleEnterClick }) {
+
   return (
+    
     <div className="w-full" id="property">
-      <div className="m-auto pt-10 sm:pt-0">
+      <div className="max-w-7xl m-auto pt-10 sm:pt-0 pb-6">
         <div className="mx-auto px-4 sm:px-6 lg:px-6">
           <div className="grid grid-cols-1 items-center gap-x-8 lg:grid-cols-2">
             <div>
-              <div className="overflow-hidden bg-black-100 aspect-[1/1] sm:py-5 lg:py-5 sm:px-20 lg:px-16">
+              <div className="overflow-hidden bg-black-100 aspect-[4/5]">
                 <img
-                  src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/alex-maceda.jpg"
-                  alt="Alex Maceda Painting"
+                  src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/AlexMacedaTheDesertWillHoldYou/the-desert-will-hold-you3.jpg"
+                  alt="The Desert Will Hold You"
                   className="object-cover h-full w-full"
                 />
               </div>
@@ -29,11 +31,18 @@ export default function SectionFirst() {
                   </div>
                   <div className="pb-8">
                     <p className="tracking-wide text-xl sm:text-2xl">
-                   The Desert Will Hold You by Alex Maceda
+                   The Desert Will Hold You <br></br> by Alex Maceda
                     </p>
+                    
                   </div>
                   <div className="flex items-center gap-x-6">
-                  
+                 {/* <button
+  onClick={handleEnterClick}
+  className="underline bg-white-500 text-black rounded"
+>
+  Enter
+  </button> */}
+
                   </div>
                 </div>
               </Fade>
