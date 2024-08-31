@@ -54,7 +54,7 @@ export function AddToCart({
         });
       }}
       className={clsx(
-        "m-auto relative flex lg:w-11/12 items-center justify-center border border-black px-8 py-3 text-base font-light  text-black hover:bg-black hover:black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium sm:w-full",
+        "m-auto relative flex lg:w-11/12 items-center justify-center border border-black px-4 py-2 text-base font-light  text-black hover:bg-black hover:black focus:outline-none focus:ring-2 focus:ring-stone-600 focus:ring-offset-2 focus:ring-offset-black-50 hover:text-white hover:font-medium sm:w-full",
         {
           "cursor-not-allowed opacity-60 hover:opacity-60":
             !availableForSale || !selectedVariantId,
