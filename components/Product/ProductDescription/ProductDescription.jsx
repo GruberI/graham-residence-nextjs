@@ -68,7 +68,7 @@ export default function ProductDescription({ product }) {
     },
   };
 
-  const shippingHandlingDescription =
+  const artistBios =
     product.vendor === "Sophie Lou Jacobsen"
       ? "Products will ship within 2-5 business days. Please allow 5-7 days for Standard shipping."
       : product.vendor === "Atelier Saucier"
@@ -82,6 +82,20 @@ export default function ProductDescription({ product }) {
       : // Continue with other vendors as needed...
         "Shipping, local delivery and pickup options vary and will be viewable on the cart checkout page. <br><br> For questions or expedited shipping please contact us at info@graham-collective.com.";
 
+    const artistQuotes =
+        product.vendor === "Sophie Lou Jacobsen"
+          ? "Products will ship within 2-5 business days. Please allow 5-7 days for Standard shipping."
+          : product.vendor === "Atelier Saucier"
+          ? "Products will ship within 2-5 business days. Please allow 5-7 days for Standard shipping."
+          : product.vendor === "Loll Designs"
+          ? "Products will ship within 3-5 business days via FedEx standard. Most Loll furniture arrives flat-packed but is easy to assemble."
+          : product.vendor === "West-Bourne"
+          ? "Products will ship within 3-5 business days. Please allow 5-7 days for Standard shipping."
+          : product.vendor === "Thai Mainhard"
+          ? "Local pickup is available in Costa Mesa. Drop us a note to arrange pickup at info@graham-collective.com. <br><br> Artwork ships within 2 weeks. <br><br> If you have a specific deadline, let us know and we’ll do our best to accommodate. For expedited shipping, or other questions, contact info@graham-collective.com. <br><br><i> All sales are final."
+          : // Continue with other vendors as needed...
+            "Shipping, local delivery and pickup options vary and will be viewable on the cart checkout page. <br><br> For questions or expedited shipping please contact us at info@graham-collective.com.";
+    
   return (
     <div className="bg-white pt-2 dark:text-black dark:bg-white">
       <script
@@ -91,7 +105,7 @@ export default function ProductDescription({ product }) {
         }}
       />
       <div className="mx-auto max-w-2xl px-0 sm:py-24 py-14 sm:px-0 lg:max-w-7xl lg:px-0">
-        <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-20">
+        <div className="py-10 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-20">
           {/* Mobile Carousel */}
           <div className="sm:hidden">
             <SimpleSlider images={product.images} />
@@ -165,7 +179,7 @@ export default function ProductDescription({ product }) {
               </p>
             </div>
             <Link href={`/${currentType}/${restructuredVendor}`}>
-              <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-6 mb-20">
+              <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-2 mb-10">
                 {product.vendor.toUpperCase()}
               </p>
             </Link>
@@ -181,17 +195,30 @@ export default function ProductDescription({ product }) {
                 {/* Combine DESCRIPTION and SHIPPING & HANDLING into one Prose component */}
 <Prose
   className="mb-3 text-lg leading-normal dark:text-slate-900 dark:bg-white"
-  html={`${productJsonLd.description}<br /> `}
+  html={`${productJsonLd.description} <br /> `}
 />
-
                 {/* Add To Cart Button */}
                 <AddToCart
                   variants={product.variants}
                   availableForSale={product.availableForSale}
                   type={currentType}
                 />
+            <br>
+            </br>
+              
               </div>
+  {/*            <div>
+              <Prose
+  className="mb-3 text-lg leading-normal dark:text-slate-900 dark:bg-white"
+  html={`${artistQuotes} `}
+/><br></br>
+                <Prose
+  className="mb-3 text-lg leading-normal dark:text-slate-900 dark:bg-white"
+  html={`${artistBios} `}
+/>
+                      </div> */}
             </section>
+            
           </div>
         </div>
       </div>

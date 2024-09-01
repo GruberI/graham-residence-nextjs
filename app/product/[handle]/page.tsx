@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import ProductDescription from "@/components/Product/ProductDescription/ProductDescription";
 import { HIDDEN_PRODUCT_TAG } from "@/lib/constants";
 import { getProduct } from "@/lib/shopify";
+import aboutInfo from "@/components/ShopAll/Art/About";
 
 export const runtime = "edge";
+
 
 export async function generateMetadata({
   params,
@@ -18,6 +20,7 @@ export async function generateMetadata({
 
   const { url, width, height, altText: alt } = product.featuredImage || {};
   const indexable = !product.tags.includes(HIDDEN_PRODUCT_TAG);
+  // const artistBio = aboutInfo.find((artist) => artist.handle === params.handle);
 
   return {
     title: product.seo.title || product.title,
