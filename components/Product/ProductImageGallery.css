@@ -1,0 +1,58 @@
+/* Main container for the gallery */
+.product-image-gallery .gallery-container {
+    display: flex; /* Flex layout to position thumbnails beside main image */
+    gap: 10px; /* Adjust spacing between thumbnails and main image */
+  }
+  
+  /* Thumbnails Swiper */
+  .product-image-gallery .thumbs-swiper {
+    width: 100px; /* Set a fixed width for the thumbnail container */
+    max-height: 620px; /* Match the main image height */
+    overflow: hidden; /* Hide overflow for cleaner layout */
+  }
+  
+  /* Thumbnail images */
+  .product-image-gallery .thumbnail-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: 2px solid transparent; /* Default border style */
+    transition: border-color 0.3s; /* Smooth border change on selection */
+  }
+  
+  /* Highlight the active thumbnail */
+  .product-image-gallery .swiper-slide-thumb-active .thumbnail-image {
+    border-color: #000; /* Black border for the active thumbnail */
+  }
+  
+  /* Main Swiper container */
+  .product-image-gallery .main-swiper {
+    flex-grow: 1; /* Allow main image container to grow */
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Style individual slides */
+  .product-image-gallery .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .product-image-gallery .product-image {
+    width: 91.67%; /* Equivalent to w-11/12 */
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the slide area */
+    aspect-ratio: 3 / 4; /* Maintain 3:4 aspect ratio */
+  }
+  
+  @media (min-width: 640px) {
+    .product-image-gallery .product-image {
+      height: 620px; /* Equivalent to sm:h-[620px] */
+      width: 83.33%; /* Equivalent to sm:w-10/12 */
+      object-position: center; /* Centers the image */
+    }
+  }

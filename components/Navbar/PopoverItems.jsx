@@ -62,7 +62,7 @@ const navigation = {
         { name: "Atelier Saucier", href: "/home/atelier-saucier" },
         { name: "Sophie Lou Jacobsen", href: "/home/sophie-lou-jacobsen" },
         { name: "Loll Designs", href: "/home/loll-designs" },
-        { name: "West Bourne", href: "/home/west-bourne" },
+       // { name: "West Bourne", href: "/home/west-bourne" },
         { name: "Shop All", href: "/home" },
       ],
       shop: [],

@@ -29,6 +29,7 @@
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "supports-color": "^9.4.0",
+    "swiper": "^11.1.12",
     "uri-js": "^4.2.2"
   },
   "devDependencies": {
