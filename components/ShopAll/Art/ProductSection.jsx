@@ -89,11 +89,6 @@ export default function ProductSection({ products, productHandle }) {
         <section aria-labelledby="products-heading" className="pb-16 pt-10">
           <ProductGridThree products={firstSixProducts} />
 
-          {products.length > 6 ? (
-            <Banner title={productHandle} type={"art"} />
-          ) : (
-            ""
-          )}
 
           <ProductGridThree products={remainingProducts} />
         </section>

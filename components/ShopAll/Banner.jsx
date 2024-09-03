@@ -1,4 +1,6 @@
-const bannerInfo = [
+import Link from 'next/link';
+
+export const bannerInfo = [
   {
     handle: "kyle-steed",
     artist: "Kyle Steed",
@@ -23,7 +25,7 @@ const bannerInfo = [
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmcHQJjQw1tbvCbhPkq8SXpfzhJ5WSLpk84kWihd51WisR/QmTHRhpRttN8oEqUAGkSUc6fDRQLnnHoxKWgQ2yvzURdV5",
     imgAltText: "Yoni Goldberg behind the camera",
-    text: "Yoni Goldberg is a Los Angeles based photographer and co-owner of The Graham Residence.",
+    text: "Yoni Goldberg is a Los Angeles based photographer and co-owner of The Graham Residence and Graham Collective.",
     type: "art",
   },
   {
@@ -89,11 +91,11 @@ export default function Banner({ title, type }) {
       {bannerInfo.map((banner, i) => {
         return banner.handle === title ? (
           <div
-            className="m-auto border-t border-b border-black max-w-7xl"
+            className="m-auto border-t border-black max-w-7xl"
             key={i}
           >
-            <div className="mx-auto px-4 sm:px-6 lg:px-6 my-10 sm:my-16 pt-6 sm:pb-6">
-              <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 lg:grid-cols-2">
+            <div className="mx-auto px-4 sm:px-6 lg:px-6 my-5 sm:my-6 pt-6 sm:pb-2">
+              <div className="grid grid-cols-1 items-center gap-x-10 gap-y-4 lg:grid-cols-2">
                 <div>
                   <div className="overflow-hidden bg-black-100 aspect-[4/3]">
                     <img
@@ -104,7 +106,7 @@ export default function Banner({ title, type }) {
                   </div>
                 </div>
                 <div>
-                  <div className="m-auto space-y-4 sm:space-y-6 flex flex-col justify-center items-center w-11/12">
+                  <div className="m-auto space-y-2 sm:space-y-2 flex flex-col justify-center items-center w-11/12">
                     <p>{type === "art" ? "MEET" : "WHAT WE LOVE ABOUT"}</p>
                     <h1 className="sm:text-5xl text-4xl sm:font-thin font-semibold">
                       {banner.artist}
@@ -114,17 +116,13 @@ export default function Banner({ title, type }) {
                       {banner.text}
                     </p>
                     {type === "art" ? (
-                      <a
-                        onClick={() => handleClickScroll("shopAllAbout")}
-                        className="text-black hover:text-black-500 flex justify-center pt-4"
-                      >
-                        <button
-                          type="submit"
-                          className="max-w-md text-base font-light text-black underline underline-offset-8 hover:text-neutral-500 sm:mb-0 mb-6"
-                        >
-                          LEARN MORE
-                        </button>
-                      </a>
+                      <Link href={`/art/${banner.handle}`} className="text-black hover:text-black-500 flex justify-center pt-4">
+                          <button
+                            type="submit"
+                            className="max-w-md text-base font-light text-black underline underline-offset-8 hover:text-neutral-500 sm:mb-0 mb-6"
+                          >
+ {`MORE BY ${banner.artist.toUpperCase()}`}                          </button>
+                      </Link>
                     ) : null}
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+// this affects the grid of products
 import ImageTransition from "./ImageTransition";
 import ImageTransitionPhoto from "./ImageTransitionPhoto";
 import Link from "next/link.js";

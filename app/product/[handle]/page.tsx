@@ -4,7 +4,6 @@ import ProductDescription from "@/components/Product/ProductDescription/ProductD
 import { HIDDEN_PRODUCT_TAG } from "@/lib/constants";
 import { getProduct } from "@/lib/shopify";
 import aboutInfo from "@/components/ShopAll/Art/About";
-
 export const runtime = "edge";
 
 
