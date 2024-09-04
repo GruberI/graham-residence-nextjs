@@ -18,7 +18,8 @@ export default function SectionFirst() {
         </div>
         <div className="flex justify-center items-center">
           <Fade>
-            <div className="flex flex-col items-center text-center p-0 sm:my-4 lg:my-0 md:p-10">
+            {/* Added padding on the sides for mobile using px-4 */}
+            <div className="flex flex-col items-center text-center p-0 sm:my-4 lg:my-0 md:p-10 px-4">
               <div className="pb-2 pt-2 sm:pt-2 lg:pt-0">
                 <h2 className="lg:text-xl font-light text-gray-500 text-[23px]">
                   THE GRAHAM RESIDENCE
@@ -29,16 +30,18 @@ export default function SectionFirst() {
               </div>
               <div className="pb-8">
                 <p className="tracking-wide text-l sm:text-xl">
-                  A destination where the lines between home and gallery are
-                  blurred. Located near Joshua Tree National Park and nestled
-                  into the boulders on 20 acres of pristine land, this is Mojave
-                  Desert living at its finest.
+                  where the lines between home and gallery are blurred. Located
+                  near Joshua Tree National Park and nestled into the boulders
+                  on 20 acres of pristine land, this is Mojave Desert living at
+                  its finest.
                 </p>
               </div>
               {/* Flex row applied to keep buttons side by side on all devices */}
               <div className="flex flex-row items-center gap-x-6">
                 <button
-                  onClick={() => (window.location.href = "/residence#property-book")}
+                  onClick={() =>
+                    (window.location.href = "/residence#property-book")
+                  }
                   className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white"
                 >
                   BOOK A STAY
@@ -55,7 +58,8 @@ export default function SectionFirst() {
         </div>
       </div>
       {/* Adding a thin black border for consistency */}
-      <div className="w-full border-b border-black"></div>
+      <div className="w-full border-b border-black mt-6 sm:mt-12"></div>{" "}
+      {/* Further increased margin top */}
     </div>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 
 export const bannerInfo = [
@@ -52,7 +53,7 @@ export const bannerInfo = [
     imgSrc:
       "https://ipfs.filebase.io/ipfs/QmSi2SaJWbxooVAaHFzPks62jPcFS7KFPPd9SHFsrPfAxp/QmfTzU3PKJ98Ghrfm4C2JwYnscaijQuErCemtiCCP9ybZz",
     imgAltText: "Red Loll Design chair with matching outdoor side table",
-    text: "Based in Duluth, MN, Loll Designs is a designer/manufacturer of durable, all-weather, outdoor furniture and accessories made with HDPE (high density polyethylene), partially from recycled plastics like milk jug containers and shampoo bottles. Using thoughtful, original designs and unique materials, Loll creates innovative, fun and high­ quality products proudly crafted in the USA.",
+    text: "Loll products are a staple of The Graham Residence. They design and manufacture durable, all-weather, outdoor furniture with great silhouttes utilizing recycled plastics. Designed and manufactured in the US.",
     type: "home",
   },
   {
@@ -64,7 +65,6 @@ export const bannerInfo = [
     text: "David Mathew King unleashes his creative freedom by combining his poetic sense of rhythm and elision with self-imposed constraints.",
     type: "art",
   },
-  ,
   {
     handle: "marcel-rozek",
     artist: "Marcel Rozek",
@@ -74,7 +74,6 @@ export const bannerInfo = [
     text: "Marcel Rozek creates his multilayered compositions by employing a staining technique popularized by the early abstractionists and artists of the Washington Color School.",
     type: "art",
   },
-
 ];
 
 const handleClickScroll = (id) => {
@@ -90,10 +89,7 @@ export default function Banner({ title, type }) {
     <div className={`mb-20 ${title === undefined ? "hidden" : "block"}`}>
       {bannerInfo.map((banner, i) => {
         return banner.handle === title ? (
-          <div
-            className="m-auto border-t border-black max-w-7xl"
-            key={i}
-          >
+          <div className="m-auto border-t border-black max-w-7xl" key={i}>
             <div className="mx-auto px-4 sm:px-6 lg:px-6 my-5 sm:my-6 pt-6 sm:pb-2">
               <div className="grid grid-cols-1 items-center gap-x-10 gap-y-4 lg:grid-cols-2">
                 <div>
@@ -116,18 +112,24 @@ export default function Banner({ title, type }) {
                       {banner.text}
                     </p>
                     {type === "art" ? (
-                      <Link href={`/art/${banner.handle}`} className="text-black hover:text-black-500 flex justify-center pt-4">
-                          <button
-                            type="submit"
-                            className="max-w-md text-base font-light text-black underline underline-offset-8 hover:text-neutral-500 sm:mb-0 mb-6"
-                          >
- {`MORE BY ${banner.artist.toUpperCase()}`}                          </button>
+                      <Link
+                        href={`/art/${banner.handle}`}
+                        className="text-black hover:text-black-500 flex justify-center pt-4"
+                      >
+                        <button
+                          type="submit"
+                          className="max-w-md text-base font-light text-black underline underline-offset-8 hover:text-neutral-500 sm:mb-0 mb-6"
+                        >
+                          {`MORE BY ${banner.artist.toUpperCase()}`}
+                        </button>
                       </Link>
                     ) : null}
                   </div>
                 </div>
               </div>
             </div>
+            {/* Divider line added below the content */}
+            <div className="border-b border-black mt-10"></div>
           </div>
         ) : null;
       })}
