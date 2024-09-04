@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const artistExhibitions = [
- 
   {
     artist: "Alex Maceda",
     name: "The Desert Will Hold You",
@@ -30,28 +29,24 @@ export default function UpcomingExhibitionList() {
           Upcoming Exhibitions
         </h1>
       </div>
-      <div className="grid grid-cols-1 items-center gap-x-10 gap-y-16 sm:grid-cols-2 px-4 sm:px-2 md:px-0">
+      <div className="grid grid-cols-1 items-start gap-x-10 gap-y-16 sm:grid-cols-2 px-4 sm:px-2 md:px-0">
         {artistExhibitions.map((exhibit, i) => {
           return (
             <div className="flex flex-col" key={i}>
-              <div className="aspect-[7/5] overflow-hidden" key={i}>
-              <Link href={exhibit.link}>
-                <img
-                  src={exhibit.imgSrc}
-                  alt={exhibit.imgAltText}
-                  className="h-full w-full object-cover object-center"
-                />
+              <div className="aspect-[7/5] overflow-hidden">
+                <Link href={exhibit.link}>
+                  <img
+                    src={exhibit.imgSrc}
+                    alt={exhibit.imgAltText}
+                    className="h-full w-full object-cover object-center"
+                  />
                 </Link>
               </div>
               <Link href={exhibit.link}>
-              <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
-              
+                <h2 className="sm:text-2xl text-xl pt-4">{exhibit.name}</h2>
                 <p className="text-lg pt-1 hover:text-zinc-500">{exhibit.artist}</p>
               </Link>
-              <p className="tracking-tight font-thin text-lg">
-                {" "}
-                {exhibit.date}
-              </p>
+              <p className="tracking-tight font-thin text-lg">{exhibit.date}</p>
             </div>
           );
         })}

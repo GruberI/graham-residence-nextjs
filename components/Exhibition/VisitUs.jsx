@@ -3,11 +3,11 @@ import Link from "next/link";
 const posts = [
   {
     id: 1,
-    title: "SHOWROOM",
+    title: "THE STUDIO",
     location: "Costa Mesa, CA",
     href: "mailto:info@graham-collective.com?subject=Appointment",
     description:
-      "Our office and showroom is open Monday through Saturday by appointment",
+      "Our Costa Mesa office is open Monday through Saturday by appointment",
     imageUrl:
       "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/003.jpg",
     date: "Mar 16, 2020",
@@ -16,14 +16,14 @@ const posts = [
   {
     id: 2,
     title: "THE GRAHAM RESIDENCE",
-    href: `/residence#property-book`,
+    href: `/residence`,
     location: "Yucca Valley, CA",
     description:
-      "A mid-century modern retreat where the lines between home and gallery are blurred",
+      "A 2-bedroom retreat on over 20 acres where the lines between home and gallery are blurred",
     imageUrl:
       "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/001.jpg",
     date: "Mar 16, 2020",
-    buttonText: "REQUEST TO BOOK",
+    buttonText: "LEARN MORE",
   },
 ];
 

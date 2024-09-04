@@ -1,7 +1,7 @@
 export default async function OneImage({ imgSrc }) {
   return (
     <div className="mx-auto">
-      <div className="sm:h-screen w-full">
+      <div className="sm:h-screen w-full py-10">
         <img
           src={imgSrc}
           alt="arial shot of property with winding road"

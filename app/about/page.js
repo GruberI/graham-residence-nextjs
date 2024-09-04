@@ -46,9 +46,9 @@ export default async function About() {
       />
 
       <Header />
-      <AboutGoldberg />
+    {/* <AboutGoldberg /> */}
       <OneImage imgSrc={oneImageComponentSrc} />
-      <ArtServices />
+    {/*  <ArtServices /> */}
       <VisitUs />
       <Instagram />
     </div>

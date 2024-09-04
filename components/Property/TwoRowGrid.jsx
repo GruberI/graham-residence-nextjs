@@ -1,6 +1,6 @@
 export default async function TwoRowGrid({ imgSrc }) {
   return (
-    <div className="mx-auto grid grid-cols-2 max-w-7xl">
+    <div className="mx-auto mt-10 grid grid-cols-2 max-w-7xl">
       <div className="col-span-2">
         <div className="col-span-2 sm:h-screen w-full">
           <img

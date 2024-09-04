@@ -1,4 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/aspect-ratio')],
+};
 
 module.exports = {
   content: [
@@ -31,6 +38,7 @@ module.exports = {
         eggnog: '#93535f',
       },
     },
+    
     letterSpacing: {
       tightest: '-.185em',
     },
