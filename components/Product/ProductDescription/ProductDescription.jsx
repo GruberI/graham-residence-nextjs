@@ -5,12 +5,14 @@ import { AddToCart } from "../../Cart/add-to-cart";
 import { VariantSelector } from "./variant-selector";
 import Link from "next/link";
 import Prose from "@/components/prose";
-import ProductImageGallery from "@/components/Product/ProductImageGallery";
+import ProductImageGallery from "@/components/Product/ProductImageGallery"; // Import the Swiper-based component
 import { bannerInfo } from "@/components/ShopAll/Banner";
 import Banner from "@/components/ShopAll/Banner";
 
 export default function ProductDescription({ product }) {
   const [currentType, setCurrentType] = useState("");
+  const [selectedImage, setSelectedImage] = useState(0); // State to track the currently displayed image
+
   useEffect(() => {
     product.tags.includes("home-goods")
       ? setCurrentType("home")
@@ -76,19 +78,17 @@ export default function ProductDescription({ product }) {
         }}
       />
       <div className="mx-auto max-w-2xl px-0 mt-20 sm:py-5 py-10 sm:px-10 lg:max-w-7xl lg:px-0">
-        {/* Updated container to use flex layout for better alignment */}
         <div className="lg:flex lg:gap-8">
-          {/* Swiper-based image gallery */}
-          <div className="overflow-hidden aspect-[4/5] w-full lg:w-1/2">
-            <ProductImageGallery
-              images={product.images.map((image) => ({
-                src: image.url,
-                altText: image.altText,
-              }))}
-            />
+          {/* Main Image Gallery Container */}
+          <div className="overflow-hidden w-full lg:w-1/2 flex flex-col items-center justify-center">
+            {/* Use Swiper-based Image Gallery */}
+            <ProductImageGallery images={product.images.map((image) => ({
+              src: image.url,
+              altText: image.altText,
+            }))} />
           </div>
 
-          {/* Product Info */}
+          {/* Product Info Section */}
           <div className="mt-2 px-4 sm:mt-2 sm:px-2 lg:mt-0 lg:w-1/2">
             <div className="flex place-content-between">
               <h1 className="text-sm sm:text-2xl font-light text-black-600 whitespace-normal break-words">
@@ -138,14 +138,14 @@ export default function ProductDescription({ product }) {
         </div> {/* End of the flex container */}
 
         {/* Render Banner only if matchingBanner exists */}
-        {/* {matchingBanner && (
-          <div 
-            className="w-full flex justify-center mt-10" 
-            style={{ padding: '0', borderBottom: 'none' }} // Remove padding and border line
+        {matchingBanner && (
+          <div
+            className="w-full flex justify-center mt-10"
+            style={{ padding: "0", borderBottom: "none" }} // Remove padding and border line
           >
             <Banner title={matchingBanner.handle} type={matchingBanner.type} />
-          </div> 
-        )}*/}
+          </div>
+        )}
       </div>
     </div>
   );

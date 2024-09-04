@@ -6,8 +6,16 @@ export default function HeroImageText() {
   const handleClickScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      // Scroll smoothly to the target section
-      element.scrollIntoView({ behavior: "smooth" });
+      // Calculate the offset to adjust scroll position (e.g., 50px offset)
+      const offset = 50;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      // Scroll to the adjusted position
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
