@@ -6,13 +6,13 @@ const artists = [
     name: "Marcel Rozek",
     src: "https://ipfs.filebase.io/ipfs/QmbKrYmSnjHLCtjSH4gaZUh68wJECaeuXwBUSKqHFL78Ep",
     altText: "",
-    href: "/gallery/david-marcel",
+    href: "/art/marcel-rozek",
   },
   {
     name: "David Matthew King",
     src: "https://ipfs.filebase.io/ipfs/QmNf6xc84xSjKfvRy8yh1KpDfcETgmKkMJ65deSqCBRyvM",
     altText: "",
-    href: "/gallery/david-marcel",
+    href: "/art/david-matthew-king",
   },
   {
     name: "Yoni Goldberg",

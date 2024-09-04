@@ -75,16 +75,18 @@ export default function ProductDescription({ product }) {
           __html: JSON.stringify(productJsonLd),
         }}
       />
-      <div className="mx-auto max-w-2xl px-0 sm:py-24 py-14 sm:px-0 lg:max-w-7xl lg:px-0">
+      <div className="mx-auto max-w-2xl px-0 mt-20 sm:py-5 py-10 sm:px-10 lg:max-w-7xl lg:px-0">
         {/* Updated container to use flex layout for better alignment */}
         <div className="lg:flex lg:gap-8">
           {/* Swiper-based image gallery */}
-          <ProductImageGallery
-            images={product.images.map((image) => ({
-              src: image.url,
-              altText: image.altText,
-            }))}
-          />
+          <div className="overflow-hidden aspect-[4/5] w-full lg:w-1/2">
+            <ProductImageGallery
+              images={product.images.map((image) => ({
+                src: image.url,
+                altText: image.altText,
+              }))}
+            />
+          </div>
 
           {/* Product Info */}
           <div className="mt-2 px-4 sm:mt-2 sm:px-2 lg:mt-0 lg:w-1/2">
@@ -108,7 +110,7 @@ export default function ProductDescription({ product }) {
               </p>
             </div>
             <Link href={`/${currentType}/${restructuredVendor}`}>
-              <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-2 mb-10">
+              <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-2 mb-6">
                 {product.vendor.toUpperCase()}
               </p>
             </Link>
@@ -121,7 +123,7 @@ export default function ProductDescription({ product }) {
               <div>
                 <h2 className="text-xl font-semibold mb-4"></h2>
                 <Prose
-                  className="mb-3 text-lg leading-normal dark:text-slate-900 dark:bg-white"
+                  className="mb-2 text-lg leading-normal dark:text-slate-900 dark:bg-white"
                   html={`${productJsonLd.description} <br /> `}
                 />
 
@@ -135,15 +137,15 @@ export default function ProductDescription({ product }) {
           </div>
         </div> {/* End of the flex container */}
 
-       {/* Render Banner only if matchingBanner exists */}
-{matchingBanner && (
-  <div 
-    className="w-full flex justify-center mt-10" 
-    style={{ padding: '0', borderBottom: 'none' }} // Remove padding and border line
-  >
-    <Banner title={matchingBanner.handle} type={matchingBanner.type} />
-  </div>
-)}
+        {/* Render Banner only if matchingBanner exists */}
+        {/* {matchingBanner && (
+          <div 
+            className="w-full flex justify-center mt-10" 
+            style={{ padding: '0', borderBottom: 'none' }} // Remove padding and border line
+          >
+            <Banner title={matchingBanner.handle} type={matchingBanner.type} />
+          </div> 
+        )}*/}
       </div>
     </div>
   );

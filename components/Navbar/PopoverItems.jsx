@@ -11,45 +11,15 @@ const navigation = {
       href: "/residence",
     },
   ],
-  gallery: [
+  categories: [
     {
-      name: "Gallery",
-      href: "/gallery",
+      name: "Collection",
+      href: "/exhibitions",
       exhibitions: [
         { name: "On View", href: "/exhibitions" },
         { name: "Upcoming", href: "/exhibitions#upcoming-exhibitions" },
         { name: "Past", href: "/exhibitions#past-exhibitions" },
         { name: "View All", href: "/exhibitions" },
-      ],
-      artists: [
-        { name: "David Matthew King", href: "/art/david-matthew-king" },
-        { name: "Marcel Rozek", href: "/art/marcel-rozek" },
-        { name: "Katherine Adams", href: "/art/katherine-adams"},
-        { name: "Kyle Steed", href: "/art/kyle-steed" },
-        { name: "Thai Mainhard", href: "/art/thai-mainhard" },
-        { name: "Yoni Goldberg", href: "/art/yoni-goldberg" },
-        // {name: "Alex Maceda", href: "/art/alex-maceda"},
-        // {name: "Erin Lynn Welsh", href: "/art/erin-lynn-welsh"},
-        { name: "View All", href: "/gallery/artists" },
-      ],
-      contact: [
-        { name: "Visit Us", href: "/gallery#visit-us" },
-        // { name: "Consulting", href: "/"},
-        { name: "Artist Submission", href: "/gallery/#consulting-services" },
-        { name: "Advisory Services", href: "/about#art-advisory" },
-        { name: "Subscribe", href: "/gallery#subscribe" },
-      ],
-      shop: [{ href: "/art" }],
-    },
-  ],
-  categories: [
-    {
-      name: "Shop",
-      href: "/shop",
-      categories: [
-        { name: "New Arrivals", href: "/art/new-arrivals" },
-        { name: "Ethereal Prints", href: "/art/ethereal-prints" },
-        { name: "Shop All", href: "/shop/all-product" },
       ],
       art: [
         { name: "Paintings", href: "/art/paintings" },
@@ -62,15 +32,12 @@ const navigation = {
         { name: "Atelier Saucier", href: "/home/atelier-saucier" },
         { name: "Sophie Lou Jacobsen", href: "/home/sophie-lou-jacobsen" },
         { name: "Loll Designs", href: "/home/loll-designs" },
-       // { name: "West Bourne", href: "/home/west-bourne" },
         { name: "Shop All", href: "/home" },
       ],
       shop: [],
     },
   ],
-  second: [
-    { name: "About", href: "/about" }
-  ],
+  second: [{ name: "About", href: "/about" }],
 };
 
 function classNames(...classes) {
@@ -119,147 +86,12 @@ export default function PopoverItems({ color, pathname }) {
           </a>
         ))}
 
-        {navigation.gallery.map((category, galleryIdx) => (
-          <Popover
-            key={`${galleryIdx}-category`}
-            className="flex"
-            onMouseEnter={() => handleMouseEnter(galleryIdx)}
-            onMouseLeave={handleMouseLeave}
-          >
-            {({ open }) => (
-              <>
-                <div className="flex relative">
-                  <Popover.Button
-                    className={classNames(
-                      open ? "black" : "hover:text-neutral-300",
-                      `relative z-10 flex items-center border-b-1 pt-px text-base xl:text-lg duration-300 ease-out outline-none`
-                    )}
-                    style={
-                      pathname == "/" ? { color: color } : { color: "black" }
-                    }
-                  >
-                    <Link
-                      href={category.href}
-                      className="hover:text-neutral-300 hover:underline hover:underline-offset-8"
-                    >
-                      {category.name}
-                    </Link>
-                  </Popover.Button>
-                </div>
-
-                <Transition
-                  as={Fragment}
-                  show={activePopover === galleryIdx}
-                  enter="transition ease-out duration-200"
-                  enterFrom="opacity-0"
-                  enterTo="opacity-100"
-                  leave="transition ease-in duration-150"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-                >
-                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-6/12 m-auto border">
-                    <div
-                      className="absolute inset-0 top-1/2 bg-white shadow"
-                      aria-hidden="true"
-                    />
-
-                    <div className="relative bg-white">
-                      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
-                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
-                            <div>
-                              <p
-                                id="art-heading"
-                                className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
-                              >
-                                EXHIBITIONS
-                              </p>
-                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
-                                <ul
-                                  role="list"
-                                  aria-labelledby="art-heading"
-                                  className="space-y-1 sm:space-y-4"
-                                >
-                                  {category.exhibitions.map((item) => (
-                                    <li key={item.name} className="flex">
-                                      <Link
-                                        href={item.href}
-                                        className="hover:text-gray-800 lg:tracking-widest leading-7 text-sm lg:text-base"
-                                      >
-                                        {item.name}
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                            <div>
-                              <p
-                                id="home-heading"
-                                className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
-                              >
-                                ARTISTS
-                              </p>
-                              <ul
-                                role="list"
-                                aria-labelledby="home-heading"
-                                className="pt-4 space-y-1 border-t border-gray-200 sm:space-y-4"
-                              >
-                                {category.artists.map((item) => (
-                                  <li key={item.name} className="flex">
-                                    <Link
-                                      href={item.href}
-                                      className="hover:text-gray-800 tracking-widest leading-7 text-sm lg:text-base"
-                                    >
-                                      {item.name}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                            <div>
-                              <p
-                                id="categories-heading"
-                                className="font-medium text-gray-900 text-sm xl:text-lg"
-                              >
-                                GET IN TOUCH
-                              </p>
-                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
-                                <ul
-                                  role="list"
-                                  aria-labelledby="categories-heading"
-                                  className="space-y-2 sm:space-y-4"
-                                >
-                                  {category.contact.map((item) => (
-                                    <li key={item.name} className="flex">
-                                      <Link
-                                        href={item.href}
-                                        className="hover:text-gray-800 tracking-widest leading-7 text-sm lg:text-base"
-                                      >
-                                        {item.name}
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Popover.Panel>
-                </Transition>
-              </>
-            )}
-          </Popover>
-        ))}
-
         {navigation.categories.map((category, categoryIdx) => (
           <Popover
             key={`${categoryIdx}-categories`}
             className="flex"
             onMouseEnter={() =>
-              handleMouseEnter(categoryIdx + navigation.gallery.length)
+              handleMouseEnter(categoryIdx + navigation.categories.length)
             }
             onMouseLeave={handleMouseLeave}
           >
@@ -287,7 +119,7 @@ export default function PopoverItems({ color, pathname }) {
                 <Transition
                   as={Fragment}
                   show={
-                    activePopover === categoryIdx + navigation.gallery.length
+                    activePopover === categoryIdx + navigation.categories.length
                   }
                   enter="transition ease-out duration-200"
                   enterFrom="opacity-0"
@@ -308,18 +140,18 @@ export default function PopoverItems({ color, pathname }) {
                           <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
                             <div>
                               <p
-                                id="art-heading"
+                                id="exhibitions-heading"
                                 className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
                               >
-                                CATEGORIES
+                                EXHIBITIONS
                               </p>
                               <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"
-                                  aria-labelledby="art-heading"
+                                  aria-labelledby="exhibitions-heading"
                                   className="space-y-1 sm:space-y-4"
                                 >
-                                  {category.categories.map((item) => (
+                                  {category.exhibitions.map((item) => (
                                     <li key={item.name} className="flex">
                                       <Link
                                         href={item.href}

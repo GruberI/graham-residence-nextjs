@@ -11,8 +11,8 @@ export const NAV_ITEMS: NavItem[] = [
     children: [],
   },
   {
-    title: "Gallery",
-    path: "/gallery",
+    title: "Collection",
+    path: "/exhibitions",
     children: [
       {
         title: "Exhibitions",
@@ -24,71 +24,29 @@ export const NAV_ITEMS: NavItem[] = [
           { title: "View All", path: "/exhibitions" },
         ],
       },
-      {
-        title: "Artists",
-        path: "/art",
-        children: [
-          { title: "David Matthew King", path: "/art/david-matthew-king" },
-          { title: "Marcel Rozek", path: "/art/marcel-rozek" },
-          { title: "Katherine Adams", path: "/art/katherine-adams" },
-          { title: "Kyle Steed", path: "/art/kyle-steed" },
-          { title: "Thai Mainhard", path: "/art/thai-mainhard" },
-          { title: "Yoni Goldberg", path: "/art/yoni-goldberg" },
-          { title: "View All", path: "/gallery/artists" },
-        ],
-      },
-      {
-        title: "Contact",
-        path: "/gallery#visit-us",
-        children: [
-          { title: "Visit Us", path: "/gallery#visit-us" },
-          { title: "Artist Submission", path: "/gallery/#consulting-services" },
-          { title: "Advisory Services", path: "/about#art-advisory" },
-          { title: "Subscribe", path: "/gallery#subscribe" },
-        ],
-      },
-      {
-        title: "Shop",
-        path: "/art",
-      },
     ],
   },
   {
-    title: "Shop",
-    path: "/shop",
+    title: "Art",
+    path: "/art",
     children: [
-      {
-        title: "Categories",
-        path: "/art/new-arrivals",
-        children: [
-          { title: "New Arrivals", path: "/art/new-arrivals" },
-          { title: "Ethereal Prints", path: "/art/ethereal-prints" },
-          { title: "Shop All", path: "/shop/all-product" },
-        ],
-      },
-      {
-        title: "Art",
-        path: "/art",
-        children: [
-          { title: "Paintings", path: "/art/paintings" },
-          { title: "Photography", path: "/art/photography" },
-          { title: "Sculpture", path: "/art/sculpture" },
-          { title: "Shop All", path: "/art" },
-          { title: "By Artist", path: "/gallery/artists" },
-        ],
-      },
-      {
-        title: "Home",
-        path: "/home",
-        children: [
-          { title: "Atelier Saucier", path: "/home/atelier-saucier" },
-          { title: "Sophie Lou Jacobsen", path: "/home/sophie-lou-jacobsen" },
-          { title: "Loll Designs", path: "/home/loll-designs" },
-          { title: "West Bourne", path: "/home/west-bourne" },
-          { title: "Shop All", path: "/home" },
-        ],
-      },
+      { title: "Paintings", path: "/art/paintings" },
+      { title: "Photography", path: "/art/photography" },
+      { title: "Sculpture", path: "/art/sculpture" },
+      { title: "Shop All", path: "/art" },
+      { title: "By Artist", path: "/gallery/artists" },
     ],
   },
-  { title: "About", path: "/about" },
+  {
+    title: "Home",
+    path: "/home",
+    children: [],
+  //    { title: "Atelier Saucier", path: "/home/atelier-saucier" },
+  //    { title: "Sophie Lou Jacobsen", path: "/home/sophie-lou-jacobsen" },
+  //    { title: "Loll Designs", path: "/home/loll-designs" },
+  //    { title: "West Bourne", path: "/home/west-bourne" },
+  //    { title: "Shop All", path: "/home" },
+     
+  },
+  { title: "About", path: "/about" }, // Moved this inside the array and removed the trailing semicolon
 ];

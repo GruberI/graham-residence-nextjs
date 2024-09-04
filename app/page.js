@@ -5,6 +5,8 @@ import Instagram from "@/components/Instagram";
 import Editorial from "@/components/Property/Editorial";
 import ExhibitionList from "@/components/Property/RecentExhibitions";
 import NewArrivalsSection from "@/components/Shop/NewArrivalsSection";
+import Section from "@/components/Exhibition/Section";
+import Featured from "@/components/Shop/Featured";
 
 export const metadata = {
   title:
@@ -12,9 +14,6 @@ export const metadata = {
   description:
     "Shop curated fine art & home goods found within The Graham Residence, a contextualized art space just outside Joshua Tree National Park.",
 };
-
-const text =
-  "A celebration of California modernity and the quiet transcendence of the Mojave desert";
 
 const imagesFirst = [
   {
@@ -35,11 +34,12 @@ export default function Property() {
   return (
     <div>
       <HeroImageText />
-      <TextFirst text={text} />
-      <Editorial />
-      <TwoRowGrid imgSrc={imagesFirst} />
+      <Section />
+      {/* <Editorial /> */}
+      {/* <TwoRowGrid imgSrc={imagesFirst} /> */}
       <ExhibitionList />
       <NewArrivalsSection />
+      <Featured />
       <Instagram />
     </div>
   );
