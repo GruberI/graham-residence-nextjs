@@ -20,15 +20,15 @@ export const bannerInfo = [
     text: "Thai Mainhard is a Brazilian born artist based in Los Angeles. In her works she encounters human nature, exploring happiness, frustration, surprise, connection, spirituality, and overall thinking processing.",
     type: "art",
   },
-  {
-    handle: "yoni-goldberg",
-    artist: "Yoni Goldberg",
-    imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmcHQJjQw1tbvCbhPkq8SXpfzhJ5WSLpk84kWihd51WisR/QmTHRhpRttN8oEqUAGkSUc6fDRQLnnHoxKWgQ2yvzURdV5",
-    imgAltText: "Yoni Goldberg behind the camera",
-    text: "Yoni Goldberg is a Los Angeles based photographer and co-owner of The Graham Residence and Graham Collective.",
-    type: "art",
-  },
+ // {
+ //   handle: "yoni-goldberg",
+ //   artist: "Yoni Goldberg",
+ //   imgSrc:
+ //     "https://ipfs.filebase.io/ipfs/QmcHQJjQw1tbvCbhPkq8SXpfzhJ5WSLpk84kWihd51WisR/QmTHRhpRttN8oEqUAGkSUc6fDRQLnnHoxKWgQ2yvzURdV5",
+ //   imgAltText: "Yoni Goldberg behind the camera",
+ //   text: "Yoni Goldberg is a Los Angeles based photographer and co-owner of The Graham Residence and Graham Collective.",
+  //  type: "art",
+ // },
   {
     handle: "atelier-saucier",
     artist: "Atelier Saucier",

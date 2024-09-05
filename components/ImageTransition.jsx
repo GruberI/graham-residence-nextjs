@@ -11,12 +11,12 @@ const artistExhibitions = [
     link: "/gallery/tdwhy",
   },
   {
-    artist: "To Be Announced",
+    artist: "Karolina Maszkiewicz",
     name: "",
     imgSrc:
-      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/0270__DSC3122.jpg",
-    imgAltText: "TBA",
-    date: "Winter Exhibition",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/Karolina/211109_Luxe_Karolina_1766_Hi.jpg",
+    imgAltText: "Karolina",
+    date: "Winter",
     link: "/exhibitions",
   },
 ];
