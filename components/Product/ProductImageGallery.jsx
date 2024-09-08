@@ -5,6 +5,10 @@ import React, { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // Default Swiper styles
 import './ProductImageGallery.css'; // Import your custom styles
+import SwiperCore, { Navigation, Pagination, Keyboard, A11y } from 'swiper'; // Import Swiper modules
+
+// Enable Swiper modules
+SwiperCore.use([Navigation, Pagination, Keyboard, A11y]);
 
 export default function ProductImageGallery({ images }) {
   const mainSwiperRef = useRef(null); // Ref to control the main Swiper
@@ -14,11 +18,11 @@ export default function ProductImageGallery({ images }) {
   const handleButtonClick = (index) => {
     setSelectedImage(index); // Update the state to show the selected image
     if (mainSwiperRef.current && mainSwiperRef.current.swiper) {
-      mainSwiperRef.current.swiper.slideTo(index); // Go to the selected image, accounting for looping
+      mainSwiperRef.current.swiper.slideToLoop(index); // Go to the selected image, accounting for looping
     }
   };
 
-  // Function to handle click on the main image to go to the next slide
+  // Function to handle click on the main image to go to the next or previous slide
   const handleImageClick = (direction) => {
     if (mainSwiperRef.current && mainSwiperRef.current.swiper) {
       const swiper = mainSwiperRef.current.swiper;
@@ -42,11 +46,32 @@ export default function ProductImageGallery({ images }) {
           slidesPerView={1}
           className="main-swiper"
           ref={mainSwiperRef} // Reference to control the Swiper instance
+          navigation={{
+            nextEl: '.clickable-right',
+            prevEl: '.clickable-left',
+          }}
+          pagination={{
+            el: '.buttons-container',
+            clickable: true,
+            renderBullet: (index, className) =>
+              `<button class="${className}" aria-label="Select Image ${
+                index + 1
+              }"></button>`,
+          }}
+          keyboard={{
+            enabled: true, // Enable keyboard navigation
+          }}
+          a11y={{
+            enabled: true,
+            prevSlideMessage: 'Previous slide',
+            nextSlideMessage: 'Next slide',
+          }}
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
               <img
                 src={image.src}
+                loading="lazy" // Lazy load images for performance
                 alt={image.altText || 'Product image'}
                 className="product-image"
               />
@@ -57,11 +82,13 @@ export default function ProductImageGallery({ images }) {
                   <div
                     className="clickable-left"
                     onClick={() => handleImageClick('prev')}
+                    aria-label="Previous Image" // ARIA label for accessibility
                   ></div>
                   {/* Clickable overlay for the right side */}
                   <div
                     className="clickable-right"
                     onClick={() => handleImageClick('next')}
+                    aria-label="Next Image" // ARIA label for accessibility
                   ></div>
                 </>
               )}

@@ -21,7 +21,7 @@ export default function Section() {
 
                 <div className="pb-8">
                   <p className="tracking-wide text-xl sm:text-2xl text-gray-700 leading-relaxed">
-                    Set in a context unlike a typical gallery, our
+                    Set in context unlike a typical gallery, our
                     experiential spaces transport and inspire.
                   </p>
                 </div>

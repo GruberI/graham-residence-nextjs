@@ -18,7 +18,7 @@ export default function ArtExhibition() {
           <div className="flex-grow items-start px-4 min-w-0">
             <h2 className="text-left text-4xl font-thin tracking-wide text-black-900"></h2>
 
-            <div className="mt-6 space-y-6">
+            <div className="mt-2 space-y-6">
               <p className="text-black-800 leading-6">
                 The Desert is normally depicted as harsh, aggressive, and
                 expansive. And it is all those things – but in my experience it

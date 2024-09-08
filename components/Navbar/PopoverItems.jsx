@@ -26,7 +26,7 @@ const navigation = {
         { name: "Photography", href: "/art/photography" },
         { name: "Sculpture", href: "/art/sculpture" },
         { name: "Shop All", href: "/art" },
-        { name: "By Artist", href: "/gallery/artists" },
+       // { name: "By Artist", href: "/gallery/artists" },
       ],
       home: [
         { name: "Atelier Saucier", href: "/home/atelier-saucier" },

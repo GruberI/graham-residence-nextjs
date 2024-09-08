@@ -34,7 +34,7 @@ export const NAV_ITEMS: NavItem[] = [
       { title: "Photography", path: "/art/photography" },
       { title: "Sculpture", path: "/art/sculpture" },
       { title: "Shop All", path: "/art" },
-      { title: "By Artist", path: "/gallery/artists" },
+     // { title: "By Artist", path: "/gallery/artists" },
     ],
   },
   {

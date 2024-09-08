@@ -17,7 +17,7 @@ export default function ProductDescription({ product }) {
     product.tags.includes("home-goods")
       ? setCurrentType("home")
       : setCurrentType("art");
-  }, []);
+  }, [product.tags]);
 
   const restructuredVendor = product.vendor.toLowerCase().replaceAll(" ", "-");
   const amount = product.priceRange.minVariantPrice.amount;
@@ -82,10 +82,13 @@ export default function ProductDescription({ product }) {
           {/* Main Image Gallery Container */}
           <div className="overflow-hidden w-full lg:w-1/2 flex flex-col items-center justify-center">
             {/* Use Swiper-based Image Gallery */}
-            <ProductImageGallery images={product.images.map((image) => ({
-              src: image.url,
-              altText: image.altText,
-            }))} />
+            <ProductImageGallery
+              images={product.images.map((image) => ({
+                src: image.url,
+                altText: image.altText,
+                loading: "lazy", // Lazy loading for better performance
+              }))}
+            />
           </div>
 
           {/* Product Info Section */}
