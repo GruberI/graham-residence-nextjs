@@ -1,12 +1,11 @@
 "use client";
-import { Fragment } from "react";
+import { Fragment, Suspense } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ProductGridThree from "../../Product/ProductGridThree";
-import { Suspense } from "react";
 import Banner from "../Banner";
-import About from "./About";
-import { disconnect } from "process";
+import About from "./About"; // Import the general About component
+import Artist from "@/components/Exhibition/AlexMaceda/About/Artist"; // Import the specific Artist component for Alex Maceda
 
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
@@ -15,13 +14,6 @@ const sortOptions = [
   { name: "Price: Low to High", href: "#", current: false },
   { name: "Price: High to Low", href: "#", current: false },
 ];
-// const subCategories = [
-//   { name: "Totes", href: "#" },
-//   { name: "Backpacks", href: "#" },
-//   { name: "Travel Bags", href: "#" },
-//   { name: "Hip Bags", href: "#" },
-//   { name: "Laptop Sleeves", href: "#" },
-// ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -29,13 +21,13 @@ function classNames(...classes) {
 
 export default function ProductSection({ products, productHandle }) {
   const firstSixProducts = products.slice(0, 6);
-  const remainingProducts = products.slice(6, products.length + 1);
+  const remainingProducts = products.slice(6);
+
   return (
     <div className="bg-white sm:px-0 px-2">
       <main className="mx-auto max-w-7xl">
         <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-16">
           <h1 className="text2xl font-light tracking-widest text-gray-900">
-            {" "}
             {`${products.length} ARTWORKS`}
           </h1>
           <div className="flex items-center hidden">
@@ -88,11 +80,15 @@ export default function ProductSection({ products, productHandle }) {
 
         <section aria-labelledby="products-heading" className="pb-16 pt-10">
           <ProductGridThree products={firstSixProducts} />
-
-
           <ProductGridThree products={remainingProducts} />
         </section>
-        <About artistName={productHandle} />
+
+        {/* Conditionally render Alex Maceda's bio if the product handle matches */}
+        {productHandle === "alex-maceda" ? (
+          <Artist /> /* Render the specific Artist component for Alex Maceda */
+        ) : (
+          <About artistName={productHandle} /> /* Retain the current About component for other artists */
+        )}
       </main>
     </div>
   );
