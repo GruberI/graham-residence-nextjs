@@ -19,6 +19,7 @@
     "axios": "^1.6.2",
     "clsx": "^2.0.0",
     "debug": "^4.3.4",
+    "masonry-layout": "^4.2.2",
     "n": "^9.2.0",
     "next": "^14.2.3",
     "react": "^18",
@@ -30,7 +31,8 @@
     "slick-carousel": "^1.8.1",
     "supports-color": "^9.4.0",
     "swiper": "^11.1.12",
-    "uri-js": "^4.2.2"
+    "uri-js": "^4.2.2",
+    "yet-another-react-lightbox": "^3.21.4"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

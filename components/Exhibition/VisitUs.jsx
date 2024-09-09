@@ -21,7 +21,7 @@ const posts = [
     description:
       "A 2-bedroom retreat on over 20 acres where the lines between home and gallery are blurred",
     imageUrl:
-      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/001.jpg",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/_DSC2720.jpg",
     date: "Mar 16, 2020",
     buttonText: "LEARN MORE",
   },
