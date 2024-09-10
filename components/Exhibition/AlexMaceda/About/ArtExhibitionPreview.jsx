@@ -1,11 +1,11 @@
 export default function ArtExhibitionPreview() {
   return (
     <div
-    className="max-w-7xl border-t border-b border-black m-auto py-10"
+    className="max-w-7xl border-t border-b border-black m-auto py-10 px-4"
     id="featured"
     >
       <div>
-        <div className="flex-grow items-start min-w-[500px] min-h-[500px] bg-black-100">
+        <div className="flex-grow items-start min-h-[500px] bg-black-100">
           <div className="flex-grow items-start px-4 min-w-0">
             <div className="mt-1 space-y-6">
               <p className="text-black-800 leading-7 text-xl">

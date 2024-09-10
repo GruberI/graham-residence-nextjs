@@ -1,25 +1,25 @@
 export default function ArtExhibition() {
   return (
     <div
-    className="max-w-7xl border-t border-b border-black m-auto py-10"
-    id="featured"
+      className="max-w-7xl border-t border-b border-black m-auto py-10"
+      id="featured"
     >
-      <div>
+      <div className="px-4 md:px-4"> {/* Added padding for mobile */}
         <div className="flex-grow items-start min-w-[500px] min-h-[500px] bg-black-100">
-          
-            
-              <img
-                src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/_DSC1235.jpg"
-                alt="Painting."
-                className="float-left mr-8 mb-4 max-w-[500px] h-auto object-contain object-center"
-              />
-            
-          
+          <img
+            src="https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/_DSC1235.jpg"
+            alt="Painting."
+            className="float-left mr-8 mb-4 max-w-[500px] h-auto object-contain object-center"
+          />
+
           <div className="flex-grow items-start px-4 min-w-0">
             <h2 className="text-left text-4xl font-thin tracking-wide text-black-900"></h2>
 
             <div className="mt-2 space-y-6">
               <p className="text-black-800 leading-6">
+                
+Artist Statement 
+<br></br><br></br>
                 The Desert is normally depicted as harsh, aggressive, and
                 expansive. And it is all those things – but in my experience it
                 is also soft, welcoming, and self-contained. The Desert is as
