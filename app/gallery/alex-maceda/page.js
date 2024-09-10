@@ -11,13 +11,15 @@ export default async function Exhibition() {
   const productsByTag = products.filter((product) => {
     return product?.tags?.includes("alex-maceda");
   });
-  
+
   return (
-    <div className="bg-white py-1 sm:py-10 sm:pt-15 pt-48">
-    <Header />
-    <ArtExhibition />
-    <ProductGridThree products={productsByTag} />
-    <Artist />
+    <div className="bg-white py-1 sm:py-10 sm:pt-28 pt-32">
+      <Header />
+      <ArtExhibition />
+      <div className="mx-2">
+        <ProductGridThree products={productsByTag} />
+      </div>
+      <Artist />
     </div>
   );
 }
