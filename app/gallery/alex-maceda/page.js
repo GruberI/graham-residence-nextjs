@@ -13,7 +13,7 @@ export default async function Exhibition() {
   });
   
   return (
-    <div className="bg-white py-1 sm:py-10 sm:pt-15 pt-48">
+    <div className="bg-white py-1 sm:py-10 sm:pt-2 pt-2">
     <Header />
     <ArtExhibition />
     <ProductGridThree products={productsByTag} />
