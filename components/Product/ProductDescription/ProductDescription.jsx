@@ -98,18 +98,21 @@ export default function ProductDescription({ product }) {
                 {product.title.toUpperCase()}
               </h1>
               <p className="text-sm sm:text-2xl tracking-normal text-black-600">
-                {product.availableForSale
-                  ? `${new Intl.NumberFormat("en-US", {
-                      style: "currency",
-                      currency: "USD",
-                    }).format(
-                      parseFloat(
-                        selectedVariant === undefined
-                          ? amount
-                          : selectedVariantPrice
-                      )
-                    )}`
-                  : "Sold"}
+              {!product.availableForSale && product.tags.includes("on-hold")
+    ? "On Hold"
+    : !product.availableForSale &&
+      (product.tags.includes("fine-art") || product.tags.includes("Sculpture"))
+    ? "Sold"
+    : !product.availableForSale && product.tags.includes("home-goods")
+    ? "Sold Out"
+    : `${new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      }).format(
+        parseFloat(
+          selectedVariant === undefined ? amount : selectedVariantPrice
+        )
+      )}`}
               </p>
             </div>
             <Link href={`/${currentType}/${restructuredVendor}`}>
