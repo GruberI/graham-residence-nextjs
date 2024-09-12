@@ -40,6 +40,8 @@ export default function Product({ product }) {
           <p className="mt-1 text-sm">
             {!available && product.tags.includes("fine-art") || !available && product.tags.includes("Sculpture")
               ? "Sold"
+              : !available && product.tags.includes("on-hold")
+              ? "On Hold"
               : !available && product.tags.includes("home-goods")
               ? "Sold Out"
               : `${new Intl.NumberFormat("en-US", {
