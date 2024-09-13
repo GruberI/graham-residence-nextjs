@@ -35,18 +35,14 @@ export function AddToCart({
     ? "Please select options"
     : undefined;
 
-  // Safeguard against product being undefined
+  // Determine if the product is on hold or sold
   const isOnHold = product?.tags?.includes("on-hold");
+  const isSold = !availableForSale && type === "art";
 
-  // Determine the button text based on availability and tags
-  const buttonText =
-    !availableForSale && isOnHold
-      ? "On Hold"
-      : !availableForSale && type === "art"
-      ? "Sold"
-      : !availableForSale
-      ? "Out Of Stock"
-      : "Add To Cart";
+  // If the product is on hold or sold, do not render the button
+  if (isOnHold || isSold) {
+    return null; // Do not render the button
+  }
 
   return (
     <button
@@ -77,7 +73,7 @@ export function AddToCart({
       <div className="absolute left-0 ml-4">
         {!isPending ? <span /> : <LoadingDots className="mb-3 bg-white" />}
       </div>
-      <span className="text-xl">{buttonText}</span>
+      <span className="text-xl">Add To Cart</span>
     </button>
   );
 }
