@@ -15,7 +15,7 @@ export default function Section() {
                   </h1>
                   <p className="text-xl sm:text-2xl italic font-light text-gray-800 mt-2 whitespace-nowrap leading-tight">
                     is a curated edit of original <br />
-                    contemporary artwork
+                    contemporary artwork and home goods
                   </p>
                 </div>
 

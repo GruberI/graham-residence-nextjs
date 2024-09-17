@@ -3,25 +3,25 @@ import PageHeaderHero from "@/components/global/PageHeaderHero";
 const imageByHandle = [
   {
     imageHandle: "atelier-saucier",
-    src: "https://ipfs.filebase.io/ipfs/QmZ3xMFpfF5q6bT1WDv9eGCCswDKzf69ZwYrEHUMJcmV2c/QmbPMLL9ccr3Bf769zGT2EaDpHmy3VHAMQpWMc8x9zVdTx",
+    src: "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/HomeGoods/AtelierSaucier/QmbPMLL9ccr3Bf769zGT2EaDpHmy3VHAMQpWMc8x9zVdTx.jpeg",
     alt: "Atalier Saucier set table",
     title: " Atelier Saucier",
   },
   {
     imageHandle: "sophie-lou-jacobsen",
-    src: "https://ipfs.filebase.io/ipfs/QmU7bKqnKnEWBXTJZRTL6SJLgczTvXoGNUowZ1hJiCyWkb/QmWJ2ZeTDfLr8Ng8H7ynR8o1tPjJVeeUARds3ipechFGrG",
+    src: "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/HomeGoods/SophieLou/QmWJ2ZeTDfLr8Ng8H7ynR8o1tPjJVeeUARds3ipechFGrG.jpeg",
     alt: "Sophie Lou Jacobsen set table with glass vases",
     title: "Sophie Lou Jacobsen",
   },
   {
     imageHandle: "loll-designs",
     title: "Loll Designs",
-    src: "https://ipfs.filebase.io/ipfs/QmfMtsvcvGdWVqgwESF3gatXebQAoXku3oLpbv9rF5rcMG",
-    alt: "Loll designs outdoor chairs infront of Graham Residence firepit",
+    src: "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/HomeGoods/loll-designs.jpg",
+    alt: "Loll designs loungers by the hot tub",
   },
   {
     imageHandle: "west-bourne",
-    src: "https://ipfs.filebase.io/ipfs/QmcxTaiyxAMAkF9WyRbPYWvnfCdAXReEWLbmjmNWoP2RjF",
+    src: "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/HomeGoods/WestBourne/QmcxTaiyxAMAkF9WyRbPYWvnfCdAXReEWLbmjmNWoP2RjF.jpeg",
     alt: "West Bourne",
     title: "West Bourne",
   },
@@ -44,7 +44,7 @@ export default function ShopAllHomeHeader({ productHandle }) {
     <div className="relative isolate overflow-hidden mt-[80px] md:mt-[0px] h-[440px] md:h-[600px]">
       {productHandle === undefined ? (
         <img
-          src="https://ipfs.filebase.io/ipfs/QmQ61VnMppAA4kboH8eqNj6evSJEMAfgdVjAG1gYzGireH"
+          src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Residence/232.jpeg"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
       ) : (
