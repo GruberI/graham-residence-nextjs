@@ -6,7 +6,7 @@ const artistExhibitions = [
     artistSecond: "Marcel Rozek",
     name: "CONVERGENCE",
     imgSrc:
-      "https://ipfs.filebase.io/ipfs/QmbapwiUd9S4ZFEq9ht8mYoN2JQsv7fhMosahi47hCGXYh",
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Homepage/QmbapwiUd9S4ZFEq9ht8mYoN2JQsv7fhMosahi47hCGXYh.jpeg",
     imgAltText:
       "Various paintings by Thai resting on porch at the graham residence",
     href: "/gallery/david-marcel",

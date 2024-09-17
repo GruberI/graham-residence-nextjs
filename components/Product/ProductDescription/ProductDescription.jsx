@@ -129,7 +129,7 @@ export default function ProductDescription({ product }) {
               <div>
                 <h2 className="text-xl font-semibold mb-4"></h2>
                 <Prose
-                  className="mb-2 text-lg leading-normal dark:text-slate-900 dark:bg-white"
+                  className="mb-2 text-base leading-normal dark:text-slate-900 dark:bg-white"
                   html={`${productJsonLd.description} <br /> `}
                 />
 
