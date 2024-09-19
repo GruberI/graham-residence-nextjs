@@ -14,15 +14,14 @@ export default function Section() {
                     Graham Collective
                   </h1>
                   <p className="text-xl sm:text-2xl italic font-light text-gray-800 mt-2 whitespace-nowrap leading-tight">
-                    is a curated edit of original <br />
-                    contemporary artwork and home goods
+                    is a celebration of California Modernity <br />
+                    and the quiet transcendence of the Mojave Desert.
                   </p>
                 </div>
 
                 <div className="pb-8">
                   <p className="tracking-wide text-xl sm:text-2xl text-gray-700 leading-relaxed">
-                    Set in context unlike a typical gallery, our
-                    experiential spaces transport and inspire.
+                  Set in context unlike a traditional gallery, <br /> our experiential spaces blur the boundary between home and gallery.
                   </p>
                 </div>
 
