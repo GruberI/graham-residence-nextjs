@@ -39,7 +39,7 @@ export default function Header() {
               <p className="text-lg pt-2">
                 In 2023, Lindsey launched Graham Collective, inspired by the vision
                 to create a contextual gallery space and guest experience. The
-                Graham Residence is curated with rotating works of art by emerging
+                Graham Residence is curated with seasonal exhibitions by
                 contemporary artists, all of which are available for
                 acquisition. 
               </p>

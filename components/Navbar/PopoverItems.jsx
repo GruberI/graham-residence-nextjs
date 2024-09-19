@@ -13,7 +13,7 @@ const navigation = {
   ],
   categories: [
     {
-      name: "Collection",
+      name: "Gallery",
       href: "/exhibitions",
       exhibitions: [
         { name: "On View", href: "/exhibitions" },
@@ -28,12 +28,12 @@ const navigation = {
         { name: "Shop All", href: "/art" },
        // { name: "By Artist", href: "/gallery/artists" },
       ],
-      home: [
+    /*  home: [
         { name: "Atelier Saucier", href: "/home/atelier-saucier" },
         { name: "Sophie Lou Jacobsen", href: "/home/sophie-lou-jacobsen" },
         { name: "Loll Designs", href: "/home/loll-designs" },
         { name: "Shop All", href: "/home" },
-      ],
+      ], */
       shop: [],
     },
   ],
@@ -128,7 +128,7 @@ export default function PopoverItems({ color, pathname }) {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-6/12 m-auto border">
+                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-4/12 m-auto border">
                     <div
                       className="absolute inset-0 top-1/2 bg-white shadow"
                       aria-hidden="true"
@@ -137,7 +137,7 @@ export default function PopoverItems({ color, pathname }) {
                     <div className="relative bg-white">
                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 items-center gap-x-2 gap-y-1 sm:gap-y-10 pb-12 pt-10">
-                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-3">
+                          <div className="grid gap-x-2 gap-y-2 sm:gap-y-8 lg:grid-cols-2">
                             <div>
                               <p
                                 id="exhibitions-heading"
@@ -188,7 +188,7 @@ export default function PopoverItems({ color, pathname }) {
                                 ))}
                               </ul>
                             </div>
-                            <div>
+                          {/*  <div>
                               <p
                                 id="categories-heading"
                                 className="font-medium text-gray-900 text-sm xl:text-lg"
@@ -212,8 +212,8 @@ export default function PopoverItems({ color, pathname }) {
                                     </li>
                                   ))}
                                 </ul>
-                              </div>
-                            </div>
+                                  </div> 
+                                  </div> */}
                           </div>
                         </div>
                       </div>
