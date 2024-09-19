@@ -7,7 +7,7 @@ export default function Header() {
         <Link href={"/gallery/david-marcel"}>
           <div className="flex flex-col">
             <img
-              src="https://ipfs.filebase.io/ipfs/QmZ4am2kZo6LMK7KptheixUvctBBdvBML9rZxTAiJXxGRr/RackMultipart20240501-16-jji7xo.jpg"
+              src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/david-marcel.jpg"
               alt=""
               className="object-cover object-center w-screen max-h-[500px]"
             />
@@ -20,7 +20,7 @@ export default function Header() {
               </p>
               <p className="w-11/12 lg:w-8/12 mt-2 sm:mt-0">
                 {" "}
-                On display at the Graham Residence, June 4th - July 31
+                On display at the Graham Residence, June 4th - July 31st 2024.
               </p>
             </div>
           </div>
