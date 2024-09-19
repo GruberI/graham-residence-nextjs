@@ -18,8 +18,8 @@ export default function Book() {
               </h2>
               <div>
                 <img
-                  src="https://ipfs.filebase.io/ipfs/QmVBpPbtmAV9wCHrrai3YxjdggD6PfCLrpzzHK2hzJvbHp/QmUTPhmimFGm1TJ5iF8HA6v4CtZixRVD8LLRmhuD6Y7H3t"
-                  alt="Goldberg familiy sitting by the fire."
+                  src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Homepage/fire.jpg"
+                  alt="familiy sitting by the fire."
                   className="h-full w-full object-cover object-center shadow-lg"
                 />
               </div>
