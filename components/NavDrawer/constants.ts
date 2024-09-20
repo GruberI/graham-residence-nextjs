@@ -15,7 +15,7 @@ export const NAV_ITEMS: NavItem[] = [
     path: "/exhibitions",
     children: [
       {
-        title: "Gallery",
+        title: "Exhibitions",
         path: "/exhibitions",
         children: [
           { title: "On View", path: "/exhibitions" },
