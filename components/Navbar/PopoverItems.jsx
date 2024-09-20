@@ -128,7 +128,7 @@ export default function PopoverItems({ color, pathname }) {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-4/12 m-auto border">
+                  <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm z-[2] w-3/12 m-auto border">
                     <div
                       className="absolute inset-0 top-1/2 bg-white shadow"
                       aria-hidden="true"
@@ -143,9 +143,9 @@ export default function PopoverItems({ color, pathname }) {
                                 id="exhibitions-heading"
                                 className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
                               >
-                                EXHIBITIONS
+                                Exhibitions
                               </p>
-                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
+                              <div className="w-[85%] pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
                                 <ul
                                   role="list"
                                   aria-labelledby="exhibitions-heading"
@@ -169,12 +169,12 @@ export default function PopoverItems({ color, pathname }) {
                                 id="home-heading"
                                 className="font-medium text-gray-900 mt-2 sm:mt-0 text-sm xl:text-lg"
                               >
-                                ART
+                                Artwork
                               </p>
                               <ul
                                 role="list"
                                 aria-labelledby="home-heading"
-                                className="pt-4 space-y-1 border-t border-gray-200 sm:space-y-4"
+                                className="w-[85%] pt-4 space-y-1 border-t border-gray-200 sm:space-y-4"
                               >
                                 {category.art.map((item) => (
                                   <li key={item.name} className="flex">
