@@ -11,11 +11,11 @@ export const NAV_ITEMS: NavItem[] = [
     children: [],
   },
   {
-    title: "Collection",
+    title: "Gallery",
     path: "/exhibitions",
     children: [
       {
-        title: "Exhibitions",
+        title: "Gallery",
         path: "/exhibitions",
         children: [
           { title: "On View", path: "/exhibitions" },
@@ -27,7 +27,7 @@ export const NAV_ITEMS: NavItem[] = [
     ],
   },
   {
-    title: "Art",
+    title: "Artwork",
     path: "/art",
     children: [
       { title: "Paintings", path: "/art/paintings" },
@@ -37,7 +37,7 @@ export const NAV_ITEMS: NavItem[] = [
      // { title: "By Artist", path: "/gallery/artists" },
     ],
   },
-  {
+  /*{
     title: "Home",
     path: "/home",
     children: [],
@@ -45,8 +45,8 @@ export const NAV_ITEMS: NavItem[] = [
   //    { title: "Sophie Lou Jacobsen", path: "/home/sophie-lou-jacobsen" },
   //    { title: "Loll Designs", path: "/home/loll-designs" },
   //    { title: "West Bourne", path: "/home/west-bourne" },
-  //    { title: "Shop All", path: "/home" },
+//    { title: "Shop All", path: "/home" }, 
      
-  },
+  }, */
   { title: "About", path: "/about" }, // Moved this inside the array and removed the trailing semicolon
 ];
