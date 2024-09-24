@@ -13,7 +13,7 @@ export const metadata = {
 export default async function ShopAll() {
   const products = await getCollectionProducts({ collection: "Artwork" });
 
-  const excludedTag = "alex-maceda";
+  const excludedTag = "winter-exhibition";
 
   const filteredProducts = products.filter(
     (product) => !product.tags.includes(excludedTag)

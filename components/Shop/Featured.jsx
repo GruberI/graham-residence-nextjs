@@ -41,10 +41,10 @@ export default function Featured() {
             </div>
             <div className="sm:pt-8 pt-4 pb-4">
               <Link
-                href={"/gallery/tdwhy"}
+                href={"/gallery/alex-maceda"}
                 className="underline underline-offset-8 hover:text-neutral-600 text-sm"
               >
-                SIGN UP FOR A COLLECTOR PREVIEW
+                VIEW THE EXHIBITION
               </Link>
             </div> 
 

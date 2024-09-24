@@ -1,6 +1,17 @@
 import Link from "next/link";
 const artistExhibitions = [
   {
+    artist: "Marcel Rozek and David Matthew King",
+    name: "CONVERGENCE",
+    imgSrc:
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/david-marcel.jpg",
+    imgAltText:
+      "Painting by Kyle Steed hung in living room of Graham Residence",
+    href: "/gallery/david-marcel",
+    link: "/gallery/david-marcel",
+    date: "June 2024 - August 2024",
+  },
+  {
     artist: "Kyle Steed",
     name: "A QUIET NOISE",
     imgSrc:
@@ -10,17 +21,6 @@ const artistExhibitions = [
     href: "/gallery/kyle-steed",
     link: "/art/kyle-steed",
     date: "October 2023 - January 2024",
-  },
-  {
-    artist: "Thai Mainhard",
-    name: "DESERT SPRING",
-    imgSrc:
-      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/ThaiDesertSpring/004.jpg",
-    imgAltText:
-      "Various paintings by Thai resting on porch at the graham residence",
-    href: "/gallery/thai-mainhard",
-    link: "/art/thai-mainhard",
-    date: "June 2023 - October 2023",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function PastExhibitionList() {
               </Link>
               <p className="tracking-tight font-thin text-lg">
                 {" "}
-                Graham Residence, {exhibit.date}
+                The Graham Residence, {exhibit.date}
               </p>
             </div>
           );

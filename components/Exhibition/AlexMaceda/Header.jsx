@@ -7,7 +7,7 @@ export default function Header() {
         </h1>
         <p className="pb-6 text-2xl">by Alex Maceda</p>
         <p className="text-base m-auto pb-2">
-          COLLECTOR PREVIEW
+          On view at <a href="/residence">The Graham Residence</a>
         </p>
       </div>
     </div>

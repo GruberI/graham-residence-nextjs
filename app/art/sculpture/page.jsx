@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 export const runtime = "edge";
 
 export default async function ShopAll() {
-  const products = await getCollectionProducts({ collection: "Artwork" });
+  const products = await getCollectionProducts({ collection: "Sculpture" });
   const productsByTag = products.filter((product) => {
     return product.tags.includes("Sculpture");
   });

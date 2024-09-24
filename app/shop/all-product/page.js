@@ -7,7 +7,7 @@ export default async function ShopAll() {
 
   const allProducts = productsHome.concat(productsArt)
 
-  const excludedTag = "alex-maceda"; 
+  const excludedTag = "winter-exhibition"; 
   const filteredProducts = allProducts.filter(product => !product.tags.includes(excludedTag));
 
   if (!allProducts?.length) return null;

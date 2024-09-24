@@ -2,22 +2,22 @@ import Link from "next/link";
 
 const artistExhibitions = [
   {
-    artist: "Alex Maceda",
-    name: "The Desert Will Hold You",
-    imgSrc:
-      "https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/2024_aM70298.jpg",
-    imgAltText: "Alex Maceda",
-    date: "Graham Residence, September 24th - November 5th",
-    link: "/gallery/tdwhy",
-  },
-  {
     artist: "Karolina Maszkiewicz",
     name: "",
     imgSrc:
       "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/Karolina/IMG_4653.jpg",
     imgAltText: "TBA",
-    date: "Winter",
+    date: "Winter 2025",
     link: "/exhibitions",
+  },
+  {
+    artist: "TBA",
+    name: "",
+    imgSrc:
+      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Exhibitions/tgr.jpg",
+    imgAltText: "TBA",
+    date: "Spring 2025",
+    link: "",
   },
 ];
 
