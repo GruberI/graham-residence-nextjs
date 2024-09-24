@@ -7,7 +7,7 @@ export const runtime = "edge";
 export default async function ShopAll() {
   const products = await getCollectionProducts({ collection: "Artwork" });
   const filteredProducts = products.filter((product) => {
-    return product.tags.includes("fine-art") && !product.tags.includes("alex-maceda");
+    return product.tags.includes("fine-art") && !product.tags.includes("winter-exhibition");
   });
 
 
