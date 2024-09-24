@@ -2,6 +2,17 @@ import Link from "next/link";
 
 const artistExhibitions = [
   {
+    artist: "Alex Maceda",
+    name: "The Desert Will Hold You",
+    imgSrc:
+      "https://alexmaceda.nyc3.cdn.digitaloceanspaces.com/AlexMaceda/2024_aM70298.jpg",
+    imgAltText:
+      "Alex Maceda",
+    href: "/gallery/alex-maceda",
+    date: "September 24th - November 5th",
+    link: "/art/alex-maceda",
+  },
+  {
     artist: "David Mathew King",
     artistSecond: "Marcel Rozek",
     name: "CONVERGENCE",
@@ -13,17 +24,6 @@ const artistExhibitions = [
     date: "June 4th - July 31st",
     link: "/art/david-matthew-king",
     linkSecond: "/art/marcel-rozek",
-  },
-  {
-    artist: "Kyle Steed",
-    name: "A QUIET NOISE",
-    imgSrc:
-      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Gallery/005.jpg",
-    imgAltText:
-      "Painting by Kyle Steed hung in living room of Graham Residence",
-    href: "/gallery/kyle-steed",
-    date: "Feb 2024 - March 2024",
-    link: "/art/kyle-steed",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function ExhibitionList() {
               </p>
               <p className="tracking-tight font-thin text-lg">
                 {" "}
-                Graham Residence, {exhibit.date}
+                The Graham Residence, {exhibit.date}
               </p>
             </div>
           );
