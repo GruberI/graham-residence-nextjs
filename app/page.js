@@ -38,7 +38,7 @@ export default function Property() {
       {/* <Editorial /> */}
       {/* <TwoRowGrid imgSrc={imagesFirst} /> */}
       <ExhibitionList />
-      <NewArrivalsSection />
+     {/* <NewArrivalsSection /> */}
       <Featured />
       <Instagram />
     </div>
