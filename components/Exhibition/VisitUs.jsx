@@ -3,11 +3,11 @@ import Link from "next/link";
 const posts = [
   {
     id: 1,
-    title: "THE STUDIO",
+    title: "GRAHAM COLLECTIVE",
     location: "Costa Mesa, CA",
     href: "mailto:info@graham-collective.com?subject=Appointment",
     description:
-      "Our Costa Mesa office is open Monday through Saturday by appointment",
+      "Our contextualized gallery space is open Monday through Saturday by appointment",
     imageUrl:
       "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/About/003.jpg",
     date: "Mar 16, 2020",
