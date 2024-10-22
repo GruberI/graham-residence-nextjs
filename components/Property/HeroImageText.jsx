@@ -22,7 +22,7 @@ export default function HeroImageText() {
   return (
     <div className="relative isolate overflow-hidden pt-20 sm:pt-28 h-[450px] md:h-screen">
       <img
-        src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/the-graham-residence.jpeg"
+        src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/david-marcel-tgr3.jpg"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover hidden sm:flex"
       />
@@ -34,7 +34,7 @@ export default function HeroImageText() {
       <div className="mx-auto max-w-4xl pb-10 sm:py-12">
         <div className="text-center">
           <h1 className="text-4xl sm:text-7xl sm:leading-8 text-gray-300 text-white animate-fadeTwo font-thin font-[cormorant] mt-6 sm:mt-0 relative">
-            The Graham Collective
+            Graham Collective
           </h1>
           <div className="hidden md:flex flex-col items-center justify-center gap-x-6 animate-fadeTwo">
             <Fade>

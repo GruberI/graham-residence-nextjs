@@ -6,28 +6,7 @@ export type NavItem = {
 
 export const NAV_ITEMS: NavItem[] = [
   {
-    title: "Residence",
-    path: "/residence",
-    children: [],
-  },
-  {
-    title: "Gallery",
-    path: "/exhibitions",
-    children: [
-      {
-        title: "Exhibitions",
-        path: "/exhibitions",
-        children: [
-          { title: "On View", path: "/exhibitions" },
-          { title: "Upcoming", path: "/exhibitions#upcoming-exhibitions" },
-          { title: "Past", path: "/exhibitions#past-exhibitions" },
-          { title: "View All", path: "/exhibitions" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Artwork",
+    title: "Collection",
     path: "/art",
     children: [
       { title: "Paintings", path: "/art/paintings" },
@@ -37,6 +16,18 @@ export const NAV_ITEMS: NavItem[] = [
      // { title: "By Artist", path: "/gallery/artists" },
     ],
   },
+  {
+    title: "Exhibitions",
+    path: "/exhibitions",
+    children: [
+          { title: "Current", path: "/exhibitions" },
+          { title: "Upcoming", path: "/exhibitions#upcoming-exhibitions" },
+          { title: "Past", path: "/exhibitions#past-exhibitions" },
+          { title: "View All", path: "/exhibitions" },
+        ],
+      },
+  
+  
   /*{
     title: "Home",
     path: "/home",
@@ -48,5 +39,10 @@ export const NAV_ITEMS: NavItem[] = [
 //    { title: "Shop All", path: "/home" }, 
      
   }, */
+  {
+    title: "Residence",
+    path: "/residence",
+    children: [],
+  },
   { title: "About", path: "/about" }, // Moved this inside the array and removed the trailing semicolon
 ];

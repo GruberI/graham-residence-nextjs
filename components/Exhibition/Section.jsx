@@ -28,15 +28,13 @@ export default function Section() {
                     Graham Collective
                   </h1>
                   <p className="text-xl sm:text-2xl italic font-light text-gray-800 mt-2 leading-tight">
-                    is a celebration of California Modernity
-                    and the quiet transcendence of the Mojave Desert.
+                 is the project of an art advisor and a photographer. 
                   </p>
                 </div>
 
                 <div className="pb-2">
                   <p className="tracking-wide text-xl sm:text-2xl text-gray-700 leading-relaxed">
-                    Set in context unlike a traditional gallery, our
-                    experiential spaces blur the boundary between home and gallery.
+                  Initially launched as seasonal exhibitions at The Graham Residence, the project aims to support artist creativity and autonomy through a residency program and curated exhibtions.
                   </p>
                 </div>
               </div>
