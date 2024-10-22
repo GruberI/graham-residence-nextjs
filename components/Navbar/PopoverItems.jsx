@@ -5,18 +5,12 @@ import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 
 const navigation = {
-  first: [
-    {
-      name: "Residence",
-      href: "/residence",
-    },
-  ],
   categories: [
     {
-      name: "Gallery",
+      name: "Collection",
       href: "/exhibitions",
       exhibitions: [
-        { name: "On View", href: "/exhibitions" },
+        { name: "Current", href: "/exhibitions" },
         { name: "Upcoming", href: "/exhibitions#upcoming-exhibitions" },
         { name: "Past", href: "/exhibitions#past-exhibitions" },
         { name: "View All", href: "/exhibitions" },
@@ -26,15 +20,14 @@ const navigation = {
         { name: "Photography", href: "/art/photography" },
         { name: "Sculpture", href: "/art/sculpture" },
         { name: "Shop All", href: "/art" },
-       // { name: "By Artist", href: "/gallery/artists" },
       ],
-    /*  home: [
-        { name: "Atelier Saucier", href: "/home/atelier-saucier" },
-        { name: "Sophie Lou Jacobsen", href: "/home/sophie-lou-jacobsen" },
-        { name: "Loll Designs", href: "/home/loll-designs" },
-        { name: "Shop All", href: "/home" },
-      ], */
       shop: [],
+    },
+  ],
+  first: [
+    {
+      name: "Residence",
+      href: "/residence",
     },
   ],
   second: [{ name: "About", href: "/about" }],
@@ -73,19 +66,7 @@ export default function PopoverItems({ color, pathname }) {
   return (
     <Popover.Group className="absolute inset-x-0 bottom-0 sm:static flex-2 sm:self-stretch z-40 max-sm:w-full hidden md:block">
       <div className="flex h-14 space-x-6 md:space-x-16 overflow-x-auto border-t md:border-none pb-px sm:h-full justify-center sm:overflow-visible sm:ml-10 md:ml-20 lg:ml-14">
-        {navigation.first.map((item) => (
-          <a
-            key={item.name}
-            href={item.href}
-            className={`flex items-center text-base xl:text-lg scroll-smooth cursor-pointer`}
-            style={pathname == "/" ? { color: color } : { color: "black" }}
-          >
-            <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
-              {item.name}
-            </span>
-          </a>
-        ))}
-
+        
         {navigation.categories.map((category, categoryIdx) => (
           <Popover
             key={`${categoryIdx}-categories`}
@@ -188,32 +169,6 @@ export default function PopoverItems({ color, pathname }) {
                                 ))}
                               </ul>
                             </div>
-                          {/*  <div>
-                              <p
-                                id="categories-heading"
-                                className="font-medium text-gray-900 text-sm xl:text-lg"
-                              >
-                                HOME
-                              </p>
-                              <div className="pt-4 border-t border-gray-200 sm:grid sm:grid-cols-1 sm:gap-x-6">
-                                <ul
-                                  role="list"
-                                  aria-labelledby="categories-heading"
-                                  className="space-y-2 sm:space-y-4"
-                                >
-                                  {category.home.map((item) => (
-                                    <li key={item.name} className="flex">
-                                      <Link
-                                        href={item.href}
-                                        className="hover:text-gray-800 tracking-widest leading-7 text-sm lg:text-base"
-                                      >
-                                        {item.name}
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                                  </div> 
-                                  </div> */}
                           </div>
                         </div>
                       </div>
@@ -224,6 +179,20 @@ export default function PopoverItems({ color, pathname }) {
             )}
           </Popover>
         ))}
+
+        {navigation.first.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className={`flex items-center text-base xl:text-lg scroll-smooth cursor-pointer`}
+            style={pathname == "/" ? { color: color } : { color: "black" }}
+          >
+            <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
+              {item.name}
+            </span>
+          </a>
+        ))}
+
         {navigation.second.map((item) => (
           <a
             key={item.name}

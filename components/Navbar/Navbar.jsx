@@ -36,7 +36,7 @@ export default function Navbar() {
     <div
       className={`fixed top-0 z-40 animate-fadeTwo w-screen`}
       style={
-        pathname == "/"
+        pathname == "/" || pathname == "/residence"
           ? { background: `rgba(255, 255, 255, ${backgroundTransparacy})` }
           : { background: "white" }
       }
@@ -80,8 +80,8 @@ export default function Navbar() {
 
               {/* Booking widget */}
               <div className="flex flex-1 items-center justify-end sm:mr-20 mr-14">
-                <Calendar />
-              </div>
+              {/*  <Calendar /> */}
+              </div> 
             </div>
           </div>
         </nav>

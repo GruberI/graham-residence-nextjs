@@ -1,4 +1,5 @@
 import SectionFirst from "@/components/Property/SectionFirst";
+import HeroImageTextResidence from "@/components/Property/HeroImageTextResidence"
 import TwoRowGrid from "@/components/Property/TwoRowGrid";
 import HouseSpecs from "@/components/Property/HouseSpecs";
 import Text from "@/components/Property/Text";
@@ -13,7 +14,7 @@ export const metadata = {
 };
 
 const text =
-  "Surrounded by weather boulders, ancient junipers, and piñon pines. Serenity and solitude are pervasive, and the only neighbors in sight are blue jays, hummingbirds, and the occasional coyote.";
+  "The residency affords a rare opportunity to contemplate the intersection of nature, design, and contemporary art, encouraging a deeper exploration of one’s craft within an inspiring and contemplative setting.";
 
 const imagesFirst = [
   {
@@ -48,15 +49,15 @@ const imagesSecond = [
 export default function Residence() {
   return (
     <>
-      
+      <HeroImageTextResidence />
       <SectionFirst />
       <TwoRowGrid imgSrc={imagesFirst} />
       <Text text={text} />
       <TwoRowGrid imgSrc={imagesSecond} />
-      <HouseSpecs />
+    {/*  <HouseSpecs />
       <Book />
       <Carousel />
-      <Instagram />
+  <Instagram /> */}
     </>
   );
 }

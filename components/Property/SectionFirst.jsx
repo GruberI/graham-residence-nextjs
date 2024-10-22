@@ -25,32 +25,30 @@ export default function SectionFirst() {
                   THE GRAHAM RESIDENCE
                 </h2>
                 <h3 className="sm:text-3xl text-xl italic font-light">
-                  is a mid-century modern retreat
                 </h3>
               </div>
               <div className="pb-8">
                 <p className="tracking-wide text-l sm:text-xl">
-                  where the lines between home and gallery are blurred. Located
-                  near Joshua Tree National Park and nestled into the boulders
-                  on 20 acres of pristine land, this is Mojave Desert living at
-                  its finest.
+                is a mid-century modern retreat and artist residency,
+ conceived to foster profound creativity and introspection. Situated on over 20 secluded acres of untouched desert near Joshua Tree National Park, it offers an unparalleled, immersive experience where the distractions of daily life recede, allowing for deep artistic focus.
                 </p>
               </div>
               {/* Flex row applied to keep buttons side by side on all devices */}
               <div className="flex flex-row items-center gap-x-6">
                 <button
                   onClick={() =>
-                    (window.location.href = "/residence#property-book")
+                    (window.location.href = "http://www.airbnb.com/h/tgr")
                   }
                   className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white"
                 >
                   BOOK A STAY
                 </button>
                 <button
-                  onClick={() => (window.location.href = "/residence/photos")}
+                  onClick={() => (window.location.href = "mailto:info@graham-collective.com")}
+
                   className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white"
                 >
-                  PHOTO GALLERY
+                  INQUIRE
                 </button>
               </div>
             </div>
