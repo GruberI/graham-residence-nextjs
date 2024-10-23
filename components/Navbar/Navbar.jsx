@@ -2,7 +2,6 @@
 import { usePathname } from "next/navigation";
 import PopoverItems from "./PopoverItems";
 import { useState, useEffect } from "react";
-import Calendar from "./CalendarWidget/Calendar";
 import { NavDrawer } from "../NavDrawer";
 
 export default function Navbar() {
@@ -45,7 +44,7 @@ export default function Navbar() {
         <nav aria-label="Top">
           <div
             className={`border-b border-${
-              pathname == "/" ? color : "black"
+              pathname == "/" || pathname == "/residence" ? color : "black"
             } px-4 pb-0 sm:px-0 sm:pb-0`}
           >
             <div className="flex h-20 items-center justify-between">
@@ -60,7 +59,7 @@ export default function Navbar() {
                   <p
                     className={`font-thin sm:pl-1 md:pl-6 ml-0 sm:ml-2 md:ml-0 w-full sm:w-[100px] md:w-full font-[cormorant]`}
                     style={
-                      pathname == "/"
+                      pathname == "/" || pathname == "/residence"
                         ? { color: `${color}` }
                         : { color: "black" }
                     }

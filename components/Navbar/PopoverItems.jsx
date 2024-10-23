@@ -85,7 +85,7 @@ export default function PopoverItems({ color, pathname }) {
                       `relative z-10 flex items-center border-b-1 pt-px text-base xl:text-lg duration-300 ease-out outline-none`
                     )}
                     style={
-                      pathname == "/" ? { color: color } : { color: "black" }
+                      pathname == "/" || pathname == "/residence" ? { color: color } : { color: "black" }
                     }
                   >
                     <Link
@@ -185,7 +185,7 @@ export default function PopoverItems({ color, pathname }) {
             key={item.name}
             href={item.href}
             className={`flex items-center text-base xl:text-lg scroll-smooth cursor-pointer`}
-            style={pathname == "/" ? { color: color } : { color: "black" }}
+            style={pathname == "/" || pathname == "/residence" ? { color: color } : { color: "black" }}
           >
             <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
               {item.name}
@@ -199,7 +199,7 @@ export default function PopoverItems({ color, pathname }) {
             href={item.href}
             onClick={() => handleClickScroll(item.id)}
             className={`flex items-center text-base xl:text-lg scroll-smooth cursor-pointer`}
-            style={pathname == "/" ? { color: color } : { color: "black" }}
+            style={pathname == "/" || pathname == "/residence" ? { color: color } : { color: "black" }}
           >
             <span className="hover:text-neutral-300 hover:underline hover:underline-offset-8">
               {item.name}

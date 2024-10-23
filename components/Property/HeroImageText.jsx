@@ -27,7 +27,7 @@ export default function HeroImageText() {
         className="absolute inset-0 -z-10 h-full w-full object-cover hidden sm:flex"
       />
       <img
-        src="https://ipfs.filebase.io/ipfs/QmSqxCjc9XPjGpGqjabtNG7RNBodEn9ivXaSWXqhUuxFmh/QmeXsmv4nMF6WvguaWH99tdHJdNCkY3SehXg974QWMdwEy"
+        src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/david-marcel-tgr3.jpg"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover flex sm:hidden"
       />

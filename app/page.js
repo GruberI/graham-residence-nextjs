@@ -15,20 +15,20 @@ export const metadata = {
     "Shop curated fine art & home goods found within The Graham Residence, a contextualized art space just outside Joshua Tree National Park.",
 };
 
-const imagesFirst = [
-  {
-    imgSrc:
-      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/david-marcel-tgr.jpg",
-  },
-  {
-    imgSrc:
-      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Homepage/lkw.jpg",
-  },
-  {
-    imgSrc:
-      "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Homepage/morning.jpeg",
-  },
-];
+// const imagesFirst = [
+//   {
+//     imgSrc:
+//       "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/david-marcel-tgr.jpg",
+//   },
+//   {
+//     imgSrc:
+//       "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Homepage/lkw.jpg",
+//   },
+//   {
+//     imgSrc:
+//       "https://siteimagery.nyc3.cdn.digitaloceanspaces.com/Homepage/morning.jpeg",
+//   },
+// ];
 
 export default function Property() {
   return (

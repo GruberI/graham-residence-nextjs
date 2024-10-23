@@ -5,7 +5,7 @@ import Script from "next/script";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
 import SignUp from "@/components/SignUp";
-import StickyCart from "@/components/Cart/stickyCart.jsx";
+// import StickyCart from "@/components/Cart/stickyCart.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.children}`}>
         <div className="relative fixed">
-          <StickyCart />
+          {/* <StickyCart /> */}
           <Navbar />
         </div>
         <main className="max-w-full overflow-x-hidden">{children}</main>

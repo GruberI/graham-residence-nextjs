@@ -16,7 +16,7 @@ export default function HeroImageTextResidence() {
       <img
         src="https://siteimagery.nyc3.cdn.digitaloceanspaces.com/the-graham-residence.jpeg"
         alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover hidden sm:flex"
+        className="absolute inset-0 -z-10 h-full w-full object-cover flex"
       />
       
       <div className="mx-auto max-w-4xl pb-10 sm:py-12 ">

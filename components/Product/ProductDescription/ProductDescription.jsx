@@ -70,7 +70,7 @@ export default function ProductDescription({ product }) {
   );
 
   return (
-    <div className="bg-white pt-2 dark:text-black dark:bg-white">
+    <div className="bg-white pt-2 dark:text-black dark:bg-white mb-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -98,21 +98,25 @@ export default function ProductDescription({ product }) {
                 {product.title.toUpperCase()}
               </h1>
               <p className="text-sm sm:text-2xl tracking-normal text-black-600">
-              {!product.availableForSale && product.tags.includes("on-hold")
-    ? "On Hold"
-    : !product.availableForSale &&
-      (product.tags.includes("fine-art") || product.tags.includes("Sculpture"))
-    ? "Sold"
-    : !product.availableForSale && product.tags.includes("home-goods")
-    ? "Sold Out"
-    : `${new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(
-        parseFloat(
-          selectedVariant === undefined ? amount : selectedVariantPrice
-        )
-      )}`}
+                {!product.availableForSale && product.tags.includes("on-hold")
+                  ? "On Hold"
+                  : !product.availableForSale &&
+                    (product.tags.includes("fine-art") ||
+                      product.tags.includes("Sculpture"))
+                  ? "Sold"
+                  : !product.availableForSale &&
+                    product.tags.includes("home-goods")
+                  ? "Sold Out"
+                  : `${new Intl.NumberFormat("en-US", {
+                      style: "currency",
+                      currency: "USD",
+                    }).format(
+                      parseFloat(
+                        selectedVariant === undefined
+                          ? amount
+                          : selectedVariantPrice
+                      )
+                    )}`}
               </p>
             </div>
             <Link href={`/${currentType}/${restructuredVendor}`}>
@@ -127,22 +131,31 @@ export default function ProductDescription({ product }) {
 
             <section aria-labelledby="details-heading" className="mt-4">
               <div>
-                <h2 className="text-xl font-semibold mb-4"></h2>
                 <Prose
                   className="mb-2 text-base leading-normal dark:text-slate-900 dark:bg-white"
                   html={`${productJsonLd.description} <br /> `}
                 />
-
-                <AddToCart
+                <div className="flex justify-center">
+                  <button
+                    onClick={() =>
+                      (window.location.href =
+                        "mailto:inquiries@graham-collective.com")
+                    }
+                    className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black hover:bg-black hover:text-white"
+                  >
+                    INQUIRE
+                  </button>
+                </div>
+                {/* <AddToCart
                   variants={product.variants}
                   availableForSale={product.availableForSale}
                   type={currentType}
-                />
+                /> */}
               </div>
             </section>
           </div>
-        </div> {/* End of the flex container */}
-
+        </div>{" "}
+        {/* End of the flex container */}
         {/* Render Banner only if matchingBanner exists */}
         {matchingBanner && (
           <div

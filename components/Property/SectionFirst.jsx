@@ -35,14 +35,14 @@ export default function SectionFirst() {
               </div>
               {/* Flex row applied to keep buttons side by side on all devices */}
               <div className="flex flex-row items-center gap-x-6">
-                <button
+                {/* <button
                   onClick={() =>
                     (window.location.href = "http://www.airbnb.com/h/tgr")
                   }
                   className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white"
                 >
                   BOOK A STAY
-                </button>
+                </button> */}
                 <button
                   onClick={() => (window.location.href = "mailto:info@graham-collective.com")}
 
