@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { AddToCart } from "../../Cart/add-to-cart";
 import { VariantSelector } from "./variant-selector";
 import Link from "next/link";
 import Prose from "@/components/prose";
@@ -97,7 +96,7 @@ export default function ProductDescription({ product }) {
               <h1 className="text-sm sm:text-2xl font-light text-black-600 whitespace-normal break-words">
                 {product.title.toUpperCase()}
               </h1>
-              <p className="text-sm sm:text-2xl tracking-normal text-black-600">
+              {/* <p className="text-sm sm:text-2xl tracking-normal text-black-600">
                 {!product.availableForSale && product.tags.includes("on-hold")
                   ? "On Hold"
                   : !product.availableForSale &&
@@ -117,7 +116,7 @@ export default function ProductDescription({ product }) {
                           : selectedVariantPrice
                       )
                     )}`}
-              </p>
+              </p> */}
             </div>
             <Link href={`/${currentType}/${restructuredVendor}`}>
               <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-2 mb-6">
