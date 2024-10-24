@@ -19,7 +19,6 @@ export async function generateMetadata({
 
   const { url, width, height, altText: alt } = product.featuredImage || {};
   const indexable = !product.tags.includes(HIDDEN_PRODUCT_TAG);
-  // const artistBio = aboutInfo.find((artist) => artist.handle === params.handle);
 
   return {
     title: product.seo.title || product.title,
@@ -61,15 +60,15 @@ export default async function ProductPage({
     "@type": "Product",
     name: product.title,
     description: product.description,
-    image: product.featuredImage.url,
+    image: product.featuredImage?.url,
     offers: {
       "@type": "AggregateOffer",
       availability: product.availableForSale
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
       priceCurrency: product.priceRange.minVariantPrice.currencyCode,
-      highPrice: product.priceRange.maxVariantPrice.amount,
-      lowPrice: product.priceRange.minVariantPrice.amount,
+      // highPrice: product.priceRange.maxVariantPrice.amount, // Commented out to hide price
+      // lowPrice: product.priceRange.minVariantPrice.amount,  // Commented out to hide price
     },
   };
 
@@ -81,7 +80,7 @@ export default async function ProductPage({
           __html: JSON.stringify(productJsonLd),
         }}
       />
-      <ProductDescription product={product} />
+      <ProductDescription product={product} hidePrice={true} /> {/* Pass a prop to hide price */}
     </>
   );
 }

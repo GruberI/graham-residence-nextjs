@@ -14,7 +14,8 @@ export default async function ShopAll() {
 
   return (
     <div className="mt-20">
-      <ShopAllArt productsByHandle={productsByTag} />
+      {/* Pass hidePrice={true} to hide the price */}
+      <ShopAllArt productsByHandle={productsByTag} hidePrice={true} />
     </div>
   );
 }
