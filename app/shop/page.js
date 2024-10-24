@@ -46,15 +46,13 @@ export default async function Shop() {
         }}
       />
 
-      {/* <Suspense>
-        <HeroImageText />
-      </Suspense> */}
       <Section />
-      <ArtSection products={products} />
+      {/* Pass hidePrice={true} to hide prices */}
+      <ArtSection products={products} hidePrice={true} />
       <VendorFeature />
-      <GoodsSection />
+      <GoodsSection hidePrice={true} />
       <Featured />
-      <PrintsSection products={products} />
+      <PrintsSection products={products} hidePrice={true} />
     </div>
   );
 }
