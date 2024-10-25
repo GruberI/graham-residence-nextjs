@@ -8,7 +8,7 @@ import ProductImageGallery from "@/components/Product/ProductImageGallery"; // I
 import { bannerInfo } from "@/components/ShopAll/Banner";
 import Banner from "@/components/ShopAll/Banner";
 
-export default function ProductDescription({ product }) {
+export default function ProductDescription({ product, hidePrice }) {
   const [currentType, setCurrentType] = useState("");
   const [selectedImage, setSelectedImage] = useState(0); // State to track the currently displayed image
 
