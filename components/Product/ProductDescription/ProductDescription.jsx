@@ -8,7 +8,7 @@ import ProductImageGallery from "@/components/Product/ProductImageGallery"; // I
 import { bannerInfo } from "@/components/ShopAll/Banner";
 import Banner from "@/components/ShopAll/Banner";
 
-export default function ProductDescription({ product, hidePrice }) {
+export default function ProductDescription({ product }) {
   const [currentType, setCurrentType] = useState("");
   const [selectedImage, setSelectedImage] = useState(0); // State to track the currently displayed image
 
@@ -96,27 +96,25 @@ export default function ProductDescription({ product, hidePrice }) {
               <h1 className="text-sm sm:text-2xl font-light text-black-600 whitespace-normal break-words">
                 {product.title.toUpperCase()}
               </h1>
-              {/* <p className="text-sm sm:text-2xl tracking-normal text-black-600">
-                {!product.availableForSale && product.tags.includes("on-hold")
-                  ? "On Hold"
-                  : !product.availableForSale &&
-                    (product.tags.includes("fine-art") ||
-                      product.tags.includes("Sculpture"))
-                  ? "Sold"
-                  : !product.availableForSale &&
-                    product.tags.includes("home-goods")
-                  ? "Sold Out"
-                  : `${new Intl.NumberFormat("en-US", {
-                      style: "currency",
-                      currency: "USD",
-                    }).format(
-                      parseFloat(
-                        selectedVariant === undefined
-                          ? amount
-                          : selectedVariantPrice
-                      )
-                    )}`}
-              </p> */}
+              {/* Display SOLD if the product is not available */}
+              {!product.availableForSale ? (
+                <p className="text-black-500 font-semi-bold">SOLD</p>
+              ) : null}
+              {/* Uncomment the following block if you want to display the price */}
+              {/* {product.availableForSale && (
+                <p className="text-sm sm:text-2xl tracking-normal text-black-600">
+                  {new Intl.NumberFormat("en-US", {
+                    style: "currency",
+                    currency: "USD",
+                  }).format(
+                    parseFloat(
+                      selectedVariant === undefined
+                        ? amount
+                        : selectedVariantPrice
+                    )
+                  )}
+                </p>
+              )} */}
             </div>
             <Link href={`/${currentType}/${restructuredVendor}`}>
               <p className="mt-4 text-sm text-neutral-500 border-b border-neutral-500 pb-2 mb-6">
@@ -145,11 +143,6 @@ export default function ProductDescription({ product, hidePrice }) {
                     INQUIRE
                   </button>
                 </div>
-                {/* <AddToCart
-                  variants={product.variants}
-                  availableForSale={product.availableForSale}
-                  type={currentType}
-                /> */}
               </div>
             </section>
           </div>

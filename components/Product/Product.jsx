@@ -1,11 +1,11 @@
-// this affects the grid of products
+// Product.jsx
 import ImageTransition from "./ImageTransition";
 import ImageTransitionPhoto from "./ImageTransitionPhoto";
 import Link from "next/link.js";
 
-export default function Product({ product, hidePrice }) {
-  const amount = product.priceRange.minVariantPrice.amount;
+export default function Product({ product }) {
   const available = product.availableForSale;
+  const amount = product.priceRange.minVariantPrice.amount;
   const imgOne = {
     src: product.featuredImage?.url,
     altText: product.featuredImage?.altText,
@@ -38,23 +38,7 @@ export default function Product({ product, hidePrice }) {
           {product.vendor}
         </p>
 
-        {/* Conditionally render price based on hidePrice prop */}
-        {!hidePrice && (
-          <p className="mt-1 text-sm text-center">
-            {!available && product.tags.includes("on-hold")
-              ? "On Hold"
-              : !available &&
-                (product.tags.includes("fine-art") ||
-                  product.tags.includes("Sculpture"))
-              ? "Sold"
-              : !available && product.tags.includes("home-goods")
-              ? "Sold Out"
-              : `${new Intl.NumberFormat("en-US", {
-                  style: "currency",
-                  currency: "USD",
-                }).format(parseFloat(amount))}`}
-          </p>
-        )}
+       
 
         {/* Centered Product Title */}
         <div>
@@ -62,6 +46,10 @@ export default function Product({ product, hidePrice }) {
             {product.title}
           </h3>
         </div>
+         {/* Display SOLD if the product is not available */}
+         {!available ? (
+          <p className="text-black-500 font-semi-bold">SOLD</p>
+        ) : null}
       </div>
     </Link>
   );

@@ -30,11 +30,10 @@ export default async function ShopAll({
     <div className="sm:pt-40 pt-48">
       {/* ShopAllArtHeader with pageTitle based on params.handle */}
       <ShopAllArtHeader pageTitle={params.handle} />
-      {/* Pass productsByHandle and productHandle to ShopAllArt */}
+      {/* Updated: Removed hidePrice prop */}
       <ShopAllArt
         productsByHandle={productsByHandle}
         productHandle={params.handle}
-        hidePrice={true}  // Optionally pass hidePrice prop
       />
     </div>
   );

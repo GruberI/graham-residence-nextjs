@@ -24,7 +24,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function ShopAllArt({ productsByHandle, productHandle, hidePrice }) {
+export default async function ShopAllArt({ productsByHandle, productHandle }) {
   return (
     <div className="text-center"> {/* Add text-center here */}
       <Suspense>
@@ -35,7 +35,6 @@ export default async function ShopAllArt({ productsByHandle, productHandle, hide
             <ProductSection
               products={productsByHandle}
               productHandle={productHandle}
-              hidePrice={hidePrice} // Pass hidePrice prop
             />
           )}
         </section>

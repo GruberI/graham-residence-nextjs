@@ -6,17 +6,16 @@ import { getProduct } from "@/lib/shopify";
 import aboutInfo from "@/components/ShopAll/Art/About";
 export const runtime = "edge";
 
-
 export async function generateMetadata({
   params,
 }: {
   params: { handle: string };
 }): Promise<Metadata> {
   const product = await getProduct(params.handle);
-  const isSoldOut = !product.availableForSale;
 
   if (!product) return notFound();
 
+  const isSoldOut = !product.availableForSale;
   const { url, width, height, altText: alt } = product.featuredImage || {};
   const indexable = !product.tags.includes(HIDDEN_PRODUCT_TAG);
 
@@ -80,7 +79,7 @@ export default async function ProductPage({
           __html: JSON.stringify(productJsonLd),
         }}
       />
-      <ProductDescription product={product} hidePrice={true} /> {/* Pass a prop to hide price */}
+      <ProductDescription product={product} /> {/* Updated: Removed hidePrice prop */}
     </>
   );
 }
