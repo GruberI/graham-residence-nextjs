@@ -17,7 +17,7 @@ export default async function Exhibition() {
       <Header />
       <ArtExhibition />
       <div className="mx-2">
-        <ProductGridThree products={productsByTag} />
+        <ProductGridThree products={productsByTag} /> {/* Updated: No need to pass hidePrice */}
       </div>
       <Artist />
     </div>

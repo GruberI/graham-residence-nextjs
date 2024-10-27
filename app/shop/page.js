@@ -47,12 +47,12 @@ export default async function Shop() {
       />
 
       <Section />
-      {/* Pass hidePrice={true} to hide prices */}
-      <ArtSection products={products} hidePrice={true} />
+      {/* Updated: Removed hidePrice prop */}
+      <ArtSection products={products} />
       <VendorFeature />
-      <GoodsSection hidePrice={true} />
+      <GoodsSection />
       <Featured />
-      <PrintsSection products={products} hidePrice={true} />
+      <PrintsSection products={products} />
     </div>
   );
 }

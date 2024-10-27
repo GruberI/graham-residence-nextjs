@@ -10,12 +10,12 @@ export default async function ShopAll() {
     return product.tags.includes("Sculpture");
   });
 
-  if (!products?.length) return notFound();
+  if (!productsByTag.length) return notFound(); // Fixed the check for filtered products
 
   return (
     <div className="mt-20">
-      {/* Pass hidePrice={true} to hide the price */}
-      <ShopAllArt productsByHandle={productsByTag} hidePrice={true} />
+      {/* Updated: Removed hidePrice prop */}
+      <ShopAllArt productsByHandle={productsByTag} />
     </div>
   );
 }

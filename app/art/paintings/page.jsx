@@ -10,13 +10,12 @@ export default async function ShopAll() {
     return product.tags.includes("fine-art") && !product.tags.includes("winter-exhibition");
   });
 
-
   if (!filteredProducts.length) return notFound();
 
   return (
     <div className="mt-20">
-      <ShopAllArt productsByHandle={filteredProducts} hidePrice={true}/>
+      {/* Updated: Removed hidePrice prop */}
+      <ShopAllArt productsByHandle={filteredProducts} />
     </div>
   );
 }
-

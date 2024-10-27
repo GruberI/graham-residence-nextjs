@@ -19,7 +19,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ProductSection({ products, productHandle, hidePrice }) {
+export default function ProductSection({ products, productHandle }) {
   const firstSixProducts = products.slice(0, 6);
   const remainingProducts = products.slice(6);
 
@@ -79,8 +79,8 @@ export default function ProductSection({ products, productHandle, hidePrice }) {
         </div>
 
         <section aria-labelledby="products-heading" className="pb-16 pt-10">
-          <ProductGridThree products={firstSixProducts} hidePrice={hidePrice} /> {/* Pass hidePrice */}
-          <ProductGridThree products={remainingProducts} hidePrice={hidePrice} /> {/* Pass hidePrice */}
+          <ProductGridThree products={firstSixProducts} /> {/* Updated: Removed hidePrice */}
+          <ProductGridThree products={remainingProducts} /> {/* Updated: Removed hidePrice */}
         </section>
 
         {/* Conditionally render Alex Maceda's bio if the product handle matches */}
