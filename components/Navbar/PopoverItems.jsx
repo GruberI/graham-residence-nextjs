@@ -19,6 +19,7 @@ const navigation = {
         { name: "Paintings", href: "/art/paintings" },
         { name: "Photography", href: "/art/photography" },
         { name: "Sculpture", href: "/art/sculpture" },
+        { name: "Custom Furniture", href: "/art/furniture"},
         { name: "Shop All", href: "/art" },
       ],
       shop: [],
