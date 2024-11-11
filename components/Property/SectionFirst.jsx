@@ -29,26 +29,26 @@ export default function SectionFirst() {
               </div>
               <div className="pb-8">
                 <p className="tracking-wide text-l sm:text-xl">
-                is a mid-century modern retreat and artist residency,
- conceived to foster profound creativity and introspection. Situated on over 20 secluded acres of untouched desert near Joshua Tree National Park, it offers an unparalleled, immersive experience where the distractions of daily life recede, allowing for deep artistic focus.
-                </p>
+                is a mid-century modern retreat nestled among the boulders of Yucca Valley, on 20 secluded acres near Joshua Tree National Park. The land is characterized by expanses of weathered boulders, ancient junipers, desert oaks and piñon pines. The home offers expansive views of surrounding rock formations from every room. It is Mojave Desert living at its finest. <br></br><br></br>Seasonal exhibitions and short-term artist residencies are held here, each deeply rooted in the natural landscape and minimalist design.
+           </p>
+          
               </div>
               {/* Flex row applied to keep buttons side by side on all devices */}
               <div className="flex flex-row items-center gap-x-6">
-                {/* <button
+                 <button
                   onClick={() =>
                     (window.location.href = "http://www.airbnb.com/h/tgr")
                   }
                   className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white"
                 >
-                  BOOK A STAY
-                </button> */}
+                Guest Stay
+                </button> 
                 <button
                   onClick={() => (window.location.href = "mailto:info@graham-collective.com")}
 
                   className="bg-white text-sm text-black py-2.5 min-w-[150px] px-3 border border-black mt-2 hover:bg-black hover:text-white"
                 >
-                  INQUIRE
+                  Residency Inquiry
                 </button>
               </div>
             </div>

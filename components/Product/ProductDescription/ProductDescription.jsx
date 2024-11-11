@@ -132,7 +132,7 @@ export default function ProductDescription({ product }) {
                   className="mb-2 text-base leading-normal dark:text-slate-900 dark:bg-white"
                   html={`${productJsonLd.description} <br /> `}
                 />
-                <div className="flex justify-center">
+                <div className="flex justify-start"> {/* Align button to the left */}
                   <button
                     onClick={() =>
                       (window.location.href =

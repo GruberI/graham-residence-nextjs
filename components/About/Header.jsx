@@ -37,11 +37,8 @@ export default function Header() {
                 home to countless photoshoots, elopements, and events.
               </p>
               <p className="text-lg pt-2">
-                In 2023, Lindsey launched Graham Collective, inspired by the vision
-                to create a contextual gallery space and guest experience. The
-                Graham Residence is curated with seasonal exhibitions by
-                contemporary artists, all of which are available for
-                acquisition. 
+              In 2023 Lindsey launched Graham Collective inspired by the vision to reimagine the art viewing experience beyond conventional spaces. Graham Collective provides artists with the freedom to explore their craft through its residency program and curated exhibitions at The Graham Residence. This contemplative environment encourages artists to reflect, create, and deeply connect with the landscape around them.
+Through thoughtful curation and immersive exhibitions, we invite collectors and guests to experience art in a setting that feels both authentic and elemental, fostering meaningful connections to the artwork and its surroundings.
               </p>
             </div>
           </div>
