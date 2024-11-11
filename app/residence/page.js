@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 const text =
-  "The residency affords a rare opportunity to contemplate the intersection of nature, design, and contemporary art, encouraging a deeper exploration of one’s craft within an inspiring and contemplative setting.";
+  "The approach to the home is a one-lane, bumpy, winding dirt road. You snake around boulders and hug their curves. As you drive, houses get more and more spaced out until they all but completely fall away. Once you arrive, serenity and solitude are pervasive, and the only neighbors in sight are bluejays, hummingbirds and the occasional coyote.";
 
 const imagesFirst = [
   {
