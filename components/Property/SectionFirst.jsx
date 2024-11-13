@@ -29,7 +29,7 @@ export default function SectionFirst() {
               </div>
               <div className="pb-8">
                 <p className="tracking-wide text-l sm:text-xl">
-                is a mid-century modern retreat nestled among the boulders of Yucca Valley, on 20 secluded acres near Joshua Tree National Park. The land is characterized by expanses of weathered boulders, ancient junipers, desert oaks and piñon pines. The home offers expansive views of surrounding rock formations from every room. It is Mojave Desert living at its finest. <br></br><br></br>Seasonal exhibitions and short-term artist residencies are held here, each deeply rooted in the natural landscape and minimalist design.
+                is a mid-century modern retreat nestled among the boulders of Yucca Valley, on 20 secluded acres near Joshua Tree National Park. The land is characterized by weathered boulders, ancient junipers, desert oaks and piñon pines. The home offers expansive views of surrounding rock formations from every room. It is Mojave Desert living at its finest. <br></br><br></br>Seasonal exhibitions and short-term artist residencies are held here, each deeply rooted in the natural landscape and minimalist design.
            </p>
           
               </div>
